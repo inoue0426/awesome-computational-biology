@@ -7,11 +7,6 @@ Drug repositioning (also called drug repurposing) involves the investigation of 
 ```
 [Wikipedia](https://en.wikipedia.org/wiki/Drug_repositioning)
 
-## contents
-
-- Software
-- Paper
-
 ## software
 
 ## paper
