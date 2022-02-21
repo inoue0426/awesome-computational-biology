@@ -3,7 +3,9 @@
 A knowledge collection of software and paper related to computational biology.
 
 ```
-Computational biology involves the development and application of data-analytical and theoretical methods, mathematical modelling and computational simulation techniques to the study of biological, ecological, behavioural, and social systems.  
+Computational biology involves the development and application of data-analytical and theoretical methods, 
+mathematical modelling and computational simulation techniques to the study of biological, ecological, 
+behavioural, and social systems.  
 ```
 [Wikipedia](https://en.wikipedia.org/wiki/Computational_biology)
 
