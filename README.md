@@ -1,4 +1,5 @@
 # awsome-computational_biology
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
 A knowledge collection of databases, softwares and papers related to computational biology.
 
@@ -6,7 +7,7 @@ A knowledge collection of databases, softwares and papers related to computation
 > mathematical modelling and computational simulation techniques to the study of biological, ecological, 
 > behavioural, and social systems. - [Wikipedia](https://en.wikipedia.org/wiki/Computational_biology)
 
-# Contents
+## Contents
 
   - [Databases](#databases)
     - Compound
@@ -70,3 +71,7 @@ A knowledge collection of databases, softwares and papers related to computation
 - NeoDTI: https://github.com/FangpingWan/NeoDTI
 
 ### Compound–Protein Interaction (CPI)
+
+## Contribute
+
+Contributions welcome! Read the [contribution guidelines](contributing.md) first.
