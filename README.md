@@ -3,9 +3,9 @@
 A knowledge collection of software and paper related to computational biology.
 
 ```
-Drug repositioning (also called drug repurposing) involves the investigation of existing drugs  for new therapeutic purposes.  
+Computational biology involves the development and application of data-analytical and theoretical methods, mathematical modelling and computational simulation techniques to the study of biological, ecological, behavioural, and social systems.  
 ```
-[Wikipedia](https://en.wikipedia.org/wiki/Drug_repositioning)
+[Wikipedia](https://en.wikipedia.org/wiki/Computational_biology)
 
 # Contents
 
@@ -19,7 +19,7 @@ Drug repositioning (also called drug repurposing) involves the investigation of 
     - 1D
     - 2D
     - 3D
-  - Tasks and Models
+  - ML Tasks and Models
     - drug–target interaction (DTI) & compound–protein interaction (CPI)
     - Drug Disease Association
 
