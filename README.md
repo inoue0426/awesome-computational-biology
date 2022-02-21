@@ -11,7 +11,8 @@ A knowledge collection of databases, softwares and papers related to computation
 
   - [Databases](#databases)
     - Compound
-      - Mass Spectra
+    - Pathway
+    - Mass Spectra
     - Protein
     - Genome
     - Disease
