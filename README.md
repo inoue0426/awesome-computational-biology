@@ -1,5 +1,4 @@
-# Awesome Computational Biology
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+# Awesome Computational Biology [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
 A knowledge collection of databases, softwares and papers related to computational biology.
 
