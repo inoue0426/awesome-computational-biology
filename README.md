@@ -8,20 +8,22 @@ A knowledge collection of databases, softwares and papers related to computation
 
 ## Contents
 
-  - [Databases](#databases)
-    - Compound
-    - Pathway
-    - Mass Spectra
-    - Protein
-    - Genome
-    - Disease
-    - Interaction
-      - Drug Gene Interaction
-      - Chemical Protein Interaction 
-  - [Preprocess](#preprocess)
-  - [ML Tasks and Models](#ml-tasks-and-models)
-    - drug–target interaction (DTI) & compound–protein interaction (CPI)
-    - Drug Disease Association
+- [Databases](#databases)
+  - Compound
+  - Pathway
+  - Mass Spectra
+  - Protein
+  - Genome
+  - Disease
+  - Interaction
+    - Drug Gene Interaction
+    - Chemical Protein Interaction 
+- [Preprocess](#preprocess)
+- [ML Tasks and Models](#ml-tasks-and-models)
+  - Drug Repurposing
+  - Drug–Target Interaction (DTI)
+  - Compound–Protein Interaction (CPI)
+- Contribute
 
 ## Databases
 - Compound
