@@ -56,21 +56,27 @@ A knowledge collection of databases, softwares and papers related to computation
 
 ## Preprocess
 
-- mol2vec: https://github.com/samoturk/mol2vec
-- RDKit: https://github.com/rdkit/rdkit
-- ProtVec: https://arxiv.org/abs/1503.05140
+- [RDKit](https://github.com/rdkit/rdkit) - A software of cheminformatics and ML.
 
 ## ML Tasks and Models
 
-- ProteinGCN: https://github.com/malllabiisc/ProteinGCN
+### Drug Repurposing
+
+- [DeepPurpose](https://github.com/kexinhuang12345/DeepPurpose) - A DL Library for Drug Repurposing and so on.
+  - [DeepPurpose: a deep learning library for drug–target interaction prediction](https://academic.oup.com/bioinformatics/article/36/22-23/5545/6020256?login=false)
+- [DRKG](https://github.com/gnn4dr/DRKG) - A library for biological knowledge graph.
 
 ### Drug–Target Interaction (DTI)
 
-- MCPINN: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6617572/
-- TransformerCPI: https://github.com/lifanchen-simm/transformerCPI
-- NeoDTI: https://github.com/FangpingWan/NeoDTI
+- [NeoDTI](https://github.com/FangpingWan/NeoDTI) - A library for DTI.
+  - [NeoDTI: neural integration of neighbor information from a heterogeneous network for discovering new drug–target interactions](https://academic.oup.com/bioinformatics/article/35/1/104/5047760?login=false)
 
 ### Compound–Protein Interaction (CPI)
+
+- [MCPINN](https://github.com/mhlee0903/multi_channels_PINN) - A library for drug discovery using CPI and ML.
+  - [Multi-channel PINN: investigating scalable and transferable neural networks for drug discovery](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6617572/)
+- [TransformerCPI](https://github.com/lifanchen-simm/transformerCPI) - A library for CPI prediction using Transformer.
+  - [TransformerCPI: improving compound–protein interaction prediction by sequence-based deep learning with self-attention mechanism and label reversal experiments](https://academic.oup.com/bioinformatics/article/36/16/4406/5840724?login=false)
 
 ## Contribute
 
