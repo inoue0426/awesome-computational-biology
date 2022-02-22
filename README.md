@@ -38,7 +38,7 @@ A knowledge collection of databases, softwares and papers related to computation
 ### Protein
 - [PROTEIN DATA BANK](https://www.rcsb.org/) - A database of three dimensional structural data of proteins.
 - [UniProt](https://www.uniprot.org/) - A database of protein sequence.
-- [THE HUMAN PROTEIN ATLAS](https://www.proteinatlas.org/) - A database of
+- [THE HUMAN PROTEIN ATLAS](https://www.proteinatlas.org/) - A database of human proteins.
 ### Genome
 - [Human Genome Resources at NCBI](https://www.ncbi.nlm.nih.gov/projects/genome/guide/human/index.shtml) - A database of image, proteomics, transcriptomics and systems biology.
 - [GenBank](https://www.ncbi.nlm.nih.gov/genbank/) - A database of genetic sequence offered by NCBI.
@@ -49,7 +49,7 @@ A knowledge collection of databases, softwares and papers related to computation
 ### Interaction
 - Drug Gene Interaction
   - [DGIdb](https://www.dgidb.org/) - A database of drug-gene interactions and the druggable genome.
-  - [Comparative Toxicogenomics Database](http://ctdbase.org/) - A database of Chemical-gene interactions, Chemical-disease associations, Gene-disease associations, and Chemical-phenotype associations
+  - [Comparative Toxicogenomics Database](http://ctdbase.org/) - A database of Chemical-gene interactions, Chemical-disease associations, Gene-disease associations, and Chemical-phenotype associations.
 - Chemical Protein Interaction
   - [STITCH](http://stitch.embl.de/) - A database of Chemical Protein Interaction.
 
