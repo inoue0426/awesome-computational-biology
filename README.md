@@ -9,18 +9,18 @@ A knowledge collection of databases, softwares and papers related to computation
 ## Contents
 
 - [Databases](#databases)
-  - [Compound](#compound)
-  - [Pathway](#pathway)
-  - [Mass Spectra](#mass-spectra)
-  - [Protein](#protein)
-  - [Genome](#genome)
-  - [Disease](#disease)
-  - [Interaction](#interaction)
+    - [Compound](#compound)
+    - [Pathway](#pathway)
+    - [Mass Spectra](#mass-spectra)
+    - [Protein](#protein)
+    - [Genome](#genome)
+    - [Disease](#disease)
+    - [Interaction](#interaction)
 - [Preprocess](#preprocess)
 - [ML Tasks and Models](#ml-tasks-and-models)
-  - [Drug Repurposing](#drug-repurposing)
-  - [Drug Target Interaction](#drug-target-interaction)
-  - [Compound Protein Interaction](#compound-protein-interaction)
+    - [Drug Repurposing](#drug-repurposing)
+    - [Drug Target Interaction](#drug-target-interaction)
+    - [Compound Protein Interaction](#compound-protein-interaction)
 - [Contribute](#contribute)
 
 ## Databases
