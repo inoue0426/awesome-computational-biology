@@ -25,13 +25,17 @@ A knowledge collection of databases, softwares and papers related to computation
 
 ## Databases
 ### Compound
-- [PubChem](https://pubchem.ncbi.nlm.nih.gov/) - A database of chemical molcules maintained by NCBI.
-- [ChEMBL](https://www.ebi.ac.uk/chembl/) - A database of bioactive molcules maintained by EBI.
+- [PubChem](https://pubchem.ncbi.nlm.nih.gov/) - A database of chemical molecules maintained by NCBI.
+- [ChEBI](https://www.ebi.ac.uk/chebi/) - A database of chemical entities of biological interest, maintained by EBI.
+- [ChEMBL](https://www.ebi.ac.uk/chembl/) - A database of bioactive molecules maintained by EBI.
 - [ChemSpider](http://www.chemspider.com/) - A meta database of chemical owned by Royal Society of Chemistry.
 - [KEGG COMPOUND](https://www.genome.jp/kegg/compound/) - A database of genomes, biological pathways, diseases, drugs and chemical substances, offerd by Kyoto University.
+- [LIPID MAPS](https://www.lipidmaps.org/databases/lmsd/overview) - A database of lipids.
+- [Wikidata](https://scholia.toolforge.org/chemical/) - A general purpose database with >1M chemicals, maintained by the Wikimedia Foundation.
 ### Pathway
 - [PathwayCommon](https://www.pathwaycommons.org/) - A database of Pathways and Interactions maintained by University of Toronto, Dana-Farber Cancer Institute, Harvard Medical School, and Oregon Health & Science University.
 - [KEGG PATHWAY](https://www.genome.jp/kegg/pathway.html) - A database of genomes, biological pathways, diseases, drugs and chemical substances, offerd by Kyoto University.
+- [WikiPathways](https://wikipathways.org/) - A database of biological pathways, offered by Maastricht University and the Gladstone Institutes.
 ### Mass Spectra
 - [MoNA MassBank of North America](https://mona.fiehnlab.ucdavis.edu/) - A database of mass spectral maintained by UCDavis.
 - [MassBank](http://www.massbank.jp/) - A database of mass spectral developed by Leibniz Institute of Plant Biochemistry, the Helmholtz Centre for Environmental Research and the University of Luxembourg.
@@ -55,6 +59,7 @@ A knowledge collection of databases, softwares and papers related to computation
 
 ## Preprocess
 
+- [Chemistry Development Kit](https://github.com/cdk/cdk) - A software of cheminformatics and ML.
 - [RDKit](https://github.com/rdkit/rdkit) - A software of cheminformatics and ML.
 
 ## ML Tasks and Models
