@@ -11,7 +11,7 @@ project you agree to abide by its terms.
 - Search previous suggestions before making a new one, as yours may be a duplicate.
 - Add one link per pull request.
 - Add the link:
-  - [name](http://example.com/) - A short description ends with a period.
+  - `[name](http://example.com/)` - A short description ends with a period.
   - Keep descriptions concise.
   - Maintain alphabetical ordering where applicable.
 - Add a section if needed.
