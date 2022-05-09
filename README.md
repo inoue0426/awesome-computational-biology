@@ -6,7 +6,7 @@ A knowledge collection of databases, softwares and papers related to computation
 > mathematical modelling and computational simulation techniques to the study of biological, ecological,
 > behavioural, and social systems. - [Wikipedia](https://en.wikipedia.org/wiki/Computational_biology)
 
-## Contents
+## Index
 
 - [Databases](#databases)
   - [Compound](#compound)
