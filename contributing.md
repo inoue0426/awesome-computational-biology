@@ -16,7 +16,7 @@ project you agree to abide by its terms.
   - Maintain alphabetical ordering where applicable.
 - Add a section if needed.
   - Add the section description.
-  - Add the section title to the [Index](https://github.com/inoue0426/awesome-computational-biology#index).
+  - Add the section title to the [Index](https://github.com/inoue0426/awesome-computational-biology#Contents).
 - Check your spelling and grammar.
 - Remove any trailing whitespace.
 - Send a pull request with the reason why the addition is awesome.
