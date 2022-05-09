@@ -6,9 +6,7 @@ Please note that this project is released with a
 [Contributor Code of Conduct](code-of-conduct.md). By participating in this
 project you agree to abide by its terms.
 
----
-
-# Pull Requests
+## Pull Requests
 
 - Search previous suggestions before making a new one, as yours may be a duplicate.
 - Add one link per pull request.
@@ -25,7 +23,7 @@ project you agree to abide by its terms.
 - Use the following format for your pull request title:
   - Add user/repo - Short repo description
 
-# Updates to Existing Links or Sections
+## Updates to Existing Links or Sections
 
 - Improvements to the existing sections are welcome.
 - If you think a listed link is not awesome, feel free to submit an issue or pull request to begin the discussion.
