@@ -24,30 +24,29 @@ A knowledge collection of databases, software and papers related to computationa
 
 ## Databases
 ### Compound
-- [PubChem](https://pubchem.ncbi.nlm.nih.gov/) - A database of chemical molecules maintained by NCBI.
-- [ChEBI](https://www.ebi.ac.uk/chebi/) - A database of chemical entities of biological interest, maintained by EBI.
-- [ChEMBL](https://www.ebi.ac.uk/chembl/) - A database of bioactive molecules maintained by EBI.
-- [ChemSpider](http://www.chemspider.com/) - A meta database of chemical owned by Royal Society of Chemistry.
-- [KEGG COMPOUND](https://www.genome.jp/kegg/compound/) - A database of genomes, biological pathways, diseases, drugs and chemical substances, offerd by Kyoto University.
-- [LIPID MAPS](https://www.lipidmaps.org/databases/lmsd/overview) - A database of lipids.
-- [Wikidata](https://scholia.toolforge.org/chemical/) - A general purpose database with >1M chemicals, maintained by the Wikimedia Foundation.
+- [PubChem](https://pubchem.ncbi.nlm.nih.gov/) - One of the biggest chemical database such as compounds, genes and proteins.
+- [ChEBI](https://www.ebi.ac.uk/chebi/) - Chemical database  focused on small chemical compounds
+- [ChEMBL](https://www.ebi.ac.uk/chembl/) - Database of bioactive molecules with drug-like properties.
+- [ChemSpider](http://www.chemspider.com/) - Chemical structure database.
+- [KEGG COMPOUND](https://www.genome.jp/kegg/compound/) - Collection of small molecules and biopolymers.
+- [LIPID MAPS](https://www.lipidmaps.org/databases/lmsd/overview) - Database of lipids.
 ### Pathway
-- [PathwayCommon](https://www.pathwaycommons.org/) - A database of Pathways and Interactions maintained by University of Toronto, Dana-Farber Cancer Institute, Harvard Medical School, and Oregon Health & Science University.
-- [KEGG PATHWAY](https://www.genome.jp/kegg/pathway.html) - A database of genomes, biological pathways, diseases, drugs and chemical substances, offerd by Kyoto University.
-- [WikiPathways](https://wikipathways.org/) - A database of biological pathways, offered by Maastricht University and the Gladstone Institutes.
+- [PathwayCommon](https://www.pathwaycommons.org/) - Database of Pathways and Interactions.
+- [KEGG PATHWAY](https://www.genome.jp/kegg/pathway.html) - Collection fo drawn pathway maps.
+- [WikiPathways](https://wikipathways.org/) - Database of biological pathways.
 ### Mass Spectra
-- [MoNA MassBank of North America](https://mona.fiehnlab.ucdavis.edu/) - A database of mass spectral maintained by UCDavis.
-- [MassBank](http://www.massbank.jp/) - A database of mass spectral developed by Leibniz Institute of Plant Biochemistry, the Helmholtz Centre for Environmental Research and the University of Luxembourg.
+- [MassBank](http://www.massbank.jp/) - Open souce databases and tools for mass spectrometry reference spectra.
+- [MoNA MassBank of North America](https://mona.fiehnlab.ucdavis.edu/) - Meta database of metabolite mass spectra, metadata and associated compounds.
 ### Protein
-- [PROTEIN DATA BANK](https://www.rcsb.org/) - A database of three dimensional structural data of proteins.
-- [UniProt](https://www.uniprot.org/) - A database of protein sequence.
-- [THE HUMAN PROTEIN ATLAS](https://www.proteinatlas.org/) - A database of human proteins.
+- [THE HUMAN PROTEIN ATLAS](https://www.proteinatlas.org/) - One of the biggest human protein database contained cells, tissues, and organs. 
+- [PROTEIN DATA BANK](https://www.rcsb.org/) - Database of the 3D shapes of proteins, nucleic acids, and complex assemblies
+- [UniProt](https://www.uniprot.org/) - The collection of functional information on proteins.
 ### Genome
-- [Human Genome Resources at NCBI](https://www.ncbi.nlm.nih.gov/projects/genome/guide/human/index.shtml) - A database of image, proteomics, transcriptomics and systems biology.
-- [GenBank](https://www.ncbi.nlm.nih.gov/genbank/) - A database of genetic sequence offered by NCBI.
-- [UCSC Genome Browser](https://genome.ucsc.edu/) - A genome blowser offered by UCSC.
+- [Human Genome Resources at NCBI](https://www.ncbi.nlm.nih.gov/projects/genome/guide/human/index.shtml) - Database of image, proteomics, transcriptomics and systems biology.
+- [GenBank](https://www.ncbi.nlm.nih.gov/genbank/) - Database of genetic sequence offered by NCBI.
+- [UCSC Genome Browser](https://genome.ucsc.edu/) - Genome blowser offered by UCSC.
 ### Disease
-- [KEGG DRUG](https://www.genome.jp/kegg/drug/) - A database of genomes, biological pathways, diseases, drugs and chemical substances, offerd by Kyoto University.
+- [KEGG DRUG](https://www.genome.jp/kegg/drug/) - Comprehensive drug information resource for approved drugs.
 - [DrugBank](https://www.drugbank.com/) - A database of drug and target maintained by the University of Alberta.
 ### Interaction
 - Drug Gene Interaction
