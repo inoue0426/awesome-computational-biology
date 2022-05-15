@@ -1,6 +1,6 @@
 # Awesome Computational Biology [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-A knowledge collection of databases, softwares and papers related to computational biology.
+A knowledge collection of databases, software and papers related to computational biology.
 
 > Computational biology involves the development and application of data-analytical and theoretical methods,
 > mathematical modelling and computational simulation techniques to the study of biological, ecological,
