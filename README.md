@@ -21,7 +21,6 @@ A knowledge collection of databases, softwares and papers related to computation
   - [Drug Repurposing](#drug-repurposing)
   - [Drug Target Interaction](#drug-target-interaction)
   - [Compound Protein Interaction](#compound-protein-interaction)
-- [Contribute](#contribute)
 
 ## Databases
 ### Compound
