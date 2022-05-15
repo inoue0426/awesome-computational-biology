@@ -65,17 +65,17 @@ A knowledge collection of databases, software and papers related to computationa
 
 ### Drug Repurposing
 
-- [DeepPurpose](https://github.com/kexinhuang12345/DeepPurpose) - A DL Library for Drug Repurposing and so on. [paper](https://academic.oup.com/bioinformatics/article/36/22-23/5545/6020256?login=false)
+- [DeepPurpose](https://github.com/kexinhuang12345/DeepPurpose) - A DL Library for Drug Repurposing and so on. 
 - [DRKG](https://github.com/gnn4dr/DRKG) - A library for biological knowledge graph.
 
 ### Drug Target Interaction
 
-- [NeoDTI](https://github.com/FangpingWan/NeoDTI) - A library for Drug Target Interaction. [paper](https://academic.oup.com/bioinformatics/article/35/1/104/5047760?login=false)
+- [NeoDTI](https://github.com/FangpingWan/NeoDTI) - A library for Drug Target Interaction.
 
 ### Compound Protein Interaction
 
-- [MCPINN](https://github.com/mhlee0903/multi_channels_PINN) - A library for drug discovery using Compound Protein Interaction and Machine Learning. [paper](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6617572/)
-- [TransformerCPI](https://github.com/lifanchen-simm/transformerCPI) - A library for Compound Protein Interaction prediction using Transformer. [paper](https://academic.oup.com/bioinformatics/article/36/16/4406/5840724?login=false)
+- [MCPINN](https://github.com/mhlee0903/multi_channels_PINN) - A library for drug discovery using Compound Protein Interaction and Machine Learning.
+- [TransformerCPI](https://github.com/lifanchen-simm/transformerCPI) - A library for Compound Protein Interaction prediction using Transformer. 
 
 ## Contribute
 
