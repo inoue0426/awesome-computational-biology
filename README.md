@@ -17,7 +17,7 @@ A knowledge collection of databases, softwares and papers related to computation
   - [Disease](#disease)
   - [Interaction](#interaction)
 - [Preprocess](#preprocess)
-- [ML Tasks and Models](#ml-tasks-and-models)
+- [Machine Learning Tasks and Models](#Machine Learning-tasks-and-models)
   - [Drug Repurposing](#drug-repurposing)
   - [Drug Target Interaction](#drug-target-interaction)
   - [Compound Protein Interaction](#compound-protein-interaction)
@@ -58,10 +58,10 @@ A knowledge collection of databases, softwares and papers related to computation
 
 ## Preprocess
 
-- [Chemistry Development Kit](https://github.com/cdk/cdk) - A software of cheminformatics and ML.
-- [RDKit](https://github.com/rdkit/rdkit) - A software of cheminformatics and ML.
+- [Chemistry Development Kit](https://github.com/cdk/cdk) - A software of cheminformatics and Machine Learning.
+- [RDKit](https://github.com/rdkit/rdkit) - A software of cheminformatics and Machine Learning.
 
-## ML Tasks and Models
+## Machine Learning Tasks and Models
 
 ### Drug Repurposing
 
@@ -70,12 +70,12 @@ A knowledge collection of databases, softwares and papers related to computation
 
 ### Drug Target Interaction
 
-- [NeoDTI](https://github.com/FangpingWan/NeoDTI) - A library for DTI. [paper](https://academic.oup.com/bioinformatics/article/35/1/104/5047760?login=false)
+- [NeoDTI](https://github.com/FangpingWan/NeoDTI) - A library for Drug Target Interaction. [paper](https://academic.oup.com/bioinformatics/article/35/1/104/5047760?login=false)
 
 ### Compound Protein Interaction
 
-- [MCPINN](https://github.com/mhlee0903/multi_channels_PINN) - A library for drug discovery using CPI and ML. [paper](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6617572/)
-- [TransformerCPI](https://github.com/lifanchen-simm/transformerCPI) - A library for CPI prediction using Transformer. [paper](https://academic.oup.com/bioinformatics/article/36/16/4406/5840724?login=false)
+- [MCPINN](https://github.com/mhlee0903/multi_channels_PINN) - A library for drug discovery using Compound Protein Interaction and Machine Learning. [paper](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6617572/)
+- [TransformerCPI](https://github.com/lifanchen-simm/transformerCPI) - A library for Compound Protein Interaction prediction using Transformer. [paper](https://academic.oup.com/bioinformatics/article/36/16/4406/5840724?login=false)
 
 ## Contribute
 
