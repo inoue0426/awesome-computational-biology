@@ -75,7 +75,3 @@ A knowledge collection of databases, software and papers related to computationa
 
 - [MCPINN](https://github.com/mhlee0903/multi_channels_PINN) - A library for drug discovery using Compound Protein Interaction and Machine Learning.
 - [TransformerCPI](https://github.com/lifanchen-simm/transformerCPI) - A library for Compound Protein Interaction prediction using Transformer. 
-
-## Contribute
-
-Contributions welcome! Read the [contribution guidelines](contributing.md) first.
