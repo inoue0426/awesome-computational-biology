@@ -17,7 +17,7 @@ A knowledge collection of databases, software and papers related to computationa
   - [Disease](#disease)
   - [Interaction](#interaction)
 - [Preprocess](#preprocess)
-- [Machine Learning Tasks and Models](#Machine Learning-tasks-and-models)
+- [Machine Learning Tasks and Models](#machine-learning-tasks-and-models)
   - [Drug Repurposing](#drug-repurposing)
   - [Drug Target Interaction](#drug-target-interaction)
   - [Compound Protein Interaction](#compound-protein-interaction)
