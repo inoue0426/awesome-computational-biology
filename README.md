@@ -25,7 +25,7 @@ A knowledge collection of databases, software and papers related to computationa
 ## Databases
 ### Compound
 - [PubChem](https://pubchem.ncbi.nlm.nih.gov/) - One of the biggest chemical database such as compounds, genes and proteins.
-- [ChEBI](https://www.ebi.ac.uk/chebi/) - Chemical database  focused on small chemical compounds
+- [ChEBI](https://www.ebi.ac.uk/chebi/) - Chemical database  focused on small chemical compounds.
 - [ChEMBL](https://www.ebi.ac.uk/chembl/) - Database of bioactive molecules with drug-like properties.
 - [ChemSpider](http://www.chemspider.com/) - Chemical structure database.
 - [KEGG COMPOUND](https://www.genome.jp/kegg/compound/) - Collection of small molecules and biopolymers.
@@ -39,7 +39,7 @@ A knowledge collection of databases, software and papers related to computationa
 - [MoNA MassBank of North America](https://mona.fiehnlab.ucdavis.edu/) - Meta database of metabolite mass spectra, metadata and associated compounds.
 ### Protein
 - [THE HUMAN PROTEIN ATLAS](https://www.proteinatlas.org/) - One of the biggest human protein database contained cells, tissues, and organs. 
-- [PROTEIN DATA BANK](https://www.rcsb.org/) - Database of the 3D shapes of proteins, nucleic acids, and complex assemblies
+- [PROTEIN DATA BANK](https://www.rcsb.org/) - Database of the 3D shapes of proteins, nucleic acids, and complex assemblies.
 - [UniProt](https://www.uniprot.org/) - The collection of functional information on proteins.
 ### Genome
 - [Human Genome Resources at NCBI](https://www.ncbi.nlm.nih.gov/projects/genome/guide/human/index.shtml) - Database of image, proteomics, transcriptomics and systems biology.
