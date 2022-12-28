@@ -52,6 +52,7 @@ A knowledge collection of databases, software and papers related to computationa
 - Drug Gene Interaction
   - [DGIdb](https://www.dgidb.org/) - A database of drug-gene interactions and the druggable genome.
   - [Comparative Toxicogenomics Database](http://ctdbase.org/) - A database of Chemical-gene interactions, Chemical-disease associations, Gene-disease associations, and Chemical-phenotype associations.
+  - [SNAP](https://snap.stanford.edu/biodata/datasets/10002/10002-ChG-Miner.html#:~:text=Dataset%20information,or%20activation%20of%20the%20drug.) - A dataset which contains Drug-gene interactions. 
 - Chemical Protein Interaction
   - [STITCH](http://stitch.embl.de/) - A database of Chemical Protein Interaction.
 
