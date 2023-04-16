@@ -23,6 +23,8 @@ A knowledge collection of databases, software and papers related to computationa
   - [Compound Protein Interaction](#compound-protein-interaction)
 
 ## Databases
+### RNA Sequence
+- [Gene Expression Omnibus](https://www.ncbi.nlm.nih.gov/geo/) - Public functional genemics database.
 ### Compound
 - [PubChem](https://pubchem.ncbi.nlm.nih.gov/) - One of the biggest chemical database such as compounds, genes and proteins.
 - [ChEBI](https://www.ebi.ac.uk/chebi/) - Chemical database  focused on small chemical compounds.
