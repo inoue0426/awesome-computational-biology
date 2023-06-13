@@ -26,7 +26,7 @@ A knowledge collection of databases, software and papers related to computationa
 ### RNA Sequence
 - [Gene Expression Omnibus](https://www.ncbi.nlm.nih.gov/geo/) - Public functional genemics database.
 - [Single Cell PORTAL](https://singlecell.broadinstitute.org/single_cell) - Public database for single cell RNA.
-- [Single Cell Expression Atlas]([https://singlecell.broadinstitute.org/single_cell](https://www.ebi.ac.uk/gxa/sc/home)) - Public database for single cell RNA.
+- [Single Cell Expression Atlas](https://www.ebi.ac.uk/gxa/sc/home) - Public database for single cell RNA.
 ### Compound
 - [PubChem](https://pubchem.ncbi.nlm.nih.gov/) - One of the biggest chemical database such as compounds, genes and proteins.
 - [ChEBI](https://www.ebi.ac.uk/chebi/) - Chemical database  focused on small chemical compounds.
