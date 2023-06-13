@@ -68,6 +68,8 @@ A knowledge collection of databases, software and papers related to computationa
 
 - [Chemistry Development Kit](https://github.com/cdk/cdk) - A software of cheminformatics and Machine Learning.
 - [RDKit](https://github.com/rdkit/rdkit) - A software of cheminformatics and Machine Learning.
+- [Scanpy](https://scanpy.readthedocs.io/en/stable/) - scRNA analysis library in Python.
+- [Seurat](https://satijalab.org/seurat/) - scRNA analysis library in R.
 
 ## Machine Learning Tasks and Models
 
