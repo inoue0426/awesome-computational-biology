@@ -35,7 +35,7 @@ A knowledge collection of databases, software and papers related to computationa
 - [KEGG COMPOUND](https://www.genome.jp/kegg/compound/) - Collection of small molecules and biopolymers.
 - [LIPID MAPS](https://www.lipidmaps.org/databases/lmsd/overview) - Database of lipids.
 ### Pathway
-- [PathwayCommon](https://www.pathwaycommons.org/) - Database of Pathways and Interactions.
+- [PathwayCommons](https://www.pathwaycommons.org/) - Database of Pathways and Interactions.
 - [KEGG PATHWAY](https://www.genome.jp/kegg/pathway.html) - Collection fo drawn pathway maps.
 - [WikiPathways](https://wikipathways.org/) - Database of biological pathways.
 ### Mass Spectra
