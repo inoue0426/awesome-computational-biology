@@ -66,6 +66,7 @@ A knowledge collection of databases, software and papers related to computationa
   - [Cancer Cell Line Encyclopedia](https://sites.broadinstitute.org/ccle/) - A database of cancer cell lines. This has 1000 cell lines.
 - Chemical Protein Interaction
   - [STITCH](http://stitch.embl.de/) - A database of Chemical Protein Interaction.
+  - [BindingDB](https://www.bindingdb.org/rwd/bind/index.jsp) - A database of compounds and targes.
 
 ## Preprocess
 
