@@ -9,6 +9,7 @@ A knowledge collection of databases, software and papers related to computationa
 ## Contents
 
 - [Databases](#databases)
+  - [scRNA](#scrna)
   - [Compound](#compound)
   - [Pathway](#pathway)
   - [Mass Spectra](#mass-spectra)
@@ -34,9 +35,7 @@ A knowledge collection of databases, software and papers related to computationa
 - [ChemSpider](http://www.chemspider.com/) - Chemical structure database.
 - [KEGG COMPOUND](https://www.genome.jp/kegg/compound/) - Collection of small molecules and biopolymers.
 - [LIPID MAPS](https://www.lipidmaps.org/databases/lmsd/overview) - Database of lipids.
-### Metabolic Reaction
 - [Rhea](https://www.rhea-db.org/) - Database of chemical reactions.
-- 
 ### Pathway
 - [PathwayCommons](https://www.pathwaycommons.org/) - Database of Pathways and Interactions.
 - [KEGG PATHWAY](https://www.genome.jp/kegg/pathway.html) - Collection fo drawn pathway maps.
