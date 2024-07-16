@@ -78,6 +78,8 @@ A knowledge collection of databases, software and papers related to computationa
   - [STRING](https://string-db.org/) - Protein-Protein Interaction Networks for several organisms.
   - [BioGRID](https://thebiogrid.org/) - Database of Protein, Genetic and Chemical Interactions.
   - [HIPPIE](http://cbdm-01.zdv.uni-mainz.de/~mschaefer/hippie/) - Human Protein-Protein Interaction database.
+- Knowledge Graph
+  - [Drug Mechanism Database (DrugMechDB)](https://github.com/SuLab/DrugMechDB/tree/2.0.1): database of the mechanism of action from a drug to a disease.
  
 ## API
 - [PubMed esearch](https://www.nlm.nih.gov/dataguide/edirect/esearch.html): API for searching articles in PubMed.
