@@ -116,6 +116,9 @@ A knowledge collection of databases, software and papers related to computationa
 
 - [AI4Chem/ChemLLM-7B-Chat](https://huggingface.co/AI4Chem/ChemLLM-7B-Chat) - LLM for chemical and molecule science
 - [BioGPT](https://github.com/microsoft/BioGPT) - LLM for Biomedical text generation
+- [GeneGPT](https://github.com/ncbi/GeneGPT) - LLM for biomedical information with several API.
+- [GenePT](https://github.com/yiqunchen/GenePT) - foundation LLM for single cell data
+- 
 
 
 
