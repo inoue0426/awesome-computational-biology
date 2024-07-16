@@ -20,6 +20,7 @@ A knowledge collection of databases, software and papers related to computationa
 - [API](#api)
 - [Preprocess](#preprocess)
 - [Machine Learning Tasks and Models](#machine-learning-tasks-and-models)
+  - [Drug Response Prediction](#drug-response-prediction)
   - [Drug Repurposing](#drug-repurposing)
   - [Drug Target Interaction](#drug-target-interaction)
   - [Compound Protein Interaction](#compound-protein-interaction)
@@ -92,6 +93,10 @@ A knowledge collection of databases, software and papers related to computationa
 - [Seurat](https://satijalab.org/seurat/) - scRNA analysis library in R.
 
 ## Machine Learning Tasks and Models
+
+## Drug Response Prediction
+- [drGAT](https://github.com/inoue0426/drGAT): A model for drug response prediction with gene explainability with attention mechanism.
+- 
 
 ### Drug Repurposing
 
