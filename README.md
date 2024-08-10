@@ -80,6 +80,7 @@ A knowledge collection of databases, software and papers related to computationa
   - [HIPPIE](http://cbdm-01.zdv.uni-mainz.de/~mschaefer/hippie/) - Human Protein-Protein Interaction database.
 - Knowledge Graph
   - [Drug Mechanism Database (DrugMechDB)](https://github.com/SuLab/DrugMechDB/tree/2.0.1): database of the mechanism of action from a drug to a disease.
+  - [DRKG](https://github.com/gnn4dr/DRKG) - A library for biological knowledge graph.
  
 ## API
 - [PubMed esearch](https://www.nlm.nih.gov/dataguide/edirect/esearch.html): API for searching articles in PubMed.
@@ -95,12 +96,10 @@ A knowledge collection of databases, software and papers related to computationa
 
 ## Drug Response Prediction
 - [drGAT](https://github.com/inoue0426/drGAT): A model for drug response prediction with gene explainability with attention mechanism.
-- 
 
 ### Drug Repurposing
 
-- [DeepPurpose](https://github.com/kexinhuang12345/DeepPurpose) - A DL Library for Drug Repurposing and so on. 
-- [DRKG](https://github.com/gnn4dr/DRKG) - A library for biological knowledge graph.
+- [DeepPurpose](https://github.com/kexinhuang12345/DeepPurpose) - A DL Library for Drug Repurposing. 
 
 ### Drug Target Interaction
 
