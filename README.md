@@ -41,6 +41,7 @@ A knowledge collection of databases, software and papers related to computationa
 - [LIPID MAPS](https://www.lipidmaps.org/databases/lmsd/overview) - Database of lipids.
 - [Rhea](https://www.rhea-db.org/) - Database of chemical reactions.
 - [Drug Repurposing Hub](https://repo-hub.broadinstitute.org/repurposing#download-data) - Collections of drug repurposing data containing drug, moa, target etc.
+- [Therapeutic Target Database](https://idrblab.net/ttd/full-data-download) - collections of drug-target, target-disease, and drug-disease dataset.
 ### Pathway
 - [PathwayCommons](https://www.pathwaycommons.org/) - Database of Pathways and Interactions.
 - [KEGG PATHWAY](https://www.genome.jp/kegg/pathway.html) - Collection fo drawn pathway maps.
