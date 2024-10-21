@@ -7,6 +7,7 @@ A knowledge collection of databases, software and papers related to computationa
 > behavioural, and social systems. - [Wikipedia](https://en.wikipedia.org/wiki/Computational_biology)
 
 ## Contents
+
 - [Modalities](#modalities)
   - [Sequencing]()
   - [Imaging]()
@@ -38,6 +39,7 @@ A knowledge collection of databases, software and papers related to computationa
 - [Benchmark](#bench)
 - [Labs and Topics](#labs)
 - [Companies](#companies)
+- [Other topics](./awesomebiomecha.md)
 ## Table of Contents
 
 - [Package suites](#package-suites)
