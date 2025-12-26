@@ -115,6 +115,8 @@ A knowledge collection of databases, software and papers related to computationa
 - [RDKit](https://github.com/rdkit/rdkit) - A software of cheminformatics and Machine Learning.
 - [Scanpy](https://scanpy.readthedocs.io/en/stable/) - scRNA analysis library in Python.
 - [Seurat](https://satijalab.org/seurat/) - scRNA analysis library in R.
+- [FlashDeconv](https://github.com/cafferychen777/flashdeconv) - High-performance spatial transcriptomics deconvolution. Processes 1M spots in ~3 minutes.
+- [Squidpy](https://squidpy.readthedocs.io/) - Spatial single cell analysis library in Python.
 
 ## Machine Learning Tasks and Models
 
