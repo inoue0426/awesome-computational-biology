@@ -125,7 +125,7 @@ functions of genes, cells, and biochemical pathways in health and disease
 ### Allen Brain Atlas
 http://www.brain-map.org/  
 Data collection and an online public resources integrating extensive gene expression and neuroanatomical data for human and mouse,
-including variation of mosue gene expression by strain.  
+including variation of mouse gene expression by strain.  
 
 ### BrainCloud
 http://braincloud.jhmi.edu/  
