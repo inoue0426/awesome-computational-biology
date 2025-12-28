@@ -8,7 +8,7 @@ Data collection and a catalog of human variation
 
 ### dbSNP  
 http://www.ncbi.nlm.nih.gov/projects/SNP/  
-A catalog ofSNPs and short indels  
+A catalog of SNPs and short indels  
 
 ### dbVar and Database of Genomic Variants  
 http://www.ncbi.nlm.nih.gov/dbvar/  
