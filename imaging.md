@@ -191,4 +191,4 @@ budding cells from bright-field stacks.
 - [XitoSBML](https://github.com/spatialsimulator/XitoSBML) - ImageJ plugin which creates a Spatial SBML model from segmented images.
 - [Z-stack Depth Color Code](https://github.com/ekatrukha/ZstackDepthColorCode) - ImageJ/Fiji plugin to colorcode Z-stacks/hyperstacks.
 - [ZeroCostDL4Mic](https://github.com/HenriquesLab/ZeroCostDL4Mic) - Google Colab to develop a free and open-source toolbox for deep-Learning in microscopy.
-- [ZetaStitcher](https://github.com/lens-biophotonics/ZetaStitcher) - Tool designed to stitc
+- [ZetaStitcher](https://github.com/lens-biophotonics/ZetaStitcher) - Tool designed to stitch
