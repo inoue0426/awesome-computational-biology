@@ -113,6 +113,7 @@ A knowledge collection of databases, software and papers related to computationa
 
 - [Chemistry Development Kit](https://github.com/cdk/cdk) - A software of cheminformatics and Machine Learning.
 - [RDKit](https://github.com/rdkit/rdkit) - A software of cheminformatics and Machine Learning.
+- [ChatSpatial](https://github.com/cafferychen777/ChatSpatial) - MCP server enabling spatial transcriptomics analysis via natural language. Integrates 60+ methods including SpaGCN, Cell2location, LIANA+, CellRank for spatial domains, deconvolution, cell communication, and trajectory analysis.
 - [Scanpy](https://scanpy.readthedocs.io/en/stable/) - scRNA analysis library in Python.
 - [Seurat](https://satijalab.org/seurat/) - scRNA analysis library in R.
 
