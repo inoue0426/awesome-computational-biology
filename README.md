@@ -27,6 +27,7 @@ A knowledge collection of databases, software and papers related to computationa
   - [Compound Protein Interaction](#compound-protein-interaction)
   - [Pre-trained embedding](#pre-trained-embedding)
   - [LLM for biology](#llm-for-biology)
+  - [Foundation models](#foundation-models)
 
 ## Databases
 ### scRNA
@@ -154,5 +155,7 @@ A knowledge collection of databases, software and papers related to computationa
 - [GenePT](https://github.com/yiqunchen/GenePT) - foundation LLM for single cell data
 - [scPRINT](https://github.com/cantinilab/scPRINT) - scPRINT is pretrained on 50M cells to denoise and perform zero imputation of any single cell RNAseq profile.
 
-
-
+### Foundation models
+- [scFoundation](https://github.com/biomap-research/scFoundation) - A large-scale pretrained foundation model for single-cell gene expression data, enabling multiple downstream analysis tasks.
+- [scGPT](https://github.com/bowang-lab/scGPT) - A transformer-based foundation model pretrained on millions of single-cell profiles to support various single-cell analysis tasks.
+- [BulkFormer](https://github.com/KangBoming/BulkFormer) - A foundation model pretrained on large-scale bulk RNA-seq data to learn general transcriptomic representations for downstream analysis tasks.
