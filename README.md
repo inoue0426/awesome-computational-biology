@@ -58,7 +58,6 @@ A curated collection of databases, software, and papers related to computational
 - [ZINC ligand discovery database](https://zinc.docking.org/) — Free database of commercially-available compounds for virtual screening.
 - [MoleculeNet](http://moleculenet.ai/) — Benchmark datasets for molecular machine learning.
 
-
 ### Pathway
 
 - [PathwayCommons](https://www.pathwaycommons.org/) — Database of pathways and interactions.
