@@ -190,6 +190,11 @@ A curated collection of databases, software, and papers related to computational
 ### Drug Target Interaction
 
 - [NeoDTI](https://github.com/FangpingWan/NeoDTI) — Library for drug-target interaction prediction.
+- [DTINet](https://github.com/luoyunan/DTINet) — Network-based framework integrating heterogeneous biological data for DTI prediction.
+- [DeepDTA](https://github.com/hkmztrk/DeepDTA) — Deep learning model using CNNs on protein sequences and drug SMILES.
+- [GraphDTA](https://github.com/thinng/GraphDTA) — Graph neural network–based DTI prediction using molecular graphs.
+- [MolTrans](https://github.com/kexinhuang12345/MolTrans) — Transformer-based DTI model leveraging molecular substructures.
+- [DrugBAN](https://github.com/peizhenbai/DrugBAN) — Bilinear attention network for interpretable DTI prediction.
 
 ### Compound-Protein Interaction
 
