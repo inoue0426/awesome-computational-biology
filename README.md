@@ -57,8 +57,7 @@ A curated collection of databases, software, and papers related to computational
 - [Therapeutic Target Database](https://idrblab.net/ttd/full-data-download) — Drug-target, target-disease, and drug-disease datasets.
 - [ZINC ligand discovery database](https://zinc.docking.org/) — Free database of commercially-available compounds for virtual screening.
 - [MoleculeNet](http://moleculenet.ai/) — Benchmark datasets for molecular machine learning.
-- [Ames Mutagenicity dataset](https://www.sciencedirect.com/science/article/abs/pii/S0166354220302412) — Dataset for predicting mutagenicity.
-- [ADCdb](https://www.antibody-drug.com/) — Database for antibody-drug conjugates.
+
 
 ### Pathway
 
@@ -102,7 +101,7 @@ A curated collection of databases, software, and papers related to computational
 ### Disease
 
 - [KEGG DRUG](https://www.genome.jp/kegg/drug/) — Comprehensive, approved drug information.
-- [DrugBank](https://www.drugbank.com/) — Database of drugs and targets (University of Alberta).
+- [DrugBank](https://go.drugbank.com/) — Database of drugs and targets (University of Alberta).
 
 ### Interaction
 
@@ -124,7 +123,7 @@ A curated collection of databases, software, and papers related to computational
 
 - [STITCH](http://stitch.embl.de/) — Chemical-protein interactions.
 - [BindingDB](https://www.bindingdb.org/rwd/bind/index.jsp) — Compounds and target database.
-- [PDBBind](http://www.pdbbind.org.cn/) — Binding affinity data for biomolecular complexes.
+- [PDBBind](https://www.pdbbind-plus.org.cn/) — Binding affinity data for biomolecular complexes.
 - [CrossDocked2020](https://arxiv.org/abs/2001.01037) — Large-scale dataset for structure-based virtual screening.
 
 #### Protein-Protein Interaction
