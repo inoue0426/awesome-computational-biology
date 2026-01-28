@@ -37,7 +37,7 @@ jobs:
           echo "Running markdown-link-check..."
           # 設定ファイル .markdown-link-check.json をリポジトリに置くと細かく設定可能
           find . -name '*.md' -not -path './node_modules/*' -print0 | \
-          xargs -0 -I{} markdown-link-check {} -q
+          xargs -0 -I{} markdown-link-check {} -q -c .markdown-link-check.json
           
       - name: Run cspell (spellcheck)
         run: |
