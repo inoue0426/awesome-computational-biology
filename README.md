@@ -64,6 +64,10 @@ A curated collection of databases, software, and papers related to computational
 - [PathwayCommons](https://www.pathwaycommons.org/) — Database of pathways and interactions.
 - [KEGG PATHWAY](https://www.genome.jp/kegg/pathway.html) — Collection of pathway maps.
 - [WikiPathways](https://wikipathways.org/) — Database of biological pathways.
+- [Reactome](https://reactome.org/) — Expert-curated, peer-reviewed pathway database with detailed reaction mechanisms.
+- [BioCyc](https://biocyc.org/) — Collection of pathway/genome databases across thousands of organisms.
+- [SIGNOR](https://signor.uniroma2.it/) — Database of causal signaling interactions and pathways.
+- [MSigDB (Molecular Signatures Database)](https://www.gsea-msigdb.org/gsea/msigdb) — Curated gene sets derived from pathways and biological processes.
 
 ### Mass Spectra
 - [MassBank](http://www.massbank.jp/) — Open source databases and tools for mass spectrometry reference spectra.
