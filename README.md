@@ -134,7 +134,11 @@ A curated collection of databases, software, and papers related to computational
 #### Knowledge Graph
 
 - [Drug Mechanism Database (DrugMechDB)](https://github.com/SuLab/DrugMechDB/tree/2.0.1) — Mechanisms of action from drug to disease.
-- [DRKG](https://github.com/gnn4dr/DRKG) — Biological knowledge graph library.
+- [DRKG](https://github.com/gnn4dr/DRKG) — Large-scale biological knowledge graph for drug discovery.
+- [Hetionet](https://github.com/hetio/hetionet) — Heterogeneous network integrating genes, diseases, drugs, pathways, and more.
+- [OpenBioLink](https://github.com/OpenBioLink/OpenBioLink) — Benchmark datasets for biological knowledge graph completion.
+- [BioKG](https://github.com/dmis-lab/BioKG) — Large-scale biomedical knowledge graph for representation learning.
+- [PrimeKG](https://github.com/mims-harvard/PrimeKG) — Multi-modal precision medicine knowledge graph integrating clinical, genetic, and drug data.
 
 ### Clinical Trial
 
