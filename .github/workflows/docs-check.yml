@@ -1,0 +1,46 @@
+name: Docs / lint & link-check
+
+on:
+  push:
+    paths:
+      - '**/*.md'
+  pull_request:
+    paths:
+      - '**/*.md'
+  schedule:
+    - cron: '0 5 * * 1' # 毎週月曜 05:00 UTC にリンクチェック（必要に応じて調整）
+
+jobs:
+  docs-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Install tooling
+        run: |
+          npm install -g markdownlint-cli@0.33.0 markdown-link-check@3.8.7 cspell@6.30.1
+
+      - name: Run markdownlint
+        run: |
+          echo "Running markdownlint..."
+          # 設定ファイル .markdownlintrc があれば自動使用
+          markdownlint '**/*.md' --ignore node_modules
+
+      - name: Run markdown-link-check (strict)
+        run: |
+          echo "Running markdown-link-check..."
+          # 設定ファイル .markdown-link-check.json をリポジトリに置くと細かく設定可能
+          find . -name '*.md' -not -path './node_modules/*' -print0 | \
+            xargs -0 -n1 -I{} markdown-link-check {} -q
+
+      - name: Run cspell (spellcheck)
+        run: |
+          echo "Running cspell..."
+          # cspell.json で辞書や ignorePatterns を設定可能
+          cspell "**/*.md" --no-summary
