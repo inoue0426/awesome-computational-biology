@@ -8,39 +8,38 @@ A curated collection of databases, software, and papers related to computational
 
 ## Table of Contents
 
-- [Awesome Computational Biology ](#awesome-computational-biology-)
-  - [Table of Contents](#table-of-contents)
-  - [Databases](#databases)
-    - [scRNA](#scrna)
-    - [Compound](#compound)
-    - [Pathway](#pathway)
-    - [Mass Spectra](#mass-spectra)
-    - [Protein](#protein)
-    - [Genome](#genome)
-    - [Disease](#disease)
-    - [Interaction](#interaction)
-      - [Drug-Gene Interaction](#drug-gene-interaction)
-      - [Drug (Cell Line) Response](#drug-cell-line-response)
-      - [Chemical-Protein Interaction](#chemical-protein-interaction)
-      - [Protein-Protein Interaction](#protein-protein-interaction)
-      - [Knowledge Graph](#knowledge-graph)
-    - [Clinical Trial](#clinical-trial)
-  - [API](#api)
-  - [Preprocessing Tools](#preprocessing-tools)
-  - [Machine Learning Tasks and Models](#machine-learning-tasks-and-models)
-    - [Drug Response Prediction](#drug-response-prediction)
-    - [Drug Repurposing](#drug-repurposing)
-    - [Drug Target Interaction](#drug-target-interaction)
-    - [Compound-Protein Interaction](#compound-protein-interaction)
-    - [Pre-trained Embedding](#pre-trained-embedding)
-    - [LLM for Biology](#llm-for-biology)
-    - [Foundation Models](#foundation-models)
+- [Databases](#databases)
+  - [scRNA](#scrna)
+  - [Compound](#compound)
+  - [Pathway](#pathway)
+  - [Mass Spectra](#mass-spectra)
+  - [Protein](#protein)
+  - [Genome](#genome)
+  - [Disease](#disease)
+  - [Interaction](#interaction)
+    - [Drug-Gene Interaction](#drug-gene-interaction)
+    - [Drug (Cell Line) Response](#drug-cell-line-response)
+    - [Chemical-Protein Interaction](#chemical-protein-interaction)
+    - [Protein-Protein Interaction](#protein-protein-interaction)
+    - [Knowledge Graph](#knowledge-graph)
+  - [Clinical Trial](#clinical-trial)
+- [API](#api)
+- [Preprocessing Tools](#preprocessing-tools)
+- [Machine Learning Tasks and Models](#machine-learning-tasks-and-models)
+  - [Drug Response Prediction](#drug-response-prediction)
+  - [Drug Repurposing](#drug-repurposing)
+  - [Drug Target Interaction](#drug-target-interaction)
+  - [Compound-Protein Interaction](#compound-protein-interaction)
+  - [Pre-trained Embedding](#pre-trained-embedding)
+  - [LLM for Biology](#llm-for-biology)
+  - [Foundation Models](#foundation-models)
 
 ---
 
 ## Databases
 
 ### scRNA
+
 - [Gene Expression Omnibus](https://www.ncbi.nlm.nih.gov/geo/) — Public functional genomics database.
 - [Single Cell PORTAL](https://singlecell.broadinstitute.org/single_cell) — Public database for single-cell RNA.
 - [Single Cell Expression Atlas](https://www.ebi.ac.uk/gxa/sc/home) — Public database for single-cell RNA.
@@ -61,6 +60,7 @@ A curated collection of databases, software, and papers related to computational
 - [ADCdb](https://www.antibody-drug.com/) — Database for antibody-drug conjugates.
 
 ### Pathway
+
 - [PathwayCommons](https://www.pathwaycommons.org/) — Database of pathways and interactions.
 - [KEGG PATHWAY](https://www.genome.jp/kegg/pathway.html) — Collection of pathway maps.
 - [WikiPathways](https://wikipathways.org/) — Database of biological pathways.
@@ -70,10 +70,12 @@ A curated collection of databases, software, and papers related to computational
 - [MSigDB (Molecular Signatures Database)](https://www.gsea-msigdb.org/gsea/msigdb) — Curated gene sets derived from pathways and biological processes.
 
 ### Mass Spectra
+
 - [MassBank](http://www.massbank.jp/) — Open source databases and tools for mass spectrometry reference spectra.
 - [MoNA MassBank of North America](https://mona.fiehnlab.ucdavis.edu/) — Meta-database of metabolite mass spectra, metadata, and associated compounds.
 
 ### Protein
+
 - [THE HUMAN PROTEIN ATLAS](https://www.proteinatlas.org/) — Comprehensive human protein database (cells, tissues, organs).
 - [PROTEIN DATA BANK (PDB)](https://www.rcsb.org/) — 3D structures of proteins, nucleic acids, complexes.
 - [UniProt](https://www.uniprot.org/) — Functional information on proteins.
@@ -84,6 +86,7 @@ A curated collection of databases, software, and papers related to computational
 - [CATH database](https://www.cathdb.info/) — Hierarchical classification of protein domain structures.
 
 ### Genome
+
 - [Human Genome Resources at NCBI](https://www.ncbi.nlm.nih.gov/projects/genome/guide/human/index.shtml) — Database for genomics, proteomics, transcriptomics, and systems biology.
 - [GenBank](https://www.ncbi.nlm.nih.gov/genbank/) — NCBI's database of genetic sequences.
 - [UCSC Genome Browser](https://genome.ucsc.edu/) — UCSC's genome browser.
@@ -96,39 +99,46 @@ A curated collection of databases, software, and papers related to computational
 - [JASPAR](http://jaspar.genereg.net/) — Database of transcription factor binding profiles.
 
 ### Disease
+
 - [KEGG DRUG](https://www.genome.jp/kegg/drug/) — Comprehensive, approved drug information.
 - [DrugBank](https://www.drugbank.com/) — Database of drugs and targets (University of Alberta).
 
 ### Interaction
 
 #### Drug-Gene Interaction
+
 - [DGIdb](https://www.dgidb.org/) — Drug-gene interactions and the druggable genome.
 - [Comparative Toxicogenomics Database](http://ctdbase.org/) — Chemical-gene interactions, chemical-disease and gene-disease associations, chemical-phenotype associations.
 - [SNAP](https://snap.stanford.edu/biodata/datasets/10002/10002-ChG-Miner.html) — Dataset of drug-gene interactions.
 - [Therapeutics Data Commons](https://tdcommons.ai/) — Datasets for drug-target, response, drug-drug interaction, etc.
 
 #### Drug (Cell Line) Response
+
 - [NCI60](https://dtp.cancer.gov/discovery_development/nci-60/) — Focuses on 60 cancer cell lines and many drugs.
 - [Genomics of Drug Sensitivity in Cancer (GDSC)](https://www.cancerrxgene.org/) — Drug sensitivity for ~1000 human cancer cell lines and hundreds of compounds.
 - [Cancer Cell Line Encyclopedia](https://sites.broadinstitute.org/ccle/) — Database of ~1000 cancer cell lines.
 - [CellMiner Cross Database (CellMinerCDB)](https://discover.nci.nih.gov/cellminercdb/) — Integrates multiple cancer cell line databases.
 
 #### Chemical-Protein Interaction
+
 - [STITCH](http://stitch.embl.de/) — Chemical-protein interactions.
 - [BindingDB](https://www.bindingdb.org/rwd/bind/index.jsp) — Compounds and target database.
 - [PDBBind](http://www.pdbbind.org.cn/) — Binding affinity data for biomolecular complexes.
 - [CrossDocked2020](https://arxiv.org/abs/2001.01037) — Large-scale dataset for structure-based virtual screening.
 
 #### Protein-Protein Interaction
+
 - [STRING](https://string-db.org/) — PPI networks for multiple organisms.
 - [BioGRID](https://thebiogrid.org/) — Protein, genetic, and chemical interactions.
 - [HIPPIE](http://cbdm-01.zdv.uni-mainz.de/~mschaefer/hippie/) — Human protein-protein interaction database.
 
 #### Knowledge Graph
+
 - [Drug Mechanism Database (DrugMechDB)](https://github.com/SuLab/DrugMechDB/tree/2.0.1) — Mechanisms of action from drug to disease.
 - [DRKG](https://github.com/gnn4dr/DRKG) — Biological knowledge graph library.
 
 ### Clinical Trial
+
 - [ClinicalTrials.gov](https://clinicaltrials.gov/) — Privately and publicly funded clinical studies.
 - [ICD10](https://icd.who.int/browse10/2019/en) — International Classification of Diseases, 10th revision.
 - [EU Drug Regulating Authorities Clinical Trials DB (EudraCT)](https://eudract.ema.europa.eu/) — European clinical trial database.
@@ -164,6 +174,7 @@ A curated collection of databases, software, and papers related to computational
 ## Machine Learning Tasks and Models
 
 ### Drug Response Prediction
+
 - [drGAT](https://github.com/inoue0426/drGAT) — Attention-based model for drug response prediction with gene explainability.
 - [MOFGCN](https://github.com/weiba/MOFGCN/tree/main) — GCN + heterogeneous network.
 - [DeepDSC](https://ieeexplore-ieee-org.ezp2.lib.umn.edu/stamp/stamp.jsp?tp=&arnumber=8723620&tag=1) — Autoencoder + fully connected NN.
@@ -171,20 +182,25 @@ A curated collection of databases, software, and papers related to computational
 - [DeepAEG](https://github.com/zhejiangzhuque/DeepAEG) — GNN embedding + attention mechanism.
 
 ### Drug Repurposing
+
 - [DeepPurpose](https://github.com/kexinhuang12345/DeepPurpose) — Deep learning library for drug repurposing.
 
 ### Drug Target Interaction
+
 - [NeoDTI](https://github.com/FangpingWan/NeoDTI) — Library for drug-target interaction prediction.
 
 ### Compound-Protein Interaction
+
 - [MCPINN](https://github.com/mhlee0903/multi_channels_PINN) — Drug discovery via compound-protein interaction and machine learning.
 - [TransformerCPI](https://github.com/lifanchen-simm/transformerCPI) — CPI prediction using Transformer.
 
 ### Pre-trained Embedding
+
 - [Evolutionary Scale Modeling (ESM)](https://github.com/facebookresearch/esm) — Protein embeddings.
 - [ChemBERTa-2](https://github.com/seyonechithrananda/bert-loves-chemistry) — Chemical embeddings & prediction.
 
 ### LLM for Biology
+
 - [AI4Chem/ChemLLM-7B-Chat](https://huggingface.co/AI4Chem/ChemLLM-7B-Chat) — LLM for chemical & molecular science.
 - [BioGPT](https://github.com/microsoft/BioGPT) — LLM for biomedical text generation.
 - [GeneGPT](https://github.com/ncbi/GeneGPT) — LLM for biomedical information, integrated with various APIs.
@@ -192,6 +208,7 @@ A curated collection of databases, software, and papers related to computational
 - [scPRINT](https://github.com/cantinilab/scPRINT) — Pretrained on 50M cells for scRNA-seq denoising & zero imputation.
 
 ### Foundation Models
+
 - [scFoundation](https://github.com/biomap-research/scFoundation) — Large-scale foundation model for single-cell gene expression, enabling multiple downstream tasks.
 - [scGPT](https://github.com/bowang-lab/scGPT) — Transformer-based foundation model pretrained on millions of single-cell profiles.
 - [BulkFormer](https://github.com/KangBoming/BulkFormer) — Foundation model for bulk RNA-seq data; learns general transcriptomic representations.
