@@ -33,6 +33,7 @@ A curated collection of databases, software, and papers related to computational
   - [Pre-trained Embedding](#pre-trained-embedding)
   - [LLM for Biology](#llm-for-biology)
   - [Foundation Models](#foundation-models)
+- [Contributing](#contributing)
 
 ---
 
@@ -76,10 +77,9 @@ A curated collection of databases, software, and papers related to computational
 ### Protein
 
 - [THE HUMAN PROTEIN ATLAS](https://www.proteinatlas.org/) — Comprehensive human protein database (cells, tissues, organs).
-- [PROTEIN DATA BANK (PDB)](https://www.rcsb.org/) — 3D structures of proteins, nucleic acids, complexes.
+- [RCSB Protein Data Bank (PDB)](https://www.rcsb.org/) — Repository for 3D structures of proteins, nucleic acids, and complexes.
 - [UniProt](https://www.uniprot.org/) — Functional information on proteins.
-- [AlphaFold Protein Structure Database](https://alphafold.ebi.ac.uk/api-docs) — 3D protein structure predictions.
-- [RCSB Protein Data Bank](https://www.rcsb.org/) — Repository for structural data of biological molecules.
+- [AlphaFold Protein Structure Database](https://alphafold.ebi.ac.uk/) — 3D protein structure predictions.
 - [Critical Assessment of Structure Prediction (CASP)](https://predictioncenter.org/) — Assessing methods for protein structure prediction.
 - [Uniclust](https://uniclust.mmseqs.com/) — Clustered protein sequence databases.
 - [CATH database](https://www.cathdb.info/) — Hierarchical classification of protein domain structures.
@@ -221,3 +221,7 @@ A curated collection of databases, software, and papers related to computational
 - [BulkFormer](https://github.com/KangBoming/BulkFormer) — Foundation model for bulk RNA-seq data; learns general transcriptomic representations.
 
 ---
+
+## Contributing
+
+Contributions are welcome! Please read the [contribution guidelines](contributing.md) first.
