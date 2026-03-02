@@ -173,12 +173,16 @@ A curated collection of databases, software, and papers related to computational
 
 ## Benchmarks & Datasets
 
+- [BindingDB Curated Sets](https://www.bindingdb.org/rwd/bind/chemsearch/marvin/SDFdownload.jsp?all_download=yes) — Curated binding affinity datasets for protein–ligand interaction benchmarking.
+- [Cancer Therapeutics Response Portal (CTRP)](https://portals.broadinstitute.org/ctrp/) — Drug sensitivity profiles across ~900 cancer cell lines for >400 compounds.
 - [CrossDocked2020](https://arxiv.org/abs/2001.01037) — Large-scale dataset for structure-based virtual screening.
+- [Genomics of Drug Sensitivity in Cancer (GDSC)](https://www.cancerrxgene.org/) — Drug sensitivity for ~1000 human cancer cell lines and hundreds of compounds.
 - [GuacaMol](https://github.com/BenevolentAI/guacamol) — Benchmark suite for generative molecular design models.
 - [MoleculeNet](http://moleculenet.ai/) — Benchmark datasets for molecular machine learning.
 - [MOSES](https://github.com/molecularsets/moses) — Benchmarking platform for molecular generation models.
+- [NCI60](https://dtp.cancer.gov/discovery_development/nci-60/) — Drug sensitivity benchmark across 60 diverse human cancer cell lines.
 - [OpenBioLink](https://github.com/OpenBioLink/OpenBioLink) — Benchmark datasets for biological knowledge graph completion.
-- [Therapeutics Data Commons](https://tdcommons.ai/) — Datasets for drug-target, response, drug-drug interaction, etc.
+- [Therapeutics Data Commons (TDC)](https://tdcommons.ai/) — Unified benchmark suite covering ADMET, drug-target interaction, drug response, and more.
 
 ---
 
