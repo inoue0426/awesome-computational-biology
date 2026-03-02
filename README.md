@@ -25,6 +25,7 @@ A curated collection of databases, software, and papers related to computational
       - [Protein-Protein Interaction](#protein-protein-interaction)
       - [Knowledge Graph](#knowledge-graph)
     - [Clinical Trial](#clinical-trial)
+  - [Benchmarks & Datasets](#benchmarks--datasets)
   - [API](#api)
   - [Preprocessing Tools](#preprocessing-tools)
   - [Machine Learning Tasks and Models](#machine-learning-tasks-and-models)
@@ -70,7 +71,6 @@ A curated collection of databases, software, and papers related to computational
 - [Drug Repurposing Hub](https://repo-hub.broadinstitute.org/repurposing#download-data) — Collections of drug repurposing data (drug, MoA, target, etc).
 - [Therapeutic Target Database](https://idrblab.net/ttd/full-data-download) — Drug-target, target-disease, and drug-disease datasets.
 - [ZINC ligand discovery database](https://zinc.docking.org/) — Free database of commercially-available compounds for virtual screening.
-- [MoleculeNet](http://moleculenet.ai/) — Benchmark datasets for molecular machine learning.
 
 ### Pathway
 
@@ -131,7 +131,6 @@ A curated collection of databases, software, and papers related to computational
 - [DGIdb](https://www.dgidb.org/) — Drug-gene interactions and the druggable genome.
 - [Comparative Toxicogenomics Database](http://ctdbase.org/) — Chemical-gene interactions, chemical-disease and gene-disease associations, chemical-phenotype associations.
 - [SNAP](https://snap.stanford.edu/biodata/datasets/10002/10002-ChG-Miner.html) — Dataset of drug-gene interactions.
-- [Therapeutics Data Commons](https://tdcommons.ai/) — Datasets for drug-target, response, drug-drug interaction, etc.
 
 #### Drug (Cell Line) Response
 
@@ -145,7 +144,6 @@ A curated collection of databases, software, and papers related to computational
 - [STITCH](http://stitch.embl.de/) — Chemical-protein interactions.
 - [BindingDB](https://www.bindingdb.org/rwd/bind/index.jsp) — Compounds and target database.
 - [PDBBind](https://www.pdbbind-plus.org.cn/) — Binding affinity data for biomolecular complexes.
-- [CrossDocked2020](https://arxiv.org/abs/2001.01037) — Large-scale dataset for structure-based virtual screening.
 
 #### Protein-Protein Interaction
 
@@ -159,7 +157,6 @@ A curated collection of databases, software, and papers related to computational
 - [Drug Mechanism Database (DrugMechDB)](https://github.com/SuLab/DrugMechDB/tree/2.0.1) — Mechanisms of action from drug to disease.
 - [DRKG](https://github.com/gnn4dr/DRKG) — Large-scale biological knowledge graph for drug discovery.
 - [Hetionet](https://github.com/hetio/hetionet) — Heterogeneous network integrating genes, diseases, drugs, pathways, and more.
-- [OpenBioLink](https://github.com/OpenBioLink/OpenBioLink) — Benchmark datasets for biological knowledge graph completion.
 - [PrimeKG](https://github.com/mims-harvard/PrimeKG) — Multi-modal precision medicine knowledge graph integrating clinical, genetic, and drug data.
 
 ### Clinical Trial
@@ -168,6 +165,17 @@ A curated collection of databases, software, and papers related to computational
 - [ICD10](https://icd.who.int/browse10/2019/en) — International Classification of Diseases, 10th revision.
 - [EU Drug Regulating Authorities Clinical Trials DB (EudraCT)](https://eudract.ema.europa.eu/) — European clinical trial database.
 - [MIMIC-IV](https://mimic.mit.edu/) — Freely accessible critical care database.
+
+---
+
+## Benchmarks & Datasets
+
+- [CrossDocked2020](https://arxiv.org/abs/2001.01037) — Large-scale dataset for structure-based virtual screening.
+- [GuacaMol](https://github.com/BenevolentAI/guacamol) — Benchmark suite for generative molecular design models.
+- [MoleculeNet](http://moleculenet.ai/) — Benchmark datasets for molecular machine learning.
+- [MOSES](https://github.com/molecularsets/moses) — Benchmarking platform for molecular generation models.
+- [OpenBioLink](https://github.com/OpenBioLink/OpenBioLink) — Benchmark datasets for biological knowledge graph completion.
+- [Therapeutics Data Commons](https://tdcommons.ai/) — Datasets for drug-target, response, drug-drug interaction, etc.
 
 ---
 
@@ -236,8 +244,6 @@ A curated collection of databases, software, and papers related to computational
 - [REINVENT](https://github.com/MolecularAI/Reinvent) — Reinforcement learning for de novo drug design.
 - [MolGPT](https://github.com/devalab/molgpt) — Transformer-based model for molecular generation.
 - [Molecular Transformer](https://github.com/pschwllr/MolecularTransformer) — Sequence-to-sequence model for retrosynthesis prediction.
-- [GuacaMol](https://github.com/BenevolentAI/guacamol) — Benchmark suite for generative molecular design models.
-- [MOSES](https://github.com/molecularsets/moses) — Benchmarking platform for molecular generation models.
 - [TargetDiff](https://github.com/guanjq/targetdiff) — 3D equivariant diffusion model for structure-based drug design.
 
 ### Pre-trained Embedding
