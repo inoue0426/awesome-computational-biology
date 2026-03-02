@@ -29,21 +29,24 @@ A curated collection of databases, software, and papers related to computational
   - [API](#api)
   - [Preprocessing Tools](#preprocessing-tools)
   - [Machine Learning Tasks and Models](#machine-learning-tasks-and-models)
-    - [Drug Response Prediction](#drug-response-prediction)
-    - [Drug Repurposing](#drug-repurposing)
-    - [Drug Target Interaction](#drug-target-interaction)
-    - [Compound-Protein Interaction](#compound-protein-interaction)
-    - [Molecular Generation](#molecular-generation)
-    - [Pre-trained Embedding](#pre-trained-embedding)
+    - [Drug Discovery](#drug-discovery)
+      - [Drug Response Prediction](#drug-response-prediction)
+      - [Drug Repurposing](#drug-repurposing)
+      - [Drug Target Interaction](#drug-target-interaction)
+      - [Compound-Protein Interaction](#compound-protein-interaction)
+      - [Molecular Generation](#molecular-generation)
     - [LLM for Biology](#llm-for-biology)
     - [Foundation Models](#foundation-models)
-      - [Transcriptomics Foundation Models](#transcriptomics-foundation-models)
-      - [Spatial Foundation Models](#spatial-foundation-models)
+      - [Single-cell Foundation Models](#single-cell-foundation-models)
+        - [Transcriptomics Foundation Models](#transcriptomics-foundation-models)
+        - [Spatial Foundation Models](#spatial-foundation-models)
+        - [Multi-Omics Foundation Models](#multi-omics-foundation-models)
+        - [Domain Alignment](#domain-alignment)
+      - [Protein Foundation Models](#protein-foundation-models)
+        - [Pre-trained Embedding](#pre-trained-embedding)
+        - [Protein Structure Prediction and Design](#protein-structure-prediction-and-design)
       - [Multi-Modal Foundation Models](#multi-modal-foundation-models)
-      - [Domain Alignment](#domain-alignment)
-      - [Multi-Omics Foundation Models](#multi-omics-foundation-models)
-    - [Protein Structure Prediction and Design](#protein-structure-prediction-and-design)
-    - [Genomics Foundation Models](#genomics-foundation-models)
+      - [Genomics Foundation Models](#genomics-foundation-models)
 
 ---
 
@@ -213,7 +216,9 @@ A curated collection of databases, software, and papers related to computational
 
 ## Machine Learning Tasks and Models
 
-### Drug Response Prediction
+### Drug Discovery
+
+#### Drug Response Prediction
 
 - [drGAT](https://github.com/inoue0426/drGAT) — Attention-based model for drug response prediction with gene explainability.
 - [MOFGCN](https://github.com/weiba/MOFGCN/tree/main) — GCN + heterogeneous network.
@@ -221,11 +226,11 @@ A curated collection of databases, software, and papers related to computational
 - [DGDRP](https://github.com/minwoopak/heteronet) — Multi-view embedding neural network.
 - [DeepAEG](https://github.com/zhejiangzhuque/DeepAEG) — GNN embedding + attention mechanism.
 
-### Drug Repurposing
+#### Drug Repurposing
 
 - [DeepPurpose](https://github.com/kexinhuang12345/DeepPurpose) — Deep learning library for drug repurposing.
 
-### Drug Target Interaction
+#### Drug Target Interaction
 
 - [NeoDTI](https://github.com/FangpingWan/NeoDTI) — Library for drug-target interaction prediction.
 - [DTINet](https://github.com/luoyunan/DTINet) — Network-based framework integrating heterogeneous biological data for DTI prediction.
@@ -234,22 +239,17 @@ A curated collection of databases, software, and papers related to computational
 - [MolTrans](https://github.com/kexinhuang12345/MolTrans) — Transformer-based DTI model leveraging molecular substructures.
 - [DrugBAN](https://github.com/peizhenbai/DrugBAN) — Bilinear attention network for interpretable DTI prediction.
 
-### Compound-Protein Interaction
+#### Compound-Protein Interaction
 
 - [MCPINN](https://github.com/mhlee0903/multi_channels_PINN) — Drug discovery via compound-protein interaction and machine learning.
 - [TransformerCPI](https://github.com/lifanchen-simm/transformerCPI) — CPI prediction using Transformer.
 
-### Molecular Generation
+#### Molecular Generation
 
 - [REINVENT](https://github.com/MolecularAI/Reinvent) — Reinforcement learning for de novo drug design.
 - [MolGPT](https://github.com/devalab/molgpt) — Transformer-based model for molecular generation.
 - [Molecular Transformer](https://github.com/pschwllr/MolecularTransformer) — Sequence-to-sequence model for retrosynthesis prediction.
 - [TargetDiff](https://github.com/guanjq/targetdiff) — 3D equivariant diffusion model for structure-based drug design.
-
-### Pre-trained Embedding
-
-- [Evolutionary Scale Modeling (ESM)](https://github.com/facebookresearch/esm) — Protein embeddings.
-- [ChemBERTa-2](https://github.com/seyonechithrananda/bert-loves-chemistry) — Chemical embeddings & prediction.
 
 ### LLM for Biology
 
@@ -262,7 +262,9 @@ A curated collection of databases, software, and papers related to computational
 
 ### Foundation Models
 
-#### Transcriptomics Foundation Models
+#### Single-cell Foundation Models
+
+##### Transcriptomics Foundation Models
 
 - [scFoundation](https://github.com/biomap-research/scFoundation) — Large-scale foundation model for single-cell gene expression, enabling multiple downstream tasks.
 - [scGPT](https://github.com/bowang-lab/scGPT) — Transformer-based foundation model pretrained on millions of single-cell profiles.
@@ -271,24 +273,14 @@ A curated collection of databases, software, and papers related to computational
 - [scBERT](https://github.com/TencentAILabHealthcare/scBERT) — BERT-based foundation model pretrained on large-scale scRNA-seq data for cell type annotation.
 - [CellPLM](https://github.com/OmicsML/CellPLM) — Cell pre-trained language model with inter-cell transformer architecture for diverse single-cell analysis tasks.
 
-#### Spatial Foundation Models
+##### Spatial Foundation Models
 
 - [GigaPath](https://github.com/prov-gigapath/prov-gigapath) — Slide-level digital pathology foundation model pretrained on 1.3 billion pathology image tokens from whole-slide images.
 - [UNI](https://github.com/mahmoodlab/UNI) — General-purpose self-supervised pathology foundation model trained on 100K+ whole-slide images for diverse computational pathology tasks.
 - [CONCH](https://github.com/mahmoodlab/CONCH) — Vision-language foundation model for computational pathology trained with contrastive captioning on pathology image–text pairs.
 - [Phikon](https://huggingface.co/owkin/phikon) — ViT-based pathology foundation model pretrained with iBOT self-supervision on TCGA whole-slide images.
 
-#### Multi-Modal Foundation Models
-
-- [CHIEF](https://github.com/hms-dbmi/CHIEF) — Clinical Histopathology Imaging Evaluation Foundation model integrating histology images and clinical context for pan-cancer analysis.
-- [BiomedCLIP](https://huggingface.co/microsoft/BiomedCLIP-PubMedBERT_256-vit_g_14) — CLIP-based vision-language foundation model for biomedical images and text trained on PubMed figure–caption pairs.
-
-#### Domain Alignment
-
-- [scArches](https://github.com/theislab/scarches) — Transfer learning framework for mapping new single-cell datasets onto pre-trained reference atlases across batches, conditions, and modalities.
-- [TOSICA](https://github.com/JackieHanlaopo/TOSICA) — Transformer-based framework for one-stop interpretable cell-type annotation supporting cross-dataset and cross-species transfer.
-
-#### Multi-Omics Foundation Models
+##### Multi-Omics Foundation Models
 
 - [scMulan](https://github.com/SuperBianC/scMulan) — Single-cell multi-omic language model pretrained on ~10M cells spanning transcriptomics, epigenomics, and proteomics for cross-omics transfer tasks.
 - [totalVI](https://github.com/scverse/scvi-tools) — Probabilistic framework for joint analysis of paired scRNA-seq and protein (CITE-seq) data enabling multi-modal cell state representation across single-cell datasets.
@@ -303,7 +295,19 @@ A curated collection of databases, software, and papers related to computational
 - [SpatialGlue](https://github.com/zhanglabtools/SpatialGlue) — Graph attention network for spatial multi-omics integration jointly embedding spatial transcriptomics with chromatin accessibility or proteomics.
 - [MIDAS](https://github.com/labomics/midas) — Mosaic integration and differential accessibility model for single-cell multi-omics data that handles arbitrary missing-modality combinations across transcriptomics, chromatin accessibility, and proteomics.
 
-### Protein Structure Prediction and Design
+##### Domain Alignment
+
+- [scArches](https://github.com/theislab/scarches) — Transfer learning framework for mapping new single-cell datasets onto pre-trained reference atlases across batches, conditions, and modalities.
+- [TOSICA](https://github.com/JackieHanlaopo/TOSICA) — Transformer-based framework for one-stop interpretable cell-type annotation supporting cross-dataset and cross-species transfer.
+
+#### Protein Foundation Models
+
+##### Pre-trained Embedding
+
+- [Evolutionary Scale Modeling (ESM)](https://github.com/facebookresearch/esm) — Protein embeddings.
+- [ChemBERTa-2](https://github.com/seyonechithrananda/bert-loves-chemistry) — Chemical embeddings & prediction.
+
+##### Protein Structure Prediction and Design
 
 - [AlphaFold3](https://github.com/google-deepmind/alphafold3) — Predicts structures of proteins, nucleic acids, small molecules, and their complexes.
 - [Boltz-1](https://github.com/jwohlwend/boltz) — Open-source all-atom biomolecular structure prediction model for proteins, nucleic acids, small molecules, and their complexes achieving AlphaFold3-level accuracy.
@@ -315,7 +319,12 @@ A curated collection of databases, software, and papers related to computational
 - [OmegaFold](https://github.com/HeliXonProtein/OmegaFold) — High-resolution de novo protein structure prediction from sequence.
 - [RoseTTAFold](https://github.com/RosettaCommons/RoseTTAFold) — Three-track neural network for protein structure prediction.
 
-### Genomics Foundation Models
+#### Multi-Modal Foundation Models
+
+- [CHIEF](https://github.com/hms-dbmi/CHIEF) — Clinical Histopathology Imaging Evaluation Foundation model integrating histology images and clinical context for pan-cancer analysis.
+- [BiomedCLIP](https://huggingface.co/microsoft/BiomedCLIP-PubMedBERT_256-vit_g_14) — CLIP-based vision-language foundation model for biomedical images and text trained on PubMed figure–caption pairs.
+
+#### Genomics Foundation Models
 
 - [Nucleotide Transformer](https://github.com/instadeepai/nucleotide-transformer) — Foundation model for genomic sequences across multiple species.
 - [DNABERT](https://github.com/jerryji1993/DNABERT) — Pre-trained bidirectional encoder for DNA sequence analysis.
