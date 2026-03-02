@@ -1,0 +1,60 @@
+name: Sync Resources
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - README.md
+      - data/resources.yml
+      - scripts/*.py
+      - scripts/**/*.py
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup uv
+        uses: astral-sh/setup-uv@v3
+
+      - name: Detect Changed Files
+        id: changes
+        run: |
+          BEFORE="${{ github.event.before }}"
+          AFTER="${{ github.sha }}"
+          if [ -z "$BEFORE" ] || [ "$BEFORE" = "0000000000000000000000000000000000000000" ]; then
+            CHANGED=$(git diff --name-only HEAD~1..HEAD)
+          else
+            CHANGED=$(git diff --name-only "$BEFORE" "$AFTER")
+          fi
+          echo "changed<<EOF" >> "$GITHUB_OUTPUT"
+          echo "$CHANGED" >> "$GITHUB_OUTPUT"
+          echo "EOF" >> "$GITHUB_OUTPUT"
+
+      - name: Sync From README
+        if: contains(steps.changes.outputs.changed, 'README.md')
+        run: uv run python scripts/sync_resources_from_readme.py
+
+      - name: Build Artifacts
+        run: uv run --with pyyaml python scripts/build_resources.py
+
+      - name: Commit Updates
+        run: |
+          if git diff --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/resources.yml data/resources.json data/resources.csv docs/data/resources.json README.md
+          git commit -m "chore: sync resources"
+          git push
