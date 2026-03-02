@@ -213,6 +213,7 @@ A curated collection of databases, software, and papers related to computational
 - [GeneGPT](https://github.com/ncbi/GeneGPT) — LLM for biomedical information, integrated with various APIs.
 - [GenePT](https://github.com/yiqunchen/GenePT) — Foundation LLM for single-cell data.
 - [scPRINT](https://github.com/cantinilab/scPRINT) — Pretrained on 50M cells for scRNA-seq denoising & zero imputation.
+- [ClawBio](https://github.com/ClawBio/ClawBio) — Bioinformatics-native AI agent skill library with local-first pharmacogenomics, ancestry PCA, semantic similarity, nutrigenomics, and metagenomics skills.
 
 ### Foundation Models
 
