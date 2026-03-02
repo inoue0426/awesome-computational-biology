@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Awesome Computational Biology</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>🧬 Awesome Computational Biology</h1>
+    <p class="subtitle">A curated, searchable collection of databases, tools, models, and papers for computational biology.</p>
+  </header>
+
+  <main>
+    <section class="controls" aria-label="Search and filter controls">
+      <div class="search-row">
+        <input
+          type="search"
+          id="search"
+          placeholder="Search by name, description, or tags…"
+          aria-label="Search resources"
+          autocomplete="off"
+        />
+        <button id="clear-btn" type="button" aria-label="Clear all filters">Clear filters</button>
+      </div>
+
+      <div class="filter-row">
+        <label for="filter-task">Task</label>
+        <select id="filter-task" aria-label="Filter by task">
+          <option value="">All tasks</option>
+        </select>
+
+        <label for="filter-modality">Modality</label>
+        <select id="filter-modality" aria-label="Filter by modality">
+          <option value="">All modalities</option>
+        </select>
+
+        <label for="filter-type">Type</label>
+        <select id="filter-type" aria-label="Filter by type">
+          <option value="">All types</option>
+        </select>
+      </div>
+    </section>
+
+    <section class="status-bar" aria-live="polite">
+      <span id="result-count">Loading…</span>
+      <span id="load-time" class="load-time"></span>
+    </section>
+
+    <section id="results" aria-label="Resource results"></section>
+  </main>
+
+  <footer>
+    <p>
+      View on <a href="https://github.com/inoue0426/awesome-computational-biology" target="_blank" rel="noopener noreferrer">GitHub</a>
+      · Data from <code>data/resources.json</code>
+    </p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

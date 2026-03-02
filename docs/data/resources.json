@@ -1,0 +1,1533 @@
+[
+  {
+    "name": "CZ CELLxGENE",
+    "url": "https://cellxgene.cziscience.com/",
+    "description": "Single-cell dataset repository and interactive explorer from the Chan Zuckerberg Initiative.",
+    "type": "Database",
+    "tasks": ["Single-cell Analysis"],
+    "modalities": ["scRNA"],
+    "tags": ["single-cell", "repository", "explorer"]
+  },
+  {
+    "name": "Gene Expression Omnibus",
+    "url": "https://www.ncbi.nlm.nih.gov/geo/",
+    "description": "Public functional genomics database.",
+    "type": "Database",
+    "tasks": ["Single-cell Analysis", "Genomics"],
+    "modalities": ["scRNA", "Genomics"],
+    "tags": ["NCBI", "gene expression", "functional genomics"]
+  },
+  {
+    "name": "Human Cell Atlas",
+    "url": "https://www.humancellatlas.org/",
+    "description": "Open global atlas of all cells in the human body.",
+    "type": "Database",
+    "tasks": ["Single-cell Analysis"],
+    "modalities": ["scRNA"],
+    "tags": ["atlas", "human", "single-cell"]
+  },
+  {
+    "name": "Single Cell PORTAL",
+    "url": "https://singlecell.broadinstitute.org/single_cell",
+    "description": "Public database for single-cell RNA.",
+    "type": "Database",
+    "tasks": ["Single-cell Analysis"],
+    "modalities": ["scRNA"],
+    "tags": ["Broad Institute", "single-cell"]
+  },
+  {
+    "name": "Single Cell Expression Atlas",
+    "url": "https://www.ebi.ac.uk/gxa/sc/home",
+    "description": "Public database for single-cell RNA.",
+    "type": "Database",
+    "tasks": ["Single-cell Analysis"],
+    "modalities": ["scRNA"],
+    "tags": ["EBI", "gene expression", "atlas"]
+  },
+  {
+    "name": "PubChem",
+    "url": "https://pubchem.ncbi.nlm.nih.gov/",
+    "description": "One of the largest chemical databases (compounds, genes, and proteins).",
+    "type": "Database",
+    "tasks": ["Drug Discovery"],
+    "modalities": ["Small Molecule"],
+    "tags": ["NCBI", "compound", "chemical"]
+  },
+  {
+    "name": "ChEBI",
+    "url": "https://www.ebi.ac.uk/chebi/",
+    "description": "Database focused on small chemical compounds.",
+    "type": "Database",
+    "tasks": ["Drug Discovery"],
+    "modalities": ["Small Molecule"],
+    "tags": ["EBI", "compound", "chemical"]
+  },
+  {
+    "name": "ChEMBL",
+    "url": "https://www.ebi.ac.uk/chembl/",
+    "description": "Bioactive molecules with drug-like properties.",
+    "type": "Database",
+    "tasks": ["Drug Discovery"],
+    "modalities": ["Small Molecule"],
+    "tags": ["EBI", "bioactive", "drug-like", "compound"]
+  },
+  {
+    "name": "ChemSpider",
+    "url": "http://www.chemspider.com/",
+    "description": "Chemical structure database.",
+    "type": "Database",
+    "tasks": ["Drug Discovery"],
+    "modalities": ["Small Molecule"],
+    "tags": ["compound", "chemical structure"]
+  },
+  {
+    "name": "HMDB (Human Metabolome Database)",
+    "url": "https://hmdb.ca/",
+    "description": "Comprehensive database of small molecule metabolites found in the human body.",
+    "type": "Database",
+    "tasks": ["Drug Discovery"],
+    "modalities": ["Small Molecule"],
+    "tags": ["metabolomics", "metabolite", "human"]
+  },
+  {
+    "name": "KEGG COMPOUND",
+    "url": "https://www.genome.jp/kegg/compound/",
+    "description": "Collection of small molecules and biopolymers.",
+    "type": "Database",
+    "tasks": ["Drug Discovery", "Pathway Analysis"],
+    "modalities": ["Small Molecule"],
+    "tags": ["KEGG", "compound", "biopolymer"]
+  },
+  {
+    "name": "LIPID MAPS",
+    "url": "https://www.lipidmaps.org/databases/lmsd/overview",
+    "description": "Database of lipids.",
+    "type": "Database",
+    "tasks": ["Drug Discovery"],
+    "modalities": ["Small Molecule"],
+    "tags": ["lipid", "metabolomics"]
+  },
+  {
+    "name": "Rhea",
+    "url": "https://www.rhea-db.org/",
+    "description": "Database of chemical reactions.",
+    "type": "Database",
+    "tasks": ["Drug Discovery", "Pathway Analysis"],
+    "modalities": ["Small Molecule"],
+    "tags": ["reaction", "chemical", "biochemistry"]
+  },
+  {
+    "name": "DrugCentral",
+    "url": "http://drugcentral.org/",
+    "description": "Online drug compendium with drug mode of action and indication information.",
+    "type": "Database",
+    "tasks": ["Drug Discovery", "Drug Repurposing"],
+    "modalities": ["Small Molecule"],
+    "tags": ["drug", "mode of action", "indication"]
+  },
+  {
+    "name": "Drug Repurposing Hub",
+    "url": "https://repo-hub.broadinstitute.org/repurposing#download-data",
+    "description": "Collections of drug repurposing data (drug, MoA, target, etc).",
+    "type": "Database",
+    "tasks": ["Drug Repurposing"],
+    "modalities": ["Small Molecule"],
+    "tags": ["drug", "repurposing", "Broad Institute"]
+  },
+  {
+    "name": "Therapeutic Target Database",
+    "url": "https://idrblab.net/ttd/full-data-download",
+    "description": "Drug-target, target-disease, and drug-disease datasets.",
+    "type": "Database",
+    "tasks": ["Drug Discovery", "Drug Target Interaction"],
+    "modalities": ["Small Molecule", "Protein"],
+    "tags": ["drug", "target", "disease"]
+  },
+  {
+    "name": "ZINC ligand discovery database",
+    "url": "https://zinc.docking.org/",
+    "description": "Free database of commercially-available compounds for virtual screening.",
+    "type": "Database",
+    "tasks": ["Drug Discovery"],
+    "modalities": ["Small Molecule"],
+    "tags": ["virtual screening", "compound", "docking"]
+  },
+  {
+    "name": "PathwayCommons",
+    "url": "https://www.pathwaycommons.org/",
+    "description": "Database of pathways and interactions.",
+    "type": "Database",
+    "tasks": ["Pathway Analysis"],
+    "modalities": ["Pathway"],
+    "tags": ["pathway", "interaction", "biological network"]
+  },
+  {
+    "name": "KEGG PATHWAY",
+    "url": "https://www.genome.jp/kegg/pathway.html",
+    "description": "Collection of pathway maps.",
+    "type": "Database",
+    "tasks": ["Pathway Analysis"],
+    "modalities": ["Pathway"],
+    "tags": ["KEGG", "pathway", "metabolic"]
+  },
+  {
+    "name": "WikiPathways",
+    "url": "https://wikipathways.org/",
+    "description": "Database of biological pathways.",
+    "type": "Database",
+    "tasks": ["Pathway Analysis"],
+    "modalities": ["Pathway"],
+    "tags": ["pathway", "community", "biological"]
+  },
+  {
+    "name": "Reactome",
+    "url": "https://reactome.org/",
+    "description": "Expert-curated, peer-reviewed pathway database with detailed reaction mechanisms.",
+    "type": "Database",
+    "tasks": ["Pathway Analysis"],
+    "modalities": ["Pathway"],
+    "tags": ["pathway", "curated", "reaction mechanism"]
+  },
+  {
+    "name": "BioCyc",
+    "url": "https://biocyc.org/",
+    "description": "Collection of pathway/genome databases across thousands of organisms.",
+    "type": "Database",
+    "tasks": ["Pathway Analysis", "Genomics"],
+    "modalities": ["Pathway", "Genomics"],
+    "tags": ["pathway", "genome", "multi-organism"]
+  },
+  {
+    "name": "SIGNOR",
+    "url": "https://signor.uniroma2.it/",
+    "description": "Database of causal signaling interactions and pathways.",
+    "type": "Database",
+    "tasks": ["Pathway Analysis"],
+    "modalities": ["Pathway"],
+    "tags": ["signaling", "causal", "interaction"]
+  },
+  {
+    "name": "MSigDB (Molecular Signatures Database)",
+    "url": "https://www.gsea-msigdb.org/gsea/msigdb",
+    "description": "Curated gene sets derived from pathways and biological processes.",
+    "type": "Database",
+    "tasks": ["Pathway Analysis", "Genomics"],
+    "modalities": ["Genomics"],
+    "tags": ["gene sets", "GSEA", "biological processes"]
+  },
+  {
+    "name": "MassBank",
+    "url": "http://www.massbank.jp/",
+    "description": "Open source databases and tools for mass spectrometry reference spectra.",
+    "type": "Database",
+    "tasks": ["Mass Spectrometry"],
+    "modalities": ["Mass Spectra"],
+    "tags": ["mass spectrometry", "spectra", "reference"]
+  },
+  {
+    "name": "MoNA MassBank of North America",
+    "url": "https://mona.fiehnlab.ucdavis.edu/",
+    "description": "Meta-database of metabolite mass spectra, metadata, and associated compounds.",
+    "type": "Database",
+    "tasks": ["Mass Spectrometry"],
+    "modalities": ["Mass Spectra"],
+    "tags": ["mass spectrometry", "metabolite", "meta-database"]
+  },
+  {
+    "name": "THE HUMAN PROTEIN ATLAS",
+    "url": "https://www.proteinatlas.org/",
+    "description": "Comprehensive human protein database (cells, tissues, organs).",
+    "type": "Database",
+    "tasks": ["Proteomics"],
+    "modalities": ["Protein"],
+    "tags": ["atlas", "human", "protein expression"]
+  },
+  {
+    "name": "PROTEIN DATA BANK (PDB)",
+    "url": "https://www.rcsb.org/",
+    "description": "3D structures of proteins, nucleic acids, complexes.",
+    "type": "Database",
+    "tasks": ["Protein Structure Prediction"],
+    "modalities": ["Protein"],
+    "tags": ["structure", "3D", "protein", "nucleic acid"]
+  },
+  {
+    "name": "UniProt",
+    "url": "https://www.uniprot.org/",
+    "description": "Functional information on proteins.",
+    "type": "Database",
+    "tasks": ["Proteomics"],
+    "modalities": ["Protein"],
+    "tags": ["protein", "functional annotation", "sequence"]
+  },
+  {
+    "name": "AlphaFold Protein Structure Database",
+    "url": "https://alphafold.ebi.ac.uk/api-docs",
+    "description": "3D protein structure predictions.",
+    "type": "Database",
+    "tasks": ["Protein Structure Prediction"],
+    "modalities": ["Protein"],
+    "tags": ["AlphaFold", "structure", "prediction", "EBI"]
+  },
+  {
+    "name": "Critical Assessment of Structure Prediction (CASP)",
+    "url": "https://predictioncenter.org/",
+    "description": "Assessing methods for protein structure prediction.",
+    "type": "Benchmark",
+    "tasks": ["Protein Structure Prediction"],
+    "modalities": ["Protein"],
+    "tags": ["benchmark", "structure", "assessment"]
+  },
+  {
+    "name": "Uniclust",
+    "url": "https://uniclust.mmseqs.com/",
+    "description": "Clustered protein sequence databases.",
+    "type": "Database",
+    "tasks": ["Proteomics"],
+    "modalities": ["Protein"],
+    "tags": ["protein sequence", "clustering", "database"]
+  },
+  {
+    "name": "CATH database",
+    "url": "https://www.cathdb.info/",
+    "description": "Hierarchical classification of protein domain structures.",
+    "type": "Database",
+    "tasks": ["Protein Structure Prediction"],
+    "modalities": ["Protein"],
+    "tags": ["protein domain", "structure classification", "hierarchy"]
+  },
+  {
+    "name": "SAbDab",
+    "url": "https://opig.stats.ox.ac.uk/webapps/sabdab-sabpred/sabdab",
+    "description": "Structural Antibody Database containing all antibody structures in the PDB.",
+    "type": "Database",
+    "tasks": ["Protein Structure Prediction"],
+    "modalities": ["Protein"],
+    "tags": ["antibody", "structure", "immunology"]
+  },
+  {
+    "name": "OADB (Observed Antibody Space Database)",
+    "url": "http://opig.stats.ox.ac.uk/webapps/oas/",
+    "description": "Database of antibody sequences from immune repertoire sequencing.",
+    "type": "Database",
+    "tasks": ["Proteomics"],
+    "modalities": ["Protein"],
+    "tags": ["antibody", "sequence", "immunology", "repertoire"]
+  },
+  {
+    "name": "ENCODE",
+    "url": "https://www.encodeproject.org/",
+    "description": "Encyclopedia of DNA Elements; regulatory and functional genomic elements across the genome.",
+    "type": "Database",
+    "tasks": ["Genomics"],
+    "modalities": ["Genomics"],
+    "tags": ["DNA", "regulatory elements", "functional genomics"]
+  },
+  {
+    "name": "Ensembl",
+    "url": "https://www.ensembl.org/",
+    "description": "Genome browser and annotation database for vertebrate and other eukaryotic genomes.",
+    "type": "Database",
+    "tasks": ["Genomics"],
+    "modalities": ["Genomics"],
+    "tags": ["genome browser", "annotation", "eukaryotic"]
+  },
+  {
+    "name": "Human Genome Resources at NCBI",
+    "url": "https://www.ncbi.nlm.nih.gov/projects/genome/guide/human/index.shtml",
+    "description": "Database for genomics, proteomics, transcriptomics, and systems biology.",
+    "type": "Database",
+    "tasks": ["Genomics"],
+    "modalities": ["Genomics"],
+    "tags": ["NCBI", "human genome", "systems biology"]
+  },
+  {
+    "name": "GenBank",
+    "url": "https://www.ncbi.nlm.nih.gov/genbank/",
+    "description": "NCBI's database of genetic sequences.",
+    "type": "Database",
+    "tasks": ["Genomics"],
+    "modalities": ["Genomics"],
+    "tags": ["NCBI", "sequence", "genetic"]
+  },
+  {
+    "name": "UCSC Genome Browser",
+    "url": "https://genome.ucsc.edu/",
+    "description": "UCSC's genome browser.",
+    "type": "Database",
+    "tasks": ["Genomics"],
+    "modalities": ["Genomics"],
+    "tags": ["genome browser", "UCSC", "annotation"]
+  },
+  {
+    "name": "cBioPortal",
+    "url": "https://www.cbioportal.org/",
+    "description": "Cancer genomics database; aggregating many patient datasets.",
+    "type": "Database",
+    "tasks": ["Genomics", "Drug Discovery"],
+    "modalities": ["Genomics"],
+    "tags": ["cancer", "genomics", "patient data"]
+  },
+  {
+    "name": "10x Genomics Dataset",
+    "url": "https://www.10xgenomics.com/resources/datasets",
+    "description": "Collection of single-cell datasets.",
+    "type": "Dataset",
+    "tasks": ["Single-cell Analysis"],
+    "modalities": ["scRNA"],
+    "tags": ["single-cell", "10x Genomics", "dataset"]
+  },
+  {
+    "name": "The Genotype-Tissue Expression (GTEx)",
+    "url": "https://gtexportal.org/home/",
+    "description": "Human gene expression and regulation resource.",
+    "type": "Database",
+    "tasks": ["Genomics"],
+    "modalities": ["Genomics"],
+    "tags": ["gene expression", "tissue", "regulation", "human"]
+  },
+  {
+    "name": "Dependency Map (DepMap)",
+    "url": "https://depmap.org/portal/",
+    "description": "CRISPR-Cas9 screens in cancer cell lines.",
+    "type": "Database",
+    "tasks": ["Drug Discovery"],
+    "modalities": ["Genomics"],
+    "tags": ["CRISPR", "cancer", "cell line", "essentiality"]
+  },
+  {
+    "name": "Catalogue Of Somatic Mutations In Cancer (COSMIC)",
+    "url": "https://cancer.sanger.ac.uk/cosmic",
+    "description": "Resource on somatic mutations in cancers.",
+    "type": "Database",
+    "tasks": ["Genomics"],
+    "modalities": ["Genomics"],
+    "tags": ["cancer", "somatic mutation", "Sanger"]
+  },
+  {
+    "name": "MGnify",
+    "url": "https://www.ebi.ac.uk/metagenomics/",
+    "description": "Resource for metagenomic and metatranscriptomic data.",
+    "type": "Database",
+    "tasks": ["Genomics"],
+    "modalities": ["Genomics"],
+    "tags": ["metagenomics", "metatranscriptomics", "EBI"]
+  },
+  {
+    "name": "JASPAR",
+    "url": "http://jaspar.genereg.net/",
+    "description": "Database of transcription factor binding profiles.",
+    "type": "Database",
+    "tasks": ["Genomics"],
+    "modalities": ["Genomics"],
+    "tags": ["transcription factor", "binding", "regulatory"]
+  },
+  {
+    "name": "gnomAD",
+    "url": "https://gnomad.broadinstitute.org/",
+    "description": "Genome Aggregation Database; genetic variation from large-scale sequencing projects.",
+    "type": "Database",
+    "tasks": ["Genomics"],
+    "modalities": ["Genomics"],
+    "tags": ["genetic variation", "population genetics", "sequencing"]
+  },
+  {
+    "name": "Rfam",
+    "url": "https://rfam.org/",
+    "description": "Database of RNA families with sequence alignments and consensus structures.",
+    "type": "Database",
+    "tasks": ["Genomics"],
+    "modalities": ["Genomics"],
+    "tags": ["RNA", "family", "alignment", "structure"]
+  },
+  {
+    "name": "KEGG DRUG",
+    "url": "https://www.genome.jp/kegg/drug/",
+    "description": "Comprehensive, approved drug information.",
+    "type": "Database",
+    "tasks": ["Drug Discovery"],
+    "modalities": ["Small Molecule"],
+    "tags": ["KEGG", "drug", "approved"]
+  },
+  {
+    "name": "DrugBank",
+    "url": "https://go.drugbank.com/",
+    "description": "Database of drugs and targets (University of Alberta).",
+    "type": "Database",
+    "tasks": ["Drug Discovery", "Drug Target Interaction"],
+    "modalities": ["Small Molecule", "Protein"],
+    "tags": ["drug", "target", "pharmacology"]
+  },
+  {
+    "name": "DisGeNET",
+    "url": "https://www.disgenet.org/",
+    "description": "Database of gene-disease associations integrating expert-curated and GWAS data.",
+    "type": "Database",
+    "tasks": ["Genomics"],
+    "modalities": ["Genomics"],
+    "tags": ["gene-disease", "GWAS", "association"]
+  },
+  {
+    "name": "OMIM (Online Mendelian Inheritance in Man)",
+    "url": "https://www.omim.org/",
+    "description": "Comprehensive database of human genes and genetic disorders.",
+    "type": "Database",
+    "tasks": ["Genomics"],
+    "modalities": ["Genomics"],
+    "tags": ["genetic disorder", "Mendelian", "human gene"]
+  },
+  {
+    "name": "DGIdb",
+    "url": "https://www.dgidb.org/",
+    "description": "Drug-gene interactions and the druggable genome.",
+    "type": "Database",
+    "tasks": ["Drug Target Interaction"],
+    "modalities": ["Small Molecule", "Genomics"],
+    "tags": ["drug-gene", "interaction", "druggable genome"]
+  },
+  {
+    "name": "Comparative Toxicogenomics Database",
+    "url": "http://ctdbase.org/",
+    "description": "Chemical-gene interactions, chemical-disease and gene-disease associations, chemical-phenotype associations.",
+    "type": "Database",
+    "tasks": ["Drug Target Interaction"],
+    "modalities": ["Small Molecule", "Genomics"],
+    "tags": ["toxicogenomics", "chemical-gene", "disease association"]
+  },
+  {
+    "name": "SNAP",
+    "url": "https://snap.stanford.edu/biodata/datasets/10002/10002-ChG-Miner.html",
+    "description": "Dataset of drug-gene interactions.",
+    "type": "Dataset",
+    "tasks": ["Drug Target Interaction"],
+    "modalities": ["Small Molecule", "Genomics"],
+    "tags": ["drug-gene", "interaction", "Stanford"]
+  },
+  {
+    "name": "NCI60",
+    "url": "https://dtp.cancer.gov/discovery_development/nci-60/",
+    "description": "Focuses on 60 cancer cell lines and many drugs.",
+    "type": "Dataset",
+    "tasks": ["Drug Response Prediction"],
+    "modalities": ["Small Molecule"],
+    "tags": ["cancer cell line", "drug response", "NCI"]
+  },
+  {
+    "name": "Genomics of Drug Sensitivity in Cancer (GDSC)",
+    "url": "https://www.cancerrxgene.org/",
+    "description": "Drug sensitivity for ~1000 human cancer cell lines and hundreds of compounds.",
+    "type": "Dataset",
+    "tasks": ["Drug Response Prediction"],
+    "modalities": ["Small Molecule", "Genomics"],
+    "tags": ["cancer", "drug sensitivity", "cell line"]
+  },
+  {
+    "name": "Cancer Cell Line Encyclopedia",
+    "url": "https://sites.broadinstitute.org/ccle/",
+    "description": "Database of ~1000 cancer cell lines.",
+    "type": "Dataset",
+    "tasks": ["Drug Response Prediction"],
+    "modalities": ["Genomics"],
+    "tags": ["cancer", "cell line", "Broad Institute"]
+  },
+  {
+    "name": "CellMiner Cross Database (CellMinerCDB)",
+    "url": "https://discover.nci.nih.gov/cellminercdb/",
+    "description": "Integrates multiple cancer cell line databases.",
+    "type": "Database",
+    "tasks": ["Drug Response Prediction"],
+    "modalities": ["Genomics", "Small Molecule"],
+    "tags": ["cancer", "cell line", "integration", "NCI"]
+  },
+  {
+    "name": "STITCH",
+    "url": "http://stitch.embl.de/",
+    "description": "Chemical-protein interactions.",
+    "type": "Database",
+    "tasks": ["Compound-Protein Interaction"],
+    "modalities": ["Small Molecule", "Protein"],
+    "tags": ["chemical-protein", "interaction", "network"]
+  },
+  {
+    "name": "BindingDB",
+    "url": "https://www.bindingdb.org/rwd/bind/index.jsp",
+    "description": "Compounds and target database.",
+    "type": "Database",
+    "tasks": ["Compound-Protein Interaction", "Drug Target Interaction"],
+    "modalities": ["Small Molecule", "Protein"],
+    "tags": ["binding", "compound", "target", "affinity"]
+  },
+  {
+    "name": "PDBBind",
+    "url": "https://www.pdbbind-plus.org.cn/",
+    "description": "Binding affinity data for biomolecular complexes.",
+    "type": "Dataset",
+    "tasks": ["Compound-Protein Interaction"],
+    "modalities": ["Small Molecule", "Protein"],
+    "tags": ["binding affinity", "complex", "PDB"]
+  },
+  {
+    "name": "STRING",
+    "url": "https://string-db.org/",
+    "description": "PPI networks for multiple organisms.",
+    "type": "Database",
+    "tasks": ["Proteomics"],
+    "modalities": ["Protein"],
+    "tags": ["protein-protein interaction", "network", "multi-organism"]
+  },
+  {
+    "name": "BioGRID",
+    "url": "https://thebiogrid.org/",
+    "description": "Protein, genetic, and chemical interactions.",
+    "type": "Database",
+    "tasks": ["Proteomics"],
+    "modalities": ["Protein"],
+    "tags": ["protein-protein interaction", "genetic interaction", "network"]
+  },
+  {
+    "name": "HIPPIE",
+    "url": "http://cbdm-01.zdv.uni-mainz.de/~mschaefer/hippie/",
+    "description": "Human protein-protein interaction database.",
+    "type": "Database",
+    "tasks": ["Proteomics"],
+    "modalities": ["Protein"],
+    "tags": ["protein-protein interaction", "human", "network"]
+  },
+  {
+    "name": "IntAct",
+    "url": "https://www.ebi.ac.uk/intact/home",
+    "description": "Open-source molecular interaction database and analysis system from EMBL-EBI.",
+    "type": "Database",
+    "tasks": ["Proteomics"],
+    "modalities": ["Protein"],
+    "tags": ["molecular interaction", "EBI", "open-source"]
+  },
+  {
+    "name": "Drug Mechanism Database (DrugMechDB)",
+    "url": "https://github.com/SuLab/DrugMechDB/tree/2.0.1",
+    "description": "Mechanisms of action from drug to disease.",
+    "type": "Database",
+    "tasks": ["Drug Discovery"],
+    "modalities": ["Small Molecule"],
+    "tags": ["mechanism of action", "knowledge graph", "drug"]
+  },
+  {
+    "name": "DRKG",
+    "url": "https://github.com/gnn4dr/DRKG",
+    "description": "Large-scale biological knowledge graph for drug discovery.",
+    "type": "Dataset",
+    "tasks": ["Drug Discovery"],
+    "modalities": ["Multi-modal"],
+    "tags": ["knowledge graph", "drug discovery", "GNN"]
+  },
+  {
+    "name": "Hetionet",
+    "url": "https://github.com/hetio/hetionet",
+    "description": "Heterogeneous network integrating genes, diseases, drugs, pathways, and more.",
+    "type": "Dataset",
+    "tasks": ["Drug Repurposing"],
+    "modalities": ["Multi-modal"],
+    "tags": ["knowledge graph", "heterogeneous network", "drug repurposing"]
+  },
+  {
+    "name": "PrimeKG",
+    "url": "https://github.com/mims-harvard/PrimeKG",
+    "description": "Multi-modal precision medicine knowledge graph integrating clinical, genetic, and drug data.",
+    "type": "Dataset",
+    "tasks": ["Drug Discovery"],
+    "modalities": ["Multi-modal"],
+    "tags": ["knowledge graph", "precision medicine", "multi-modal"]
+  },
+  {
+    "name": "ClinicalTrials.gov",
+    "url": "https://clinicaltrials.gov/",
+    "description": "Privately and publicly funded clinical studies.",
+    "type": "Database",
+    "tasks": ["Clinical Trials"],
+    "modalities": ["Clinical"],
+    "tags": ["clinical trial", "study", "patient"]
+  },
+  {
+    "name": "ICD10",
+    "url": "https://icd.who.int/browse10/2019/en",
+    "description": "International Classification of Diseases, 10th revision.",
+    "type": "Database",
+    "tasks": ["Clinical Trials"],
+    "modalities": ["Clinical"],
+    "tags": ["ICD", "disease classification", "WHO"]
+  },
+  {
+    "name": "EU Drug Regulating Authorities Clinical Trials DB (EudraCT)",
+    "url": "https://eudract.ema.europa.eu/",
+    "description": "European clinical trial database.",
+    "type": "Database",
+    "tasks": ["Clinical Trials"],
+    "modalities": ["Clinical"],
+    "tags": ["clinical trial", "European", "EMA"]
+  },
+  {
+    "name": "MIMIC-IV",
+    "url": "https://mimic.mit.edu/",
+    "description": "Freely accessible critical care database.",
+    "type": "Dataset",
+    "tasks": ["Clinical Trials"],
+    "modalities": ["Clinical"],
+    "tags": ["EHR", "critical care", "ICU", "clinical"]
+  },
+  {
+    "name": "CrossDocked2020",
+    "url": "https://arxiv.org/abs/2001.01037",
+    "description": "Large-scale dataset for structure-based virtual screening.",
+    "type": "Benchmark",
+    "tasks": ["Drug Discovery"],
+    "modalities": ["Small Molecule", "Protein"],
+    "tags": ["virtual screening", "docking", "structure-based"],
+    "paper": "https://arxiv.org/abs/2001.01037"
+  },
+  {
+    "name": "GuacaMol",
+    "url": "https://github.com/BenevolentAI/guacamol",
+    "description": "Benchmark suite for generative molecular design models.",
+    "type": "Benchmark",
+    "tasks": ["Molecular Generation"],
+    "modalities": ["Small Molecule"],
+    "tags": ["benchmark", "molecular generation", "design"]
+  },
+  {
+    "name": "MoleculeNet",
+    "url": "http://moleculenet.ai/",
+    "description": "Benchmark datasets for molecular machine learning.",
+    "type": "Benchmark",
+    "tasks": ["Drug Discovery"],
+    "modalities": ["Small Molecule"],
+    "tags": ["benchmark", "molecular", "machine learning"]
+  },
+  {
+    "name": "MOSES",
+    "url": "https://github.com/molecularsets/moses",
+    "description": "Benchmarking platform for molecular generation models.",
+    "type": "Benchmark",
+    "tasks": ["Molecular Generation"],
+    "modalities": ["Small Molecule"],
+    "tags": ["benchmark", "molecular generation", "platform"]
+  },
+  {
+    "name": "OpenBioLink",
+    "url": "https://github.com/OpenBioLink/OpenBioLink",
+    "description": "Benchmark datasets for biological knowledge graph completion.",
+    "type": "Benchmark",
+    "tasks": ["Drug Discovery"],
+    "modalities": ["Multi-modal"],
+    "tags": ["benchmark", "knowledge graph", "link prediction"]
+  },
+  {
+    "name": "Therapeutics Data Commons",
+    "url": "https://tdcommons.ai/",
+    "description": "Datasets for drug-target, response, drug-drug interaction, etc.",
+    "type": "Benchmark",
+    "tasks": ["Drug Discovery", "Drug Response Prediction", "Drug Target Interaction"],
+    "modalities": ["Small Molecule", "Protein"],
+    "tags": ["benchmark", "therapeutics", "drug", "datasets"]
+  },
+  {
+    "name": "PubMed E-utilities (esearch/efetch)",
+    "url": "https://www.nlm.nih.gov/dataguide/edirect/esearch.html",
+    "description": "APIs for searching and retrieving biomedical literature from PubMed.",
+    "type": "API",
+    "tasks": ["NLP for Biology"],
+    "modalities": ["Text"],
+    "tags": ["PubMed", "literature", "search", "NLM"]
+  },
+  {
+    "name": "NCBI E-utilities",
+    "url": "https://www.ncbi.nlm.nih.gov/books/NBK25501/",
+    "description": "Unified APIs for accessing NCBI databases (Gene, GEO, SRA, PubChem, etc).",
+    "type": "API",
+    "tasks": ["Genomics"],
+    "modalities": ["Genomics"],
+    "tags": ["NCBI", "programmatic access", "database API"]
+  },
+  {
+    "name": "UniProt REST API",
+    "url": "https://www.uniprot.org/help/api",
+    "description": "Programmatic access to protein sequence and functional annotation data.",
+    "type": "API",
+    "tasks": ["Proteomics"],
+    "modalities": ["Protein"],
+    "tags": ["UniProt", "protein", "REST API"]
+  },
+  {
+    "name": "Ensembl REST API",
+    "url": "https://rest.ensembl.org/",
+    "description": "API for genomic annotations, variants, genes, and comparative genomics.",
+    "type": "API",
+    "tasks": ["Genomics"],
+    "modalities": ["Genomics"],
+    "tags": ["Ensembl", "genome", "variant", "annotation"]
+  },
+  {
+    "name": "KEGG REST API",
+    "url": "https://www.kegg.jp/kegg/rest/keggapi.html",
+    "description": "API for accessing KEGG pathways, compounds, genes, and reactions.",
+    "type": "API",
+    "tasks": ["Pathway Analysis"],
+    "modalities": ["Pathway"],
+    "tags": ["KEGG", "pathway", "compound", "REST API"]
+  },
+  {
+    "name": "ChEMBL Web Services",
+    "url": "https://www.ebi.ac.uk/chembl/ws",
+    "description": "REST API for bioactive molecules, targets, and bioassays.",
+    "type": "API",
+    "tasks": ["Drug Discovery"],
+    "modalities": ["Small Molecule"],
+    "tags": ["ChEMBL", "bioactive", "REST API", "EBI"]
+  },
+  {
+    "name": "Open Targets Platform API",
+    "url": "https://platform.opentargets.org/api",
+    "description": "API for target-disease associations integrating genetics, genomics, and drug data.",
+    "type": "API",
+    "tasks": ["Drug Target Interaction"],
+    "modalities": ["Multi-modal"],
+    "tags": ["target-disease", "genetics", "drug", "API"]
+  },
+  {
+    "name": "ClinicalTrials.gov API",
+    "url": "https://clinicaltrials.gov/api/gui",
+    "description": "API for querying clinical trial metadata and results.",
+    "type": "API",
+    "tasks": ["Clinical Trials"],
+    "modalities": ["Clinical"],
+    "tags": ["clinical trial", "API", "metadata"]
+  },
+  {
+    "name": "Chemistry Development Kit",
+    "url": "https://github.com/cdk/cdk",
+    "description": "Cheminformatics software & machine learning tools.",
+    "type": "Tool",
+    "tasks": ["Drug Discovery"],
+    "modalities": ["Small Molecule"],
+    "tags": ["cheminformatics", "Java", "open-source"]
+  },
+  {
+    "name": "Biopython",
+    "url": "https://biopython.org/",
+    "description": "Collection of Python tools for biological computation including sequence analysis, structure parsing, and database access.",
+    "type": "Tool",
+    "tasks": ["Genomics", "Proteomics"],
+    "modalities": ["Genomics", "Protein"],
+    "tags": ["Python", "bioinformatics", "sequence analysis"]
+  },
+  {
+    "name": "FlashDeconv",
+    "url": "https://github.com/cafferychen777/flashdeconv",
+    "description": "High-performance spatial transcriptomics deconvolution (~1M spots in ~3 min).",
+    "type": "Tool",
+    "tasks": ["Spatial Transcriptomics"],
+    "modalities": ["Spatial"],
+    "tags": ["deconvolution", "spatial transcriptomics", "high-performance"]
+  },
+  {
+    "name": "RDKit",
+    "url": "https://github.com/rdkit/rdkit",
+    "description": "Cheminformatics software & machine learning toolkit.",
+    "type": "Tool",
+    "tasks": ["Drug Discovery"],
+    "modalities": ["Small Molecule"],
+    "tags": ["cheminformatics", "Python", "C++", "open-source"]
+  },
+  {
+    "name": "DeepChem",
+    "url": "https://github.com/deepchem/deepchem",
+    "description": "Deep learning library for drug discovery, quantum chemistry, and materials science.",
+    "type": "Tool",
+    "tasks": ["Drug Discovery"],
+    "modalities": ["Small Molecule"],
+    "tags": ["deep learning", "drug discovery", "quantum chemistry", "Python"]
+  },
+  {
+    "name": "ChatSpatial",
+    "url": "https://github.com/cafferychen777/ChatSpatial",
+    "description": "MCP server for spatial transcriptomics analysis via natural language.",
+    "type": "Tool",
+    "tasks": ["Spatial Transcriptomics", "NLP for Biology"],
+    "modalities": ["Spatial"],
+    "tags": ["spatial transcriptomics", "LLM", "natural language", "MCP"]
+  },
+  {
+    "name": "Scanpy",
+    "url": "https://scanpy.readthedocs.io/en/stable/",
+    "description": "Python library for scRNA-seq analysis.",
+    "type": "Tool",
+    "tasks": ["Single-cell Analysis"],
+    "modalities": ["scRNA"],
+    "tags": ["Python", "scRNA-seq", "analysis"]
+  },
+  {
+    "name": "Seurat",
+    "url": "https://satijalab.org/seurat/",
+    "description": "R library for scRNA-seq analysis.",
+    "type": "Tool",
+    "tasks": ["Single-cell Analysis"],
+    "modalities": ["scRNA"],
+    "tags": ["R", "scRNA-seq", "analysis"]
+  },
+  {
+    "name": "scvi-tools",
+    "url": "https://scvi-tools.org/",
+    "description": "Probabilistic models for single-cell omics data analysis.",
+    "type": "Tool",
+    "tasks": ["Single-cell Analysis", "Multi-omics"],
+    "modalities": ["scRNA", "Multi-modal"],
+    "tags": ["variational inference", "probabilistic", "single-cell"]
+  },
+  {
+    "name": "CellTypist",
+    "url": "https://github.com/Teichlab/celltypist",
+    "description": "Automated cell type annotation for scRNA-seq.",
+    "type": "Tool",
+    "tasks": ["Single-cell Analysis"],
+    "modalities": ["scRNA"],
+    "tags": ["cell type", "annotation", "automated"]
+  },
+  {
+    "name": "Squidpy",
+    "url": "https://squidpy.readthedocs.io/",
+    "description": "Python library for spatial single-cell analysis.",
+    "type": "Tool",
+    "tasks": ["Spatial Transcriptomics"],
+    "modalities": ["Spatial"],
+    "tags": ["Python", "spatial", "single-cell"]
+  },
+  {
+    "name": "GROMACS",
+    "url": "https://www.gromacs.org/",
+    "description": "Molecular dynamics simulation package for biochemical molecules.",
+    "type": "Tool",
+    "tasks": ["Protein Structure Prediction"],
+    "modalities": ["Protein", "Small Molecule"],
+    "tags": ["molecular dynamics", "simulation", "MD"]
+  },
+  {
+    "name": "MDAnalysis",
+    "url": "https://www.mdanalysis.org/",
+    "description": "Python library for analyzing and altering molecular dynamics simulation trajectories.",
+    "type": "Tool",
+    "tasks": ["Protein Structure Prediction"],
+    "modalities": ["Protein", "Small Molecule"],
+    "tags": ["molecular dynamics", "Python", "trajectory analysis"]
+  },
+  {
+    "name": "OpenMM",
+    "url": "https://openmm.org/",
+    "description": "High-performance toolkit for molecular simulation and GPU-accelerated MD.",
+    "type": "Tool",
+    "tasks": ["Protein Structure Prediction"],
+    "modalities": ["Protein", "Small Molecule"],
+    "tags": ["molecular dynamics", "GPU", "simulation"]
+  },
+  {
+    "name": "drGAT",
+    "url": "https://github.com/inoue0426/drGAT",
+    "description": "Attention-based model for drug response prediction with gene explainability.",
+    "type": "Model",
+    "tasks": ["Drug Response Prediction"],
+    "modalities": ["Small Molecule", "Genomics"],
+    "tags": ["graph attention", "drug response", "explainability"]
+  },
+  {
+    "name": "MOFGCN",
+    "url": "https://github.com/weiba/MOFGCN/tree/main",
+    "description": "GCN + heterogeneous network for drug response prediction.",
+    "type": "Model",
+    "tasks": ["Drug Response Prediction"],
+    "modalities": ["Small Molecule", "Genomics"],
+    "tags": ["GCN", "heterogeneous network", "drug response"]
+  },
+  {
+    "name": "DGDRP",
+    "url": "https://github.com/minwoopak/heteronet",
+    "description": "Multi-view embedding neural network for drug response prediction.",
+    "type": "Model",
+    "tasks": ["Drug Response Prediction"],
+    "modalities": ["Small Molecule", "Genomics"],
+    "tags": ["multi-view", "neural network", "drug response"]
+  },
+  {
+    "name": "DeepPurpose",
+    "url": "https://github.com/kexinhuang12345/DeepPurpose",
+    "description": "Deep learning library for drug repurposing.",
+    "type": "Model",
+    "tasks": ["Drug Repurposing", "Drug Target Interaction"],
+    "modalities": ["Small Molecule", "Protein"],
+    "tags": ["deep learning", "drug repurposing", "Python"]
+  },
+  {
+    "name": "NeoDTI",
+    "url": "https://github.com/FangpingWan/NeoDTI",
+    "description": "Library for drug-target interaction prediction.",
+    "type": "Model",
+    "tasks": ["Drug Target Interaction"],
+    "modalities": ["Small Molecule", "Protein"],
+    "tags": ["drug-target interaction", "network", "deep learning"]
+  },
+  {
+    "name": "DTINet",
+    "url": "https://github.com/luoyunan/DTINet",
+    "description": "Network-based framework integrating heterogeneous biological data for DTI prediction.",
+    "type": "Model",
+    "tasks": ["Drug Target Interaction"],
+    "modalities": ["Small Molecule", "Protein"],
+    "tags": ["drug-target interaction", "network", "heterogeneous"]
+  },
+  {
+    "name": "DeepDTA",
+    "url": "https://github.com/hkmztrk/DeepDTA",
+    "description": "Deep learning model using CNNs on protein sequences and drug SMILES.",
+    "type": "Model",
+    "tasks": ["Drug Target Interaction"],
+    "modalities": ["Small Molecule", "Protein"],
+    "tags": ["CNN", "SMILES", "drug-target", "deep learning"]
+  },
+  {
+    "name": "GraphDTA",
+    "url": "https://github.com/thinng/GraphDTA",
+    "description": "Graph neural network-based DTI prediction using molecular graphs.",
+    "type": "Model",
+    "tasks": ["Drug Target Interaction"],
+    "modalities": ["Small Molecule", "Protein"],
+    "tags": ["GNN", "graph", "drug-target affinity"]
+  },
+  {
+    "name": "MolTrans",
+    "url": "https://github.com/kexinhuang12345/MolTrans",
+    "description": "Transformer-based DTI model leveraging molecular substructures.",
+    "type": "Model",
+    "tasks": ["Drug Target Interaction"],
+    "modalities": ["Small Molecule", "Protein"],
+    "tags": ["transformer", "drug-target", "substructure"]
+  },
+  {
+    "name": "DrugBAN",
+    "url": "https://github.com/peizhenbai/DrugBAN",
+    "description": "Bilinear attention network for interpretable DTI prediction.",
+    "type": "Model",
+    "tasks": ["Drug Target Interaction"],
+    "modalities": ["Small Molecule", "Protein"],
+    "tags": ["bilinear attention", "interpretable", "drug-target"]
+  },
+  {
+    "name": "MCPINN",
+    "url": "https://github.com/mhlee0903/multi_channels_PINN",
+    "description": "Drug discovery via compound-protein interaction and machine learning.",
+    "type": "Model",
+    "tasks": ["Compound-Protein Interaction"],
+    "modalities": ["Small Molecule", "Protein"],
+    "tags": ["compound-protein", "interaction", "multi-channel"]
+  },
+  {
+    "name": "TransformerCPI",
+    "url": "https://github.com/lifanchen-simm/transformerCPI",
+    "description": "CPI prediction using Transformer.",
+    "type": "Model",
+    "tasks": ["Compound-Protein Interaction"],
+    "modalities": ["Small Molecule", "Protein"],
+    "tags": ["transformer", "compound-protein", "interaction"]
+  },
+  {
+    "name": "REINVENT",
+    "url": "https://github.com/MolecularAI/Reinvent",
+    "description": "Reinforcement learning for de novo drug design.",
+    "type": "Model",
+    "tasks": ["Molecular Generation"],
+    "modalities": ["Small Molecule"],
+    "tags": ["reinforcement learning", "de novo design", "drug design"]
+  },
+  {
+    "name": "MolGPT",
+    "url": "https://github.com/devalab/molgpt",
+    "description": "Transformer-based model for molecular generation.",
+    "type": "Model",
+    "tasks": ["Molecular Generation"],
+    "modalities": ["Small Molecule"],
+    "tags": ["GPT", "transformer", "molecular generation"]
+  },
+  {
+    "name": "Molecular Transformer",
+    "url": "https://github.com/pschwllr/MolecularTransformer",
+    "description": "Sequence-to-sequence model for retrosynthesis prediction.",
+    "type": "Model",
+    "tasks": ["Molecular Generation"],
+    "modalities": ["Small Molecule"],
+    "tags": ["transformer", "retrosynthesis", "seq2seq"]
+  },
+  {
+    "name": "TargetDiff",
+    "url": "https://github.com/guanjq/targetdiff",
+    "description": "3D equivariant diffusion model for structure-based drug design.",
+    "type": "Model",
+    "tasks": ["Molecular Generation", "Drug Discovery"],
+    "modalities": ["Small Molecule", "Protein"],
+    "tags": ["diffusion model", "3D", "equivariant", "drug design"]
+  },
+  {
+    "name": "AI4Chem/ChemLLM-7B-Chat",
+    "url": "https://huggingface.co/AI4Chem/ChemLLM-7B-Chat",
+    "description": "LLM for chemical & molecular science.",
+    "type": "Model",
+    "tasks": ["NLP for Biology"],
+    "modalities": ["Small Molecule", "Text"],
+    "tags": ["LLM", "chemistry", "language model"]
+  },
+  {
+    "name": "BioGPT",
+    "url": "https://github.com/microsoft/BioGPT",
+    "description": "LLM for biomedical text generation.",
+    "type": "Model",
+    "tasks": ["NLP for Biology"],
+    "modalities": ["Text"],
+    "tags": ["LLM", "biomedical", "text generation", "Microsoft"]
+  },
+  {
+    "name": "GeneGPT",
+    "url": "https://github.com/ncbi/GeneGPT",
+    "description": "LLM for biomedical information, integrated with various APIs.",
+    "type": "Model",
+    "tasks": ["NLP for Biology", "Genomics"],
+    "modalities": ["Text"],
+    "tags": ["LLM", "biomedical", "NCBI", "API integration"]
+  },
+  {
+    "name": "GenePT",
+    "url": "https://github.com/yiqunchen/GenePT",
+    "description": "Foundation LLM for single-cell data.",
+    "type": "Model",
+    "tasks": ["NLP for Biology", "Single-cell Analysis"],
+    "modalities": ["scRNA", "Text"],
+    "tags": ["LLM", "single-cell", "foundation model"]
+  },
+  {
+    "name": "scPRINT",
+    "url": "https://github.com/cantinilab/scPRINT",
+    "description": "Pretrained on 50M cells for scRNA-seq denoising & zero imputation.",
+    "type": "Model",
+    "tasks": ["Single-cell Analysis"],
+    "modalities": ["scRNA"],
+    "tags": ["foundation model", "denoising", "imputation", "single-cell"]
+  },
+  {
+    "name": "ClawBio",
+    "url": "https://github.com/ClawBio/ClawBio",
+    "description": "Bioinformatics-native AI agent skill library with local-first pharmacogenomics, ancestry PCA, semantic similarity, nutrigenomics, and metagenomics skills.",
+    "type": "Tool",
+    "tasks": ["NLP for Biology", "Genomics"],
+    "modalities": ["Genomics", "Text"],
+    "tags": ["AI agent", "bioinformatics", "pharmacogenomics", "metagenomics"]
+  },
+  {
+    "name": "scFoundation",
+    "url": "https://github.com/biomap-research/scFoundation",
+    "description": "Large-scale foundation model for single-cell gene expression, enabling multiple downstream tasks.",
+    "type": "Model",
+    "tasks": ["Single-cell Analysis"],
+    "modalities": ["scRNA"],
+    "tags": ["foundation model", "gene expression", "single-cell"]
+  },
+  {
+    "name": "scGPT",
+    "url": "https://github.com/bowang-lab/scGPT",
+    "description": "Transformer-based foundation model pretrained on millions of single-cell profiles.",
+    "type": "Model",
+    "tasks": ["Single-cell Analysis"],
+    "modalities": ["scRNA"],
+    "tags": ["GPT", "transformer", "foundation model", "single-cell"]
+  },
+  {
+    "name": "Geneformer",
+    "url": "https://huggingface.co/ctheodoris/Geneformer",
+    "description": "Context-aware, attention-based deep learning model pretrained on a large corpus of single-cell transcriptomes.",
+    "type": "Model",
+    "tasks": ["Single-cell Analysis"],
+    "modalities": ["scRNA"],
+    "tags": ["transformer", "attention", "foundation model", "single-cell"]
+  },
+  {
+    "name": "BulkFormer",
+    "url": "https://github.com/KangBoming/BulkFormer",
+    "description": "Foundation model for bulk RNA-seq data; learns general transcriptomic representations.",
+    "type": "Model",
+    "tasks": ["Genomics"],
+    "modalities": ["Genomics"],
+    "tags": ["transformer", "bulk RNA-seq", "foundation model"]
+  },
+  {
+    "name": "scBERT",
+    "url": "https://github.com/TencentAILabHealthcare/scBERT",
+    "description": "BERT-based foundation model pretrained on large-scale scRNA-seq data for cell type annotation.",
+    "type": "Model",
+    "tasks": ["Single-cell Analysis"],
+    "modalities": ["scRNA"],
+    "tags": ["BERT", "cell type annotation", "foundation model"]
+  },
+  {
+    "name": "CellPLM",
+    "url": "https://github.com/OmicsML/CellPLM",
+    "description": "Cell pre-trained language model with inter-cell transformer architecture for diverse single-cell analysis tasks.",
+    "type": "Model",
+    "tasks": ["Single-cell Analysis"],
+    "modalities": ["scRNA"],
+    "tags": ["language model", "transformer", "single-cell", "foundation model"]
+  },
+  {
+    "name": "GigaPath",
+    "url": "https://github.com/prov-gigapath/prov-gigapath",
+    "description": "Slide-level digital pathology foundation model pretrained on 1.3 billion pathology image tokens from whole-slide images.",
+    "type": "Model",
+    "tasks": ["Spatial Transcriptomics"],
+    "modalities": ["Spatial"],
+    "tags": ["pathology", "foundation model", "whole-slide image", "digital pathology"]
+  },
+  {
+    "name": "UNI",
+    "url": "https://github.com/mahmoodlab/UNI",
+    "description": "General-purpose self-supervised pathology foundation model trained on 100K+ whole-slide images.",
+    "type": "Model",
+    "tasks": ["Spatial Transcriptomics"],
+    "modalities": ["Spatial"],
+    "tags": ["pathology", "self-supervised", "foundation model", "whole-slide image"]
+  },
+  {
+    "name": "CONCH",
+    "url": "https://github.com/mahmoodlab/CONCH",
+    "description": "Vision-language foundation model for computational pathology trained with contrastive captioning.",
+    "type": "Model",
+    "tasks": ["Spatial Transcriptomics", "NLP for Biology"],
+    "modalities": ["Spatial", "Text"],
+    "tags": ["vision-language", "pathology", "contrastive learning"]
+  },
+  {
+    "name": "Phikon",
+    "url": "https://huggingface.co/owkin/phikon",
+    "description": "ViT-based pathology foundation model pretrained with iBOT self-supervision on TCGA whole-slide images.",
+    "type": "Model",
+    "tasks": ["Spatial Transcriptomics"],
+    "modalities": ["Spatial"],
+    "tags": ["ViT", "pathology", "self-supervised", "TCGA"]
+  },
+  {
+    "name": "scMulan",
+    "url": "https://github.com/SuperBianC/scMulan",
+    "description": "Single-cell multi-omic language model pretrained on ~10M cells spanning transcriptomics, epigenomics, and proteomics.",
+    "type": "Model",
+    "tasks": ["Multi-omics", "Single-cell Analysis"],
+    "modalities": ["Multi-modal", "scRNA"],
+    "tags": ["multi-omics", "language model", "single-cell", "foundation model"]
+  },
+  {
+    "name": "totalVI",
+    "url": "https://github.com/scverse/scvi-tools",
+    "description": "Probabilistic framework for joint analysis of paired scRNA-seq and protein (CITE-seq) data.",
+    "type": "Model",
+    "tasks": ["Multi-omics", "Single-cell Analysis"],
+    "modalities": ["Multi-modal", "scRNA"],
+    "tags": ["variational inference", "CITE-seq", "multi-omics"]
+  },
+  {
+    "name": "MultiVI",
+    "url": "https://github.com/scverse/scvi-tools",
+    "description": "Multi-modal variational autoencoder for integrating paired and unpaired single-cell RNA-seq and ATAC-seq.",
+    "type": "Model",
+    "tasks": ["Multi-omics", "Single-cell Analysis"],
+    "modalities": ["Multi-modal", "scRNA"],
+    "tags": ["VAE", "ATAC-seq", "scRNA-seq", "multi-omics"]
+  },
+  {
+    "name": "MIRA",
+    "url": "https://github.com/cistrome/MIRA",
+    "description": "Probabilistic multimodal topic model jointly modeling single-cell transcriptomics and chromatin accessibility.",
+    "type": "Model",
+    "tasks": ["Multi-omics"],
+    "modalities": ["Multi-modal"],
+    "tags": ["topic model", "chromatin", "multi-omics", "regulatory"]
+  },
+  {
+    "name": "GLUE",
+    "url": "https://github.com/gao-lab/GLUE",
+    "description": "Graph-Linked Unified Embedding framework for unpaired single-cell multi-omics data integration.",
+    "type": "Model",
+    "tasks": ["Multi-omics"],
+    "modalities": ["Multi-modal"],
+    "tags": ["graph", "multi-omics", "integration", "unpaired"]
+  },
+  {
+    "name": "BABEL",
+    "url": "https://github.com/wukevin/babel",
+    "description": "Cross-modality translation model enabling prediction between scRNA-seq and scATAC-seq profiles.",
+    "type": "Model",
+    "tasks": ["Multi-omics"],
+    "modalities": ["Multi-modal"],
+    "tags": ["cross-modality", "translation", "scATAC-seq", "scRNA-seq"]
+  },
+  {
+    "name": "Multigrate",
+    "url": "https://github.com/theislab/multigrate",
+    "description": "Asymmetric multi-omics variational autoencoder for integrating single-cell data across RNA, ATAC, and protein modalities.",
+    "type": "Model",
+    "tasks": ["Multi-omics"],
+    "modalities": ["Multi-modal"],
+    "tags": ["VAE", "multi-omics", "integration", "missing-modality"]
+  },
+  {
+    "name": "MOFA+",
+    "url": "https://github.com/bioFAM/MOFA2",
+    "description": "Multi-Omics Factor Analysis framework identifying shared axes of variation across bulk and single-cell datasets.",
+    "type": "Model",
+    "tasks": ["Multi-omics"],
+    "modalities": ["Multi-modal"],
+    "tags": ["factor analysis", "multi-omics", "dimensionality reduction"]
+  },
+  {
+    "name": "GeneCompass",
+    "url": "https://github.com/xCompass-AI/GeneCompass",
+    "description": "Large-scale foundation model integrating DNA regulatory sequences and single-cell transcriptomics from 120M+ cells.",
+    "type": "Model",
+    "tasks": ["Multi-omics", "Single-cell Analysis", "Genomics"],
+    "modalities": ["Multi-modal", "Genomics"],
+    "tags": ["foundation model", "DNA", "regulatory", "single-cell"]
+  },
+  {
+    "name": "UnitedNet",
+    "url": "https://github.com/LiuLab-Bioelectronics-Harvard/UnitedNet",
+    "description": "Interpretable multi-task deep neural network for single-cell multi-omics integration.",
+    "type": "Model",
+    "tasks": ["Multi-omics"],
+    "modalities": ["Multi-modal"],
+    "tags": ["multi-task", "interpretable", "neural network", "multi-omics"]
+  },
+  {
+    "name": "SpatialGlue",
+    "url": "https://github.com/zhanglabtools/SpatialGlue",
+    "description": "Graph attention network for spatial multi-omics integration jointly embedding spatial transcriptomics with chromatin accessibility or proteomics.",
+    "type": "Model",
+    "tasks": ["Spatial Transcriptomics", "Multi-omics"],
+    "modalities": ["Spatial", "Multi-modal"],
+    "tags": ["graph attention", "spatial", "multi-omics"]
+  },
+  {
+    "name": "MIDAS",
+    "url": "https://github.com/labomics/midas",
+    "description": "Mosaic integration and differential accessibility model for single-cell multi-omics data.",
+    "type": "Model",
+    "tasks": ["Multi-omics"],
+    "modalities": ["Multi-modal"],
+    "tags": ["mosaic integration", "accessibility", "multi-omics"]
+  },
+  {
+    "name": "scArches",
+    "url": "https://github.com/theislab/scarches",
+    "description": "Transfer learning framework for mapping new single-cell datasets onto pre-trained reference atlases.",
+    "type": "Model",
+    "tasks": ["Single-cell Analysis", "Multi-omics"],
+    "modalities": ["scRNA", "Multi-modal"],
+    "tags": ["transfer learning", "atlas", "reference mapping", "single-cell"]
+  },
+  {
+    "name": "TOSICA",
+    "url": "https://github.com/JackieHanlaopo/TOSICA",
+    "description": "Transformer-based framework for one-stop interpretable cell-type annotation supporting cross-dataset and cross-species transfer.",
+    "type": "Model",
+    "tasks": ["Single-cell Analysis"],
+    "modalities": ["scRNA"],
+    "tags": ["transformer", "cell type annotation", "interpretable", "transfer"]
+  },
+  {
+    "name": "Evolutionary Scale Modeling (ESM)",
+    "url": "https://github.com/facebookresearch/esm",
+    "description": "Protein embeddings and language models from Meta AI.",
+    "type": "Model",
+    "tasks": ["Proteomics"],
+    "modalities": ["Protein"],
+    "tags": ["protein language model", "embedding", "Meta AI"]
+  },
+  {
+    "name": "ChemBERTa-2",
+    "url": "https://github.com/seyonechithrananda/bert-loves-chemistry",
+    "description": "Chemical embeddings & prediction using BERT.",
+    "type": "Model",
+    "tasks": ["Drug Discovery"],
+    "modalities": ["Small Molecule"],
+    "tags": ["BERT", "chemical", "embedding"]
+  },
+  {
+    "name": "AlphaFold3",
+    "url": "https://github.com/google-deepmind/alphafold3",
+    "description": "Predicts structures of proteins, nucleic acids, small molecules, and their complexes.",
+    "type": "Model",
+    "tasks": ["Protein Structure Prediction"],
+    "modalities": ["Protein", "Small Molecule"],
+    "tags": ["structure prediction", "DeepMind", "protein", "nucleic acid"]
+  },
+  {
+    "name": "Boltz-1",
+    "url": "https://github.com/jwohlwend/boltz",
+    "description": "Open-source all-atom biomolecular structure prediction model for proteins, nucleic acids, small molecules, and their complexes.",
+    "type": "Model",
+    "tasks": ["Protein Structure Prediction"],
+    "modalities": ["Protein", "Small Molecule"],
+    "tags": ["structure prediction", "all-atom", "open-source"]
+  },
+  {
+    "name": "Chai-1",
+    "url": "https://github.com/chaidiscovery/chai-lab",
+    "description": "Unified molecular structure prediction model covering proteins, nucleic acids, small molecules, and complexes.",
+    "type": "Model",
+    "tasks": ["Protein Structure Prediction"],
+    "modalities": ["Protein", "Small Molecule"],
+    "tags": ["structure prediction", "unified", "molecular"]
+  },
+  {
+    "name": "ESM3",
+    "url": "https://github.com/evolutionaryscale/esm",
+    "description": "Multimodal protein language model that jointly reasons over sequence, structure, and function.",
+    "type": "Model",
+    "tasks": ["Protein Structure Prediction", "Proteomics"],
+    "modalities": ["Protein"],
+    "tags": ["protein language model", "multimodal", "generative"]
+  },
+  {
+    "name": "ESMFold",
+    "url": "https://github.com/facebookresearch/esm",
+    "description": "Fast protein structure prediction using language model embeddings.",
+    "type": "Model",
+    "tasks": ["Protein Structure Prediction"],
+    "modalities": ["Protein"],
+    "tags": ["structure prediction", "fast", "language model"]
+  },
+  {
+    "name": "RFdiffusion",
+    "url": "https://github.com/RosettaCommons/RFdiffusion",
+    "description": "Generative model for protein backbone design using diffusion.",
+    "type": "Model",
+    "tasks": ["Protein Structure Prediction"],
+    "modalities": ["Protein"],
+    "tags": ["diffusion model", "protein design", "generative"]
+  },
+  {
+    "name": "ProteinMPNN",
+    "url": "https://github.com/dauparas/ProteinMPNN",
+    "description": "Deep learning model for protein sequence design given backbone structure.",
+    "type": "Model",
+    "tasks": ["Protein Structure Prediction"],
+    "modalities": ["Protein"],
+    "tags": ["protein design", "sequence design", "message passing"]
+  },
+  {
+    "name": "OmegaFold",
+    "url": "https://github.com/HeliXonProtein/OmegaFold",
+    "description": "High-resolution de novo protein structure prediction from sequence.",
+    "type": "Model",
+    "tasks": ["Protein Structure Prediction"],
+    "modalities": ["Protein"],
+    "tags": ["structure prediction", "de novo", "high-resolution"]
+  },
+  {
+    "name": "RoseTTAFold",
+    "url": "https://github.com/RosettaCommons/RoseTTAFold",
+    "description": "Three-track neural network for protein structure prediction.",
+    "type": "Model",
+    "tasks": ["Protein Structure Prediction"],
+    "modalities": ["Protein"],
+    "tags": ["structure prediction", "three-track", "neural network"]
+  },
+  {
+    "name": "CHIEF",
+    "url": "https://github.com/hms-dbmi/CHIEF",
+    "description": "Clinical Histopathology Imaging Evaluation Foundation model integrating histology images and clinical context.",
+    "type": "Model",
+    "tasks": ["Spatial Transcriptomics"],
+    "modalities": ["Spatial", "Clinical"],
+    "tags": ["pathology", "foundation model", "pan-cancer", "histology"]
+  },
+  {
+    "name": "BiomedCLIP",
+    "url": "https://huggingface.co/microsoft/BiomedCLIP-PubMedBERT_256-vit_g_14",
+    "description": "CLIP-based vision-language foundation model for biomedical images and text.",
+    "type": "Model",
+    "tasks": ["NLP for Biology", "Spatial Transcriptomics"],
+    "modalities": ["Multi-modal", "Text"],
+    "tags": ["CLIP", "vision-language", "biomedical", "Microsoft"]
+  },
+  {
+    "name": "Nucleotide Transformer",
+    "url": "https://github.com/instadeepai/nucleotide-transformer",
+    "description": "Foundation model for genomic sequences across multiple species.",
+    "type": "Model",
+    "tasks": ["Genomics"],
+    "modalities": ["Genomics"],
+    "tags": ["transformer", "genomics", "foundation model", "DNA"]
+  },
+  {
+    "name": "DNABERT",
+    "url": "https://github.com/jerryji1993/DNABERT",
+    "description": "Pre-trained bidirectional encoder for DNA sequence analysis.",
+    "type": "Model",
+    "tasks": ["Genomics"],
+    "modalities": ["Genomics"],
+    "tags": ["BERT", "DNA", "sequence analysis", "pre-trained"]
+  },
+  {
+    "name": "DNABERT-2",
+    "url": "https://github.com/Zhihan1996/DNABERT_2",
+    "description": "Improved genome foundation model with efficient tokenization.",
+    "type": "Model",
+    "tasks": ["Genomics"],
+    "modalities": ["Genomics"],
+    "tags": ["BERT", "DNA", "tokenization", "foundation model"]
+  },
+  {
+    "name": "Enformer",
+    "url": "https://github.com/deepmind/deepmind-research/tree/master/enformer",
+    "description": "Transformer model predicting gene expression from DNA sequence.",
+    "type": "Model",
+    "tasks": ["Genomics"],
+    "modalities": ["Genomics"],
+    "tags": ["transformer", "gene expression", "DNA sequence", "DeepMind"]
+  },
+  {
+    "name": "Basenji",
+    "url": "https://github.com/calico/basenji",
+    "description": "Sequential regulatory activity prediction from DNA sequences.",
+    "type": "Model",
+    "tasks": ["Genomics"],
+    "modalities": ["Genomics"],
+    "tags": ["regulatory activity", "DNA", "prediction"]
+  },
+  {
+    "name": "Caduceus",
+    "url": "https://github.com/kuleshov-group/caduceus",
+    "description": "Bidirectional equivariant long-range DNA sequence model based on Mamba.",
+    "type": "Model",
+    "tasks": ["Genomics"],
+    "modalities": ["Genomics"],
+    "tags": ["Mamba", "bidirectional", "long-range", "DNA"]
+  },
+  {
+    "name": "Evo",
+    "url": "https://github.com/evo-design/evo",
+    "description": "Long-context genomic foundation model (up to 1M tokens).",
+    "type": "Model",
+    "tasks": ["Genomics"],
+    "modalities": ["Genomics"],
+    "tags": ["foundation model", "long-context", "genomics", "1M tokens"]
+  },
+  {
+    "name": "HyenaDNA",
+    "url": "https://github.com/HazyResearch/hyena-dna",
+    "description": "Long-range genomic foundation model handling sequences up to 1M tokens with sub-quadratic attention.",
+    "type": "Model",
+    "tasks": ["Genomics"],
+    "modalities": ["Genomics"],
+    "tags": ["Hyena", "long-range", "DNA", "foundation model"]
+  }
+]

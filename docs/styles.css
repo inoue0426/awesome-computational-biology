@@ -1,0 +1,259 @@
+/* ── Reset & base ─────────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg: #f8f9fa;
+  --surface: #ffffff;
+  --border: #dee2e6;
+  --primary: #2c7be5;
+  --primary-dark: #1a5cb5;
+  --text: #212529;
+  --muted: #6c757d;
+  --badge-bg: #e9ecef;
+  --badge-text: #495057;
+  --card-shadow: 0 1px 3px rgba(0,0,0,.08);
+  --radius: 6px;
+  --font: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+  font-family: var(--font);
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── Header ────────────────────────────────────────────────────── */
+header {
+  background: var(--primary);
+  color: #fff;
+  padding: 2rem 1.5rem 1.5rem;
+  text-align: center;
+}
+
+header h1 { font-size: 1.9rem; font-weight: 700; letter-spacing: -.5px; }
+header .subtitle { margin-top: .4rem; opacity: .88; font-size: .97rem; }
+
+/* ── Main layout ───────────────────────────────────────────────── */
+main {
+  flex: 1;
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 1.5rem 1rem 2rem;
+}
+
+/* ── Controls ──────────────────────────────────────────────────── */
+.controls {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1rem 1.25rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: .75rem;
+}
+
+.search-row {
+  display: flex;
+  gap: .5rem;
+  flex-wrap: wrap;
+}
+
+.search-row input[type="search"] {
+  flex: 1;
+  min-width: 200px;
+  padding: .5rem .75rem;
+  font-size: .97rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--bg);
+  color: var(--text);
+  outline: none;
+  transition: border-color .15s;
+}
+
+.search-row input[type="search"]:focus { border-color: var(--primary); }
+
+.filter-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: .5rem;
+}
+
+.filter-row label {
+  font-size: .85rem;
+  font-weight: 600;
+  color: var(--muted);
+}
+
+.filter-row select {
+  padding: .4rem .7rem;
+  font-size: .9rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--bg);
+  color: var(--text);
+  cursor: pointer;
+  outline: none;
+  transition: border-color .15s;
+}
+
+.filter-row select:focus { border-color: var(--primary); }
+
+/* ── Clear button ──────────────────────────────────────────────── */
+#clear-btn {
+  padding: .5rem 1rem;
+  font-size: .9rem;
+  font-weight: 600;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  color: var(--muted);
+  cursor: pointer;
+  transition: background .15s, color .15s;
+  white-space: nowrap;
+}
+
+#clear-btn:hover { background: var(--badge-bg); color: var(--text); }
+
+/* ── Status bar ────────────────────────────────────────────────── */
+.status-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: .85rem;
+  color: var(--muted);
+  margin-bottom: .75rem;
+  padding: 0 .25rem;
+}
+
+.load-time { font-style: italic; }
+
+/* ── Results grid ──────────────────────────────────────────────── */
+#results {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1rem;
+}
+
+/* ── Card ──────────────────────────────────────────────────────── */
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1rem 1.1rem;
+  box-shadow: var(--card-shadow);
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  transition: box-shadow .15s;
+}
+
+.card:hover { box-shadow: 0 3px 10px rgba(0,0,0,.12); }
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: .5rem;
+}
+
+.card-name {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--primary);
+  text-decoration: none;
+  line-height: 1.3;
+}
+
+.card-name:hover { color: var(--primary-dark); text-decoration: underline; }
+
+.card-type {
+  font-size: .72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .6px;
+  padding: .2rem .5rem;
+  border-radius: 999px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.type-database  { background: #d1e7dd; color: #0a3622; }
+.type-model     { background: #cfe2ff; color: #084298; }
+.type-tool      { background: #fff3cd; color: #664d03; }
+.type-api       { background: #f8d7da; color: #58151c; }
+.type-benchmark { background: #e2d9f3; color: #3d0a91; }
+.type-dataset   { background: #d3d3d3; color: #1c1c1c; }
+
+.card-description {
+  font-size: .88rem;
+  color: var(--text);
+  line-height: 1.5;
+}
+
+.card-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .3rem;
+}
+
+.badge {
+  display: inline-block;
+  font-size: .72rem;
+  padding: .15rem .45rem;
+  border-radius: 999px;
+  background: var(--badge-bg);
+  color: var(--badge-text);
+  font-weight: 500;
+}
+
+.badge-task     { background: #dbeafe; color: #1e3a5f; }
+.badge-modality { background: #dcfce7; color: #14532d; }
+.badge-tag      { background: var(--badge-bg); color: var(--badge-text); }
+
+.card-paper {
+  font-size: .82rem;
+  margin-top: auto;
+}
+
+.card-paper a {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.card-paper a:hover { text-decoration: underline; }
+
+/* ── Empty / error state ───────────────────────────────────────── */
+.empty-state {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 3rem 1rem;
+  color: var(--muted);
+  font-size: .97rem;
+}
+
+/* ── Footer ────────────────────────────────────────────────────── */
+footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: .82rem;
+  color: var(--muted);
+  border-top: 1px solid var(--border);
+  background: var(--surface);
+}
+
+footer a { color: var(--primary); }
+
+/* ── Responsive tweaks ─────────────────────────────────────────── */
+@media (max-width: 600px) {
+  header h1 { font-size: 1.4rem; }
+  #results { grid-template-columns: 1fr; }
+}
