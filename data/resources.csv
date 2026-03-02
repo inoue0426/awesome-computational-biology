@@ -1,3 +1,14 @@
+id,name,type,url,description,license,api,updated,tasks,modalities,tags,organism,paper
+cellxgene,CZ CELLxGENE,database,https://cellxgene.cziscience.com/,Single-cell dataset repository and interactive explorer from the Chan Zuckerberg Initiative.,,True,,,scRNA-seq,single-cell;explorer,human;mouse,
+geo,Gene Expression Omnibus,database,https://www.ncbi.nlm.nih.gov/geo/,Public functional genomics database.,,True,,,microarray;RNA-seq;scRNA-seq,genomics;expression,human;mouse;other,
+pubchem,PubChem,database,https://pubchem.ncbi.nlm.nih.gov/,"One of the largest chemical databases (compounds, genes, and proteins).",,True,,,compound,compound;chemistry,,
+chembl,ChEMBL,database,https://www.ebi.ac.uk/chembl/,Bioactive molecules with drug-like properties.,,True,,,compound,drug;compound;bioactivity,,
+uniprot,UniProt,database,https://www.uniprot.org/,Functional information on proteins.,,True,,,protein-sequence,protein;sequence,human;mouse;other,
+alphafold-db,AlphaFold Protein Structure Database,database,https://alphafold.ebi.ac.uk/,3D protein structure predictions powered by AlphaFold.,,True,,,protein-structure,protein;structure;deep-learning,,https://doi.org/10.1093/nar/gkab1061
+reactome,Reactome,database,https://reactome.org/,"Expert-curated, peer-reviewed pathway database with detailed reaction mechanisms.",,True,,,,pathway;curation,,
+encode,ENCODE,database,https://www.encodeproject.org/,Encyclopedia of DNA Elements; regulatory and functional genomic elements across the genome.,,True,,,ChIP-seq;ATAC-seq;RNA-seq,genomics;regulatory,human;mouse,
+depmap,Dependency Map (DepMap),database,https://depmap.org/portal/,CRISPR-Cas9 screens in cancer cell lines.,,False,,,CRISPR-screen;expression,cancer;CRISPR;dependency,human,
+massbank,MassBank,database,http://www.massbank.jp/,Open source databases and tools for mass spectrometry reference spectra.,,False,,,mass-spectra,mass-spectrometry;metabolomics,,
 id,name,type,url,description,tags,tasks,modalities,organism,license,api,paper,updated
 chembl,ChEMBL,database,https://www.ebi.ac.uk/chembl/,"Manually curated database of bioactive molecules with drug-like properties, containing binding, functional, and ADMET data for millions of compounds.",drug|compound|bioactivity|target|ADMET,dti|drug_response|drug_repurposing,chemical|protein,human|multi,CC-BY-SA-3.0,True,doi:10.1093/nar/gkad1069,2024-01-01
 uniprot,UniProt,database,https://www.uniprot.org/,"Comprehensive, high-quality resource for protein sequence and functional annotation, combining Swiss-Prot (manually reviewed) and TrEMBL.",protein|sequence|annotation|function,structure|dti,protein,human|mouse|multi,CC-BY-4.0,True,doi:10.1093/nar/gkac1052,2024-01-24
