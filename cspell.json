@@ -63,7 +63,9 @@
     "TargetDiff",
     "Chai",
     "Zuckerberg",
-    "HMDB"
+    "HMDB",
+    "CTRP",
+    "ADMET"
   ],
   "ignorePaths": [
     "node_modules/**"
