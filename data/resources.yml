@@ -1,4 +1,4 @@
-# Awesome Computational Biology – machine-readable resource list
+# Awesome Computational Biology - machine-readable resource list
 # Fields
 #   id          : unique slug (required)
 #   name        : display name (required)
@@ -6,7 +6,7 @@
 #   url         : canonical URL (required)
 #   description : one-line description (required)
 #   license     : SPDX identifier or free-text (optional)
-#   api         : true | false – whether a programmatic API is available (default: false)
+#   api         : true | false - whether a programmatic API is available (default: false)
 #   updated     : last-known update date as string YYYY-MM-DD (optional)
 #   tasks       : list of ML/bio tasks (optional)
 #   modalities  : list of data modalities (optional)
