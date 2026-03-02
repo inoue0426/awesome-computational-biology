@@ -8,7 +8,7 @@ A curated collection of databases, software, and papers related to computational
 
 ## Table of Contents
 
-- [Awesome Computational Biology ](#awesome-computational-biology-)
+- [Awesome Computational Biology](#awesome-computational-biology-)
   - [Table of Contents](#table-of-contents)
   - [Databases](#databases)
     - [scRNA](#scrna)
