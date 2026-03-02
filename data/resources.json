@@ -34,6 +34,54 @@
       "microarray",
       "RNA-seq",
       "scRNA-seq"
+    "id": "chembl",
+    "name": "ChEMBL",
+    "type": "database",
+    "url": "https://www.ebi.ac.uk/chembl/",
+    "description": "Manually curated database of bioactive molecules with drug-like properties, containing binding, functional, and ADMET data for millions of compounds.",
+    "tags": [
+      "drug",
+      "compound",
+      "bioactivity",
+      "target",
+      "ADMET"
+    ],
+    "tasks": [
+      "dti",
+      "drug_response",
+      "drug_repurposing"
+    ],
+    "modalities": [
+      "chemical",
+      "protein"
+    ],
+    "organism": [
+      "human",
+      "multi"
+    ],
+    "license": "CC-BY-SA-3.0",
+    "api": true,
+    "paper": "doi:10.1093/nar/gkad1069",
+    "updated": "2024-01-01"
+  },
+  {
+    "id": "uniprot",
+    "name": "UniProt",
+    "type": "database",
+    "url": "https://www.uniprot.org/",
+    "description": "Comprehensive, high-quality resource for protein sequence and functional annotation, combining Swiss-Prot (manually reviewed) and TrEMBL.",
+    "tags": [
+      "protein",
+      "sequence",
+      "annotation",
+      "function"
+    ],
+    "tasks": [
+      "structure",
+      "dti"
+    ],
+    "modalities": [
+      "protein"
     ],
     "organism": [
       "human",
@@ -147,6 +195,209 @@
       "ChIP-seq",
       "ATAC-seq",
       "RNA-seq"
+      "multi"
+    ],
+    "license": "CC-BY-4.0",
+    "api": true,
+    "paper": "doi:10.1093/nar/gkac1052",
+    "updated": "2024-01-24"
+  },
+  {
+    "id": "gdsc",
+    "name": "Genomics of Drug Sensitivity in Cancer (GDSC)",
+    "type": "database",
+    "url": "https://www.cancerrxgene.org/",
+    "description": "Drug sensitivity measurements for ~1 000 human cancer cell lines tested against hundreds of compounds, paired with rich genomic characterization.",
+    "tags": [
+      "drug response",
+      "cancer",
+      "cell line",
+      "genomics"
+    ],
+    "tasks": [
+      "drug_response"
+    ],
+    "modalities": [
+      "chemical",
+      "genome",
+      "transcriptome"
+    ],
+    "organism": [
+      "human"
+    ],
+    "license": "unknown",
+    "api": false,
+    "paper": "doi:10.1093/nar/gks1111",
+    "updated": "2023-06-01"
+  },
+  {
+    "id": "scanpy",
+    "name": "Scanpy",
+    "type": "toolkit",
+    "url": "https://scanpy.readthedocs.io/",
+    "description": "Scalable Python toolkit for analyzing single-cell gene expression data, covering preprocessing, visualization, clustering, and trajectory inference.",
+    "tags": [
+      "scRNA-seq",
+      "preprocessing",
+      "clustering",
+      "Python"
+    ],
+    "tasks": [
+      "scRNA",
+      "cell_type_annotation"
+    ],
+    "modalities": [
+      "transcriptome",
+      "single_cell"
+    ],
+    "organism": [
+      "human",
+      "mouse",
+      "multi"
+    ],
+    "license": "BSD-3-Clause",
+    "api": false,
+    "paper": "doi:10.1186/s13059-017-1382-0",
+    "updated": "2024-03-01"
+  },
+  {
+    "id": "scgpt",
+    "name": "scGPT",
+    "type": "model",
+    "url": "https://github.com/bowang-lab/scGPT",
+    "description": "Transformer-based foundation model pretrained on millions of single-cell transcriptomic profiles; supports cell-type annotation, perturbation response prediction, and multi-batch integration.",
+    "tags": [
+      "foundation model",
+      "single-cell",
+      "transformer",
+      "perturbation"
+    ],
+    "tasks": [
+      "scRNA",
+      "cell_type_annotation",
+      "multiomics"
+    ],
+    "modalities": [
+      "transcriptome",
+      "single_cell"
+    ],
+    "organism": [
+      "human",
+      "mouse"
+    ],
+    "license": "MIT",
+    "api": false,
+    "paper": "arxiv:2308.12366",
+    "updated": "2024-01-01"
+  },
+  {
+    "id": "alphafold3",
+    "name": "AlphaFold 3",
+    "type": "model",
+    "url": "https://github.com/google-deepmind/alphafold3",
+    "description": "Deep learning model from Google DeepMind that predicts the joint 3-D structure of proteins, nucleic acids, small molecules, and their complexes.",
+    "tags": [
+      "protein structure",
+      "structure prediction",
+      "diffusion",
+      "biomolecule"
+    ],
+    "tasks": [
+      "structure",
+      "dti"
+    ],
+    "modalities": [
+      "protein",
+      "chemical",
+      "genome"
+    ],
+    "organism": [
+      "multi"
+    ],
+    "license": "CC-BY-NC-4.0",
+    "api": false,
+    "paper": "doi:10.1038/s41586-024-07487-w",
+    "updated": "2024-05-08"
+  },
+  {
+    "id": "moleculenet",
+    "name": "MoleculeNet",
+    "type": "benchmark",
+    "url": "http://moleculenet.ai/",
+    "description": "Curated collection of benchmark datasets for molecular machine learning, spanning quantum mechanics, physical chemistry, biophysics, and physiology.",
+    "tags": [
+      "benchmark",
+      "molecular ML",
+      "datasets",
+      "ADMET"
+    ],
+    "tasks": [
+      "drug_response",
+      "dti",
+      "molecular_generation"
+    ],
+    "modalities": [
+      "chemical"
+    ],
+    "organism": [
+      "human",
+      "multi"
+    ],
+    "license": "MIT",
+    "api": false,
+    "paper": "doi:10.1039/C7SC02664A",
+    "updated": "2023-01-01"
+  },
+  {
+    "id": "therapeutics_data_commons",
+    "name": "Therapeutics Data Commons (TDC)",
+    "type": "benchmark",
+    "url": "https://tdcommons.ai/",
+    "description": "Unified resource of AI-ready datasets and learning tasks for therapeutic science, covering drug-target interaction, ADMET, clinical trials, and more.",
+    "tags": [
+      "benchmark",
+      "drug discovery",
+      "ADMET",
+      "datasets"
+    ],
+    "tasks": [
+      "dti",
+      "drug_response",
+      "drug_repurposing"
+    ],
+    "modalities": [
+      "chemical",
+      "protein",
+      "clinical"
+    ],
+    "organism": [
+      "human"
+    ],
+    "license": "MIT",
+    "api": true,
+    "paper": "arxiv:2102.09548",
+    "updated": "2024-01-01"
+  },
+  {
+    "id": "enformer",
+    "name": "Enformer",
+    "type": "model",
+    "url": "https://github.com/deepmind/deepmind-research/tree/master/enformer",
+    "description": "Transformer model that predicts gene expression and epigenetic tracks directly from long DNA sequences (200 kb context window).",
+    "tags": [
+      "genomics",
+      "gene expression",
+      "regulatory",
+      "transformer",
+      "DNA"
+    ],
+    "tasks": [
+      "variant",
+      "grn"
+    ],
+    "modalities": [
+      "genome",
+      "transcriptome"
     ],
     "organism": [
       "human",
@@ -191,5 +442,102 @@
     "tasks": [],
     "organism": [],
     "api": false
+  }
+]
+    "license": "Apache-2.0",
+    "api": false,
+    "paper": "doi:10.1038/s41592-021-01252-x",
+    "updated": "2023-01-01"
+  },
+  {
+    "id": "chembl_api",
+    "name": "ChEMBL Web Services",
+    "type": "api",
+    "url": "https://www.ebi.ac.uk/chembl/ws",
+    "description": "REST API providing programmatic access to the ChEMBL database for bioactive molecules, targets, assays, and compound ADMET properties.",
+    "tags": [
+      "REST API",
+      "drug",
+      "compound",
+      "bioactivity"
+    ],
+    "tasks": [
+      "dti",
+      "drug_repurposing"
+    ],
+    "modalities": [
+      "chemical",
+      "protein"
+    ],
+    "organism": [
+      "human",
+      "multi"
+    ],
+    "license": "CC-BY-SA-3.0",
+    "api": true,
+    "paper": "doi:10.1093/nar/gkad1069",
+    "updated": "2024-01-01"
+  },
+  {
+    "id": "squidpy",
+    "name": "Squidpy",
+    "type": "toolkit",
+    "url": "https://squidpy.readthedocs.io/",
+    "description": "Python library for the analysis and visualization of spatial molecular data, built on top of AnnData and Scanpy.",
+    "tags": [
+      "spatial transcriptomics",
+      "Python",
+      "visualization",
+      "graph"
+    ],
+    "tasks": [
+      "spatial"
+    ],
+    "modalities": [
+      "transcriptome",
+      "spatial",
+      "single_cell"
+    ],
+    "organism": [
+      "human",
+      "mouse",
+      "multi"
+    ],
+    "license": "BSD-3-Clause",
+    "api": false,
+    "paper": "doi:10.1038/s41592-021-01358-2",
+    "updated": "2024-01-01"
+  },
+  {
+    "id": "primekg",
+    "name": "PrimeKG",
+    "type": "database",
+    "url": "https://github.com/mims-harvard/PrimeKG",
+    "description": "Precision medicine knowledge graph integrating 20 high-quality biological databases across diseases, drugs, genes, and biological processes.",
+    "tags": [
+      "knowledge graph",
+      "drug",
+      "disease",
+      "multiomics"
+    ],
+    "tasks": [
+      "drug_repurposing",
+      "dti",
+      "multiomics"
+    ],
+    "modalities": [
+      "kg",
+      "chemical",
+      "protein",
+      "genome",
+      "clinical"
+    ],
+    "organism": [
+      "human"
+    ],
+    "license": "MIT",
+    "api": false,
+    "paper": "doi:10.1038/s41597-023-01960-3",
+    "updated": "2023-01-01"
   }
 ]
