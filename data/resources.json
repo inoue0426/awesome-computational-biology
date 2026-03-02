@@ -1,0 +1,195 @@
+[
+  {
+    "id": "cellxgene",
+    "name": "CZ CELLxGENE",
+    "type": "database",
+    "url": "https://cellxgene.cziscience.com/",
+    "description": "Single-cell dataset repository and interactive explorer from the Chan Zuckerberg Initiative.",
+    "api": true,
+    "tags": [
+      "single-cell",
+      "explorer"
+    ],
+    "modalities": [
+      "scRNA-seq"
+    ],
+    "organism": [
+      "human",
+      "mouse"
+    ],
+    "tasks": []
+  },
+  {
+    "id": "geo",
+    "name": "Gene Expression Omnibus",
+    "type": "database",
+    "url": "https://www.ncbi.nlm.nih.gov/geo/",
+    "description": "Public functional genomics database.",
+    "api": true,
+    "tags": [
+      "genomics",
+      "expression"
+    ],
+    "modalities": [
+      "microarray",
+      "RNA-seq",
+      "scRNA-seq"
+    ],
+    "organism": [
+      "human",
+      "mouse",
+      "other"
+    ],
+    "tasks": []
+  },
+  {
+    "id": "pubchem",
+    "name": "PubChem",
+    "type": "database",
+    "url": "https://pubchem.ncbi.nlm.nih.gov/",
+    "description": "One of the largest chemical databases (compounds, genes, and proteins).",
+    "api": true,
+    "tags": [
+      "compound",
+      "chemistry"
+    ],
+    "modalities": [
+      "compound"
+    ],
+    "tasks": [],
+    "organism": []
+  },
+  {
+    "id": "chembl",
+    "name": "ChEMBL",
+    "type": "database",
+    "url": "https://www.ebi.ac.uk/chembl/",
+    "description": "Bioactive molecules with drug-like properties.",
+    "api": true,
+    "tags": [
+      "drug",
+      "compound",
+      "bioactivity"
+    ],
+    "modalities": [
+      "compound"
+    ],
+    "tasks": [],
+    "organism": []
+  },
+  {
+    "id": "uniprot",
+    "name": "UniProt",
+    "type": "database",
+    "url": "https://www.uniprot.org/",
+    "description": "Functional information on proteins.",
+    "api": true,
+    "tags": [
+      "protein",
+      "sequence"
+    ],
+    "modalities": [
+      "protein-sequence"
+    ],
+    "organism": [
+      "human",
+      "mouse",
+      "other"
+    ],
+    "tasks": []
+  },
+  {
+    "id": "alphafold-db",
+    "name": "AlphaFold Protein Structure Database",
+    "type": "database",
+    "url": "https://alphafold.ebi.ac.uk/",
+    "description": "3D protein structure predictions powered by AlphaFold.",
+    "api": true,
+    "tags": [
+      "protein",
+      "structure",
+      "deep-learning"
+    ],
+    "modalities": [
+      "protein-structure"
+    ],
+    "paper": "https://doi.org/10.1093/nar/gkab1061",
+    "tasks": [],
+    "organism": []
+  },
+  {
+    "id": "reactome",
+    "name": "Reactome",
+    "type": "database",
+    "url": "https://reactome.org/",
+    "description": "Expert-curated, peer-reviewed pathway database with detailed reaction mechanisms.",
+    "api": true,
+    "tags": [
+      "pathway",
+      "curation"
+    ],
+    "tasks": [],
+    "modalities": [],
+    "organism": []
+  },
+  {
+    "id": "encode",
+    "name": "ENCODE",
+    "type": "database",
+    "url": "https://www.encodeproject.org/",
+    "description": "Encyclopedia of DNA Elements; regulatory and functional genomic elements across the genome.",
+    "api": true,
+    "tags": [
+      "genomics",
+      "regulatory"
+    ],
+    "modalities": [
+      "ChIP-seq",
+      "ATAC-seq",
+      "RNA-seq"
+    ],
+    "organism": [
+      "human",
+      "mouse"
+    ],
+    "tasks": []
+  },
+  {
+    "id": "depmap",
+    "name": "Dependency Map (DepMap)",
+    "type": "database",
+    "url": "https://depmap.org/portal/",
+    "description": "CRISPR-Cas9 screens in cancer cell lines.",
+    "tags": [
+      "cancer",
+      "CRISPR",
+      "dependency"
+    ],
+    "modalities": [
+      "CRISPR-screen",
+      "expression"
+    ],
+    "organism": [
+      "human"
+    ],
+    "tasks": [],
+    "api": false
+  },
+  {
+    "id": "massbank",
+    "name": "MassBank",
+    "type": "database",
+    "url": "http://www.massbank.jp/",
+    "description": "Open source databases and tools for mass spectrometry reference spectra.",
+    "tags": [
+      "mass-spectrometry",
+      "metabolomics"
+    ],
+    "modalities": [
+      "mass-spectra"
+    ],
+    "tasks": [],
+    "organism": [],
+    "api": false
+  }
+]
