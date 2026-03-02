@@ -10,6 +10,7 @@ A curated collection of databases, software, and papers related to computational
 
 - [Awesome Computational Biology](#awesome-computational-biology-)
   - [Table of Contents](#table-of-contents)
+  - [Auto-Generated Resources](#auto-generated-resources)
   - [Databases](#databases)
     - [scRNA](#scrna)
     - [Compound](#compound)
@@ -47,6 +48,44 @@ A curated collection of databases, software, and papers related to computational
         - [Protein Structure Prediction and Design](#protein-structure-prediction-and-design)
       - [Multi-Modal Foundation Models](#multi-modal-foundation-models)
       - [Genomics Foundation Models](#genomics-foundation-models)
+
+---
+
+## Auto-Generated Resources
+
+<!-- RESOURCES:START -->
+Generated from `data/resources.yml`.
+
+### API
+- [ChEMBL Web Services](https://www.ebi.ac.uk/chembl/ws) — REST API providing programmatic access to the ChEMBL database for bioactive molecules, targets, assays, and compound ADMET properties.
+
+### Benchmark
+- [MoleculeNet](http://moleculenet.ai/) — Curated collection of benchmark datasets for molecular machine learning, spanning quantum mechanics, physical chemistry, biophysics, and physiology.
+- [Therapeutics Data Commons (TDC)](https://tdcommons.ai/) — Unified resource of AI-ready datasets and learning tasks for therapeutic science, covering drug-target interaction, ADMET, clinical trials, and more.
+
+### Database
+- [AlphaFold Protein Structure Database](https://alphafold.ebi.ac.uk/) — 3D protein structure predictions powered by AlphaFold.
+- [ChEMBL](https://www.ebi.ac.uk/chembl/) — Manually curated database of bioactive molecules with drug-like properties, containing binding, functional, and ADMET data for millions of compounds.
+- [CZ CELLxGENE](https://cellxgene.cziscience.com/) — Single-cell dataset repository and interactive explorer from the Chan Zuckerberg Initiative.
+- [Dependency Map (DepMap)](https://depmap.org/portal/) — CRISPR-Cas9 screens in cancer cell lines.
+- [ENCODE](https://www.encodeproject.org/) — Encyclopedia of DNA Elements; regulatory and functional genomic elements across the genome.
+- [Gene Expression Omnibus](https://www.ncbi.nlm.nih.gov/geo/) — Public functional genomics database.
+- [Genomics of Drug Sensitivity in Cancer (GDSC)](https://www.cancerrxgene.org/) — Drug sensitivity measurements for ~1 000 human cancer cell lines tested against hundreds of compounds, paired with rich genomic characterization.
+- [MassBank](http://www.massbank.jp/) — Open source databases and tools for mass spectrometry reference spectra.
+- [PrimeKG](https://github.com/mims-harvard/PrimeKG) — Precision medicine knowledge graph integrating 20 high-quality biological databases across diseases, drugs, genes, and biological processes.
+- [PubChem](https://pubchem.ncbi.nlm.nih.gov/) — One of the largest chemical databases (compounds, genes, and proteins).
+- [Reactome](https://reactome.org/) — Expert-curated, peer-reviewed pathway database with detailed reaction mechanisms.
+- [UniProt](https://www.uniprot.org/) — Functional information on proteins.
+
+### Model
+- [AlphaFold 3](https://github.com/google-deepmind/alphafold3) — Deep learning model from Google DeepMind that predicts the joint 3-D structure of proteins, nucleic acids, small molecules, and their complexes.
+- [Enformer](https://github.com/deepmind/deepmind-research/tree/master/enformer) — Transformer model that predicts gene expression and epigenetic tracks directly from long DNA sequences (200 kb context window).
+- [scGPT](https://github.com/bowang-lab/scGPT) — Transformer-based foundation model pretrained on millions of single-cell transcriptomic profiles; supports cell-type annotation, perturbation response prediction, and multi-batch integration.
+
+### Toolkit
+- [Scanpy](https://scanpy.readthedocs.io/) — Scalable Python toolkit for analyzing single-cell gene expression data, covering preprocessing, visualization, clustering, and trajectory inference.
+- [Squidpy](https://squidpy.readthedocs.io/) — Python library for the analysis and visualization of spatial molecular data, built on top of AnnData and Scanpy.
+<!-- RESOURCES:END -->
 
 ---
 

@@ -1,11 +1,70 @@
 [
   {
+    "id": "cellxgene",
+    "name": "CZ CELLxGENE",
+    "type": "database",
+    "url": "https://cellxgene.cziscience.com/",
+    "description": "Single-cell dataset repository and interactive explorer from the Chan Zuckerberg Initiative.",
+    "api": true,
+    "tags": [
+      "single-cell",
+      "explorer"
+    ],
+    "modalities": [
+      "scRNA-seq"
+    ],
+    "organism": [
+      "human",
+      "mouse"
+    ],
+    "tasks": []
+  },
+  {
+    "id": "geo",
+    "name": "Gene Expression Omnibus",
+    "type": "database",
+    "url": "https://www.ncbi.nlm.nih.gov/geo/",
+    "description": "Public functional genomics database.",
+    "api": true,
+    "tags": [
+      "genomics",
+      "expression"
+    ],
+    "modalities": [
+      "microarray",
+      "RNA-seq",
+      "scRNA-seq"
+    ],
+    "organism": [
+      "human",
+      "mouse",
+      "other"
+    ],
+    "tasks": []
+  },
+  {
+    "id": "pubchem",
+    "name": "PubChem",
+    "type": "database",
+    "url": "https://pubchem.ncbi.nlm.nih.gov/",
+    "description": "One of the largest chemical databases (compounds, genes, and proteins).",
+    "api": true,
+    "tags": [
+      "compound",
+      "chemistry"
+    ],
+    "modalities": [
+      "compound"
+    ],
+    "tasks": [],
+    "organism": []
+  },
+  {
     "id": "chembl",
     "name": "ChEMBL",
     "type": "database",
     "url": "https://www.ebi.ac.uk/chembl/",
     "description": "Manually curated database of bioactive molecules with drug-like properties, containing binding, functional, and ADMET data for millions of compounds.",
-    "api": true,
     "tags": [
       "drug",
       "compound",
@@ -13,20 +72,21 @@
       "target",
       "ADMET"
     ],
-    "modalities": [
-      "chemical",
-      "protein"
-    ],
     "tasks": [
       "dti",
       "drug_response",
       "drug_repurposing"
+    ],
+    "modalities": [
+      "chemical",
+      "protein"
     ],
     "organism": [
       "human",
       "multi"
     ],
     "license": "CC-BY-SA-3.0",
+    "api": true,
     "paper": "doi:10.1093/nar/gkad1069",
     "updated": "2024-01-01"
   },
@@ -48,7 +108,8 @@
       "human",
       "mouse",
       "other"
-    ]
+    ],
+    "tasks": []
   },
   {
     "id": "alphafold-db",
@@ -65,7 +126,9 @@
     "modalities": [
       "protein-structure"
     ],
-    "paper": "https://doi.org/10.1093/nar/gkab1061"
+    "paper": "https://doi.org/10.1093/nar/gkab1061",
+    "tasks": [],
+    "organism": []
   },
   {
     "id": "reactome",
@@ -77,7 +140,10 @@
     "tags": [
       "pathway",
       "curation"
-    ]
+    ],
+    "tasks": [],
+    "modalities": [],
+    "organism": []
   },
   {
     "id": "encode",
@@ -98,7 +164,8 @@
     "organism": [
       "human",
       "mouse"
-    ]
+    ],
+    "tasks": []
   },
   {
     "id": "depmap",
@@ -117,36 +184,26 @@
     ],
     "organism": [
       "human"
-    ]
+    ],
+    "tasks": [],
+    "api": false
   },
   {
     "id": "massbank",
     "name": "MassBank",
     "type": "database",
     "url": "http://www.massbank.jp/",
-    "description": "Comprehensive, high-quality resource for protein sequence and functional annotation, combining Swiss-Prot (manually reviewed) and TrEMBL.",
+    "description": "Open source databases and tools for mass spectrometry reference spectra.",
     "tags": [
-      "protein",
-      "sequence",
-      "annotation",
-      "function"
+      "mass-spectrometry",
+      "metabolomics"
     ],
     "modalities": [
-      "protein"
+      "mass-spectra"
     ],
-    "tasks": [
-      "structure",
-      "dti"
-    ],
-    "organism": [
-      "human",
-      "mouse",
-      "multi"
-    ],
-    "license": "CC-BY-4.0",
-    "api": true,
-    "paper": "doi:10.1093/nar/gkac1052",
-    "updated": "2024-01-24"
+    "tasks": [],
+    "organism": [],
+    "api": false
   },
   {
     "id": "gdsc",

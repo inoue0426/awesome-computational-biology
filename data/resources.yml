@@ -43,40 +43,11 @@ resources:
     api: true
     tags: [compound, chemistry]
     modalities: [compound]
-# Awesome Computational Biology — machine-readable resource list
-#
-# Schema
-# ──────
-# id          : unique slug (snake_case, required)
-# name        : display name (required)
-# type        : database | toolkit | model | benchmark | api | paper | tutorial (required)
-# url         : canonical URL (required)
-# description : 1-2 sentence summary (required)
-# tags        : free-form keyword list (required, at least one)
-#
-# Research-filtering fields
-# ─────────────────────────
-# tasks       : list — dti | drug_response | scRNA | spatial | structure |
-#                       grn | variant | multiomics | molecular_generation |
-#                       drug_repurposing | cell_type_annotation | pathway
-# modalities  : list — chemical | protein | genome | transcriptome |
-#                       single_cell | spatial | clinical | imaging | kg
-# organism    : optional list — human | mouse | multi | etc.
-# license     : SPDX identifier or "unknown" / "proprietary"
-# api         : true if a programmatic API exists (default: false)
-# paper       : optional — doi:<DOI> | pmid:<PMID> | arxiv:<ID>
-# updated     : optional — last known update, ISO date YYYY-MM-DD
-
-resources:
 
   - id: chembl
     name: ChEMBL
     type: database
     url: https://www.ebi.ac.uk/chembl/
-    description: Bioactive molecules with drug-like properties.
-    api: true
-    tags: [drug, compound, bioactivity]
-    modalities: [compound]
     description: >-
       Manually curated database of bioactive molecules with drug-like properties,
       containing binding, functional, and ADMET data for millions of compounds.
@@ -143,17 +114,6 @@ resources:
     description: Open source databases and tools for mass spectrometry reference spectra.
     tags: [mass-spectrometry, metabolomics]
     modalities: [mass-spectra]
-    description: >-
-      Comprehensive, high-quality resource for protein sequence and functional
-      annotation, combining Swiss-Prot (manually reviewed) and TrEMBL.
-    tags: [protein, sequence, annotation, function]
-    tasks: [structure, dti]
-    modalities: [protein]
-    organism: [human, mouse, multi]
-    license: CC-BY-4.0
-    api: true
-    paper: doi:10.1093/nar/gkac1052
-    updated: "2024-01-24"
 
   - id: gdsc
     name: Genomics of Drug Sensitivity in Cancer (GDSC)
