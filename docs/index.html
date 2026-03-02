@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Awesome Computational Biology</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Awesome Computational Biology</h1>
+    <p class="subtitle">A curated collection of databases, tools, models, and resources for computational biology.</p>
+  </header>
+
+  <main>
+    <div class="controls">
+      <input type="search" id="search" placeholder="Search by name, description, or tags…" aria-label="Search resources" />
+      <select id="filter-type" aria-label="Filter by type">
+        <option value="">All types</option>
+      </select>
+      <select id="filter-task" aria-label="Filter by task">
+        <option value="">All tasks</option>
+      </select>
+      <select id="filter-modality" aria-label="Filter by modality">
+        <option value="">All modalities</option>
+      </select>
+      <button id="clear-filters">Clear filters</button>
+    </div>
+
+    <div class="meta">
+      <span id="result-count"></span>
+      <span id="loaded-time"></span>
+    </div>
+
+    <div id="results" role="list" aria-live="polite"></div>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
