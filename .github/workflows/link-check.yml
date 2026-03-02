@@ -18,10 +18,10 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '18'
+          node-version: 'lts/*'
 
       - name: Install markdown-link-check
-        run: npm install -g markdown-link-check@3.8.7
+        run: npm install -g markdown-link-check@3.12.2 --no-fund
 
       - name: Run markdown-link-check
         run: |
