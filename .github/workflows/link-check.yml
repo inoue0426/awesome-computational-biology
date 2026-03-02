@@ -1,0 +1,29 @@
+name: Link Check
+
+on:
+  schedule:
+    - cron: '0 5 * * 1' # 毎週月曜 05:00 UTC
+  workflow_dispatch: # 手動実行も可能
+
+permissions:
+  contents: read
+
+jobs:
+  link-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Install markdown-link-check
+        run: npm install -g markdown-link-check@3.8.7
+
+      - name: Run markdown-link-check
+        run: |
+          find . -name '*.md' -not -path './node_modules/*' -print0 | \
+          xargs -0 -I{} markdown-link-check {} -q -c .markdown-link-check.json
