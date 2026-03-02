@@ -8,6 +8,9 @@ on:
     paths:
       - '**/*.md'
 
+permissions:
+  contents: read
+
 jobs:
   docs-check:
     runs-on: ubuntu-latest
@@ -18,18 +21,13 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '18'
+          node-version: 'lts/*'
 
       - name: Install tooling
-        run: |
-          npm install -g markdownlint-cli@0.33.0 cspell@6.30.1
+        run: npm install -g markdownlint-cli@0.33.0 cspell@6.30.1 --no-fund
 
       - name: Run markdownlint
-        run: |
-          echo "Running markdownlint..."
-          markdownlint '**/*.md' --ignore node_modules
+        run: markdownlint '**/*.md' --ignore node_modules
 
       - name: Run cspell (spellcheck)
-        run: |
-          echo "Running cspell..."
-          cspell "**/*.md" --no-summary
+        run: cspell "**/*.md" --no-summary --no-progress
