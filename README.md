@@ -295,11 +295,14 @@ A curated collection of databases, software, and papers related to computational
 - [GeneCompass](https://github.com/xCompass-AI/GeneCompass) — Large-scale foundation model integrating DNA regulatory sequences and single-cell transcriptomics from 120M+ cells across multiple species for gene regulation prediction.
 - [UnitedNet](https://github.com/LiuLab-Bioelectronics-Harvard/UnitedNet) — Interpretable multi-task deep neural network for single-cell multi-omics integration spanning transcriptomics, chromatin accessibility, and proteomics.
 - [SpatialGlue](https://github.com/zhanglabtools/SpatialGlue) — Graph attention network for spatial multi-omics integration jointly embedding spatial transcriptomics with chromatin accessibility or proteomics.
+- [MIDAS](https://github.com/labomics/midas) — Mosaic integration and differential accessibility model for single-cell multi-omics data that handles arbitrary missing-modality combinations across transcriptomics, chromatin accessibility, and proteomics.
 
 ### Protein Structure Prediction and Design
 
 - [AlphaFold3](https://github.com/google-deepmind/alphafold3) — Predicts structures of proteins, nucleic acids, small molecules, and their complexes.
+- [Boltz-1](https://github.com/jwohlwend/boltz) — Open-source all-atom biomolecular structure prediction model for proteins, nucleic acids, small molecules, and their complexes achieving AlphaFold3-level accuracy.
 - [Chai-1](https://github.com/chaidiscovery/chai-lab) — Unified molecular structure prediction model covering proteins, nucleic acids, small molecules, and complexes.
+- [ESM3](https://github.com/evolutionaryscale/esm) — Multimodal protein language model that jointly reasons over sequence, structure, and function for generative protein design and engineering.
 - [ESMFold](https://github.com/facebookresearch/esm) — Fast protein structure prediction using language model embeddings.
 - [RFdiffusion](https://github.com/RosettaCommons/RFdiffusion) — Generative model for protein backbone design using diffusion.
 - [ProteinMPNN](https://github.com/dauparas/ProteinMPNN) — Deep learning model for protein sequence design given backbone structure.
