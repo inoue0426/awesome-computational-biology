@@ -55,6 +55,6 @@ jobs:
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/resources.yml data/resources.json data/resources.csv docs/data/resources.json README.md
+          git add data/resources.yml data/resources.json data/resources.csv docs/data/resources.json
           git commit -m "chore: sync resources"
           git push

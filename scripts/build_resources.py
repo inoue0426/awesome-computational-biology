@@ -30,9 +30,6 @@ INPUT_FILE = DATA_DIR / "resources.yml"
 JSON_OUTPUT = DATA_DIR / "resources.json"
 CSV_OUTPUT = DATA_DIR / "resources.csv"
 DOCS_JSON_OUTPUT = DOCS_DATA_DIR / "resources.json"
-README_PATH = REPO_ROOT / "README.md"
-README_MARKER_START = "<!-- RESOURCES:START -->"
-README_MARKER_END = "<!-- RESOURCES:END -->"
 
 # Required fields every entry must have
 REQUIRED_FIELDS = ("id", "name", "type", "url", "description")
@@ -56,11 +53,6 @@ CSV_COLUMNS = [
     "paper",
     "updated",
 ]
-
-TYPE_LABELS = {
-    "api": "API",
-}
-
 
 # ---------------------------------------------------------------------------
 # Validation & normalisation
@@ -150,78 +142,6 @@ def write_csv(entries: Iterable[dict[str, Any]], path: Path) -> None:
     print(f"Wrote CSV → {path}")
 
 
-def format_type_label(type_key: str) -> str:
-    """Return a readable label for a resource type.
-
-    Args:
-        type_key: Raw type key from the YAML.
-
-    Returns:
-        A title-cased label suitable for Markdown headings.
-    """
-    if not type_key:
-        return "Other"
-    lowered = type_key.strip().lower()
-    return TYPE_LABELS.get(lowered, lowered.replace("_", " ").title())
-
-
-def build_markdown(entries: list[dict[str, Any]]) -> str:
-    """Build a Markdown section from normalized resources.
-
-    Args:
-        entries: Normalized resource entries.
-
-    Returns:
-        Markdown content without the surrounding markers.
-    """
-    grouped: dict[str, list[dict[str, Any]]] = {}
-    for entry in entries:
-        type_key = str(entry.get("type") or "other").lower()
-        grouped.setdefault(type_key, []).append(entry)
-
-    lines: list[str] = [
-        "Generated from `data/resources.yml`.",
-        "",
-    ]
-    for type_key in sorted(grouped):
-        label = format_type_label(type_key)
-        lines.append(f"### {label}")
-        for entry in sorted(grouped[type_key], key=lambda item: str(item.get("name", "")).lower()):
-            name = entry.get("name") or "Untitled"
-            url = entry.get("url") or "#"
-            description = entry.get("description") or ""
-            lines.append(f"- [{name}]({url}) — {description}")
-        lines.append("")
-
-    return "\n".join(lines).rstrip() + "\n"
-
-
-def update_readme(path: Path, generated_markdown: str) -> None:
-    """Replace the README auto-generated section between markers.
-
-    Args:
-        path: README path.
-        generated_markdown: Markdown content to insert.
-    """
-    text = path.read_text(encoding="utf-8")
-    if README_MARKER_START not in text or README_MARKER_END not in text:
-        print("ERROR: README markers not found.", file=sys.stderr)
-        sys.exit(1)
-
-    before, _ = text.split(README_MARKER_START, 1)
-    _, after = text.split(README_MARKER_END, 1)
-    updated = (
-        before
-        + README_MARKER_START
-        + "\n"
-        + generated_markdown
-        + README_MARKER_END
-        + after
-    )
-    path.write_text(updated, encoding="utf-8")
-    print(f"Updated README section → {path}")
-
-
 # ---------------------------------------------------------------------------
 # Main
 # ---------------------------------------------------------------------------
@@ -252,9 +172,6 @@ def main() -> None:
     write_json(entries, JSON_OUTPUT)
     write_json(entries, DOCS_JSON_OUTPUT)
     write_csv(entries, CSV_OUTPUT)
-
-    markdown = build_markdown(entries)
-    update_readme(README_PATH, markdown)
 
 
 if __name__ == "__main__":
