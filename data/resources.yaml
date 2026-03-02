@@ -1,0 +1,8 @@
+- name: Awesome Computational Biology
+  category: Databases
+  subcategory: scRNA
+  url: https://github.com/inoue0426/awesome-computational-biology
+  description: A curated collection of databases, software, and papers related to computational biology.
+  tags:
+    - computational-biology
+    - bioinformatics

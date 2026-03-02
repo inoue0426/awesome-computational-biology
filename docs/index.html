@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Awesome Computational Biology</title>
+  <style>
+    body { font-family: sans-serif; max-width: 900px; margin: 2rem auto; padding: 0 1rem; }
+    h1 { border-bottom: 2px solid #ccc; padding-bottom: .5rem; }
+    #search { width: 100%; padding: .5rem; font-size: 1rem; margin-bottom: 1rem; box-sizing: border-box; }
+    table { width: 100%; border-collapse: collapse; }
+    th, td { text-align: left; padding: .5rem; border-bottom: 1px solid #eee; }
+    th { background: #f5f5f5; }
+    a { color: #0969da; }
+  </style>
+</head>
+<body>
+  <h1>Awesome Computational Biology</h1>
+  <input id="search" type="search" placeholder="Filter resources…" />
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Category</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody id="tbody"></tbody>
+  </table>
+  <script>
+    let data = [];
+    fetch('assets/resources.json')
+      .then(r => r.json())
+      .then(json => {
+        data = json;
+        render(data);
+      });
+
+    function render(rows) {
+      const tbody = document.getElementById('tbody');
+      tbody.innerHTML = rows.map(r => `
+        <tr>
+          <td><a href="${r.url}" target="_blank" rel="noopener noreferrer">${r.name}</a></td>
+          <td>${r.subcategory ? r.category + ' › ' + r.subcategory : r.category}</td>
+          <td>${r.description}</td>
+        </tr>`).join('');
+    }
+
+    document.getElementById('search').addEventListener('input', function() {
+      const q = this.value.toLowerCase();
+      render(data.filter(r =>
+        (r.name + r.category + r.subcategory + r.description + (r.tags || []).join(' '))
+          .toLowerCase().includes(q)
+      ));
+    });
+  </script>
+</body>
+</html>
