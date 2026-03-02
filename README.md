@@ -36,6 +36,10 @@ A curated collection of databases, software, and papers related to computational
     - [Pre-trained Embedding](#pre-trained-embedding)
     - [LLM for Biology](#llm-for-biology)
     - [Foundation Models](#foundation-models)
+      - [Transcriptomics Foundation Models](#transcriptomics-foundation-models)
+      - [Spatial Foundation Models](#spatial-foundation-models)
+      - [Multi-Modal Foundation Models](#multi-modal-foundation-models)
+      - [Domain Alignment](#domain-alignment)
     - [Protein Structure Prediction and Design](#protein-structure-prediction-and-design)
     - [Genomics Foundation Models](#genomics-foundation-models)
 
@@ -251,10 +255,31 @@ A curated collection of databases, software, and papers related to computational
 
 ### Foundation Models
 
+#### Transcriptomics Foundation Models
+
 - [scFoundation](https://github.com/biomap-research/scFoundation) — Large-scale foundation model for single-cell gene expression, enabling multiple downstream tasks.
 - [scGPT](https://github.com/bowang-lab/scGPT) — Transformer-based foundation model pretrained on millions of single-cell profiles.
-- [BulkFormer](https://github.com/KangBoming/BulkFormer) — Foundation model for bulk RNA-seq data; learns general transcriptomic representations.
 - [Geneformer](https://huggingface.co/ctheodoris/Geneformer) — Context-aware, attention-based deep learning model pretrained on a large corpus of single-cell transcriptomes.
+- [BulkFormer](https://github.com/KangBoming/BulkFormer) — Foundation model for bulk RNA-seq data; learns general transcriptomic representations.
+- [scBERT](https://github.com/TencentAILabHealthcare/scBERT) — BERT-based foundation model pretrained on large-scale scRNA-seq data for cell type annotation.
+- [CellPLM](https://github.com/OmicsML/CellPLM) — Cell pre-trained language model with inter-cell transformer architecture for diverse single-cell analysis tasks.
+
+#### Spatial Foundation Models
+
+- [GigaPath](https://github.com/prov-gigapath/prov-gigapath) — Slide-level digital pathology foundation model pretrained on 1.3 billion pathology image tokens from whole-slide images.
+- [UNI](https://github.com/mahmoodlab/UNI) — General-purpose self-supervised pathology foundation model trained on 100K+ whole-slide images for diverse computational pathology tasks.
+- [CONCH](https://github.com/mahmoodlab/CONCH) — Vision-language foundation model for computational pathology trained with contrastive captioning on pathology image–text pairs.
+- [Phikon](https://huggingface.co/owkin/phikon) — ViT-based pathology foundation model pretrained with iBOT self-supervision on TCGA whole-slide images.
+
+#### Multi-Modal Foundation Models
+
+- [CHIEF](https://github.com/hms-dbmi/CHIEF) — Clinical Histopathology Imaging Evaluation Foundation model integrating histology images and clinical context for pan-cancer analysis.
+- [BiomedCLIP](https://huggingface.co/microsoft/BiomedCLIP-PubMedBERT_256-vit_g_14) — CLIP-based vision-language foundation model for biomedical images and text trained on PubMed figure–caption pairs.
+
+#### Domain Alignment
+
+- [scArches](https://github.com/theislab/scarches) — Transfer learning framework for mapping new single-cell datasets onto pre-trained reference atlases across batches, conditions, and modalities.
+- [TOSICA](https://github.com/JackieHanlaopo/TOSICA) — Transformer-based framework for one-stop interpretable cell-type annotation supporting cross-dataset and cross-species transfer.
 
 ### Protein Structure Prediction and Design
 
