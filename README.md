@@ -45,7 +45,9 @@ A curated collection of databases, software, and papers related to computational
 
 ### scRNA
 
+- [CZ CELLxGENE](https://cellxgene.cziscience.com/) — Single-cell dataset repository and interactive explorer from the Chan Zuckerberg Initiative.
 - [Gene Expression Omnibus](https://www.ncbi.nlm.nih.gov/geo/) — Public functional genomics database.
+- [Human Cell Atlas](https://www.humancellatlas.org/) — Open global atlas of all cells in the human body.
 - [Single Cell PORTAL](https://singlecell.broadinstitute.org/single_cell) — Public database for single-cell RNA.
 - [Single Cell Expression Atlas](https://www.ebi.ac.uk/gxa/sc/home) — Public database for single-cell RNA.
 
@@ -55,6 +57,7 @@ A curated collection of databases, software, and papers related to computational
 - [ChEBI](https://www.ebi.ac.uk/chebi/) — Database focused on small chemical compounds.
 - [ChEMBL](https://www.ebi.ac.uk/chembl/) — Bioactive molecules with drug-like properties.
 - [ChemSpider](http://www.chemspider.com/) — Chemical structure database.
+- [HMDB (Human Metabolome Database)](https://hmdb.ca/) — Comprehensive database of small molecule metabolites found in the human body.
 - [KEGG COMPOUND](https://www.genome.jp/kegg/compound/) — Collection of small molecules and biopolymers.
 - [LIPID MAPS](https://www.lipidmaps.org/databases/lmsd/overview) — Database of lipids.
 - [Rhea](https://www.rhea-db.org/) — Database of chemical reactions.
@@ -94,6 +97,8 @@ A curated collection of databases, software, and papers related to computational
 
 ### Genome
 
+- [ENCODE](https://www.encodeproject.org/) — Encyclopedia of DNA Elements; regulatory and functional genomic elements across the genome.
+- [Ensembl](https://www.ensembl.org/) — Genome browser and annotation database for vertebrate and other eukaryotic genomes.
 - [Human Genome Resources at NCBI](https://www.ncbi.nlm.nih.gov/projects/genome/guide/human/index.shtml) — Database for genomics, proteomics, transcriptomics, and systems biology.
 - [GenBank](https://www.ncbi.nlm.nih.gov/genbank/) — NCBI's database of genetic sequences.
 - [UCSC Genome Browser](https://genome.ucsc.edu/) — UCSC's genome browser.
@@ -111,6 +116,8 @@ A curated collection of databases, software, and papers related to computational
 
 - [KEGG DRUG](https://www.genome.jp/kegg/drug/) — Comprehensive, approved drug information.
 - [DrugBank](https://go.drugbank.com/) — Database of drugs and targets (University of Alberta).
+- [DisGeNET](https://www.disgenet.org/) — Database of gene-disease associations integrating expert-curated and GWAS data.
+- [OMIM (Online Mendelian Inheritance in Man)](https://www.omim.org/) — Comprehensive database of human genes and genetic disorders.
 
 ### Interaction
 
@@ -140,6 +147,7 @@ A curated collection of databases, software, and papers related to computational
 - [STRING](https://string-db.org/) — PPI networks for multiple organisms.
 - [BioGRID](https://thebiogrid.org/) — Protein, genetic, and chemical interactions.
 - [HIPPIE](http://cbdm-01.zdv.uni-mainz.de/~mschaefer/hippie/) — Human protein-protein interaction database.
+- [IntAct](https://www.ebi.ac.uk/intact/home) — Open-source molecular interaction database and analysis system from EMBL-EBI.
 
 #### Knowledge Graph
 
@@ -174,6 +182,7 @@ A curated collection of databases, software, and papers related to computational
 ## Preprocessing Tools
 
 - [Chemistry Development Kit](https://github.com/cdk/cdk) — Cheminformatics software & machine learning tools.
+- [Biopython](https://biopython.org/) — Collection of Python tools for biological computation including sequence analysis, structure parsing, and database access.
 - [FlashDeconv](https://github.com/cafferychen777/flashdeconv) — High-performance spatial transcriptomics deconvolution (~1M spots in ~3 min).
 - [RDKit](https://github.com/rdkit/rdkit) — Cheminformatics software & machine learning toolkit.
 - [DeepChem](https://github.com/deepchem/deepchem) — Deep learning library for drug discovery, quantum chemistry, and materials science.
@@ -184,6 +193,7 @@ A curated collection of databases, software, and papers related to computational
 - [CellTypist](https://github.com/Teichlab/celltypist) — Automated cell type annotation for scRNA-seq.
 - [Squidpy](https://squidpy.readthedocs.io/) — Python library for spatial single-cell analysis.
 - [GROMACS](https://www.gromacs.org/) — Molecular dynamics simulation package for biochemical molecules.
+- [MDAnalysis](https://www.mdanalysis.org/) — Python library for analyzing and altering molecular dynamics simulation trajectories.
 - [OpenMM](https://openmm.org/) — High-performance toolkit for molecular simulation and GPU-accelerated MD.
 
 ---
@@ -223,6 +233,7 @@ A curated collection of databases, software, and papers related to computational
 - [Molecular Transformer](https://github.com/pschwllr/MolecularTransformer) — Sequence-to-sequence model for retrosynthesis prediction.
 - [GuacaMol](https://github.com/BenevolentAI/guacamol) — Benchmark suite for generative molecular design models.
 - [MOSES](https://github.com/molecularsets/moses) — Benchmarking platform for molecular generation models.
+- [TargetDiff](https://github.com/guanjq/targetdiff) — 3D equivariant diffusion model for structure-based drug design.
 
 ### Pre-trained Embedding
 
@@ -243,10 +254,12 @@ A curated collection of databases, software, and papers related to computational
 - [scFoundation](https://github.com/biomap-research/scFoundation) — Large-scale foundation model for single-cell gene expression, enabling multiple downstream tasks.
 - [scGPT](https://github.com/bowang-lab/scGPT) — Transformer-based foundation model pretrained on millions of single-cell profiles.
 - [BulkFormer](https://github.com/KangBoming/BulkFormer) — Foundation model for bulk RNA-seq data; learns general transcriptomic representations.
+- [Geneformer](https://huggingface.co/ctheodoris/Geneformer) — Context-aware, attention-based deep learning model pretrained on a large corpus of single-cell transcriptomes.
 
 ### Protein Structure Prediction and Design
 
 - [AlphaFold3](https://github.com/google-deepmind/alphafold3) — Predicts structures of proteins, nucleic acids, small molecules, and their complexes.
+- [Chai-1](https://github.com/chaidiscovery/chai-lab) — Unified molecular structure prediction model covering proteins, nucleic acids, small molecules, and complexes.
 - [ESMFold](https://github.com/facebookresearch/esm) — Fast protein structure prediction using language model embeddings.
 - [RFdiffusion](https://github.com/RosettaCommons/RFdiffusion) — Generative model for protein backbone design using diffusion.
 - [ProteinMPNN](https://github.com/dauparas/ProteinMPNN) — Deep learning model for protein sequence design given backbone structure.
@@ -260,6 +273,8 @@ A curated collection of databases, software, and papers related to computational
 - [DNABERT-2](https://github.com/Zhihan1996/DNABERT_2) — Improved genome foundation model with efficient tokenization.
 - [Enformer](https://github.com/deepmind/deepmind-research/tree/master/enformer) — Transformer model predicting gene expression from DNA sequence.
 - [Basenji](https://github.com/calico/basenji) — Sequential regulatory activity prediction from DNA sequences.
+- [Caduceus](https://github.com/kuleshov-group/caduceus) — Bidirectional equivariant long-range DNA sequence model based on Mamba.
 - [Evo](https://github.com/evo-design/evo) — Long-context genomic foundation model (up to 1M tokens).
+- [HyenaDNA](https://github.com/HazyResearch/hyena-dna) — Long-range genomic foundation model handling sequences up to 1M tokens with sub-quadratic attention.
 
 ---
