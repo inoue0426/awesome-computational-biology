@@ -65,7 +65,7 @@
     "Zuckerberg",
     "HMDB",
     "CTRP",
-    "ADMET"
+    "ADMET",
     "Omics",
     "omics",
     "omic",
@@ -89,7 +89,8 @@
     "TOSICA",
     "Boltz",
     "MPNN",
-    "Enformer"
+    "Enformer",
+    "Velo"
   ],
   "ignorePaths": [
     "node_modules/**"
