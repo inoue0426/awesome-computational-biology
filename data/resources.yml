@@ -1093,12 +1093,34 @@ resources:
     organism: []
     api: false
 
+  - id: biomedlm
+    name: "BioMedLM"
+    type: model
+    url: https://huggingface.co/stanford-crfm/BioMedLM
+    description: "2.7B parameter GPT-2-style language model trained exclusively on biomedical literature from PubMed for biomedical question answering and text generation."
+    tags: [llm-for-biology]
+    tasks: []
+    modalities: []
+    organism: []
+    api: false
+
   - id: boltz_1
     name: "Boltz-1"
     type: model
     url: https://github.com/jwohlwend/boltz
     description: "Open-source all-atom biomolecular structure prediction model for proteins, nucleic acids, small molecules, and their complexes achieving AlphaFold3-level accuracy."
     tags: [foundation-models, protein-foundation-models]
+    tasks: []
+    modalities: []
+    organism: []
+    api: false
+
+  - id: borzoi
+    name: "Borzoi"
+    type: model
+    url: https://github.com/calico/borzoi
+    description: "Extended successor to Enformer for predicting RNA-seq coverage from long genomic sequence windows (524 kb) with improved resolution."
+    tags: [foundation-models, genomics-foundation-models]
     tasks: []
     modalities: []
     organism: []
@@ -1247,6 +1269,17 @@ resources:
     organism: []
     api: false
 
+  - id: diffdock
+    name: "DiffDock"
+    type: model
+    url: https://github.com/gcorso/DiffDock
+    description: "Diffusion generative model for molecular docking, predicting the binding pose of small molecules to protein targets."
+    tags: [drug-discovery, molecular-generation]
+    tasks: []
+    modalities: []
+    organism: []
+    api: false
+
   - id: dnabert
     name: "DNABERT"
     type: model
@@ -1352,6 +1385,17 @@ resources:
     url: https://github.com/facebookresearch/esm
     description: "Protein embeddings."
     tags: [foundation-models, protein-foundation-models]
+    tasks: []
+    modalities: []
+    organism: []
+    api: false
+
+  - id: gears
+    name: "GEARS"
+    type: model
+    url: https://github.com/snap-stanford/GEARS
+    description: "Graph-based model for predicting transcriptional responses to single and combinatorial genetic perturbations using biological priors."
+    tags: [foundation-models, single-cell-foundation-models]
     tasks: []
     modalities: []
     organism: []
@@ -1588,6 +1632,17 @@ resources:
     organism: []
     api: false
 
+  - id: openfold
+    name: "OpenFold"
+    type: model
+    url: https://github.com/aqlaboratory/openfold
+    description: "Trainable, memory-efficient open-source reproduction of AlphaFold2 enabling custom protein structure prediction workflows."
+    tags: [foundation-models, protein-foundation-models]
+    tasks: []
+    modalities: []
+    organism: []
+    api: false
+
   - id: phikon
     name: "Phikon"
     type: model
@@ -1605,6 +1660,17 @@ resources:
     url: https://github.com/dauparas/ProteinMPNN
     description: "Deep learning model for protein sequence design given backbone structure."
     tags: [foundation-models, protein-foundation-models]
+    tasks: []
+    modalities: []
+    organism: []
+    api: false
+
+  - id: recover
+    name: "RECOVER"
+    type: model
+    url: https://github.com/RECOVERcoalition/Recover
+    description: "Machine learning framework for predicting synergistic drug combination responses across cell lines."
+    tags: [drug-discovery, drug-response-prediction]
     tasks: []
     modalities: []
     organism: []
@@ -1637,6 +1703,17 @@ resources:
     type: model
     url: https://github.com/RosettaCommons/RoseTTAFold
     description: "Three-track neural network for protein structure prediction."
+    tags: [foundation-models, protein-foundation-models]
+    tasks: []
+    modalities: []
+    organism: []
+    api: false
+
+  - id: saprot
+    name: "SaProt"
+    type: model
+    url: https://github.com/westlake-reup/SaProt
+    description: "Structure-aware protein language model using structure-aware tokens that encode both sequence and backbone geometry for improved function prediction."
     tags: [foundation-models, protein-foundation-models]
     tasks: []
     modalities: []
@@ -1759,6 +1836,17 @@ resources:
     url: https://github.com/lifanchen-simm/transformerCPI
     description: "CPI prediction using Transformer."
     tags: [compound-protein-interaction, drug-discovery]
+    tasks: []
+    modalities: []
+    organism: []
+    api: false
+
+  - id: uce
+    name: "UCE"
+    type: model
+    url: https://github.com/snap-stanford/UCE
+    description: "Universal Cell Embeddings: zero-shot single-cell embedding model trained on 36M cells across species, tissues, and assays without fine-tuning."
+    tags: [foundation-models, single-cell-foundation-models]
     tasks: []
     modalities: []
     organism: []
@@ -1901,6 +1989,17 @@ resources:
     type: toolkit
     url: https://scanpy.readthedocs.io/en/stable/
     description: "Python library for scRNA-seq analysis."
+    tags: [preprocessing-tools]
+    tasks: []
+    modalities: []
+    organism: []
+    api: false
+
+  - id: scvelo
+    name: "scVelo"
+    type: toolkit
+    url: https://github.com/theislab/scvelo
+    description: "RNA velocity estimation for single-cell transcriptomics, inferring the direction and speed of cell differentiation."
     tags: [preprocessing-tools]
     tasks: []
     modalities: []
