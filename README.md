@@ -8,7 +8,7 @@ A curated collection of databases, software, and papers related to computational
 
 ## Interface
 
-Browse and search the resources via the GitHub Pages UI: https://inoue0426.github.io/awesome-computational-biology/
+Browse and search the resources via the [GitHub Pages UI](https://inoue0426.github.io/awesome-computational-biology/).
 
 ---
 
