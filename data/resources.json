@@ -112,6 +112,48 @@
     "api": true
   },
   {
+    "id": "1000_genomes_project",
+    "name": "1000 Genomes Project",
+    "type": "benchmark",
+    "url": "https://www.internationalgenome.org/",
+    "description": "Reference panel of human genetic variation from 2,504 individuals across 26 populations.",
+    "tags": [
+      "benchmarks-and-datasets"
+    ],
+    "tasks": [],
+    "modalities": [],
+    "organism": [],
+    "api": false
+  },
+  {
+    "id": "bace",
+    "name": "BACE",
+    "type": "benchmark",
+    "url": "https://www.kaggle.com/datasets/gokturkkoch/bace",
+    "description": "Binary classification and regression dataset for β-secretase 1 (BACE-1) inhibitor binding affinity.",
+    "tags": [
+      "benchmarks-and-datasets"
+    ],
+    "tasks": [],
+    "modalities": [],
+    "organism": [],
+    "api": false
+  },
+  {
+    "id": "beat_aml",
+    "name": "BEAT AML",
+    "type": "benchmark",
+    "url": "https://biodev.github.io/BeatAML2/",
+    "description": "Functional ex vivo drug sensitivity measurements paired with genomics for acute myeloid leukemia.",
+    "tags": [
+      "benchmarks-and-datasets"
+    ],
+    "tasks": [],
+    "modalities": [],
+    "organism": [],
+    "api": false
+  },
+  {
     "id": "bindingdb_curated_sets",
     "name": "BindingDB Curated Sets",
     "type": "benchmark",
@@ -140,6 +182,34 @@
     "api": false
   },
   {
+    "id": "clintox",
+    "name": "ClinTox",
+    "type": "benchmark",
+    "url": "https://tdcommons.ai/single_pred_tasks/tox/#clintox",
+    "description": "Clinical toxicity dataset contrasting FDA-approved drugs with those that failed clinical trials due to toxicity.",
+    "tags": [
+      "benchmarks-and-datasets"
+    ],
+    "tasks": [],
+    "modalities": [],
+    "organism": [],
+    "api": false
+  },
+  {
+    "id": "cptac_clinical_proteomic_tumor_analysis_consortium",
+    "name": "CPTAC (Clinical Proteomic Tumor Analysis Consortium)",
+    "type": "benchmark",
+    "url": "https://proteomics.cancer.gov/programs/cptac",
+    "description": "Multi-omic proteogenomic datasets for multiple cancer types linking proteomics with genomics.",
+    "tags": [
+      "benchmarks-and-datasets"
+    ],
+    "tasks": [],
+    "modalities": [],
+    "organism": [],
+    "api": false
+  },
+  {
     "id": "crossdocked2020",
     "name": "CrossDocked2020",
     "type": "benchmark",
@@ -154,11 +224,39 @@
     "api": false
   },
   {
+    "id": "flip_fitness_landscape_inference_for_proteins",
+    "name": "FLIP (Fitness Landscape Inference for Proteins)",
+    "type": "benchmark",
+    "url": "https://github.com/J-SNACKKB/FLIP",
+    "description": "Benchmark collection of protein fitness landscape datasets for evaluating protein ML models.",
+    "tags": [
+      "benchmarks-and-datasets"
+    ],
+    "tasks": [],
+    "modalities": [],
+    "organism": [],
+    "api": false
+  },
+  {
     "id": "guacamol",
     "name": "GuacaMol",
     "type": "benchmark",
     "url": "https://github.com/BenevolentAI/guacamol",
     "description": "Benchmark suite for generative molecular design models.",
+    "tags": [
+      "benchmarks-and-datasets"
+    ],
+    "tasks": [],
+    "modalities": [],
+    "organism": [],
+    "api": false
+  },
+  {
+    "id": "lincs_l1000",
+    "name": "LINCS L1000",
+    "type": "benchmark",
+    "url": "https://lincsproject.org/LINCS/tools/workflows/find-the-best-place-to-obtain-the-lincs-l1000-data",
+    "description": "Gene expression profiles (978 landmark genes) for >20,000 chemical and genetic perturbations across cell lines.",
     "tags": [
       "benchmarks-and-datasets"
     ],
@@ -196,6 +294,20 @@
     "api": false
   },
   {
+    "id": "ogb_open_graph_benchmark",
+    "name": "OGB (Open Graph Benchmark)",
+    "type": "benchmark",
+    "url": "https://ogb.stanford.edu/",
+    "description": "Large-scale graph ML benchmark suite including biological datasets such as ogbl-ppa (protein-protein associations) and ogbg-molhiv.",
+    "tags": [
+      "benchmarks-and-datasets"
+    ],
+    "tasks": [],
+    "modalities": [],
+    "organism": [],
+    "api": false
+  },
+  {
     "id": "openbiolink",
     "name": "OpenBioLink",
     "type": "benchmark",
@@ -210,11 +322,179 @@
     "api": false
   },
   {
+    "id": "pharmgkb",
+    "name": "PharmGKB",
+    "type": "benchmark",
+    "url": "https://www.pharmgkb.org/",
+    "description": "Curated pharmacogenomics dataset linking genetic variants to drug response phenotypes across thousands of drugs.",
+    "tags": [
+      "benchmarks-and-datasets"
+    ],
+    "tasks": [],
+    "modalities": [],
+    "organism": [],
+    "api": false
+  },
+  {
+    "id": "prism",
+    "name": "PRISM",
+    "type": "benchmark",
+    "url": "https://depmap.org/portal/prism/",
+    "description": "Cancer drug sensitivity profiling of >4,500 drugs across >900 cancer cell lines using pooled-cell-line barcoding.",
+    "tags": [
+      "benchmarks-and-datasets"
+    ],
+    "tasks": [],
+    "modalities": [],
+    "organism": [],
+    "api": false
+  },
+  {
+    "id": "proteingym",
+    "name": "ProteinGym",
+    "type": "benchmark",
+    "url": "https://github.com/OATML-Markslab/ProteinGym",
+    "description": "Large-scale benchmark of deep mutational scanning assays for evaluating protein fitness landscape models.",
+    "tags": [
+      "benchmarks-and-datasets"
+    ],
+    "tasks": [],
+    "modalities": [],
+    "organism": [],
+    "api": false
+  },
+  {
+    "id": "qm9",
+    "name": "QM9",
+    "type": "benchmark",
+    "url": "https://figshare.com/collections/Quantum_chemistry_structures_and_properties_of_134_kilo_molecules/978904",
+    "description": "Quantum chemistry properties for 134K stable small organic molecules computed at DFT level.",
+    "tags": [
+      "benchmarks-and-datasets"
+    ],
+    "tasks": [],
+    "modalities": [],
+    "organism": [],
+    "api": false
+  },
+  {
+    "id": "scib_single_cell_integration_benchmarks",
+    "name": "scIB (Single-cell Integration Benchmarks)",
+    "type": "benchmark",
+    "url": "https://github.com/theislab/scib",
+    "description": "Comprehensive benchmarking framework for single-cell data integration methods.",
+    "tags": [
+      "benchmarks-and-datasets"
+    ],
+    "tasks": [],
+    "modalities": [],
+    "organism": [],
+    "api": false
+  },
+  {
+    "id": "sider_side_effect_resource",
+    "name": "SIDER (Side Effect Resource)",
+    "type": "benchmark",
+    "url": "http://sideeffects.embl.de/",
+    "description": "Database of 1,430 approved drugs with their recorded adverse drug reactions across 27 system-organ classes.",
+    "tags": [
+      "benchmarks-and-datasets"
+    ],
+    "tasks": [],
+    "modalities": [],
+    "organism": [],
+    "api": false
+  },
+  {
+    "id": "tabula_muris",
+    "name": "Tabula Muris",
+    "type": "benchmark",
+    "url": "https://tabula-muris.ds.czbiohub.org/",
+    "description": "Comprehensive single-cell atlas of 20 mouse organs and tissues, enabling cross-tissue and cross-species comparisons.",
+    "tags": [
+      "benchmarks-and-datasets"
+    ],
+    "tasks": [],
+    "modalities": [],
+    "organism": [],
+    "api": false
+  },
+  {
+    "id": "tabula_sapiens",
+    "name": "Tabula Sapiens",
+    "type": "benchmark",
+    "url": "https://tabula-sapiens-portal.ds.czbiohub.org/",
+    "description": "Comprehensive human single-cell atlas of ~500K cells from 24 organs and tissues across multiple donors.",
+    "tags": [
+      "benchmarks-and-datasets"
+    ],
+    "tasks": [],
+    "modalities": [],
+    "organism": [],
+    "api": false
+  },
+  {
+    "id": "tape_tasks_assessing_protein_embeddings",
+    "name": "TAPE (Tasks Assessing Protein Embeddings)",
+    "type": "benchmark",
+    "url": "https://github.com/songlab-cal/tape",
+    "description": "Benchmark suite of five biologically meaningful semi-supervised learning tasks for evaluating protein representations.",
+    "tags": [
+      "benchmarks-and-datasets"
+    ],
+    "tasks": [],
+    "modalities": [],
+    "organism": [],
+    "api": false
+  },
+  {
+    "id": "the_cancer_genome_atlas_tcga",
+    "name": "The Cancer Genome Atlas (TCGA)",
+    "type": "benchmark",
+    "url": "https://www.cancer.gov/about-nci/organization/ccg/research/structural-genomics/tcga",
+    "description": "Comprehensive multi-omics (genomics, transcriptomics, proteomics, methylation) dataset for 33 cancer types across ~11,000 patients.",
+    "tags": [
+      "benchmarks-and-datasets"
+    ],
+    "tasks": [],
+    "modalities": [],
+    "organism": [],
+    "api": false
+  },
+  {
     "id": "therapeutics_data_commons_tdc",
     "name": "Therapeutics Data Commons (TDC)",
     "type": "benchmark",
     "url": "https://tdcommons.ai/",
     "description": "Unified benchmark suite covering ADMET, drug-target interaction, drug response, and more.",
+    "tags": [
+      "benchmarks-and-datasets"
+    ],
+    "tasks": [],
+    "modalities": [],
+    "organism": [],
+    "api": false
+  },
+  {
+    "id": "tox21",
+    "name": "Tox21",
+    "type": "benchmark",
+    "url": "https://tripod.nih.gov/tox21/challenge/",
+    "description": "12,707 compounds tested in 12 nuclear receptor and stress-response pathway biochemical assays for toxicity prediction.",
+    "tags": [
+      "benchmarks-and-datasets"
+    ],
+    "tasks": [],
+    "modalities": [],
+    "organism": [],
+    "api": false
+  },
+  {
+    "id": "uk_biobank",
+    "name": "UK Biobank",
+    "type": "benchmark",
+    "url": "https://www.ukbiobank.ac.uk/",
+    "description": "Large-scale biomedical database of ~500K participants with genetic, imaging, and health data for population genetics and disease studies.",
     "tags": [
       "benchmarks-and-datasets"
     ],
