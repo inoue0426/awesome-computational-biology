@@ -1599,6 +1599,17 @@ resources:
     organism: []
     api: false
 
+  - id: evodiff
+    name: "EvoDiff"
+    type: model
+    url: https://github.com/microsoft/evodiff
+    description: "Discrete diffusion framework for protein sequence generation trained on evolutionary-scale data, supporting unconditional generation, disordered region design, and functional motif scaffolding. [ [paper-2023](https://www.biorxiv.org/content/10.1101/2023.09.11.556673v1) ]"
+    tags: [foundation-models, protein-foundation-models]
+    tasks: []
+    modalities: []
+    organism: []
+    api: false
+
   - id: evolutionary_scale_modeling_esm
     name: "Evolutionary Scale Modeling (ESM)"
     type: model
