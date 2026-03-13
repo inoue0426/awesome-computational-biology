@@ -90,7 +90,18 @@
     "Boltz",
     "MPNN",
     "Enformer",
-    "Velo"
+    "Velo",
+    "BACE",
+    "secretase",
+    "Clin",
+    "CPTAC",
+    "Proteomic",
+    "proteogenomic",
+    "LINCS",
+    "ogbl",
+    "ogbg",
+    "SIDER",
+    "Muris"
   ],
   "ignorePaths": [
     "node_modules/**"
