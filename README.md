@@ -219,6 +219,7 @@ Browse and search the resources via the [GitHub Pages UI](https://inoue0426.gith
 - [UniProt REST API](https://www.uniprot.org/help/api) — Programmatic access to protein sequence and functional annotation data.
 - [Ensembl REST API](https://rest.ensembl.org/) — API for genomic annotations, variants, genes, and comparative genomics.
 - [KEGG REST API](https://www.kegg.jp/kegg/rest/keggapi.html) — API for accessing KEGG pathways, compounds, genes, and reactions.
+- [BGPT MCP](https://github.com/connerlambden/bgpt-mcp) — MCP server and API for searching scientific papers and returning structured experimental data (methods, results, sample sizes, quality scores) extracted from full-text studies.
 - [ChEMBL Web Services](https://www.ebi.ac.uk/chembl/ws) — REST API for bioactive molecules, targets, and bioassays.
 - [Open Targets Platform API](https://platform.opentargets.org/api) — API for target–disease associations integrating genetics, genomics, and drug data.
 - [ClinicalTrials.gov API](https://clinicaltrials.gov/api/gui) — API for querying clinical trial metadata and results.

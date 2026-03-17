@@ -1,4 +1,5 @@
 id,name,type,url,description,tags,tasks,modalities,organism,license,api,paper,updated
+bgpt_mcp,BGPT MCP,api,https://github.com/connerlambden/bgpt-mcp,"MCP server and API for searching scientific papers and returning structured experimental data (methods, results, sample sizes, quality scores) extracted from full-text studies.",api,,,,,True,,
 chembl_web_services,ChEMBL Web Services,api,https://www.ebi.ac.uk/chembl/ws,"REST API for bioactive molecules, targets, and bioassays.",api,,,,,True,,
 clinicaltrials_gov_api,ClinicalTrials.gov API,api,https://clinicaltrials.gov/api/gui,API for querying clinical trial metadata and results.,api,,,,,True,,
 ensembl_rest_api,Ensembl REST API,api,https://rest.ensembl.org/,"API for genomic annotations, variants, genes, and comparative genomics.",api,,,,,True,,

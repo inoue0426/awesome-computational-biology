@@ -1,5 +1,19 @@
 [
   {
+    "id": "bgpt_mcp",
+    "name": "BGPT MCP",
+    "type": "api",
+    "url": "https://github.com/connerlambden/bgpt-mcp",
+    "description": "MCP server and API for searching scientific papers and returning structured experimental data (methods, results, sample sizes, quality scores) extracted from full-text studies.",
+    "tags": [
+      "api"
+    ],
+    "tasks": [],
+    "modalities": [],
+    "organism": [],
+    "api": true
+  },
+  {
     "id": "chembl_web_services",
     "name": "ChEMBL Web Services",
     "type": "api",
