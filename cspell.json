@@ -130,7 +130,10 @@
     "ligand",
     "SCENIC",
     "GPN",
-    "Sei"
+    "Sei",
+    "KIBA",
+    "pharmacokinetics",
+    "ADME"
   ],
   "ignorePaths": [
     "node_modules/**"
