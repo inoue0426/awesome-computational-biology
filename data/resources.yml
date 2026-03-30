@@ -620,6 +620,17 @@ resources:
     organism: []
     api: false
 
+  - id: diseases
+    name: "DISEASES"
+    type: database
+    url: https://diseases.jensenlab.org/
+    description: "Gene–disease association database integrating evidence from text mining, curated databases, and experimental data."
+    tags: [disease]
+    tasks: []
+    modalities: []
+    organism: []
+    api: false
+
   - id: disgenet
     name: "DisGeNET"
     type: database
@@ -714,6 +725,17 @@ resources:
     url: https://eudract.ema.europa.eu/
     description: "European clinical trial database."
     tags: [clinical-trial]
+    tasks: []
+    modalities: []
+    organism: []
+    api: false
+
+  - id: fantom5
+    name: "FANTOM5"
+    type: database
+    url: https://fantom.gsc.riken.jp/5/
+    description: "Functional annotation of mammalian genome; comprehensive atlas of active enhancers, promoters, and transcription start sites across human and mouse cell types."
+    tags: [genome]
     tasks: []
     modalities: []
     organism: []
@@ -818,6 +840,17 @@ resources:
     organism: []
     api: false
 
+  - id: human_phenotype_ontology_hpo
+    name: "Human Phenotype Ontology (HPO)"
+    type: database
+    url: https://hpo.jax.org/
+    description: "Standardized vocabulary of phenotypic abnormalities in human disease, linking genes, variants, and clinical features."
+    tags: [disease]
+    tasks: []
+    modalities: []
+    organism: []
+    api: false
+
   - id: icd10
     name: "ICD10"
     type: database
@@ -835,6 +868,17 @@ resources:
     url: https://www.ebi.ac.uk/intact/home
     description: "Open-source molecular interaction database and analysis system from EMBL-EBI."
     tags: [interaction, protein-protein-interaction]
+    tasks: []
+    modalities: []
+    organism: []
+    api: false
+
+  - id: interpro
+    name: "InterPro"
+    type: database
+    url: https://www.ebi.ac.uk/interpro/
+    description: "Protein families, domains, and functional sites database integrating 14 member databases including Pfam and PROSITE."
+    tags: [protein]
     tasks: []
     modalities: []
     organism: []
@@ -928,6 +972,17 @@ resources:
     organism: []
     api: false
 
+  - id: mirbase
+    name: "miRBase"
+    type: database
+    url: https://www.mirbase.org/
+    description: "Reference repository for microRNA gene annotations, sequences, and experimentally validated targets."
+    tags: [gene-regulatory-network, interaction]
+    tasks: []
+    modalities: []
+    organism: []
+    api: false
+
   - id: mona_massbank_of_north_america
     name: "MoNA MassBank of North America"
     type: database
@@ -961,6 +1016,17 @@ resources:
     organism: []
     api: false
 
+  - id: nextprot
+    name: "NeXtProt"
+    type: database
+    url: https://www.nextprot.org/
+    description: "Expert knowledge base on human proteins with deep functional annotation, complementary to UniProt."
+    tags: [protein]
+    tasks: []
+    modalities: []
+    organism: []
+    api: false
+
   - id: oadb_observed_antibody_space_database
     name: "OADB (Observed Antibody Space Database)"
     type: database
@@ -977,6 +1043,17 @@ resources:
     type: database
     url: https://www.omim.org/
     description: "Comprehensive database of human genes and genetic disorders."
+    tags: [disease]
+    tasks: []
+    modalities: []
+    organism: []
+    api: false
+
+  - id: open_targets_platform
+    name: "Open Targets Platform"
+    type: database
+    url: https://platform.opentargets.org/
+    description: "Systematic target identification and prioritization platform integrating genetics, genomics, and drug data for drug discovery."
     tags: [disease]
     tasks: []
     modalities: []
@@ -1000,6 +1077,17 @@ resources:
     url: https://www.pdbbind-plus.org.cn/
     description: "Binding affinity data for biomolecular complexes."
     tags: [chemical-protein-interaction, interaction]
+    tasks: []
+    modalities: []
+    organism: []
+    api: false
+
+  - id: pfam
+    name: "Pfam"
+    type: database
+    url: https://www.ebi.ac.uk/interpro/entry/pfam/
+    description: "Database of protein families described by multiple sequence alignments and hidden Markov models."
+    tags: [protein]
     tasks: []
     modalities: []
     organism: []
@@ -1060,6 +1148,17 @@ resources:
     organism: []
     api: false
 
+  - id: regnetwork
+    name: "RegNetwork"
+    type: database
+    url: http://www.regnetworkweb.org/
+    description: "Database of gene regulatory networks covering transcription factor–target gene and miRNA–gene interaction data across multiple species."
+    tags: [gene-regulatory-network, interaction]
+    tasks: []
+    modalities: []
+    organism: []
+    api: false
+
   - id: rfam
     name: "Rfam"
     type: database
@@ -1077,6 +1176,17 @@ resources:
     url: https://www.rhea-db.org/
     description: "Database of chemical reactions."
     tags: [compound]
+    tasks: []
+    modalities: []
+    organism: []
+    api: false
+
+  - id: roadmap_epigenomics
+    name: "ROADMAP Epigenomics"
+    type: database
+    url: http://www.roadmapepigenomics.org/
+    description: "Reference epigenome maps for 111 primary human cell types and tissues, including histone modifications, chromatin accessibility, and DNA methylation."
+    tags: [genome]
     tasks: []
     modalities: []
     organism: []
@@ -1192,6 +1302,17 @@ resources:
     organism: []
     api: false
 
+  - id: trrust
+    name: "TRRUST"
+    type: database
+    url: https://www.grnpedia.org/trrust/
+    description: "Manually curated database of human and mouse transcriptional regulatory interactions between transcription factors and their target genes."
+    tags: [gene-regulatory-network, interaction]
+    tasks: []
+    modalities: []
+    organism: []
+    api: false
+
   - id: ucsc_genome_browser
     name: "UCSC Genome Browser"
     type: database
@@ -1263,6 +1384,17 @@ resources:
     type: model
     url: https://github.com/google-deepmind/alphafold3
     description: "Predicts structures of proteins, nucleic acids, small molecules, and their complexes."
+    tags: [foundation-models, protein-foundation-models]
+    tasks: []
+    modalities: []
+    organism: []
+    api: false
+
+  - id: ankh
+    name: "Ankh"
+    type: model
+    url: https://github.com/agemagician/Ankh
+    description: "Efficient protein language model optimized for downstream prediction tasks including secondary structure, localization, and function annotation."
     tags: [foundation-models, protein-foundation-models]
     tasks: []
     modalities: []
@@ -1390,6 +1522,17 @@ resources:
     organism: []
     api: false
 
+  - id: chatdrug
+    name: "ChatDrug"
+    type: model
+    url: https://github.com/chao1224/ChatDrug
+    description: "LLM-based conversational pipeline for drug discovery, using natural language prompts for iterative drug editing and optimization."
+    tags: [llm-for-biology]
+    tasks: []
+    modalities: []
+    organism: []
+    api: false
+
   - id: chemberta_2
     name: "ChemBERTa-2"
     type: model
@@ -1473,6 +1616,17 @@ resources:
     url: https://github.com/kexinhuang12345/DeepPurpose
     description: "Deep learning library for drug repurposing."
     tags: [drug-discovery, drug-repurposing]
+    tasks: []
+    modalities: []
+    organism: []
+    api: false
+
+  - id: deepsea
+    name: "DeepSEA"
+    type: model
+    url: http://deepsea.princeton.edu/
+    description: "Deep learning framework for predicting chromatin effects of sequence alterations with single-nucleotide sensitivity across thousands of chromatin features."
+    tags: [foundation-models, genomics-foundation-models]
     tasks: []
     modalities: []
     organism: []
@@ -1698,6 +1852,17 @@ resources:
     organism: []
     api: false
 
+  - id: gpn_genomic_pre_trained_network
+    name: "GPN (Genomic Pre-trained Network)"
+    type: model
+    url: https://github.com/songlab-cal/gpn
+    description: "Masked language model for DNA sequences enabling zero-shot variant effect prediction without requiring functional annotations."
+    tags: [foundation-models, genomics-foundation-models]
+    tasks: []
+    modalities: []
+    organism: []
+    api: false
+
   - id: graphdta
     name: "GraphDTA"
     type: model
@@ -1709,12 +1874,34 @@ resources:
     organism: []
     api: false
 
+  - id: hidra
+    name: "HiDRA"
+    type: model
+    url: https://github.com/bsml320/HiDRA
+    description: "Hierarchical network model incorporating gene and pathway-level information for cancer drug response prediction."
+    tags: [drug-discovery, drug-response-prediction]
+    tasks: []
+    modalities: []
+    organism: []
+    api: false
+
   - id: hyenadna
     name: "HyenaDNA"
     type: model
     url: https://github.com/HazyResearch/hyena-dna
     description: "Long-range genomic foundation model handling sequences up to 1M tokens with sub-quadratic attention."
     tags: [foundation-models, genomics-foundation-models]
+    tasks: []
+    modalities: []
+    organism: []
+    api: false
+
+  - id: jtvae
+    name: "JTVAE"
+    type: model
+    url: https://github.com/wengong-jin/icml18-jtnn
+    description: "Junction tree variational autoencoder for molecular graph generation that guarantees chemical validity via a hierarchical tree decomposition."
+    tags: [drug-discovery, molecular-generation]
     tasks: []
     modalities: []
     organism: []
@@ -1792,6 +1979,17 @@ resources:
     url: https://github.com/devalab/molgpt
     description: "Transformer-based model for molecular generation."
     tags: [drug-discovery, molecular-generation]
+    tasks: []
+    modalities: []
+    organism: []
+    api: false
+
+  - id: molt5
+    name: "MolT5"
+    type: model
+    url: https://github.com/blender-nlp/MolT5
+    description: "Language model for molecular tasks bridging text and SMILES, enabling molecule captioning and text-driven molecule generation."
+    tags: [llm-for-biology]
     tasks: []
     modalities: []
     organism: []
@@ -1885,11 +2083,33 @@ resources:
     organism: []
     api: false
 
+  - id: progen2
+    name: "ProGen2"
+    type: model
+    url: https://github.com/salesforce/progen
+    description: "Protein language model trained on diverse protein families for sequence generation and fitness prediction."
+    tags: [foundation-models, protein-foundation-models]
+    tasks: []
+    modalities: []
+    organism: []
+    api: false
+
   - id: proteinmpnn
     name: "ProteinMPNN"
     type: model
     url: https://github.com/dauparas/ProteinMPNN
     description: "Deep learning model for protein sequence design given backbone structure."
+    tags: [foundation-models, protein-foundation-models]
+    tasks: []
+    modalities: []
+    organism: []
+    api: false
+
+  - id: prottrans
+    name: "ProtTrans"
+    type: model
+    url: https://github.com/agemagician/ProtTrans
+    description: "Suite of protein language models (ProtBERT, ProtT5, ProtXLNet) trained on billions of protein sequences from UniRef and BFD."
     tags: [foundation-models, protein-foundation-models]
     tasks: []
     modalities: []
@@ -2017,6 +2237,17 @@ resources:
     organism: []
     api: false
 
+  - id: sei
+    name: "Sei"
+    type: model
+    url: https://github.com/FunctionLab/sei-framework
+    description: "Sequence-to-function framework learning a genome-wide regulatory activity code from DNA sequences for variant effect prediction."
+    tags: [foundation-models, genomics-foundation-models]
+    tasks: []
+    modalities: []
+    organism: []
+    api: false
+
   - id: spatialglue
     name: "SpatialGlue"
     type: model
@@ -2034,6 +2265,17 @@ resources:
     url: https://github.com/guanjq/targetdiff
     description: "3D equivariant diffusion model for structure-based drug design."
     tags: [drug-discovery, molecular-generation]
+    tasks: []
+    modalities: []
+    organism: []
+    api: false
+
+  - id: tgsa
+    name: "TGSA"
+    type: model
+    url: https://github.com/violet-sto/TGSA
+    description: "Tumor gene set and attention-based model leveraging biological pathway knowledge for drug response prediction."
+    tags: [drug-discovery, drug-response-prediction]
     tasks: []
     modalities: []
     organism: []
@@ -2116,6 +2358,17 @@ resources:
     organism: []
     api: false
 
+  - id: cellchat
+    name: "CellChat"
+    type: toolkit
+    url: https://github.com/sqjin/CellChat
+    description: "Inference and analysis of cell-cell communication ligand-receptor networks from single-cell transcriptomics data."
+    tags: [preprocessing-tools]
+    tasks: []
+    modalities: []
+    organism: []
+    api: false
+
   - id: celltypist
     name: "CellTypist"
     type: toolkit
@@ -2160,6 +2413,17 @@ resources:
     organism: []
     api: false
 
+  - id: doubletfinder
+    name: "DoubletFinder"
+    type: toolkit
+    url: https://github.com/chris-mcginnis-ucsf/DoubletFinder
+    description: "Machine learning approach for detecting multiplet (doublet) artifacts in single-cell RNA-seq data."
+    tags: [preprocessing-tools]
+    tasks: []
+    modalities: []
+    organism: []
+    api: false
+
   - id: flashdeconv
     name: "FlashDeconv"
     type: toolkit
@@ -2182,11 +2446,44 @@ resources:
     organism: []
     api: false
 
+  - id: harmony
+    name: "Harmony"
+    type: toolkit
+    url: https://github.com/immunogenomics/harmony
+    description: "Fast and scalable integration of single-cell data across datasets, conditions, technologies, and species."
+    tags: [preprocessing-tools]
+    tasks: []
+    modalities: []
+    organism: []
+    api: false
+
+  - id: kallisto
+    name: "kallisto"
+    type: toolkit
+    url: https://pachterlab.github.io/kallisto/
+    description: "Near-optimal RNA-seq quantification using pseudoalignment for fast transcript abundance estimation."
+    tags: [preprocessing-tools]
+    tasks: []
+    modalities: []
+    organism: []
+    api: false
+
   - id: mdanalysis
     name: "MDAnalysis"
     type: toolkit
     url: https://www.mdanalysis.org/
     description: "Python library for analyzing and altering molecular dynamics simulation trajectories."
+    tags: [preprocessing-tools]
+    tasks: []
+    modalities: []
+    organism: []
+    api: false
+
+  - id: monocle3
+    name: "Monocle3"
+    type: toolkit
+    url: https://cole-trapnell-lab.github.io/monocle3/
+    description: "Single-cell trajectory analysis tool for learning developmental trajectories and ordering cells in pseudotime."
     tags: [preprocessing-tools]
     tasks: []
     modalities: []
@@ -2220,6 +2517,17 @@ resources:
     type: toolkit
     url: https://scanpy.readthedocs.io/en/stable/
     description: "Python library for scRNA-seq analysis."
+    tags: [preprocessing-tools]
+    tasks: []
+    modalities: []
+    organism: []
+    api: false
+
+  - id: scenic
+    name: "SCENIC"
+    type: toolkit
+    url: https://github.com/aertslab/SCENIC
+    description: "Single-cell regulatory network inference and clustering linking transcription factors to co-expressed gene modules."
     tags: [preprocessing-tools]
     tasks: []
     modalities: []
@@ -2270,327 +2578,13 @@ resources:
     organism: []
     api: false
 
-  # ── New Preprocessing Tools ────────────────────────────────────────────────
-
   - id: star
     name: "STAR"
     type: toolkit
     url: https://github.com/alexdobin/STAR
     description: "Ultrafast universal RNA-seq aligner with support for spliced alignment and single-cell quantification via STARsolo."
-    tags: [preprocessing-tools, rna-seq, alignment]
-    tasks: [alignment, quantification]
-    modalities: [bulk-rna-seq, scrna-seq]
-    organism: []
-    api: false
-
-  - id: kallisto
-    name: "kallisto"
-    type: toolkit
-    url: https://pachterlab.github.io/kallisto/
-    description: "Near-optimal RNA-seq quantification using pseudoalignment for fast transcript abundance estimation."
-    tags: [preprocessing-tools, rna-seq, quantification]
-    tasks: [quantification]
-    modalities: [bulk-rna-seq, scrna-seq]
-    organism: []
-    api: false
-
-  - id: harmony
-    name: "Harmony"
-    type: toolkit
-    url: https://github.com/immunogenomics/harmony
-    description: "Fast and scalable integration of single-cell data across datasets, conditions, technologies, and species."
-    tags: [preprocessing-tools, scrna-seq, batch-correction]
-    tasks: [batch-integration, dimensionality-reduction]
-    modalities: [scrna-seq]
-    organism: []
-    api: false
-
-  - id: monocle3
-    name: "Monocle3"
-    type: toolkit
-    url: https://cole-trapnell-lab.github.io/monocle3/
-    description: "Single-cell trajectory analysis tool for learning developmental trajectories and ordering cells in pseudotime."
-    tags: [preprocessing-tools, scrna-seq, trajectory-analysis]
-    tasks: [trajectory-inference, pseudotime-ordering]
-    modalities: [scrna-seq]
-    organism: []
-    api: false
-
-  - id: cellchat
-    name: "CellChat"
-    type: toolkit
-    url: https://github.com/sqjin/CellChat
-    description: "Inference and analysis of cell-cell communication ligand-receptor networks from single-cell transcriptomics data."
-    tags: [preprocessing-tools, scrna-seq, cell-communication]
-    tasks: [cell-cell-communication]
-    modalities: [scrna-seq]
-    organism: []
-    api: false
-
-  - id: scenic
-    name: "SCENIC"
-    type: toolkit
-    url: https://github.com/aertslab/SCENIC
-    description: "Single-cell regulatory network inference and clustering linking transcription factors to co-expressed gene modules."
-    tags: [preprocessing-tools, scrna-seq, gene-regulatory-network]
-    tasks: [gene-regulatory-network-inference]
-    modalities: [scrna-seq]
-    organism: []
-    api: false
-
-  - id: doubletfinder
-    name: "DoubletFinder"
-    type: toolkit
-    url: https://github.com/chris-mcginnis-ucsf/DoubletFinder
-    description: "Machine learning approach for detecting multiplet (doublet) artifacts in single-cell RNA-seq data."
-    tags: [preprocessing-tools, scrna-seq, quality-control]
-    tasks: [doublet-detection, quality-control]
-    modalities: [scrna-seq]
-    organism: []
-    api: false
-
-  # ── New Databases ──────────────────────────────────────────────────────────
-
-  - id: interpro
-    name: "InterPro"
-    type: database
-    url: https://www.ebi.ac.uk/interpro/
-    description: "Protein families, domains, and functional sites database integrating 14 member databases including Pfam and PROSITE."
-    tags: [protein, domain, family]
-    tasks: []
-    modalities: [protein-sequence]
-    organism: []
-    api: true
-
-  - id: pfam
-    name: "Pfam"
-    type: database
-    url: https://www.ebi.ac.uk/interpro/entry/pfam/
-    description: "Database of protein families described by multiple sequence alignments and hidden Markov models."
-    tags: [protein, family]
-    tasks: []
-    modalities: [protein-sequence]
-    organism: []
-    api: false
-
-  - id: nextprot
-    name: "NeXtProt"
-    type: database
-    url: https://www.nextprot.org/
-    description: "Expert knowledge base on human proteins with deep functional annotation, complementary to UniProt."
-    tags: [protein, human]
-    tasks: []
-    modalities: [protein-sequence, protein-structure]
-    organism: [human]
-    api: true
-
-  - id: roadmap_epigenomics
-    name: "ROADMAP Epigenomics"
-    type: database
-    url: http://www.roadmapepigenomics.org/
-    description: "Reference epigenome maps for 111 primary human cell types and tissues, including histone modifications, chromatin accessibility, and DNA methylation."
-    tags: [genome, epigenomics, chromatin]
-    tasks: []
-    modalities: [epigenomics]
-    organism: [human]
-    api: false
-
-  - id: fantom5
-    name: "FANTOM5"
-    type: database
-    url: https://fantom.gsc.riken.jp/5/
-    description: "Functional annotation of mammalian genome; comprehensive atlas of active enhancers, promoters, and transcription start sites across human and mouse cell types."
-    tags: [genome, regulatory-elements, transcriptomics]
-    tasks: []
-    modalities: [transcriptomics, epigenomics]
-    organism: [human, mouse]
-    api: false
-
-  - id: open_targets_platform
-    name: "Open Targets Platform"
-    type: database
-    url: https://platform.opentargets.org/
-    description: "Systematic target identification and prioritization platform integrating genetics, genomics, and drug data for drug discovery."
-    tags: [disease, drug-discovery, target]
-    tasks: [target-identification]
-    modalities: []
-    organism: [human]
-    api: true
-
-  - id: hpo
-    name: "Human Phenotype Ontology (HPO)"
-    type: database
-    url: https://hpo.jax.org/
-    description: "Standardized vocabulary of phenotypic abnormalities in human disease, linking genes, variants, and clinical features."
-    tags: [disease, phenotype, ontology]
+    tags: [preprocessing-tools]
     tasks: []
     modalities: []
-    organism: [human]
-    api: false
-
-  - id: diseases
-    name: "DISEASES"
-    type: database
-    url: https://diseases.jensenlab.org/
-    description: "Gene–disease association database integrating evidence from text mining, curated databases, and experimental data."
-    tags: [disease, gene-disease-association]
-    tasks: []
-    modalities: []
-    organism: [human]
-    api: false
-
-  - id: trrust
-    name: "TRRUST"
-    type: database
-    url: https://www.grnpedia.org/trrust/
-    description: "Manually curated database of human and mouse transcriptional regulatory interactions between transcription factors and their target genes."
-    tags: [gene-regulatory-network, transcription-factor]
-    tasks: []
-    modalities: [transcriptomics]
-    organism: [human, mouse]
-    api: false
-
-  - id: regnetwork
-    name: "RegNetwork"
-    type: database
-    url: http://www.regnetworkweb.org/
-    description: "Database of gene regulatory networks covering transcription factor–target gene and miRNA–gene interaction data across multiple species."
-    tags: [gene-regulatory-network, transcription-factor, mirna]
-    tasks: []
-    modalities: [transcriptomics]
-    organism: []
-    api: false
-
-  - id: mirbase
-    name: "miRBase"
-    type: database
-    url: https://www.mirbase.org/
-    description: "Reference repository for microRNA gene annotations, sequences, and experimentally validated targets."
-    tags: [rna, mirna]
-    tasks: []
-    modalities: [rna-sequence]
-    organism: []
-    api: false
-
-  # ── New ML Models ──────────────────────────────────────────────────────────
-
-  - id: tgsa
-    name: "TGSA"
-    type: model
-    url: https://github.com/violet-sto/TGSA
-    description: "Tumor gene set and attention-based model leveraging biological pathway knowledge for drug response prediction."
-    tags: [drug-response, drug-discovery]
-    tasks: [drug-response-prediction]
-    modalities: [transcriptomics, drug-smiles]
-    organism: [human]
-    api: false
-
-  - id: hidra
-    name: "HiDRA"
-    type: model
-    url: https://github.com/bsml320/HiDRA
-    description: "Hierarchical network model incorporating gene and pathway-level information for cancer drug response prediction."
-    tags: [drug-response, drug-discovery, hierarchical]
-    tasks: [drug-response-prediction]
-    modalities: [transcriptomics, drug-smiles]
-    organism: [human]
-    api: false
-
-  - id: jtvae
-    name: "JTVAE"
-    type: model
-    url: https://github.com/wengong-jin/icml18-jtnn
-    description: "Junction tree variational autoencoder for molecular graph generation that guarantees chemical validity via a hierarchical tree decomposition."
-    tags: [molecular-generation, drug-discovery, vae]
-    tasks: [molecular-generation]
-    modalities: [molecular-graph, drug-smiles]
-    organism: []
-    api: false
-
-  - id: molt5
-    name: "MolT5"
-    type: model
-    url: https://github.com/blender-nlp/MolT5
-    description: "Language model for molecular tasks bridging text and SMILES, enabling molecule captioning and text-driven molecule generation."
-    tags: [llm-biology, molecular-generation, drug-discovery]
-    tasks: [molecule-captioning, molecular-generation, property-prediction]
-    modalities: [drug-smiles, text]
-    organism: []
-    api: false
-
-  - id: chatdrug
-    name: "ChatDrug"
-    type: model
-    url: https://github.com/chao1224/ChatDrug
-    description: "LLM-based conversational pipeline for drug discovery, using natural language prompts for iterative drug editing and optimization."
-    tags: [llm-biology, drug-discovery]
-    tasks: [drug-design, drug-optimization]
-    modalities: [drug-smiles, text]
-    organism: []
-    api: false
-
-  - id: prottrans
-    name: "ProtTrans"
-    type: model
-    url: https://github.com/agemagician/ProtTrans
-    description: "Suite of protein language models (ProtBERT, ProtT5, ProtXLNet) trained on billions of protein sequences from UniRef and BFD."
-    tags: [protein-foundation-model, protein-embedding]
-    tasks: [protein-representation, protein-function-prediction]
-    modalities: [protein-sequence]
-    organism: []
-    api: false
-
-  - id: progen2
-    name: "ProGen2"
-    type: model
-    url: https://github.com/salesforce/progen
-    description: "Protein language model trained on diverse protein families for sequence generation and fitness prediction."
-    tags: [protein-foundation-model, protein-generation]
-    tasks: [protein-generation, protein-fitness-prediction]
-    modalities: [protein-sequence]
-    organism: []
-    api: false
-
-  - id: ankh
-    name: "Ankh"
-    type: model
-    url: https://github.com/agemagician/Ankh
-    description: "Efficient protein language model optimized for downstream prediction tasks including secondary structure, localization, and function annotation."
-    tags: [protein-foundation-model, protein-embedding]
-    tasks: [protein-representation, secondary-structure-prediction]
-    modalities: [protein-sequence]
-    organism: []
-    api: false
-
-  - id: deepsea
-    name: "DeepSEA"
-    type: model
-    url: http://deepsea.princeton.edu/
-    description: "Deep learning framework for predicting chromatin effects of sequence alterations with single-nucleotide sensitivity across thousands of chromatin features."
-    tags: [genomics-foundation-model, variant-effect-prediction]
-    tasks: [chromatin-effect-prediction, variant-effect-prediction]
-    modalities: [dna-sequence]
-    organism: [human]
-    api: false
-
-  - id: sei
-    name: "Sei"
-    type: model
-    url: https://github.com/FunctionLab/sei-framework
-    description: "Sequence-to-function framework learning a genome-wide regulatory activity code from DNA sequences for variant effect prediction."
-    tags: [genomics-foundation-model, regulatory-activity]
-    tasks: [regulatory-activity-prediction, variant-effect-prediction]
-    modalities: [dna-sequence]
-    organism: [human]
-    api: false
-
-  - id: gpn
-    name: "GPN (Genomic Pre-trained Network)"
-    type: model
-    url: https://github.com/songlab-cal/gpn
-    description: "Masked language model for DNA sequences enabling zero-shot variant effect prediction without requiring functional annotations."
-    tags: [genomics-foundation-model, variant-effect-prediction]
-    tasks: [variant-effect-prediction]
-    modalities: [dna-sequence]
     organism: []
     api: false
