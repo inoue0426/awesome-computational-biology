@@ -279,6 +279,17 @@ resources:
     organism: []
     api: false
 
+  - id: pk_db
+    name: "PK-DB"
+    type: benchmark
+    url: https://pk-db.com/
+    description: "Open database of experimental pharmacokinetics (PK) and ADME data from clinical and preclinical studies."
+    tags: [benchmarks-and-datasets]
+    tasks: []
+    modalities: []
+    organism: []
+    api: false
+
   - id: prism
     name: "PRISM"
     type: benchmark
@@ -598,6 +609,17 @@ resources:
     organism: []
     api: false
 
+  - id: davis_kinase_inhibitors_db
+    name: "Davis kinase inhibitors DB"
+    type: database
+    url: http://staff.cs.utu.fi/~aijrinas/dti/
+    description: "Experimental kinase inhibitor binding affinity dataset for protein–ligand interaction research."
+    tags: [chemical-protein-interaction, interaction]
+    tasks: []
+    modalities: []
+    organism: []
+    api: false
+
   - id: dependency_map_depmap
     name: "Dependency Map (DepMap)"
     type: database
@@ -691,6 +713,17 @@ resources:
     type: database
     url: http://drugcentral.org/
     description: "Online drug compendium with drug mode of action and indication information."
+    tags: [compound]
+    tasks: []
+    modalities: []
+    organism: []
+    api: false
+
+  - id: drugtargetcommons
+    name: "DrugTargetCommons"
+    type: database
+    url: https://drugtargetcommons.fimm.fi/
+    description: "Community platform for curating and integrating experimental bioactivity data across drugs and targets."
     tags: [compound]
     tasks: []
     modalities: []
@@ -923,6 +956,17 @@ resources:
     url: https://www.genome.jp/kegg/pathway.html
     description: "Collection of pathway maps."
     tags: [pathway]
+    tasks: []
+    modalities: []
+    organism: []
+    api: false
+
+  - id: kinase_inhibitor_bioactivity_data_kiba
+    name: "Kinase Inhibitor Bioactivity Data (KIBA)"
+    type: database
+    url: https://janeliascicomp.github.io/KIBA/
+    description: "Integrated bioactivity scores for kinase inhibitors combining Ki, Kd, and IC50 measurements."
+    tags: [chemical-protein-interaction, interaction]
     tasks: []
     modalities: []
     organism: []
@@ -1340,6 +1384,17 @@ resources:
     type: database
     url: https://www.uniprot.org/
     description: "Functional information on proteins."
+    tags: [protein]
+    tasks: []
+    modalities: []
+    organism: []
+    api: false
+
+  - id: uniref
+    name: "UniRef"
+    type: database
+    url: https://www.uniprot.org/uniref/
+    description: "Non-redundant sequence database clustering UniProtKB entries at multiple sequence identity thresholds."
     tags: [protein]
     tasks: []
     modalities: []
