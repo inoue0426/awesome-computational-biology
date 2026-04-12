@@ -212,7 +212,18 @@ main {
   background: var(--badge-bg);
   color: var(--badge-text);
   font-weight: 500;
+  border: none;
+  line-height: 1.4;
+  font-family: var(--font);
 }
+
+button.badge {
+  cursor: pointer;
+  transition: filter .12s, box-shadow .12s;
+}
+
+button.badge:hover  { filter: brightness(.88); box-shadow: 0 0 0 2px currentColor; }
+button.badge:focus-visible { outline: 2px solid currentColor; outline-offset: 1px; }
 
 .badge-task     { background: #dbeafe; color: #1e3a5f; }
 .badge-modality { background: #dcfce7; color: #14532d; }
