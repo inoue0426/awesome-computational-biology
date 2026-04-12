@@ -174,16 +174,29 @@
     wrap.className = 'card-badges';
 
     (r.tasks || []).forEach(function (t) {
-      wrap.appendChild(makeBadge(t, 'badge-task'));
+      wrap.appendChild(makeFilterBadge(t, 'badge-task', filterTask));
     });
     (r.modalities || []).forEach(function (m) {
-      wrap.appendChild(makeBadge(m, 'badge-modality'));
+      wrap.appendChild(makeFilterBadge(m, 'badge-modality', filterModality));
     });
     (r.tags || []).forEach(function (tag) {
       wrap.appendChild(makeBadge(tag, 'badge-tag'));
     });
 
     return wrap;
+  }
+
+  function makeFilterBadge(text, cls, selectEl) {
+    var btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'badge ' + cls;
+    btn.textContent = text;
+    btn.title = 'Filter by "' + text + '"';
+    btn.addEventListener('click', function () {
+      selectEl.value = text;
+      render();
+    });
+    return btn;
   }
 
   function makeBadge(text, cls) {
