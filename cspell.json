@@ -133,7 +133,18 @@
     "Sei",
     "KIBA",
     "pharmacokinetics",
-    "ADME"
+    "ADME",
+    "Haplotype",
+    "NCEM",
+    "multiome",
+    "MOGONET",
+    "convolutional",
+    "DRUML",
+    "SBDD",
+    "Pacc",
+    "multiomics",
+    "Pathomic",
+    "PLIP"
   ],
   "ignorePaths": [
     "node_modules/**"
