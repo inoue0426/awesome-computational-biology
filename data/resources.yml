@@ -429,7 +429,7 @@ resources:
     description: "Collection of single-cell datasets."
     tags: [genome]
     tasks: []
-    modalities: []
+    modalities: [Genomics]
     organism: []
     api: false
 
@@ -440,7 +440,7 @@ resources:
     description: "3D protein structure predictions."
     tags: [protein]
     tasks: []
-    modalities: []
+    modalities: [Protein]
     organism: []
     api: false
 
@@ -451,7 +451,7 @@ resources:
     description: "Compounds and target database."
     tags: [chemical-protein-interaction, interaction]
     tasks: []
-    modalities: []
+    modalities: [Protein, Small Molecule]
     organism: []
     api: false
 
@@ -462,7 +462,7 @@ resources:
     description: "Collection of pathway/genome databases across thousands of organisms."
     tags: [pathway]
     tasks: []
-    modalities: []
+    modalities: [Pathway]
     organism: []
     api: false
 
@@ -473,7 +473,7 @@ resources:
     description: "Protein, genetic, and chemical interactions."
     tags: [interaction, protein-protein-interaction]
     tasks: []
-    modalities: []
+    modalities: [Protein]
     organism: []
     api: false
 
@@ -484,7 +484,7 @@ resources:
     description: "Database of ~1000 cancer cell lines."
     tags: [drug-cell-line-response, interaction]
     tasks: []
-    modalities: []
+    modalities: [Gene Expression, Small Molecule]
     organism: []
     api: false
 
@@ -495,7 +495,7 @@ resources:
     description: "Resource on somatic mutations in cancers."
     tags: [genome]
     tasks: []
-    modalities: []
+    modalities: [Genomics]
     organism: []
     api: false
 
@@ -506,7 +506,7 @@ resources:
     description: "Hierarchical classification of protein domain structures."
     tags: [protein]
     tasks: []
-    modalities: []
+    modalities: [Protein]
     organism: []
     api: false
 
@@ -517,7 +517,7 @@ resources:
     description: "Cancer genomics database; aggregating many patient datasets."
     tags: [genome]
     tasks: []
-    modalities: []
+    modalities: [Genomics]
     organism: []
     api: false
 
@@ -528,7 +528,7 @@ resources:
     description: "Integrates multiple cancer cell line databases."
     tags: [drug-cell-line-response, interaction]
     tasks: []
-    modalities: []
+    modalities: [Gene Expression, Small Molecule]
     organism: []
     api: false
 
@@ -539,7 +539,7 @@ resources:
     description: "Database focused on small chemical compounds."
     tags: [compound]
     tasks: []
-    modalities: []
+    modalities: [Small Molecule]
     organism: []
     api: false
 
@@ -550,7 +550,7 @@ resources:
     description: "Bioactive molecules with drug-like properties."
     tags: [compound]
     tasks: []
-    modalities: []
+    modalities: [Small Molecule]
     organism: []
     api: false
 
@@ -561,7 +561,7 @@ resources:
     description: "Chemical structure database."
     tags: [compound]
     tasks: []
-    modalities: []
+    modalities: [Small Molecule]
     organism: []
     api: false
 
@@ -572,7 +572,7 @@ resources:
     description: "Privately and publicly funded clinical studies."
     tags: [clinical-trial]
     tasks: []
-    modalities: []
+    modalities: [Clinical]
     organism: []
     api: false
 
@@ -583,7 +583,7 @@ resources:
     description: "Chemical-gene interactions, chemical-disease and gene-disease associations, chemical-phenotype associations."
     tags: [drug-gene-interaction, interaction]
     tasks: []
-    modalities: []
+    modalities: [Gene, Small Molecule]
     organism: []
     api: false
 
@@ -594,7 +594,7 @@ resources:
     description: "Assessing methods for protein structure prediction."
     tags: [protein]
     tasks: []
-    modalities: []
+    modalities: [Protein]
     organism: []
     api: false
 
@@ -605,7 +605,7 @@ resources:
     description: "Single-cell dataset repository and interactive explorer from the Chan Zuckerberg Initiative."
     tags: [scrna]
     tasks: []
-    modalities: []
+    modalities: [Single Cell]
     organism: []
     api: false
 
@@ -616,7 +616,7 @@ resources:
     description: "Experimental kinase inhibitor binding affinity dataset for protein–ligand interaction research."
     tags: [chemical-protein-interaction, interaction]
     tasks: []
-    modalities: []
+    modalities: [Protein, Small Molecule]
     organism: []
     api: false
 
@@ -627,7 +627,7 @@ resources:
     description: "CRISPR-Cas9 screens in cancer cell lines."
     tags: [genome]
     tasks: []
-    modalities: []
+    modalities: [Genomics]
     organism: []
     api: false
 
@@ -638,7 +638,7 @@ resources:
     description: "Drug-gene interactions and the druggable genome."
     tags: [drug-gene-interaction, interaction]
     tasks: []
-    modalities: []
+    modalities: [Gene, Small Molecule]
     organism: []
     api: false
 
@@ -649,7 +649,7 @@ resources:
     description: "Gene–disease association database integrating evidence from text mining, curated databases, and experimental data."
     tags: [disease]
     tasks: []
-    modalities: []
+    modalities: [Disease]
     organism: []
     api: false
 
@@ -660,7 +660,7 @@ resources:
     description: "Database of gene-disease associations integrating expert-curated and GWAS data."
     tags: [disease]
     tasks: []
-    modalities: []
+    modalities: [Disease]
     organism: []
     api: false
 
@@ -671,7 +671,7 @@ resources:
     description: "Large-scale biological knowledge graph for drug discovery."
     tags: [interaction, knowledge-graph]
     tasks: []
-    modalities: []
+    modalities: [Knowledge Graph]
     organism: []
     api: false
 
@@ -682,7 +682,7 @@ resources:
     description: "Mechanisms of action from drug to disease."
     tags: [interaction, knowledge-graph]
     tasks: []
-    modalities: []
+    modalities: [Knowledge Graph]
     organism: []
     api: false
 
@@ -693,7 +693,7 @@ resources:
     description: "Collections of drug repurposing data (drug, MoA, target, etc)."
     tags: [compound]
     tasks: []
-    modalities: []
+    modalities: [Small Molecule]
     organism: []
     api: false
 
@@ -704,7 +704,7 @@ resources:
     description: "Database of drugs and targets (University of Alberta)."
     tags: [disease]
     tasks: []
-    modalities: []
+    modalities: [Disease]
     organism: []
     api: false
 
@@ -715,7 +715,7 @@ resources:
     description: "Online drug compendium with drug mode of action and indication information."
     tags: [compound]
     tasks: []
-    modalities: []
+    modalities: [Small Molecule]
     organism: []
     api: false
 
@@ -726,7 +726,7 @@ resources:
     description: "Community platform for curating and integrating experimental bioactivity data across drugs and targets."
     tags: [compound]
     tasks: []
-    modalities: []
+    modalities: [Small Molecule]
     organism: []
     api: false
 
@@ -737,7 +737,7 @@ resources:
     description: "Encyclopedia of DNA Elements; regulatory and functional genomic elements across the genome."
     tags: [genome]
     tasks: []
-    modalities: []
+    modalities: [Genomics]
     organism: []
     api: false
 
@@ -748,7 +748,7 @@ resources:
     description: "Genome browser and annotation database for vertebrate and other eukaryotic genomes."
     tags: [genome]
     tasks: []
-    modalities: []
+    modalities: [Genomics]
     organism: []
     api: false
 
@@ -759,7 +759,7 @@ resources:
     description: "European clinical trial database."
     tags: [clinical-trial]
     tasks: []
-    modalities: []
+    modalities: [Clinical]
     organism: []
     api: false
 
@@ -770,7 +770,7 @@ resources:
     description: "Functional annotation of mammalian genome; comprehensive atlas of active enhancers, promoters, and transcription start sites across human and mouse cell types."
     tags: [genome]
     tasks: []
-    modalities: []
+    modalities: [Genomics]
     organism: []
     api: false
 
@@ -781,7 +781,7 @@ resources:
     description: "NCBI's database of genetic sequences."
     tags: [genome]
     tasks: []
-    modalities: []
+    modalities: [Genomics]
     organism: []
     api: false
 
@@ -792,7 +792,7 @@ resources:
     description: "Public functional genomics database."
     tags: [scrna]
     tasks: []
-    modalities: []
+    modalities: [Single Cell]
     organism: []
     api: false
 
@@ -803,7 +803,7 @@ resources:
     description: "Drug sensitivity for ~1000 human cancer cell lines and hundreds of compounds."
     tags: [benchmarks-and-datasets, drug-cell-line-response, interaction]
     tasks: []
-    modalities: []
+    modalities: [Gene Expression, Small Molecule]
     organism: []
     api: false
 
@@ -814,7 +814,7 @@ resources:
     description: "Genome Aggregation Database; genetic variation from large-scale sequencing projects."
     tags: [genome]
     tasks: []
-    modalities: []
+    modalities: [Genomics]
     organism: []
     api: false
 
@@ -825,7 +825,7 @@ resources:
     description: "Heterogeneous network integrating genes, diseases, drugs, pathways, and more."
     tags: [interaction, knowledge-graph]
     tasks: []
-    modalities: []
+    modalities: [Knowledge Graph]
     organism: []
     api: false
 
@@ -836,7 +836,7 @@ resources:
     description: "Human protein-protein interaction database."
     tags: [interaction, protein-protein-interaction]
     tasks: []
-    modalities: []
+    modalities: [Protein]
     organism: []
     api: false
 
@@ -847,7 +847,7 @@ resources:
     description: "Comprehensive database of small molecule metabolites found in the human body."
     tags: [compound]
     tasks: []
-    modalities: []
+    modalities: [Small Molecule]
     organism: []
     api: false
 
@@ -858,7 +858,7 @@ resources:
     description: "Open global atlas of all cells in the human body."
     tags: [scrna]
     tasks: []
-    modalities: []
+    modalities: [Single Cell]
     organism: []
     api: false
 
@@ -869,7 +869,7 @@ resources:
     description: "Database for genomics, proteomics, transcriptomics, and systems biology."
     tags: [genome]
     tasks: []
-    modalities: []
+    modalities: [Genomics]
     organism: []
     api: false
 
@@ -880,7 +880,7 @@ resources:
     description: "Standardized vocabulary of phenotypic abnormalities in human disease, linking genes, variants, and clinical features."
     tags: [disease]
     tasks: []
-    modalities: []
+    modalities: [Disease]
     organism: []
     api: false
 
@@ -891,7 +891,7 @@ resources:
     description: "International Classification of Diseases, 10th revision."
     tags: [clinical-trial]
     tasks: []
-    modalities: []
+    modalities: [Clinical]
     organism: []
     api: false
 
@@ -902,7 +902,7 @@ resources:
     description: "Open-source molecular interaction database and analysis system from EMBL-EBI."
     tags: [interaction, protein-protein-interaction]
     tasks: []
-    modalities: []
+    modalities: [Protein]
     organism: []
     api: false
 
@@ -913,7 +913,7 @@ resources:
     description: "Protein families, domains, and functional sites database integrating 14 member databases including Pfam and PROSITE."
     tags: [protein]
     tasks: []
-    modalities: []
+    modalities: [Protein]
     organism: []
     api: false
 
@@ -924,7 +924,7 @@ resources:
     description: "Database of transcription factor binding profiles."
     tags: [genome]
     tasks: []
-    modalities: []
+    modalities: [Genomics]
     organism: []
     api: false
 
@@ -935,7 +935,7 @@ resources:
     description: "Collection of small molecules and biopolymers."
     tags: [compound]
     tasks: []
-    modalities: []
+    modalities: [Small Molecule]
     organism: []
     api: false
 
@@ -946,7 +946,7 @@ resources:
     description: "Comprehensive, approved drug information."
     tags: [disease]
     tasks: []
-    modalities: []
+    modalities: [Disease]
     organism: []
     api: false
 
@@ -957,7 +957,7 @@ resources:
     description: "Collection of pathway maps."
     tags: [pathway]
     tasks: []
-    modalities: []
+    modalities: [Pathway]
     organism: []
     api: false
 
@@ -968,7 +968,7 @@ resources:
     description: "Integrated bioactivity scores for kinase inhibitors combining Ki, Kd, and IC50 measurements."
     tags: [chemical-protein-interaction, interaction]
     tasks: []
-    modalities: []
+    modalities: [Protein, Small Molecule]
     organism: []
     api: false
 
@@ -979,7 +979,7 @@ resources:
     description: "Database of lipids."
     tags: [compound]
     tasks: []
-    modalities: []
+    modalities: [Small Molecule]
     organism: []
     api: false
 
@@ -990,7 +990,7 @@ resources:
     description: "Open source databases and tools for mass spectrometry reference spectra."
     tags: [mass-spectra]
     tasks: []
-    modalities: []
+    modalities: [Mass Spectra]
     organism: []
     api: false
 
@@ -1001,7 +1001,7 @@ resources:
     description: "Resource for metagenomic and metatranscriptomic data."
     tags: [genome]
     tasks: []
-    modalities: []
+    modalities: [Genomics]
     organism: []
     api: false
 
@@ -1012,7 +1012,7 @@ resources:
     description: "Freely accessible critical care database."
     tags: [clinical-trial]
     tasks: []
-    modalities: []
+    modalities: [Clinical]
     organism: []
     api: false
 
@@ -1023,7 +1023,7 @@ resources:
     description: "Reference repository for microRNA gene annotations, sequences, and experimentally validated targets."
     tags: [gene-regulatory-network, interaction]
     tasks: []
-    modalities: []
+    modalities: [Gene Expression]
     organism: []
     api: false
 
@@ -1034,7 +1034,7 @@ resources:
     description: "Meta-database of metabolite mass spectra, metadata, and associated compounds."
     tags: [mass-spectra]
     tasks: []
-    modalities: []
+    modalities: [Mass Spectra]
     organism: []
     api: false
 
@@ -1045,7 +1045,7 @@ resources:
     description: "Curated gene sets derived from pathways and biological processes."
     tags: [pathway]
     tasks: []
-    modalities: []
+    modalities: [Pathway]
     organism: []
     api: false
 
@@ -1056,7 +1056,7 @@ resources:
     description: "Focuses on 60 cancer cell lines and many drugs."
     tags: [benchmarks-and-datasets, drug-cell-line-response, interaction]
     tasks: []
-    modalities: []
+    modalities: [Gene Expression, Small Molecule]
     organism: []
     api: false
 
@@ -1067,7 +1067,7 @@ resources:
     description: "Expert knowledge base on human proteins with deep functional annotation, complementary to UniProt."
     tags: [protein]
     tasks: []
-    modalities: []
+    modalities: [Protein]
     organism: []
     api: false
 
@@ -1078,7 +1078,7 @@ resources:
     description: "Database of antibody sequences from immune repertoire sequencing."
     tags: [protein]
     tasks: []
-    modalities: []
+    modalities: [Protein]
     organism: []
     api: false
 
@@ -1089,7 +1089,7 @@ resources:
     description: "Comprehensive database of human genes and genetic disorders."
     tags: [disease]
     tasks: []
-    modalities: []
+    modalities: [Disease]
     organism: []
     api: false
 
@@ -1100,7 +1100,7 @@ resources:
     description: "Systematic target identification and prioritization platform integrating genetics, genomics, and drug data for drug discovery."
     tags: [disease]
     tasks: []
-    modalities: []
+    modalities: [Disease]
     organism: []
     api: false
 
@@ -1111,7 +1111,7 @@ resources:
     description: "Database of pathways and interactions."
     tags: [pathway]
     tasks: []
-    modalities: []
+    modalities: [Pathway]
     organism: []
     api: false
 
@@ -1122,7 +1122,7 @@ resources:
     description: "Binding affinity data for biomolecular complexes."
     tags: [chemical-protein-interaction, interaction]
     tasks: []
-    modalities: []
+    modalities: [Protein, Small Molecule]
     organism: []
     api: false
 
@@ -1133,7 +1133,7 @@ resources:
     description: "Database of protein families described by multiple sequence alignments and hidden Markov models."
     tags: [protein]
     tasks: []
-    modalities: []
+    modalities: [Protein]
     organism: []
     api: false
 
@@ -1144,7 +1144,7 @@ resources:
     description: "Multi-modal precision medicine knowledge graph integrating clinical, genetic, and drug data."
     tags: [interaction, knowledge-graph]
     tasks: []
-    modalities: []
+    modalities: [Knowledge Graph]
     organism: []
     api: false
 
@@ -1155,7 +1155,7 @@ resources:
     description: "3D structures of proteins, nucleic acids, complexes."
     tags: [protein]
     tasks: []
-    modalities: []
+    modalities: [Protein]
     organism: []
     api: false
 
@@ -1166,7 +1166,7 @@ resources:
     description: "One of the largest chemical databases (compounds, genes, and proteins)."
     tags: [compound]
     tasks: []
-    modalities: []
+    modalities: [Small Molecule]
     organism: []
     api: false
 
@@ -1177,7 +1177,7 @@ resources:
     description: "Repository for structural data of biological molecules."
     tags: [protein]
     tasks: []
-    modalities: []
+    modalities: [Protein]
     organism: []
     api: false
 
@@ -1188,7 +1188,7 @@ resources:
     description: "Expert-curated, peer-reviewed pathway database with detailed reaction mechanisms."
     tags: [pathway]
     tasks: []
-    modalities: []
+    modalities: [Pathway]
     organism: []
     api: false
 
@@ -1199,7 +1199,7 @@ resources:
     description: "Database of gene regulatory networks covering transcription factor–target gene and miRNA–gene interaction data across multiple species."
     tags: [gene-regulatory-network, interaction]
     tasks: []
-    modalities: []
+    modalities: [Gene Expression]
     organism: []
     api: false
 
@@ -1210,7 +1210,7 @@ resources:
     description: "Database of RNA families with sequence alignments and consensus structures."
     tags: [genome]
     tasks: []
-    modalities: []
+    modalities: [Genomics]
     organism: []
     api: false
 
@@ -1221,7 +1221,7 @@ resources:
     description: "Database of chemical reactions."
     tags: [compound]
     tasks: []
-    modalities: []
+    modalities: [Small Molecule]
     organism: []
     api: false
 
@@ -1232,7 +1232,7 @@ resources:
     description: "Reference epigenome maps for 111 primary human cell types and tissues, including histone modifications, chromatin accessibility, and DNA methylation."
     tags: [genome]
     tasks: []
-    modalities: []
+    modalities: [Genomics]
     organism: []
     api: false
 
@@ -1243,7 +1243,7 @@ resources:
     description: "Structural Antibody Database containing all antibody structures in the PDB."
     tags: [protein]
     tasks: []
-    modalities: []
+    modalities: [Protein]
     organism: []
     api: false
 
@@ -1254,7 +1254,7 @@ resources:
     description: "Database of causal signaling interactions and pathways."
     tags: [pathway]
     tasks: []
-    modalities: []
+    modalities: [Pathway]
     organism: []
     api: false
 
@@ -1265,7 +1265,7 @@ resources:
     description: "Public database for single-cell RNA."
     tags: [scrna]
     tasks: []
-    modalities: []
+    modalities: [Single Cell]
     organism: []
     api: false
 
@@ -1276,7 +1276,7 @@ resources:
     description: "Public database for single-cell RNA."
     tags: [scrna]
     tasks: []
-    modalities: []
+    modalities: [Single Cell]
     organism: []
     api: false
 
@@ -1287,7 +1287,7 @@ resources:
     description: "Dataset of drug-gene interactions."
     tags: [drug-gene-interaction, interaction]
     tasks: []
-    modalities: []
+    modalities: [Gene, Small Molecule]
     organism: []
     api: false
 
@@ -1298,7 +1298,7 @@ resources:
     description: "Chemical-protein interactions."
     tags: [chemical-protein-interaction, interaction]
     tasks: []
-    modalities: []
+    modalities: [Protein, Small Molecule]
     organism: []
     api: false
 
@@ -1309,7 +1309,7 @@ resources:
     description: "PPI networks for multiple organisms."
     tags: [interaction, protein-protein-interaction]
     tasks: []
-    modalities: []
+    modalities: [Protein]
     organism: []
     api: false
 
@@ -1320,7 +1320,7 @@ resources:
     description: "Human gene expression and regulation resource."
     tags: [genome]
     tasks: []
-    modalities: []
+    modalities: [Genomics]
     organism: []
     api: false
 
@@ -1331,7 +1331,7 @@ resources:
     description: "Comprehensive human protein database (cells, tissues, organs)."
     tags: [protein]
     tasks: []
-    modalities: []
+    modalities: [Protein]
     organism: []
     api: false
 
@@ -1342,7 +1342,7 @@ resources:
     description: "Drug-target, target-disease, and drug-disease datasets."
     tags: [compound]
     tasks: []
-    modalities: []
+    modalities: [Small Molecule]
     organism: []
     api: false
 
@@ -1353,7 +1353,7 @@ resources:
     description: "Manually curated database of human and mouse transcriptional regulatory interactions between transcription factors and their target genes."
     tags: [gene-regulatory-network, interaction]
     tasks: []
-    modalities: []
+    modalities: [Gene Expression]
     organism: []
     api: false
 
@@ -1364,7 +1364,7 @@ resources:
     description: "UCSC's genome browser."
     tags: [genome]
     tasks: []
-    modalities: []
+    modalities: [Genomics]
     organism: []
     api: false
 
@@ -1375,7 +1375,7 @@ resources:
     description: "Clustered protein sequence databases."
     tags: [protein]
     tasks: []
-    modalities: []
+    modalities: [Protein]
     organism: []
     api: false
 
@@ -1386,7 +1386,7 @@ resources:
     description: "Functional information on proteins."
     tags: [protein]
     tasks: []
-    modalities: []
+    modalities: [Protein]
     organism: []
     api: false
 
@@ -1397,7 +1397,7 @@ resources:
     description: "Non-redundant sequence database clustering UniProtKB entries at multiple sequence identity thresholds."
     tags: [protein]
     tasks: []
-    modalities: []
+    modalities: [Protein]
     organism: []
     api: false
 
@@ -1408,7 +1408,7 @@ resources:
     description: "Database of biological pathways."
     tags: [pathway]
     tasks: []
-    modalities: []
+    modalities: [Pathway]
     organism: []
     api: false
 
@@ -1419,7 +1419,7 @@ resources:
     description: "Free database of commercially-available compounds for virtual screening."
     tags: [compound]
     tasks: []
-    modalities: []
+    modalities: [Small Molecule]
     organism: []
     api: false
 
@@ -1429,8 +1429,8 @@ resources:
     url: https://huggingface.co/AI4Chem/ChemLLM-7B-Chat
     description: "LLM for chemical & molecular science."
     tags: [llm-for-biology]
-    tasks: []
-    modalities: []
+    tasks: [Language Modeling]
+    modalities: [Text]
     organism: []
     api: false
 
@@ -1439,9 +1439,9 @@ resources:
     type: model
     url: https://github.com/google-deepmind/alphafold3
     description: "Predicts structures of proteins, nucleic acids, small molecules, and their complexes."
-    tags: [foundation-models, protein-foundation-models]
-    tasks: []
-    modalities: []
+    tags: [foundation-models, protein-foundation-models, protein-structure-prediction-and-design]
+    tasks: [Foundation Model, Protein Structure Prediction]
+    modalities: [Protein]
     organism: []
     api: false
 
@@ -1450,9 +1450,9 @@ resources:
     type: model
     url: https://github.com/agemagician/Ankh
     description: "Efficient protein language model optimized for downstream prediction tasks including secondary structure, localization, and function annotation."
-    tags: [foundation-models, protein-foundation-models]
-    tasks: []
-    modalities: []
+    tags: [foundation-models, pre-trained-embedding, protein-foundation-models]
+    tasks: [Foundation Model]
+    modalities: [Protein]
     organism: []
     api: false
 
@@ -1461,9 +1461,9 @@ resources:
     type: model
     url: https://github.com/wukevin/babel
     description: "Cross-modality translation model enabling prediction between scRNA-seq and scATAC-seq profiles without requiring paired single-cell measurements."
-    tags: [foundation-models, single-cell-foundation-models]
-    tasks: []
-    modalities: []
+    tags: [foundation-models, multi-omics-foundation-models, single-cell-foundation-models]
+    tasks: [Foundation Model]
+    modalities: [Multi-Omics, Single Cell]
     organism: []
     api: false
 
@@ -1473,8 +1473,8 @@ resources:
     url: https://github.com/calico/basenji
     description: "Sequential regulatory activity prediction from DNA sequences."
     tags: [foundation-models, genomics-foundation-models]
-    tasks: []
-    modalities: []
+    tasks: [Foundation Model]
+    modalities: [Genomics]
     organism: []
     api: false
 
@@ -1484,8 +1484,8 @@ resources:
     url: https://github.com/microsoft/BioGPT
     description: "LLM for biomedical text generation."
     tags: [llm-for-biology]
-    tasks: []
-    modalities: []
+    tasks: [Language Modeling]
+    modalities: [Text]
     organism: []
     api: false
 
@@ -1495,8 +1495,8 @@ resources:
     url: https://huggingface.co/microsoft/BiomedCLIP-PubMedBERT_256-vit_g_14
     description: "CLIP-based vision-language foundation model for biomedical images and text trained on PubMed figure–caption pairs."
     tags: [foundation-models, multi-modal-foundation-models]
-    tasks: []
-    modalities: []
+    tasks: [Foundation Model]
+    modalities: [Multi-Modal]
     organism: []
     api: false
 
@@ -1506,8 +1506,8 @@ resources:
     url: https://huggingface.co/stanford-crfm/BioMedLM
     description: "2.7B parameter GPT-2-style language model trained exclusively on biomedical literature from PubMed for biomedical question answering and text generation."
     tags: [llm-for-biology]
-    tasks: []
-    modalities: []
+    tasks: [Language Modeling]
+    modalities: [Text]
     organism: []
     api: false
 
@@ -1516,9 +1516,9 @@ resources:
     type: model
     url: https://github.com/jwohlwend/boltz
     description: "Open-source all-atom biomolecular structure prediction model for proteins, nucleic acids, small molecules, and their complexes achieving AlphaFold3-level accuracy."
-    tags: [foundation-models, protein-foundation-models]
-    tasks: []
-    modalities: []
+    tags: [foundation-models, protein-foundation-models, protein-structure-prediction-and-design]
+    tasks: [Foundation Model, Protein Structure Prediction]
+    modalities: [Protein]
     organism: []
     api: false
 
@@ -1528,8 +1528,8 @@ resources:
     url: https://github.com/calico/borzoi
     description: "Extended successor to Enformer for predicting RNA-seq coverage from long genomic sequence windows (524 kb) with improved resolution."
     tags: [foundation-models, genomics-foundation-models]
-    tasks: []
-    modalities: []
+    tasks: [Foundation Model]
+    modalities: [Genomics]
     organism: []
     api: false
 
@@ -1538,9 +1538,9 @@ resources:
     type: model
     url: https://github.com/KangBoming/BulkFormer
     description: "Foundation model for bulk RNA-seq data; learns general transcriptomic representations."
-    tags: [foundation-models, single-cell-foundation-models]
-    tasks: []
-    modalities: []
+    tags: [foundation-models, single-cell-foundation-models, transcriptomics-foundation-models]
+    tasks: [Foundation Model]
+    modalities: [Single Cell, Transcriptomics]
     organism: []
     api: false
 
@@ -1550,8 +1550,8 @@ resources:
     url: https://github.com/kuleshov-group/caduceus
     description: "Bidirectional equivariant long-range DNA sequence model based on Mamba."
     tags: [foundation-models, genomics-foundation-models]
-    tasks: []
-    modalities: []
+    tasks: [Foundation Model]
+    modalities: [Genomics]
     organism: []
     api: false
 
@@ -1560,9 +1560,9 @@ resources:
     type: model
     url: https://github.com/BoevaLab/CancerFoundation
     description: "Single-cell RNA-seq foundation model trained exclusively on a curated dataset of malignant cells to learn cancer-specific embeddings."
-    tags: [foundation-models, single-cell-foundation-models]
-    tasks: []
-    modalities: []
+    tags: [foundation-models, single-cell-foundation-models, transcriptomics-foundation-models]
+    tasks: [Foundation Model]
+    modalities: [Single Cell, Transcriptomics]
     organism: []
     api: false
 
@@ -1571,9 +1571,9 @@ resources:
     type: model
     url: https://github.com/OmicsML/CellPLM
     description: "Cell pre-trained language model with inter-cell transformer architecture for diverse single-cell analysis tasks."
-    tags: [foundation-models, single-cell-foundation-models]
-    tasks: []
-    modalities: []
+    tags: [foundation-models, single-cell-foundation-models, transcriptomics-foundation-models]
+    tasks: [Foundation Model]
+    modalities: [Single Cell, Transcriptomics]
     organism: []
     api: false
 
@@ -1582,9 +1582,9 @@ resources:
     type: model
     url: https://github.com/chaidiscovery/chai-lab
     description: "Unified molecular structure prediction model covering proteins, nucleic acids, small molecules, and complexes."
-    tags: [foundation-models, protein-foundation-models]
-    tasks: []
-    modalities: []
+    tags: [foundation-models, protein-foundation-models, protein-structure-prediction-and-design]
+    tasks: [Foundation Model, Protein Structure Prediction]
+    modalities: [Protein]
     organism: []
     api: false
 
@@ -1594,8 +1594,8 @@ resources:
     url: https://github.com/chao1224/ChatDrug
     description: "LLM-based conversational pipeline for drug discovery, using natural language prompts for iterative drug editing and optimization."
     tags: [llm-for-biology]
-    tasks: []
-    modalities: []
+    tasks: [Language Modeling]
+    modalities: [Text]
     organism: []
     api: false
 
@@ -1604,9 +1604,9 @@ resources:
     type: model
     url: https://github.com/seyonechithrananda/bert-loves-chemistry
     description: "Chemical embeddings & prediction."
-    tags: [foundation-models, protein-foundation-models]
-    tasks: []
-    modalities: []
+    tags: [foundation-models, pre-trained-embedding, protein-foundation-models]
+    tasks: [Foundation Model]
+    modalities: [Protein]
     organism: []
     api: false
 
@@ -1616,8 +1616,8 @@ resources:
     url: https://github.com/hms-dbmi/CHIEF
     description: "Clinical Histopathology Imaging Evaluation Foundation model integrating histology images and clinical context for pan-cancer analysis."
     tags: [foundation-models, multi-modal-foundation-models]
-    tasks: []
-    modalities: []
+    tasks: [Foundation Model]
+    modalities: [Multi-Modal]
     organism: []
     api: false
 
@@ -1627,8 +1627,8 @@ resources:
     url: https://github.com/ClawBio/ClawBio
     description: "Bioinformatics-native AI agent skill library with local-first pharmacogenomics, ancestry PCA, semantic similarity, nutrigenomics, and metagenomics skills."
     tags: [llm-for-biology]
-    tasks: []
-    modalities: []
+    tasks: [Language Modeling]
+    modalities: [Text]
     organism: []
     api: false
 
@@ -1637,9 +1637,9 @@ resources:
     type: model
     url: https://github.com/melobio/Concerto-reproducibility
     description: "Contrastive self-supervised learning framework for single-cell multimodal data integration, batch correction, and reference-query mapping."
-    tags: [foundation-models, single-cell-foundation-models]
-    tasks: []
-    modalities: []
+    tags: [foundation-models, multi-omics-foundation-models, single-cell-foundation-models]
+    tasks: [Foundation Model]
+    modalities: [Multi-Omics, Single Cell]
     organism: []
     api: false
 
@@ -1648,9 +1648,9 @@ resources:
     type: model
     url: https://github.com/mahmoodlab/CONCH
     description: "Vision-language foundation model for computational pathology trained with contrastive captioning on pathology image–text pairs."
-    tags: [foundation-models, single-cell-foundation-models]
-    tasks: []
-    modalities: []
+    tags: [foundation-models, single-cell-foundation-models, spatial-foundation-models]
+    tasks: [Foundation Model]
+    modalities: [Single Cell, Spatial Transcriptomics]
     organism: []
     api: false
 
@@ -1660,8 +1660,8 @@ resources:
     url: https://github.com/zhejiangzhuque/DeepAEG
     description: "GNN embedding + attention mechanism."
     tags: [drug-discovery, drug-response-prediction]
-    tasks: []
-    modalities: []
+    tasks: [Drug Discovery, Drug Response Prediction]
+    modalities: [Small Molecule]
     organism: []
     api: false
 
@@ -1671,8 +1671,8 @@ resources:
     url: https://ieeexplore-ieee-org.ezp2.lib.umn.edu/stamp/stamp.jsp?tp=&arnumber=8723620&tag=1
     description: "Autoencoder + fully connected NN."
     tags: [drug-discovery, drug-response-prediction]
-    tasks: []
-    modalities: []
+    tasks: [Drug Discovery, Drug Response Prediction]
+    modalities: [Small Molecule]
     organism: []
     api: false
 
@@ -1682,8 +1682,8 @@ resources:
     url: https://github.com/hkmztrk/DeepDTA
     description: "Deep learning model using CNNs on protein sequences and drug SMILES."
     tags: [drug-discovery, drug-target-interaction]
-    tasks: []
-    modalities: []
+    tasks: [Drug Discovery, Drug Target Interaction]
+    modalities: [Protein, Small Molecule]
     organism: []
     api: false
 
@@ -1693,8 +1693,8 @@ resources:
     url: https://github.com/kexinhuang12345/DeepPurpose
     description: "Deep learning library for drug repurposing."
     tags: [drug-discovery, drug-repurposing]
-    tasks: []
-    modalities: []
+    tasks: [Drug Discovery, Drug Repurposing]
+    modalities: [Small Molecule]
     organism: []
     api: false
 
@@ -1704,8 +1704,8 @@ resources:
     url: http://deepsea.princeton.edu/
     description: "Deep learning framework for predicting chromatin effects of sequence alterations with single-nucleotide sensitivity across thousands of chromatin features."
     tags: [foundation-models, genomics-foundation-models]
-    tasks: []
-    modalities: []
+    tasks: [Foundation Model]
+    modalities: [Genomics]
     organism: []
     api: false
 
@@ -1715,8 +1715,8 @@ resources:
     url: https://github.com/minwoopak/heteronet
     description: "Multi-view embedding neural network."
     tags: [drug-discovery, drug-response-prediction]
-    tasks: []
-    modalities: []
+    tasks: [Drug Discovery, Drug Response Prediction]
+    modalities: [Small Molecule]
     organism: []
     api: false
 
@@ -1726,8 +1726,8 @@ resources:
     url: https://github.com/gcorso/DiffDock
     description: "Diffusion generative model for molecular docking, predicting the binding pose of small molecules to protein targets."
     tags: [drug-discovery, molecular-generation]
-    tasks: []
-    modalities: []
+    tasks: [Drug Discovery, Molecular Generation]
+    modalities: [Small Molecule]
     organism: []
     api: false
 
@@ -1737,8 +1737,8 @@ resources:
     url: https://github.com/arneschneuing/DiffSBDD
     description: "Equivariant diffusion model for structure-based drug design that generates molecules and binding conformations for protein targets."
     tags: [drug-discovery, molecular-generation]
-    tasks: []
-    modalities: []
+    tasks: [Drug Discovery, Molecular Generation]
+    modalities: [Small Molecule]
     organism: []
     api: false
 
@@ -1748,8 +1748,8 @@ resources:
     url: https://github.com/jerryji1993/DNABERT
     description: "Pre-trained bidirectional encoder for DNA sequence analysis."
     tags: [foundation-models, genomics-foundation-models]
-    tasks: []
-    modalities: []
+    tasks: [Foundation Model]
+    modalities: [Genomics]
     organism: []
     api: false
 
@@ -1759,8 +1759,8 @@ resources:
     url: https://github.com/Zhihan1996/DNABERT_2
     description: "Improved genome foundation model with efficient tokenization."
     tags: [foundation-models, genomics-foundation-models]
-    tasks: []
-    modalities: []
+    tasks: [Foundation Model]
+    modalities: [Genomics]
     organism: []
     api: false
 
@@ -1770,8 +1770,8 @@ resources:
     url: https://github.com/inoue0426/drGAT
     description: "Attention-based model for drug response prediction with gene explainability."
     tags: [drug-discovery, drug-response-prediction]
-    tasks: []
-    modalities: []
+    tasks: [Drug Discovery, Drug Response Prediction]
+    modalities: [Small Molecule]
     organism: []
     api: false
 
@@ -1781,8 +1781,8 @@ resources:
     url: https://github.com/peizhenbai/DrugBAN
     description: "Bilinear attention network for interpretable DTI prediction."
     tags: [drug-discovery, drug-target-interaction]
-    tasks: []
-    modalities: []
+    tasks: [Drug Discovery, Drug Target Interaction]
+    modalities: [Protein, Small Molecule]
     organism: []
     api: false
 
@@ -1792,8 +1792,8 @@ resources:
     url: https://github.com/CutillasLab/DRUMLR
     description: "Ensemble machine learning framework combining standard ML with deep learning to systematically rank anti-cancer drugs from proteomics and RNA-seq data."
     tags: [drug-discovery, drug-response-prediction]
-    tasks: []
-    modalities: []
+    tasks: [Drug Discovery, Drug Response Prediction]
+    modalities: [Small Molecule]
     organism: []
     api: false
 
@@ -1803,8 +1803,8 @@ resources:
     url: https://github.com/luoyunan/DTINet
     description: "Network-based framework integrating heterogeneous biological data for DTI prediction."
     tags: [drug-discovery, drug-target-interaction]
-    tasks: []
-    modalities: []
+    tasks: [Drug Discovery, Drug Target Interaction]
+    modalities: [Protein, Small Molecule]
     organism: []
     api: false
 
@@ -1814,8 +1814,8 @@ resources:
     url: https://github.com/deepmind/deepmind-research/tree/master/enformer
     description: "Transformer model predicting gene expression from DNA sequence."
     tags: [foundation-models, genomics-foundation-models]
-    tasks: []
-    modalities: []
+    tasks: [Foundation Model]
+    modalities: [Genomics]
     organism: []
     api: false
 
@@ -1824,9 +1824,9 @@ resources:
     type: model
     url: https://github.com/evolutionaryscale/esm
     description: "Multimodal protein language model that jointly reasons over sequence, structure, and function for generative protein design and engineering."
-    tags: [foundation-models, protein-foundation-models]
-    tasks: []
-    modalities: []
+    tags: [foundation-models, protein-foundation-models, protein-structure-prediction-and-design]
+    tasks: [Foundation Model, Protein Structure Prediction]
+    modalities: [Protein]
     organism: []
     api: false
 
@@ -1835,9 +1835,9 @@ resources:
     type: model
     url: https://github.com/facebookresearch/esm
     description: "Fast protein structure prediction using language model embeddings."
-    tags: [foundation-models, protein-foundation-models]
-    tasks: []
-    modalities: []
+    tags: [foundation-models, protein-foundation-models, protein-structure-prediction-and-design]
+    tasks: [Foundation Model, Protein Structure Prediction]
+    modalities: [Protein]
     organism: []
     api: false
 
@@ -1847,8 +1847,8 @@ resources:
     url: https://github.com/evo-design/evo
     description: "Long-context genomic foundation model (up to 1M tokens)."
     tags: [foundation-models, genomics-foundation-models]
-    tasks: []
-    modalities: []
+    tasks: [Foundation Model]
+    modalities: [Genomics]
     organism: []
     api: false
 
@@ -1857,9 +1857,9 @@ resources:
     type: model
     url: https://github.com/microsoft/evodiff
     description: "Discrete diffusion framework for protein sequence generation trained on evolutionary-scale data, supporting unconditional generation, disordered region design, and functional motif scaffolding. [ [paper-2023](https://www.biorxiv.org/content/10.1101/2023.09.11.556673v1) ]"
-    tags: [foundation-models, protein-foundation-models]
-    tasks: []
-    modalities: []
+    tags: [foundation-models, protein-foundation-models, protein-structure-prediction-and-design]
+    tasks: [Foundation Model, Protein Structure Prediction]
+    modalities: [Protein]
     organism: []
     api: false
 
@@ -1868,9 +1868,9 @@ resources:
     type: model
     url: https://github.com/facebookresearch/esm
     description: "Protein embeddings."
-    tags: [foundation-models, protein-foundation-models]
-    tasks: []
-    modalities: []
+    tags: [foundation-models, pre-trained-embedding, protein-foundation-models]
+    tasks: [Foundation Model]
+    modalities: [Protein]
     organism: []
     api: false
 
@@ -1879,9 +1879,9 @@ resources:
     type: model
     url: https://github.com/snap-stanford/GEARS
     description: "Graph-based model for predicting transcriptional responses to single and combinatorial genetic perturbations using biological priors."
-    tags: [foundation-models, single-cell-foundation-models]
-    tasks: []
-    modalities: []
+    tags: [foundation-models, single-cell-foundation-models, transcriptomics-foundation-models]
+    tasks: [Foundation Model]
+    modalities: [Single Cell, Transcriptomics]
     organism: []
     api: false
 
@@ -1890,9 +1890,9 @@ resources:
     type: model
     url: https://github.com/xCompass-AI/GeneCompass
     description: "Large-scale foundation model integrating DNA regulatory sequences and single-cell transcriptomics from 120M+ cells across multiple species for gene regulation prediction."
-    tags: [foundation-models, single-cell-foundation-models]
-    tasks: []
-    modalities: []
+    tags: [foundation-models, multi-omics-foundation-models, single-cell-foundation-models]
+    tasks: [Foundation Model]
+    modalities: [Multi-Omics, Single Cell]
     organism: []
     api: false
 
@@ -1901,9 +1901,9 @@ resources:
     type: model
     url: https://huggingface.co/ctheodoris/Geneformer
     description: "Context-aware, attention-based deep learning model pretrained on a large corpus of single-cell transcriptomes."
-    tags: [foundation-models, single-cell-foundation-models]
-    tasks: []
-    modalities: []
+    tags: [foundation-models, single-cell-foundation-models, transcriptomics-foundation-models]
+    tasks: [Foundation Model]
+    modalities: [Single Cell, Transcriptomics]
     organism: []
     api: false
 
@@ -1913,8 +1913,8 @@ resources:
     url: https://github.com/ncbi/GeneGPT
     description: "LLM for biomedical information, integrated with various APIs."
     tags: [llm-for-biology]
-    tasks: []
-    modalities: []
+    tasks: [Language Modeling]
+    modalities: [Text]
     organism: []
     api: false
 
@@ -1924,8 +1924,8 @@ resources:
     url: https://github.com/yiqunchen/GenePT
     description: "Foundation LLM for single-cell data."
     tags: [llm-for-biology]
-    tasks: []
-    modalities: []
+    tasks: [Language Modeling]
+    modalities: [Text]
     organism: []
     api: false
 
@@ -1934,9 +1934,9 @@ resources:
     type: model
     url: https://github.com/prov-gigapath/prov-gigapath
     description: "Slide-level digital pathology foundation model pretrained on 1.3 billion pathology image tokens from whole-slide images."
-    tags: [foundation-models, single-cell-foundation-models]
-    tasks: []
-    modalities: []
+    tags: [foundation-models, single-cell-foundation-models, spatial-foundation-models]
+    tasks: [Foundation Model]
+    modalities: [Single Cell, Spatial Transcriptomics]
     organism: []
     api: false
 
@@ -1945,9 +1945,9 @@ resources:
     type: model
     url: https://github.com/gao-lab/GLUE
     description: "Graph-Linked Unified Embedding framework for unpaired single-cell multi-omics data integration across RNA, ATAC, methylation, and protein modalities."
-    tags: [foundation-models, single-cell-foundation-models]
-    tasks: []
-    modalities: []
+    tags: [foundation-models, multi-omics-foundation-models, single-cell-foundation-models]
+    tasks: [Foundation Model]
+    modalities: [Multi-Omics, Single Cell]
     organism: []
     api: false
 
@@ -1957,8 +1957,8 @@ resources:
     url: https://github.com/songlab-cal/gpn
     description: "Masked language model for DNA sequences enabling zero-shot variant effect prediction without requiring functional annotations."
     tags: [foundation-models, genomics-foundation-models]
-    tasks: []
-    modalities: []
+    tasks: [Foundation Model]
+    modalities: [Genomics]
     organism: []
     api: false
 
@@ -1968,8 +1968,8 @@ resources:
     url: https://github.com/thinng/GraphDTA
     description: "Graph neural network–based DTI prediction using molecular graphs."
     tags: [drug-discovery, drug-target-interaction]
-    tasks: []
-    modalities: []
+    tasks: [Drug Discovery, Drug Target Interaction]
+    modalities: [Protein, Small Molecule]
     organism: []
     api: false
 
@@ -1979,8 +1979,8 @@ resources:
     url: https://github.com/bsml320/HiDRA
     description: "Hierarchical network model incorporating gene and pathway-level information for cancer drug response prediction."
     tags: [drug-discovery, drug-response-prediction]
-    tasks: []
-    modalities: []
+    tasks: [Drug Discovery, Drug Response Prediction]
+    modalities: [Small Molecule]
     organism: []
     api: false
 
@@ -1990,8 +1990,8 @@ resources:
     url: https://github.com/HazyResearch/hyena-dna
     description: "Long-range genomic foundation model handling sequences up to 1M tokens with sub-quadratic attention."
     tags: [foundation-models, genomics-foundation-models]
-    tasks: []
-    modalities: []
+    tasks: [Foundation Model]
+    modalities: [Genomics]
     organism: []
     api: false
 
@@ -2000,9 +2000,9 @@ resources:
     type: model
     url: https://github.com/Oafish1/JAMIE
     description: "Joint variational autoencoder for multimodal single-cell data imputation and embedding."
-    tags: [foundation-models, single-cell-foundation-models]
-    tasks: []
-    modalities: []
+    tags: [foundation-models, multi-omics-foundation-models, single-cell-foundation-models]
+    tasks: [Foundation Model]
+    modalities: [Multi-Omics, Single Cell]
     organism: []
     api: false
 
@@ -2012,8 +2012,8 @@ resources:
     url: https://github.com/wengong-jin/icml18-jtnn
     description: "Junction tree variational autoencoder for molecular graph generation that guarantees chemical validity via a hierarchical tree decomposition."
     tags: [drug-discovery, molecular-generation]
-    tasks: []
-    modalities: []
+    tasks: [Drug Discovery, Molecular Generation]
+    modalities: [Small Molecule]
     organism: []
     api: false
 
@@ -2023,8 +2023,8 @@ resources:
     url: https://github.com/mhlee0903/multi_channels_PINN
     description: "Drug discovery via compound-protein interaction and machine learning."
     tags: [compound-protein-interaction, drug-discovery]
-    tasks: []
-    modalities: []
+    tasks: [Compound-Protein Interaction, Drug Discovery]
+    modalities: [Protein, Small Molecule]
     organism: []
     api: false
 
@@ -2033,9 +2033,9 @@ resources:
     type: model
     url: https://github.com/labomics/midas
     description: "Mosaic integration and differential accessibility model for single-cell multi-omics data that handles arbitrary missing-modality combinations across transcriptomics, chromatin accessibility, and proteomics."
-    tags: [foundation-models, single-cell-foundation-models]
-    tasks: []
-    modalities: []
+    tags: [foundation-models, multi-omics-foundation-models, single-cell-foundation-models]
+    tasks: [Foundation Model]
+    modalities: [Multi-Omics, Single Cell]
     organism: []
     api: false
 
@@ -2044,9 +2044,9 @@ resources:
     type: model
     url: https://github.com/cistrome/MIRA
     description: "Probabilistic multimodal topic model jointly modeling single-cell transcriptomics and chromatin accessibility for regulatory network inference."
-    tags: [foundation-models, single-cell-foundation-models]
-    tasks: []
-    modalities: []
+    tags: [foundation-models, multi-omics-foundation-models, single-cell-foundation-models]
+    tasks: [Foundation Model]
+    modalities: [Multi-Omics, Single Cell]
     organism: []
     api: false
 
@@ -2055,9 +2055,9 @@ resources:
     type: model
     url: https://github.com/bioFAM/MOFA2
     description: "Multi-Omics Factor Analysis framework identifying shared axes of variation across bulk and single-cell datasets including RNA, ATAC, proteomics, methylation, and copy number."
-    tags: [foundation-models, single-cell-foundation-models]
-    tasks: []
-    modalities: []
+    tags: [foundation-models, multi-omics-foundation-models, single-cell-foundation-models]
+    tasks: [Foundation Model]
+    modalities: [Multi-Omics, Single Cell]
     organism: []
     api: false
 
@@ -2067,8 +2067,8 @@ resources:
     url: https://github.com/weiba/MOFGCN/tree/main
     description: "GCN + heterogeneous network."
     tags: [drug-discovery, drug-response-prediction]
-    tasks: []
-    modalities: []
+    tasks: [Drug Discovery, Drug Response Prediction]
+    modalities: [Small Molecule]
     organism: []
     api: false
 
@@ -2078,8 +2078,8 @@ resources:
     url: https://github.com/pschwllr/MolecularTransformer
     description: "Sequence-to-sequence model for retrosynthesis prediction."
     tags: [drug-discovery, molecular-generation]
-    tasks: []
-    modalities: []
+    tasks: [Drug Discovery, Molecular Generation]
+    modalities: [Small Molecule]
     organism: []
     api: false
 
@@ -2089,8 +2089,8 @@ resources:
     url: https://github.com/devalab/molgpt
     description: "Transformer-based model for molecular generation."
     tags: [drug-discovery, molecular-generation]
-    tasks: []
-    modalities: []
+    tasks: [Drug Discovery, Molecular Generation]
+    modalities: [Small Molecule]
     organism: []
     api: false
 
@@ -2100,8 +2100,8 @@ resources:
     url: https://github.com/blender-nlp/MolT5
     description: "Language model for molecular tasks bridging text and SMILES, enabling molecule captioning and text-driven molecule generation."
     tags: [llm-for-biology]
-    tasks: []
-    modalities: []
+    tasks: [Language Modeling]
+    modalities: [Text]
     organism: []
     api: false
 
@@ -2111,8 +2111,8 @@ resources:
     url: https://github.com/kexinhuang12345/MolTrans
     description: "Transformer-based DTI model leveraging molecular substructures."
     tags: [drug-discovery, drug-target-interaction]
-    tasks: []
-    modalities: []
+    tasks: [Drug Discovery, Drug Target Interaction]
+    modalities: [Protein, Small Molecule]
     organism: []
     api: false
 
@@ -2121,9 +2121,9 @@ resources:
     type: model
     url: https://github.com/theislab/multigrate
     description: "Asymmetric multi-omics variational autoencoder for integrating single-cell data across RNA, ATAC, and protein modalities with missing-modality support."
-    tags: [foundation-models, single-cell-foundation-models]
-    tasks: []
-    modalities: []
+    tags: [foundation-models, multi-omics-foundation-models, single-cell-foundation-models]
+    tasks: [Foundation Model]
+    modalities: [Multi-Omics, Single Cell]
     organism: []
     api: false
 
@@ -2132,9 +2132,9 @@ resources:
     type: model
     url: https://github.com/scverse/scvi-tools
     description: "Multi-modal variational autoencoder for integrating paired and unpaired single-cell RNA-seq and ATAC-seq measurements into a unified latent space."
-    tags: [foundation-models, single-cell-foundation-models]
-    tasks: []
-    modalities: []
+    tags: [foundation-models, multi-omics-foundation-models, single-cell-foundation-models]
+    tasks: [Foundation Model]
+    modalities: [Multi-Omics, Single Cell]
     organism: []
     api: false
 
@@ -2144,8 +2144,8 @@ resources:
     url: https://github.com/lilab-stanford/MUSK
     description: "Vision-language foundation model for precision oncology analyzing multimodal paired text and pathology image data for biomarker prediction and retrieval."
     tags: [foundation-models, multi-modal-foundation-models]
-    tasks: []
-    modalities: []
+    tasks: [Foundation Model]
+    modalities: [Multi-Modal]
     organism: []
     api: false
 
@@ -2155,8 +2155,8 @@ resources:
     url: https://github.com/FangpingWan/NeoDTI
     description: "Library for drug-target interaction prediction."
     tags: [drug-discovery, drug-target-interaction]
-    tasks: []
-    modalities: []
+    tasks: [Drug Discovery, Drug Target Interaction]
+    modalities: [Protein, Small Molecule]
     organism: []
     api: false
 
@@ -2165,9 +2165,9 @@ resources:
     type: model
     url: https://github.com/theislab/nicheformer
     description: "Foundation model for single-cell and spatial omics using a transformer architecture with positional embeddings to encode spatial cell information."
-    tags: [foundation-models, single-cell-foundation-models]
-    tasks: []
-    modalities: []
+    tags: [foundation-models, single-cell-foundation-models, spatial-foundation-models]
+    tasks: [Foundation Model]
+    modalities: [Single Cell, Spatial Transcriptomics]
     organism: []
     api: false
 
@@ -2177,8 +2177,8 @@ resources:
     url: https://github.com/instadeepai/nucleotide-transformer
     description: "Foundation model for genomic sequences across multiple species."
     tags: [foundation-models, genomics-foundation-models]
-    tasks: []
-    modalities: []
+    tasks: [Foundation Model]
+    modalities: [Genomics]
     organism: []
     api: false
 
@@ -2187,9 +2187,9 @@ resources:
     type: model
     url: https://github.com/HeliXonProtein/OmegaFold
     description: "High-resolution de novo protein structure prediction from sequence."
-    tags: [foundation-models, protein-foundation-models]
-    tasks: []
-    modalities: []
+    tags: [foundation-models, protein-foundation-models, protein-structure-prediction-and-design]
+    tasks: [Foundation Model, Protein Structure Prediction]
+    modalities: [Protein]
     organism: []
     api: false
 
@@ -2198,9 +2198,9 @@ resources:
     type: model
     url: https://github.com/aqlaboratory/openfold
     description: "Trainable, memory-efficient open-source reproduction of AlphaFold2 enabling custom protein structure prediction workflows."
-    tags: [foundation-models, protein-foundation-models]
-    tasks: []
-    modalities: []
+    tags: [foundation-models, protein-foundation-models, protein-structure-prediction-and-design]
+    tasks: [Foundation Model, Protein Structure Prediction]
+    modalities: [Protein]
     organism: []
     api: false
 
@@ -2210,8 +2210,8 @@ resources:
     url: https://github.com/PaccMann/paccmann_generator
     description: "Reinforcement learning-based generative model for de novo hit-like anticancer molecule design from transcriptomic data."
     tags: [drug-discovery, molecular-generation]
-    tasks: []
-    modalities: []
+    tasks: [Drug Discovery, Molecular Generation]
+    modalities: [Small Molecule]
     organism: []
     api: false
 
@@ -2221,8 +2221,8 @@ resources:
     url: https://github.com/mahmoodlab/PathomicFusion
     description: "Integrated framework fusing histopathology and genomic features via CNN, GNN, and attention gating for cancer diagnosis and prognosis."
     tags: [foundation-models, multi-modal-foundation-models]
-    tasks: []
-    modalities: []
+    tasks: [Foundation Model]
+    modalities: [Multi-Modal]
     organism: []
     api: false
 
@@ -2231,9 +2231,9 @@ resources:
     type: model
     url: https://huggingface.co/owkin/phikon
     description: "ViT-based pathology foundation model pretrained with iBOT self-supervision on TCGA whole-slide images."
-    tags: [foundation-models, single-cell-foundation-models]
-    tasks: []
-    modalities: []
+    tags: [foundation-models, single-cell-foundation-models, spatial-foundation-models]
+    tasks: [Foundation Model]
+    modalities: [Single Cell, Spatial Transcriptomics]
     organism: []
     api: false
 
@@ -2243,8 +2243,8 @@ resources:
     url: https://github.com/PathologyFoundation/plip
     description: "Vision-language foundation model for pathology trained with contrastive learning on pathology image–text pairs for image classification and text-to-image retrieval."
     tags: [foundation-models, multi-modal-foundation-models]
-    tasks: []
-    modalities: []
+    tasks: [Foundation Model]
+    modalities: [Multi-Modal]
     organism: []
     api: false
 
@@ -2254,8 +2254,8 @@ resources:
     url: https://github.com/mahmoodlab/PORPOISE
     description: "Pan-cancer integrative histology-genomic analysis framework using multimodal deep learning for patient stratification."
     tags: [foundation-models, multi-modal-foundation-models]
-    tasks: []
-    modalities: []
+    tasks: [Foundation Model]
+    modalities: [Multi-Modal]
     organism: []
     api: false
 
@@ -2265,8 +2265,8 @@ resources:
     url: https://github.com/Perturbation-Response-Prediction/PRnet
     description: "Deep generative model for predicting transcriptional responses to novel chemical perturbations for drug discovery."
     tags: [drug-discovery, drug-response-prediction]
-    tasks: []
-    modalities: []
+    tasks: [Drug Discovery, Drug Response Prediction]
+    modalities: [Small Molecule]
     organism: []
     api: false
 
@@ -2275,9 +2275,9 @@ resources:
     type: model
     url: https://github.com/salesforce/progen
     description: "Protein language model trained on diverse protein families for sequence generation and fitness prediction."
-    tags: [foundation-models, protein-foundation-models]
-    tasks: []
-    modalities: []
+    tags: [foundation-models, pre-trained-embedding, protein-foundation-models]
+    tasks: [Foundation Model]
+    modalities: [Protein]
     organism: []
     api: false
 
@@ -2286,9 +2286,9 @@ resources:
     type: model
     url: https://github.com/dauparas/ProteinMPNN
     description: "Deep learning model for protein sequence design given backbone structure."
-    tags: [foundation-models, protein-foundation-models]
-    tasks: []
-    modalities: []
+    tags: [foundation-models, protein-foundation-models, protein-structure-prediction-and-design]
+    tasks: [Foundation Model, Protein Structure Prediction]
+    modalities: [Protein]
     organism: []
     api: false
 
@@ -2297,9 +2297,9 @@ resources:
     type: model
     url: https://github.com/agemagician/ProtTrans
     description: "Suite of protein language models (ProtBERT, ProtT5, ProtXLNet) trained on billions of protein sequences from UniRef and BFD."
-    tags: [foundation-models, protein-foundation-models]
-    tasks: []
-    modalities: []
+    tags: [foundation-models, pre-trained-embedding, protein-foundation-models]
+    tasks: [Foundation Model]
+    modalities: [Protein]
     organism: []
     api: false
 
@@ -2309,8 +2309,8 @@ resources:
     url: https://github.com/RECOVERcoalition/Recover
     description: "Machine learning framework for predicting synergistic drug combination responses across cell lines."
     tags: [drug-discovery, drug-response-prediction]
-    tasks: []
-    modalities: []
+    tasks: [Drug Discovery, Drug Response Prediction]
+    modalities: [Small Molecule]
     organism: []
     api: false
 
@@ -2320,8 +2320,8 @@ resources:
     url: https://github.com/MolecularAI/Reinvent
     description: "Reinforcement learning for de novo drug design."
     tags: [drug-discovery, molecular-generation]
-    tasks: []
-    modalities: []
+    tasks: [Drug Discovery, Molecular Generation]
+    modalities: [Small Molecule]
     organism: []
     api: false
 
@@ -2331,8 +2331,8 @@ resources:
     url: https://github.com/isayev/ReLeaSE
     description: "Deep reinforcement learning framework for de novo drug design combining a generative and predictive model."
     tags: [drug-discovery, molecular-generation]
-    tasks: []
-    modalities: []
+    tasks: [Drug Discovery, Molecular Generation]
+    modalities: [Small Molecule]
     organism: []
     api: false
 
@@ -2341,9 +2341,9 @@ resources:
     type: model
     url: https://github.com/RosettaCommons/RFdiffusion
     description: "Generative model for protein backbone design using diffusion."
-    tags: [foundation-models, protein-foundation-models]
-    tasks: []
-    modalities: []
+    tags: [foundation-models, protein-foundation-models, protein-structure-prediction-and-design]
+    tasks: [Foundation Model, Protein Structure Prediction]
+    modalities: [Protein]
     organism: []
     api: false
 
@@ -2352,9 +2352,9 @@ resources:
     type: model
     url: https://github.com/RosettaCommons/RoseTTAFold
     description: "Three-track neural network for protein structure prediction."
-    tags: [foundation-models, protein-foundation-models]
-    tasks: []
-    modalities: []
+    tags: [foundation-models, protein-foundation-models, protein-structure-prediction-and-design]
+    tasks: [Foundation Model, Protein Structure Prediction]
+    modalities: [Protein]
     organism: []
     api: false
 
@@ -2363,9 +2363,9 @@ resources:
     type: model
     url: https://github.com/westlake-reup/SaProt
     description: "Structure-aware protein language model using structure-aware tokens that encode both sequence and backbone geometry for improved function prediction."
-    tags: [foundation-models, protein-foundation-models]
-    tasks: []
-    modalities: []
+    tags: [foundation-models, protein-foundation-models, protein-structure-prediction-and-design]
+    tasks: [Foundation Model, Protein Structure Prediction]
+    modalities: [Protein]
     organism: []
     api: false
 
@@ -2374,9 +2374,9 @@ resources:
     type: model
     url: https://github.com/snap-stanford/SATURN
     description: "Transformer-based model integrating gene expression and protein sequences via a protein language model to learn unified multi-species cell embeddings."
-    tags: [foundation-models, single-cell-foundation-models]
-    tasks: []
-    modalities: []
+    tags: [foundation-models, single-cell-foundation-models, transcriptomics-foundation-models]
+    tasks: [Foundation Model]
+    modalities: [Single Cell, Transcriptomics]
     organism: []
     api: false
 
@@ -2385,9 +2385,9 @@ resources:
     type: model
     url: https://github.com/theislab/scarches
     description: "Transfer learning framework for mapping new single-cell datasets onto pre-trained reference atlases across batches, conditions, and modalities."
-    tags: [foundation-models, single-cell-foundation-models]
-    tasks: []
-    modalities: []
+    tags: [domain-alignment, foundation-models, single-cell-foundation-models]
+    tasks: [Domain Alignment, Foundation Model]
+    modalities: [Single Cell]
     organism: []
     api: false
 
@@ -2396,9 +2396,9 @@ resources:
     type: model
     url: https://github.com/TencentAILabHealthcare/scBERT
     description: "BERT-based foundation model pretrained on large-scale scRNA-seq data for cell type annotation."
-    tags: [foundation-models, single-cell-foundation-models]
-    tasks: []
-    modalities: []
+    tags: [foundation-models, single-cell-foundation-models, transcriptomics-foundation-models]
+    tasks: [Foundation Model]
+    modalities: [Single Cell, Transcriptomics]
     organism: []
     api: false
 
@@ -2407,9 +2407,9 @@ resources:
     type: model
     url: https://github.com/BioX-NKU/scButterfly
     description: "Dual-aligned variational autoencoder for single-cell cross-modality translation between paired and unpaired multiomics data."
-    tags: [foundation-models, single-cell-foundation-models]
-    tasks: []
-    modalities: []
+    tags: [foundation-models, multi-omics-foundation-models, single-cell-foundation-models]
+    tasks: [Foundation Model]
+    modalities: [Multi-Omics, Single Cell]
     organism: []
     api: false
 
@@ -2418,9 +2418,9 @@ resources:
     type: model
     url: https://github.com/biomap-research/scFoundation
     description: "Large-scale foundation model for single-cell gene expression, enabling multiple downstream tasks."
-    tags: [foundation-models, single-cell-foundation-models]
-    tasks: []
-    modalities: []
+    tags: [foundation-models, single-cell-foundation-models, transcriptomics-foundation-models]
+    tasks: [Foundation Model]
+    modalities: [Single Cell, Transcriptomics]
     organism: []
     api: false
 
@@ -2429,9 +2429,9 @@ resources:
     type: model
     url: https://github.com/bowang-lab/scGPT
     description: "Transformer-based foundation model pretrained on millions of single-cell profiles."
-    tags: [foundation-models, single-cell-foundation-models]
-    tasks: []
-    modalities: []
+    tags: [foundation-models, single-cell-foundation-models, transcriptomics-foundation-models]
+    tasks: [Foundation Model]
+    modalities: [Single Cell, Transcriptomics]
     organism: []
     api: false
 
@@ -2440,9 +2440,9 @@ resources:
     type: model
     url: https://github.com/bowang-lab/scGPT-spatial
     description: "Extension of scGPT for spatial transcriptomics with continual pretraining and a mixture-of-experts decoder for spatial gene expression analysis."
-    tags: [foundation-models, single-cell-foundation-models]
-    tasks: []
-    modalities: []
+    tags: [foundation-models, single-cell-foundation-models, spatial-foundation-models]
+    tasks: [Foundation Model]
+    modalities: [Single Cell, Spatial Transcriptomics]
     organism: []
     api: false
 
@@ -2451,9 +2451,9 @@ resources:
     type: model
     url: https://github.com/SuperBianC/scMulan
     description: "Single-cell multi-omic language model pretrained on ~10M cells spanning transcriptomics, epigenomics, and proteomics for cross-omics transfer tasks."
-    tags: [foundation-models, single-cell-foundation-models]
-    tasks: []
-    modalities: []
+    tags: [foundation-models, multi-omics-foundation-models, single-cell-foundation-models]
+    tasks: [Foundation Model]
+    modalities: [Multi-Omics, Single Cell]
     organism: []
     api: false
 
@@ -2462,9 +2462,9 @@ resources:
     type: model
     url: https://github.com/quon-titative-biology/scPair
     description: "Bidirectional feedforward network for single-cell multimodal analysis with cross-modality prediction leveraging single-cell atlases."
-    tags: [foundation-models, single-cell-foundation-models]
-    tasks: []
-    modalities: []
+    tags: [foundation-models, multi-omics-foundation-models, single-cell-foundation-models]
+    tasks: [Foundation Model]
+    modalities: [Multi-Omics, Single Cell]
     organism: []
     api: false
 
@@ -2474,8 +2474,8 @@ resources:
     url: https://github.com/cantinilab/scPRINT
     description: "Pretrained on 50M cells for scRNA-seq denoising & zero imputation."
     tags: [llm-for-biology]
-    tasks: []
-    modalities: []
+    tasks: [Language Modeling]
+    modalities: [Text]
     organism: []
     api: false
 
@@ -2485,8 +2485,8 @@ resources:
     url: https://github.com/FunctionLab/sei-framework
     description: "Sequence-to-function framework learning a genome-wide regulatory activity code from DNA sequences for variant effect prediction."
     tags: [foundation-models, genomics-foundation-models]
-    tasks: []
-    modalities: []
+    tasks: [Foundation Model]
+    modalities: [Genomics]
     organism: []
     api: false
 
@@ -2495,9 +2495,9 @@ resources:
     type: model
     url: https://github.com/zhanglabtools/SpatialGlue
     description: "Graph attention network for spatial multi-omics integration jointly embedding spatial transcriptomics with chromatin accessibility or proteomics."
-    tags: [foundation-models, single-cell-foundation-models]
-    tasks: []
-    modalities: []
+    tags: [foundation-models, multi-omics-foundation-models, single-cell-foundation-models]
+    tasks: [Foundation Model]
+    modalities: [Multi-Omics, Single Cell]
     organism: []
     api: false
 
@@ -2507,8 +2507,8 @@ resources:
     url: https://github.com/guanjq/targetdiff
     description: "3D equivariant diffusion model for structure-based drug design."
     tags: [drug-discovery, molecular-generation]
-    tasks: []
-    modalities: []
+    tasks: [Drug Discovery, Molecular Generation]
+    modalities: [Small Molecule]
     organism: []
     api: false
 
@@ -2518,8 +2518,8 @@ resources:
     url: https://github.com/violet-sto/TGSA
     description: "Tumor gene set and attention-based model leveraging biological pathway knowledge for drug response prediction."
     tags: [drug-discovery, drug-response-prediction]
-    tasks: []
-    modalities: []
+    tasks: [Drug Discovery, Drug Response Prediction]
+    modalities: [Small Molecule]
     organism: []
     api: false
 
@@ -2529,8 +2529,8 @@ resources:
     url: https://github.com/mahmoodlab/TOAD
     description: "Tumor Origin Assessment via Deep-learning; weakly-supervised multi-task model predicting cancer primary origin from H&E whole-slide images."
     tags: [foundation-models, multi-modal-foundation-models]
-    tasks: []
-    modalities: []
+    tasks: [Foundation Model]
+    modalities: [Multi-Modal]
     organism: []
     api: false
 
@@ -2539,9 +2539,9 @@ resources:
     type: model
     url: https://github.com/JackieHanlaopo/TOSICA
     description: "Transformer-based framework for one-stop interpretable cell-type annotation supporting cross-dataset and cross-species transfer."
-    tags: [foundation-models, single-cell-foundation-models]
-    tasks: []
-    modalities: []
+    tags: [domain-alignment, foundation-models, single-cell-foundation-models]
+    tasks: [Domain Alignment, Foundation Model]
+    modalities: [Single Cell]
     organism: []
     api: false
 
@@ -2550,9 +2550,9 @@ resources:
     type: model
     url: https://github.com/scverse/scvi-tools
     description: "Probabilistic framework for joint analysis of paired scRNA-seq and protein (CITE-seq) data enabling multi-modal cell state representation across single-cell datasets."
-    tags: [foundation-models, single-cell-foundation-models]
-    tasks: []
-    modalities: []
+    tags: [foundation-models, multi-omics-foundation-models, single-cell-foundation-models]
+    tasks: [Foundation Model]
+    modalities: [Multi-Omics, Single Cell]
     organism: []
     api: false
 
@@ -2562,8 +2562,8 @@ resources:
     url: https://github.com/lifanchen-simm/transformerCPI
     description: "CPI prediction using Transformer."
     tags: [compound-protein-interaction, drug-discovery]
-    tasks: []
-    modalities: []
+    tasks: [Compound-Protein Interaction, Drug Discovery]
+    modalities: [Protein, Small Molecule]
     organism: []
     api: false
 
@@ -2573,8 +2573,8 @@ resources:
     url: https://github.com/myzhengSIMM/TranSiGen
     description: "Dual-VAE architecture for ligand-based virtual screening, drug response prediction, and drug repurposing using chemical-induced transcriptional profiles."
     tags: [drug-discovery, drug-repurposing]
-    tasks: []
-    modalities: []
+    tasks: [Drug Discovery, Drug Repurposing]
+    modalities: [Small Molecule]
     organism: []
     api: false
 
@@ -2583,9 +2583,9 @@ resources:
     type: model
     url: https://github.com/snap-stanford/UCE
     description: "Universal Cell Embeddings: zero-shot single-cell embedding model trained on 36M cells across species, tissues, and assays without fine-tuning."
-    tags: [foundation-models, single-cell-foundation-models]
-    tasks: []
-    modalities: []
+    tags: [foundation-models, single-cell-foundation-models, transcriptomics-foundation-models]
+    tasks: [Foundation Model]
+    modalities: [Single Cell, Transcriptomics]
     organism: []
     api: false
 
@@ -2594,9 +2594,9 @@ resources:
     type: model
     url: https://github.com/mahmoodlab/UNI
     description: "General-purpose self-supervised pathology foundation model trained on 100K+ whole-slide images for diverse computational pathology tasks."
-    tags: [foundation-models, single-cell-foundation-models]
-    tasks: []
-    modalities: []
+    tags: [foundation-models, single-cell-foundation-models, spatial-foundation-models]
+    tasks: [Foundation Model]
+    modalities: [Single Cell, Spatial Transcriptomics]
     organism: []
     api: false
 
@@ -2605,9 +2605,9 @@ resources:
     type: model
     url: https://github.com/LiuLab-Bioelectronics-Harvard/UnitedNet
     description: "Interpretable multi-task deep neural network for single-cell multi-omics integration spanning transcriptomics, chromatin accessibility, and proteomics."
-    tags: [foundation-models, single-cell-foundation-models]
-    tasks: []
-    modalities: []
+    tags: [foundation-models, multi-omics-foundation-models, single-cell-foundation-models]
+    tasks: [Foundation Model]
+    modalities: [Multi-Omics, Single Cell]
     organism: []
     api: false
 
@@ -2617,8 +2617,8 @@ resources:
     url: https://huggingface.co/paige-ai/Virchow
     description: "Million-slide digital pathology foundation model using a vision transformer and self-supervised distillation for tile-level pathology image representation."
     tags: [foundation-models, multi-modal-foundation-models]
-    tasks: []
-    modalities: []
+    tasks: [Foundation Model]
+    modalities: [Multi-Modal]
     organism: []
     api: false
 
@@ -2628,7 +2628,7 @@ resources:
     url: https://biopython.org/
     description: "Collection of Python tools for biological computation including sequence analysis, structure parsing, and database access."
     tags: [preprocessing-tools]
-    tasks: []
+    tasks: [Preprocessing]
     modalities: []
     organism: []
     api: false
@@ -2639,7 +2639,7 @@ resources:
     url: https://github.com/akdess/CaSpER
     description: "CNV identification and visualization by integrative analysis of single-cell or bulk RNA-seq data."
     tags: [preprocessing-tools]
-    tasks: []
+    tasks: [Preprocessing]
     modalities: []
     organism: []
     api: false
@@ -2650,7 +2650,7 @@ resources:
     url: https://github.com/CSOgroup/cellcharter
     description: "Identification and characterization of spatial cell niches from spatial transcriptomics using VAEs and Gaussian mixture models."
     tags: [preprocessing-tools]
-    tasks: []
+    tasks: [Preprocessing]
     modalities: []
     organism: []
     api: false
@@ -2661,7 +2661,7 @@ resources:
     url: https://github.com/sqjin/CellChat
     description: "Inference and analysis of cell-cell communication ligand-receptor networks from single-cell transcriptomics data."
     tags: [preprocessing-tools]
-    tasks: []
+    tasks: [Preprocessing]
     modalities: []
     organism: []
     api: false
@@ -2672,7 +2672,7 @@ resources:
     url: https://github.com/Teichlab/celltypist
     description: "Automated cell type annotation for scRNA-seq."
     tags: [preprocessing-tools]
-    tasks: []
+    tasks: [Preprocessing]
     modalities: []
     organism: []
     api: false
@@ -2683,7 +2683,7 @@ resources:
     url: https://github.com/cafferychen777/ChatSpatial
     description: "MCP server for spatial transcriptomics analysis via natural language."
     tags: [preprocessing-tools]
-    tasks: []
+    tasks: [Preprocessing]
     modalities: []
     organism: []
     api: false
@@ -2694,7 +2694,7 @@ resources:
     url: https://github.com/cdk/cdk
     description: "Cheminformatics software & machine learning tools."
     tags: [preprocessing-tools]
-    tasks: []
+    tasks: [Preprocessing]
     modalities: []
     organism: []
     api: false
@@ -2705,7 +2705,7 @@ resources:
     url: https://github.com/zcang/COMMOT
     description: "Optimal transport-based framework for screening cell-cell communication in spatial transcriptomics."
     tags: [preprocessing-tools]
-    tasks: []
+    tasks: [Preprocessing]
     modalities: []
     organism: []
     api: false
@@ -2716,7 +2716,7 @@ resources:
     url: https://github.com/deepchem/deepchem
     description: "Deep learning library for drug discovery, quantum chemistry, and materials science."
     tags: [preprocessing-tools]
-    tasks: []
+    tasks: [Preprocessing]
     modalities: []
     organism: []
     api: false
@@ -2727,7 +2727,7 @@ resources:
     url: https://github.com/JiangBioLab/DeepTalk
     description: "Graph attention network for deciphering cell-cell communication from spatial transcriptomics data."
     tags: [preprocessing-tools]
-    tasks: []
+    tasks: [Preprocessing]
     modalities: []
     organism: []
     api: false
@@ -2738,7 +2738,7 @@ resources:
     url: https://github.com/chris-mcginnis-ucsf/DoubletFinder
     description: "Machine learning approach for detecting multiplet (doublet) artifacts in single-cell RNA-seq data."
     tags: [preprocessing-tools]
-    tasks: []
+    tasks: [Preprocessing]
     modalities: []
     organism: []
     api: false
@@ -2749,7 +2749,7 @@ resources:
     url: https://github.com/cafferychen777/flashdeconv
     description: "High-performance spatial transcriptomics deconvolution (~1M spots in ~3 min)."
     tags: [preprocessing-tools]
-    tasks: []
+    tasks: [Preprocessing]
     modalities: []
     organism: []
     api: false
@@ -2760,7 +2760,7 @@ resources:
     url: https://www.gromacs.org/
     description: "Molecular dynamics simulation package for biochemical molecules."
     tags: [preprocessing-tools]
-    tasks: []
+    tasks: [Preprocessing]
     modalities: []
     organism: []
     api: false
@@ -2771,7 +2771,7 @@ resources:
     url: https://github.com/immunogenomics/harmony
     description: "Fast and scalable integration of single-cell data across datasets, conditions, technologies, and species."
     tags: [preprocessing-tools]
-    tasks: []
+    tasks: [Preprocessing]
     modalities: []
     organism: []
     api: false
@@ -2782,7 +2782,7 @@ resources:
     url: https://pachterlab.github.io/kallisto/
     description: "Near-optimal RNA-seq quantification using pseudoalignment for fast transcript abundance estimation."
     tags: [preprocessing-tools]
-    tasks: []
+    tasks: [Preprocessing]
     modalities: []
     organism: []
     api: false
@@ -2793,7 +2793,7 @@ resources:
     url: https://github.com/Durenlab/LINGER
     description: "Neural network for gene regulatory network inference from single-cell multiome (RNA+ATAC-seq) data with bulk data pretraining."
     tags: [preprocessing-tools]
-    tasks: []
+    tasks: [Preprocessing]
     modalities: []
     organism: []
     api: false
@@ -2804,7 +2804,7 @@ resources:
     url: https://www.mdanalysis.org/
     description: "Python library for analyzing and altering molecular dynamics simulation trajectories."
     tags: [preprocessing-tools]
-    tasks: []
+    tasks: [Preprocessing]
     modalities: []
     organism: []
     api: false
@@ -2815,7 +2815,7 @@ resources:
     url: https://github.com/txWang/MOGONET
     description: "Multi-omics graph convolutional network framework for patient classification and biomarker identification."
     tags: [preprocessing-tools]
-    tasks: []
+    tasks: [Preprocessing]
     modalities: []
     organism: []
     api: false
@@ -2826,7 +2826,7 @@ resources:
     url: https://cole-trapnell-lab.github.io/monocle3/
     description: "Single-cell trajectory analysis tool for learning developmental trajectories and ordering cells in pseudotime."
     tags: [preprocessing-tools]
-    tasks: []
+    tasks: [Preprocessing]
     modalities: []
     organism: []
     api: false
@@ -2837,7 +2837,7 @@ resources:
     url: https://github.com/theislab/ncem
     description: "GNN-based model for learning intercellular communication from spatial graphs of cells."
     tags: [preprocessing-tools]
-    tasks: []
+    tasks: [Preprocessing]
     modalities: []
     organism: []
     api: false
@@ -2848,7 +2848,7 @@ resources:
     url: https://github.com/kharchenkolab/numbat
     description: "Haplotype-aware copy number variation inference from single-cell RNA-seq using hidden Markov models."
     tags: [preprocessing-tools]
-    tasks: []
+    tasks: [Preprocessing]
     modalities: []
     organism: []
     api: false
@@ -2859,7 +2859,7 @@ resources:
     url: https://openmm.org/
     description: "High-performance toolkit for molecular simulation and GPU-accelerated MD."
     tags: [preprocessing-tools]
-    tasks: []
+    tasks: [Preprocessing]
     modalities: []
     organism: []
     api: false
@@ -2870,7 +2870,7 @@ resources:
     url: https://github.com/rdkit/rdkit
     description: "Cheminformatics software & machine learning toolkit."
     tags: [preprocessing-tools]
-    tasks: []
+    tasks: [Preprocessing]
     modalities: []
     organism: []
     api: false
@@ -2881,7 +2881,7 @@ resources:
     url: https://scanpy.readthedocs.io/en/stable/
     description: "Python library for scRNA-seq analysis."
     tags: [preprocessing-tools]
-    tasks: []
+    tasks: [Preprocessing]
     modalities: []
     organism: []
     api: false
@@ -2892,7 +2892,7 @@ resources:
     url: https://github.com/aertslab/SCENIC
     description: "Single-cell regulatory network inference and clustering linking transcription factors to co-expressed gene modules."
     tags: [preprocessing-tools]
-    tasks: []
+    tasks: [Preprocessing]
     modalities: []
     organism: []
     api: false
@@ -2903,7 +2903,7 @@ resources:
     url: https://github.com/jlakkis/sciPENN
     description: "RNN-based method for simultaneous protein expression prediction, uncertainty estimation, and cell-type label transfer from CITE-seq and scRNA-seq data."
     tags: [preprocessing-tools]
-    tasks: []
+    tasks: [Preprocessing]
     modalities: []
     organism: []
     api: false
@@ -2914,7 +2914,7 @@ resources:
     url: https://github.com/theislab/scvelo
     description: "RNA velocity estimation for single-cell transcriptomics, inferring the direction and speed of cell differentiation."
     tags: [preprocessing-tools]
-    tasks: []
+    tasks: [Preprocessing]
     modalities: []
     organism: []
     api: false
@@ -2925,7 +2925,7 @@ resources:
     url: https://scvi-tools.org/
     description: "Probabilistic models for single-cell omics data analysis."
     tags: [preprocessing-tools]
-    tasks: []
+    tasks: [Preprocessing]
     modalities: []
     organism: []
     api: false
@@ -2936,7 +2936,7 @@ resources:
     url: https://satijalab.org/seurat/
     description: "R library for scRNA-seq analysis."
     tags: [preprocessing-tools]
-    tasks: []
+    tasks: [Preprocessing]
     modalities: []
     organism: []
     api: false
@@ -2947,7 +2947,7 @@ resources:
     url: https://squidpy.readthedocs.io/
     description: "Python library for spatial single-cell analysis."
     tags: [preprocessing-tools]
-    tasks: []
+    tasks: [Preprocessing]
     modalities: []
     organism: []
     api: false
@@ -2958,7 +2958,7 @@ resources:
     url: https://github.com/RucDongLab/STAGATE
     description: "Adaptive graph attention auto-encoder for spatial domain identification in spatial transcriptomics."
     tags: [preprocessing-tools]
-    tasks: []
+    tasks: [Preprocessing]
     modalities: []
     organism: []
     api: false
@@ -2969,7 +2969,7 @@ resources:
     url: https://github.com/alexdobin/STAR
     description: "Ultrafast universal RNA-seq aligner with support for spliced alignment and single-cell quantification via STARsolo."
     tags: [preprocessing-tools]
-    tasks: []
+    tasks: [Preprocessing]
     modalities: []
     organism: []
     api: false
@@ -2980,7 +2980,7 @@ resources:
     url: https://github.com/yutongo/TIGON
     description: "Neural optimal transport method for reconstructing growth and dynamic trajectories from single-cell transcriptomics."
     tags: [preprocessing-tools]
-    tasks: []
+    tasks: [Preprocessing]
     modalities: []
     organism: []
     api: false
