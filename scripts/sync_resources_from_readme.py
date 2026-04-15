@@ -43,8 +43,68 @@ HEADER = (
     "resources:\n"
 )
 
-HEADING_RE = re.compile(r"^(#{2,4})\s+(.*)")
+HEADING_RE = re.compile(r"^(#{2,5})\s+(.*)")
 BULLET_RE = re.compile(r"^- \[(.+?)\]\((.+?)\)\s+\u2014\s+(.*)")
+
+# ── Tag-based mappings for tasks and modalities ──────────────────────────
+# Each key is a tag (derived from a README heading); values are the labels
+# that should appear in the UI filter dropdowns.
+
+TAG_TO_TASKS: dict[str, list[str]] = {
+    "drug-response-prediction": ["Drug Response Prediction"],
+    "drug-repurposing": ["Drug Repurposing"],
+    "drug-target-interaction": ["Drug Target Interaction"],
+    "compound-protein-interaction": ["Compound-Protein Interaction"],
+    "molecular-generation": ["Molecular Generation"],
+    "drug-discovery": ["Drug Discovery"],
+    "llm-for-biology": ["Language Modeling"],
+    "single-cell-foundation-models": ["Foundation Model"],
+    "protein-foundation-models": ["Foundation Model"],
+    "multi-modal-foundation-models": ["Foundation Model"],
+    "genomics-foundation-models": ["Foundation Model"],
+    "foundation-models": ["Foundation Model"],
+    "preprocessing-tools": ["Preprocessing"],
+    "transcriptomics-foundation-models": ["Foundation Model"],
+    "spatial-foundation-models": ["Foundation Model"],
+    "multi-omics-foundation-models": ["Foundation Model"],
+    "domain-alignment": ["Domain Alignment"],
+    "pre-trained-embedding": ["Foundation Model"],
+    "protein-structure-prediction-and-design": ["Protein Structure Prediction"],
+}
+
+TAG_TO_MODALITIES: dict[str, list[str]] = {
+    "scrna": ["Single Cell"],
+    "compound": ["Small Molecule"],
+    "pathway": ["Pathway"],
+    "mass-spectra": ["Mass Spectra"],
+    "protein": ["Protein"],
+    "genome": ["Genomics"],
+    "disease": ["Disease"],
+    "drug-gene-interaction": ["Small Molecule", "Gene"],
+    "drug-cell-line-response": ["Small Molecule", "Gene Expression"],
+    "chemical-protein-interaction": ["Small Molecule", "Protein"],
+    "protein-protein-interaction": ["Protein"],
+    "knowledge-graph": ["Knowledge Graph"],
+    "gene-regulatory-network": ["Gene Expression"],
+    "clinical-trial": ["Clinical"],
+    "drug-response-prediction": ["Small Molecule"],
+    "drug-repurposing": ["Small Molecule"],
+    "drug-target-interaction": ["Small Molecule", "Protein"],
+    "compound-protein-interaction": ["Small Molecule", "Protein"],
+    "molecular-generation": ["Small Molecule"],
+    "drug-discovery": ["Small Molecule"],
+    "llm-for-biology": ["Text"],
+    "single-cell-foundation-models": ["Single Cell"],
+    "protein-foundation-models": ["Protein"],
+    "multi-modal-foundation-models": ["Multi-Modal"],
+    "genomics-foundation-models": ["Genomics"],
+    "transcriptomics-foundation-models": ["Single Cell", "Transcriptomics"],
+    "spatial-foundation-models": ["Spatial Transcriptomics"],
+    "multi-omics-foundation-models": ["Multi-Omics"],
+    "pre-trained-embedding": ["Protein"],
+    "protein-structure-prediction-and-design": ["Protein"],
+    "domain-alignment": ["Single Cell"],
+}
 
 
 def tagify(value: str) -> str:
@@ -91,6 +151,7 @@ def parse_readme(readme_text: str) -> list[dict[str, Any]]:
     section = None
     subsection = None
     subsub = None
+    subsubsub = None
     entries: list[dict[str, Any]] = []
 
     for line in readme_text.splitlines():
@@ -102,11 +163,16 @@ def parse_readme(readme_text: str) -> list[dict[str, Any]]:
                 section = title
                 subsection = None
                 subsub = None
+                subsubsub = None
             elif level == 3:
                 subsection = title
                 subsub = None
+                subsubsub = None
             elif level == 4:
                 subsub = title
+                subsubsub = None
+            elif level == 5:
+                subsubsub = title
             continue
 
         bullet = BULLET_RE.match(line.strip())
@@ -119,6 +185,7 @@ def parse_readme(readme_text: str) -> list[dict[str, Any]]:
                 "section": section,
                 "subsection": subsection,
                 "subsub": subsub,
+                "subsubsub": subsubsub,
                 "name": name,
                 "url": url,
                 "description": description,
@@ -126,6 +193,26 @@ def parse_readme(readme_text: str) -> list[dict[str, Any]]:
         )
 
     return entries
+
+
+def _derive_from_tags(
+    tags: list[str],
+    mapping: dict[str, list[str]],
+) -> list[str]:
+    """Derive unique sorted values from tags using a mapping.
+
+    Args:
+        tags: List of tag strings.
+        mapping: Mapping from tag to list of values.
+
+    Returns:
+        Sorted deduplicated list of derived values.
+    """
+    result: set[str] = set()
+    for tag in tags:
+        for val in mapping.get(tag, []):
+            result.add(val)
+    return sorted(result)
 
 
 def merge_entries(raw_entries: list[dict[str, Any]]) -> list[dict[str, Any]]:
@@ -151,9 +238,14 @@ def merge_entries(raw_entries: list[dict[str, Any]]) -> list[dict[str, Any]]:
             tags.append(tagify(entry["subsection"]))
         if entry.get("subsub"):
             tags.append(tagify(entry["subsub"]))
+        if entry.get("subsubsub"):
+            tags.append(tagify(entry["subsubsub"]))
         if not tags:
             tags.append(tagify(section))
         tags = [tag for tag in tags if tag]
+
+        tasks = _derive_from_tags(tags, TAG_TO_TASKS)
+        modalities = _derive_from_tags(tags, TAG_TO_MODALITIES)
 
         key = (entry["name"], entry["url"])
         if key not in merged:
@@ -164,14 +256,16 @@ def merge_entries(raw_entries: list[dict[str, Any]]) -> list[dict[str, Any]]:
                 "url": entry["url"],
                 "description": entry["description"],
                 "tags": sorted(set(tags)),
-                "tasks": [],
-                "modalities": [],
+                "tasks": tasks,
+                "modalities": modalities,
                 "organism": [],
                 "api": res_type == "api",
             }
         else:
             existing = merged[key]
             existing["tags"] = sorted(set(existing["tags"]).union(tags))
+            existing["tasks"] = sorted(set(existing["tasks"]).union(tasks))
+            existing["modalities"] = sorted(set(existing["modalities"]).union(modalities))
             if existing["type"] == "resource" and res_type != "resource":
                 existing["type"] = res_type
             if res_type == "api":
@@ -221,8 +315,16 @@ def format_entry(entry: dict[str, Any]) -> str:
         lines.append(f"    tags: [{', '.join(tags)}]")
     else:
         lines.append("    tags: []")
-    lines.append("    tasks: []")
-    lines.append("    modalities: []")
+    tasks = entry.get("tasks", [])
+    if tasks:
+        lines.append(f"    tasks: [{', '.join(tasks)}]")
+    else:
+        lines.append("    tasks: []")
+    modalities = entry.get("modalities", [])
+    if modalities:
+        lines.append(f"    modalities: [{', '.join(modalities)}]")
+    else:
+        lines.append("    modalities: []")
     lines.append("    organism: []")
     lines.append(f"    api: {'true' if entry.get('api') else 'false'}")
     return "\n".join(lines)
