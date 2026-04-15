@@ -190,9 +190,7 @@
     "tags": [
       "benchmarks-and-datasets"
     ],
-    "tasks": [
-      "Toxicity Prediction"
-    ],
+    "tasks": [],
     "modalities": [],
     "organism": [],
     "api": false
@@ -248,9 +246,7 @@
     "tags": [
       "benchmarks-and-datasets"
     ],
-    "tasks": [
-      "Molecular Generation"
-    ],
+    "tasks": [],
     "modalities": [],
     "organism": [],
     "api": false
@@ -292,9 +288,7 @@
     "tags": [
       "benchmarks-and-datasets"
     ],
-    "tasks": [
-      "Molecular Generation"
-    ],
+    "tasks": [],
     "modalities": [],
     "organism": [],
     "api": false
@@ -392,13 +386,8 @@
     "tags": [
       "benchmarks-and-datasets"
     ],
-    "tasks": [
-      "Molecular Property Prediction"
-    ],
-    "modalities": [
-      "SMILES",
-      "3D Molecular Structure"
-    ],
+    "tasks": [],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -411,9 +400,7 @@
     "tags": [
       "benchmarks-and-datasets"
     ],
-    "tasks": [
-      "Batch Integration"
-    ],
+    "tasks": [],
     "modalities": [],
     "organism": [],
     "api": false
@@ -511,9 +498,7 @@
     "tags": [
       "benchmarks-and-datasets"
     ],
-    "tasks": [
-      "Toxicity Prediction"
-    ],
+    "tasks": [],
     "modalities": [],
     "organism": [],
     "api": false
@@ -542,9 +527,7 @@
       "genome"
     ],
     "tasks": [],
-    "modalities": [
-      "DNA Sequence"
-    ],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -557,12 +540,8 @@
     "tags": [
       "protein"
     ],
-    "tasks": [
-      "Protein Structure Prediction"
-    ],
-    "modalities": [
-      "Protein Sequence"
-    ],
+    "tasks": [],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -576,14 +555,8 @@
       "chemical-protein-interaction",
       "interaction"
     ],
-    "tasks": [
-      "Compound-Protein Interaction"
-    ],
-    "modalities": [
-      "Protein Sequence",
-      "SMILES",
-      "Graph"
-    ],
+    "tasks": [],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -597,9 +570,7 @@
       "pathway"
     ],
     "tasks": [],
-    "modalities": [
-      "Graph"
-    ],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -613,13 +584,8 @@
       "interaction",
       "protein-protein-interaction"
     ],
-    "tasks": [
-      "Protein-Protein Interaction Prediction"
-    ],
-    "modalities": [
-      "Graph",
-      "Protein Sequence"
-    ],
+    "tasks": [],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -633,14 +599,8 @@
       "drug-cell-line-response",
       "interaction"
     ],
-    "tasks": [
-      "Drug Response Prediction"
-    ],
-    "modalities": [
-      "Gene Expression",
-      "SMILES",
-      "Graph"
-    ],
+    "tasks": [],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -654,9 +614,7 @@
       "genome"
     ],
     "tasks": [],
-    "modalities": [
-      "DNA Sequence"
-    ],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -670,9 +628,7 @@
       "protein"
     ],
     "tasks": [],
-    "modalities": [
-      "Protein Sequence"
-    ],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -686,9 +642,7 @@
       "genome"
     ],
     "tasks": [],
-    "modalities": [
-      "DNA Sequence"
-    ],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -702,14 +656,8 @@
       "drug-cell-line-response",
       "interaction"
     ],
-    "tasks": [
-      "Drug Response Prediction"
-    ],
-    "modalities": [
-      "Gene Expression",
-      "SMILES",
-      "Graph"
-    ],
+    "tasks": [],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -723,9 +671,7 @@
       "compound"
     ],
     "tasks": [],
-    "modalities": [
-      "SMILES"
-    ],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -739,9 +685,7 @@
       "compound"
     ],
     "tasks": [],
-    "modalities": [
-      "SMILES"
-    ],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -755,9 +699,7 @@
       "compound"
     ],
     "tasks": [],
-    "modalities": [
-      "SMILES"
-    ],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -785,14 +727,8 @@
       "drug-gene-interaction",
       "interaction"
     ],
-    "tasks": [
-      "Drug-Gene Interaction Prediction"
-    ],
-    "modalities": [
-      "Gene Expression",
-      "SMILES",
-      "Graph"
-    ],
+    "tasks": [],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -805,12 +741,8 @@
     "tags": [
       "protein"
     ],
-    "tasks": [
-      "Protein Structure Prediction"
-    ],
-    "modalities": [
-      "Protein Sequence"
-    ],
+    "tasks": [],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -824,9 +756,7 @@
       "scrna"
     ],
     "tasks": [],
-    "modalities": [
-      "scRNA-seq"
-    ],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -840,14 +770,8 @@
       "chemical-protein-interaction",
       "interaction"
     ],
-    "tasks": [
-      "Compound-Protein Interaction"
-    ],
-    "modalities": [
-      "Protein Sequence",
-      "SMILES",
-      "Graph"
-    ],
+    "tasks": [],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -861,9 +785,7 @@
       "genome"
     ],
     "tasks": [],
-    "modalities": [
-      "DNA Sequence"
-    ],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -877,14 +799,8 @@
       "drug-gene-interaction",
       "interaction"
     ],
-    "tasks": [
-      "Drug-Gene Interaction Prediction"
-    ],
-    "modalities": [
-      "Gene Expression",
-      "SMILES",
-      "Graph"
-    ],
+    "tasks": [],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -926,12 +842,8 @@
       "interaction",
       "knowledge-graph"
     ],
-    "tasks": [
-      "Knowledge Graph Completion"
-    ],
-    "modalities": [
-      "Graph"
-    ],
+    "tasks": [],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -945,12 +857,8 @@
       "interaction",
       "knowledge-graph"
     ],
-    "tasks": [
-      "Knowledge Graph Completion"
-    ],
-    "modalities": [
-      "Graph"
-    ],
+    "tasks": [],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -964,9 +872,7 @@
       "compound"
     ],
     "tasks": [],
-    "modalities": [
-      "SMILES"
-    ],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -994,9 +900,7 @@
       "compound"
     ],
     "tasks": [],
-    "modalities": [
-      "SMILES"
-    ],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -1010,9 +914,7 @@
       "compound"
     ],
     "tasks": [],
-    "modalities": [
-      "SMILES"
-    ],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -1026,9 +928,7 @@
       "genome"
     ],
     "tasks": [],
-    "modalities": [
-      "DNA Sequence"
-    ],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -1042,9 +942,7 @@
       "genome"
     ],
     "tasks": [],
-    "modalities": [
-      "DNA Sequence"
-    ],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -1072,9 +970,7 @@
       "genome"
     ],
     "tasks": [],
-    "modalities": [
-      "DNA Sequence"
-    ],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -1088,9 +984,7 @@
       "genome"
     ],
     "tasks": [],
-    "modalities": [
-      "DNA Sequence"
-    ],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -1104,9 +998,7 @@
       "scrna"
     ],
     "tasks": [],
-    "modalities": [
-      "scRNA-seq"
-    ],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -1121,14 +1013,8 @@
       "drug-cell-line-response",
       "interaction"
     ],
-    "tasks": [
-      "Drug Response Prediction"
-    ],
-    "modalities": [
-      "Gene Expression",
-      "SMILES",
-      "Graph"
-    ],
+    "tasks": [],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -1142,9 +1028,7 @@
       "genome"
     ],
     "tasks": [],
-    "modalities": [
-      "DNA Sequence"
-    ],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -1158,12 +1042,8 @@
       "interaction",
       "knowledge-graph"
     ],
-    "tasks": [
-      "Knowledge Graph Completion"
-    ],
-    "modalities": [
-      "Graph"
-    ],
+    "tasks": [],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -1177,13 +1057,8 @@
       "interaction",
       "protein-protein-interaction"
     ],
-    "tasks": [
-      "Protein-Protein Interaction Prediction"
-    ],
-    "modalities": [
-      "Graph",
-      "Protein Sequence"
-    ],
+    "tasks": [],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -1197,9 +1072,7 @@
       "compound"
     ],
     "tasks": [],
-    "modalities": [
-      "SMILES"
-    ],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -1213,9 +1086,7 @@
       "scrna"
     ],
     "tasks": [],
-    "modalities": [
-      "scRNA-seq"
-    ],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -1229,9 +1100,7 @@
       "genome"
     ],
     "tasks": [],
-    "modalities": [
-      "DNA Sequence"
-    ],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -1273,13 +1142,8 @@
       "interaction",
       "protein-protein-interaction"
     ],
-    "tasks": [
-      "Protein-Protein Interaction Prediction"
-    ],
-    "modalities": [
-      "Graph",
-      "Protein Sequence"
-    ],
+    "tasks": [],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -1293,9 +1157,7 @@
       "protein"
     ],
     "tasks": [],
-    "modalities": [
-      "Protein Sequence"
-    ],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -1309,9 +1171,7 @@
       "genome"
     ],
     "tasks": [],
-    "modalities": [
-      "DNA Sequence"
-    ],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -1325,9 +1185,7 @@
       "compound"
     ],
     "tasks": [],
-    "modalities": [
-      "SMILES"
-    ],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -1355,9 +1213,7 @@
       "pathway"
     ],
     "tasks": [],
-    "modalities": [
-      "Graph"
-    ],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -1371,14 +1227,8 @@
       "chemical-protein-interaction",
       "interaction"
     ],
-    "tasks": [
-      "Compound-Protein Interaction"
-    ],
-    "modalities": [
-      "Protein Sequence",
-      "SMILES",
-      "Graph"
-    ],
+    "tasks": [],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -1392,9 +1242,7 @@
       "compound"
     ],
     "tasks": [],
-    "modalities": [
-      "SMILES"
-    ],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -1408,9 +1256,7 @@
       "mass-spectra"
     ],
     "tasks": [],
-    "modalities": [
-      "Mass Spectra"
-    ],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -1424,9 +1270,7 @@
       "genome"
     ],
     "tasks": [],
-    "modalities": [
-      "DNA Sequence"
-    ],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -1454,13 +1298,8 @@
       "gene-regulatory-network",
       "interaction"
     ],
-    "tasks": [
-      "Gene Regulation"
-    ],
-    "modalities": [
-      "DNA Sequence",
-      "Graph"
-    ],
+    "tasks": [],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -1474,9 +1313,7 @@
       "mass-spectra"
     ],
     "tasks": [],
-    "modalities": [
-      "Mass Spectra"
-    ],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -1490,9 +1327,7 @@
       "pathway"
     ],
     "tasks": [],
-    "modalities": [
-      "Graph"
-    ],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -1507,14 +1342,8 @@
       "drug-cell-line-response",
       "interaction"
     ],
-    "tasks": [
-      "Drug Response Prediction"
-    ],
-    "modalities": [
-      "Gene Expression",
-      "SMILES",
-      "Graph"
-    ],
+    "tasks": [],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -1528,9 +1357,7 @@
       "protein"
     ],
     "tasks": [],
-    "modalities": [
-      "Protein Sequence"
-    ],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -1544,9 +1371,7 @@
       "protein"
     ],
     "tasks": [],
-    "modalities": [
-      "Protein Sequence"
-    ],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -1588,9 +1413,7 @@
       "pathway"
     ],
     "tasks": [],
-    "modalities": [
-      "Graph"
-    ],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -1604,15 +1427,8 @@
       "chemical-protein-interaction",
       "interaction"
     ],
-    "tasks": [
-      "Compound-Protein Interaction"
-    ],
-    "modalities": [
-      "Protein Sequence",
-      "SMILES",
-      "Graph",
-      "Protein Structure"
-    ],
+    "tasks": [],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -1626,9 +1442,7 @@
       "protein"
     ],
     "tasks": [],
-    "modalities": [
-      "Protein Sequence"
-    ],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -1642,12 +1456,8 @@
       "interaction",
       "knowledge-graph"
     ],
-    "tasks": [
-      "Knowledge Graph Completion"
-    ],
-    "modalities": [
-      "Graph"
-    ],
+    "tasks": [],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -1661,9 +1471,7 @@
       "protein"
     ],
     "tasks": [],
-    "modalities": [
-      "Protein Sequence"
-    ],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -1677,9 +1485,7 @@
       "compound"
     ],
     "tasks": [],
-    "modalities": [
-      "SMILES"
-    ],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -1693,9 +1499,7 @@
       "protein"
     ],
     "tasks": [],
-    "modalities": [
-      "Protein Sequence"
-    ],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -1709,9 +1513,7 @@
       "pathway"
     ],
     "tasks": [],
-    "modalities": [
-      "Graph"
-    ],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -1725,13 +1527,8 @@
       "gene-regulatory-network",
       "interaction"
     ],
-    "tasks": [
-      "Gene Regulation"
-    ],
-    "modalities": [
-      "DNA Sequence",
-      "Graph"
-    ],
+    "tasks": [],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -1745,9 +1542,7 @@
       "genome"
     ],
     "tasks": [],
-    "modalities": [
-      "DNA Sequence"
-    ],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -1761,9 +1556,7 @@
       "compound"
     ],
     "tasks": [],
-    "modalities": [
-      "SMILES"
-    ],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -1777,9 +1570,7 @@
       "genome"
     ],
     "tasks": [],
-    "modalities": [
-      "DNA Sequence"
-    ],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -1793,9 +1584,7 @@
       "protein"
     ],
     "tasks": [],
-    "modalities": [
-      "Protein Sequence"
-    ],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -1809,9 +1598,7 @@
       "pathway"
     ],
     "tasks": [],
-    "modalities": [
-      "Graph"
-    ],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -1825,9 +1612,7 @@
       "scrna"
     ],
     "tasks": [],
-    "modalities": [
-      "scRNA-seq"
-    ],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -1841,9 +1626,7 @@
       "scrna"
     ],
     "tasks": [],
-    "modalities": [
-      "scRNA-seq"
-    ],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -1857,14 +1640,8 @@
       "drug-gene-interaction",
       "interaction"
     ],
-    "tasks": [
-      "Drug-Gene Interaction Prediction"
-    ],
-    "modalities": [
-      "Gene Expression",
-      "SMILES",
-      "Graph"
-    ],
+    "tasks": [],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -1878,14 +1655,8 @@
       "chemical-protein-interaction",
       "interaction"
     ],
-    "tasks": [
-      "Compound-Protein Interaction"
-    ],
-    "modalities": [
-      "Protein Sequence",
-      "SMILES",
-      "Graph"
-    ],
+    "tasks": [],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -1899,13 +1670,8 @@
       "interaction",
       "protein-protein-interaction"
     ],
-    "tasks": [
-      "Protein-Protein Interaction Prediction"
-    ],
-    "modalities": [
-      "Graph",
-      "Protein Sequence"
-    ],
+    "tasks": [],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -1919,9 +1685,7 @@
       "genome"
     ],
     "tasks": [],
-    "modalities": [
-      "DNA Sequence"
-    ],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -1935,9 +1699,7 @@
       "protein"
     ],
     "tasks": [],
-    "modalities": [
-      "Protein Sequence"
-    ],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -1951,9 +1713,7 @@
       "compound"
     ],
     "tasks": [],
-    "modalities": [
-      "SMILES"
-    ],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -1967,13 +1727,8 @@
       "gene-regulatory-network",
       "interaction"
     ],
-    "tasks": [
-      "Gene Regulation"
-    ],
-    "modalities": [
-      "DNA Sequence",
-      "Graph"
-    ],
+    "tasks": [],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -1987,9 +1742,7 @@
       "genome"
     ],
     "tasks": [],
-    "modalities": [
-      "DNA Sequence"
-    ],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -2003,9 +1756,7 @@
       "protein"
     ],
     "tasks": [],
-    "modalities": [
-      "Protein Sequence"
-    ],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -2019,9 +1770,7 @@
       "protein"
     ],
     "tasks": [],
-    "modalities": [
-      "Protein Sequence"
-    ],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -2035,9 +1784,7 @@
       "protein"
     ],
     "tasks": [],
-    "modalities": [
-      "Protein Sequence"
-    ],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -2051,9 +1798,7 @@
       "pathway"
     ],
     "tasks": [],
-    "modalities": [
-      "Graph"
-    ],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -2067,9 +1812,7 @@
       "compound"
     ],
     "tasks": [],
-    "modalities": [
-      "SMILES"
-    ],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -2082,12 +1825,8 @@
     "tags": [
       "llm-for-biology"
     ],
-    "tasks": [
-      "Biomedical Text Generation"
-    ],
-    "modalities": [
-      "Text"
-    ],
+    "tasks": [],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -2101,13 +1840,8 @@
       "foundation-models",
       "protein-foundation-models"
     ],
-    "tasks": [
-      "Protein Structure Prediction"
-    ],
-    "modalities": [
-      "Protein Sequence",
-      "Protein Structure"
-    ],
+    "tasks": [],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -2121,12 +1855,8 @@
       "foundation-models",
       "protein-foundation-models"
     ],
-    "tasks": [
-      "Protein Representation Learning"
-    ],
-    "modalities": [
-      "Protein Sequence"
-    ],
+    "tasks": [],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -2140,13 +1870,8 @@
       "foundation-models",
       "single-cell-foundation-models"
     ],
-    "tasks": [
-      "Single-cell Analysis"
-    ],
-    "modalities": [
-      "scRNA-seq",
-      "scATAC-seq"
-    ],
+    "tasks": [],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -2160,12 +1885,8 @@
       "foundation-models",
       "genomics-foundation-models"
     ],
-    "tasks": [
-      "Gene Regulation Prediction"
-    ],
-    "modalities": [
-      "DNA Sequence"
-    ],
+    "tasks": [],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -2178,12 +1899,8 @@
     "tags": [
       "llm-for-biology"
     ],
-    "tasks": [
-      "Biomedical Text Generation"
-    ],
-    "modalities": [
-      "Text"
-    ],
+    "tasks": [],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -2197,14 +1914,8 @@
       "foundation-models",
       "multi-modal-foundation-models"
     ],
-    "tasks": [
-      "Multi-modal Learning"
-    ],
-    "modalities": [
-      "Multi-modal",
-      "Pathology Image",
-      "Text"
-    ],
+    "tasks": [],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -2217,12 +1928,8 @@
     "tags": [
       "llm-for-biology"
     ],
-    "tasks": [
-      "Biomedical Text Generation"
-    ],
-    "modalities": [
-      "Text"
-    ],
+    "tasks": [],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -2236,13 +1943,8 @@
       "foundation-models",
       "protein-foundation-models"
     ],
-    "tasks": [
-      "Protein Structure Prediction"
-    ],
-    "modalities": [
-      "Protein Sequence",
-      "Protein Structure"
-    ],
+    "tasks": [],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -2256,12 +1958,8 @@
       "foundation-models",
       "genomics-foundation-models"
     ],
-    "tasks": [
-      "Gene Regulation Prediction"
-    ],
-    "modalities": [
-      "DNA Sequence"
-    ],
+    "tasks": [],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -2275,12 +1973,8 @@
       "foundation-models",
       "single-cell-foundation-models"
     ],
-    "tasks": [
-      "Single-cell Analysis"
-    ],
-    "modalities": [
-      "scRNA-seq"
-    ],
+    "tasks": [],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -2294,12 +1988,23 @@
       "foundation-models",
       "genomics-foundation-models"
     ],
-    "tasks": [
-      "Gene Regulation Prediction"
+    "tasks": [],
+    "modalities": [],
+    "organism": [],
+    "api": false
+  },
+  {
+    "id": "cancerfoundation",
+    "name": "CancerFoundation",
+    "type": "model",
+    "url": "https://github.com/BoevaLab/CancerFoundation",
+    "description": "Single-cell RNA-seq foundation model trained exclusively on a curated dataset of malignant cells to learn cancer-specific embeddings.",
+    "tags": [
+      "foundation-models",
+      "single-cell-foundation-models"
     ],
-    "modalities": [
-      "DNA Sequence"
-    ],
+    "tasks": [],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -2313,12 +2018,8 @@
       "foundation-models",
       "single-cell-foundation-models"
     ],
-    "tasks": [
-      "Single-cell Analysis"
-    ],
-    "modalities": [
-      "scRNA-seq"
-    ],
+    "tasks": [],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -2332,13 +2033,8 @@
       "foundation-models",
       "protein-foundation-models"
     ],
-    "tasks": [
-      "Protein Structure Prediction"
-    ],
-    "modalities": [
-      "Protein Sequence",
-      "Protein Structure"
-    ],
+    "tasks": [],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -2351,12 +2047,8 @@
     "tags": [
       "llm-for-biology"
     ],
-    "tasks": [
-      "Biomedical Text Generation"
-    ],
-    "modalities": [
-      "Text"
-    ],
+    "tasks": [],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -2370,12 +2062,8 @@
       "foundation-models",
       "protein-foundation-models"
     ],
-    "tasks": [
-      "Molecular Property Prediction"
-    ],
-    "modalities": [
-      "Protein Sequence"
-    ],
+    "tasks": [],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -2389,14 +2077,8 @@
       "foundation-models",
       "multi-modal-foundation-models"
     ],
-    "tasks": [
-      "Multi-modal Learning",
-      "Pathology Image Analysis"
-    ],
-    "modalities": [
-      "Multi-modal",
-      "Pathology Image"
-    ],
+    "tasks": [],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -2409,12 +2091,23 @@
     "tags": [
       "llm-for-biology"
     ],
-    "tasks": [
-      "Biomedical Text Generation"
+    "tasks": [],
+    "modalities": [],
+    "organism": [],
+    "api": false
+  },
+  {
+    "id": "concerto",
+    "name": "Concerto",
+    "type": "model",
+    "url": "https://github.com/melobio/Concerto-reproducibility",
+    "description": "Contrastive self-supervised learning framework for single-cell multimodal data integration, batch correction, and reference-query mapping.",
+    "tags": [
+      "foundation-models",
+      "single-cell-foundation-models"
     ],
-    "modalities": [
-      "Text"
-    ],
+    "tasks": [],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -2428,14 +2121,8 @@
       "foundation-models",
       "single-cell-foundation-models"
     ],
-    "tasks": [
-      "Single-cell Analysis",
-      "Pathology Image Analysis"
-    ],
-    "modalities": [
-      "scRNA-seq",
-      "Pathology Image"
-    ],
+    "tasks": [],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -2449,13 +2136,8 @@
       "drug-discovery",
       "drug-response-prediction"
     ],
-    "tasks": [
-      "Drug Response Prediction"
-    ],
-    "modalities": [
-      "Gene Expression",
-      "SMILES"
-    ],
+    "tasks": [],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -2469,13 +2151,8 @@
       "drug-discovery",
       "drug-response-prediction"
     ],
-    "tasks": [
-      "Drug Response Prediction"
-    ],
-    "modalities": [
-      "Gene Expression",
-      "SMILES"
-    ],
+    "tasks": [],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -2489,13 +2166,8 @@
       "drug-discovery",
       "drug-target-interaction"
     ],
-    "tasks": [
-      "Drug Target Interaction"
-    ],
-    "modalities": [
-      "Protein Sequence",
-      "SMILES"
-    ],
+    "tasks": [],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -2509,9 +2181,7 @@
       "drug-discovery",
       "drug-repurposing"
     ],
-    "tasks": [
-      "Drug Repurposing"
-    ],
+    "tasks": [],
     "modalities": [],
     "organism": [],
     "api": false
@@ -2526,12 +2196,8 @@
       "foundation-models",
       "genomics-foundation-models"
     ],
-    "tasks": [
-      "Gene Regulation Prediction"
-    ],
-    "modalities": [
-      "DNA Sequence"
-    ],
+    "tasks": [],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -2545,13 +2211,8 @@
       "drug-discovery",
       "drug-response-prediction"
     ],
-    "tasks": [
-      "Drug Response Prediction"
-    ],
-    "modalities": [
-      "Gene Expression",
-      "SMILES"
-    ],
+    "tasks": [],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -2565,14 +2226,23 @@
       "drug-discovery",
       "molecular-generation"
     ],
-    "tasks": [
-      "Molecular Generation",
-      "Molecular Docking"
+    "tasks": [],
+    "modalities": [],
+    "organism": [],
+    "api": false
+  },
+  {
+    "id": "diffsbdd",
+    "name": "DiffSBDD",
+    "type": "model",
+    "url": "https://github.com/arneschneuing/DiffSBDD",
+    "description": "Equivariant diffusion model for structure-based drug design that generates molecules and binding conformations for protein targets.",
+    "tags": [
+      "drug-discovery",
+      "molecular-generation"
     ],
-    "modalities": [
-      "SMILES",
-      "Protein Structure"
-    ],
+    "tasks": [],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -2586,12 +2256,8 @@
       "foundation-models",
       "genomics-foundation-models"
     ],
-    "tasks": [
-      "Gene Regulation Prediction"
-    ],
-    "modalities": [
-      "DNA Sequence"
-    ],
+    "tasks": [],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -2605,12 +2271,8 @@
       "foundation-models",
       "genomics-foundation-models"
     ],
-    "tasks": [
-      "Gene Regulation Prediction"
-    ],
-    "modalities": [
-      "DNA Sequence"
-    ],
+    "tasks": [],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -2624,13 +2286,8 @@
       "drug-discovery",
       "drug-response-prediction"
     ],
-    "tasks": [
-      "Drug Response Prediction"
-    ],
-    "modalities": [
-      "Gene Expression",
-      "SMILES"
-    ],
+    "tasks": [],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -2644,13 +2301,23 @@
       "drug-discovery",
       "drug-target-interaction"
     ],
-    "tasks": [
-      "Drug Target Interaction"
+    "tasks": [],
+    "modalities": [],
+    "organism": [],
+    "api": false
+  },
+  {
+    "id": "druml",
+    "name": "DRUML",
+    "type": "model",
+    "url": "https://github.com/CutillasLab/DRUMLR",
+    "description": "Ensemble machine learning framework combining standard ML with deep learning to systematically rank anti-cancer drugs from proteomics and RNA-seq data.",
+    "tags": [
+      "drug-discovery",
+      "drug-response-prediction"
     ],
-    "modalities": [
-      "Protein Sequence",
-      "SMILES"
-    ],
+    "tasks": [],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -2664,13 +2331,8 @@
       "drug-discovery",
       "drug-target-interaction"
     ],
-    "tasks": [
-      "Drug Target Interaction"
-    ],
-    "modalities": [
-      "Protein Sequence",
-      "SMILES"
-    ],
+    "tasks": [],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -2684,12 +2346,8 @@
       "foundation-models",
       "genomics-foundation-models"
     ],
-    "tasks": [
-      "Gene Regulation Prediction"
-    ],
-    "modalities": [
-      "DNA Sequence"
-    ],
+    "tasks": [],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -2703,12 +2361,8 @@
       "foundation-models",
       "protein-foundation-models"
     ],
-    "tasks": [
-      "Protein Representation Learning"
-    ],
-    "modalities": [
-      "Protein Sequence"
-    ],
+    "tasks": [],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -2722,13 +2376,8 @@
       "foundation-models",
       "protein-foundation-models"
     ],
-    "tasks": [
-      "Protein Structure Prediction"
-    ],
-    "modalities": [
-      "Protein Sequence",
-      "Protein Structure"
-    ],
+    "tasks": [],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -2742,12 +2391,8 @@
       "foundation-models",
       "genomics-foundation-models"
     ],
-    "tasks": [
-      "Gene Regulation Prediction"
-    ],
-    "modalities": [
-      "DNA Sequence"
-    ],
+    "tasks": [],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -2761,12 +2406,8 @@
       "foundation-models",
       "protein-foundation-models"
     ],
-    "tasks": [
-      "Protein Design"
-    ],
-    "modalities": [
-      "Protein Sequence"
-    ],
+    "tasks": [],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -2780,12 +2421,8 @@
       "foundation-models",
       "protein-foundation-models"
     ],
-    "tasks": [
-      "Protein Representation Learning"
-    ],
-    "modalities": [
-      "Protein Sequence"
-    ],
+    "tasks": [],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -2799,13 +2436,8 @@
       "foundation-models",
       "single-cell-foundation-models"
     ],
-    "tasks": [
-      "Single-cell Analysis",
-      "Perturbation Prediction"
-    ],
-    "modalities": [
-      "scRNA-seq"
-    ],
+    "tasks": [],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -2819,12 +2451,8 @@
       "foundation-models",
       "single-cell-foundation-models"
     ],
-    "tasks": [
-      "Single-cell Analysis"
-    ],
-    "modalities": [
-      "scRNA-seq"
-    ],
+    "tasks": [],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -2838,12 +2466,8 @@
       "foundation-models",
       "single-cell-foundation-models"
     ],
-    "tasks": [
-      "Single-cell Analysis"
-    ],
-    "modalities": [
-      "scRNA-seq"
-    ],
+    "tasks": [],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -2856,12 +2480,8 @@
     "tags": [
       "llm-for-biology"
     ],
-    "tasks": [
-      "Biomedical Text Generation"
-    ],
-    "modalities": [
-      "Text"
-    ],
+    "tasks": [],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -2874,12 +2494,8 @@
     "tags": [
       "llm-for-biology"
     ],
-    "tasks": [
-      "Biomedical Text Generation"
-    ],
-    "modalities": [
-      "Text"
-    ],
+    "tasks": [],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -2893,14 +2509,8 @@
       "foundation-models",
       "single-cell-foundation-models"
     ],
-    "tasks": [
-      "Single-cell Analysis",
-      "Pathology Image Analysis"
-    ],
-    "modalities": [
-      "scRNA-seq",
-      "Pathology Image"
-    ],
+    "tasks": [],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -2914,14 +2524,8 @@
       "foundation-models",
       "single-cell-foundation-models"
     ],
-    "tasks": [
-      "Single-cell Analysis",
-      "Multi-omics Integration"
-    ],
-    "modalities": [
-      "scRNA-seq",
-      "scATAC-seq"
-    ],
+    "tasks": [],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -2935,12 +2539,8 @@
       "foundation-models",
       "genomics-foundation-models"
     ],
-    "tasks": [
-      "Gene Regulation Prediction"
-    ],
-    "modalities": [
-      "DNA Sequence"
-    ],
+    "tasks": [],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -2954,13 +2554,8 @@
       "drug-discovery",
       "drug-target-interaction"
     ],
-    "tasks": [
-      "Drug Target Interaction"
-    ],
-    "modalities": [
-      "Protein Sequence",
-      "SMILES"
-    ],
+    "tasks": [],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -2974,13 +2569,8 @@
       "drug-discovery",
       "drug-response-prediction"
     ],
-    "tasks": [
-      "Drug Response Prediction"
-    ],
-    "modalities": [
-      "Gene Expression",
-      "SMILES"
-    ],
+    "tasks": [],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -2994,12 +2584,23 @@
       "foundation-models",
       "genomics-foundation-models"
     ],
-    "tasks": [
-      "Gene Regulation Prediction"
+    "tasks": [],
+    "modalities": [],
+    "organism": [],
+    "api": false
+  },
+  {
+    "id": "jamie",
+    "name": "JAMIE",
+    "type": "model",
+    "url": "https://github.com/Oafish1/JAMIE",
+    "description": "Joint variational autoencoder for multimodal single-cell data imputation and embedding.",
+    "tags": [
+      "foundation-models",
+      "single-cell-foundation-models"
     ],
-    "modalities": [
-      "DNA Sequence"
-    ],
+    "tasks": [],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -3013,12 +2614,8 @@
       "drug-discovery",
       "molecular-generation"
     ],
-    "tasks": [
-      "Molecular Generation"
-    ],
-    "modalities": [
-      "SMILES"
-    ],
+    "tasks": [],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -3032,13 +2629,8 @@
       "compound-protein-interaction",
       "drug-discovery"
     ],
-    "tasks": [
-      "Compound-Protein Interaction"
-    ],
-    "modalities": [
-      "Protein Sequence",
-      "SMILES"
-    ],
+    "tasks": [],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -3052,15 +2644,8 @@
       "foundation-models",
       "single-cell-foundation-models"
     ],
-    "tasks": [
-      "Single-cell Analysis",
-      "Multi-omics Integration"
-    ],
-    "modalities": [
-      "scRNA-seq",
-      "scATAC-seq",
-      "Proteomics"
-    ],
+    "tasks": [],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -3074,13 +2659,8 @@
       "foundation-models",
       "single-cell-foundation-models"
     ],
-    "tasks": [
-      "Single-cell Analysis"
-    ],
-    "modalities": [
-      "scRNA-seq",
-      "scATAC-seq"
-    ],
+    "tasks": [],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -3094,15 +2674,8 @@
       "foundation-models",
       "single-cell-foundation-models"
     ],
-    "tasks": [
-      "Single-cell Analysis",
-      "Multi-omics Integration"
-    ],
-    "modalities": [
-      "scRNA-seq",
-      "scATAC-seq",
-      "Proteomics"
-    ],
+    "tasks": [],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -3116,13 +2689,8 @@
       "drug-discovery",
       "drug-response-prediction"
     ],
-    "tasks": [
-      "Drug Response Prediction"
-    ],
-    "modalities": [
-      "Gene Expression",
-      "SMILES"
-    ],
+    "tasks": [],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -3136,12 +2704,8 @@
       "drug-discovery",
       "molecular-generation"
     ],
-    "tasks": [
-      "Molecular Generation"
-    ],
-    "modalities": [
-      "SMILES"
-    ],
+    "tasks": [],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -3155,12 +2719,8 @@
       "drug-discovery",
       "molecular-generation"
     ],
-    "tasks": [
-      "Molecular Generation"
-    ],
-    "modalities": [
-      "SMILES"
-    ],
+    "tasks": [],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -3173,12 +2733,8 @@
     "tags": [
       "llm-for-biology"
     ],
-    "tasks": [
-      "Biomedical Text Generation"
-    ],
-    "modalities": [
-      "Text"
-    ],
+    "tasks": [],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -3192,13 +2748,8 @@
       "drug-discovery",
       "drug-target-interaction"
     ],
-    "tasks": [
-      "Drug Target Interaction"
-    ],
-    "modalities": [
-      "Protein Sequence",
-      "SMILES"
-    ],
+    "tasks": [],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -3212,14 +2763,8 @@
       "foundation-models",
       "single-cell-foundation-models"
     ],
-    "tasks": [
-      "Single-cell Analysis",
-      "Multi-omics Integration"
-    ],
-    "modalities": [
-      "scRNA-seq",
-      "scATAC-seq"
-    ],
+    "tasks": [],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -3233,14 +2778,23 @@
       "foundation-models",
       "single-cell-foundation-models"
     ],
-    "tasks": [
-      "Single-cell Analysis",
-      "Multi-omics Integration"
+    "tasks": [],
+    "modalities": [],
+    "organism": [],
+    "api": false
+  },
+  {
+    "id": "musk",
+    "name": "MUSK",
+    "type": "model",
+    "url": "https://github.com/lilab-stanford/MUSK",
+    "description": "Vision-language foundation model for precision oncology analyzing multimodal paired text and pathology image data for biomarker prediction and retrieval.",
+    "tags": [
+      "foundation-models",
+      "multi-modal-foundation-models"
     ],
-    "modalities": [
-      "scRNA-seq",
-      "scATAC-seq"
-    ],
+    "tasks": [],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -3254,13 +2808,23 @@
       "drug-discovery",
       "drug-target-interaction"
     ],
-    "tasks": [
-      "Drug Target Interaction"
+    "tasks": [],
+    "modalities": [],
+    "organism": [],
+    "api": false
+  },
+  {
+    "id": "nicheformer",
+    "name": "Nicheformer",
+    "type": "model",
+    "url": "https://github.com/theislab/nicheformer",
+    "description": "Foundation model for single-cell and spatial omics using a transformer architecture with positional embeddings to encode spatial cell information.",
+    "tags": [
+      "foundation-models",
+      "single-cell-foundation-models"
     ],
-    "modalities": [
-      "Protein Sequence",
-      "SMILES"
-    ],
+    "tasks": [],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -3274,12 +2838,8 @@
       "foundation-models",
       "genomics-foundation-models"
     ],
-    "tasks": [
-      "Gene Regulation Prediction"
-    ],
-    "modalities": [
-      "DNA Sequence"
-    ],
+    "tasks": [],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -3293,13 +2853,8 @@
       "foundation-models",
       "protein-foundation-models"
     ],
-    "tasks": [
-      "Protein Structure Prediction"
-    ],
-    "modalities": [
-      "Protein Sequence",
-      "Protein Structure"
-    ],
+    "tasks": [],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -3313,13 +2868,38 @@
       "foundation-models",
       "protein-foundation-models"
     ],
-    "tasks": [
-      "Protein Structure Prediction"
+    "tasks": [],
+    "modalities": [],
+    "organism": [],
+    "api": false
+  },
+  {
+    "id": "paccmannrl",
+    "name": "PaccMannRL",
+    "type": "model",
+    "url": "https://github.com/PaccMann/paccmann_generator",
+    "description": "Reinforcement learning-based generative model for de novo hit-like anticancer molecule design from transcriptomic data.",
+    "tags": [
+      "drug-discovery",
+      "molecular-generation"
     ],
-    "modalities": [
-      "Protein Sequence",
-      "Protein Structure"
+    "tasks": [],
+    "modalities": [],
+    "organism": [],
+    "api": false
+  },
+  {
+    "id": "pathomicfusion",
+    "name": "PathomicFusion",
+    "type": "model",
+    "url": "https://github.com/mahmoodlab/PathomicFusion",
+    "description": "Integrated framework fusing histopathology and genomic features via CNN, GNN, and attention gating for cancer diagnosis and prognosis.",
+    "tags": [
+      "foundation-models",
+      "multi-modal-foundation-models"
     ],
+    "tasks": [],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -3333,14 +2913,53 @@
       "foundation-models",
       "single-cell-foundation-models"
     ],
-    "tasks": [
-      "Single-cell Analysis",
-      "Pathology Image Analysis"
+    "tasks": [],
+    "modalities": [],
+    "organism": [],
+    "api": false
+  },
+  {
+    "id": "plip",
+    "name": "PLIP",
+    "type": "model",
+    "url": "https://github.com/PathologyFoundation/plip",
+    "description": "Vision-language foundation model for pathology trained with contrastive learning on pathology image–text pairs for image classification and text-to-image retrieval.",
+    "tags": [
+      "foundation-models",
+      "multi-modal-foundation-models"
     ],
-    "modalities": [
-      "scRNA-seq",
-      "Pathology Image"
+    "tasks": [],
+    "modalities": [],
+    "organism": [],
+    "api": false
+  },
+  {
+    "id": "porpoise",
+    "name": "PORPOISE",
+    "type": "model",
+    "url": "https://github.com/mahmoodlab/PORPOISE",
+    "description": "Pan-cancer integrative histology-genomic analysis framework using multimodal deep learning for patient stratification.",
+    "tags": [
+      "foundation-models",
+      "multi-modal-foundation-models"
     ],
+    "tasks": [],
+    "modalities": [],
+    "organism": [],
+    "api": false
+  },
+  {
+    "id": "prnet",
+    "name": "PRNet",
+    "type": "model",
+    "url": "https://github.com/Perturbation-Response-Prediction/PRnet",
+    "description": "Deep generative model for predicting transcriptional responses to novel chemical perturbations for drug discovery.",
+    "tags": [
+      "drug-discovery",
+      "drug-response-prediction"
+    ],
+    "tasks": [],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -3354,12 +2973,8 @@
       "foundation-models",
       "protein-foundation-models"
     ],
-    "tasks": [
-      "Protein Design"
-    ],
-    "modalities": [
-      "Protein Sequence"
-    ],
+    "tasks": [],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -3373,13 +2988,8 @@
       "foundation-models",
       "protein-foundation-models"
     ],
-    "tasks": [
-      "Protein Design"
-    ],
-    "modalities": [
-      "Protein Sequence",
-      "Protein Structure"
-    ],
+    "tasks": [],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -3393,12 +3003,8 @@
       "foundation-models",
       "protein-foundation-models"
     ],
-    "tasks": [
-      "Protein Representation Learning"
-    ],
-    "modalities": [
-      "Protein Sequence"
-    ],
+    "tasks": [],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -3412,13 +3018,8 @@
       "drug-discovery",
       "drug-response-prediction"
     ],
-    "tasks": [
-      "Drug Response Prediction"
-    ],
-    "modalities": [
-      "Gene Expression",
-      "SMILES"
-    ],
+    "tasks": [],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -3432,12 +3033,23 @@
       "drug-discovery",
       "molecular-generation"
     ],
-    "tasks": [
-      "Molecular Generation"
+    "tasks": [],
+    "modalities": [],
+    "organism": [],
+    "api": false
+  },
+  {
+    "id": "release",
+    "name": "ReLeaSE",
+    "type": "model",
+    "url": "https://github.com/isayev/ReLeaSE",
+    "description": "Deep reinforcement learning framework for de novo drug design combining a generative and predictive model.",
+    "tags": [
+      "drug-discovery",
+      "molecular-generation"
     ],
-    "modalities": [
-      "SMILES"
-    ],
+    "tasks": [],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -3451,13 +3063,8 @@
       "foundation-models",
       "protein-foundation-models"
     ],
-    "tasks": [
-      "Protein Design"
-    ],
-    "modalities": [
-      "Protein Sequence",
-      "Protein Structure"
-    ],
+    "tasks": [],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -3471,13 +3078,8 @@
       "foundation-models",
       "protein-foundation-models"
     ],
-    "tasks": [
-      "Protein Structure Prediction"
-    ],
-    "modalities": [
-      "Protein Sequence",
-      "Protein Structure"
-    ],
+    "tasks": [],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -3491,12 +3093,23 @@
       "foundation-models",
       "protein-foundation-models"
     ],
-    "tasks": [
-      "Protein Representation Learning"
+    "tasks": [],
+    "modalities": [],
+    "organism": [],
+    "api": false
+  },
+  {
+    "id": "saturn",
+    "name": "SATURN",
+    "type": "model",
+    "url": "https://github.com/snap-stanford/SATURN",
+    "description": "Transformer-based model integrating gene expression and protein sequences via a protein language model to learn unified multi-species cell embeddings.",
+    "tags": [
+      "foundation-models",
+      "single-cell-foundation-models"
     ],
-    "modalities": [
-      "Protein Sequence"
-    ],
+    "tasks": [],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -3510,13 +3123,8 @@
       "foundation-models",
       "single-cell-foundation-models"
     ],
-    "tasks": [
-      "Single-cell Analysis",
-      "Batch Integration"
-    ],
-    "modalities": [
-      "scRNA-seq"
-    ],
+    "tasks": [],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -3530,13 +3138,23 @@
       "foundation-models",
       "single-cell-foundation-models"
     ],
-    "tasks": [
-      "Single-cell Analysis",
-      "Cell Type Annotation"
+    "tasks": [],
+    "modalities": [],
+    "organism": [],
+    "api": false
+  },
+  {
+    "id": "scbutterfly",
+    "name": "scButterfly",
+    "type": "model",
+    "url": "https://github.com/BioX-NKU/scButterfly",
+    "description": "Dual-aligned variational autoencoder for single-cell cross-modality translation between paired and unpaired multiomics data.",
+    "tags": [
+      "foundation-models",
+      "single-cell-foundation-models"
     ],
-    "modalities": [
-      "scRNA-seq"
-    ],
+    "tasks": [],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -3550,12 +3168,8 @@
       "foundation-models",
       "single-cell-foundation-models"
     ],
-    "tasks": [
-      "Single-cell Analysis"
-    ],
-    "modalities": [
-      "scRNA-seq"
-    ],
+    "tasks": [],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -3569,12 +3183,23 @@
       "foundation-models",
       "single-cell-foundation-models"
     ],
-    "tasks": [
-      "Single-cell Analysis"
+    "tasks": [],
+    "modalities": [],
+    "organism": [],
+    "api": false
+  },
+  {
+    "id": "scgpt_spatial",
+    "name": "scGPT-spatial",
+    "type": "model",
+    "url": "https://github.com/bowang-lab/scGPT-spatial",
+    "description": "Extension of scGPT for spatial transcriptomics with continual pretraining and a mixture-of-experts decoder for spatial gene expression analysis.",
+    "tags": [
+      "foundation-models",
+      "single-cell-foundation-models"
     ],
-    "modalities": [
-      "scRNA-seq"
-    ],
+    "tasks": [],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -3588,15 +3213,23 @@
       "foundation-models",
       "single-cell-foundation-models"
     ],
-    "tasks": [
-      "Single-cell Analysis",
-      "Multi-omics Integration"
+    "tasks": [],
+    "modalities": [],
+    "organism": [],
+    "api": false
+  },
+  {
+    "id": "scpair",
+    "name": "scPair",
+    "type": "model",
+    "url": "https://github.com/quon-titative-biology/scPair",
+    "description": "Bidirectional feedforward network for single-cell multimodal analysis with cross-modality prediction leveraging single-cell atlases.",
+    "tags": [
+      "foundation-models",
+      "single-cell-foundation-models"
     ],
-    "modalities": [
-      "scRNA-seq",
-      "scATAC-seq",
-      "Proteomics"
-    ],
+    "tasks": [],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -3609,12 +3242,8 @@
     "tags": [
       "llm-for-biology"
     ],
-    "tasks": [
-      "Biomedical Text Generation"
-    ],
-    "modalities": [
-      "Text"
-    ],
+    "tasks": [],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -3628,12 +3257,8 @@
       "foundation-models",
       "genomics-foundation-models"
     ],
-    "tasks": [
-      "Gene Regulation Prediction"
-    ],
-    "modalities": [
-      "DNA Sequence"
-    ],
+    "tasks": [],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -3647,14 +3272,8 @@
       "foundation-models",
       "single-cell-foundation-models"
     ],
-    "tasks": [
-      "Single-cell Analysis",
-      "Spatial Transcriptomics Analysis"
-    ],
-    "modalities": [
-      "scRNA-seq",
-      "Spatial Transcriptomics"
-    ],
+    "tasks": [],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -3668,14 +3287,8 @@
       "drug-discovery",
       "molecular-generation"
     ],
-    "tasks": [
-      "Molecular Generation",
-      "Molecular Docking"
-    ],
-    "modalities": [
-      "SMILES",
-      "Protein Structure"
-    ],
+    "tasks": [],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -3689,13 +3302,23 @@
       "drug-discovery",
       "drug-response-prediction"
     ],
-    "tasks": [
-      "Drug Response Prediction"
+    "tasks": [],
+    "modalities": [],
+    "organism": [],
+    "api": false
+  },
+  {
+    "id": "toad",
+    "name": "TOAD",
+    "type": "model",
+    "url": "https://github.com/mahmoodlab/TOAD",
+    "description": "Tumor Origin Assessment via Deep-learning; weakly-supervised multi-task model predicting cancer primary origin from H&E whole-slide images.",
+    "tags": [
+      "foundation-models",
+      "multi-modal-foundation-models"
     ],
-    "modalities": [
-      "Gene Expression",
-      "SMILES"
-    ],
+    "tasks": [],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -3709,13 +3332,8 @@
       "foundation-models",
       "single-cell-foundation-models"
     ],
-    "tasks": [
-      "Single-cell Analysis",
-      "Cell Type Annotation"
-    ],
-    "modalities": [
-      "scRNA-seq"
-    ],
+    "tasks": [],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -3729,14 +3347,8 @@
       "foundation-models",
       "single-cell-foundation-models"
     ],
-    "tasks": [
-      "Single-cell Analysis",
-      "Multi-omics Integration"
-    ],
-    "modalities": [
-      "scRNA-seq",
-      "Proteomics"
-    ],
+    "tasks": [],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -3750,13 +3362,23 @@
       "compound-protein-interaction",
       "drug-discovery"
     ],
-    "tasks": [
-      "Compound-Protein Interaction"
+    "tasks": [],
+    "modalities": [],
+    "organism": [],
+    "api": false
+  },
+  {
+    "id": "transigen",
+    "name": "TranSiGen",
+    "type": "model",
+    "url": "https://github.com/myzhengSIMM/TranSiGen",
+    "description": "Dual-VAE architecture for ligand-based virtual screening, drug response prediction, and drug repurposing using chemical-induced transcriptional profiles.",
+    "tags": [
+      "drug-discovery",
+      "drug-repurposing"
     ],
-    "modalities": [
-      "Protein Sequence",
-      "SMILES"
-    ],
+    "tasks": [],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -3770,12 +3392,8 @@
       "foundation-models",
       "single-cell-foundation-models"
     ],
-    "tasks": [
-      "Single-cell Analysis"
-    ],
-    "modalities": [
-      "scRNA-seq"
-    ],
+    "tasks": [],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -3789,14 +3407,8 @@
       "foundation-models",
       "single-cell-foundation-models"
     ],
-    "tasks": [
-      "Single-cell Analysis",
-      "Pathology Image Analysis"
-    ],
-    "modalities": [
-      "scRNA-seq",
-      "Pathology Image"
-    ],
+    "tasks": [],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -3810,15 +3422,23 @@
       "foundation-models",
       "single-cell-foundation-models"
     ],
-    "tasks": [
-      "Single-cell Analysis",
-      "Multi-omics Integration"
+    "tasks": [],
+    "modalities": [],
+    "organism": [],
+    "api": false
+  },
+  {
+    "id": "virchow",
+    "name": "Virchow",
+    "type": "model",
+    "url": "https://huggingface.co/paige-ai/Virchow",
+    "description": "Million-slide digital pathology foundation model using a vision transformer and self-supervised distillation for tile-level pathology image representation.",
+    "tags": [
+      "foundation-models",
+      "multi-modal-foundation-models"
     ],
-    "modalities": [
-      "scRNA-seq",
-      "scATAC-seq",
-      "Proteomics"
-    ],
+    "tasks": [],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -3837,6 +3457,34 @@
     "api": false
   },
   {
+    "id": "casper",
+    "name": "CaSpER",
+    "type": "toolkit",
+    "url": "https://github.com/akdess/CaSpER",
+    "description": "CNV identification and visualization by integrative analysis of single-cell or bulk RNA-seq data.",
+    "tags": [
+      "preprocessing-tools"
+    ],
+    "tasks": [],
+    "modalities": [],
+    "organism": [],
+    "api": false
+  },
+  {
+    "id": "cellcharter",
+    "name": "CellCharter",
+    "type": "toolkit",
+    "url": "https://github.com/CSOgroup/cellcharter",
+    "description": "Identification and characterization of spatial cell niches from spatial transcriptomics using VAEs and Gaussian mixture models.",
+    "tags": [
+      "preprocessing-tools"
+    ],
+    "tasks": [],
+    "modalities": [],
+    "organism": [],
+    "api": false
+  },
+  {
     "id": "cellchat",
     "name": "CellChat",
     "type": "toolkit",
@@ -3845,9 +3493,7 @@
     "tags": [
       "preprocessing-tools"
     ],
-    "tasks": [
-      "Cell-Cell Communication"
-    ],
+    "tasks": [],
     "modalities": [],
     "organism": [],
     "api": false
@@ -3861,9 +3507,7 @@
     "tags": [
       "preprocessing-tools"
     ],
-    "tasks": [
-      "Cell Type Annotation"
-    ],
+    "tasks": [],
     "modalities": [],
     "organism": [],
     "api": false
@@ -3877,12 +3521,8 @@
     "tags": [
       "preprocessing-tools"
     ],
-    "tasks": [
-      "Spatial Transcriptomics Analysis"
-    ],
-    "modalities": [
-      "Spatial Transcriptomics"
-    ],
+    "tasks": [],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -3901,11 +3541,39 @@
     "api": false
   },
   {
+    "id": "commot",
+    "name": "COMMOT",
+    "type": "toolkit",
+    "url": "https://github.com/zcang/COMMOT",
+    "description": "Optimal transport-based framework for screening cell-cell communication in spatial transcriptomics.",
+    "tags": [
+      "preprocessing-tools"
+    ],
+    "tasks": [],
+    "modalities": [],
+    "organism": [],
+    "api": false
+  },
+  {
     "id": "deepchem",
     "name": "DeepChem",
     "type": "toolkit",
     "url": "https://github.com/deepchem/deepchem",
     "description": "Deep learning library for drug discovery, quantum chemistry, and materials science.",
+    "tags": [
+      "preprocessing-tools"
+    ],
+    "tasks": [],
+    "modalities": [],
+    "organism": [],
+    "api": false
+  },
+  {
+    "id": "deeptalk",
+    "name": "DeepTalk",
+    "type": "toolkit",
+    "url": "https://github.com/JiangBioLab/DeepTalk",
+    "description": "Graph attention network for deciphering cell-cell communication from spatial transcriptomics data.",
     "tags": [
       "preprocessing-tools"
     ],
@@ -3965,9 +3633,7 @@
     "tags": [
       "preprocessing-tools"
     ],
-    "tasks": [
-      "Batch Integration"
-    ],
+    "tasks": [],
     "modalities": [],
     "organism": [],
     "api": false
@@ -3978,6 +3644,20 @@
     "type": "toolkit",
     "url": "https://pachterlab.github.io/kallisto/",
     "description": "Near-optimal RNA-seq quantification using pseudoalignment for fast transcript abundance estimation.",
+    "tags": [
+      "preprocessing-tools"
+    ],
+    "tasks": [],
+    "modalities": [],
+    "organism": [],
+    "api": false
+  },
+  {
+    "id": "linger",
+    "name": "LINGER",
+    "type": "toolkit",
+    "url": "https://github.com/Durenlab/LINGER",
+    "description": "Neural network for gene regulatory network inference from single-cell multiome (RNA+ATAC-seq) data with bulk data pretraining.",
     "tags": [
       "preprocessing-tools"
     ],
@@ -4001,6 +3681,20 @@
     "api": false
   },
   {
+    "id": "mogonet",
+    "name": "MOGONET",
+    "type": "toolkit",
+    "url": "https://github.com/txWang/MOGONET",
+    "description": "Multi-omics graph convolutional network framework for patient classification and biomarker identification.",
+    "tags": [
+      "preprocessing-tools"
+    ],
+    "tasks": [],
+    "modalities": [],
+    "organism": [],
+    "api": false
+  },
+  {
     "id": "monocle3",
     "name": "Monocle3",
     "type": "toolkit",
@@ -4009,9 +3703,35 @@
     "tags": [
       "preprocessing-tools"
     ],
-    "tasks": [
-      "RNA Velocity / Trajectory"
+    "tasks": [],
+    "modalities": [],
+    "organism": [],
+    "api": false
+  },
+  {
+    "id": "ncem",
+    "name": "NCEM",
+    "type": "toolkit",
+    "url": "https://github.com/theislab/ncem",
+    "description": "GNN-based model for learning intercellular communication from spatial graphs of cells.",
+    "tags": [
+      "preprocessing-tools"
     ],
+    "tasks": [],
+    "modalities": [],
+    "organism": [],
+    "api": false
+  },
+  {
+    "id": "numbat",
+    "name": "Numbat",
+    "type": "toolkit",
+    "url": "https://github.com/kharchenkolab/numbat",
+    "description": "Haplotype-aware copy number variation inference from single-cell RNA-seq using hidden Markov models.",
+    "tags": [
+      "preprocessing-tools"
+    ],
+    "tasks": [],
     "modalities": [],
     "organism": [],
     "api": false
@@ -4073,6 +3793,20 @@
     "api": false
   },
   {
+    "id": "scipenn",
+    "name": "sciPENN",
+    "type": "toolkit",
+    "url": "https://github.com/jlakkis/sciPENN",
+    "description": "RNN-based method for simultaneous protein expression prediction, uncertainty estimation, and cell-type label transfer from CITE-seq and scRNA-seq data.",
+    "tags": [
+      "preprocessing-tools"
+    ],
+    "tasks": [],
+    "modalities": [],
+    "organism": [],
+    "api": false
+  },
+  {
     "id": "scvelo",
     "name": "scVelo",
     "type": "toolkit",
@@ -4081,9 +3815,7 @@
     "tags": [
       "preprocessing-tools"
     ],
-    "tasks": [
-      "RNA Velocity / Trajectory"
-    ],
+    "tasks": [],
     "modalities": [],
     "organism": [],
     "api": false
@@ -4125,12 +3857,22 @@
     "tags": [
       "preprocessing-tools"
     ],
-    "tasks": [
-      "Spatial Transcriptomics Analysis"
+    "tasks": [],
+    "modalities": [],
+    "organism": [],
+    "api": false
+  },
+  {
+    "id": "stagate",
+    "name": "STAGATE",
+    "type": "toolkit",
+    "url": "https://github.com/RucDongLab/STAGATE",
+    "description": "Adaptive graph attention auto-encoder for spatial domain identification in spatial transcriptomics.",
+    "tags": [
+      "preprocessing-tools"
     ],
-    "modalities": [
-      "Spatial Transcriptomics"
-    ],
+    "tasks": [],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -4140,6 +3882,20 @@
     "type": "toolkit",
     "url": "https://github.com/alexdobin/STAR",
     "description": "Ultrafast universal RNA-seq aligner with support for spliced alignment and single-cell quantification via STARsolo.",
+    "tags": [
+      "preprocessing-tools"
+    ],
+    "tasks": [],
+    "modalities": [],
+    "organism": [],
+    "api": false
+  },
+  {
+    "id": "tigon",
+    "name": "TIGON",
+    "type": "toolkit",
+    "url": "https://github.com/yutongo/TIGON",
+    "description": "Neural optimal transport method for reconstructing growth and dynamic trajectories from single-cell transcriptomics.",
     "tags": [
       "preprocessing-tools"
     ],
