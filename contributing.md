@@ -10,6 +10,11 @@ project you agree to abide by its terms.
 
 - Search previous suggestions before making a new one, as yours may be a duplicate.
 - Add one link per pull request.
+- Prefer official and trustworthy sources (official docs, organization pages, maintained repositories, or official dataset pages).
+- Include supporting technical evidence for new resources:
+  - Ideally a peer-reviewed publication.
+  - At minimum, a preprint or official technical documentation.
+- Avoid submissions that are primarily promotional pages, generic blog posts, or opinion-only writeups.
 - Add the link:
   - `[name](http://example.com/)` - A short description ends with a period.
   - Keep descriptions concise.
@@ -23,10 +28,31 @@ project you agree to abide by its terms.
 - Use the following format for your pull request title:
   - Add user/repo - Short repo description
 
+## Data Workflow (README and JSON)
+
+- The curated source list is maintained in `README.md`.
+- Machine-readable files are generated from README:
+  - `python scripts/sync_resources_from_readme.py`
+  - `python scripts/build_resources.py`
+- For resource additions/edits, include updated generated files in the same PR:
+  - `data/resources.yml`
+  - `data/resources.json`
+  - `data/resources.csv`
+  - `docs/data/resources.json`
+- Field definitions and naming rules are documented in [`docs/data/SCHEMA.md`](docs/data/SCHEMA.md).
+
+## GitHub Pages UI
+
+- The UI reads `docs/data/resources.json`.
+- Search and filters are driven by these fields:
+  - Search: `name`, `description`, `tasks`, `modalities`, `tags`
+  - Filters: `type`, `tasks`, `modalities`
+
 ## Updates to Existing Links or Sections
 
 - Improvements to the existing sections are welcome.
 - If you think a listed link is not awesome, feel free to submit an issue or pull request to begin the discussion.
+- Broken links are checked by CI; if you find one, please submit a fix to the canonical URL (or remove the entry if no stable canonical URL exists).
 
 ## Updating your PR
 

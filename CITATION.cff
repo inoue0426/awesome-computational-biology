@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "If you use this resource list, please cite it using this metadata."
+title: "Awesome Computational Biology"
+type: software
+authors:
+  - name: "inoue0426"
+repository-code: "https://github.com/inoue0426/awesome-computational-biology"
+url: "https://github.com/inoue0426/awesome-computational-biology"
+license: "CC0-1.0"
+version: "1.0.0"
+date-released: 2026-04-16
+keywords:
+  - computational biology
+  - bioinformatics
+  - awesome-list
