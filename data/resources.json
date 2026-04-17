@@ -2346,6 +2346,26 @@
     "api": false
   },
   {
+    "id": "chemcpa",
+    "name": "chemCPA",
+    "type": "model",
+    "url": "https://github.com/theislab/chemCPA",
+    "description": "Compositional perturbation autoencoder for predicting single-cell transcriptional responses to unseen drug perturbations and dose combinations.",
+    "tags": [
+      "drug-discovery",
+      "drug-response-prediction"
+    ],
+    "tasks": [
+      "Drug Discovery",
+      "Drug Response Prediction"
+    ],
+    "modalities": [
+      "Small Molecule"
+    ],
+    "organism": [],
+    "api": false
+  },
+  {
     "id": "chief",
     "name": "CHIEF",
     "type": "model",
@@ -2420,6 +2440,26 @@
     "modalities": [
       "Single Cell",
       "Spatial Transcriptomics"
+    ],
+    "organism": [],
+    "api": false
+  },
+  {
+    "id": "cyclecdr",
+    "name": "cycleCDR",
+    "type": "model",
+    "url": "https://github.com/hliulab/cycleCDR",
+    "description": "Interpretable cycle-consistency framework for modeling cellular responses to drug perturbations.",
+    "tags": [
+      "drug-discovery",
+      "drug-response-prediction"
+    ],
+    "tasks": [
+      "Drug Discovery",
+      "Drug Response Prediction"
+    ],
+    "modalities": [
+      "Small Molecule"
     ],
     "organism": [],
     "api": false
