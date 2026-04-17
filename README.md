@@ -218,6 +218,7 @@ Browse and search the resources via the [GitHub Pages UI](https://inoue0426.gith
 - [FLIP (Fitness Landscape Inference for Proteins)](https://github.com/J-SNACKKB/FLIP) — Benchmark collection of protein fitness landscape datasets for evaluating protein ML models.
 - [Genomics of Drug Sensitivity in Cancer (GDSC)](https://www.cancerrxgene.org/) — Drug sensitivity for ~1000 human cancer cell lines and hundreds of compounds.
 - [GuacaMol](https://github.com/BenevolentAI/guacamol) — Benchmark suite for generative molecular design models.
+- [JUMP Cell Painting Datasets](https://github.com/jump-cellpainting/datasets) — Consortium-scale cell imaging perturbation datasets (chemical and genetic) for phenotypic profiling and drug discovery research.
 - [LINCS L1000](https://lincsproject.org/LINCS/tools/workflows/find-the-best-place-to-obtain-the-lincs-l1000-data) — Gene expression profiles (978 landmark genes) for >20,000 chemical and genetic perturbations across cell lines.
 - [MoleculeNet](http://moleculenet.ai/) — Benchmark datasets for molecular machine learning.
 - [MOSES](https://github.com/molecularsets/moses) — Benchmarking platform for molecular generation models.
@@ -230,6 +231,7 @@ Browse and search the resources via the [GitHub Pages UI](https://inoue0426.gith
 - [ProteinGym](https://github.com/OATML-Markslab/ProteinGym) — Large-scale benchmark of deep mutational scanning assays for evaluating protein fitness landscape models.
 - [QM9](https://figshare.com/collections/Quantum_chemistry_structures_and_properties_of_134_kilo_molecules/978904) — Quantum chemistry properties for 134K stable small organic molecules computed at DFT level.
 - [scIB (Single-cell Integration Benchmarks)](https://github.com/theislab/scib) — Comprehensive benchmarking framework for single-cell data integration methods.
+- [scPerturb](https://github.com/sanderlab/scPerturb) — Curated and continuously updated single-cell perturbation data resource spanning CRISPR and drug perturbation studies.
 - [SIDER (Side Effect Resource)](http://sideeffects.embl.de/) — Database of 1,430 approved drugs with their recorded adverse drug reactions across 27 system-organ classes.
 - [Tabula Muris](https://tabula-muris.ds.czbiohub.org/) — Comprehensive single-cell atlas of 20 mouse organs and tissues, enabling cross-tissue and cross-species comparisons.
 - [Tabula Sapiens](https://tabula-sapiens-portal.ds.czbiohub.org/) — Comprehensive human single-cell atlas of ~500K cells from 24 organs and tissues across multiple donors.

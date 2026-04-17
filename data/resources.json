@@ -252,6 +252,20 @@
     "api": false
   },
   {
+    "id": "jump_cell_painting_datasets",
+    "name": "JUMP Cell Painting Datasets",
+    "type": "benchmark",
+    "url": "https://github.com/jump-cellpainting/datasets",
+    "description": "Consortium-scale cell imaging perturbation datasets (chemical and genetic) for phenotypic profiling and drug discovery research.",
+    "tags": [
+      "benchmarks-and-datasets"
+    ],
+    "tasks": [],
+    "modalities": [],
+    "organism": [],
+    "api": false
+  },
+  {
     "id": "lincs_l1000",
     "name": "LINCS L1000",
     "type": "benchmark",
@@ -397,6 +411,20 @@
     "type": "benchmark",
     "url": "https://github.com/theislab/scib",
     "description": "Comprehensive benchmarking framework for single-cell data integration methods.",
+    "tags": [
+      "benchmarks-and-datasets"
+    ],
+    "tasks": [],
+    "modalities": [],
+    "organism": [],
+    "api": false
+  },
+  {
+    "id": "scperturb",
+    "name": "scPerturb",
+    "type": "benchmark",
+    "url": "https://github.com/sanderlab/scPerturb",
+    "description": "Curated and continuously updated single-cell perturbation data resource spanning CRISPR and drug perturbation studies.",
     "tags": [
       "benchmarks-and-datasets"
     ],
