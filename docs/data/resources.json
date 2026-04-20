@@ -224,6 +224,20 @@
     "api": false
   },
   {
+    "id": "dud_e_directory_of_useful_decoys_enhanced",
+    "name": "DUD-E (Directory of Useful Decoys, Enhanced)",
+    "type": "benchmark",
+    "url": "http://dude.docking.org/",
+    "description": "Structure-based virtual screening benchmark with active ligands and challenging decoy sets across diverse protein targets.",
+    "tags": [
+      "benchmarks-and-datasets"
+    ],
+    "tasks": [],
+    "modalities": [],
+    "organism": [],
+    "api": false
+  },
+  {
     "id": "flip_fitness_landscape_inference_for_proteins",
     "name": "FLIP (Fitness Landscape Inference for Proteins)",
     "type": "benchmark",
