@@ -2372,17 +2372,17 @@
     "name": "ChemBERTa-2",
     "type": "model",
     "url": "https://github.com/seyonechithrananda/bert-loves-chemistry",
-    "description": "Chemical embeddings & prediction.",
+    "description": "RoBERTa-based molecular language model pretrained on SMILES for small-molecule representation learning.",
     "tags": [
-      "foundation-models",
-      "pre-trained-embedding",
-      "protein-foundation-models"
+      "compound-embedding",
+      "compound-foundation-models",
+      "foundation-models"
     ],
     "tasks": [
       "Foundation Model"
     ],
     "modalities": [
-      "Protein"
+      "Small Molecule"
     ],
     "organism": [],
     "api": false
@@ -3089,6 +3089,26 @@
     "api": false
   },
   {
+    "id": "grover",
+    "name": "GROVER",
+    "type": "model",
+    "url": "https://github.com/tencent-ailab/grover",
+    "description": "Self-supervised graph transformer for large-scale molecular representation learning from unlabeled compounds.",
+    "tags": [
+      "compound-embedding",
+      "compound-foundation-models",
+      "foundation-models"
+    ],
+    "tasks": [
+      "Foundation Model"
+    ],
+    "modalities": [
+      "Small Molecule"
+    ],
+    "organism": [],
+    "api": false
+  },
+  {
     "id": "hidra",
     "name": "HiDRA",
     "type": "model",
@@ -3273,6 +3293,26 @@
     "api": false
   },
   {
+    "id": "mol2vec",
+    "name": "Mol2Vec",
+    "type": "model",
+    "url": "https://github.com/samoturk/mol2vec",
+    "description": "Unsupervised molecular embedding method inspired by Word2Vec for learning vector representations of chemical substructures.",
+    "tags": [
+      "compound-embedding",
+      "compound-foundation-models",
+      "foundation-models"
+    ],
+    "tasks": [
+      "Foundation Model"
+    ],
+    "modalities": [
+      "Small Molecule"
+    ],
+    "organism": [],
+    "api": false
+  },
+  {
     "id": "molecular_transformer",
     "name": "Molecular Transformer",
     "type": "model",
@@ -3285,6 +3325,26 @@
     "tasks": [
       "Drug Discovery",
       "Molecular Generation"
+    ],
+    "modalities": [
+      "Small Molecule"
+    ],
+    "organism": [],
+    "api": false
+  },
+  {
+    "id": "molformer",
+    "name": "MolFormer",
+    "type": "model",
+    "url": "https://github.com/IBM/molformer",
+    "description": "Linear attention transformer pretrained on millions of SMILES strings for efficient molecular embeddings.",
+    "tags": [
+      "compound-embedding",
+      "compound-foundation-models",
+      "foundation-models"
+    ],
+    "tasks": [
+      "Foundation Model"
     ],
     "modalities": [
       "Small Molecule"
@@ -4244,6 +4304,26 @@
     "modalities": [
       "Single Cell",
       "Spatial Transcriptomics"
+    ],
+    "organism": [],
+    "api": false
+  },
+  {
+    "id": "uni_mol",
+    "name": "Uni-Mol",
+    "type": "model",
+    "url": "https://github.com/deepmodeling/Uni-Mol",
+    "description": "3D molecular pretraining framework for universal representation learning on molecules and protein pockets.",
+    "tags": [
+      "compound-embedding",
+      "compound-foundation-models",
+      "foundation-models"
+    ],
+    "tasks": [
+      "Foundation Model"
+    ],
+    "modalities": [
+      "Small Molecule"
     ],
     "organism": [],
     "api": false

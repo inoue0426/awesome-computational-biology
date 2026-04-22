@@ -68,6 +68,8 @@ TAG_TO_TASKS: dict[str, list[str]] = {
     "spatial-foundation-models": ["Foundation Model"],
     "multi-omics-foundation-models": ["Foundation Model"],
     "domain-alignment": ["Domain Alignment"],
+    "compound-foundation-models": ["Foundation Model"],
+    "compound-embedding": ["Foundation Model"],
     "pre-trained-embedding": ["Foundation Model"],
     "protein-structure-prediction-and-design": ["Protein Structure Prediction"],
 }
@@ -102,6 +104,8 @@ TAG_TO_MODALITIES: dict[str, list[str]] = {
     "spatial-foundation-models": ["Spatial Transcriptomics"],
     "multi-omics-foundation-models": ["Multi-Omics"],
     "pre-trained-embedding": ["Protein"],
+    "compound-foundation-models": ["Small Molecule"],
+    "compound-embedding": ["Small Molecule"],
     "protein-structure-prediction-and-design": ["Protein"],
     "domain-alignment": ["Single Cell"],
 }
