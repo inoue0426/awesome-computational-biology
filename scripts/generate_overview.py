@@ -168,19 +168,17 @@ def main() -> None:
     n_types      = len(type_counts)
 
     summary_items = [
-        ("🧬", "Total Resources",    str(total)),
-        ("📂", "Resource Types",    str(n_types)),
-        ("🎯", "Unique Tasks",       str(n_tasks)),
-        ("🔬", "Unique Modalities",  str(n_modalities)),
+        ("Total Resources",    str(total),       "#2c7be5"),
+        ("Resource Types",    str(n_types),      "#2a9d8f"),
+        ("Unique Tasks",       str(n_tasks),      "#9b5de5"),
+        ("Unique Modalities",  str(n_modalities), "#e76f51"),
     ]
 
-    for i, (icon, label, value) in enumerate(summary_items):
-        y = 0.78 - i * 0.22
-        ax_summary.text(0.12, y, icon, fontsize=22, va="center",
-                        transform=ax_summary.transAxes)
-        ax_summary.text(0.28, y + 0.04, value, fontsize=20, fontweight="bold",
-                        color="#2c7be5", va="center", transform=ax_summary.transAxes)
-        ax_summary.text(0.28, y - 0.05, label, fontsize=9, color="#6c757d",
+    for i, (label, value, color) in enumerate(summary_items):
+        y = 0.82 - i * 0.22
+        ax_summary.text(0.08, y + 0.04, value, fontsize=26, fontweight="bold",
+                        color=color, va="center", transform=ax_summary.transAxes)
+        ax_summary.text(0.08, y - 0.06, label, fontsize=9, color="#6c757d",
                         va="center", transform=ax_summary.transAxes)
 
     # legend for type colours
