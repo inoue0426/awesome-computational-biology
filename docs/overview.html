@@ -169,8 +169,9 @@
       return limit ? entries.slice(0, limit) : entries;
     }
 
-    function makeBarChart(id, labels, values, color) {
+    function makeBarChart(id, labels, values, color, horizontal) {
       var ctx = document.getElementById(id).getContext('2d');
+      var isH = !!horizontal;
       return new Chart(ctx, {
         type: 'bar',
         data: {
@@ -178,32 +179,12 @@
           datasets: [{ data: values, backgroundColor: color, borderRadius: 4, borderSkipped: false }]
         },
         options: {
-          indexAxis: Array.isArray(color) ? 'x' : 'y',
+          indexAxis: isH ? 'y' : 'x',
           responsive: true,
           plugins: { legend: { display: false } },
           scales: {
-            x: { grid: { display: false }, ticks: { color: '#6c757d', font: { size: 11 } } },
-            y: { grid: { color: '#f0f0f0' }, ticks: { color: '#6c757d', font: { size: 11 } } }
-          }
-        }
-      });
-    }
-
-    function makeHBarChart(id, labels, values, color) {
-      var ctx = document.getElementById(id).getContext('2d');
-      return new Chart(ctx, {
-        type: 'bar',
-        data: {
-          labels: labels,
-          datasets: [{ data: values, backgroundColor: color, borderRadius: 4, borderSkipped: false }]
-        },
-        options: {
-          indexAxis: 'y',
-          responsive: true,
-          plugins: { legend: { display: false } },
-          scales: {
-            x: { grid: { color: '#f0f0f0' }, ticks: { color: '#6c757d', font: { size: 11 } } },
-            y: { grid: { display: false }, ticks: { color: '#6c757d', font: { size: 11 } } }
+            x: { grid: { color: isH ? '#f0f0f0' : undefined, display: isH ? undefined : false }, ticks: { color: '#6c757d', font: { size: 11 } } },
+            y: { grid: { color: isH ? undefined : '#f0f0f0', display: isH ? false : undefined }, ticks: { color: '#6c757d', font: { size: 11 } } }
           }
         }
       });
@@ -249,22 +230,22 @@
         var typeLabels  = typeEntries.map(function (e) { return e[0]; });
         var typeValues  = typeEntries.map(function (e) { return e[1]; });
         var typeColors  = typeLabels.map(function (t) { return TYPE_COLORS[t] || DEFAULT_COLOR; });
-        makeBarChart('chart-type', typeLabels, typeValues, typeColors);
+        makeBarChart('chart-type', typeLabels, typeValues, typeColors, false);
 
         // Task horizontal bar
         var taskEntries = sortedEntries(taskCounts, 10).reverse();
-        makeHBarChart('chart-task',
+        makeBarChart('chart-task',
           taskEntries.map(function (e) { return e[0]; }),
           taskEntries.map(function (e) { return e[1]; }),
-          TASK_COLOR
+          TASK_COLOR, true
         );
 
         // Modality horizontal bar
         var modEntries = sortedEntries(modalityCounts, 10).reverse();
-        makeHBarChart('chart-modality',
+        makeBarChart('chart-modality',
           modEntries.map(function (e) { return e[0]; }),
           modEntries.map(function (e) { return e[1]; }),
-          MODALITY_COLOR
+          MODALITY_COLOR, true
         );
 
         // Type doughnut
