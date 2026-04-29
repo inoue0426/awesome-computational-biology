@@ -1,0 +1,45 @@
+name: Update Overview Figure
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - docs/data/resources.json
+  schedule:
+    # Every Monday at 03:00 UTC
+    - cron: '0 3 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-overview:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          # Use the default GITHUB_TOKEN so commits don't re-trigger this workflow
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install matplotlib
+
+      - name: Regenerate overview figure
+        run: python scripts/generate_overview.py
+
+      - name: Commit updated overview
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/overview.png
+          git diff --cached --quiet || git commit -m "chore: regenerate overview figure"
+          git push
