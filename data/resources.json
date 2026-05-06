@@ -1563,6 +1563,22 @@
     "api": false
   },
   {
+    "id": "omnipath",
+    "name": "OmniPath",
+    "type": "database",
+    "url": "https://omnipathdb.org/",
+    "description": "Comprehensive resource integrating protein interactions, signaling pathways, gene regulatory networks, and miRNA targets from over 100 databases.",
+    "tags": [
+      "pathway"
+    ],
+    "tasks": [],
+    "modalities": [
+      "Pathway"
+    ],
+    "organism": [],
+    "api": false
+  },
+  {
     "id": "open_targets_platform",
     "name": "Open Targets Platform",
     "type": "database",
@@ -1791,11 +1807,11 @@
     "api": false
   },
   {
-    "id": "signor",
-    "name": "SIGNOR",
+    "id": "signor_2_0",
+    "name": "SIGNOR 2.0",
     "type": "database",
     "url": "https://signor.uniroma2.it/",
-    "description": "Database of causal signaling interactions and pathways.",
+    "description": "Database of causal signaling interactions and pathways, with signed and directed relationships between proteins.",
     "tags": [
       "pathway"
     ],
@@ -1940,11 +1956,11 @@
     "api": false
   },
   {
-    "id": "trrust",
-    "name": "TRRUST",
+    "id": "trrust_v2",
+    "name": "TRRUST v2",
     "type": "database",
     "url": "https://www.grnpedia.org/trrust/",
-    "description": "Manually curated database of human and mouse transcriptional regulatory interactions between transcription factors and their target genes.",
+    "description": "Manually curated database of human and mouse transcriptional regulatory interactions between transcription factors and their target genes, expanded with literature-derived evidence.",
     "tags": [
       "gene-regulatory-network",
       "interaction"
