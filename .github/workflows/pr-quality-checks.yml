@@ -1,0 +1,43 @@
+name: PR Quality Checks
+
+on:
+  pull_request:
+    paths:
+      - README.md
+      - data/resources.yml
+      - data/resources.json
+      - data/resources.csv
+      - docs/data/resources.json
+      - scripts/*.py
+      - scripts/**/*.py
+
+permissions:
+  contents: read
+
+jobs:
+  resources-consistency:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup uv
+        uses: astral-sh/setup-uv@v3
+
+      - name: Sync resources from README
+        run: uv run --with pyyaml python scripts/sync_resources_from_readme.py
+
+      - name: Build resource artifacts
+        run: uv run --with pyyaml python scripts/build_resources.py
+
+      - name: Verify generated artifacts are committed
+        run: |
+          if git diff --quiet; then
+            echo "Resources are in sync."
+            exit 0
+          fi
+          echo "Generated files are out of date. Run:"
+          echo "  uv run --with pyyaml python scripts/sync_resources_from_readme.py"
+          echo "  uv run --with pyyaml python scripts/build_resources.py"
+          git status --short
+          exit 1
