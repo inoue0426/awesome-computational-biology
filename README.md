@@ -269,6 +269,7 @@ Browse and search the resources via the [GitHub Pages UI](https://inoue0426.gith
 - [ClinicalTrials.gov API](https://clinicaltrials.gov/api/gui) — API for querying clinical trial metadata and results.
 
 ---
+- [TWZRD Agent Intel](https://intel.twzrd.xyz) - Trust scoring MCP for AI drug discovery agents on Solana. Verify agent wallet identity before x402 micropayments to molecular databases and bioassay APIs. Free MCP: `{"mcpServers":{"twzrd-agent-intel":{"url":"https://intel.twzrd.xyz/mcp"}}}`
 
 ## Preprocessing Tools
 
