@@ -267,6 +267,7 @@ Browse and search the resources via the [GitHub Pages UI](https://inoue0426.gith
 - [ChEMBL Web Services](https://www.ebi.ac.uk/chembl/ws) — REST API for bioactive molecules, targets, and bioassays.
 - [Open Targets Platform API](https://platform.opentargets.org/api) — API for target–disease associations integrating genetics, genomics, and drug data.
 - [ClinicalTrials.gov API](https://clinicaltrials.gov/api/gui) — API for querying clinical trial metadata and results.
+- [Superhighway](https://superhighway.walls.sh) — Web search API (search, news, scrape, and research endpoints) usable for retrieving biomedical literature and clinical-trial information; provides an MCP server (`npx -y superhighway-mcp`).
 
 ---
 

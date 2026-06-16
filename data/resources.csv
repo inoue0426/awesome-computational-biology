@@ -6,6 +6,7 @@ kegg_rest_api,KEGG REST API,api,https://www.kegg.jp/kegg/rest/keggapi.html,"API 
 ncbi_e_utilities,NCBI E-utilities,api,https://www.ncbi.nlm.nih.gov/books/NBK25501/,"Unified APIs for accessing NCBI databases (Gene, GEO, SRA, PubChem, etc).",api,,,,,True,,
 open_targets_platform_api,Open Targets Platform API,api,https://platform.opentargets.org/api,"API for target–disease associations integrating genetics, genomics, and drug data.",api,,,,,True,,
 pubmed_e_utilities_esearch_efetch,PubMed E-utilities (esearch/efetch),api,https://www.nlm.nih.gov/dataguide/edirect/esearch.html,APIs for searching and retrieving biomedical literature from PubMed.,api,,,,,True,,
+superhighway,Superhighway,api,https://superhighway.walls.sh,"Web search API (search, news, scrape, and research endpoints) usable for retrieving biomedical literature and clinical-trial information; provides an MCP server (`npx -y superhighway-mcp`).",api,,,,,True,,
 uniprot_rest_api,UniProt REST API,api,https://www.uniprot.org/help/api,Programmatic access to protein sequence and functional annotation data.,api,,,,,True,,
 1000_genomes_project,1000 Genomes Project,benchmark,https://www.internationalgenome.org/,"Reference panel of human genetic variation from 2,504 individuals across 26 populations.",benchmarks-and-datasets,,,,,False,,
 bace,BACE,benchmark,https://www.kaggle.com/datasets/gokturkkoch/bace,Binary classification and regression dataset for β-secretase 1 (BACE-1) inhibitor binding affinity.,benchmarks-and-datasets,,,,,False,,

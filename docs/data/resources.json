@@ -98,6 +98,20 @@
     "api": true
   },
   {
+    "id": "superhighway",
+    "name": "Superhighway",
+    "type": "api",
+    "url": "https://superhighway.walls.sh",
+    "description": "Web search API (search, news, scrape, and research endpoints) usable for retrieving biomedical literature and clinical-trial information; provides an MCP server (`npx -y superhighway-mcp`).",
+    "tags": [
+      "api"
+    ],
+    "tasks": [],
+    "modalities": [],
+    "organism": [],
+    "api": true
+  },
+  {
     "id": "uniprot_rest_api",
     "name": "UniProt REST API",
     "type": "api",
