@@ -369,6 +369,7 @@ Browse and search the resources via the [GitHub Pages UI](https://inoue0426.gith
 - [BioMedLM](https://huggingface.co/stanford-crfm/BioMedLM) — 2.7B parameter GPT-2-style language model trained exclusively on biomedical literature from PubMed for biomedical question answering and text generation.
 - [MolT5](https://github.com/blender-nlp/MolT5) — Language model for molecular tasks bridging text and SMILES, enabling molecule captioning and text-driven molecule generation.
 - [ChatDrug](https://github.com/chao1224/ChatDrug) — LLM-based conversational pipeline for drug discovery, using natural language prompts for iterative drug editing and optimization.
+- [CASSIA](https://github.com/ElliotXie/CASSIA) — Multi-agent LLM for reference-free, interpretable cell-type annotation of single-cell RNA-seq data, with dedicated annotation, validation, scoring, and reporting agents.
 
 ### Foundation Models
 
