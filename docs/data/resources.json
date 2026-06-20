@@ -3205,6 +3205,26 @@
     "api": false
   },
   {
+    "id": "matcha",
+    "name": "Matcha",
+    "type": "model",
+    "url": "https://github.com/LigandPro/Matcha",
+    "description": "Multi-stage Riemannian flow matching model for physically valid molecular docking with scoring, pose filtering, and benchmarks.",
+    "tags": [
+      "drug-discovery",
+      "molecular-generation"
+    ],
+    "tasks": [
+      "Drug Discovery",
+      "Molecular Generation"
+    ],
+    "modalities": [
+      "Small Molecule"
+    ],
+    "organism": [],
+    "api": false
+  },
+  {
     "id": "mcpinn",
     "name": "MCPINN",
     "type": "model",

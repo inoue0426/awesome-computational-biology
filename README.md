@@ -351,6 +351,7 @@ Browse and search the resources via the [GitHub Pages UI](https://inoue0426.gith
 - [REINVENT](https://github.com/MolecularAI/Reinvent) — Reinforcement learning for de novo drug design.
 - [MolGPT](https://github.com/devalab/molgpt) — Transformer-based model for molecular generation.
 - [Molecular Transformer](https://github.com/pschwllr/MolecularTransformer) — Sequence-to-sequence model for retrosynthesis prediction.
+- [Matcha](https://github.com/LigandPro/Matcha) — Multi-stage Riemannian flow matching model for physically valid molecular docking with scoring, pose filtering, and benchmarks.
 - [TargetDiff](https://github.com/guanjq/targetdiff) — 3D equivariant diffusion model for structure-based drug design.
 - [DiffDock](https://github.com/gcorso/DiffDock) — Diffusion generative model for molecular docking, predicting the binding pose of small molecules to protein targets.
 - [JTVAE](https://github.com/wengong-jin/icml18-jtnn) — Junction tree variational autoencoder for molecular graph generation that guarantees chemical validity via a hierarchical tree decomposition.
