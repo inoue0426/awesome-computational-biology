@@ -154,6 +154,20 @@
     "api": false
   },
   {
+    "id": "bento",
+    "name": "Bento",
+    "type": "benchmark",
+    "url": "https://github.com/LigandPro/Bento",
+    "description": "Protein-ligand docking benchmark covering rigid, flexible, de novo, blind, induced-fit, and covalent docking tasks.",
+    "tags": [
+      "benchmarks-and-datasets"
+    ],
+    "tasks": [],
+    "modalities": [],
+    "organism": [],
+    "api": false
+  },
+  {
     "id": "bindingdb_curated_sets",
     "name": "BindingDB Curated Sets",
     "type": "benchmark",
