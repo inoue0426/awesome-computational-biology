@@ -1610,6 +1610,17 @@ resources:
     organism: []
     api: false
 
+  - id: cassia
+    name: "CASSIA"
+    type: model
+    url: https://github.com/ElliotXie/CASSIA
+    description: "Multi-agent LLM for reference-free, interpretable cell-type annotation of single-cell RNA-seq data, with dedicated annotation, validation, scoring, and reporting agents."
+    tags: [llm-for-biology]
+    tasks: [Language Modeling]
+    modalities: [Text]
+    organism: []
+    api: false
+
   - id: cellplm
     name: "CellPLM"
     type: model
