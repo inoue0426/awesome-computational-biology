@@ -4385,6 +4385,22 @@
     "api": false
   },
   {
+    "id": "autozyme",
+    "name": "AutoZyme",
+    "type": "toolkit",
+    "url": "https://github.com/ElliotXie/autozyme",
+    "description": "Autonomous agentic framework that speeds up bioinformatics software (e.g. Scanpy, Seurat) on CPUs while preserving the original results.",
+    "tags": [
+      "preprocessing-tools"
+    ],
+    "tasks": [
+      "Preprocessing"
+    ],
+    "modalities": [],
+    "organism": [],
+    "api": false
+  },
+  {
     "id": "biopython",
     "name": "Biopython",
     "type": "toolkit",
