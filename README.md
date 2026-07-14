@@ -399,6 +399,10 @@ Browse and search the resources via the [GitHub Pages UI](https://inoue0426.gith
 - [Phikon](https://huggingface.co/owkin/phikon) — ViT-based pathology foundation model pretrained with iBOT self-supervision on TCGA whole-slide images.
 - [Nicheformer](https://github.com/theislab/nicheformer) — Foundation model for single-cell and spatial omics using a transformer architecture with positional embeddings to encode spatial cell information.
 - [scGPT-spatial](https://github.com/bowang-lab/scGPT-spatial) — Extension of scGPT for spatial transcriptomics with continual pretraining and a mixture-of-experts decoder for spatial gene expression analysis.
+- [DeepSpot](https://github.com/ratschlab/DeepSpot) — Deep learning model predicting spatial transcriptomics from H&E images at spot and single-cell resolution.
+- [DeepSpot2Cell](https://github.com/ratschlab/DeepSpot2Cell) — Predicts virtual single-cell spatial transcriptomics from H&E using spot-level supervision (NeurIPS 2025 Imageomics).
+- [DeepSpot-M](https://github.com/ratschlab/DeepSpotM) — Multimodal foundation model for transcriptome-wide virtual spatial transcriptomics from histology.
+- [AESTETIK](https://github.com/ratschlab/aestetik) — Autoencoder for spatial transcriptomics representation learning using topology and histology image knowledge.
 
 ##### Multi-Omics Foundation Models
 
