@@ -1478,6 +1478,17 @@ resources:
     organism: []
     api: false
 
+  - id: aestetik
+    name: "AESTETIK"
+    type: model
+    url: https://github.com/ratschlab/aestetik
+    description: "Autoencoder for spatial transcriptomics representation learning using topology and histology image knowledge."
+    tags: [foundation-models, single-cell-foundation-models, spatial-foundation-models]
+    tasks: [Foundation Model]
+    modalities: [Single Cell, Spatial Transcriptomics]
+    organism: []
+    api: false
+
   - id: ai4chem_chemllm_7b_chat
     name: "AI4Chem/ChemLLM-7B-Chat"
     type: model
@@ -1794,6 +1805,39 @@ resources:
     tags: [foundation-models, genomics-foundation-models]
     tasks: [Foundation Model]
     modalities: [Genomics]
+    organism: []
+    api: false
+
+  - id: deepspot
+    name: "DeepSpot"
+    type: model
+    url: https://github.com/ratschlab/DeepSpot
+    description: "Deep learning model predicting spatial transcriptomics from H&E images at spot and single-cell resolution."
+    tags: [foundation-models, single-cell-foundation-models, spatial-foundation-models]
+    tasks: [Foundation Model]
+    modalities: [Single Cell, Spatial Transcriptomics]
+    organism: []
+    api: false
+
+  - id: deepspot_m
+    name: "DeepSpot-M"
+    type: model
+    url: https://github.com/ratschlab/DeepSpotM
+    description: "Multimodal foundation model for transcriptome-wide virtual spatial transcriptomics from histology."
+    tags: [foundation-models, single-cell-foundation-models, spatial-foundation-models]
+    tasks: [Foundation Model]
+    modalities: [Single Cell, Spatial Transcriptomics]
+    organism: []
+    api: false
+
+  - id: deepspot2cell
+    name: "DeepSpot2Cell"
+    type: model
+    url: https://github.com/ratschlab/DeepSpot2Cell
+    description: "Predicts virtual single-cell spatial transcriptomics from H&E using spot-level supervision (NeurIPS 2025 Imageomics)."
+    tags: [foundation-models, single-cell-foundation-models, spatial-foundation-models]
+    tasks: [Foundation Model]
+    modalities: [Single Cell, Spatial Transcriptomics]
     organism: []
     api: false
 
