@@ -144,7 +144,15 @@
     "Pacc",
     "multiomics",
     "Pathomic",
-    "PLIP"
+    "PLIP",
+    "Omni",
+    "Bento",
+    "FFPE",
+    "Xenium",
+    "Zyme",
+    "Neur",
+    "Imageomics",
+    "AESTETIK"
   ],
   "ignorePaths": [
     "node_modules/**"
