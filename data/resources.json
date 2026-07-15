@@ -284,7 +284,7 @@
     "name": "HEST Xenium virtual spatial transcriptomics",
     "type": "benchmark",
     "url": "https://huggingface.co/datasets/ratschlab/HEST_Xenium_virtual_spatial_transcriptomics",
-    "description": "DeepSpot-M predicted transcriptome-wide ST for 59 HEST-1k 10x Xenium H&E slides (gated).",
+    "description": "DeepSpot-M predicted transcriptome-wide ST for 59 HEST-1k 10x Xenium H&E slides (gated). Paper: [DeepSpot-M](https://www.medrxiv.org/content/10.64898/2026.06.19.26356060v1).",
     "tags": [
       "benchmarks-and-datasets"
     ],
@@ -536,7 +536,7 @@
     "name": "TCGA virtual spatial transcriptomics atlas",
     "type": "benchmark",
     "url": "https://huggingface.co/datasets/ratschlab/TCGA_virtual_spatial_transcriptomics_atlas",
-    "description": "DeepSpot-M predicted transcriptome-wide ST for TCGA H&E (FF + FFPE; ~28.7k slides / 32 cancer types; gated).",
+    "description": "DeepSpot-M predicted transcriptome-wide ST for TCGA H&E (FF + FFPE; 28,664 slides / 32 cancer types; gated). Paper: [DeepSpot-M](https://www.medrxiv.org/content/10.64898/2026.06.19.26356060v1).",
     "tags": [
       "benchmarks-and-datasets"
     ],
