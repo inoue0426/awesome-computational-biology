@@ -239,7 +239,7 @@ resources:
     name: "HEST Xenium virtual spatial transcriptomics"
     type: benchmark
     url: https://huggingface.co/datasets/ratschlab/HEST_Xenium_virtual_spatial_transcriptomics
-    description: "DeepSpot-M predicted transcriptome-wide ST for 59 HEST-1k 10x Xenium H&E slides (gated). Paper: [DeepSpot-M](https://www.medrxiv.org/content/10.64898/2026.06.19.26356060v1)."
+    description: "DeepSpot-M predicted transcriptome-wide ST for 59 HEST-1k 10x Xenium samples (~13.3M cells) (gated). Paper: [DeepSpot-M](https://www.medrxiv.org/content/10.64898/2026.06.19.26356060v1)."
     tags: [benchmarks-and-datasets]
     tasks: []
     modalities: []
