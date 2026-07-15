@@ -280,6 +280,20 @@
     "api": false
   },
   {
+    "id": "hest_xenium_virtual_spatial_transcriptomics",
+    "name": "HEST Xenium virtual spatial transcriptomics",
+    "type": "benchmark",
+    "url": "https://huggingface.co/datasets/ratschlab/HEST_Xenium_virtual_spatial_transcriptomics",
+    "description": "DeepSpot-M predicted transcriptome-wide ST for 59 HEST-1k 10x Xenium samples (~13.3M cells) (gated). Paper: [DeepSpot-M](https://www.medrxiv.org/content/10.64898/2026.06.19.26356060v1).",
+    "tags": [
+      "benchmarks-and-datasets"
+    ],
+    "tasks": [],
+    "modalities": [],
+    "organism": [],
+    "api": false
+  },
+  {
     "id": "jump_cell_painting_datasets",
     "name": "JUMP Cell Painting Datasets",
     "type": "benchmark",
@@ -509,6 +523,20 @@
     "type": "benchmark",
     "url": "https://github.com/songlab-cal/tape",
     "description": "Benchmark suite of five biologically meaningful semi-supervised learning tasks for evaluating protein representations.",
+    "tags": [
+      "benchmarks-and-datasets"
+    ],
+    "tasks": [],
+    "modalities": [],
+    "organism": [],
+    "api": false
+  },
+  {
+    "id": "tcga_virtual_spatial_transcriptomics_atlas",
+    "name": "TCGA virtual spatial transcriptomics atlas",
+    "type": "benchmark",
+    "url": "https://huggingface.co/datasets/ratschlab/TCGA_virtual_spatial_transcriptomics_atlas",
+    "description": "DeepSpot-M predicted transcriptome-wide ST for TCGA H&E (FF + FFPE; 28,664 slides / 32 cancer types; gated). Paper: [DeepSpot-M](https://www.medrxiv.org/content/10.64898/2026.06.19.26356060v1).",
     "tags": [
       "benchmarks-and-datasets"
     ],
