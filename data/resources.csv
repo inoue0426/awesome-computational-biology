@@ -284,6 +284,7 @@ scenic,SCENIC,toolkit,https://github.com/aertslab/SCENIC,Single-cell regulatory 
 scipenn,sciPENN,toolkit,https://github.com/jlakkis/sciPENN,"RNN-based method for simultaneous protein expression prediction, uncertainty estimation, and cell-type label transfer from CITE-seq and scRNA-seq data.",preprocessing-tools,Preprocessing,,,,False,,
 scvelo,scVelo,toolkit,https://github.com/theislab/scvelo,"RNA velocity estimation for single-cell transcriptomics, inferring the direction and speed of cell differentiation.",preprocessing-tools,Preprocessing,,,,False,,
 scvi_tools,scvi-tools,toolkit,https://scvi-tools.org/,Probabilistic models for single-cell omics data analysis.,preprocessing-tools,Preprocessing,,,,False,,
+seqbench,SeqBench,toolkit,https://seqbench.com/,"Web-based molecular biology sequence workbench for primer design, cloning simulation (Gibson, Golden Gate, restriction digest), CRISPR guide RNA design, and sequence analysis, with a public REST API, OpenAPI 3.1 spec, and MCP server.",preprocessing-tools,Preprocessing,,,,False,,
 seurat,Seurat,toolkit,https://satijalab.org/seurat/,R library for scRNA-seq analysis.,preprocessing-tools,Preprocessing,,,,False,,
 squidpy,Squidpy,toolkit,https://squidpy.readthedocs.io/,Python library for spatial single-cell analysis.,preprocessing-tools,Preprocessing,,,,False,,
 stagate,STAGATE,toolkit,https://github.com/RucDongLab/STAGATE,Adaptive graph attention auto-encoder for spatial domain identification in spatial transcriptomics.,preprocessing-tools,Preprocessing,,,,False,,
