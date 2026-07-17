@@ -5013,6 +5013,22 @@
     "api": false
   },
   {
+    "id": "seqbench",
+    "name": "SeqBench",
+    "type": "toolkit",
+    "url": "https://seqbench.com/",
+    "description": "Web-based molecular biology sequence workbench for primer design, cloning simulation (Gibson, Golden Gate, restriction digest), CRISPR guide RNA design, and sequence analysis, with a public REST API, OpenAPI 3.1 spec, and MCP server.",
+    "tags": [
+      "preprocessing-tools"
+    ],
+    "tasks": [
+      "Preprocessing"
+    ],
+    "modalities": [],
+    "organism": [],
+    "api": false
+  },
+  {
     "id": "seurat",
     "name": "Seurat",
     "type": "toolkit",
