@@ -3653,6 +3653,20 @@
     "api": false
   },
   {
+    "id": "nbbayeslm",
+    "name": "NbBayesLM",
+    "type": "model",
+    "url": "https://www.frontiersin.org/journals/bioinformatics/articles/10.3389/fbinf.2026.1832968/full",
+    "description": "Bayesian neural network integrating protein language model embeddings and physicochemical features to predict nanobody thermostability with uncertainty estimates.",
+    "tags": [
+      "nanobody-thermostability-using-bayesian-prediction"
+    ],
+    "tasks": [],
+    "modalities": [],
+    "organism": [],
+    "api": false
+  },
+  {
     "id": "neodti",
     "name": "NeoDTI",
     "type": "model",
