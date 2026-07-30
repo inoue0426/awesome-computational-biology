@@ -202,6 +202,17 @@ resources:
     organism: []
     api: false
 
+  - id: dna_chip_coverage
+    name: "DNA Chip Coverage"
+    type: benchmark
+    url: https://github.com/AndreySoloviev/dna-chip-coverage
+    description: "Marker-level coverage of consumer DNA genotyping arrays: 70 clinically discussed SNPs against 5 published Illumina arrays and 9 consumer products (980 rows), derived from public array manifests and dbSNP coordinates with a reproducible build script (CC BY 4.0)."
+    tags: [benchmarks-and-datasets]
+    tasks: []
+    modalities: []
+    organism: []
+    api: false
+
   - id: dud_e_directory_of_useful_decoys_enhanced
     name: "DUD-E (Directory of Useful Decoys, Enhanced)"
     type: benchmark
