@@ -152,7 +152,8 @@
     "Zyme",
     "Neur",
     "Imageomics",
-    "AESTETIK"
+    "AESTETIK",
+    "genotyping"
   ],
   "ignorePaths": [
     "node_modules/**"
