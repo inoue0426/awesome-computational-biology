@@ -1,0 +1,49 @@
+# Provenance-backed protein and drug-discovery enrichment batch.
+resources:
+  esmfold:
+    entities: [protein]
+    methods: [language-model, transformer]
+    modalities: [molecular-structure, protein-sequence]
+    tasks: [representation-learning, structure-prediction]
+    year: 2023
+    github: https://github.com/facebookresearch/esm
+    last_checked: 2026-08-08
+    metadata_sources:
+      - https://github.com/facebookresearch/esm
+
+  proteinmpnn:
+    entities: [protein]
+    methods: [graph-neural-network, message-passing-neural-network]
+    modalities: [molecular-structure, protein-sequence]
+    tasks: [protein-sequence-design]
+    year: 2022
+    github: https://github.com/dauparas/ProteinMPNN
+    last_checked: 2026-08-08
+    metadata_sources:
+      - https://github.com/dauparas/ProteinMPNN
+
+  diffdock:
+    entities: [molecule, protein]
+    methods: [diffusion, geometric-deep-learning]
+    modalities: [molecular-structure]
+    tasks: [docking]
+    year: 2023
+    github: https://github.com/gcorso/DiffDock
+    paper: https://openreview.net/forum?id=kKF8_K-mBbS
+    last_checked: 2026-08-08
+    metadata_sources:
+      - https://github.com/gcorso/DiffDock
+      - https://openreview.net/forum?id=kKF8_K-mBbS
+
+  uni_mol:
+    entities: [molecule, protein]
+    methods: [self-supervised-learning, transformer]
+    modalities: [chemical-structure, molecular-structure]
+    tasks: [docking, representation-learning]
+    year: 2023
+    github: https://github.com/deepmodeling/Uni-Mol
+    paper: https://openreview.net/forum?id=6K2RM6wVqKu
+    last_checked: 2026-08-08
+    metadata_sources:
+      - https://github.com/deepmodeling/Uni-Mol
+      - https://openreview.net/forum?id=6K2RM6wVqKu
