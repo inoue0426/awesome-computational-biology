@@ -1,0 +1,51 @@
+# Provenance-backed protein model enrichment batch.
+resources:
+  esm3:
+    entities: [protein]
+    methods: [generative-model, language-model, transformer]
+    modalities: [molecular-structure, protein-sequence]
+    tasks: [protein-sequence-design, representation-learning]
+    github: https://github.com/evolutionaryscale/esm
+    last_checked: 2026-08-08
+    metadata_sources:
+      - https://github.com/evolutionaryscale/esm
+
+  evolutionary_scale_modeling_esm:
+    entities: [protein]
+    methods: [language-model, self-supervised-learning, transformer]
+    modalities: [protein-sequence]
+    tasks: [representation-learning]
+    github: https://github.com/facebookresearch/esm
+    last_checked: 2026-08-08
+    metadata_sources:
+      - https://github.com/facebookresearch/esm
+
+  prottrans:
+    entities: [protein]
+    methods: [language-model, self-supervised-learning, transformer]
+    modalities: [protein-sequence]
+    tasks: [representation-learning]
+    github: https://github.com/agemagician/ProtTrans
+    last_checked: 2026-08-08
+    metadata_sources:
+      - https://github.com/agemagician/ProtTrans
+
+  progen2:
+    entities: [protein]
+    methods: [generative-model, language-model, transformer]
+    modalities: [protein-sequence]
+    tasks: [protein-sequence-design, representation-learning]
+    github: https://github.com/salesforce/progen
+    last_checked: 2026-08-08
+    metadata_sources:
+      - https://github.com/salesforce/progen
+
+  alphafold3:
+    entities: [molecule, protein, protein-complex]
+    methods: [diffusion]
+    modalities: [molecular-structure, protein-sequence]
+    tasks: [structure-prediction]
+    github: https://github.com/google-deepmind/alphafold3
+    last_checked: 2026-08-08
+    metadata_sources:
+      - https://github.com/google-deepmind/alphafold3
