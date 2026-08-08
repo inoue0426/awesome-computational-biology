@@ -1,0 +1,83 @@
+# Provenance-backed cancer and pharmacogenomics database enrichment batch.
+resources:
+  cancer_cell_line_encyclopedia:
+    entities: [cell, gene, disease, drug]
+    modalities: [genomics, transcriptomics]
+    documentation: https://sites.broadinstitute.org/ccle/
+    last_checked: 2026-08-08
+    metadata_sources:
+      - https://sites.broadinstitute.org/ccle/
+
+  catalogue_of_somatic_mutations_in_cancer_cosmic:
+    entities: [disease, gene, variant]
+    modalities: [genomics]
+    documentation: https://cancer.sanger.ac.uk/cosmic
+    last_checked: 2026-08-08
+    metadata_sources:
+      - https://cancer.sanger.ac.uk/cosmic
+
+  cbioportal:
+    entities: [disease, gene, variant]
+    modalities: [genomics, clinical]
+    github: https://github.com/cBioPortal/cbioportal
+    documentation: https://www.cbioportal.org/
+    last_checked: 2026-08-08
+    metadata_sources:
+      - https://www.cbioportal.org/
+      - https://github.com/cBioPortal/cbioportal
+
+  dependency_map_depmap:
+    entities: [cell, gene, disease, drug]
+    modalities: [genomics]
+    documentation: https://depmap.org/portal/
+    last_checked: 2026-08-08
+    metadata_sources:
+      - https://depmap.org/portal/
+
+  dgidb:
+    entities: [drug, gene]
+    modalities: [knowledge-graph]
+    documentation: https://www.dgidb.org/
+    last_checked: 2026-08-08
+    metadata_sources:
+      - https://www.dgidb.org/
+
+  drug_mechanism_database_drugmechdb:
+    entities: [drug, disease, gene, pathway]
+    modalities: [knowledge-graph]
+    github: https://github.com/SuLab/DrugMechDB
+    last_checked: 2026-08-08
+    metadata_sources:
+      - https://github.com/SuLab/DrugMechDB
+
+  drug_repurposing_hub:
+    entities: [drug, protein, disease]
+    modalities: [chemical-structure]
+    documentation: https://repo-hub.broadinstitute.org/repurposing
+    last_checked: 2026-08-08
+    metadata_sources:
+      - https://repo-hub.broadinstitute.org/repurposing
+
+  drugcentral:
+    entities: [drug, protein, disease]
+    modalities: [chemical-structure]
+    documentation: https://drugcentral.org/
+    last_checked: 2026-08-08
+    metadata_sources:
+      - https://drugcentral.org/
+
+  drugtargetcommons:
+    entities: [drug, protein]
+    modalities: [chemical-structure]
+    documentation: https://drugtargetcommons.fimm.fi/
+    last_checked: 2026-08-08
+    metadata_sources:
+      - https://drugtargetcommons.fimm.fi/
+
+  comparative_toxicogenomics_database:
+    entities: [compound, gene, disease]
+    modalities: [knowledge-graph]
+    documentation: https://ctdbase.org/
+    last_checked: 2026-08-08
+    metadata_sources:
+      - https://ctdbase.org/
