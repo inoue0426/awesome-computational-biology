@@ -1,0 +1,60 @@
+# Provenance-backed foundation model enrichment batch 2.
+resources:
+  nicheformer:
+    entities: [cell, gene, tissue]
+    methods: [self-supervised-learning, transformer]
+    modalities: [single-cell-rna-seq, spatial-transcriptomics, transcriptomics]
+    tasks: [foundation-model-pretraining, representation-learning]
+    year: 2024
+    github: https://github.com/theislab/nicheformer
+    paper: https://doi.org/10.1101/2024.04.15.589472
+    last_checked: 2026-08-08
+    metadata_sources:
+      - https://github.com/theislab/nicheformer
+      - https://doi.org/10.1101/2024.04.15.589472
+
+  genept:
+    entities: [cell, gene]
+    methods: [language-model]
+    modalities: [single-cell-rna-seq, transcriptomics]
+    tasks: [batch-correction, classification, representation-learning]
+    year: 2023
+    github: https://github.com/yiqunchen/GenePT
+    paper: https://www.biorxiv.org/content/10.1101/2023.10.16.562533v2
+    last_checked: 2026-08-08
+    metadata_sources:
+      - https://github.com/yiqunchen/GenePT
+      - https://www.biorxiv.org/content/10.1101/2023.10.16.562533v2
+
+  scgpt_spatial:
+    entities: [cell, gene, tissue]
+    methods: [generative-model, self-supervised-learning, transformer]
+    modalities: [multi-omics, single-cell-rna-seq, spatial-transcriptomics]
+    tasks: [foundation-model-pretraining, imputation, representation-learning]
+    year: 2025
+    github: https://github.com/bowang-lab/scGPT-spatial
+    paper: https://www.biorxiv.org/content/10.1101/2025.02.05.636714v1
+    last_checked: 2026-08-08
+    metadata_sources:
+      - https://github.com/bowang-lab/scGPT-spatial
+      - https://www.biorxiv.org/content/10.1101/2025.02.05.636714v1
+
+  scprint:
+    entities: [cell, gene]
+    methods: [self-supervised-learning, transformer]
+    modalities: [single-cell-rna-seq, transcriptomics]
+    tasks:
+      - batch-correction
+      - cell-type-annotation
+      - foundation-model-pretraining
+      - gene-regulatory-network-inference
+      - imputation
+      - representation-learning
+    year: 2025
+    github: https://github.com/cantinilab/scPRINT
+    documentation: https://www.jkobject.com/scPRINT/
+    paper: https://www.nature.com/articles/s41467-025-58699-1
+    last_checked: 2026-08-08
+    metadata_sources:
+      - https://github.com/cantinilab/scPRINT
+      - https://www.nature.com/articles/s41467-025-58699-1
