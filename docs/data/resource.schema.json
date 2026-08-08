@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://inoue0426.github.io/awesome-computational-biology/data/resource.schema.json",
+  "title": "AI4Bio Resource",
+  "type": "object",
+  "required": ["id", "name", "type", "url", "description"],
+  "additionalProperties": false,
+  "properties": {
+    "id": {"type": "string", "pattern": "^[a-z0-9]+(?:_[a-z0-9]+)*$"},
+    "name": {"type": "string", "minLength": 1},
+    "type": {"enum": ["api", "benchmark", "database", "model", "resource", "toolkit"]},
+    "url": {"type": "string", "format": "uri", "pattern": "^https?://"},
+    "description": {"type": "string", "minLength": 1},
+    "tags": {"$ref": "#/$defs/stringArray"},
+    "tasks": {"$ref": "#/$defs/stringArray"},
+    "modalities": {"$ref": "#/$defs/stringArray"},
+    "organism": {"$ref": "#/$defs/stringArray"},
+    "entities": {"$ref": "#/$defs/stringArray"},
+    "methods": {"$ref": "#/$defs/stringArray"},
+    "organizations": {"$ref": "#/$defs/stringArray"},
+    "metadata_sources": {"type": "array", "items": {"type": "string", "format": "uri", "pattern": "^https?://"}, "uniqueItems": true},
+    "license": {"type": "string"},
+    "api": {"type": "boolean"},
+    "paper": {"type": "string", "format": "uri", "pattern": "^https?://"},
+    "github": {"type": "string", "format": "uri", "pattern": "^https://github\\.com/"},
+    "documentation": {"type": "string", "format": "uri", "pattern": "^https?://"},
+    "year": {"type": "integer", "minimum": 1900, "maximum": 2100},
+    "maintenance_status": {"enum": ["active", "maintenance", "archived", "unknown"]},
+    "access": {"enum": ["open", "registration", "restricted", "commercial", "unknown"]},
+    "updated": {"type": "string", "format": "date"},
+    "last_checked": {"type": "string", "format": "date"}
+  },
+  "$defs": {
+    "stringArray": {
+      "type": "array",
+      "items": {"type": "string", "minLength": 1},
+      "uniqueItems": true
+    }
+  }
+}

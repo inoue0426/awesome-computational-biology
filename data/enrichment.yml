@@ -1,0 +1,20 @@
+# AI4Bio landscape enrichment overlay
+#
+# README.md remains the canonical source for resource membership and basic fields.
+# Add richer, independently curated metadata here, keyed by the stable resource id.
+# scripts/build_resources.py merges these fields into generated JSON/CSV artifacts.
+#
+# Example:
+# resources:
+#   open_targets_platform:
+#     entities: [gene, disease, drug]
+#     methods: [data-integration]
+#     organizations: [Open Targets]
+#     year: 2015
+#     documentation: https://platform-docs.opentargets.org/
+#     maintenance_status: active
+#     last_checked: 2026-08-08
+#     metadata_sources:
+#       - https://platform-docs.opentargets.org/
+
+resources: {}
