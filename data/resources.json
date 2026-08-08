@@ -2436,14 +2436,31 @@
       "transcriptomics-foundation-models"
     ],
     "tasks": [
-      "Foundation Model"
+      "foundation-model-pretraining",
+      "representation-learning"
     ],
     "modalities": [
-      "Single Cell",
-      "Transcriptomics"
+      "single-cell-rna-seq",
+      "transcriptomics"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "cell",
+      "gene"
+    ],
+    "methods": [
+      "self-supervised-learning",
+      "transformer"
+    ],
+    "year": 2023,
+    "github": "https://github.com/OmicsML/CellPLM",
+    "paper": "https://www.biorxiv.org/content/10.1101/2023.10.03.560734v1",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://github.com/OmicsML/CellPLM",
+      "https://www.biorxiv.org/content/10.1101/2023.10.03.560734v1"
+    ]
   },
   {
     "id": "chai_1",
@@ -3140,14 +3157,31 @@
       "single-cell-foundation-models"
     ],
     "tasks": [
-      "Foundation Model"
+      "foundation-model-pretraining",
+      "representation-learning"
     ],
     "modalities": [
-      "Multi-Omics",
-      "Single Cell"
+      "single-cell-rna-seq",
+      "transcriptomics"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "cell",
+      "gene"
+    ],
+    "methods": [
+      "self-supervised-learning",
+      "transformer"
+    ],
+    "year": 2024,
+    "github": "https://github.com/xCompass-AI/GeneCompass",
+    "paper": "https://www.nature.com/articles/s41422-024-01034-y",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://github.com/xCompass-AI/GeneCompass",
+      "https://www.nature.com/articles/s41422-024-01034-y"
+    ]
   },
   {
     "id": "geneformer",
@@ -3161,14 +3195,33 @@
       "transcriptomics-foundation-models"
     ],
     "tasks": [
-      "Foundation Model"
+      "classification",
+      "foundation-model-pretraining",
+      "perturbation-prediction",
+      "representation-learning"
     ],
     "modalities": [
-      "Single Cell",
-      "Transcriptomics"
+      "single-cell-rna-seq",
+      "transcriptomics"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "cell",
+      "gene"
+    ],
+    "methods": [
+      "self-supervised-learning",
+      "transformer"
+    ],
+    "year": 2023,
+    "documentation": "https://geneformer.readthedocs.io/",
+    "paper": "https://www.nature.com/articles/s41586-023-06139-9",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://huggingface.co/ctheodoris/Geneformer",
+      "https://www.nature.com/articles/s41586-023-06139-9"
+    ]
   },
   {
     "id": "genegpt",
@@ -4151,14 +4204,33 @@
       "transcriptomics-foundation-models"
     ],
     "tasks": [
-      "Foundation Model"
+      "cell-type-annotation",
+      "classification",
+      "foundation-model-pretraining"
     ],
     "modalities": [
-      "Single Cell",
-      "Transcriptomics"
+      "single-cell-rna-seq",
+      "transcriptomics"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "cell",
+      "gene"
+    ],
+    "methods": [
+      "language-model",
+      "self-supervised-learning",
+      "transformer"
+    ],
+    "year": 2022,
+    "github": "https://github.com/TencentAILabHealthcare/scBERT",
+    "paper": "https://www.nature.com/articles/s42256-022-00534-z",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://github.com/TencentAILabHealthcare/scBERT",
+      "https://www.nature.com/articles/s42256-022-00534-z"
+    ]
   },
   {
     "id": "scbutterfly",
@@ -4193,14 +4265,34 @@
       "transcriptomics-foundation-models"
     ],
     "tasks": [
-      "Foundation Model"
+      "cell-type-annotation",
+      "drug-response-prediction",
+      "foundation-model-pretraining",
+      "perturbation-prediction",
+      "representation-learning"
     ],
     "modalities": [
-      "Single Cell",
-      "Transcriptomics"
+      "single-cell-rna-seq",
+      "transcriptomics"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "cell",
+      "gene"
+    ],
+    "methods": [
+      "self-supervised-learning",
+      "transformer"
+    ],
+    "year": 2024,
+    "github": "https://github.com/biomap-research/scFoundation",
+    "paper": "https://www.nature.com/articles/s41592-024-02305-7",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://github.com/biomap-research/scFoundation",
+      "https://www.nature.com/articles/s41592-024-02305-7"
+    ]
   },
   {
     "id": "scgpt",
@@ -4214,14 +4306,37 @@
       "transcriptomics-foundation-models"
     ],
     "tasks": [
-      "Foundation Model"
+      "cell-type-annotation",
+      "foundation-model-pretraining",
+      "gene-regulatory-network-inference",
+      "perturbation-prediction",
+      "representation-learning"
     ],
     "modalities": [
-      "Single Cell",
-      "Transcriptomics"
+      "multi-omics",
+      "single-cell-rna-seq",
+      "transcriptomics"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "cell",
+      "gene"
+    ],
+    "methods": [
+      "generative-model",
+      "self-supervised-learning",
+      "transformer"
+    ],
+    "year": 2024,
+    "github": "https://github.com/bowang-lab/scGPT",
+    "documentation": "https://scgpt.readthedocs.io/en/latest/",
+    "paper": "https://www.nature.com/articles/s41592-024-02201-0",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://github.com/bowang-lab/scGPT",
+      "https://www.nature.com/articles/s41592-024-02201-0"
+    ]
   },
   {
     "id": "scgpt_spatial",
@@ -4498,14 +4613,29 @@
       "transcriptomics-foundation-models"
     ],
     "tasks": [
-      "Foundation Model"
+      "foundation-model-pretraining",
+      "representation-learning"
     ],
     "modalities": [
-      "Single Cell",
-      "Transcriptomics"
+      "single-cell-rna-seq",
+      "transcriptomics"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "cell"
+    ],
+    "methods": [
+      "self-supervised-learning"
+    ],
+    "year": 2026,
+    "github": "https://github.com/snap-stanford/UCE",
+    "paper": "https://www.nature.com/articles/s41586-026-10689-z",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://github.com/snap-stanford/UCE",
+      "https://www.nature.com/articles/s41586-026-10689-z"
+    ]
   },
   {
     "id": "uni",
