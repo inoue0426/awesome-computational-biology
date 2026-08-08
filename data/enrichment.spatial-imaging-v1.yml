@@ -1,0 +1,97 @@
+# Provenance-backed spatial transcriptomics and imaging enrichment batch.
+resources:
+  aestetik:
+    entities: [cell, gene, tissue]
+    methods: [autoencoder]
+    modalities: [histopathology, spatial-transcriptomics]
+    tasks: [representation-learning]
+    github: https://github.com/ratschlab/aestetik
+    last_checked: 2026-08-08
+    metadata_sources:
+      - https://github.com/ratschlab/aestetik
+
+  conch:
+    entities: [tissue]
+    methods: [contrastive-learning, transformer]
+    modalities: [histopathology, imaging]
+    tasks: [foundation-model-pretraining, representation-learning]
+    github: https://github.com/mahmoodlab/CONCH
+    last_checked: 2026-08-08
+    metadata_sources:
+      - https://github.com/mahmoodlab/CONCH
+
+  deepspot:
+    entities: [gene, tissue]
+    modalities: [histopathology, spatial-transcriptomics]
+    tasks: [regression]
+    github: https://github.com/ratschlab/DeepSpot
+    last_checked: 2026-08-08
+    metadata_sources:
+      - https://github.com/ratschlab/DeepSpot
+
+  deepspot_m:
+    entities: [gene, tissue]
+    modalities: [histopathology, spatial-transcriptomics, transcriptomics]
+    tasks: [foundation-model-pretraining, regression]
+    github: https://github.com/ratschlab/DeepSpotM
+    last_checked: 2026-08-08
+    metadata_sources:
+      - https://github.com/ratschlab/DeepSpotM
+
+  deepspot2cell:
+    entities: [cell, gene, tissue]
+    modalities: [histopathology, spatial-transcriptomics]
+    tasks: [regression]
+    github: https://github.com/ratschlab/DeepSpot2Cell
+    last_checked: 2026-08-08
+    metadata_sources:
+      - https://github.com/ratschlab/DeepSpot2Cell
+
+  gigapath:
+    entities: [tissue]
+    methods: [self-supervised-learning, transformer]
+    modalities: [histopathology, imaging]
+    tasks: [foundation-model-pretraining, representation-learning]
+    github: https://github.com/prov-gigapath/prov-gigapath
+    last_checked: 2026-08-08
+    metadata_sources:
+      - https://github.com/prov-gigapath/prov-gigapath
+
+  phikon:
+    entities: [tissue]
+    methods: [self-supervised-learning, transformer]
+    modalities: [histopathology, imaging]
+    tasks: [foundation-model-pretraining, representation-learning]
+    documentation: https://huggingface.co/owkin/phikon
+    last_checked: 2026-08-08
+    metadata_sources:
+      - https://huggingface.co/owkin/phikon
+
+  plip:
+    entities: [tissue]
+    methods: [contrastive-learning]
+    modalities: [histopathology, imaging]
+    tasks: [classification, representation-learning]
+    github: https://github.com/PathologyFoundation/plip
+    last_checked: 2026-08-08
+    metadata_sources:
+      - https://github.com/PathologyFoundation/plip
+
+  uni:
+    entities: [tissue]
+    methods: [self-supervised-learning, transformer]
+    modalities: [histopathology, imaging]
+    tasks: [foundation-model-pretraining, representation-learning]
+    github: https://github.com/mahmoodlab/UNI
+    last_checked: 2026-08-08
+    metadata_sources:
+      - https://github.com/mahmoodlab/UNI
+
+  hest_xenium_virtual_spatial_transcriptomics:
+    entities: [cell, gene, tissue]
+    modalities: [histopathology, spatial-transcriptomics, transcriptomics]
+    tasks: [regression]
+    documentation: https://huggingface.co/datasets/ratschlab/HEST_Xenium_virtual_spatial_transcriptomics
+    last_checked: 2026-08-08
+    metadata_sources:
+      - https://huggingface.co/datasets/ratschlab/HEST_Xenium_virtual_spatial_transcriptomics
