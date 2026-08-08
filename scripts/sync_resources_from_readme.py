@@ -52,6 +52,7 @@ BULLET_RE = re.compile(r"^- \[(.+?)\]\((.+?)\)\s+\u2014\s+(.*)")
 
 TAG_TO_TASKS: dict[str, list[str]] = {
     "drug-response-prediction": ["Drug Response Prediction"],
+    "drug-perturbation": ["Drug Perturbation"],
     "drug-repurposing": ["Drug Repurposing"],
     "drug-target-interaction": ["Drug Target Interaction"],
     "compound-protein-interaction": ["Compound-Protein Interaction"],
@@ -90,6 +91,7 @@ TAG_TO_MODALITIES: dict[str, list[str]] = {
     "gene-regulatory-network": ["Gene Expression"],
     "clinical-trial": ["Clinical"],
     "drug-response-prediction": ["Small Molecule"],
+    "drug-perturbation": ["Small Molecule"],
     "drug-repurposing": ["Small Molecule"],
     "drug-target-interaction": ["Small Molecule", "Protein"],
     "compound-protein-interaction": ["Small Molecule", "Protein"],

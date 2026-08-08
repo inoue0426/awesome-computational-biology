@@ -2405,6 +2405,26 @@
     "api": false
   },
   {
+    "id": "cellot",
+    "name": "CellOT",
+    "type": "model",
+    "url": "https://github.com/bunnech/cellot",
+    "description": "Neural optimal transport framework for predicting single-cell responses to drug and genetic perturbations.",
+    "tags": [
+      "drug-discovery",
+      "drug-perturbation"
+    ],
+    "tasks": [
+      "Drug Discovery",
+      "Drug Perturbation"
+    ],
+    "modalities": [
+      "Small Molecule"
+    ],
+    "organism": [],
+    "api": false
+  },
+  {
     "id": "cellplm",
     "name": "CellPLM",
     "type": "model",
@@ -2492,11 +2512,11 @@
     "description": "Compositional perturbation autoencoder for predicting single-cell transcriptional responses to unseen drug perturbations and dose combinations.",
     "tags": [
       "drug-discovery",
-      "drug-response-prediction"
+      "drug-perturbation"
     ],
     "tasks": [
       "Drug Discovery",
-      "Drug Response Prediction"
+      "Drug Perturbation"
     ],
     "modalities": [
       "Small Molecule"
@@ -2537,6 +2557,26 @@
     ],
     "modalities": [
       "Text"
+    ],
+    "organism": [],
+    "api": false
+  },
+  {
+    "id": "cmonge",
+    "name": "CMonge",
+    "type": "model",
+    "url": "https://github.com/AI4SCR/conditional-monge-gap",
+    "description": "Conditional optimal transport model for generalizable single-cell perturbation response prediction across drugs and doses.",
+    "tags": [
+      "drug-discovery",
+      "drug-perturbation"
+    ],
+    "tasks": [
+      "Drug Discovery",
+      "Drug Perturbation"
+    ],
+    "modalities": [
+      "Small Molecule"
     ],
     "organism": [],
     "api": false
@@ -2591,11 +2631,11 @@
     "description": "Interpretable cycle-consistency framework for modeling cellular responses to drug perturbations.",
     "tags": [
       "drug-discovery",
-      "drug-response-prediction"
+      "drug-perturbation"
     ],
     "tasks": [
       "Drug Discovery",
-      "Drug Response Prediction"
+      "Drug Perturbation"
     ],
     "modalities": [
       "Small Molecule"
@@ -3861,11 +3901,11 @@
     "description": "Deep generative model for predicting transcriptional responses to novel chemical perturbations for drug discovery.",
     "tags": [
       "drug-discovery",
-      "drug-response-prediction"
+      "drug-perturbation"
     ],
     "tasks": [
       "Drug Discovery",
-      "Drug Response Prediction"
+      "Drug Perturbation"
     ],
     "modalities": [
       "Small Molecule"
