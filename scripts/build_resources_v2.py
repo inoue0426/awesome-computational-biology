@@ -25,15 +25,16 @@ JSON_OUTPUT = DATA_DIR / "resources.json"
 CSV_OUTPUT = DATA_DIR / "resources.csv"
 DOCS_JSON_OUTPUT = DOCS_DATA_DIR / "resources.json"
 
-LIST_FIELDS = (
-    "tags", "tasks", "modalities", "organism", "entities", "methods",
-    "organizations", "metadata_sources",
-)
-CSV_COLUMNS = [
+BASE_LIST_FIELDS = ("tags", "tasks", "modalities", "organism")
+ENRICHMENT_LIST_FIELDS = ("entities", "methods", "organizations", "metadata_sources")
+ALL_LIST_FIELDS = BASE_LIST_FIELDS + ENRICHMENT_LIST_FIELDS
+LEGACY_CSV_COLUMNS = [
     "id", "name", "type", "url", "description", "tags", "tasks", "modalities",
-    "organism", "entities", "methods", "organizations", "license", "api", "paper",
-    "github", "documentation", "year", "maintenance_status", "access", "updated",
-    "last_checked", "metadata_sources",
+    "organism", "license", "api", "paper", "updated",
+]
+ENRICHMENT_CSV_COLUMNS = [
+    "entities", "methods", "organizations", "github", "documentation", "year",
+    "maintenance_status", "access", "last_checked", "metadata_sources",
 ]
 IDENTITY_FIELDS = {"id", "name", "type", "url", "description"}
 
@@ -74,12 +75,25 @@ def merge_entries() -> list[dict[str, Any]]:
                 + ", ".join(sorted(forbidden))
             )
         entry.update(extra)
-        for field in LIST_FIELDS:
+
+        # Preserve the legacy artifact shape when no enrichment is present.
+        # Base list fields have always been normalized to arrays, but v2-only
+        # list fields are normalized only when explicitly supplied.
+        for field in BASE_LIST_FIELDS:
             value = entry.get(field)
             if value is None:
                 entry[field] = []
             elif not isinstance(value, list):
                 entry[field] = [value]
+        for field in ENRICHMENT_LIST_FIELDS:
+            if field not in entry:
+                continue
+            value = entry[field]
+            if value is None:
+                entry.pop(field)
+            elif not isinstance(value, list):
+                entry[field] = [value]
+
         entry["api"] = bool(entry.get("api", False))
         for field in ("updated", "last_checked"):
             if field in entry and entry[field] is not None:
@@ -88,19 +102,32 @@ def merge_entries() -> list[dict[str, Any]]:
     return entries
 
 
+def csv_columns(entries: list[dict[str, Any]]) -> list[str]:
+    """Return legacy columns unless at least one v2 enrichment field is present."""
+    has_enrichment = any(
+        any(field in entry for field in ENRICHMENT_CSV_COLUMNS)
+        for entry in entries
+    )
+    if not has_enrichment:
+        return LEGACY_CSV_COLUMNS
+    return LEGACY_CSV_COLUMNS + ENRICHMENT_CSV_COLUMNS
+
+
 def write_json(entries: Iterable[dict[str, Any]], path: Path) -> None:
     path.write_text(json.dumps(list(entries), indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     print(f"Wrote JSON -> {path}")
 
 
-def write_csv(entries: Iterable[dict[str, Any]], path: Path) -> None:
+def write_csv(entries: list[dict[str, Any]], path: Path) -> None:
+    columns = csv_columns(entries)
     with path.open("w", newline="", encoding="utf-8") as handle:
-        writer = csv.DictWriter(handle, fieldnames=CSV_COLUMNS, extrasaction="ignore")
+        writer = csv.DictWriter(handle, fieldnames=columns, extrasaction="ignore")
         writer.writeheader()
         for entry in entries:
             row = dict(entry)
-            for field in LIST_FIELDS:
-                row[field] = "|".join(str(value) for value in row.get(field, []))
+            for field in ALL_LIST_FIELDS:
+                if field in row:
+                    row[field] = "|".join(str(value) for value in row.get(field, []))
             writer.writerow(row)
     print(f"Wrote CSV -> {path}")
 
