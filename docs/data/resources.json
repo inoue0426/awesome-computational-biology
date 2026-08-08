@@ -2161,14 +2161,27 @@
       "protein-structure-prediction-and-design"
     ],
     "tasks": [
-      "Foundation Model",
-      "Protein Structure Prediction"
+      "structure-prediction"
     ],
     "modalities": [
-      "Protein"
+      "molecular-structure",
+      "protein-sequence"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "molecule",
+      "protein",
+      "protein-complex"
+    ],
+    "methods": [
+      "diffusion"
+    ],
+    "github": "https://github.com/google-deepmind/alphafold3",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://github.com/google-deepmind/alphafold3"
+    ]
   },
   {
     "id": "ankh",
@@ -3049,14 +3062,28 @@
       "protein-structure-prediction-and-design"
     ],
     "tasks": [
-      "Foundation Model",
-      "Protein Structure Prediction"
+      "protein-sequence-design",
+      "representation-learning"
     ],
     "modalities": [
-      "Protein"
+      "molecular-structure",
+      "protein-sequence"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "protein"
+    ],
+    "methods": [
+      "generative-model",
+      "language-model",
+      "transformer"
+    ],
+    "github": "https://github.com/evolutionaryscale/esm",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://github.com/evolutionaryscale/esm"
+    ]
   },
   {
     "id": "esmfold",
@@ -3145,13 +3172,26 @@
       "protein-foundation-models"
     ],
     "tasks": [
-      "Foundation Model"
+      "representation-learning"
     ],
     "modalities": [
-      "Protein"
+      "protein-sequence"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "protein"
+    ],
+    "methods": [
+      "language-model",
+      "self-supervised-learning",
+      "transformer"
+    ],
+    "github": "https://github.com/facebookresearch/esm",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://github.com/facebookresearch/esm"
+    ]
   },
   {
     "id": "gears",
@@ -4044,13 +4084,27 @@
       "protein-foundation-models"
     ],
     "tasks": [
-      "Foundation Model"
+      "protein-sequence-design",
+      "representation-learning"
     ],
     "modalities": [
-      "Protein"
+      "protein-sequence"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "protein"
+    ],
+    "methods": [
+      "generative-model",
+      "language-model",
+      "transformer"
+    ],
+    "github": "https://github.com/salesforce/progen",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://github.com/salesforce/progen"
+    ]
   },
   {
     "id": "proteinmpnn",
@@ -4098,13 +4152,26 @@
       "protein-foundation-models"
     ],
     "tasks": [
-      "Foundation Model"
+      "representation-learning"
     ],
     "modalities": [
-      "Protein"
+      "protein-sequence"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "protein"
+    ],
+    "methods": [
+      "language-model",
+      "self-supervised-learning",
+      "transformer"
+    ],
+    "github": "https://github.com/agemagician/ProtTrans",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://github.com/agemagician/ProtTrans"
+    ]
   },
   {
     "id": "recover",
