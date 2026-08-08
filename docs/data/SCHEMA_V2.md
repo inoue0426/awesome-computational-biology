@@ -9,7 +9,8 @@ The repository intentionally separates **membership/basic metadata** from **land
 1. `README.md` is the canonical curated resource list.
 2. `scripts/sync_resources_from_readme.py` derives `data/resources.yml` from README headings and bullets.
 3. `data/enrichment.yml` stores richer metadata keyed by stable resource `id`.
-4. `scripts/build_resources.py` merges base records and enrichment, validates them, and writes `data/resources.json`, `data/resources.csv`, and `docs/data/resources.json`.
+4. `data/vocabulary.yml` defines canonical terms for controlled enrichment dimensions.
+5. `scripts/build_resources.py` merges base records and enrichment, validates them, and writes `data/resources.json`, `data/resources.csv`, and `docs/data/resources.json`.
 
 This separation prevents hand-curated AI4Bio metadata from being erased by README synchronization.
 
@@ -38,6 +39,23 @@ These fields are required and may not be overridden by `data/enrichment.yml`:
 | `organizations` | string[] | Organizations maintaining or primarily responsible for the resource |
 
 These dimensions are deliberately orthogonal. Do not encode a task as a modality or a biological entity as a resource type.
+
+## Controlled vocabulary
+
+New values added through `data/enrichment.yml` for `entities`, `methods`, `modalities`, and `tasks` must use canonical terms from `data/vocabulary.yml`.
+
+Canonical terms use lowercase kebab-case, for example:
+
+```yaml
+entities: [cell, gene]
+methods: [transformer, self-supervised-learning]
+modalities: [single-cell-rna-seq, transcriptomics]
+tasks: [foundation-model-pretraining, cell-type-annotation]
+```
+
+This rule is intentionally applied only to enrichment metadata. Existing README-derived values remain valid for backward compatibility and can be migrated separately without blocking routine resource updates.
+
+When a required concept is missing, add a reusable canonical term to `data/vocabulary.yml` instead of inventing a one-off spelling in an enrichment record. `tags`, `organism`, and `organizations` remain free-form because their vocabularies are broader or context dependent.
 
 ## Provenance and lifecycle fields
 
@@ -90,9 +108,11 @@ Enrichment cannot override `id`, `name`, `type`, `url`, or `description`. A refe
 - ISO `YYYY-MM-DD` dates;
 - list uniqueness and non-empty values;
 - enrichment references and forbidden identity overrides;
+- controlled enrichment terms against `data/vocabulary.yml`;
+- vocabulary uniqueness and lowercase kebab-case normalization;
 - unknown field names.
 
-The machine-readable counterpart is `docs/data/resource.schema.json` (JSON Schema 2020-12).
+The machine-readable resource counterpart is `docs/data/resource.schema.json` (JSON Schema 2020-12). Controlled vocabulary enforcement is performed at the enrichment layer because legacy README-derived values intentionally remain backward compatible.
 
 ## Curation guidance
 
