@@ -1,0 +1,30 @@
+name: Landscape UI Check
+
+on:
+  pull_request:
+    paths:
+      - docs/landscape.html
+      - docs/landscape.css
+      - docs/landscape.js
+      - .github/workflows/landscape-ui-check.yml
+  push:
+    branches: [main]
+    paths:
+      - docs/landscape.html
+      - docs/landscape.css
+      - docs/landscape.js
+      - .github/workflows/landscape-ui-check.yml
+
+permissions:
+  contents: read
+
+jobs:
+  ui-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 'lts/*'
+      - name: Check landscape JavaScript syntax
+        run: node --check docs/landscape.js
