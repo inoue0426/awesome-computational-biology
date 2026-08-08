@@ -450,10 +450,26 @@
     "tags": [
       "benchmarks-and-datasets"
     ],
-    "tasks": [],
-    "modalities": [],
+    "tasks": [
+      "regression"
+    ],
+    "modalities": [
+      "histopathology",
+      "spatial-transcriptomics",
+      "transcriptomics"
+    ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "cell",
+      "gene",
+      "tissue"
+    ],
+    "documentation": "https://huggingface.co/datasets/ratschlab/HEST_Xenium_virtual_spatial_transcriptomics",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://huggingface.co/datasets/ratschlab/HEST_Xenium_virtual_spatial_transcriptomics"
+    ]
   },
   {
     "id": "jump_cell_painting_datasets",
@@ -2419,14 +2435,27 @@
       "spatial-foundation-models"
     ],
     "tasks": [
-      "Foundation Model"
+      "representation-learning"
     ],
     "modalities": [
-      "Single Cell",
-      "Spatial Transcriptomics"
+      "histopathology",
+      "spatial-transcriptomics"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "cell",
+      "gene",
+      "tissue"
+    ],
+    "methods": [
+      "autoencoder"
+    ],
+    "github": "https://github.com/ratschlab/aestetik",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://github.com/ratschlab/aestetik"
+    ]
   },
   {
     "id": "ai4chem_chemllm_7b_chat",
@@ -2954,14 +2983,27 @@
       "spatial-foundation-models"
     ],
     "tasks": [
-      "Foundation Model"
+      "foundation-model-pretraining",
+      "representation-learning"
     ],
     "modalities": [
-      "Single Cell",
-      "Spatial Transcriptomics"
+      "histopathology",
+      "imaging"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "tissue"
+    ],
+    "methods": [
+      "contrastive-learning",
+      "transformer"
+    ],
+    "github": "https://github.com/mahmoodlab/CONCH",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://github.com/mahmoodlab/CONCH"
+    ]
   },
   {
     "id": "cyclecdr",
@@ -3095,14 +3137,23 @@
       "spatial-foundation-models"
     ],
     "tasks": [
-      "Foundation Model"
+      "regression"
     ],
     "modalities": [
-      "Single Cell",
-      "Spatial Transcriptomics"
+      "histopathology",
+      "spatial-transcriptomics"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "gene",
+      "tissue"
+    ],
+    "github": "https://github.com/ratschlab/DeepSpot",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://github.com/ratschlab/DeepSpot"
+    ]
   },
   {
     "id": "deepspot_m",
@@ -3116,14 +3167,25 @@
       "spatial-foundation-models"
     ],
     "tasks": [
-      "Foundation Model"
+      "foundation-model-pretraining",
+      "regression"
     ],
     "modalities": [
-      "Single Cell",
-      "Spatial Transcriptomics"
+      "histopathology",
+      "spatial-transcriptomics",
+      "transcriptomics"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "gene",
+      "tissue"
+    ],
+    "github": "https://github.com/ratschlab/DeepSpotM",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://github.com/ratschlab/DeepSpotM"
+    ]
   },
   {
     "id": "deepspot2cell",
@@ -3137,14 +3199,24 @@
       "spatial-foundation-models"
     ],
     "tasks": [
-      "Foundation Model"
+      "regression"
     ],
     "modalities": [
-      "Single Cell",
-      "Spatial Transcriptomics"
+      "histopathology",
+      "spatial-transcriptomics"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "cell",
+      "gene",
+      "tissue"
+    ],
+    "github": "https://github.com/ratschlab/DeepSpot2Cell",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://github.com/ratschlab/DeepSpot2Cell"
+    ]
   },
   {
     "id": "dgdrp",
@@ -3668,14 +3740,27 @@
       "spatial-foundation-models"
     ],
     "tasks": [
-      "Foundation Model"
+      "foundation-model-pretraining",
+      "representation-learning"
     ],
     "modalities": [
-      "Single Cell",
-      "Spatial Transcriptomics"
+      "histopathology",
+      "imaging"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "tissue"
+    ],
+    "methods": [
+      "self-supervised-learning",
+      "transformer"
+    ],
+    "github": "https://github.com/prov-gigapath/prov-gigapath",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://github.com/prov-gigapath/prov-gigapath"
+    ]
   },
   {
     "id": "glue",
@@ -4341,14 +4426,27 @@
       "spatial-foundation-models"
     ],
     "tasks": [
-      "Foundation Model"
+      "foundation-model-pretraining",
+      "representation-learning"
     ],
     "modalities": [
-      "Single Cell",
-      "Spatial Transcriptomics"
+      "histopathology",
+      "imaging"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "tissue"
+    ],
+    "methods": [
+      "self-supervised-learning",
+      "transformer"
+    ],
+    "documentation": "https://huggingface.co/owkin/phikon",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://huggingface.co/owkin/phikon"
+    ]
   },
   {
     "id": "plip",
@@ -4361,13 +4459,26 @@
       "multi-modal-foundation-models"
     ],
     "tasks": [
-      "Foundation Model"
+      "classification",
+      "representation-learning"
     ],
     "modalities": [
-      "Multi-Modal"
+      "histopathology",
+      "imaging"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "tissue"
+    ],
+    "methods": [
+      "contrastive-learning"
+    ],
+    "github": "https://github.com/PathologyFoundation/plip",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://github.com/PathologyFoundation/plip"
+    ]
   },
   {
     "id": "porpoise",
@@ -5192,14 +5303,27 @@
       "spatial-foundation-models"
     ],
     "tasks": [
-      "Foundation Model"
+      "foundation-model-pretraining",
+      "representation-learning"
     ],
     "modalities": [
-      "Single Cell",
-      "Spatial Transcriptomics"
+      "histopathology",
+      "imaging"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "tissue"
+    ],
+    "methods": [
+      "self-supervised-learning",
+      "transformer"
+    ],
+    "github": "https://github.com/mahmoodlab/UNI",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://github.com/mahmoodlab/UNI"
+    ]
   },
   {
     "id": "uni_mol",
