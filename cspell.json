@@ -154,7 +154,11 @@
     "Imageomics",
     "AESTETIK",
     "CellOT",
-    "CMonge"
+    "CMonge",
+    "bowang",
+    "ctheodoris",
+    "OpenAI",
+    "GPT"
   ],
   "ignorePaths": [
     "node_modules/**"
