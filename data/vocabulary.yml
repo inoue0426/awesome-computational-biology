@@ -84,6 +84,7 @@ controlled_fields:
     - molecular-generation
     - perturbation-prediction
     - protein-function-prediction
+    - protein-sequence-design
     - regression
     - representation-learning
     - structure-prediction
