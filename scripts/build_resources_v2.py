@@ -5,8 +5,10 @@ from __future__ import annotations
 
 import csv
 import json
+import os
 import subprocess
 import sys
+import tempfile
 from pathlib import Path
 from typing import Any, Iterable
 
@@ -132,6 +134,34 @@ def write_csv(entries: list[dict[str, Any]], path: Path) -> None:
     print(f"Wrote CSV -> {path}")
 
 
+def running_in_pr_ci() -> bool:
+    return (
+        os.environ.get("GITHUB_ACTIONS", "").lower() == "true"
+        and os.environ.get("GITHUB_EVENT_NAME") == "pull_request"
+    )
+
+
+def write_outputs(entries: list[dict[str, Any]]) -> None:
+    # Pull-request CI is validation-only. Build into a temporary directory so
+    # the workflow can verify that generation succeeds without requiring every
+    # enrichment PR to commit large derived artifacts. On main/push, outputs
+    # are materialized normally and Sync Resources commits any resulting diff.
+    if running_in_pr_ci():
+        with tempfile.TemporaryDirectory(prefix="ai4bio-build-") as tmp:
+            tmp_dir = Path(tmp)
+            write_json(entries, tmp_dir / "resources.json")
+            write_json(entries, tmp_dir / "docs-resources.json")
+            write_csv(entries, tmp_dir / "resources.csv")
+        print("PR validation build completed without modifying tracked artifacts.")
+        return
+
+    DATA_DIR.mkdir(parents=True, exist_ok=True)
+    DOCS_DATA_DIR.mkdir(parents=True, exist_ok=True)
+    write_json(entries, JSON_OUTPUT)
+    write_json(entries, DOCS_JSON_OUTPUT)
+    write_csv(entries, CSV_OUTPUT)
+
+
 def main() -> None:
     validation = subprocess.run(
         [sys.executable, str(REPO_ROOT / "scripts" / "validate_resources.py")],
@@ -140,11 +170,7 @@ def main() -> None:
     if validation.returncode:
         sys.exit(validation.returncode)
     entries = merge_entries()
-    DATA_DIR.mkdir(parents=True, exist_ok=True)
-    DOCS_DATA_DIR.mkdir(parents=True, exist_ok=True)
-    write_json(entries, JSON_OUTPUT)
-    write_json(entries, DOCS_JSON_OUTPUT)
-    write_csv(entries, CSV_OUTPUT)
+    write_outputs(entries)
 
 
 if __name__ == "__main__":
