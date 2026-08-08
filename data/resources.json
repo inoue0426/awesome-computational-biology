@@ -2854,14 +2854,29 @@
       "molecular-generation"
     ],
     "tasks": [
-      "Drug Discovery",
-      "Molecular Generation"
+      "docking"
     ],
     "modalities": [
-      "Small Molecule"
+      "molecular-structure"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "molecule",
+      "protein"
+    ],
+    "methods": [
+      "diffusion",
+      "geometric-deep-learning"
+    ],
+    "year": 2023,
+    "github": "https://github.com/gcorso/DiffDock",
+    "paper": "https://openreview.net/forum?id=kKF8_K-mBbS",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://github.com/gcorso/DiffDock",
+      "https://openreview.net/forum?id=kKF8_K-mBbS"
+    ]
   },
   {
     "id": "diffsbdd",
@@ -3055,14 +3070,28 @@
       "protein-structure-prediction-and-design"
     ],
     "tasks": [
-      "Foundation Model",
-      "Protein Structure Prediction"
+      "representation-learning",
+      "structure-prediction"
     ],
     "modalities": [
-      "Protein"
+      "molecular-structure",
+      "protein-sequence"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "protein"
+    ],
+    "methods": [
+      "language-model",
+      "transformer"
+    ],
+    "year": 2023,
+    "github": "https://github.com/facebookresearch/esm",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://github.com/facebookresearch/esm"
+    ]
   },
   {
     "id": "evo",
@@ -3251,13 +3280,31 @@
       "llm-for-biology"
     ],
     "tasks": [
-      "Language Modeling"
+      "batch-correction",
+      "classification",
+      "representation-learning"
     ],
     "modalities": [
-      "Text"
+      "single-cell-rna-seq",
+      "transcriptomics"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "cell",
+      "gene"
+    ],
+    "methods": [
+      "language-model"
+    ],
+    "year": 2023,
+    "github": "https://github.com/yiqunchen/GenePT",
+    "paper": "https://www.biorxiv.org/content/10.1101/2023.10.16.562533v2",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://github.com/yiqunchen/GenePT",
+      "https://www.biorxiv.org/content/10.1101/2023.10.16.562533v2"
+    ]
   },
   {
     "id": "gigapath",
@@ -3778,14 +3825,33 @@
       "spatial-foundation-models"
     ],
     "tasks": [
-      "Foundation Model"
+      "foundation-model-pretraining",
+      "representation-learning"
     ],
     "modalities": [
-      "Single Cell",
-      "Spatial Transcriptomics"
+      "single-cell-rna-seq",
+      "spatial-transcriptomics",
+      "transcriptomics"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "cell",
+      "gene",
+      "tissue"
+    ],
+    "methods": [
+      "self-supervised-learning",
+      "transformer"
+    ],
+    "year": 2024,
+    "github": "https://github.com/theislab/nicheformer",
+    "paper": "https://doi.org/10.1101/2024.04.15.589472",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://github.com/theislab/nicheformer",
+      "https://doi.org/10.1101/2024.04.15.589472"
+    ]
   },
   {
     "id": "nucleotide_transformer",
@@ -3998,14 +4064,27 @@
       "protein-structure-prediction-and-design"
     ],
     "tasks": [
-      "Foundation Model",
-      "Protein Structure Prediction"
+      "protein-sequence-design"
     ],
     "modalities": [
-      "Protein"
+      "molecular-structure",
+      "protein-sequence"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "protein"
+    ],
+    "methods": [
+      "graph-neural-network",
+      "message-passing-neural-network"
+    ],
+    "year": 2022,
+    "github": "https://github.com/dauparas/ProteinMPNN",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://github.com/dauparas/ProteinMPNN"
+    ]
   },
   {
     "id": "prottrans",
@@ -4350,14 +4429,35 @@
       "spatial-foundation-models"
     ],
     "tasks": [
-      "Foundation Model"
+      "foundation-model-pretraining",
+      "imputation",
+      "representation-learning"
     ],
     "modalities": [
-      "Single Cell",
-      "Spatial Transcriptomics"
+      "multi-omics",
+      "single-cell-rna-seq",
+      "spatial-transcriptomics"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "cell",
+      "gene",
+      "tissue"
+    ],
+    "methods": [
+      "generative-model",
+      "self-supervised-learning",
+      "transformer"
+    ],
+    "year": 2025,
+    "github": "https://github.com/bowang-lab/scGPT-spatial",
+    "paper": "https://www.biorxiv.org/content/10.1101/2025.02.05.636714v1",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://github.com/bowang-lab/scGPT-spatial",
+      "https://www.biorxiv.org/content/10.1101/2025.02.05.636714v1"
+    ]
   },
   {
     "id": "scmulan",
@@ -4411,13 +4511,36 @@
       "llm-for-biology"
     ],
     "tasks": [
-      "Language Modeling"
+      "batch-correction",
+      "cell-type-annotation",
+      "foundation-model-pretraining",
+      "gene-regulatory-network-inference",
+      "imputation",
+      "representation-learning"
     ],
     "modalities": [
-      "Text"
+      "single-cell-rna-seq",
+      "transcriptomics"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "cell",
+      "gene"
+    ],
+    "methods": [
+      "self-supervised-learning",
+      "transformer"
+    ],
+    "year": 2025,
+    "github": "https://github.com/cantinilab/scPRINT",
+    "documentation": "https://www.jkobject.com/scPRINT/",
+    "paper": "https://www.nature.com/articles/s41467-025-58699-1",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://github.com/cantinilab/scPRINT",
+      "https://www.nature.com/articles/s41467-025-58699-1"
+    ]
   },
   {
     "id": "sei",
@@ -4670,13 +4793,31 @@
       "foundation-models"
     ],
     "tasks": [
-      "Foundation Model"
+      "docking",
+      "representation-learning"
     ],
     "modalities": [
-      "Small Molecule"
+      "chemical-structure",
+      "molecular-structure"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "molecule",
+      "protein"
+    ],
+    "methods": [
+      "self-supervised-learning",
+      "transformer"
+    ],
+    "year": 2023,
+    "github": "https://github.com/deepmodeling/Uni-Mol",
+    "paper": "https://openreview.net/forum?id=6K2RM6wVqKu",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://github.com/deepmodeling/Uni-Mol",
+      "https://openreview.net/forum?id=6K2RM6wVqKu"
+    ]
   },
   {
     "id": "unitednet",
