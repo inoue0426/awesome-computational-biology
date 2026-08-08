@@ -1,0 +1,79 @@
+# Provenance-backed drug-response and pharmacogenomics enrichment batch.
+resources:
+  beat_aml:
+    entities: [cell, disease, drug, gene]
+    modalities: [genomics]
+    tasks: [drug-response-prediction]
+    last_checked: 2026-08-08
+    metadata_sources:
+      - https://biodev.github.io/BeatAML2/
+
+  cancer_therapeutics_response_portal_ctrp:
+    entities: [cell, drug]
+    tasks: [drug-response-prediction]
+    last_checked: 2026-08-08
+    metadata_sources:
+      - https://portals.broadinstitute.org/ctrp/
+
+  bindingdb_curated_sets:
+    entities: [molecule, protein]
+    modalities: [chemical-structure]
+    tasks: [drug-target-interaction]
+    last_checked: 2026-08-08
+    metadata_sources:
+      - https://www.bindingdb.org/
+
+  bace:
+    entities: [molecule, protein]
+    modalities: [chemical-structure]
+    tasks: [classification, regression]
+    last_checked: 2026-08-08
+    metadata_sources:
+      - https://www.kaggle.com/datasets/gokturkkoch/bace
+
+  clintox:
+    entities: [drug]
+    modalities: [clinical]
+    tasks: [classification]
+    last_checked: 2026-08-08
+    metadata_sources:
+      - https://tdcommons.ai/single_pred_tasks/tox/#clintox
+
+  sider_side_effect_resource:
+    entities: [drug, phenotype]
+    modalities: [clinical]
+    last_checked: 2026-08-08
+    metadata_sources:
+      - http://sideeffects.embl.de/
+
+  pk_db:
+    entities: [drug]
+    modalities: [clinical]
+    last_checked: 2026-08-08
+    metadata_sources:
+      - https://pk-db.com/
+
+  scperturb:
+    entities: [cell, drug, gene]
+    modalities: [single-cell-rna-seq]
+    tasks: [perturbation-prediction]
+    github: https://github.com/sanderlab/scPerturb
+    last_checked: 2026-08-08
+    metadata_sources:
+      - https://github.com/sanderlab/scPerturb
+
+  genomics_of_drug_sensitivity_in_cancer_gdsc:
+    entities: [cell, drug, gene]
+    modalities: [genomics]
+    tasks: [drug-response-prediction]
+    last_checked: 2026-08-08
+    metadata_sources:
+      - https://www.cancerrxgene.org/
+
+  cellminer_cross_database_cellminercdb:
+    entities: [cell, drug, gene]
+    modalities: [genomics]
+    tasks: [drug-response-prediction]
+    last_checked: 2026-08-08
+    metadata_sources:
+      - https://discover.nci.nih.gov/cellminercdb/
