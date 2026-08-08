@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate AI4Bio resource YAML and enrichment metadata without extra dependencies."""
+"""Validate AI4Bio resource YAML and modular enrichment metadata."""
 
 from __future__ import annotations
 
@@ -16,10 +16,12 @@ except ImportError:
     print("ERROR: PyYAML is not installed. Run: pip install pyyaml", file=sys.stderr)
     sys.exit(1)
 
+from enrichment_fragments import load_enrichment
+
 REPO_ROOT = Path(__file__).resolve().parent.parent
-BASE_FILE = REPO_ROOT / "data" / "resources.yml"
-ENRICHMENT_FILE = REPO_ROOT / "data" / "enrichment.yml"
-VOCABULARY_FILE = REPO_ROOT / "data" / "vocabulary.yml"
+DATA_DIR = REPO_ROOT / "data"
+BASE_FILE = DATA_DIR / "resources.yml"
+VOCABULARY_FILE = DATA_DIR / "vocabulary.yml"
 
 REQUIRED_FIELDS = ("id", "name", "type", "url", "description")
 LIST_FIELDS = (
@@ -63,7 +65,6 @@ def validate_date(value: Any) -> bool:
 
 
 def load_vocabulary() -> tuple[dict[str, set[str]], list[str]]:
-    """Load and validate canonical terms used by new enrichment metadata."""
     errors: list[str] = []
     raw = load_yaml(VOCABULARY_FILE)
     controlled = raw.get("controlled_fields")
@@ -103,7 +104,6 @@ def validate_enrichment_vocabulary(
     fields: dict[str, Any],
     vocabulary: dict[str, set[str]],
 ) -> list[str]:
-    """Require canonical terms only for controlled fields added by enrichment."""
     errors: list[str] = []
     for field in CONTROLLED_FIELDS:
         if field not in fields:
@@ -124,14 +124,15 @@ def validate_enrichment_vocabulary(
 def merge_resources() -> tuple[list[dict[str, Any]], list[str]]:
     errors: list[str] = []
     base = load_yaml(BASE_FILE).get("resources", [])
-    overlay = load_yaml(ENRICHMENT_FILE).get("resources", {})
+    try:
+        overlay = load_enrichment(DATA_DIR, load_yaml)
+    except ValueError as exc:
+        return [], [str(exc)]
     vocabulary, vocabulary_errors = load_vocabulary()
     errors.extend(vocabulary_errors)
 
     if not isinstance(base, list):
         return [], errors + ["data/resources.yml: 'resources' must be a list"]
-    if not isinstance(overlay, dict):
-        return [], errors + ["data/enrichment.yml: 'resources' must be a mapping keyed by resource id"]
 
     by_id: dict[str, dict[str, Any]] = {}
     for index, raw in enumerate(base, 1):
@@ -185,7 +186,8 @@ def validate_entry(entry: dict[str, Any]) -> list[str]:
             errors.append(f"[{rid}] '{field}' must be an http(s) URL")
     if entry.get("github") and not str(entry["github"]).startswith("https://github.com/"):
         errors.append(f"[{rid}] 'github' must be a github.com URL")
-    for value in entry.get("metadata_sources", []) if isinstance(entry.get("metadata_sources", []), list) else []:
+    sources = entry.get("metadata_sources", [])
+    for value in sources if isinstance(sources, list) else []:
         if not valid_http_url(value):
             errors.append(f"[{rid}] metadata source must be an http(s) URL: {value}")
     for field in DATE_FIELDS:
@@ -212,7 +214,7 @@ def main() -> None:
         for error in errors:
             print(f"  - {error}", file=sys.stderr)
         sys.exit(1)
-    print(f"Validated {len(entries)} resources, enrichment metadata, and controlled vocabulary.")
+    print(f"Validated {len(entries)} resources, enrichment fragments, and controlled vocabulary.")
 
 
 if __name__ == "__main__":
