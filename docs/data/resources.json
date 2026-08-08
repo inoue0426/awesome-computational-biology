@@ -9,9 +9,20 @@
       "api"
     ],
     "tasks": [],
-    "modalities": [],
+    "modalities": [
+      "chemical-structure"
+    ],
     "organism": [],
-    "api": true
+    "api": true,
+    "entities": [
+      "molecule",
+      "protein"
+    ],
+    "documentation": "https://www.ebi.ac.uk/chembl/api/data/docs",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://www.ebi.ac.uk/chembl/api/data/docs"
+    ]
   },
   {
     "id": "clinicaltrials_gov_api",
@@ -23,9 +34,20 @@
       "api"
     ],
     "tasks": [],
-    "modalities": [],
+    "modalities": [
+      "clinical"
+    ],
     "organism": [],
-    "api": true
+    "api": true,
+    "entities": [
+      "disease",
+      "drug"
+    ],
+    "documentation": "https://clinicaltrials.gov/data-api/api",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://clinicaltrials.gov/data-api/api"
+    ]
   },
   {
     "id": "ensembl_rest_api",
@@ -37,9 +59,22 @@
       "api"
     ],
     "tasks": [],
-    "modalities": [],
+    "modalities": [
+      "genomics"
+    ],
     "organism": [],
-    "api": true
+    "api": true,
+    "entities": [
+      "gene",
+      "genome",
+      "transcript",
+      "variant"
+    ],
+    "documentation": "https://rest.ensembl.org/",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://rest.ensembl.org/"
+    ]
   },
   {
     "id": "kegg_rest_api",
@@ -53,7 +88,17 @@
     "tasks": [],
     "modalities": [],
     "organism": [],
-    "api": true
+    "api": true,
+    "entities": [
+      "compound",
+      "gene",
+      "pathway"
+    ],
+    "documentation": "https://www.kegg.jp/kegg/rest/keggapi.html",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://www.kegg.jp/kegg/rest/keggapi.html"
+    ]
   },
   {
     "id": "ncbi_e_utilities",
@@ -65,9 +110,24 @@
       "api"
     ],
     "tasks": [],
-    "modalities": [],
+    "modalities": [
+      "genomics",
+      "transcriptomics"
+    ],
     "organism": [],
-    "api": true
+    "api": true,
+    "entities": [
+      "gene",
+      "genome",
+      "protein",
+      "transcript",
+      "variant"
+    ],
+    "documentation": "https://www.ncbi.nlm.nih.gov/books/NBK25501/",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://www.ncbi.nlm.nih.gov/books/NBK25501/"
+    ]
   },
   {
     "id": "open_targets_platform_api",
@@ -79,9 +139,23 @@
       "api"
     ],
     "tasks": [],
-    "modalities": [],
+    "modalities": [
+      "genomics",
+      "knowledge-graph"
+    ],
     "organism": [],
-    "api": true
+    "api": true,
+    "entities": [
+      "disease",
+      "drug",
+      "gene",
+      "variant"
+    ],
+    "documentation": "https://platform.opentargets.org/api",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://platform.opentargets.org/api"
+    ]
   },
   {
     "id": "pubmed_e_utilities_esearch_efetch",
@@ -95,7 +169,12 @@
     "tasks": [],
     "modalities": [],
     "organism": [],
-    "api": true
+    "api": true,
+    "documentation": "https://www.ncbi.nlm.nih.gov/books/NBK25501/",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://www.ncbi.nlm.nih.gov/books/NBK25501/"
+    ]
   },
   {
     "id": "uniprot_rest_api",
@@ -107,9 +186,20 @@
       "api"
     ],
     "tasks": [],
-    "modalities": [],
+    "modalities": [
+      "protein-sequence",
+      "proteomics"
+    ],
     "organism": [],
-    "api": true
+    "api": true,
+    "entities": [
+      "protein"
+    ],
+    "documentation": "https://www.uniprot.org/help/api",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://www.uniprot.org/help/api"
+    ]
   },
   {
     "id": "1000_genomes_project",
@@ -134,10 +224,23 @@
     "tags": [
       "benchmarks-and-datasets"
     ],
-    "tasks": [],
-    "modalities": [],
+    "tasks": [
+      "classification",
+      "regression"
+    ],
+    "modalities": [
+      "chemical-structure"
+    ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "molecule",
+      "protein"
+    ],
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://www.kaggle.com/datasets/gokturkkoch/bace"
+    ]
   },
   {
     "id": "beat_aml",
@@ -148,10 +251,24 @@
     "tags": [
       "benchmarks-and-datasets"
     ],
-    "tasks": [],
-    "modalities": [],
+    "tasks": [
+      "drug-response-prediction"
+    ],
+    "modalities": [
+      "genomics"
+    ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "cell",
+      "disease",
+      "drug",
+      "gene"
+    ],
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://biodev.github.io/BeatAML2/"
+    ]
   },
   {
     "id": "bento",
@@ -176,10 +293,22 @@
     "tags": [
       "benchmarks-and-datasets"
     ],
-    "tasks": [],
-    "modalities": [],
+    "tasks": [
+      "drug-target-interaction"
+    ],
+    "modalities": [
+      "chemical-structure"
+    ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "molecule",
+      "protein"
+    ],
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://www.bindingdb.org/"
+    ]
   },
   {
     "id": "cancer_therapeutics_response_portal_ctrp",
@@ -190,10 +319,20 @@
     "tags": [
       "benchmarks-and-datasets"
     ],
-    "tasks": [],
+    "tasks": [
+      "drug-response-prediction"
+    ],
     "modalities": [],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "cell",
+      "drug"
+    ],
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://portals.broadinstitute.org/ctrp/"
+    ]
   },
   {
     "id": "clintox",
@@ -204,10 +343,21 @@
     "tags": [
       "benchmarks-and-datasets"
     ],
-    "tasks": [],
-    "modalities": [],
+    "tasks": [
+      "classification"
+    ],
+    "modalities": [
+      "clinical"
+    ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "drug"
+    ],
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://tdcommons.ai/single_pred_tasks/tox/#clintox"
+    ]
   },
   {
     "id": "cptac_clinical_proteomic_tumor_analysis_consortium",
@@ -454,9 +604,18 @@
       "benchmarks-and-datasets"
     ],
     "tasks": [],
-    "modalities": [],
+    "modalities": [
+      "clinical"
+    ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "drug"
+    ],
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://pk-db.com/"
+    ]
   },
   {
     "id": "prism",
@@ -545,10 +704,24 @@
     "tags": [
       "benchmarks-and-datasets"
     ],
-    "tasks": [],
-    "modalities": [],
+    "tasks": [
+      "perturbation-prediction"
+    ],
+    "modalities": [
+      "single-cell-rna-seq"
+    ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "cell",
+      "drug",
+      "gene"
+    ],
+    "github": "https://github.com/sanderlab/scPerturb",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://github.com/sanderlab/scPerturb"
+    ]
   },
   {
     "id": "sider_side_effect_resource",
@@ -560,9 +733,19 @@
       "benchmarks-and-datasets"
     ],
     "tasks": [],
-    "modalities": [],
+    "modalities": [
+      "clinical"
+    ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "drug",
+      "phenotype"
+    ],
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "http://sideeffects.embl.de/"
+    ]
   },
   {
     "id": "tabula_muris",
@@ -835,13 +1018,23 @@
       "drug-cell-line-response",
       "interaction"
     ],
-    "tasks": [],
+    "tasks": [
+      "drug-response-prediction"
+    ],
     "modalities": [
-      "Gene Expression",
-      "Small Molecule"
+      "genomics"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "cell",
+      "drug",
+      "gene"
+    ],
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://discover.nci.nih.gov/cellminercdb/"
+    ]
   },
   {
     "id": "chebi",
@@ -1102,10 +1295,19 @@
     ],
     "tasks": [],
     "modalities": [
-      "Disease"
+      "chemical-structure"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "disease",
+      "drug",
+      "protein"
+    ],
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://go.drugbank.com/"
+    ]
   },
   {
     "id": "drugcentral",
@@ -1246,13 +1448,23 @@
       "drug-cell-line-response",
       "interaction"
     ],
-    "tasks": [],
+    "tasks": [
+      "drug-response-prediction"
+    ],
     "modalities": [
-      "Gene Expression",
-      "Small Molecule"
+      "genomics"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "cell",
+      "drug",
+      "gene"
+    ],
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://www.cancerrxgene.org/"
+    ]
   },
   {
     "id": "gnomad",
@@ -2019,10 +2231,20 @@
     ],
     "tasks": [],
     "modalities": [
-      "Protein"
+      "knowledge-graph",
+      "proteomics"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "protein"
+    ],
+    "documentation": "https://string-db.org/help/api/",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://string-db.org/",
+      "https://string-db.org/help/api/"
+    ]
   },
   {
     "id": "the_genotype_tissue_expression_gtex",
