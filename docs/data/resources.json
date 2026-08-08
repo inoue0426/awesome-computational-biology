@@ -274,10 +274,22 @@
     "tags": [
       "benchmarks-and-datasets"
     ],
-    "tasks": [],
-    "modalities": [],
+    "tasks": [
+      "molecular-generation"
+    ],
+    "modalities": [
+      "chemical-structure"
+    ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "molecule"
+    ],
+    "github": "https://github.com/BenevolentAI/guacamol",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://github.com/BenevolentAI/guacamol"
+    ]
   },
   {
     "id": "hest_xenium_virtual_spatial_transcriptomics",
@@ -330,10 +342,23 @@
     "tags": [
       "benchmarks-and-datasets"
     ],
-    "tasks": [],
-    "modalities": [],
+    "tasks": [
+      "classification",
+      "regression"
+    ],
+    "modalities": [
+      "chemical-structure"
+    ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "molecule"
+    ],
+    "github": "https://github.com/deepchem/moleculenet",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://github.com/deepchem/moleculenet"
+    ]
   },
   {
     "id": "moses",
@@ -2526,13 +2551,26 @@
       "foundation-models"
     ],
     "tasks": [
-      "Foundation Model"
+      "representation-learning"
     ],
     "modalities": [
-      "Small Molecule"
+      "chemical-structure"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "molecule"
+    ],
+    "methods": [
+      "language-model",
+      "self-supervised-learning",
+      "transformer"
+    ],
+    "github": "https://github.com/seyonechithrananda/bert-loves-chemistry",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://github.com/seyonechithrananda/bert-loves-chemistry"
+    ]
   },
   {
     "id": "chemcpa",
@@ -3440,13 +3478,26 @@
       "foundation-models"
     ],
     "tasks": [
-      "Foundation Model"
+      "representation-learning"
     ],
     "modalities": [
-      "Small Molecule"
+      "chemical-structure"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "molecule"
+    ],
+    "methods": [
+      "graph-neural-network",
+      "self-supervised-learning",
+      "transformer"
+    ],
+    "github": "https://github.com/tencent-ailab/grover",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://github.com/tencent-ailab/grover"
+    ]
   },
   {
     "id": "hidra",
@@ -3704,13 +3755,26 @@
       "foundation-models"
     ],
     "tasks": [
-      "Foundation Model"
+      "representation-learning"
     ],
     "modalities": [
-      "Small Molecule"
+      "chemical-structure"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "molecule"
+    ],
+    "methods": [
+      "language-model",
+      "self-supervised-learning",
+      "transformer"
+    ],
+    "github": "https://github.com/IBM/molformer",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://github.com/IBM/molformer"
+    ]
   },
   {
     "id": "molgpt",
