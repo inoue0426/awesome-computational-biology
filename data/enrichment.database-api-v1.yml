@@ -1,0 +1,78 @@
+# Provenance-backed database and API enrichment batch.
+resources:
+  chembl_web_services:
+    entities: [molecule, protein]
+    modalities: [chemical-structure]
+    documentation: https://www.ebi.ac.uk/chembl/api/data/docs
+    last_checked: 2026-08-08
+    metadata_sources:
+      - https://www.ebi.ac.uk/chembl/api/data/docs
+
+  clinicaltrials_gov_api:
+    entities: [disease, drug]
+    modalities: [clinical]
+    documentation: https://clinicaltrials.gov/data-api/api
+    last_checked: 2026-08-08
+    metadata_sources:
+      - https://clinicaltrials.gov/data-api/api
+
+  ensembl_rest_api:
+    entities: [gene, genome, transcript, variant]
+    modalities: [genomics]
+    documentation: https://rest.ensembl.org/
+    last_checked: 2026-08-08
+    metadata_sources:
+      - https://rest.ensembl.org/
+
+  kegg_rest_api:
+    entities: [compound, gene, pathway]
+    documentation: https://www.kegg.jp/kegg/rest/keggapi.html
+    last_checked: 2026-08-08
+    metadata_sources:
+      - https://www.kegg.jp/kegg/rest/keggapi.html
+
+  ncbi_e_utilities:
+    entities: [gene, genome, protein, transcript, variant]
+    modalities: [genomics, transcriptomics]
+    documentation: https://www.ncbi.nlm.nih.gov/books/NBK25501/
+    last_checked: 2026-08-08
+    metadata_sources:
+      - https://www.ncbi.nlm.nih.gov/books/NBK25501/
+
+  open_targets_platform_api:
+    entities: [disease, drug, gene, variant]
+    modalities: [genomics, knowledge-graph]
+    documentation: https://platform.opentargets.org/api
+    last_checked: 2026-08-08
+    metadata_sources:
+      - https://platform.opentargets.org/api
+
+  pubmed_e_utilities_esearch_efetch:
+    documentation: https://www.ncbi.nlm.nih.gov/books/NBK25501/
+    last_checked: 2026-08-08
+    metadata_sources:
+      - https://www.ncbi.nlm.nih.gov/books/NBK25501/
+
+  uniprot_rest_api:
+    entities: [protein]
+    modalities: [protein-sequence, proteomics]
+    documentation: https://www.uniprot.org/help/api
+    last_checked: 2026-08-08
+    metadata_sources:
+      - https://www.uniprot.org/help/api
+
+  drugbank:
+    entities: [disease, drug, protein]
+    modalities: [chemical-structure]
+    last_checked: 2026-08-08
+    metadata_sources:
+      - https://go.drugbank.com/
+
+  string:
+    entities: [protein]
+    modalities: [knowledge-graph, proteomics]
+    documentation: https://string-db.org/help/api/
+    last_checked: 2026-08-08
+    metadata_sources:
+      - https://string-db.org/
+      - https://string-db.org/help/api/
