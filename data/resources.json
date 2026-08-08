@@ -328,10 +328,23 @@
     "tags": [
       "benchmarks-and-datasets"
     ],
-    "tasks": [],
-    "modalities": [],
+    "tasks": [
+      "perturbation-prediction"
+    ],
+    "modalities": [
+      "transcriptomics"
+    ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "cell",
+      "compound",
+      "gene"
+    ],
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://lincsproject.org/LINCS/tools/workflows/find-the-best-place-to-obtain-the-lincs-l1000-data"
+    ]
   },
   {
     "id": "moleculenet",
@@ -411,10 +424,25 @@
     "tags": [
       "benchmarks-and-datasets"
     ],
-    "tasks": [],
-    "modalities": [],
+    "tasks": [
+      "drug-response-prediction"
+    ],
+    "modalities": [
+      "clinical",
+      "genomics"
+    ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "drug",
+      "gene",
+      "phenotype",
+      "variant"
+    ],
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://www.pharmgkb.org/"
+    ]
   },
   {
     "id": "pk_db",
@@ -439,10 +467,20 @@
     "tags": [
       "benchmarks-and-datasets"
     ],
-    "tasks": [],
+    "tasks": [
+      "drug-response-prediction"
+    ],
     "modalities": [],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "cell",
+      "drug"
+    ],
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://depmap.org/portal/prism/"
+    ]
   },
   {
     "id": "proteingym",
@@ -453,10 +491,22 @@
     "tags": [
       "benchmarks-and-datasets"
     ],
-    "tasks": [],
-    "modalities": [],
+    "tasks": [
+      "regression"
+    ],
+    "modalities": [
+      "protein-sequence"
+    ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "protein"
+    ],
+    "github": "https://github.com/OATML-Markslab/ProteinGym",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://github.com/OATML-Markslab/ProteinGym"
+    ]
   },
   {
     "id": "qm9",
@@ -4602,14 +4652,31 @@
       "single-cell-foundation-models"
     ],
     "tasks": [
-      "Foundation Model"
+      "foundation-model-pretraining",
+      "representation-learning"
     ],
     "modalities": [
-      "Multi-Omics",
-      "Single Cell"
+      "epigenomics",
+      "multi-omics",
+      "proteomics",
+      "single-cell-rna-seq",
+      "transcriptomics"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "cell",
+      "gene"
+    ],
+    "methods": [
+      "language-model",
+      "transformer"
+    ],
+    "github": "https://github.com/SuperBianC/scMulan",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://github.com/SuperBianC/scMulan"
+    ]
   },
   {
     "id": "scpair",
