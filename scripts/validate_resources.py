@@ -19,12 +19,14 @@ except ImportError:
 REPO_ROOT = Path(__file__).resolve().parent.parent
 BASE_FILE = REPO_ROOT / "data" / "resources.yml"
 ENRICHMENT_FILE = REPO_ROOT / "data" / "enrichment.yml"
+VOCABULARY_FILE = REPO_ROOT / "data" / "vocabulary.yml"
 
 REQUIRED_FIELDS = ("id", "name", "type", "url", "description")
 LIST_FIELDS = (
     "tags", "tasks", "modalities", "organism", "entities", "methods",
     "organizations", "metadata_sources",
 )
+CONTROLLED_FIELDS = ("entities", "methods", "modalities", "tasks")
 ALLOWED_TYPES = {"api", "benchmark", "database", "model", "resource", "toolkit"}
 ALLOWED_MAINTENANCE = {"active", "maintenance", "archived", "unknown"}
 ALLOWED_ACCESS = {"open", "registration", "restricted", "commercial", "unknown"}
@@ -33,6 +35,7 @@ ALLOWED_FIELDS = set(REQUIRED_FIELDS) | set(LIST_FIELDS) | {
     "maintenance_status", "access", "last_checked",
 }
 ID_RE = re.compile(r"^[a-z0-9]+(?:_[a-z0-9]+)*$")
+VOCAB_RE = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
 URL_FIELDS = ("url", "paper", "github", "documentation")
 DATE_FIELDS = ("updated", "last_checked")
 
@@ -59,14 +62,76 @@ def validate_date(value: Any) -> bool:
         return False
 
 
+def load_vocabulary() -> tuple[dict[str, set[str]], list[str]]:
+    """Load and validate canonical terms used by new enrichment metadata."""
+    errors: list[str] = []
+    raw = load_yaml(VOCABULARY_FILE)
+    controlled = raw.get("controlled_fields")
+    if not isinstance(controlled, dict):
+        return {}, ["data/vocabulary.yml: 'controlled_fields' must be a mapping"]
+
+    unknown_fields = sorted(set(controlled) - set(CONTROLLED_FIELDS))
+    if unknown_fields:
+        errors.append(
+            "data/vocabulary.yml: unknown controlled fields: " + ", ".join(unknown_fields)
+        )
+
+    vocabulary: dict[str, set[str]] = {}
+    for field in CONTROLLED_FIELDS:
+        values = controlled.get(field)
+        if not isinstance(values, list) or not values:
+            errors.append(f"data/vocabulary.yml: '{field}' must be a non-empty list")
+            continue
+        if any(not isinstance(value, str) or not value.strip() for value in values):
+            errors.append(f"data/vocabulary.yml: '{field}' must contain non-empty strings")
+            continue
+        if len(values) != len(set(values)):
+            errors.append(f"data/vocabulary.yml: '{field}' contains duplicate terms")
+        invalid = sorted(value for value in values if not VOCAB_RE.fullmatch(value))
+        if invalid:
+            errors.append(
+                f"data/vocabulary.yml: '{field}' terms must use lowercase kebab-case: "
+                + ", ".join(invalid)
+            )
+        vocabulary[field] = set(values)
+
+    return vocabulary, errors
+
+
+def validate_enrichment_vocabulary(
+    resource_id: str,
+    fields: dict[str, Any],
+    vocabulary: dict[str, set[str]],
+) -> list[str]:
+    """Require canonical terms only for controlled fields added by enrichment."""
+    errors: list[str] = []
+    for field in CONTROLLED_FIELDS:
+        if field not in fields:
+            continue
+        values = fields[field]
+        if not isinstance(values, list):
+            continue
+        allowed = vocabulary.get(field, set())
+        for value in values:
+            if isinstance(value, str) and value not in allowed:
+                errors.append(
+                    f"enrichment [{resource_id}] '{field}' uses non-canonical term: {value!r}; "
+                    "add a canonical term to data/vocabulary.yml or use an existing one"
+                )
+    return errors
+
+
 def merge_resources() -> tuple[list[dict[str, Any]], list[str]]:
     errors: list[str] = []
     base = load_yaml(BASE_FILE).get("resources", [])
     overlay = load_yaml(ENRICHMENT_FILE).get("resources", {})
+    vocabulary, vocabulary_errors = load_vocabulary()
+    errors.extend(vocabulary_errors)
+
     if not isinstance(base, list):
-        return [], ["data/resources.yml: 'resources' must be a list"]
+        return [], errors + ["data/resources.yml: 'resources' must be a list"]
     if not isinstance(overlay, dict):
-        return [], ["data/enrichment.yml: 'resources' must be a mapping keyed by resource id"]
+        return [], errors + ["data/enrichment.yml: 'resources' must be a mapping keyed by resource id"]
 
     by_id: dict[str, dict[str, Any]] = {}
     for index, raw in enumerate(base, 1):
@@ -89,6 +154,7 @@ def merge_resources() -> tuple[list[dict[str, Any]], list[str]]:
         forbidden = set(REQUIRED_FIELDS) & set(fields)
         if forbidden:
             errors.append(f"enrichment [{resource_id}] cannot override identity fields: {', '.join(sorted(forbidden))}")
+        errors.extend(validate_enrichment_vocabulary(resource_id, fields, vocabulary))
         by_id[resource_id].update(fields)
 
     return list(by_id.values()), errors
@@ -146,7 +212,7 @@ def main() -> None:
         for error in errors:
             print(f"  - {error}", file=sys.stderr)
         sys.exit(1)
-    print(f"Validated {len(entries)} resources and enrichment metadata.")
+    print(f"Validated {len(entries)} resources, enrichment metadata, and controlled vocabulary.")
 
 
 if __name__ == "__main__":

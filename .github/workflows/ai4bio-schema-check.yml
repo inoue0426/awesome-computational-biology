@@ -5,6 +5,7 @@ on:
     paths:
       - data/resources.yml
       - data/enrichment.yml
+      - data/vocabulary.yml
       - docs/data/resource.schema.json
       - scripts/validate_resources.py
       - scripts/build_resources_v2.py
@@ -13,6 +14,7 @@ on:
     paths:
       - data/resources.yml
       - data/enrichment.yml
+      - data/vocabulary.yml
       - docs/data/resource.schema.json
       - scripts/validate_resources.py
       - scripts/build_resources_v2.py

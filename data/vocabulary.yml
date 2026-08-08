@@ -1,0 +1,91 @@
+# Canonical vocabulary for new AI4Bio enrichment metadata.
+#
+# These values are enforced only for fields explicitly added through
+# data/enrichment.yml. README-derived legacy values remain backward compatible.
+# Canonical terms use lowercase kebab-case.
+
+version: 1
+
+controlled_fields:
+  entities:
+    - cell
+    - compound
+    - disease
+    - drug
+    - gene
+    - genome
+    - molecule
+    - organism
+    - pathway
+    - phenotype
+    - protein
+    - protein-complex
+    - regulatory-element
+    - tissue
+    - transcript
+    - variant
+
+  methods:
+    - autoencoder
+    - contrastive-learning
+    - convolutional-neural-network
+    - diffusion
+    - generative-model
+    - geometric-deep-learning
+    - graph-neural-network
+    - knowledge-graph
+    - language-model
+    - message-passing-neural-network
+    - multi-agent-system
+    - optimal-transport
+    - recurrent-neural-network
+    - reinforcement-learning
+    - retrieval-augmented-generation
+    - self-supervised-learning
+    - state-space-model
+    - supervised-learning
+    - transformer
+    - unsupervised-learning
+    - variational-autoencoder
+
+  modalities:
+    - cell-painting
+    - chemical-structure
+    - clinical
+    - dna-sequence
+    - electronic-health-record
+    - epigenomics
+    - genomics
+    - histopathology
+    - imaging
+    - knowledge-graph
+    - metabolomics
+    - molecular-structure
+    - multi-omics
+    - protein-sequence
+    - proteomics
+    - rna-sequence
+    - single-cell-rna-seq
+    - spatial-transcriptomics
+    - transcriptomics
+
+  tasks:
+    - batch-correction
+    - cell-type-annotation
+    - classification
+    - dimensionality-reduction
+    - docking
+    - drug-response-prediction
+    - drug-target-interaction
+    - foundation-model-pretraining
+    - gene-regulatory-network-inference
+    - imputation
+    - link-prediction
+    - molecular-generation
+    - perturbation-prediction
+    - protein-function-prediction
+    - regression
+    - representation-learning
+    - structure-prediction
+    - trajectory-inference
+    - virtual-screening
