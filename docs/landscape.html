@@ -12,7 +12,7 @@
     <div>
       <a class="back-link" href="index.html">← Resource browser</a>
       <h1>🧬 AI4Bio Landscape</h1>
-      <p>Explore computational biology resources across tasks, modalities, organisms, resource types, and curated tags.</p>
+      <p>Explore computational biology resources across tasks, modalities, biological entities, methods, organizations, years, and provenance-backed enrichment.</p>
     </div>
     <a class="repo-link" href="https://github.com/inoue0426/awesome-computational-biology" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
   </header>
@@ -20,41 +20,72 @@
   <main>
     <section class="stats" aria-label="Landscape summary">
       <article><strong id="stat-resources">—</strong><span>resources</span></article>
-      <article><strong id="stat-tasks">—</strong><span>tasks</span></article>
-      <article><strong id="stat-modalities">—</strong><span>modalities</span></article>
-      <article><strong id="stat-tags">—</strong><span>tags</span></article>
+      <article><strong id="stat-enriched">—</strong><span>enriched</span></article>
+      <article><strong id="stat-coverage">—</strong><span>enrichment coverage</span></article>
+      <article><strong id="stat-entities">—</strong><span>entities</span></article>
+      <article><strong id="stat-methods">—</strong><span>methods</span></article>
+      <article><strong id="stat-provenance">—</strong><span>enriched with provenance</span></article>
     </section>
 
     <section class="workspace">
       <aside class="facets" aria-label="Landscape filters">
         <div class="search-block">
           <label for="search">Search</label>
-          <input id="search" type="search" placeholder="Name, description, task, tag…" autocomplete="off" />
+          <input id="search" type="search" placeholder="Name, task, method, entity…" autocomplete="off" />
           <button id="clear" type="button">Clear all</button>
         </div>
+
+        <label class="toggle-row" for="enriched-only">
+          <input id="enriched-only" type="checkbox" />
+          <span>Show enriched resources only</span>
+        </label>
 
         <div id="active-filters" class="active-filters" aria-live="polite"></div>
 
         <div class="facet-block">
-          <label for="type-filter">Resource type</label>
-          <select id="type-filter"><option value="">All types</option></select>
+          <label for="entity-filter">Biological entity</label>
+          <select id="entity-filter"><option value="">All entities</option></select>
         </div>
         <div class="facet-block">
-          <label for="task-filter">Task</label>
-          <select id="task-filter"><option value="">All tasks</option></select>
+          <label for="method-filter">Method</label>
+          <select id="method-filter"><option value="">All methods</option></select>
         </div>
         <div class="facet-block">
-          <label for="modality-filter">Modality</label>
-          <select id="modality-filter"><option value="">All modalities</option></select>
+          <label for="year-filter">Year</label>
+          <select id="year-filter"><option value="">All years</option></select>
         </div>
         <div class="facet-block">
-          <label for="organism-filter">Organism</label>
-          <select id="organism-filter"><option value="">All organisms</option></select>
+          <label for="organization-filter">Organization</label>
+          <select id="organization-filter"><option value="">All organizations</option></select>
         </div>
         <div class="facet-block">
-          <label for="tag-filter">Tag / domain</label>
-          <select id="tag-filter"><option value="">All tags</option></select>
+          <label for="maintenance-filter">Maintenance status</label>
+          <select id="maintenance-filter"><option value="">All statuses</option></select>
         </div>
+
+        <details class="legacy-facets" open>
+          <summary>Core resource facets</summary>
+          <div class="facet-block">
+            <label for="type-filter">Resource type</label>
+            <select id="type-filter"><option value="">All types</option></select>
+          </div>
+          <div class="facet-block">
+            <label for="task-filter">Task</label>
+            <select id="task-filter"><option value="">All tasks</option></select>
+          </div>
+          <div class="facet-block">
+            <label for="modality-filter">Modality</label>
+            <select id="modality-filter"><option value="">All modalities</option></select>
+          </div>
+          <div class="facet-block">
+            <label for="organism-filter">Organism</label>
+            <select id="organism-filter"><option value="">All organisms</option></select>
+          </div>
+          <div class="facet-block">
+            <label for="tag-filter">Tag / domain</label>
+            <select id="tag-filter"><option value="">All tags</option></select>
+          </div>
+        </details>
 
         <div class="facet-summary">
           <h2>Top facets</h2>
@@ -72,6 +103,7 @@
             <select id="sort">
               <option value="name">Name</option>
               <option value="type">Type</option>
+              <option value="year">Newest enriched year</option>
             </select>
           </label>
         </div>
@@ -81,7 +113,7 @@
   </main>
 
   <footer>
-    <p>Powered by <code>docs/data/resources.json</code>. This view derives facets client-side and does not modify the canonical resource records.</p>
+    <p>Powered by <code>docs/data/resources.json</code>. Enriched fields are provenance-backed metadata merged from <code>data/enrichment.yml</code>; missing values are shown as unknown rather than inferred.</p>
   </footer>
 
   <script src="landscape.js"></script>
