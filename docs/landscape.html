@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI4Bio Landscape</title>
+  <meta name="description" content="Explore the Awesome Computational Biology resource registry as an AI4Bio landscape database." />
+  <link rel="stylesheet" href="landscape.css" />
+</head>
+<body>
+  <header class="hero">
+    <div>
+      <a class="back-link" href="index.html">← Resource browser</a>
+      <h1>🧬 AI4Bio Landscape</h1>
+      <p>Explore computational biology resources across tasks, modalities, organisms, resource types, and curated tags.</p>
+    </div>
+    <a class="repo-link" href="https://github.com/inoue0426/awesome-computational-biology" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+  </header>
+
+  <main>
+    <section class="stats" aria-label="Landscape summary">
+      <article><strong id="stat-resources">—</strong><span>resources</span></article>
+      <article><strong id="stat-tasks">—</strong><span>tasks</span></article>
+      <article><strong id="stat-modalities">—</strong><span>modalities</span></article>
+      <article><strong id="stat-tags">—</strong><span>tags</span></article>
+    </section>
+
+    <section class="workspace">
+      <aside class="facets" aria-label="Landscape filters">
+        <div class="search-block">
+          <label for="search">Search</label>
+          <input id="search" type="search" placeholder="Name, description, task, tag…" autocomplete="off" />
+          <button id="clear" type="button">Clear all</button>
+        </div>
+
+        <div id="active-filters" class="active-filters" aria-live="polite"></div>
+
+        <div class="facet-block">
+          <label for="type-filter">Resource type</label>
+          <select id="type-filter"><option value="">All types</option></select>
+        </div>
+        <div class="facet-block">
+          <label for="task-filter">Task</label>
+          <select id="task-filter"><option value="">All tasks</option></select>
+        </div>
+        <div class="facet-block">
+          <label for="modality-filter">Modality</label>
+          <select id="modality-filter"><option value="">All modalities</option></select>
+        </div>
+        <div class="facet-block">
+          <label for="organism-filter">Organism</label>
+          <select id="organism-filter"><option value="">All organisms</option></select>
+        </div>
+        <div class="facet-block">
+          <label for="tag-filter">Tag / domain</label>
+          <select id="tag-filter"><option value="">All tags</option></select>
+        </div>
+
+        <div class="facet-summary">
+          <h2>Top facets</h2>
+          <div id="facet-bars"></div>
+        </div>
+      </aside>
+
+      <section class="results-panel">
+        <div class="results-header">
+          <div>
+            <h2>Resources</h2>
+            <p id="result-count" aria-live="polite">Loading…</p>
+          </div>
+          <label class="sort-control">Sort
+            <select id="sort">
+              <option value="name">Name</option>
+              <option value="type">Type</option>
+            </select>
+          </label>
+        </div>
+        <div id="results" class="resource-grid"></div>
+      </section>
+    </section>
+  </main>
+
+  <footer>
+    <p>Powered by <code>docs/data/resources.json</code>. This view derives facets client-side and does not modify the canonical resource records.</p>
+  </footer>
+
+  <script src="landscape.js"></script>
+</body>
+</html>
