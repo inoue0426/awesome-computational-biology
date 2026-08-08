@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build enriched AI4Bio artifacts from data/resources.yml + data/enrichment.yml."""
+"""Build enriched AI4Bio artifacts from base resources and modular enrichment."""
 
 from __future__ import annotations
 
@@ -18,11 +18,12 @@ except ImportError:
     print("ERROR: PyYAML is not installed. Run: pip install pyyaml", file=sys.stderr)
     sys.exit(1)
 
+from enrichment_fragments import load_enrichment
+
 REPO_ROOT = Path(__file__).resolve().parent.parent
 DATA_DIR = REPO_ROOT / "data"
 DOCS_DATA_DIR = REPO_ROOT / "docs" / "data"
 BASE_FILE = DATA_DIR / "resources.yml"
-ENRICHMENT_FILE = DATA_DIR / "enrichment.yml"
 JSON_OUTPUT = DATA_DIR / "resources.json"
 CSV_OUTPUT = DATA_DIR / "resources.csv"
 DOCS_JSON_OUTPUT = DOCS_DATA_DIR / "resources.json"
@@ -52,11 +53,9 @@ def load_yaml(path: Path) -> dict[str, Any]:
 
 def merge_entries() -> list[dict[str, Any]]:
     base = load_yaml(BASE_FILE).get("resources", [])
-    overlay = load_yaml(ENRICHMENT_FILE).get("resources", {})
+    overlay = load_enrichment(DATA_DIR, load_yaml)
     if not isinstance(base, list):
         raise ValueError("data/resources.yml 'resources' must be a list")
-    if not isinstance(overlay, dict):
-        raise ValueError("data/enrichment.yml 'resources' must be a mapping keyed by resource id")
 
     entries: list[dict[str, Any]] = []
     known_ids = {entry.get("id") for entry in base if isinstance(entry, dict)}
@@ -78,9 +77,6 @@ def merge_entries() -> list[dict[str, Any]]:
             )
         entry.update(extra)
 
-        # Preserve the legacy artifact shape when no enrichment is present.
-        # Base list fields have always been normalized to arrays, but v2-only
-        # list fields are normalized only when explicitly supplied.
         for field in BASE_LIST_FIELDS:
             value = entry.get(field)
             if value is None:
@@ -105,7 +101,6 @@ def merge_entries() -> list[dict[str, Any]]:
 
 
 def csv_columns(entries: list[dict[str, Any]]) -> list[str]:
-    """Return legacy columns unless at least one v2 enrichment field is present."""
     has_enrichment = any(
         any(field in entry for field in ENRICHMENT_CSV_COLUMNS)
         for entry in entries
@@ -142,10 +137,6 @@ def running_in_pr_ci() -> bool:
 
 
 def write_outputs(entries: list[dict[str, Any]]) -> None:
-    # Pull-request CI is validation-only. Build into a temporary directory so
-    # the workflow can verify that generation succeeds without requiring every
-    # enrichment PR to commit large derived artifacts. On main/push, outputs
-    # are materialized normally and Sync Resources commits any resulting diff.
     if running_in_pr_ci():
         with tempfile.TemporaryDirectory(prefix="ai4bio-build-") as tmp:
             tmp_dir = Path(tmp)
