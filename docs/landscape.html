@@ -28,70 +28,75 @@
     </section>
 
     <section class="workspace">
-      <aside class="facets" aria-label="Landscape filters">
-        <div class="search-block">
-          <label for="search">Search</label>
-          <input id="search" type="search" placeholder="Name, task, method, entity…" autocomplete="off" />
+      <section class="facets" aria-label="Landscape filters">
+        <div class="search-toolbar">
+          <div class="search-field">
+            <label for="search">Search</label>
+            <input id="search" type="search" placeholder="Name, task, method, entity…" autocomplete="off" />
+          </div>
           <button id="clear" type="button">Clear all</button>
+          <label class="toggle-row" for="enriched-only">
+            <input id="enriched-only" type="checkbox" />
+            <span>Enriched only</span>
+          </label>
         </div>
 
-        <label class="toggle-row" for="enriched-only">
-          <input id="enriched-only" type="checkbox" />
-          <span>Show enriched resources only</span>
-        </label>
+        <div class="quick-facets">
+          <div class="facet-block">
+            <label for="entity-filter">Biological entity</label>
+            <select id="entity-filter"><option value="">All entities</option></select>
+          </div>
+          <div class="facet-block">
+            <label for="method-filter">Method</label>
+            <select id="method-filter"><option value="">All methods</option></select>
+          </div>
+          <div class="facet-block">
+            <label for="year-filter">Year</label>
+            <select id="year-filter"><option value="">All years</option></select>
+          </div>
+        </div>
 
         <div id="active-filters" class="active-filters" aria-live="polite"></div>
 
-        <div class="facet-block">
-          <label for="entity-filter">Biological entity</label>
-          <select id="entity-filter"><option value="">All entities</option></select>
-        </div>
-        <div class="facet-block">
-          <label for="method-filter">Method</label>
-          <select id="method-filter"><option value="">All methods</option></select>
-        </div>
-        <div class="facet-block">
-          <label for="year-filter">Year</label>
-          <select id="year-filter"><option value="">All years</option></select>
-        </div>
-        <div class="facet-block">
-          <label for="organization-filter">Organization</label>
-          <select id="organization-filter"><option value="">All organizations</option></select>
-        </div>
-        <div class="facet-block">
-          <label for="maintenance-filter">Maintenance status</label>
-          <select id="maintenance-filter"><option value="">All statuses</option></select>
-        </div>
-
-        <details class="legacy-facets" open>
-          <summary>Core resource facets</summary>
-          <div class="facet-block">
-            <label for="type-filter">Resource type</label>
-            <select id="type-filter"><option value="">All types</option></select>
-          </div>
-          <div class="facet-block">
-            <label for="task-filter">Task</label>
-            <select id="task-filter"><option value="">All tasks</option></select>
-          </div>
-          <div class="facet-block">
-            <label for="modality-filter">Modality</label>
-            <select id="modality-filter"><option value="">All modalities</option></select>
-          </div>
-          <div class="facet-block">
-            <label for="organism-filter">Organism</label>
-            <select id="organism-filter"><option value="">All organisms</option></select>
-          </div>
-          <div class="facet-block">
-            <label for="tag-filter">Tag / domain</label>
-            <select id="tag-filter"><option value="">All tags</option></select>
+        <details class="more-filters">
+          <summary>More filters</summary>
+          <div class="facet-grid">
+            <div class="facet-block">
+              <label for="organization-filter">Organization</label>
+              <select id="organization-filter"><option value="">All organizations</option></select>
+            </div>
+            <div class="facet-block">
+              <label for="maintenance-filter">Maintenance status</label>
+              <select id="maintenance-filter"><option value="">All statuses</option></select>
+            </div>
+            <div class="facet-block">
+              <label for="type-filter">Resource type</label>
+              <select id="type-filter"><option value="">All types</option></select>
+            </div>
+            <div class="facet-block">
+              <label for="task-filter">Task</label>
+              <select id="task-filter"><option value="">All tasks</option></select>
+            </div>
+            <div class="facet-block">
+              <label for="modality-filter">Modality</label>
+              <select id="modality-filter"><option value="">All modalities</option></select>
+            </div>
+            <div class="facet-block">
+              <label for="organism-filter">Organism</label>
+              <select id="organism-filter"><option value="">All organisms</option></select>
+            </div>
+            <div class="facet-block">
+              <label for="tag-filter">Tag / domain</label>
+              <select id="tag-filter"><option value="">All tags</option></select>
+            </div>
           </div>
         </details>
 
-        <div class="facet-summary">
-          <h2>Top facets</h2>
+        <details class="facet-summary">
+          <summary>Top facets for current results</summary>
           <div id="facet-bars"></div>
-        </div>
-      </aside>
+        </details>
+      </section>
 
       <section class="results-panel">
         <div class="results-header">
@@ -113,7 +118,7 @@
   </main>
 
   <footer>
-    <p>Powered by <code>docs/data/resources.json</code>. Enriched fields are provenance-backed metadata merged from <code>data/enrichment.yml</code>; missing values are shown as unknown rather than inferred.</p>
+    <p>Powered by <code>docs/data/resources.json</code>. Enriched fields are provenance-backed metadata; missing values are shown as unknown rather than inferred.</p>
   </footer>
 
   <script src="landscape.js"></script>
