@@ -1,0 +1,100 @@
+# Provenance-backed toolkit enrichment batch.
+resources:
+  scanpy:
+    entities: [cell, gene]
+    modalities: [single-cell-rna-seq]
+    github: https://github.com/scverse/scanpy
+    documentation: https://scanpy.readthedocs.io/en/stable/
+    last_checked: 2026-08-08
+    metadata_sources:
+      - https://github.com/scverse/scanpy
+      - https://scanpy.readthedocs.io/en/stable/
+
+  seurat:
+    entities: [cell, gene]
+    modalities: [single-cell-rna-seq]
+    github: https://github.com/satijalab/seurat
+    documentation: https://satijalab.org/seurat/
+    last_checked: 2026-08-08
+    metadata_sources:
+      - https://github.com/satijalab/seurat
+      - https://satijalab.org/seurat/
+
+  scvi_tools:
+    entities: [cell, gene]
+    modalities: [single-cell-rna-seq, multi-omics]
+    github: https://github.com/scverse/scvi-tools
+    documentation: https://docs.scvi-tools.org/
+    last_checked: 2026-08-08
+    metadata_sources:
+      - https://github.com/scverse/scvi-tools
+      - https://docs.scvi-tools.org/
+
+  squidpy:
+    entities: [cell, tissue]
+    modalities: [spatial-transcriptomics]
+    github: https://github.com/scverse/squidpy
+    documentation: https://squidpy.readthedocs.io/
+    last_checked: 2026-08-08
+    metadata_sources:
+      - https://github.com/scverse/squidpy
+      - https://squidpy.readthedocs.io/
+
+  deepchem:
+    entities: [molecule, protein]
+    modalities: [chemical-structure, molecular-structure]
+    github: https://github.com/deepchem/deepchem
+    documentation: https://deepchem.readthedocs.io/
+    last_checked: 2026-08-08
+    metadata_sources:
+      - https://github.com/deepchem/deepchem
+      - https://deepchem.readthedocs.io/
+
+  rdkit:
+    entities: [molecule]
+    modalities: [chemical-structure]
+    github: https://github.com/rdkit/rdkit
+    documentation: https://www.rdkit.org/docs/
+    last_checked: 2026-08-08
+    metadata_sources:
+      - https://github.com/rdkit/rdkit
+      - https://www.rdkit.org/docs/
+
+  biopython:
+    entities: [gene, protein]
+    modalities: [dna-sequence, protein-sequence]
+    github: https://github.com/biopython/biopython
+    documentation: https://biopython.org/wiki/Documentation
+    last_checked: 2026-08-08
+    metadata_sources:
+      - https://github.com/biopython/biopython
+      - https://biopython.org/
+
+  cellchat:
+    entities: [cell, gene]
+    modalities: [single-cell-rna-seq]
+    github: https://github.com/sqjin/CellChat
+    last_checked: 2026-08-08
+    metadata_sources:
+      - https://github.com/sqjin/CellChat
+
+  celltypist:
+    entities: [cell, gene]
+    modalities: [single-cell-rna-seq]
+    tasks: [cell-type-annotation]
+    github: https://github.com/Teichlab/celltypist
+    documentation: https://celltypist.readthedocs.io/
+    last_checked: 2026-08-08
+    metadata_sources:
+      - https://github.com/Teichlab/celltypist
+      - https://celltypist.readthedocs.io/
+
+  cellcharter:
+    entities: [cell, tissue]
+    modalities: [spatial-transcriptomics]
+    github: https://github.com/CSOgroup/cellcharter
+    documentation: https://cellcharter.readthedocs.io/
+    last_checked: 2026-08-08
+    metadata_sources:
+      - https://github.com/CSOgroup/cellcharter
+      - https://cellcharter.readthedocs.io/
