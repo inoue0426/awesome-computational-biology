@@ -152,7 +152,9 @@
     "Zyme",
     "Neur",
     "Imageomics",
-    "AESTETIK"
+    "AESTETIK",
+    "CellOT",
+    "CMonge"
   ],
   "ignorePaths": [
     "node_modules/**"

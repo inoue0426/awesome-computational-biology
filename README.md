@@ -57,6 +57,7 @@ Browse and search the resources via the [GitHub Pages UI](https://inoue0426.gith
   - [Machine Learning Tasks and Models](#machine-learning-tasks-and-models)
     - [Drug Discovery](#drug-discovery)
       - [Drug Response Prediction](#drug-response-prediction)
+      - [Drug Perturbation](#drug-perturbation)
       - [Drug Repurposing](#drug-repurposing)
       - [Drug Target Interaction](#drug-target-interaction)
       - [Compound-Protein Interaction](#compound-protein-interaction)
@@ -327,10 +328,15 @@ Browse and search the resources via the [GitHub Pages UI](https://inoue0426.gith
 - [RECOVER](https://github.com/RECOVERcoalition/Recover) — Machine learning framework for predicting synergistic drug combination responses across cell lines.
 - [TGSA](https://github.com/violet-sto/TGSA) — Tumor gene set and attention-based model leveraging biological pathway knowledge for drug response prediction.
 - [HiDRA](https://github.com/bsml320/HiDRA) — Hierarchical network model incorporating gene and pathway-level information for cancer drug response prediction.
-- [PRNet](https://github.com/Perturbation-Response-Prediction/PRnet) — Deep generative model for predicting transcriptional responses to novel chemical perturbations for drug discovery.
+- [DRUML](https://github.com/CutillasLab/DRUMLR) — Ensemble machine learning framework combining standard ML with deep learning to systematically rank anti-cancer drugs from proteomics and RNA-seq data.
+
+#### Drug Perturbation
+
+- [CellOT](https://github.com/bunnech/cellot) — Neural optimal transport framework for predicting single-cell responses to drug and genetic perturbations.
+- [CMonge](https://github.com/AI4SCR/conditional-monge-gap) — Conditional optimal transport model for generalizable single-cell perturbation response prediction across drugs and doses.
 - [chemCPA](https://github.com/theislab/chemCPA) — Compositional perturbation autoencoder for predicting single-cell transcriptional responses to unseen drug perturbations and dose combinations.
 - [cycleCDR](https://github.com/hliulab/cycleCDR) — Interpretable cycle-consistency framework for modeling cellular responses to drug perturbations.
-- [DRUML](https://github.com/CutillasLab/DRUMLR) — Ensemble machine learning framework combining standard ML with deep learning to systematically rank anti-cancer drugs from proteomics and RNA-seq data.
+- [PRNet](https://github.com/Perturbation-Response-Prediction/PRnet) — Deep generative model for predicting transcriptional responses to novel chemical perturbations for drug discovery.
 
 #### Drug Repurposing
 
