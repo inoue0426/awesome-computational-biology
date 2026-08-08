@@ -1,0 +1,43 @@
+# Provenance-backed single-cell and biomedical benchmark enrichment batch.
+resources:
+  scmulan:
+    entities: [cell, gene]
+    methods: [language-model, transformer]
+    modalities: [epigenomics, multi-omics, proteomics, single-cell-rna-seq, transcriptomics]
+    tasks: [foundation-model-pretraining, representation-learning]
+    github: https://github.com/SuperBianC/scMulan
+    last_checked: 2026-08-08
+    metadata_sources:
+      - https://github.com/SuperBianC/scMulan
+
+  proteingym:
+    entities: [protein]
+    modalities: [protein-sequence]
+    tasks: [regression]
+    github: https://github.com/OATML-Markslab/ProteinGym
+    last_checked: 2026-08-08
+    metadata_sources:
+      - https://github.com/OATML-Markslab/ProteinGym
+
+  lincs_l1000:
+    entities: [cell, compound, gene]
+    modalities: [transcriptomics]
+    tasks: [perturbation-prediction]
+    last_checked: 2026-08-08
+    metadata_sources:
+      - https://lincsproject.org/LINCS/tools/workflows/find-the-best-place-to-obtain-the-lincs-l1000-data
+
+  prism:
+    entities: [cell, drug]
+    tasks: [drug-response-prediction]
+    last_checked: 2026-08-08
+    metadata_sources:
+      - https://depmap.org/portal/prism/
+
+  pharmgkb:
+    entities: [drug, gene, phenotype, variant]
+    modalities: [clinical, genomics]
+    tasks: [drug-response-prediction]
+    last_checked: 2026-08-08
+    metadata_sources:
+      - https://www.pharmgkb.org/
