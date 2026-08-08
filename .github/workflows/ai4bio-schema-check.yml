@@ -1,0 +1,42 @@
+name: AI4Bio Schema Check
+
+on:
+  pull_request:
+    paths:
+      - data/resources.yml
+      - data/enrichment.yml
+      - docs/data/resource.schema.json
+      - scripts/validate_resources.py
+      - scripts/build_resources_v2.py
+  push:
+    branches: [main]
+    paths:
+      - data/resources.yml
+      - data/enrichment.yml
+      - docs/data/resource.schema.json
+      - scripts/validate_resources.py
+      - scripts/build_resources_v2.py
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v3
+      - name: Validate schema and enrichment
+        run: uv run --with pyyaml python scripts/validate_resources.py
+      - name: Build enriched artifacts
+        run: uv run --with pyyaml python scripts/build_resources_v2.py
+      - name: Verify enriched artifacts are committed
+        run: |
+          if git diff --quiet; then
+            echo "AI4Bio artifacts are in sync."
+            exit 0
+          fi
+          echo "Generated AI4Bio artifacts are out of date. Run:"
+          echo "  uv run --with pyyaml python scripts/build_resources_v2.py"
+          git status --short
+          exit 1
