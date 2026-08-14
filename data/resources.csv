@@ -104,6 +104,7 @@ nextprot,NeXtProt,database,https://www.nextprot.org/,"Expert knowledge base on h
 oadb_observed_antibody_space_database,OADB (Observed Antibody Space Database),database,http://opig.stats.ox.ac.uk/webapps/oas/,Database of antibody sequences from immune repertoire sequencing.,protein,,Protein,,,False,,,,,,,,,,,,
 omim_online_mendelian_inheritance_in_man,OMIM (Online Mendelian Inheritance in Man),database,https://www.omim.org/,Comprehensive database of human genes and genetic disorders.,disease,,Disease,,,False,,,,,,,,,,,,
 omnipath,OmniPath,database,https://omnipathdb.org/,"Comprehensive resource integrating protein interactions, signaling pathways, gene regulatory networks, and miRNA targets from over 100 databases.",pathway,,Pathway,,,False,,,,,,,,,,,,
+oncokb,OncoKB,database,https://www.oncokb.org/,"Precision oncology knowledge base of cancer genes, variants, and therapeutic implications.",genome,,Genomics,,,False,,,,,,,,,,,,
 open_targets_platform,Open Targets Platform,database,https://platform.opentargets.org/,"Systematic target identification and prioritization platform integrating genetics, genomics, and drug data for drug discovery.",disease,,Disease,,,False,,,,,,,,,,,,
 pathwaycommons,PathwayCommons,database,https://www.pathwaycommons.org/,Database of pathways and interactions.,pathway,,Pathway,,,False,,,,,,,,,,,,
 pdbbind,PDBBind,database,https://www.pdbbind-plus.org.cn/,Binding affinity data for biomolecular complexes.,chemical-protein-interaction|interaction,,Protein|Small Molecule,,,False,,,,,,,,,,,,

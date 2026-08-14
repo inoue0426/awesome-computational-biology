@@ -1170,6 +1170,17 @@ resources:
     organism: []
     api: false
 
+  - id: oncokb
+    name: "OncoKB"
+    type: database
+    url: https://www.oncokb.org/
+    description: "Precision oncology knowledge base of cancer genes, variants, and therapeutic implications."
+    tags: [genome]
+    tasks: []
+    modalities: [Genomics]
+    organism: []
+    api: false
+
   - id: open_targets_platform
     name: "Open Targets Platform"
     type: database
