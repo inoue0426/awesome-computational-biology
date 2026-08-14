@@ -1,0 +1,81 @@
+# Provenance-backed core biological database enrichment batch.
+resources:
+  10x_genomics_dataset:
+    entities: [cell, gene]
+    modalities: [single-cell-rna-seq, genomics]
+    documentation: https://www.10xgenomics.com/resources/datasets
+    last_checked: 2026-08-08
+    metadata_sources:
+      - https://www.10xgenomics.com/resources/datasets
+
+  alphafold_protein_structure_database:
+    entities: [protein]
+    modalities: [molecular-structure, protein-sequence]
+    documentation: https://alphafold.ebi.ac.uk/api-docs
+    last_checked: 2026-08-08
+    metadata_sources:
+      - https://alphafold.ebi.ac.uk/
+      - https://alphafold.ebi.ac.uk/api-docs
+
+  bindingdb:
+    entities: [molecule, protein]
+    modalities: [chemical-structure, molecular-structure]
+    documentation: https://www.bindingdb.org/rwd/bind/index.jsp
+    last_checked: 2026-08-08
+    metadata_sources:
+      - https://www.bindingdb.org/rwd/bind/index.jsp
+
+  biocyc:
+    entities: [gene, pathway, organism]
+    modalities: [genomics]
+    documentation: https://biocyc.org/
+    last_checked: 2026-08-08
+    metadata_sources:
+      - https://biocyc.org/
+
+  biogrid:
+    entities: [gene, protein]
+    documentation: https://thebiogrid.org/
+    last_checked: 2026-08-08
+    metadata_sources:
+      - https://thebiogrid.org/
+
+  cath_database:
+    entities: [protein]
+    modalities: [molecular-structure, protein-sequence]
+    documentation: https://www.cathdb.info/
+    last_checked: 2026-08-08
+    metadata_sources:
+      - https://www.cathdb.info/
+
+  chembl:
+    entities: [compound, molecule, protein]
+    modalities: [chemical-structure]
+    documentation: https://www.ebi.ac.uk/chembl/
+    last_checked: 2026-08-08
+    metadata_sources:
+      - https://www.ebi.ac.uk/chembl/
+
+  clinicaltrials_gov:
+    entities: [disease, drug]
+    modalities: [clinical]
+    documentation: https://clinicaltrials.gov/
+    last_checked: 2026-08-08
+    metadata_sources:
+      - https://clinicaltrials.gov/
+
+  cz_cellxgene:
+    entities: [cell, gene, tissue]
+    modalities: [single-cell-rna-seq, transcriptomics]
+    documentation: https://cellxgene.cziscience.com/
+    last_checked: 2026-08-08
+    metadata_sources:
+      - https://cellxgene.cziscience.com/
+
+  uniprot:
+    entities: [protein]
+    modalities: [protein-sequence]
+    documentation: https://www.uniprot.org/
+    last_checked: 2026-08-08
+    metadata_sources:
+      - https://www.uniprot.org/
