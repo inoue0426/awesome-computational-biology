@@ -1018,11 +1018,22 @@
     ],
     "tasks": [],
     "modalities": [
-      "Gene Expression",
-      "Small Molecule"
+      "genomics",
+      "transcriptomics"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "cell",
+      "gene",
+      "disease",
+      "drug"
+    ],
+    "documentation": "https://sites.broadinstitute.org/ccle/",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://sites.broadinstitute.org/ccle/"
+    ]
   },
   {
     "id": "catalogue_of_somatic_mutations_in_cancer_cosmic",
@@ -1035,10 +1046,20 @@
     ],
     "tasks": [],
     "modalities": [
-      "Genomics"
+      "genomics"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "disease",
+      "gene",
+      "variant"
+    ],
+    "documentation": "https://cancer.sanger.ac.uk/cosmic",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://cancer.sanger.ac.uk/cosmic"
+    ]
   },
   {
     "id": "cath_database",
@@ -1076,10 +1097,23 @@
     ],
     "tasks": [],
     "modalities": [
-      "Genomics"
+      "genomics",
+      "clinical"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "disease",
+      "gene",
+      "variant"
+    ],
+    "github": "https://github.com/cBioPortal/cbioportal",
+    "documentation": "https://www.cbioportal.org/",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://www.cbioportal.org/",
+      "https://github.com/cBioPortal/cbioportal"
+    ]
   },
   {
     "id": "cellminer_cross_database_cellminercdb",
@@ -1204,11 +1238,20 @@
     ],
     "tasks": [],
     "modalities": [
-      "Gene",
-      "Small Molecule"
+      "knowledge-graph"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "compound",
+      "gene",
+      "disease"
+    ],
+    "documentation": "https://ctdbase.org/",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://ctdbase.org/"
+    ]
   },
   {
     "id": "critical_assessment_of_structure_prediction_casp",
@@ -1282,10 +1325,21 @@
     ],
     "tasks": [],
     "modalities": [
-      "Genomics"
+      "genomics"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "cell",
+      "gene",
+      "disease",
+      "drug"
+    ],
+    "documentation": "https://depmap.org/portal/",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://depmap.org/portal/"
+    ]
   },
   {
     "id": "dgidb",
@@ -1299,11 +1353,19 @@
     ],
     "tasks": [],
     "modalities": [
-      "Gene",
-      "Small Molecule"
+      "knowledge-graph"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "drug",
+      "gene"
+    ],
+    "documentation": "https://www.dgidb.org/",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://www.dgidb.org/"
+    ]
   },
   {
     "id": "diseases",
@@ -1366,10 +1428,21 @@
     ],
     "tasks": [],
     "modalities": [
-      "Knowledge Graph"
+      "knowledge-graph"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "drug",
+      "disease",
+      "gene",
+      "pathway"
+    ],
+    "github": "https://github.com/SuLab/DrugMechDB",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://github.com/SuLab/DrugMechDB"
+    ]
   },
   {
     "id": "drug_repurposing_hub",
@@ -1382,10 +1455,20 @@
     ],
     "tasks": [],
     "modalities": [
-      "Small Molecule"
+      "chemical-structure"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "drug",
+      "protein",
+      "disease"
+    ],
+    "documentation": "https://repo-hub.broadinstitute.org/repurposing",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://repo-hub.broadinstitute.org/repurposing"
+    ]
   },
   {
     "id": "drugbank",
@@ -1423,10 +1506,20 @@
     ],
     "tasks": [],
     "modalities": [
-      "Small Molecule"
+      "chemical-structure"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "drug",
+      "protein",
+      "disease"
+    ],
+    "documentation": "https://drugcentral.org/",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://drugcentral.org/"
+    ]
   },
   {
     "id": "drugtargetcommons",
@@ -1439,10 +1532,19 @@
     ],
     "tasks": [],
     "modalities": [
-      "Small Molecule"
+      "chemical-structure"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "drug",
+      "protein"
+    ],
+    "documentation": "https://drugtargetcommons.fimm.fi/",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://drugtargetcommons.fimm.fi/"
+    ]
   },
   {
     "id": "encode",
