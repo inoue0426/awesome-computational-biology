@@ -5431,9 +5431,23 @@
     "tasks": [
       "Preprocessing"
     ],
-    "modalities": [],
+    "modalities": [
+      "dna-sequence",
+      "protein-sequence"
+    ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "gene",
+      "protein"
+    ],
+    "github": "https://github.com/biopython/biopython",
+    "documentation": "https://biopython.org/wiki/Documentation",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://github.com/biopython/biopython",
+      "https://biopython.org/"
+    ]
   },
   {
     "id": "casper",
@@ -5463,9 +5477,22 @@
     "tasks": [
       "Preprocessing"
     ],
-    "modalities": [],
+    "modalities": [
+      "spatial-transcriptomics"
+    ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "cell",
+      "tissue"
+    ],
+    "github": "https://github.com/CSOgroup/cellcharter",
+    "documentation": "https://cellcharter.readthedocs.io/",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://github.com/CSOgroup/cellcharter",
+      "https://cellcharter.readthedocs.io/"
+    ]
   },
   {
     "id": "cellchat",
@@ -5479,9 +5506,20 @@
     "tasks": [
       "Preprocessing"
     ],
-    "modalities": [],
+    "modalities": [
+      "single-cell-rna-seq"
+    ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "cell",
+      "gene"
+    ],
+    "github": "https://github.com/sqjin/CellChat",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://github.com/sqjin/CellChat"
+    ]
   },
   {
     "id": "celltypist",
@@ -5493,11 +5531,24 @@
       "preprocessing-tools"
     ],
     "tasks": [
-      "Preprocessing"
+      "cell-type-annotation"
     ],
-    "modalities": [],
+    "modalities": [
+      "single-cell-rna-seq"
+    ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "cell",
+      "gene"
+    ],
+    "github": "https://github.com/Teichlab/celltypist",
+    "documentation": "https://celltypist.readthedocs.io/",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://github.com/Teichlab/celltypist",
+      "https://celltypist.readthedocs.io/"
+    ]
   },
   {
     "id": "chatspatial",
@@ -5559,9 +5610,23 @@
     "tasks": [
       "Preprocessing"
     ],
-    "modalities": [],
+    "modalities": [
+      "chemical-structure",
+      "molecular-structure"
+    ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "molecule",
+      "protein"
+    ],
+    "github": "https://github.com/deepchem/deepchem",
+    "documentation": "https://deepchem.readthedocs.io/",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://github.com/deepchem/deepchem",
+      "https://deepchem.readthedocs.io/"
+    ]
   },
   {
     "id": "deeptalk",
@@ -5783,9 +5848,21 @@
     "tasks": [
       "Preprocessing"
     ],
-    "modalities": [],
+    "modalities": [
+      "chemical-structure"
+    ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "molecule"
+    ],
+    "github": "https://github.com/rdkit/rdkit",
+    "documentation": "https://www.rdkit.org/docs/",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://github.com/rdkit/rdkit",
+      "https://www.rdkit.org/docs/"
+    ]
   },
   {
     "id": "scanpy",
@@ -5799,9 +5876,22 @@
     "tasks": [
       "Preprocessing"
     ],
-    "modalities": [],
+    "modalities": [
+      "single-cell-rna-seq"
+    ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "cell",
+      "gene"
+    ],
+    "github": "https://github.com/scverse/scanpy",
+    "documentation": "https://scanpy.readthedocs.io/en/stable/",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://github.com/scverse/scanpy",
+      "https://scanpy.readthedocs.io/en/stable/"
+    ]
   },
   {
     "id": "scenic",
@@ -5863,9 +5953,23 @@
     "tasks": [
       "Preprocessing"
     ],
-    "modalities": [],
+    "modalities": [
+      "single-cell-rna-seq",
+      "multi-omics"
+    ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "cell",
+      "gene"
+    ],
+    "github": "https://github.com/scverse/scvi-tools",
+    "documentation": "https://docs.scvi-tools.org/",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://github.com/scverse/scvi-tools",
+      "https://docs.scvi-tools.org/"
+    ]
   },
   {
     "id": "seqbench",
@@ -5895,9 +5999,22 @@
     "tasks": [
       "Preprocessing"
     ],
-    "modalities": [],
+    "modalities": [
+      "single-cell-rna-seq"
+    ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "cell",
+      "gene"
+    ],
+    "github": "https://github.com/satijalab/seurat",
+    "documentation": "https://satijalab.org/seurat/",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://github.com/satijalab/seurat",
+      "https://satijalab.org/seurat/"
+    ]
   },
   {
     "id": "squidpy",
@@ -5911,9 +6028,22 @@
     "tasks": [
       "Preprocessing"
     ],
-    "modalities": [],
+    "modalities": [
+      "spatial-transcriptomics"
+    ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "cell",
+      "tissue"
+    ],
+    "github": "https://github.com/scverse/squidpy",
+    "documentation": "https://squidpy.readthedocs.io/",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://github.com/scverse/squidpy",
+      "https://squidpy.readthedocs.io/"
+    ]
   },
   {
     "id": "stagate",
