@@ -3238,6 +3238,17 @@ resources:
     organism: []
     api: false
 
+  - id: teagle
+    name: "TEagle"
+    type: toolkit
+    url: https://github.com/tunabirgun/TEagle
+    description: "Native Windows workbench for single-sequence transposable-element structural evaluation, Wicker classification, family-library matching, PCR target planning, and provenance-tracked exports."
+    tags: [preprocessing-tools]
+    tasks: [Preprocessing]
+    modalities: []
+    organism: []
+    api: false
+
   - id: tigon
     name: "TIGON"
     type: toolkit

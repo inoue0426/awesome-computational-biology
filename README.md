@@ -312,6 +312,7 @@ Browse and search the resources via the [GitHub Pages UI](https://inoue0426.gith
 - [MOGONET](https://github.com/txWang/MOGONET) — Multi-omics graph convolutional network framework for patient classification and biomarker identification.
 - [AutoZyme](https://github.com/ElliotXie/autozyme) — Autonomous agentic framework that speeds up bioinformatics software (e.g. Scanpy, Seurat) on CPUs while preserving the original results.
 - [SeqBench](https://seqbench.com/) — Web-based molecular biology sequence workbench for primer design, cloning simulation (Gibson, Golden Gate, restriction digest), CRISPR guide RNA design, and sequence analysis, with a public REST API, OpenAPI 3.1 spec, and MCP server.
+- [TEagle](https://github.com/tunabirgun/TEagle) — Native Windows workbench for single-sequence transposable-element structural evaluation, Wicker classification, family-library matching, PCR target planning, and provenance-tracked exports.
 
 ---
 
