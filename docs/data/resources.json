@@ -851,7 +851,7 @@
     "id": "tox21",
     "name": "Tox21",
     "type": "benchmark",
-    "url": "https://tripod.nig.nih.gov/tox21/challenge/",
+    "url": "https://tripod.nih.gov/tox21/challenge/",
     "description": "12,707 compounds tested in 12 nuclear receptor and stress-response pathway biochemical assays for toxicity prediction.",
     "tags": [
       "benchmarks-and-datasets"
@@ -4195,7 +4195,7 @@
     "name": "MIDAS",
     "type": "model",
     "url": "https://github.com/labomics/midas",
-    "description": "Mosaic integration and differential accessibility model for single-cell multi-omics data that handles arbitrary missing-modality combinations across transcriptomics, chromatin accessibility, and proteomics.",
+    "description": "Mosaic integration and differential accessibility model for single-cell multi-omics that handles arbitrary missing-modality combinations across transcriptomics, chromatin accessibility, and proteomics.",
     "tags": [
       "foundation-models",
       "multi-omics-foundation-models",
@@ -4470,13 +4470,17 @@
     "id": "nbbayeslm",
     "name": "NbBayesLM",
     "type": "model",
-    "url": "https://www.frontiersin.org/journals/bioinformatics/articles/10.3389/fbinf.2026.1832968/full",
-    "description": "Bayesian neural network integrating protein language model embeddings and physicochemical features to predict nanobody thermostability with uncertainty estimates.",
+    "url": "https://github.com/FairuzShadmaniShishir/NbBayesLM",
+    "description": "Bayesian neural network integrating protein language model embeddings and physicochemical features to predict nanobody thermostability with uncertainty estimates. [Paper](https://www.frontiersin.org/journals/bioinformatics/articles/10.3389/fbinf.2026.1832968/full)",
     "tags": [
-      "nanobody-thermostability-using-bayesian-prediction"
+      "protein-property-prediction"
     ],
-    "tasks": [],
-    "modalities": [],
+    "tasks": [
+      "Protein Property Prediction"
+    ],
+    "modalities": [
+      "Protein"
+    ],
     "organism": [],
     "api": false
   },
@@ -5681,7 +5685,7 @@
     "name": "CaSpER",
     "type": "toolkit",
     "url": "https://github.com/akdess/CaSpER",
-    "description": "CNV identification and visualization from single-cell or bulk RNA-seq data.",
+    "description": "CNV identification and visualization by integrative analysis of single-cell or bulk RNA-seq data.",
     "tags": [
       "preprocessing-tools"
     ],
@@ -5860,7 +5864,7 @@
     "name": "DeepTalk",
     "type": "toolkit",
     "url": "https://github.com/JiangBioLab/DeepTalk",
-    "description": "Graph attention network for deciphering cell-cell communication from spatial transcriptomics data.",
+    "description": "Graph attention network for deciphering cell-cell communication from spatial transcriptomics.",
     "tags": [
       "preprocessing-tools"
     ],
