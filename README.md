@@ -63,6 +63,7 @@ Browse and search the resources via the [GitHub Pages UI](https://inoue0426.gith
       - [Compound-Protein Interaction](#compound-protein-interaction)
       - [Molecular Generation](#molecular-generation)
     - [LLM for Biology](#llm-for-biology)
+    - [Nanobody Thermostability using Bayesian Prediction](#nanobody-thermostability-using-bayesian-prediction)
     - [Foundation Models](#foundation-models)
       - [Single-cell Foundation Models](#single-cell-foundation-models)
         - [Transcriptomics Foundation Models](#transcriptomics-foundation-models)
@@ -257,7 +258,7 @@ Browse and search the resources via the [GitHub Pages UI](https://inoue0426.gith
 - [TCGA virtual spatial transcriptomics atlas](https://huggingface.co/datasets/ratschlab/TCGA_virtual_spatial_transcriptomics_atlas) — DeepSpot-M predicted transcriptome-wide ST for TCGA H&E (FF + FFPE; 28,664 slides / 32 cancer types; gated). Paper: [DeepSpot-M](https://www.medrxiv.org/content/10.64898/2026.06.19.26356060v1).
 - [HEST Xenium virtual spatial transcriptomics](https://huggingface.co/datasets/ratschlab/HEST_Xenium_virtual_spatial_transcriptomics) — DeepSpot-M predicted transcriptome-wide ST for 59 HEST-1k 10x Xenium samples (~13.3M cells) (gated). Paper: [DeepSpot-M](https://www.medrxiv.org/content/10.64898/2026.06.19.26356060v1).
 - [Therapeutics Data Commons (TDC)](https://tdcommons.ai/) — Unified benchmark suite covering ADMET, drug-target interaction, drug response, and more.
-- [Tox21](https://tripod.nih.gov/tox21/challenge/) — 12,707 compounds tested in 12 nuclear receptor and stress-response pathway biochemical assays for toxicity prediction.
+- [Tox21](https://tripod.nig.nih.gov/tox21/challenge/) — 12,707 compounds tested in 12 nuclear receptor and stress-response pathway biochemical assays for toxicity prediction.
 - [UK Biobank](https://www.ukbiobank.ac.uk/) — Large-scale biomedical database of ~500K participants with genetic, imaging, and health data for population genetics and disease studies.
 
 ---
@@ -300,7 +301,7 @@ Browse and search the resources via the [GitHub Pages UI](https://inoue0426.gith
 - [SCENIC](https://github.com/aertslab/SCENIC) — Single-cell regulatory network inference and clustering linking transcription factors to co-expressed gene modules.
 - [DoubletFinder](https://github.com/chris-mcginnis-ucsf/DoubletFinder) — Machine learning approach for detecting multiplet (doublet) artifacts in single-cell RNA-seq data.
 - [Numbat](https://github.com/kharchenkolab/numbat) — Haplotype-aware copy number variation inference from single-cell RNA-seq using hidden Markov models.
-- [CaSpER](https://github.com/akdess/CaSpER) — CNV identification and visualization by integrative analysis of single-cell or bulk RNA-seq data.
+- [CaSpER](https://github.com/akdess/CaSpER) — CNV identification and visualization from single-cell or bulk RNA-seq data.
 - [CellCharter](https://github.com/CSOgroup/cellcharter) — Identification and characterization of spatial cell niches from spatial transcriptomics using VAEs and Gaussian mixture models.
 - [STAGATE](https://github.com/RucDongLab/STAGATE) — Adaptive graph attention auto-encoder for spatial domain identification in spatial transcriptomics.
 - [NCEM](https://github.com/theislab/ncem) — GNN-based model for learning intercellular communication from spatial graphs of cells.
@@ -383,6 +384,10 @@ Browse and search the resources via the [GitHub Pages UI](https://inoue0426.gith
 - [MolT5](https://github.com/blender-nlp/MolT5) — Language model for molecular tasks bridging text and SMILES, enabling molecule captioning and text-driven molecule generation.
 - [ChatDrug](https://github.com/chao1224/ChatDrug) — LLM-based conversational pipeline for drug discovery, using natural language prompts for iterative drug editing and optimization.
 - [CASSIA](https://github.com/ElliotXie/CASSIA) — Multi-agent LLM for reference-free, interpretable cell-type annotation of single-cell RNA-seq data, with dedicated annotation, validation, scoring, and reporting agents.
+
+### Nanobody Thermostability using Bayesian Prediction
+
+- [NbBayesLM](https://www.frontiersin.org/journals/bioinformatics/articles/10.3389/fbinf.2026.1832968/full) — Bayesian neural network integrating protein language model embeddings and physicochemical features to predict nanobody thermostability with uncertainty estimates.
 
 ### Foundation Models
 
@@ -509,12 +514,13 @@ If you use this list in papers, slides, or documentation, please cite this repos
 To keep quality high, additions should meet all of the following:
 
 - The resource is trustworthy and relevant to computational biology.
+- The resource has clear value to this collection's scope and audience; specialized resources may be accepted when they provide broadly reusable computational methods, datasets, or infrastructure rather than serving only a narrow use case.
 - The primary link points to an official source (official docs, organization site, maintained repository, or official dataset page).
 - The resource has evidence of technical substance: ideally a peer-reviewed paper; at minimum a preprint or official technical documentation.
 - The description is factual and concise (no marketing copy).
 - Duplicate or near-duplicate entries should be avoided.
 
-We generally do **not** accept entries that are only promotional pages, personal opinion posts, or generic blog posts without technical references.
+We generally do **not** accept entries that are only promotional pages, personal opinion posts, generic blog posts without technical references, or highly specialized resources with limited relevance beyond a narrow application context.
 
 ## Update & Link Rot Policy
 
