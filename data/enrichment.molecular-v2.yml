@@ -1,0 +1,49 @@
+# Provenance-backed molecular model and benchmark enrichment batch.
+resources:
+  chemberta_2:
+    entities: [molecule]
+    methods: [language-model, self-supervised-learning, transformer]
+    modalities: [chemical-structure]
+    tasks: [representation-learning]
+    github: https://github.com/seyonechithrananda/bert-loves-chemistry
+    last_checked: 2026-08-08
+    metadata_sources:
+      - https://github.com/seyonechithrananda/bert-loves-chemistry
+
+  molformer:
+    entities: [molecule]
+    methods: [language-model, self-supervised-learning, transformer]
+    modalities: [chemical-structure]
+    tasks: [representation-learning]
+    github: https://github.com/IBM/molformer
+    last_checked: 2026-08-08
+    metadata_sources:
+      - https://github.com/IBM/molformer
+
+  grover:
+    entities: [molecule]
+    methods: [graph-neural-network, self-supervised-learning, transformer]
+    modalities: [chemical-structure]
+    tasks: [representation-learning]
+    github: https://github.com/tencent-ailab/grover
+    last_checked: 2026-08-08
+    metadata_sources:
+      - https://github.com/tencent-ailab/grover
+
+  moleculenet:
+    entities: [molecule]
+    modalities: [chemical-structure]
+    tasks: [classification, regression]
+    github: https://github.com/deepchem/moleculenet
+    last_checked: 2026-08-08
+    metadata_sources:
+      - https://github.com/deepchem/moleculenet
+
+  guacamol:
+    entities: [molecule]
+    modalities: [chemical-structure]
+    tasks: [molecular-generation]
+    github: https://github.com/BenevolentAI/guacamol
+    last_checked: 2026-08-08
+    metadata_sources:
+      - https://github.com/BenevolentAI/guacamol

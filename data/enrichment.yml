@@ -1,0 +1,115 @@
+# AI4Bio landscape enrichment overlay
+#
+# README.md remains the canonical source for resource membership and basic fields.
+# Add richer, independently curated metadata here, keyed by the stable resource id.
+# scripts/build_resources.py merges these fields into generated JSON/CSV artifacts.
+#
+# Enrichment values should be source-verifiable. Controlled vocabulary fields are
+# validated against data/vocabulary.yml.
+
+resources:
+  scgpt:
+    entities: [cell, gene]
+    methods: [generative-model, self-supervised-learning, transformer]
+    modalities: [multi-omics, single-cell-rna-seq, transcriptomics]
+    tasks:
+      - cell-type-annotation
+      - foundation-model-pretraining
+      - gene-regulatory-network-inference
+      - perturbation-prediction
+      - representation-learning
+    year: 2024
+    github: https://github.com/bowang-lab/scGPT
+    documentation: https://scgpt.readthedocs.io/en/latest/
+    paper: https://www.nature.com/articles/s41592-024-02201-0
+    last_checked: 2026-08-08
+    metadata_sources:
+      - https://github.com/bowang-lab/scGPT
+      - https://www.nature.com/articles/s41592-024-02201-0
+
+  geneformer:
+    entities: [cell, gene]
+    methods: [self-supervised-learning, transformer]
+    modalities: [single-cell-rna-seq, transcriptomics]
+    tasks:
+      - classification
+      - foundation-model-pretraining
+      - perturbation-prediction
+      - representation-learning
+    year: 2023
+    documentation: https://geneformer.readthedocs.io/
+    paper: https://www.nature.com/articles/s41586-023-06139-9
+    last_checked: 2026-08-08
+    metadata_sources:
+      - https://huggingface.co/ctheodoris/Geneformer
+      - https://www.nature.com/articles/s41586-023-06139-9
+
+  scfoundation:
+    entities: [cell, gene]
+    methods: [self-supervised-learning, transformer]
+    modalities: [single-cell-rna-seq, transcriptomics]
+    tasks:
+      - cell-type-annotation
+      - drug-response-prediction
+      - foundation-model-pretraining
+      - perturbation-prediction
+      - representation-learning
+    year: 2024
+    github: https://github.com/biomap-research/scFoundation
+    paper: https://www.nature.com/articles/s41592-024-02305-7
+    last_checked: 2026-08-08
+    metadata_sources:
+      - https://github.com/biomap-research/scFoundation
+      - https://www.nature.com/articles/s41592-024-02305-7
+
+  genecompass:
+    entities: [cell, gene]
+    methods: [self-supervised-learning, transformer]
+    modalities: [single-cell-rna-seq, transcriptomics]
+    tasks: [foundation-model-pretraining, representation-learning]
+    year: 2024
+    github: https://github.com/xCompass-AI/GeneCompass
+    paper: https://www.nature.com/articles/s41422-024-01034-y
+    last_checked: 2026-08-08
+    metadata_sources:
+      - https://github.com/xCompass-AI/GeneCompass
+      - https://www.nature.com/articles/s41422-024-01034-y
+
+  uce:
+    entities: [cell]
+    methods: [self-supervised-learning]
+    modalities: [single-cell-rna-seq, transcriptomics]
+    tasks: [foundation-model-pretraining, representation-learning]
+    year: 2026
+    github: https://github.com/snap-stanford/UCE
+    paper: https://www.nature.com/articles/s41586-026-10689-z
+    last_checked: 2026-08-08
+    metadata_sources:
+      - https://github.com/snap-stanford/UCE
+      - https://www.nature.com/articles/s41586-026-10689-z
+
+  cellplm:
+    entities: [cell, gene]
+    methods: [self-supervised-learning, transformer]
+    modalities: [single-cell-rna-seq, transcriptomics]
+    tasks: [foundation-model-pretraining, representation-learning]
+    year: 2023
+    github: https://github.com/OmicsML/CellPLM
+    paper: https://www.biorxiv.org/content/10.1101/2023.10.03.560734v1
+    last_checked: 2026-08-08
+    metadata_sources:
+      - https://github.com/OmicsML/CellPLM
+      - https://www.biorxiv.org/content/10.1101/2023.10.03.560734v1
+
+  scbert:
+    entities: [cell, gene]
+    methods: [language-model, self-supervised-learning, transformer]
+    modalities: [single-cell-rna-seq, transcriptomics]
+    tasks: [cell-type-annotation, classification, foundation-model-pretraining]
+    year: 2022
+    github: https://github.com/TencentAILabHealthcare/scBERT
+    paper: https://www.nature.com/articles/s42256-022-00534-z
+    last_checked: 2026-08-08
+    metadata_sources:
+      - https://github.com/TencentAILabHealthcare/scBERT
+      - https://www.nature.com/articles/s42256-022-00534-z

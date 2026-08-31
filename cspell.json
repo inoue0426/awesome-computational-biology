@@ -46,6 +46,7 @@
     "eukaryotic",
     "metabolites",
     "OMIM",
+    "OncoKB",
     "Mendelian",
     "DisGeNET",
     "GWAS",
@@ -152,7 +153,13 @@
     "Zyme",
     "Neur",
     "Imageomics",
-    "AESTETIK"
+    "AESTETIK",
+    "CellOT",
+    "CMonge",
+    "bowang",
+    "ctheodoris",
+    "OpenAI",
+    "GPT"
   ],
   "ignorePaths": [
     "node_modules/**"

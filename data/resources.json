@@ -9,9 +9,20 @@
       "api"
     ],
     "tasks": [],
-    "modalities": [],
+    "modalities": [
+      "chemical-structure"
+    ],
     "organism": [],
-    "api": true
+    "api": true,
+    "entities": [
+      "molecule",
+      "protein"
+    ],
+    "documentation": "https://www.ebi.ac.uk/chembl/api/data/docs",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://www.ebi.ac.uk/chembl/api/data/docs"
+    ]
   },
   {
     "id": "clinicaltrials_gov_api",
@@ -23,9 +34,20 @@
       "api"
     ],
     "tasks": [],
-    "modalities": [],
+    "modalities": [
+      "clinical"
+    ],
     "organism": [],
-    "api": true
+    "api": true,
+    "entities": [
+      "disease",
+      "drug"
+    ],
+    "documentation": "https://clinicaltrials.gov/data-api/api",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://clinicaltrials.gov/data-api/api"
+    ]
   },
   {
     "id": "ensembl_rest_api",
@@ -37,9 +59,22 @@
       "api"
     ],
     "tasks": [],
-    "modalities": [],
+    "modalities": [
+      "genomics"
+    ],
     "organism": [],
-    "api": true
+    "api": true,
+    "entities": [
+      "gene",
+      "genome",
+      "transcript",
+      "variant"
+    ],
+    "documentation": "https://rest.ensembl.org/",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://rest.ensembl.org/"
+    ]
   },
   {
     "id": "kegg_rest_api",
@@ -53,7 +88,17 @@
     "tasks": [],
     "modalities": [],
     "organism": [],
-    "api": true
+    "api": true,
+    "entities": [
+      "compound",
+      "gene",
+      "pathway"
+    ],
+    "documentation": "https://www.kegg.jp/kegg/rest/keggapi.html",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://www.kegg.jp/kegg/rest/keggapi.html"
+    ]
   },
   {
     "id": "ncbi_e_utilities",
@@ -65,9 +110,24 @@
       "api"
     ],
     "tasks": [],
-    "modalities": [],
+    "modalities": [
+      "genomics",
+      "transcriptomics"
+    ],
     "organism": [],
-    "api": true
+    "api": true,
+    "entities": [
+      "gene",
+      "genome",
+      "protein",
+      "transcript",
+      "variant"
+    ],
+    "documentation": "https://www.ncbi.nlm.nih.gov/books/NBK25501/",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://www.ncbi.nlm.nih.gov/books/NBK25501/"
+    ]
   },
   {
     "id": "open_targets_platform_api",
@@ -79,9 +139,23 @@
       "api"
     ],
     "tasks": [],
-    "modalities": [],
+    "modalities": [
+      "genomics",
+      "knowledge-graph"
+    ],
     "organism": [],
-    "api": true
+    "api": true,
+    "entities": [
+      "disease",
+      "drug",
+      "gene",
+      "variant"
+    ],
+    "documentation": "https://platform.opentargets.org/api",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://platform.opentargets.org/api"
+    ]
   },
   {
     "id": "pubmed_e_utilities_esearch_efetch",
@@ -95,7 +169,12 @@
     "tasks": [],
     "modalities": [],
     "organism": [],
-    "api": true
+    "api": true,
+    "documentation": "https://www.ncbi.nlm.nih.gov/books/NBK25501/",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://www.ncbi.nlm.nih.gov/books/NBK25501/"
+    ]
   },
   {
     "id": "uniprot_rest_api",
@@ -107,9 +186,20 @@
       "api"
     ],
     "tasks": [],
-    "modalities": [],
+    "modalities": [
+      "protein-sequence",
+      "proteomics"
+    ],
     "organism": [],
-    "api": true
+    "api": true,
+    "entities": [
+      "protein"
+    ],
+    "documentation": "https://www.uniprot.org/help/api",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://www.uniprot.org/help/api"
+    ]
   },
   {
     "id": "1000_genomes_project",
@@ -134,10 +224,23 @@
     "tags": [
       "benchmarks-and-datasets"
     ],
-    "tasks": [],
-    "modalities": [],
+    "tasks": [
+      "classification",
+      "regression"
+    ],
+    "modalities": [
+      "chemical-structure"
+    ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "molecule",
+      "protein"
+    ],
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://www.kaggle.com/datasets/gokturkkoch/bace"
+    ]
   },
   {
     "id": "beat_aml",
@@ -148,10 +251,24 @@
     "tags": [
       "benchmarks-and-datasets"
     ],
-    "tasks": [],
-    "modalities": [],
+    "tasks": [
+      "drug-response-prediction"
+    ],
+    "modalities": [
+      "genomics"
+    ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "cell",
+      "disease",
+      "drug",
+      "gene"
+    ],
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://biodev.github.io/BeatAML2/"
+    ]
   },
   {
     "id": "bento",
@@ -176,10 +293,22 @@
     "tags": [
       "benchmarks-and-datasets"
     ],
-    "tasks": [],
-    "modalities": [],
+    "tasks": [
+      "drug-target-interaction"
+    ],
+    "modalities": [
+      "chemical-structure"
+    ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "molecule",
+      "protein"
+    ],
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://www.bindingdb.org/"
+    ]
   },
   {
     "id": "cancer_therapeutics_response_portal_ctrp",
@@ -190,10 +319,20 @@
     "tags": [
       "benchmarks-and-datasets"
     ],
-    "tasks": [],
+    "tasks": [
+      "drug-response-prediction"
+    ],
     "modalities": [],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "cell",
+      "drug"
+    ],
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://portals.broadinstitute.org/ctrp/"
+    ]
   },
   {
     "id": "clintox",
@@ -204,10 +343,21 @@
     "tags": [
       "benchmarks-and-datasets"
     ],
-    "tasks": [],
-    "modalities": [],
+    "tasks": [
+      "classification"
+    ],
+    "modalities": [
+      "clinical"
+    ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "drug"
+    ],
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://tdcommons.ai/single_pred_tasks/tox/#clintox"
+    ]
   },
   {
     "id": "cptac_clinical_proteomic_tumor_analysis_consortium",
@@ -274,10 +424,22 @@
     "tags": [
       "benchmarks-and-datasets"
     ],
-    "tasks": [],
-    "modalities": [],
+    "tasks": [
+      "molecular-generation"
+    ],
+    "modalities": [
+      "chemical-structure"
+    ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "molecule"
+    ],
+    "github": "https://github.com/BenevolentAI/guacamol",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://github.com/BenevolentAI/guacamol"
+    ]
   },
   {
     "id": "hest_xenium_virtual_spatial_transcriptomics",
@@ -288,10 +450,26 @@
     "tags": [
       "benchmarks-and-datasets"
     ],
-    "tasks": [],
-    "modalities": [],
+    "tasks": [
+      "regression"
+    ],
+    "modalities": [
+      "histopathology",
+      "spatial-transcriptomics",
+      "transcriptomics"
+    ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "cell",
+      "gene",
+      "tissue"
+    ],
+    "documentation": "https://huggingface.co/datasets/ratschlab/HEST_Xenium_virtual_spatial_transcriptomics",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://huggingface.co/datasets/ratschlab/HEST_Xenium_virtual_spatial_transcriptomics"
+    ]
   },
   {
     "id": "jump_cell_painting_datasets",
@@ -316,10 +494,23 @@
     "tags": [
       "benchmarks-and-datasets"
     ],
-    "tasks": [],
-    "modalities": [],
+    "tasks": [
+      "perturbation-prediction"
+    ],
+    "modalities": [
+      "transcriptomics"
+    ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "cell",
+      "compound",
+      "gene"
+    ],
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://lincsproject.org/LINCS/tools/workflows/find-the-best-place-to-obtain-the-lincs-l1000-data"
+    ]
   },
   {
     "id": "moleculenet",
@@ -330,10 +521,23 @@
     "tags": [
       "benchmarks-and-datasets"
     ],
-    "tasks": [],
-    "modalities": [],
+    "tasks": [
+      "classification",
+      "regression"
+    ],
+    "modalities": [
+      "chemical-structure"
+    ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "molecule"
+    ],
+    "github": "https://github.com/deepchem/moleculenet",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://github.com/deepchem/moleculenet"
+    ]
   },
   {
     "id": "moses",
@@ -386,10 +590,25 @@
     "tags": [
       "benchmarks-and-datasets"
     ],
-    "tasks": [],
-    "modalities": [],
+    "tasks": [
+      "drug-response-prediction"
+    ],
+    "modalities": [
+      "clinical",
+      "genomics"
+    ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "drug",
+      "gene",
+      "phenotype",
+      "variant"
+    ],
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://www.pharmgkb.org/"
+    ]
   },
   {
     "id": "pk_db",
@@ -401,9 +620,18 @@
       "benchmarks-and-datasets"
     ],
     "tasks": [],
-    "modalities": [],
+    "modalities": [
+      "clinical"
+    ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "drug"
+    ],
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://pk-db.com/"
+    ]
   },
   {
     "id": "prism",
@@ -414,10 +642,20 @@
     "tags": [
       "benchmarks-and-datasets"
     ],
-    "tasks": [],
+    "tasks": [
+      "drug-response-prediction"
+    ],
     "modalities": [],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "cell",
+      "drug"
+    ],
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://depmap.org/portal/prism/"
+    ]
   },
   {
     "id": "proteingym",
@@ -428,10 +666,22 @@
     "tags": [
       "benchmarks-and-datasets"
     ],
-    "tasks": [],
-    "modalities": [],
+    "tasks": [
+      "regression"
+    ],
+    "modalities": [
+      "protein-sequence"
+    ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "protein"
+    ],
+    "github": "https://github.com/OATML-Markslab/ProteinGym",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://github.com/OATML-Markslab/ProteinGym"
+    ]
   },
   {
     "id": "qm9",
@@ -470,10 +720,24 @@
     "tags": [
       "benchmarks-and-datasets"
     ],
-    "tasks": [],
-    "modalities": [],
+    "tasks": [
+      "perturbation-prediction"
+    ],
+    "modalities": [
+      "single-cell-rna-seq"
+    ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "cell",
+      "drug",
+      "gene"
+    ],
+    "github": "https://github.com/sanderlab/scPerturb",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://github.com/sanderlab/scPerturb"
+    ]
   },
   {
     "id": "sider_side_effect_resource",
@@ -485,9 +749,19 @@
       "benchmarks-and-datasets"
     ],
     "tasks": [],
-    "modalities": [],
+    "modalities": [
+      "clinical"
+    ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "drug",
+      "phenotype"
+    ],
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "http://sideeffects.embl.de/"
+    ]
   },
   {
     "id": "tabula_muris",
@@ -612,10 +886,20 @@
     ],
     "tasks": [],
     "modalities": [
-      "Genomics"
+      "single-cell-rna-seq",
+      "genomics"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "cell",
+      "gene"
+    ],
+    "documentation": "https://www.10xgenomics.com/resources/datasets",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://www.10xgenomics.com/resources/datasets"
+    ]
   },
   {
     "id": "alphafold_protein_structure_database",
@@ -628,10 +912,20 @@
     ],
     "tasks": [],
     "modalities": [
-      "Protein"
+      "molecular-structure",
+      "protein-sequence"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "protein"
+    ],
+    "documentation": "https://alphafold.ebi.ac.uk/api-docs",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://alphafold.ebi.ac.uk/",
+      "https://alphafold.ebi.ac.uk/api-docs"
+    ]
   },
   {
     "id": "bindingdb",
@@ -645,11 +939,20 @@
     ],
     "tasks": [],
     "modalities": [
-      "Protein",
-      "Small Molecule"
+      "chemical-structure",
+      "molecular-structure"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "molecule",
+      "protein"
+    ],
+    "documentation": "https://www.bindingdb.org/rwd/bind/index.jsp",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://www.bindingdb.org/rwd/bind/index.jsp"
+    ]
   },
   {
     "id": "biocyc",
@@ -662,10 +965,20 @@
     ],
     "tasks": [],
     "modalities": [
-      "Pathway"
+      "genomics"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "gene",
+      "pathway",
+      "organism"
+    ],
+    "documentation": "https://biocyc.org/",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://biocyc.org/"
+    ]
   },
   {
     "id": "biogrid",
@@ -682,7 +995,16 @@
       "Protein"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "gene",
+      "protein"
+    ],
+    "documentation": "https://thebiogrid.org/",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://thebiogrid.org/"
+    ]
   },
   {
     "id": "cancer_cell_line_encyclopedia",
@@ -696,11 +1018,22 @@
     ],
     "tasks": [],
     "modalities": [
-      "Gene Expression",
-      "Small Molecule"
+      "genomics",
+      "transcriptomics"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "cell",
+      "gene",
+      "disease",
+      "drug"
+    ],
+    "documentation": "https://sites.broadinstitute.org/ccle/",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://sites.broadinstitute.org/ccle/"
+    ]
   },
   {
     "id": "catalogue_of_somatic_mutations_in_cancer_cosmic",
@@ -713,10 +1046,20 @@
     ],
     "tasks": [],
     "modalities": [
-      "Genomics"
+      "genomics"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "disease",
+      "gene",
+      "variant"
+    ],
+    "documentation": "https://cancer.sanger.ac.uk/cosmic",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://cancer.sanger.ac.uk/cosmic"
+    ]
   },
   {
     "id": "cath_database",
@@ -729,10 +1072,19 @@
     ],
     "tasks": [],
     "modalities": [
-      "Protein"
+      "molecular-structure",
+      "protein-sequence"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "protein"
+    ],
+    "documentation": "https://www.cathdb.info/",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://www.cathdb.info/"
+    ]
   },
   {
     "id": "cbioportal",
@@ -745,10 +1097,23 @@
     ],
     "tasks": [],
     "modalities": [
-      "Genomics"
+      "genomics",
+      "clinical"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "disease",
+      "gene",
+      "variant"
+    ],
+    "github": "https://github.com/cBioPortal/cbioportal",
+    "documentation": "https://www.cbioportal.org/",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://www.cbioportal.org/",
+      "https://github.com/cBioPortal/cbioportal"
+    ]
   },
   {
     "id": "cellminer_cross_database_cellminercdb",
@@ -760,13 +1125,23 @@
       "drug-cell-line-response",
       "interaction"
     ],
-    "tasks": [],
+    "tasks": [
+      "drug-response-prediction"
+    ],
     "modalities": [
-      "Gene Expression",
-      "Small Molecule"
+      "genomics"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "cell",
+      "drug",
+      "gene"
+    ],
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://discover.nci.nih.gov/cellminercdb/"
+    ]
   },
   {
     "id": "chebi",
@@ -795,10 +1170,20 @@
     ],
     "tasks": [],
     "modalities": [
-      "Small Molecule"
+      "chemical-structure"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "compound",
+      "molecule",
+      "protein"
+    ],
+    "documentation": "https://www.ebi.ac.uk/chembl/",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://www.ebi.ac.uk/chembl/"
+    ]
   },
   {
     "id": "chemspider",
@@ -827,10 +1212,19 @@
     ],
     "tasks": [],
     "modalities": [
-      "Clinical"
+      "clinical"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "disease",
+      "drug"
+    ],
+    "documentation": "https://clinicaltrials.gov/",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://clinicaltrials.gov/"
+    ]
   },
   {
     "id": "comparative_toxicogenomics_database",
@@ -844,11 +1238,20 @@
     ],
     "tasks": [],
     "modalities": [
-      "Gene",
-      "Small Molecule"
+      "knowledge-graph"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "compound",
+      "gene",
+      "disease"
+    ],
+    "documentation": "https://ctdbase.org/",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://ctdbase.org/"
+    ]
   },
   {
     "id": "critical_assessment_of_structure_prediction_casp",
@@ -877,10 +1280,21 @@
     ],
     "tasks": [],
     "modalities": [
-      "Single Cell"
+      "single-cell-rna-seq",
+      "transcriptomics"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "cell",
+      "gene",
+      "tissue"
+    ],
+    "documentation": "https://cellxgene.cziscience.com/",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://cellxgene.cziscience.com/"
+    ]
   },
   {
     "id": "davis_kinase_inhibitors_db",
@@ -911,10 +1325,21 @@
     ],
     "tasks": [],
     "modalities": [
-      "Genomics"
+      "genomics"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "cell",
+      "gene",
+      "disease",
+      "drug"
+    ],
+    "documentation": "https://depmap.org/portal/",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://depmap.org/portal/"
+    ]
   },
   {
     "id": "dgidb",
@@ -928,11 +1353,19 @@
     ],
     "tasks": [],
     "modalities": [
-      "Gene",
-      "Small Molecule"
+      "knowledge-graph"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "drug",
+      "gene"
+    ],
+    "documentation": "https://www.dgidb.org/",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://www.dgidb.org/"
+    ]
   },
   {
     "id": "diseases",
@@ -995,10 +1428,21 @@
     ],
     "tasks": [],
     "modalities": [
-      "Knowledge Graph"
+      "knowledge-graph"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "drug",
+      "disease",
+      "gene",
+      "pathway"
+    ],
+    "github": "https://github.com/SuLab/DrugMechDB",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://github.com/SuLab/DrugMechDB"
+    ]
   },
   {
     "id": "drug_repurposing_hub",
@@ -1011,10 +1455,20 @@
     ],
     "tasks": [],
     "modalities": [
-      "Small Molecule"
+      "chemical-structure"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "drug",
+      "protein",
+      "disease"
+    ],
+    "documentation": "https://repo-hub.broadinstitute.org/repurposing",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://repo-hub.broadinstitute.org/repurposing"
+    ]
   },
   {
     "id": "drugbank",
@@ -1027,10 +1481,19 @@
     ],
     "tasks": [],
     "modalities": [
-      "Disease"
+      "chemical-structure"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "disease",
+      "drug",
+      "protein"
+    ],
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://go.drugbank.com/"
+    ]
   },
   {
     "id": "drugcentral",
@@ -1043,10 +1506,20 @@
     ],
     "tasks": [],
     "modalities": [
-      "Small Molecule"
+      "chemical-structure"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "drug",
+      "protein",
+      "disease"
+    ],
+    "documentation": "https://drugcentral.org/",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://drugcentral.org/"
+    ]
   },
   {
     "id": "drugtargetcommons",
@@ -1059,10 +1532,19 @@
     ],
     "tasks": [],
     "modalities": [
-      "Small Molecule"
+      "chemical-structure"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "drug",
+      "protein"
+    ],
+    "documentation": "https://drugtargetcommons.fimm.fi/",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://drugtargetcommons.fimm.fi/"
+    ]
   },
   {
     "id": "encode",
@@ -1171,13 +1653,23 @@
       "drug-cell-line-response",
       "interaction"
     ],
-    "tasks": [],
+    "tasks": [
+      "drug-response-prediction"
+    ],
     "modalities": [
-      "Gene Expression",
-      "Small Molecule"
+      "genomics"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "cell",
+      "drug",
+      "gene"
+    ],
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://www.cancerrxgene.org/"
+    ]
   },
   {
     "id": "gnomad",
@@ -1621,6 +2113,22 @@
     "api": false
   },
   {
+    "id": "oncokb",
+    "name": "OncoKB",
+    "type": "database",
+    "url": "https://www.oncokb.org/",
+    "description": "Precision oncology knowledge base of cancer genes, variants, and therapeutic implications.",
+    "tags": [
+      "genome"
+    ],
+    "tasks": [],
+    "modalities": [
+      "Genomics"
+    ],
+    "organism": [],
+    "api": false
+  },
+  {
     "id": "open_targets_platform",
     "name": "Open Targets Platform",
     "type": "database",
@@ -1944,10 +2452,20 @@
     ],
     "tasks": [],
     "modalities": [
-      "Protein"
+      "knowledge-graph",
+      "proteomics"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "protein"
+    ],
+    "documentation": "https://string-db.org/help/api/",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://string-db.org/",
+      "https://string-db.org/help/api/"
+    ]
   },
   {
     "id": "the_genotype_tissue_expression_gtex",
@@ -2057,10 +2575,18 @@
     ],
     "tasks": [],
     "modalities": [
-      "Protein"
+      "protein-sequence"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "protein"
+    ],
+    "documentation": "https://www.uniprot.org/",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://www.uniprot.org/"
+    ]
   },
   {
     "id": "uniref",
@@ -2122,14 +2648,27 @@
       "spatial-foundation-models"
     ],
     "tasks": [
-      "Foundation Model"
+      "representation-learning"
     ],
     "modalities": [
-      "Single Cell",
-      "Spatial Transcriptomics"
+      "histopathology",
+      "spatial-transcriptomics"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "cell",
+      "gene",
+      "tissue"
+    ],
+    "methods": [
+      "autoencoder"
+    ],
+    "github": "https://github.com/ratschlab/aestetik",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://github.com/ratschlab/aestetik"
+    ]
   },
   {
     "id": "ai4chem_chemllm_7b_chat",
@@ -2161,14 +2700,27 @@
       "protein-structure-prediction-and-design"
     ],
     "tasks": [
-      "Foundation Model",
-      "Protein Structure Prediction"
+      "structure-prediction"
     ],
     "modalities": [
-      "Protein"
+      "molecular-structure",
+      "protein-sequence"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "molecule",
+      "protein",
+      "protein-complex"
+    ],
+    "methods": [
+      "diffusion"
+    ],
+    "github": "https://github.com/google-deepmind/alphafold3",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://github.com/google-deepmind/alphafold3"
+    ]
   },
   {
     "id": "ankh",
@@ -2405,6 +2957,26 @@
     "api": false
   },
   {
+    "id": "cellot",
+    "name": "CellOT",
+    "type": "model",
+    "url": "https://github.com/bunnech/cellot",
+    "description": "Neural optimal transport framework for predicting single-cell responses to drug and genetic perturbations.",
+    "tags": [
+      "drug-discovery",
+      "drug-perturbation"
+    ],
+    "tasks": [
+      "Drug Discovery",
+      "Drug Perturbation"
+    ],
+    "modalities": [
+      "Small Molecule"
+    ],
+    "organism": [],
+    "api": false
+  },
+  {
     "id": "cellplm",
     "name": "CellPLM",
     "type": "model",
@@ -2416,14 +2988,31 @@
       "transcriptomics-foundation-models"
     ],
     "tasks": [
-      "Foundation Model"
+      "foundation-model-pretraining",
+      "representation-learning"
     ],
     "modalities": [
-      "Single Cell",
-      "Transcriptomics"
+      "single-cell-rna-seq",
+      "transcriptomics"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "cell",
+      "gene"
+    ],
+    "methods": [
+      "self-supervised-learning",
+      "transformer"
+    ],
+    "year": 2023,
+    "github": "https://github.com/OmicsML/CellPLM",
+    "paper": "https://www.biorxiv.org/content/10.1101/2023.10.03.560734v1",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://github.com/OmicsML/CellPLM",
+      "https://www.biorxiv.org/content/10.1101/2023.10.03.560734v1"
+    ]
   },
   {
     "id": "chai_1",
@@ -2476,13 +3065,26 @@
       "foundation-models"
     ],
     "tasks": [
-      "Foundation Model"
+      "representation-learning"
     ],
     "modalities": [
-      "Small Molecule"
+      "chemical-structure"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "molecule"
+    ],
+    "methods": [
+      "language-model",
+      "self-supervised-learning",
+      "transformer"
+    ],
+    "github": "https://github.com/seyonechithrananda/bert-loves-chemistry",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://github.com/seyonechithrananda/bert-loves-chemistry"
+    ]
   },
   {
     "id": "chemcpa",
@@ -2492,11 +3094,11 @@
     "description": "Compositional perturbation autoencoder for predicting single-cell transcriptional responses to unseen drug perturbations and dose combinations.",
     "tags": [
       "drug-discovery",
-      "drug-response-prediction"
+      "drug-perturbation"
     ],
     "tasks": [
       "Drug Discovery",
-      "Drug Response Prediction"
+      "Drug Perturbation"
     ],
     "modalities": [
       "Small Molecule"
@@ -2542,6 +3144,26 @@
     "api": false
   },
   {
+    "id": "cmonge",
+    "name": "CMonge",
+    "type": "model",
+    "url": "https://github.com/AI4SCR/conditional-monge-gap",
+    "description": "Conditional optimal transport model for generalizable single-cell perturbation response prediction across drugs and doses.",
+    "tags": [
+      "drug-discovery",
+      "drug-perturbation"
+    ],
+    "tasks": [
+      "Drug Discovery",
+      "Drug Perturbation"
+    ],
+    "modalities": [
+      "Small Molecule"
+    ],
+    "organism": [],
+    "api": false
+  },
+  {
     "id": "concerto",
     "name": "Concerto",
     "type": "model",
@@ -2574,14 +3196,27 @@
       "spatial-foundation-models"
     ],
     "tasks": [
-      "Foundation Model"
+      "foundation-model-pretraining",
+      "representation-learning"
     ],
     "modalities": [
-      "Single Cell",
-      "Spatial Transcriptomics"
+      "histopathology",
+      "imaging"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "tissue"
+    ],
+    "methods": [
+      "contrastive-learning",
+      "transformer"
+    ],
+    "github": "https://github.com/mahmoodlab/CONCH",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://github.com/mahmoodlab/CONCH"
+    ]
   },
   {
     "id": "cyclecdr",
@@ -2591,11 +3226,11 @@
     "description": "Interpretable cycle-consistency framework for modeling cellular responses to drug perturbations.",
     "tags": [
       "drug-discovery",
-      "drug-response-prediction"
+      "drug-perturbation"
     ],
     "tasks": [
       "Drug Discovery",
-      "Drug Response Prediction"
+      "Drug Perturbation"
     ],
     "modalities": [
       "Small Molecule"
@@ -2715,14 +3350,23 @@
       "spatial-foundation-models"
     ],
     "tasks": [
-      "Foundation Model"
+      "regression"
     ],
     "modalities": [
-      "Single Cell",
-      "Spatial Transcriptomics"
+      "histopathology",
+      "spatial-transcriptomics"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "gene",
+      "tissue"
+    ],
+    "github": "https://github.com/ratschlab/DeepSpot",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://github.com/ratschlab/DeepSpot"
+    ]
   },
   {
     "id": "deepspot_m",
@@ -2736,14 +3380,25 @@
       "spatial-foundation-models"
     ],
     "tasks": [
-      "Foundation Model"
+      "foundation-model-pretraining",
+      "regression"
     ],
     "modalities": [
-      "Single Cell",
-      "Spatial Transcriptomics"
+      "histopathology",
+      "spatial-transcriptomics",
+      "transcriptomics"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "gene",
+      "tissue"
+    ],
+    "github": "https://github.com/ratschlab/DeepSpotM",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://github.com/ratschlab/DeepSpotM"
+    ]
   },
   {
     "id": "deepspot2cell",
@@ -2757,14 +3412,24 @@
       "spatial-foundation-models"
     ],
     "tasks": [
-      "Foundation Model"
+      "regression"
     ],
     "modalities": [
-      "Single Cell",
-      "Spatial Transcriptomics"
+      "histopathology",
+      "spatial-transcriptomics"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "cell",
+      "gene",
+      "tissue"
+    ],
+    "github": "https://github.com/ratschlab/DeepSpot2Cell",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://github.com/ratschlab/DeepSpot2Cell"
+    ]
   },
   {
     "id": "dgdrp",
@@ -2797,14 +3462,29 @@
       "molecular-generation"
     ],
     "tasks": [
-      "Drug Discovery",
-      "Molecular Generation"
+      "docking"
     ],
     "modalities": [
-      "Small Molecule"
+      "molecular-structure"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "molecule",
+      "protein"
+    ],
+    "methods": [
+      "diffusion",
+      "geometric-deep-learning"
+    ],
+    "year": 2023,
+    "github": "https://github.com/gcorso/DiffDock",
+    "paper": "https://openreview.net/forum?id=kKF8_K-mBbS",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://github.com/gcorso/DiffDock",
+      "https://openreview.net/forum?id=kKF8_K-mBbS"
+    ]
   },
   {
     "id": "diffsbdd",
@@ -2977,14 +3657,28 @@
       "protein-structure-prediction-and-design"
     ],
     "tasks": [
-      "Foundation Model",
-      "Protein Structure Prediction"
+      "protein-sequence-design",
+      "representation-learning"
     ],
     "modalities": [
-      "Protein"
+      "molecular-structure",
+      "protein-sequence"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "protein"
+    ],
+    "methods": [
+      "generative-model",
+      "language-model",
+      "transformer"
+    ],
+    "github": "https://github.com/evolutionaryscale/esm",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://github.com/evolutionaryscale/esm"
+    ]
   },
   {
     "id": "esmfold",
@@ -2998,14 +3692,28 @@
       "protein-structure-prediction-and-design"
     ],
     "tasks": [
-      "Foundation Model",
-      "Protein Structure Prediction"
+      "representation-learning",
+      "structure-prediction"
     ],
     "modalities": [
-      "Protein"
+      "molecular-structure",
+      "protein-sequence"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "protein"
+    ],
+    "methods": [
+      "language-model",
+      "transformer"
+    ],
+    "year": 2023,
+    "github": "https://github.com/facebookresearch/esm",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://github.com/facebookresearch/esm"
+    ]
   },
   {
     "id": "evo",
@@ -3059,13 +3767,26 @@
       "protein-foundation-models"
     ],
     "tasks": [
-      "Foundation Model"
+      "representation-learning"
     ],
     "modalities": [
-      "Protein"
+      "protein-sequence"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "protein"
+    ],
+    "methods": [
+      "language-model",
+      "self-supervised-learning",
+      "transformer"
+    ],
+    "github": "https://github.com/facebookresearch/esm",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://github.com/facebookresearch/esm"
+    ]
   },
   {
     "id": "gears",
@@ -3100,14 +3821,31 @@
       "single-cell-foundation-models"
     ],
     "tasks": [
-      "Foundation Model"
+      "foundation-model-pretraining",
+      "representation-learning"
     ],
     "modalities": [
-      "Multi-Omics",
-      "Single Cell"
+      "single-cell-rna-seq",
+      "transcriptomics"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "cell",
+      "gene"
+    ],
+    "methods": [
+      "self-supervised-learning",
+      "transformer"
+    ],
+    "year": 2024,
+    "github": "https://github.com/xCompass-AI/GeneCompass",
+    "paper": "https://www.nature.com/articles/s41422-024-01034-y",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://github.com/xCompass-AI/GeneCompass",
+      "https://www.nature.com/articles/s41422-024-01034-y"
+    ]
   },
   {
     "id": "geneformer",
@@ -3121,14 +3859,33 @@
       "transcriptomics-foundation-models"
     ],
     "tasks": [
-      "Foundation Model"
+      "classification",
+      "foundation-model-pretraining",
+      "perturbation-prediction",
+      "representation-learning"
     ],
     "modalities": [
-      "Single Cell",
-      "Transcriptomics"
+      "single-cell-rna-seq",
+      "transcriptomics"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "cell",
+      "gene"
+    ],
+    "methods": [
+      "self-supervised-learning",
+      "transformer"
+    ],
+    "year": 2023,
+    "documentation": "https://geneformer.readthedocs.io/",
+    "paper": "https://www.nature.com/articles/s41586-023-06139-9",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://huggingface.co/ctheodoris/Geneformer",
+      "https://www.nature.com/articles/s41586-023-06139-9"
+    ]
   },
   {
     "id": "genegpt",
@@ -3158,13 +3915,31 @@
       "llm-for-biology"
     ],
     "tasks": [
-      "Language Modeling"
+      "batch-correction",
+      "classification",
+      "representation-learning"
     ],
     "modalities": [
-      "Text"
+      "single-cell-rna-seq",
+      "transcriptomics"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "cell",
+      "gene"
+    ],
+    "methods": [
+      "language-model"
+    ],
+    "year": 2023,
+    "github": "https://github.com/yiqunchen/GenePT",
+    "paper": "https://www.biorxiv.org/content/10.1101/2023.10.16.562533v2",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://github.com/yiqunchen/GenePT",
+      "https://www.biorxiv.org/content/10.1101/2023.10.16.562533v2"
+    ]
   },
   {
     "id": "gigapath",
@@ -3178,14 +3953,27 @@
       "spatial-foundation-models"
     ],
     "tasks": [
-      "Foundation Model"
+      "foundation-model-pretraining",
+      "representation-learning"
     ],
     "modalities": [
-      "Single Cell",
-      "Spatial Transcriptomics"
+      "histopathology",
+      "imaging"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "tissue"
+    ],
+    "methods": [
+      "self-supervised-learning",
+      "transformer"
+    ],
+    "github": "https://github.com/prov-gigapath/prov-gigapath",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://github.com/prov-gigapath/prov-gigapath"
+    ]
   },
   {
     "id": "glue",
@@ -3260,13 +4048,26 @@
       "foundation-models"
     ],
     "tasks": [
-      "Foundation Model"
+      "representation-learning"
     ],
     "modalities": [
-      "Small Molecule"
+      "chemical-structure"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "molecule"
+    ],
+    "methods": [
+      "graph-neural-network",
+      "self-supervised-learning",
+      "transformer"
+    ],
+    "github": "https://github.com/tencent-ailab/grover",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://github.com/tencent-ailab/grover"
+    ]
   },
   {
     "id": "hidra",
@@ -3524,13 +4325,26 @@
       "foundation-models"
     ],
     "tasks": [
-      "Foundation Model"
+      "representation-learning"
     ],
     "modalities": [
-      "Small Molecule"
+      "chemical-structure"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "molecule"
+    ],
+    "methods": [
+      "language-model",
+      "self-supervised-learning",
+      "transformer"
+    ],
+    "github": "https://github.com/IBM/molformer",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://github.com/IBM/molformer"
+    ]
   },
   {
     "id": "molgpt",
@@ -3699,14 +4513,33 @@
       "spatial-foundation-models"
     ],
     "tasks": [
-      "Foundation Model"
+      "foundation-model-pretraining",
+      "representation-learning"
     ],
     "modalities": [
-      "Single Cell",
-      "Spatial Transcriptomics"
+      "single-cell-rna-seq",
+      "spatial-transcriptomics",
+      "transcriptomics"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "cell",
+      "gene",
+      "tissue"
+    ],
+    "methods": [
+      "self-supervised-learning",
+      "transformer"
+    ],
+    "year": 2024,
+    "github": "https://github.com/theislab/nicheformer",
+    "paper": "https://doi.org/10.1101/2024.04.15.589472",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://github.com/theislab/nicheformer",
+      "https://doi.org/10.1101/2024.04.15.589472"
+    ]
   },
   {
     "id": "nucleotide_transformer",
@@ -3820,14 +4653,27 @@
       "spatial-foundation-models"
     ],
     "tasks": [
-      "Foundation Model"
+      "foundation-model-pretraining",
+      "representation-learning"
     ],
     "modalities": [
-      "Single Cell",
-      "Spatial Transcriptomics"
+      "histopathology",
+      "imaging"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "tissue"
+    ],
+    "methods": [
+      "self-supervised-learning",
+      "transformer"
+    ],
+    "documentation": "https://huggingface.co/owkin/phikon",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://huggingface.co/owkin/phikon"
+    ]
   },
   {
     "id": "plip",
@@ -3840,13 +4686,26 @@
       "multi-modal-foundation-models"
     ],
     "tasks": [
-      "Foundation Model"
+      "classification",
+      "representation-learning"
     ],
     "modalities": [
-      "Multi-Modal"
+      "histopathology",
+      "imaging"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "tissue"
+    ],
+    "methods": [
+      "contrastive-learning"
+    ],
+    "github": "https://github.com/PathologyFoundation/plip",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://github.com/PathologyFoundation/plip"
+    ]
   },
   {
     "id": "porpoise",
@@ -3875,11 +4734,11 @@
     "description": "Deep generative model for predicting transcriptional responses to novel chemical perturbations for drug discovery.",
     "tags": [
       "drug-discovery",
-      "drug-response-prediction"
+      "drug-perturbation"
     ],
     "tasks": [
       "Drug Discovery",
-      "Drug Response Prediction"
+      "Drug Perturbation"
     ],
     "modalities": [
       "Small Molecule"
@@ -3899,13 +4758,27 @@
       "protein-foundation-models"
     ],
     "tasks": [
-      "Foundation Model"
+      "protein-sequence-design",
+      "representation-learning"
     ],
     "modalities": [
-      "Protein"
+      "protein-sequence"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "protein"
+    ],
+    "methods": [
+      "generative-model",
+      "language-model",
+      "transformer"
+    ],
+    "github": "https://github.com/salesforce/progen",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://github.com/salesforce/progen"
+    ]
   },
   {
     "id": "proteinmpnn",
@@ -3919,14 +4792,27 @@
       "protein-structure-prediction-and-design"
     ],
     "tasks": [
-      "Foundation Model",
-      "Protein Structure Prediction"
+      "protein-sequence-design"
     ],
     "modalities": [
-      "Protein"
+      "molecular-structure",
+      "protein-sequence"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "protein"
+    ],
+    "methods": [
+      "graph-neural-network",
+      "message-passing-neural-network"
+    ],
+    "year": 2022,
+    "github": "https://github.com/dauparas/ProteinMPNN",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://github.com/dauparas/ProteinMPNN"
+    ]
   },
   {
     "id": "prottrans",
@@ -3940,13 +4826,26 @@
       "protein-foundation-models"
     ],
     "tasks": [
-      "Foundation Model"
+      "representation-learning"
     ],
     "modalities": [
-      "Protein"
+      "protein-sequence"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "protein"
+    ],
+    "methods": [
+      "language-model",
+      "self-supervised-learning",
+      "transformer"
+    ],
+    "github": "https://github.com/agemagician/ProtTrans",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://github.com/agemagician/ProtTrans"
+    ]
   },
   {
     "id": "recover",
@@ -4125,14 +5024,33 @@
       "transcriptomics-foundation-models"
     ],
     "tasks": [
-      "Foundation Model"
+      "cell-type-annotation",
+      "classification",
+      "foundation-model-pretraining"
     ],
     "modalities": [
-      "Single Cell",
-      "Transcriptomics"
+      "single-cell-rna-seq",
+      "transcriptomics"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "cell",
+      "gene"
+    ],
+    "methods": [
+      "language-model",
+      "self-supervised-learning",
+      "transformer"
+    ],
+    "year": 2022,
+    "github": "https://github.com/TencentAILabHealthcare/scBERT",
+    "paper": "https://www.nature.com/articles/s42256-022-00534-z",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://github.com/TencentAILabHealthcare/scBERT",
+      "https://www.nature.com/articles/s42256-022-00534-z"
+    ]
   },
   {
     "id": "scbutterfly",
@@ -4167,14 +5085,34 @@
       "transcriptomics-foundation-models"
     ],
     "tasks": [
-      "Foundation Model"
+      "cell-type-annotation",
+      "drug-response-prediction",
+      "foundation-model-pretraining",
+      "perturbation-prediction",
+      "representation-learning"
     ],
     "modalities": [
-      "Single Cell",
-      "Transcriptomics"
+      "single-cell-rna-seq",
+      "transcriptomics"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "cell",
+      "gene"
+    ],
+    "methods": [
+      "self-supervised-learning",
+      "transformer"
+    ],
+    "year": 2024,
+    "github": "https://github.com/biomap-research/scFoundation",
+    "paper": "https://www.nature.com/articles/s41592-024-02305-7",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://github.com/biomap-research/scFoundation",
+      "https://www.nature.com/articles/s41592-024-02305-7"
+    ]
   },
   {
     "id": "scgpt",
@@ -4188,14 +5126,37 @@
       "transcriptomics-foundation-models"
     ],
     "tasks": [
-      "Foundation Model"
+      "cell-type-annotation",
+      "foundation-model-pretraining",
+      "gene-regulatory-network-inference",
+      "perturbation-prediction",
+      "representation-learning"
     ],
     "modalities": [
-      "Single Cell",
-      "Transcriptomics"
+      "multi-omics",
+      "single-cell-rna-seq",
+      "transcriptomics"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "cell",
+      "gene"
+    ],
+    "methods": [
+      "generative-model",
+      "self-supervised-learning",
+      "transformer"
+    ],
+    "year": 2024,
+    "github": "https://github.com/bowang-lab/scGPT",
+    "documentation": "https://scgpt.readthedocs.io/en/latest/",
+    "paper": "https://www.nature.com/articles/s41592-024-02201-0",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://github.com/bowang-lab/scGPT",
+      "https://www.nature.com/articles/s41592-024-02201-0"
+    ]
   },
   {
     "id": "scgpt_spatial",
@@ -4209,14 +5170,35 @@
       "spatial-foundation-models"
     ],
     "tasks": [
-      "Foundation Model"
+      "foundation-model-pretraining",
+      "imputation",
+      "representation-learning"
     ],
     "modalities": [
-      "Single Cell",
-      "Spatial Transcriptomics"
+      "multi-omics",
+      "single-cell-rna-seq",
+      "spatial-transcriptomics"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "cell",
+      "gene",
+      "tissue"
+    ],
+    "methods": [
+      "generative-model",
+      "self-supervised-learning",
+      "transformer"
+    ],
+    "year": 2025,
+    "github": "https://github.com/bowang-lab/scGPT-spatial",
+    "paper": "https://www.biorxiv.org/content/10.1101/2025.02.05.636714v1",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://github.com/bowang-lab/scGPT-spatial",
+      "https://www.biorxiv.org/content/10.1101/2025.02.05.636714v1"
+    ]
   },
   {
     "id": "scmulan",
@@ -4230,14 +5212,31 @@
       "single-cell-foundation-models"
     ],
     "tasks": [
-      "Foundation Model"
+      "foundation-model-pretraining",
+      "representation-learning"
     ],
     "modalities": [
-      "Multi-Omics",
-      "Single Cell"
+      "epigenomics",
+      "multi-omics",
+      "proteomics",
+      "single-cell-rna-seq",
+      "transcriptomics"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "cell",
+      "gene"
+    ],
+    "methods": [
+      "language-model",
+      "transformer"
+    ],
+    "github": "https://github.com/SuperBianC/scMulan",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://github.com/SuperBianC/scMulan"
+    ]
   },
   {
     "id": "scpair",
@@ -4270,13 +5269,36 @@
       "llm-for-biology"
     ],
     "tasks": [
-      "Language Modeling"
+      "batch-correction",
+      "cell-type-annotation",
+      "foundation-model-pretraining",
+      "gene-regulatory-network-inference",
+      "imputation",
+      "representation-learning"
     ],
     "modalities": [
-      "Text"
+      "single-cell-rna-seq",
+      "transcriptomics"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "cell",
+      "gene"
+    ],
+    "methods": [
+      "self-supervised-learning",
+      "transformer"
+    ],
+    "year": 2025,
+    "github": "https://github.com/cantinilab/scPRINT",
+    "documentation": "https://www.jkobject.com/scPRINT/",
+    "paper": "https://www.nature.com/articles/s41467-025-58699-1",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://github.com/cantinilab/scPRINT",
+      "https://www.nature.com/articles/s41467-025-58699-1"
+    ]
   },
   {
     "id": "sei",
@@ -4472,14 +5494,29 @@
       "transcriptomics-foundation-models"
     ],
     "tasks": [
-      "Foundation Model"
+      "foundation-model-pretraining",
+      "representation-learning"
     ],
     "modalities": [
-      "Single Cell",
-      "Transcriptomics"
+      "single-cell-rna-seq",
+      "transcriptomics"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "cell"
+    ],
+    "methods": [
+      "self-supervised-learning"
+    ],
+    "year": 2026,
+    "github": "https://github.com/snap-stanford/UCE",
+    "paper": "https://www.nature.com/articles/s41586-026-10689-z",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://github.com/snap-stanford/UCE",
+      "https://www.nature.com/articles/s41586-026-10689-z"
+    ]
   },
   {
     "id": "uni",
@@ -4493,14 +5530,27 @@
       "spatial-foundation-models"
     ],
     "tasks": [
-      "Foundation Model"
+      "foundation-model-pretraining",
+      "representation-learning"
     ],
     "modalities": [
-      "Single Cell",
-      "Spatial Transcriptomics"
+      "histopathology",
+      "imaging"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "tissue"
+    ],
+    "methods": [
+      "self-supervised-learning",
+      "transformer"
+    ],
+    "github": "https://github.com/mahmoodlab/UNI",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://github.com/mahmoodlab/UNI"
+    ]
   },
   {
     "id": "uni_mol",
@@ -4514,13 +5564,31 @@
       "foundation-models"
     ],
     "tasks": [
-      "Foundation Model"
+      "docking",
+      "representation-learning"
     ],
     "modalities": [
-      "Small Molecule"
+      "chemical-structure",
+      "molecular-structure"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "molecule",
+      "protein"
+    ],
+    "methods": [
+      "self-supervised-learning",
+      "transformer"
+    ],
+    "year": 2023,
+    "github": "https://github.com/deepmodeling/Uni-Mol",
+    "paper": "https://openreview.net/forum?id=6K2RM6wVqKu",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://github.com/deepmodeling/Uni-Mol",
+      "https://openreview.net/forum?id=6K2RM6wVqKu"
+    ]
   },
   {
     "id": "unitednet",
@@ -4590,9 +5658,23 @@
     "tasks": [
       "Preprocessing"
     ],
-    "modalities": [],
+    "modalities": [
+      "dna-sequence",
+      "protein-sequence"
+    ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "gene",
+      "protein"
+    ],
+    "github": "https://github.com/biopython/biopython",
+    "documentation": "https://biopython.org/wiki/Documentation",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://github.com/biopython/biopython",
+      "https://biopython.org/"
+    ]
   },
   {
     "id": "casper",
@@ -4622,9 +5704,22 @@
     "tasks": [
       "Preprocessing"
     ],
-    "modalities": [],
+    "modalities": [
+      "spatial-transcriptomics"
+    ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "cell",
+      "tissue"
+    ],
+    "github": "https://github.com/CSOgroup/cellcharter",
+    "documentation": "https://cellcharter.readthedocs.io/",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://github.com/CSOgroup/cellcharter",
+      "https://cellcharter.readthedocs.io/"
+    ]
   },
   {
     "id": "cellchat",
@@ -4638,9 +5733,20 @@
     "tasks": [
       "Preprocessing"
     ],
-    "modalities": [],
+    "modalities": [
+      "single-cell-rna-seq"
+    ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "cell",
+      "gene"
+    ],
+    "github": "https://github.com/sqjin/CellChat",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://github.com/sqjin/CellChat"
+    ]
   },
   {
     "id": "celltypist",
@@ -4652,11 +5758,24 @@
       "preprocessing-tools"
     ],
     "tasks": [
-      "Preprocessing"
+      "cell-type-annotation"
     ],
-    "modalities": [],
+    "modalities": [
+      "single-cell-rna-seq"
+    ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "cell",
+      "gene"
+    ],
+    "github": "https://github.com/Teichlab/celltypist",
+    "documentation": "https://celltypist.readthedocs.io/",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://github.com/Teichlab/celltypist",
+      "https://celltypist.readthedocs.io/"
+    ]
   },
   {
     "id": "chatspatial",
@@ -4718,9 +5837,23 @@
     "tasks": [
       "Preprocessing"
     ],
-    "modalities": [],
+    "modalities": [
+      "chemical-structure",
+      "molecular-structure"
+    ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "molecule",
+      "protein"
+    ],
+    "github": "https://github.com/deepchem/deepchem",
+    "documentation": "https://deepchem.readthedocs.io/",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://github.com/deepchem/deepchem",
+      "https://deepchem.readthedocs.io/"
+    ]
   },
   {
     "id": "deeptalk",
@@ -4942,9 +6075,21 @@
     "tasks": [
       "Preprocessing"
     ],
-    "modalities": [],
+    "modalities": [
+      "chemical-structure"
+    ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "molecule"
+    ],
+    "github": "https://github.com/rdkit/rdkit",
+    "documentation": "https://www.rdkit.org/docs/",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://github.com/rdkit/rdkit",
+      "https://www.rdkit.org/docs/"
+    ]
   },
   {
     "id": "scanpy",
@@ -4958,9 +6103,22 @@
     "tasks": [
       "Preprocessing"
     ],
-    "modalities": [],
+    "modalities": [
+      "single-cell-rna-seq"
+    ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "cell",
+      "gene"
+    ],
+    "github": "https://github.com/scverse/scanpy",
+    "documentation": "https://scanpy.readthedocs.io/en/stable/",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://github.com/scverse/scanpy",
+      "https://scanpy.readthedocs.io/en/stable/"
+    ]
   },
   {
     "id": "scenic",
@@ -5022,9 +6180,23 @@
     "tasks": [
       "Preprocessing"
     ],
-    "modalities": [],
+    "modalities": [
+      "single-cell-rna-seq",
+      "multi-omics"
+    ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "cell",
+      "gene"
+    ],
+    "github": "https://github.com/scverse/scvi-tools",
+    "documentation": "https://docs.scvi-tools.org/",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://github.com/scverse/scvi-tools",
+      "https://docs.scvi-tools.org/"
+    ]
   },
   {
     "id": "seqbench",
@@ -5054,9 +6226,22 @@
     "tasks": [
       "Preprocessing"
     ],
-    "modalities": [],
+    "modalities": [
+      "single-cell-rna-seq"
+    ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "cell",
+      "gene"
+    ],
+    "github": "https://github.com/satijalab/seurat",
+    "documentation": "https://satijalab.org/seurat/",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://github.com/satijalab/seurat",
+      "https://satijalab.org/seurat/"
+    ]
   },
   {
     "id": "squidpy",
@@ -5070,9 +6255,22 @@
     "tasks": [
       "Preprocessing"
     ],
-    "modalities": [],
+    "modalities": [
+      "spatial-transcriptomics"
+    ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "cell",
+      "tissue"
+    ],
+    "github": "https://github.com/scverse/squidpy",
+    "documentation": "https://squidpy.readthedocs.io/",
+    "last_checked": "2026-08-08",
+    "metadata_sources": [
+      "https://github.com/scverse/squidpy",
+      "https://squidpy.readthedocs.io/"
+    ]
   },
   {
     "id": "stagate",

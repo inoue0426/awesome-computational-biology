@@ -7,6 +7,8 @@ on:
     paths:
       - README.md
       - data/resources.yml
+      - data/enrichment.yml
+      - 'data/enrichment.*.yml'
       - scripts/*.py
       - scripts/**/*.py
 
@@ -42,7 +44,10 @@ jobs:
 
       - name: Sync From README
         if: contains(steps.changes.outputs.changed, 'README.md')
-        run: uv run python scripts/sync_resources_from_readme.py
+        run: uv run --with pyyaml python scripts/sync_resources_from_readme.py
+
+      - name: Validate Resource Schema
+        run: uv run --with pyyaml python scripts/validate_resources.py
 
       - name: Build Artifacts
         run: uv run --with pyyaml python scripts/build_resources.py
