@@ -159,7 +159,9 @@
     "bowang",
     "ctheodoris",
     "OpenAI",
-    "GPT"
+    "GPT",
+    "nanobody",
+    "thermostability"
   ],
   "ignorePaths": [
     "node_modules/**"
