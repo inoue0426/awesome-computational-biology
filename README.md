@@ -63,6 +63,7 @@ Browse and search the resources via the [GitHub Pages UI](https://inoue0426.gith
       - [Compound-Protein Interaction](#compound-protein-interaction)
       - [Molecular Generation](#molecular-generation)
     - [LLM for Biology](#llm-for-biology)
+    - [Nanobody Thermostability using Bayesian Prediction](#nanobody-thermostability-using-bayesian-prediction)
     - [Foundation Models](#foundation-models)
       - [Single-cell Foundation Models](#single-cell-foundation-models)
         - [Transcriptomics Foundation Models](#transcriptomics-foundation-models)
@@ -383,6 +384,10 @@ Browse and search the resources via the [GitHub Pages UI](https://inoue0426.gith
 - [MolT5](https://github.com/blender-nlp/MolT5) — Language model for molecular tasks bridging text and SMILES, enabling molecule captioning and text-driven molecule generation.
 - [ChatDrug](https://github.com/chao1224/ChatDrug) — LLM-based conversational pipeline for drug discovery, using natural language prompts for iterative drug editing and optimization.
 - [CASSIA](https://github.com/ElliotXie/CASSIA) — Multi-agent LLM for reference-free, interpretable cell-type annotation of single-cell RNA-seq data, with dedicated annotation, validation, scoring, and reporting agents.
+
+### Nanobody Thermostability using Bayesian Prediction
+
+- [NbBayesLM](https://www.frontiersin.org/journals/bioinformatics/articles/10.3389/fbinf.2026.1832968/full) — Bayesian neural network integrating protein language model embeddings and physicochemical features to predict nanobody thermostability with uncertainty estimates.
 
 ### Foundation Models
 
