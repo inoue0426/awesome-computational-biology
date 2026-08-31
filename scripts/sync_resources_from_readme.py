@@ -46,10 +46,6 @@ HEADER = (
 HEADING_RE = re.compile(r"^(#{2,5})\s+(.*)")
 BULLET_RE = re.compile(r"^- \[(.+?)\]\((.+?)\)\s+\u2014\s+(.*)")
 
-# ── Tag-based mappings for tasks and modalities ──────────────────────────
-# Each key is a tag (derived from a README heading); values are the labels
-# that should appear in the UI filter dropdowns.
-
 TAG_TO_TASKS: dict[str, list[str]] = {
     "drug-response-prediction": ["Drug Response Prediction"],
     "drug-perturbation": ["Drug Perturbation"],
@@ -58,6 +54,7 @@ TAG_TO_TASKS: dict[str, list[str]] = {
     "compound-protein-interaction": ["Compound-Protein Interaction"],
     "molecular-generation": ["Molecular Generation"],
     "drug-discovery": ["Drug Discovery"],
+    "protein-property-prediction": ["Protein Property Prediction"],
     "llm-for-biology": ["Language Modeling"],
     "single-cell-foundation-models": ["Foundation Model"],
     "protein-foundation-models": ["Foundation Model"],
@@ -97,6 +94,7 @@ TAG_TO_MODALITIES: dict[str, list[str]] = {
     "compound-protein-interaction": ["Small Molecule", "Protein"],
     "molecular-generation": ["Small Molecule"],
     "drug-discovery": ["Small Molecule"],
+    "protein-property-prediction": ["Protein"],
     "llm-for-biology": ["Text"],
     "single-cell-foundation-models": ["Single Cell"],
     "protein-foundation-models": ["Protein"],
@@ -114,14 +112,6 @@ TAG_TO_MODALITIES: dict[str, list[str]] = {
 
 
 def tagify(value: str) -> str:
-    """Normalize a heading into a tag.
-
-    Args:
-        value: Heading text.
-
-    Returns:
-        Normalized tag string.
-    """
     value = value.lower().strip()
     value = value.replace("&", "and")
     value = re.sub(r"[^a-z0-9\s-]", "", value)
@@ -131,14 +121,6 @@ def tagify(value: str) -> str:
 
 
 def slugify(value: str) -> str:
-    """Normalize a name into a slug id.
-
-    Args:
-        value: Resource name.
-
-    Returns:
-        Snake_case slug.
-    """
     value = value.lower().strip()
     value = re.sub(r"[^a-z0-9]+", "_", value)
     value = re.sub(r"_+", "_", value)
@@ -146,14 +128,6 @@ def slugify(value: str) -> str:
 
 
 def parse_readme(readme_text: str) -> list[dict[str, Any]]:
-    """Parse README list items into raw entry dictionaries.
-
-    Args:
-        readme_text: Full README content.
-
-    Returns:
-        List of raw entry dicts.
-    """
     section = None
     subsection = None
     subsub = None
@@ -201,19 +175,7 @@ def parse_readme(readme_text: str) -> list[dict[str, Any]]:
     return entries
 
 
-def _derive_from_tags(
-    tags: list[str],
-    mapping: dict[str, list[str]],
-) -> list[str]:
-    """Derive unique sorted values from tags using a mapping.
-
-    Args:
-        tags: List of tag strings.
-        mapping: Mapping from tag to list of values.
-
-    Returns:
-        Sorted deduplicated list of derived values.
-    """
+def _derive_from_tags(tags: list[str], mapping: dict[str, list[str]]) -> list[str]:
     result: set[str] = set()
     for tag in tags:
         for val in mapping.get(tag, []):
@@ -222,14 +184,6 @@ def _derive_from_tags(
 
 
 def merge_entries(raw_entries: list[dict[str, Any]]) -> list[dict[str, Any]]:
-    """Merge duplicate entries and map headings to resource fields.
-
-    Args:
-        raw_entries: Raw parsed entries from README.
-
-    Returns:
-        Normalized entries for YAML output.
-    """
     merged: dict[tuple[str, str], dict[str, Any]] = {}
 
     for entry in raw_entries:
@@ -290,65 +244,33 @@ def merge_entries(raw_entries: list[dict[str, Any]]) -> list[dict[str, Any]]:
 
 
 def yaml_quote(value: str) -> str:
-    """Return a YAML-safe double-quoted string.
-
-    Args:
-        value: Input string.
-
-    Returns:
-        Quoted string with escapes.
-    """
     escaped = value.replace("\\", "\\\\").replace('"', '\\"')
     return f"\"{escaped}\""
 
 
 def format_entry(entry: dict[str, Any]) -> str:
-    """Format a resource entry into YAML lines.
-
-    Args:
-        entry: Normalized resource entry.
-
-    Returns:
-        YAML string for one entry.
-    """
     lines = [f"  - id: {entry['id']}"]
     lines.append(f"    name: {yaml_quote(entry['name'])}")
     lines.append(f"    type: {entry['type']}")
     lines.append(f"    url: {entry['url']}")
     lines.append(f"    description: {yaml_quote(entry['description'])}")
     tags = entry.get("tags", [])
-    if tags:
-        lines.append(f"    tags: [{', '.join(tags)}]")
-    else:
-        lines.append("    tags: []")
+    lines.append(f"    tags: [{', '.join(tags)}]" if tags else "    tags: []")
     tasks = entry.get("tasks", [])
-    if tasks:
-        lines.append(f"    tasks: [{', '.join(tasks)}]")
-    else:
-        lines.append("    tasks: []")
+    lines.append(f"    tasks: [{', '.join(tasks)}]" if tasks else "    tasks: []")
     modalities = entry.get("modalities", [])
-    if modalities:
-        lines.append(f"    modalities: [{', '.join(modalities)}]")
-    else:
-        lines.append("    modalities: []")
+    lines.append(f"    modalities: [{', '.join(modalities)}]" if modalities else "    modalities: []")
     lines.append("    organism: []")
     lines.append(f"    api: {'true' if entry.get('api') else 'false'}")
     return "\n".join(lines)
 
 
 def write_yaml(entries: list[dict[str, Any]], output_path: Path) -> None:
-    """Write entries to data/resources.yml.
-
-    Args:
-        entries: Normalized entries.
-        output_path: Output file path.
-    """
     body = "\n\n".join(format_entry(entry) for entry in entries)
     output_path.write_text(HEADER + body + "\n", encoding="utf-8")
 
 
 def main() -> None:
-    """CLI entrypoint for syncing resources.yml from README."""
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--readme", type=Path, default=README_DEFAULT)
     parser.add_argument("--output", type=Path, default=OUTPUT_DEFAULT)
