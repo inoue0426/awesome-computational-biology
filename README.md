@@ -158,6 +158,7 @@ Browse and search the resources via the [GitHub Pages UI](https://inoue0426.gith
 - [Rfam](https://rfam.org/) — Database of RNA families with sequence alignments and consensus structures.
 - [ROADMAP Epigenomics](http://www.roadmapepigenomics.org/) — Reference epigenome maps for 111 primary human cell types and tissues, including histone modifications, chromatin accessibility, and DNA methylation.
 - [FANTOM5](https://fantom.gsc.riken.jp/5/) — Functional annotation of mammalian genome; comprehensive atlas of active enhancers, promoters, and transcription start sites across human and mouse cell types.
+- [siRNA Data Gravver](https://pypi.org/project/sirna-data-grabber/) - siRNA data to measure knockdown of 100+ genes
 
 ### Disease
 
