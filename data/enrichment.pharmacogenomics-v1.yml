@@ -100,7 +100,7 @@ resources:
       pre_post: false
       longitudinal: false
       drug_identity: true
-      dose: partial
+      dose: true
       smiles: partial
       clinical_outcome: false
       n_samples: "scPerturb integrated perturbation datasets"
