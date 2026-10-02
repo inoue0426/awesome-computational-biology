@@ -79,6 +79,7 @@ Supported v1 fields:
 
 | Field | Type | Meaning |
 |---|---|---|
+| `year` | integer | Representative primary publication or public release year. |
 | `species` | array of strings | Species represented in the dataset. |
 | `sample_type` | string | Primary unit, e.g. `patient` or `cell-line`. |
 | `biological_context` | string | High-level context such as `cancer` or `perturbation-screen`. |
