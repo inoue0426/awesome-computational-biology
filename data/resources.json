@@ -1155,6 +1155,7 @@
     "organism": [],
     "api": false,
     "dataset_profile": {
+      "year": 2025,
       "view_scope": "bison-benchmark-view",
       "readout": "bulk-rna",
       "n_profiles": 46748,
@@ -1214,6 +1215,7 @@
     "organism": [],
     "api": false,
     "dataset_profile": {
+      "year": 2024,
       "view_scope": "bison-benchmark-view",
       "readout": "bulk-rna",
       "n_profiles": 1813,
@@ -1273,6 +1275,7 @@
     "organism": [],
     "api": false,
     "dataset_profile": {
+      "year": 2026,
       "view_scope": "current-portal",
       "readout": "multi-omics",
       "n_profiles": ">50 PDXs",
@@ -4021,7 +4024,23 @@
     ],
     "modalities": [],
     "organism": [],
-    "api": false
+    "api": false,
+    "foundation_profile": {
+      "year": 2025,
+      "modalities": [
+        "atac"
+      ],
+      "pretraining_scale": "large atlas of scATAC-seq experiments",
+      "species": [
+        "human"
+      ],
+      "zero_shot": "limited",
+      "finetunable": true,
+      "weights": "unknown",
+      "code": "unknown",
+      "perturbation": false,
+      "spatial": false
+    }
   },
   {
     "id": "autoba",
@@ -4036,7 +4055,25 @@
     "tasks": [],
     "modalities": [],
     "organism": [],
-    "api": false
+    "api": false,
+    "agent_profile": {
+      "year": 2024,
+      "domains": [
+        "bioinformatics",
+        "omics",
+        "scientific-workflow"
+      ],
+      "architecture": "single-agent",
+      "tool_use": true,
+      "code_execution": true,
+      "web_retrieval": "limited",
+      "literature": "limited",
+      "omics": true,
+      "wet_lab": false,
+      "autonomous_experiment": true,
+      "human_in_loop": true,
+      "open_source": true
+    }
   },
   {
     "id": "babel",
@@ -4091,7 +4128,24 @@
     "tasks": [],
     "modalities": [],
     "organism": [],
-    "api": false
+    "api": false,
+    "agent_profile": {
+      "domains": [
+        "bioinformatics",
+        "genomics",
+        "literature"
+      ],
+      "architecture": "single-agent",
+      "tool_use": true,
+      "code_execution": true,
+      "web_retrieval": true,
+      "literature": true,
+      "omics": true,
+      "wet_lab": false,
+      "autonomous_experiment": "limited",
+      "human_in_loop": true,
+      "open_source": true
+    }
   },
   {
     "id": "bioagents",
@@ -4106,7 +4160,25 @@
     "tasks": [],
     "modalities": [],
     "organism": [],
-    "api": false
+    "api": false,
+    "agent_profile": {
+      "year": 2025,
+      "domains": [
+        "bioinformatics",
+        "genomics",
+        "scientific-workflow"
+      ],
+      "architecture": "multi-agent",
+      "tool_use": true,
+      "code_execution": "limited",
+      "web_retrieval": "limited",
+      "literature": "limited",
+      "omics": true,
+      "wet_lab": false,
+      "autonomous_experiment": "limited",
+      "human_in_loop": true,
+      "open_source": true
+    }
   },
   {
     "id": "biogpt",
@@ -4173,7 +4245,25 @@
     "tasks": [],
     "modalities": [],
     "organism": [],
-    "api": false
+    "api": false,
+    "agent_profile": {
+      "year": 2026,
+      "domains": [
+        "bioinformatics",
+        "omics",
+        "scientific-workflow"
+      ],
+      "architecture": "multi-agent",
+      "tool_use": true,
+      "code_execution": true,
+      "web_retrieval": "limited",
+      "literature": "limited",
+      "omics": true,
+      "wet_lab": false,
+      "autonomous_experiment": true,
+      "human_in_loop": true,
+      "open_source": true
+    }
   },
   {
     "id": "biomedagent",
@@ -4188,7 +4278,25 @@
     "tasks": [],
     "modalities": [],
     "organism": [],
-    "api": false
+    "api": false,
+    "agent_profile": {
+      "year": 2026,
+      "domains": [
+        "general-biomedicine",
+        "bioinformatics",
+        "omics"
+      ],
+      "architecture": "multi-agent",
+      "tool_use": true,
+      "code_execution": true,
+      "web_retrieval": "limited",
+      "literature": "limited",
+      "omics": true,
+      "wet_lab": false,
+      "autonomous_experiment": true,
+      "human_in_loop": true,
+      "open_source": true
+    }
   },
   {
     "id": "biomedclip",
@@ -4406,7 +4514,25 @@
     "tasks": [],
     "modalities": [],
     "organism": [],
-    "api": false
+    "api": false,
+    "agent_profile": {
+      "year": 2025,
+      "domains": [
+        "bioinformatics",
+        "literature",
+        "scientific-workflow"
+      ],
+      "architecture": "single-agent",
+      "tool_use": true,
+      "code_execution": true,
+      "web_retrieval": true,
+      "literature": true,
+      "omics": "limited",
+      "wet_lab": false,
+      "autonomous_experiment": "limited",
+      "human_in_loop": true,
+      "open_source": true
+    }
   },
   {
     "id": "bulkformer",
@@ -4532,7 +4658,25 @@
     ],
     "modalities": [],
     "organism": [],
-    "api": false
+    "api": false,
+    "foundation_profile": {
+      "year": 2026,
+      "modalities": [
+        "scrna",
+        "proteomics",
+        "multi-omics"
+      ],
+      "pretraining_scale": "co-assayed single-cell RNA and protein data",
+      "species": [
+        "human"
+      ],
+      "zero_shot": "limited",
+      "finetunable": true,
+      "weights": "unknown",
+      "code": "unknown",
+      "perturbation": false,
+      "spatial": false
+    }
   },
   {
     "id": "casanovo_foundation",
@@ -4958,7 +5102,23 @@
     ],
     "modalities": [],
     "organism": [],
-    "api": false
+    "api": false,
+    "foundation_profile": {
+      "year": 2025,
+      "modalities": [
+        "atac"
+      ],
+      "pretraining_scale": "1.97M scATAC-seq cells; 30 tissues; 6 disease contexts",
+      "species": [
+        "human"
+      ],
+      "zero_shot": true,
+      "finetunable": true,
+      "weights": true,
+      "code": true,
+      "perturbation": false,
+      "spatial": false
+    }
   },
   {
     "id": "clawbio",
@@ -5009,7 +5169,25 @@
     ],
     "modalities": [],
     "organism": [],
-    "api": false
+    "api": false,
+    "foundation_profile": {
+      "year": 2026,
+      "modalities": [
+        "scrna",
+        "atac",
+        "multi-omics"
+      ],
+      "pretraining_scale": "million-scale RNA-only, ATAC-only, and paired RNA-ATAC data",
+      "species": [
+        "human"
+      ],
+      "zero_shot": "limited",
+      "finetunable": true,
+      "weights": "unknown",
+      "code": "unknown",
+      "perturbation": true,
+      "spatial": false
+    }
   },
   {
     "id": "cmonge",
@@ -5660,7 +5838,23 @@
     ],
     "modalities": [],
     "organism": [],
-    "api": false
+    "api": false,
+    "foundation_profile": {
+      "year": 2025,
+      "modalities": [
+        "atac"
+      ],
+      "pretraining_scale": ">5.4M scATAC-seq cells across 37 tissues or cell lines",
+      "species": [
+        "human"
+      ],
+      "zero_shot": "limited",
+      "finetunable": true,
+      "weights": true,
+      "code": true,
+      "perturbation": true,
+      "spatial": false
+    }
   },
   {
     "id": "epifoundation",
@@ -5677,7 +5871,23 @@
     ],
     "modalities": [],
     "organism": [],
-    "api": false
+    "api": false,
+    "foundation_profile": {
+      "year": 2025,
+      "modalities": [
+        "atac"
+      ],
+      "pretraining_scale": "large-scale scATAC-seq pretraining with peak-to-gene alignment",
+      "species": [
+        "human"
+      ],
+      "zero_shot": "limited",
+      "finetunable": true,
+      "weights": "limited",
+      "code": "limited",
+      "perturbation": false,
+      "spatial": false
+    }
   },
   {
     "id": "esm_cambrian_esm_c",
@@ -6244,7 +6454,25 @@
     "tasks": [],
     "modalities": [],
     "organism": [],
-    "api": false
+    "api": false,
+    "agent_profile": {
+      "year": 2025,
+      "domains": [
+        "bioinformatics",
+        "gene-expression",
+        "scientific-workflow"
+      ],
+      "architecture": "multi-agent",
+      "tool_use": true,
+      "code_execution": true,
+      "web_retrieval": "limited",
+      "literature": true,
+      "omics": true,
+      "wet_lab": false,
+      "autonomous_experiment": true,
+      "human_in_loop": true,
+      "open_source": true
+    }
   },
   {
     "id": "genomi",
@@ -6259,7 +6487,25 @@
     "tasks": [],
     "modalities": [],
     "organism": [],
-    "api": false
+    "api": false,
+    "agent_profile": {
+      "year": 2026,
+      "domains": [
+        "genomics",
+        "precision-medicine",
+        "evidence-synthesis"
+      ],
+      "architecture": "agent-ecosystem",
+      "tool_use": true,
+      "code_execution": "limited",
+      "web_retrieval": "limited",
+      "literature": true,
+      "omics": "limited",
+      "wet_lab": false,
+      "autonomous_experiment": false,
+      "human_in_loop": true,
+      "open_source": true
+    }
   },
   {
     "id": "gigapath",
@@ -6530,7 +6776,23 @@
     ],
     "modalities": [],
     "organism": [],
-    "api": false
+    "api": false,
+    "foundation_profile": {
+      "year": 2026,
+      "modalities": [
+        "hic"
+      ],
+      "pretraining_scale": "hundreds of Hi-C assays; 118M contact-matrix submatrices",
+      "species": [
+        "multi-species"
+      ],
+      "zero_shot": "limited",
+      "finetunable": true,
+      "weights": "unknown",
+      "code": "unknown",
+      "perturbation": false,
+      "spatial": false
+    }
   },
   {
     "id": "hidra",
@@ -7122,9 +7384,10 @@
     "foundation_profile": {
       "year": 2026,
       "modalities": [
-        "mutation"
+        "mutation",
+        "copy-number"
       ],
-      "pretraining_scale": ">30K tumors with somatic genomic alterations",
+      "pretraining_scale": ">30K tumors with somatic genomic alterations including copy-number changes",
       "species": [
         "human"
       ],
@@ -7308,7 +7571,27 @@
     ],
     "modalities": [],
     "organism": [],
-    "api": false
+    "api": false,
+    "foundation_profile": {
+      "year": 2026,
+      "modalities": [
+        "proteomics",
+        "bulk-rna",
+        "scrna"
+      ],
+      "params": "4.9M",
+      "params_millions": 4.9,
+      "pretraining_scale": "48,837 proteomics profiles; 680,216 bulk RNA profiles; 4.55M single cells",
+      "species": [
+        "human"
+      ],
+      "zero_shot": "limited",
+      "finetunable": true,
+      "weights": true,
+      "code": true,
+      "perturbation": false,
+      "spatial": false
+    }
   },
   {
     "id": "openfold",
@@ -8206,7 +8489,25 @@
     ],
     "modalities": [],
     "organism": [],
-    "api": false
+    "api": false,
+    "foundation_profile": {
+      "year": 2025,
+      "modalities": [
+        "scrna",
+        "atac",
+        "multi-omics"
+      ],
+      "pretraining_scale": ">2.7M paired and unpaired single cells across tissues and species",
+      "species": [
+        "multi-species"
+      ],
+      "zero_shot": "limited",
+      "finetunable": true,
+      "weights": true,
+      "code": true,
+      "perturbation": "limited",
+      "spatial": false
+    }
   },
   {
     "id": "scbert",
@@ -8300,7 +8601,24 @@
     ],
     "modalities": [],
     "organism": [],
-    "api": false
+    "api": false,
+    "foundation_profile": {
+      "year": 2025,
+      "modalities": [
+        "methylation"
+      ],
+      "pretraining_scale": ">1M single-cell methylomes from human and mouse tissues",
+      "species": [
+        "human",
+        "mouse"
+      ],
+      "zero_shot": true,
+      "finetunable": true,
+      "weights": true,
+      "code": true,
+      "perturbation": false,
+      "spatial": false
+    }
   },
   {
     "id": "scfoundation",
@@ -8817,7 +9135,24 @@
     ],
     "modalities": [],
     "organism": [],
-    "api": false
+    "api": false,
+    "foundation_profile": {
+      "year": 2026,
+      "modalities": [
+        "mutation",
+        "copy-number"
+      ],
+      "pretraining_scale": "TCGA pan-cancer somatic SNVs and copy-number segments",
+      "species": [
+        "human"
+      ],
+      "zero_shot": "limited",
+      "finetunable": true,
+      "weights": true,
+      "code": true,
+      "perturbation": false,
+      "spatial": false
+    }
   },
   {
     "id": "tgsa",
@@ -9522,7 +9857,24 @@
     ],
     "modalities": [],
     "organism": [],
-    "api": false
+    "api": false,
+    "foundation_profile": {
+      "year": 2026,
+      "modalities": [
+        "proteomics",
+        "spatial"
+      ],
+      "pretraining_scale": "31-32 harmonized spatial-proteomics datasets across technologies",
+      "species": [
+        "human"
+      ],
+      "zero_shot": true,
+      "finetunable": true,
+      "weights": true,
+      "code": true,
+      "perturbation": false,
+      "spatial": true
+    }
   },
   {
     "id": "xpert",
