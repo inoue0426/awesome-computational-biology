@@ -27,7 +27,9 @@ The [Foundation Model Explorer](https://inoue0426.github.io/awesome-computationa
 
 The [Agent Explorer](https://inoue0426.github.io/awesome-computational-biology/agent-explorer.html) compares agentic AI systems by scientific domain, single- vs multi-agent architecture, tool/code execution, literature and web retrieval, omics and wet-lab support, autonomy, and human-in-the-loop design. The Agent Explorer table is sortable and supports domain, architecture, omics, code-execution, and year filters.
 
-Both explorer tables support sortable columns and focused filters for quick comparison.
+All explorer tables support sortable columns and focused filters for quick comparison, including a Recent (≥2025) toggle.
+
+The Pages home screen also summarizes total resources, profiled datasets, methods, foundation models, agents, and the most common foundation-model modalities.
 
 Chemical and genetic perturbation datasets can be filtered separately in the Dataset Explorer. Genetic screens can also be filtered by CRISPRi, CRISPRa, knockout, enhancer-targeting, combinatorial, or mixed perturbation modes, including mixed-resource collections.
 
