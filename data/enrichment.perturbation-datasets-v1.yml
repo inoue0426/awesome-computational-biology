@@ -1,3 +1,4 @@
+# Includes Bison benchmark coverage metadata.
 # Curated perturbation, patient, and PDX dataset profiles for Dataset Explorer.
 resources:
   tahoe_100m:
