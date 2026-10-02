@@ -270,6 +270,9 @@
       "https://biodev.github.io/BeatAML2/"
     ],
     "dataset_profile": {
+      "readout": "ex-vivo-viability",
+      "time": false,
+      "view_scope": "full-resource",
       "species": [
         "human"
       ],
@@ -354,6 +357,11 @@
       "https://portals.broadinstitute.org/ctrp/"
     ],
     "dataset_profile": {
+      "readout": "viability",
+      "n_compounds": ">400",
+      "n_contexts": "~900 cell lines",
+      "time": false,
+      "view_scope": "full-resource",
       "species": [
         "human"
       ],
@@ -483,7 +491,11 @@
     "organism": [],
     "api": false,
     "dataset_profile": {
+      "view_scope": "study-cohort",
       "readout": "bulk-rna",
+      "n_profiles": "317 pretreatment; 22 matched pre/post deeply profiled",
+      "n_contexts": 1,
+      "gene_panel": "transcriptome-wide",
       "time": true,
       "species": [
         "human"
@@ -606,6 +618,10 @@
       "https://lincsproject.org/LINCS/tools/workflows/find-the-best-place-to-obtain-the-lincs-l1000-data"
     ],
     "dataset_profile": {
+      "readout": "l1000",
+      "gene_panel": "978 landmark genes",
+      "time": true,
+      "view_scope": "full-resource",
       "species": [
         "human"
       ],
@@ -641,6 +657,7 @@
     "organism": [],
     "api": false,
     "dataset_profile": {
+      "view_scope": "bison-benchmark-view",
       "readout": "l1000",
       "n_profiles": 692787,
       "n_compounds": 9233,
@@ -685,6 +702,7 @@
     "organism": [],
     "api": false,
     "dataset_profile": {
+      "view_scope": "bison-benchmark-view",
       "readout": "l1000",
       "n_profiles": 333263,
       "n_compounds": 1760,
@@ -729,7 +747,11 @@
     "organism": [],
     "api": false,
     "dataset_profile": {
+      "view_scope": "full-resource",
       "readout": "single-cell-rna",
+      "n_compounds": 13,
+      "n_contexts": "100+ cell lines",
+      "gene_panel": "transcriptome-wide",
       "time": true,
       "species": [
         "human"
@@ -811,6 +833,7 @@
     "organism": [],
     "api": false,
     "dataset_profile": {
+      "view_scope": "bison-benchmark-view",
       "readout": "bulk-rna",
       "n_profiles": 46748,
       "n_compounds": 3770,
@@ -869,6 +892,7 @@
     "organism": [],
     "api": false,
     "dataset_profile": {
+      "view_scope": "bison-benchmark-view",
       "readout": "bulk-rna",
       "n_profiles": 1813,
       "n_compounds": 138,
@@ -927,7 +951,11 @@
     "organism": [],
     "api": false,
     "dataset_profile": {
+      "view_scope": "current-portal",
       "readout": "multi-omics",
+      "n_profiles": ">50 PDXs",
+      "n_contexts": "30 patients",
+      "gene_panel": "multi-omics",
       "time": false,
       "species": [
         "human",
@@ -1030,6 +1058,11 @@
       "https://depmap.org/portal/prism/"
     ],
     "dataset_profile": {
+      "readout": "viability",
+      "n_compounds": ">4,500",
+      "n_contexts": ">900 cell lines",
+      "time": false,
+      "view_scope": "full-resource",
       "species": [
         "human"
       ],
@@ -1104,6 +1137,7 @@
     "organism": [],
     "api": false,
     "dataset_profile": {
+      "view_scope": "bison-benchmark-view",
       "readout": "pseudobulk-rna",
       "n_profiles": 4974,
       "n_compounds": 186,
@@ -1178,6 +1212,10 @@
       "https://github.com/sanderlab/scPerturb"
     ],
     "dataset_profile": {
+      "readout": "single-cell-rna",
+      "gene_panel": "varies by source study",
+      "time": true,
+      "view_scope": "harmonized-collection",
       "species": [
         "human",
         "mouse"
@@ -1266,6 +1304,7 @@
     "organism": [],
     "api": false,
     "dataset_profile": {
+      "view_scope": "bison-benchmark-view",
       "readout": "single-cell-rna",
       "n_profiles": 67018,
       "n_compounds": 376,
@@ -1349,6 +1388,12 @@
       "https://www.cancer.gov/ccg/research/genome-sequencing/tcga"
     ],
     "dataset_profile": {
+      "readout": "multi-omics",
+      "n_profiles": ">11,000 patients",
+      "n_contexts": 33,
+      "gene_panel": "transcriptome-wide plus multi-omics",
+      "time": false,
+      "view_scope": "full-resource",
       "species": [
         "human"
       ],
@@ -1423,6 +1468,7 @@
     "organism": [],
     "api": false,
     "dataset_profile": {
+      "view_scope": "bison-benchmark-view",
       "readout": "bulk-rna",
       "n_profiles": 27517,
       "n_compounds": 2272,
@@ -1467,6 +1513,7 @@
     "organism": [],
     "api": false,
     "dataset_profile": {
+      "view_scope": "bison-benchmark-view",
       "readout": "bulk-rna",
       "n_profiles": 18139,
       "n_compounds": 1488,
@@ -2293,6 +2340,10 @@
       "https://www.cancerrxgene.org/"
     ],
     "dataset_profile": {
+      "readout": "viability",
+      "n_contexts": "~1,000 cell lines",
+      "time": false,
+      "view_scope": "full-resource",
       "species": [
         "human"
       ],
@@ -3460,7 +3511,21 @@
       "Small Molecule"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "method_profile": {
+      "task_family": "drug-perturbation",
+      "year": 2024,
+      "input": "expression + known attributes",
+      "drug_representation": "chemical descriptors",
+      "context_representation": "unknown latent attributes",
+      "output": "transcriptomic response",
+      "unseen_drug": true,
+      "unseen_context": true,
+      "dose": true,
+      "time": true,
+      "patient_transfer": false,
+      "code": true
+    }
   },
   {
     "id": "biomedclip",
@@ -3517,7 +3582,21 @@
       "Small Molecule"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "method_profile": {
+      "task_family": "drug-perturbation",
+      "year": 2026,
+      "input": "bulk/pseudobulk transcriptomics",
+      "drug_representation": "Morgan fingerprints + chemical tokens",
+      "context_representation": "control-derived context features + embeddings",
+      "output": "transcriptomic response",
+      "unseen_drug": true,
+      "unseen_context": "limited",
+      "dose": true,
+      "time": true,
+      "patient_transfer": false,
+      "code": false
+    }
   },
   {
     "id": "boltz_1",
@@ -3656,7 +3735,21 @@
       "Small Molecule"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "method_profile": {
+      "task_family": "drug-perturbation",
+      "year": 2025,
+      "input": "control/treated expression distributions",
+      "drug_representation": "molecular features",
+      "context_representation": "matched control distribution",
+      "output": "transported cell-state distribution",
+      "unseen_drug": true,
+      "unseen_context": true,
+      "dose": true,
+      "time": true,
+      "patient_transfer": false,
+      "code": true
+    }
   },
   {
     "id": "cellot",
@@ -3806,7 +3899,21 @@
       "Small Molecule"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "method_profile": {
+      "task_family": "drug-perturbation",
+      "year": 2022,
+      "input": "single-cell expression + covariates",
+      "drug_representation": "RDKit2D descriptors",
+      "context_representation": "cell covariates + basal state",
+      "output": "transcriptomic response",
+      "unseen_drug": true,
+      "unseen_context": "limited",
+      "dose": true,
+      "time": "limited",
+      "patient_transfer": false,
+      "code": true
+    }
   },
   {
     "id": "chief",
@@ -3863,7 +3970,21 @@
       "Small Molecule"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "method_profile": {
+      "task_family": "drug-perturbation",
+      "year": 2026,
+      "input": "source/target expression distributions",
+      "drug_representation": "RDKit2D descriptors",
+      "context_representation": "matched control distribution",
+      "output": "transported expression distribution",
+      "unseen_drug": true,
+      "unseen_context": true,
+      "dose": true,
+      "time": "limited",
+      "patient_transfer": false,
+      "code": true
+    }
   },
   {
     "id": "concerto",
@@ -4346,7 +4467,21 @@
       "Small Molecule"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "method_profile": {
+      "task_family": "drug-response-prediction",
+      "year": 2025,
+      "input": "multimodal tumor/cell-line features + targets",
+      "drug_representation": "target-aware drug representation",
+      "context_representation": "biological sample representation",
+      "output": "preclinical/clinical response",
+      "unseen_drug": true,
+      "unseen_context": "limited",
+      "dose": false,
+      "time": false,
+      "patient_transfer": true,
+      "code": false
+    }
   },
   {
     "id": "enformer",
@@ -4528,7 +4663,21 @@
       "Small Molecule"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "method_profile": {
+      "task_family": "drug-response-prediction",
+      "year": 2026,
+      "input": "pretreatment tumor transcriptomics",
+      "drug_representation": "drug targets + biomarkers",
+      "context_representation": "tumor transcriptomic context",
+      "output": "patient treatment response",
+      "unseen_drug": "limited",
+      "unseen_context": true,
+      "dose": false,
+      "time": false,
+      "patient_transfer": true,
+      "code": false
+    }
   },
   {
     "id": "gears",
@@ -4909,7 +5058,21 @@
       "Small Molecule"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "method_profile": {
+      "task_family": "drug-perturbation",
+      "year": 2025,
+      "input": "heterogeneous perturbation experiments",
+      "drug_representation": "learned perturbation representation",
+      "context_representation": "learned context representation",
+      "output": "molecular state",
+      "unseen_drug": true,
+      "unseen_context": true,
+      "dose": "limited",
+      "time": "limited",
+      "patient_transfer": false,
+      "code": true
+    }
   },
   {
     "id": "matcha",
@@ -5406,7 +5569,21 @@
       "Small Molecule"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "method_profile": {
+      "task_family": "drug-response-prediction",
+      "year": 2025,
+      "input": "pathway-aware multi-omics",
+      "drug_representation": "SMILES-derived representation",
+      "context_representation": "pathway-difference representation",
+      "output": "cell-line drug response",
+      "unseen_drug": "limited",
+      "unseen_context": "limited",
+      "dose": false,
+      "time": false,
+      "patient_transfer": false,
+      "code": true
+    }
   },
   {
     "id": "pathomicfusion",
@@ -5445,7 +5622,21 @@
       "Small Molecule"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "method_profile": {
+      "task_family": "drug-perturbation",
+      "year": 2025,
+      "input": "single-cell expression distributions",
+      "drug_representation": "molecular representation",
+      "context_representation": "conditional latent state",
+      "output": "cell-state distribution",
+      "unseen_drug": true,
+      "unseen_context": "limited",
+      "dose": "limited",
+      "time": "limited",
+      "patient_transfer": false,
+      "code": true
+    }
   },
   {
     "id": "perturbrx",
@@ -5465,7 +5656,21 @@
       "Small Molecule"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "method_profile": {
+      "task_family": "drug-response-prediction",
+      "year": 2026,
+      "input": "pretreatment tumor RNA-seq + perturbation pretraining",
+      "drug_representation": "drug embedding + treatment-conditioned transition",
+      "context_representation": "patient latent state",
+      "output": "patient treatment response",
+      "unseen_drug": "limited",
+      "unseen_context": true,
+      "dose": true,
+      "time": false,
+      "patient_transfer": true,
+      "code": false
+    }
   },
   {
     "id": "phikon",
@@ -5570,7 +5775,21 @@
       "Small Molecule"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "method_profile": {
+      "task_family": "drug-perturbation",
+      "year": 2026,
+      "input": "aggregate expression + context graph",
+      "drug_representation": "RDKit descriptors",
+      "context_representation": "context-specific gene graph",
+      "output": "transcriptomic response",
+      "unseen_drug": true,
+      "unseen_context": "limited",
+      "dose": true,
+      "time": true,
+      "patient_transfer": false,
+      "code": true
+    }
   },
   {
     "id": "prnet",
@@ -5590,7 +5809,21 @@
       "Small Molecule"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "method_profile": {
+      "task_family": "drug-perturbation",
+      "year": 2024,
+      "input": "basal expression + perturbation",
+      "drug_representation": "FCFP4 fingerprint",
+      "context_representation": "matched basal expression",
+      "output": "transcriptomic response",
+      "unseen_drug": true,
+      "unseen_context": "limited",
+      "dose": true,
+      "time": "limited",
+      "patient_transfer": false,
+      "code": true
+    }
   },
   {
     "id": "progen2",
@@ -5644,7 +5877,21 @@
       "Small Molecule"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "method_profile": {
+      "task_family": "drug-perturbation",
+      "year": 2024,
+      "input": "control expression + perturbation",
+      "drug_representation": "learned chemical representation",
+      "context_representation": "control-derived context",
+      "output": "gene-expression response",
+      "unseen_drug": true,
+      "unseen_context": true,
+      "dose": true,
+      "time": true,
+      "patient_transfer": false,
+      "code": true
+    }
   },
   {
     "id": "proteinmpnn",
@@ -6224,7 +6471,21 @@
       "Small Molecule"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "method_profile": {
+      "task_family": "drug-perturbation",
+      "year": 2026,
+      "input": "sets of cellular expression profiles",
+      "drug_representation": "perturbation embedding",
+      "context_representation": "cellular state",
+      "output": "transcriptomic response",
+      "unseen_drug": "limited",
+      "unseen_context": true,
+      "dose": "limited",
+      "time": "limited",
+      "patient_transfer": false,
+      "code": true
+    }
   },
   {
     "id": "targetdiff",
@@ -6284,7 +6545,21 @@
       "Small Molecule"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "method_profile": {
+      "task_family": "drug-response-prediction",
+      "year": 2026,
+      "input": "tumor transcriptomics + cell-line knowledge",
+      "drug_representation": "perturbation/gene-level representation",
+      "context_representation": "aligned tumor/cell-line representation",
+      "output": "patient drug response",
+      "unseen_drug": "limited",
+      "unseen_context": true,
+      "dose": false,
+      "time": false,
+      "patient_transfer": true,
+      "code": true
+    }
   },
   {
     "id": "toad",
@@ -6406,7 +6681,21 @@
       "Small Molecule"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "method_profile": {
+      "task_family": "drug-perturbation",
+      "year": 2026,
+      "input": "transcriptomics + biological knowledge",
+      "drug_representation": "knowledge-graph-informed perturbation representation",
+      "context_representation": "cellular context representation",
+      "output": "transcriptomic response",
+      "unseen_drug": true,
+      "unseen_context": true,
+      "dose": false,
+      "time": false,
+      "patient_transfer": false,
+      "code": true
+    }
   },
   {
     "id": "uce",
@@ -6574,7 +6863,21 @@
       "Small Molecule"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "method_profile": {
+      "task_family": "drug-perturbation",
+      "year": 2026,
+      "input": "transcriptomics + heterogeneous graph",
+      "drug_representation": "Uni-Mol + knowledge graph",
+      "context_representation": "basal expression + gene embeddings",
+      "output": "transcriptomic response",
+      "unseen_drug": true,
+      "unseen_context": true,
+      "dose": true,
+      "time": true,
+      "patient_transfer": false,
+      "code": true
+    }
   },
   {
     "id": "autozyme",
