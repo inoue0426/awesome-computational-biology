@@ -209,7 +209,7 @@ def validate_entry(entry: dict[str, Any]) -> list[str]:
             errors.append(f"[{rid}] 'dataset_profile' must be a mapping")
         else:
             allowed_profile_fields = {
-                "species", "sample_type", "biological_context", "perturbation_type",
+                "species", "sample_type", "biological_context", "perturbation_type", "genetic_modes",
                 "paired", "pre_post", "longitudinal", "drug_identity", "dose",
                 "smiles", "clinical_outcome", "n_samples", "n_cells", "access",
                 "readout", "gene_panel", "n_profiles", "n_perturbations", "n_compounds", "n_contexts", "time", "view_scope",
@@ -219,7 +219,7 @@ def validate_entry(entry: dict[str, Any]) -> list[str]:
                 errors.append(
                     f"[{rid}] dataset_profile unknown fields: {', '.join(unknown_profile)}"
                 )
-            for field in ("species", "perturbation_type"):
+            for field in ("species", "perturbation_type", "genetic_modes"):
                 value = profile.get(field, [])
                 if not isinstance(value, list) or any(
                     not isinstance(item, str) or not item.strip() for item in value
