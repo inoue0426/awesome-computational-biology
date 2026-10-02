@@ -8,6 +8,7 @@
 
   var search = document.getElementById('agent-search');
   var domain = document.getElementById('agent-domain');
+  var recentOnly = document.getElementById('agent-recent');
   var architecture = document.getElementById('agent-architecture');
   var omics = document.getElementById('agent-omics');
   var code = document.getElementById('agent-code');
@@ -107,6 +108,7 @@
     var query = (search.value || '').trim().toLowerCase();
     var filtered = rows.filter(function (r) {
       var p = r.agent_profile || {};
+      if (recentOnly.checked && Number(p.year || 0) < 2025) return false;
       if (domain.value && (p.domains || []).indexOf(domain.value) === -1) return false;
       if (architecture.value && p.architecture !== architecture.value) return false;
       if (omics.value && normalizeState(p.omics) !== omics.value) return false;
@@ -212,13 +214,14 @@
     return escapeHtml(value).replace(/'/g, '&#39;');
   }
 
-  [search, domain, architecture, omics, code, year].forEach(function (el) {
+  [search, domain, architecture, omics, code, year, recentOnly].forEach(function (el) {
     el.addEventListener(el === search ? 'input' : 'change', render);
   });
 
   clear.addEventListener('click', function () {
     search.value = '';
     domain.value = '';
+    recentOnly.checked = false;
     architecture.value = '';
     omics.value = '';
     code.value = '';
