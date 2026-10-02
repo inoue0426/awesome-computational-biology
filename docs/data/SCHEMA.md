@@ -95,6 +95,7 @@ Supported v1 fields:
 | `readout` | string | Primary readout, e.g. `bulk-rna`, `pseudobulk-rna`, `single-cell-rna`, or `viability`. |
 | `gene_panel` | string | Gene/readout panel summary, e.g. `20,251 full / 2,000 HVG` or `978 landmark genes`. |
 | `time` | boolean | Whether treatment time metadata are available. |
+| `view_scope` | string | Scope of the displayed scale fields, e.g. `full-resource`, `study-cohort`, or `bison-benchmark-view`. |
 | `access` | string | Dataset-level access summary. |
 
 The v1 profiles are colocated with their existing modular `data/enrichment.*.yml` owners and rendered at `docs/dataset-explorer.html`.
