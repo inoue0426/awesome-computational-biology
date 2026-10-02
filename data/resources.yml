@@ -108,7 +108,7 @@ resources:
     type: benchmark
     url: https://www.internationalgenome.org/
     description: "Reference panel of human genetic variation from 2,504 individuals across 26 populations."
-    tags: [benchmarks-and-datasets]
+    tags: [genomics-cancer-and-biomedical-cohorts]
     tasks: []
     modalities: []
     organism: []
@@ -119,7 +119,7 @@ resources:
     type: benchmark
     url: https://www.kaggle.com/datasets/gokturkkoch/bace
     description: "Binary classification and regression dataset for β-secretase 1 (BACE-1) inhibitor binding affinity."
-    tags: [benchmarks-and-datasets]
+    tags: [molecular-protein-and-drug-discovery]
     tasks: []
     modalities: []
     organism: []
@@ -130,7 +130,7 @@ resources:
     type: benchmark
     url: https://biodev.github.io/BeatAML2/
     description: "Functional ex vivo drug sensitivity measurements paired with genomics for acute myeloid leukemia."
-    tags: [benchmarks-and-datasets]
+    tags: [drug-response-and-perturbation]
     tasks: []
     modalities: []
     organism: []
@@ -141,7 +141,7 @@ resources:
     type: benchmark
     url: https://github.com/LigandPro/Bento
     description: "Protein-ligand docking benchmark covering rigid, flexible, de novo, blind, induced-fit, and covalent docking tasks."
-    tags: [benchmarks-and-datasets]
+    tags: [molecular-protein-and-drug-discovery]
     tasks: []
     modalities: []
     organism: []
@@ -152,7 +152,7 @@ resources:
     type: benchmark
     url: https://www.bindingdb.org/rwd/bind/chemsearch/marvin/SDFdownload.jsp?all_download=yes
     description: "Curated binding affinity datasets for protein–ligand interaction benchmarking."
-    tags: [benchmarks-and-datasets]
+    tags: [molecular-protein-and-drug-discovery]
     tasks: []
     modalities: []
     organism: []
@@ -163,7 +163,7 @@ resources:
     type: benchmark
     url: https://portals.broadinstitute.org/ctrp/
     description: "Drug sensitivity profiles across ~900 cancer cell lines for >400 compounds."
-    tags: [benchmarks-and-datasets]
+    tags: [drug-response-and-perturbation]
     tasks: []
     modalities: []
     organism: []
@@ -174,7 +174,7 @@ resources:
     type: benchmark
     url: https://github.com/theislab/Chem-PerturBridge
     description: "Harmonized compendium and processing pipelines for small-molecule perturbation transcriptomics across heterogeneous assays and gene panels."
-    tags: [benchmarks-and-datasets]
+    tags: [drug-response-and-perturbation]
     tasks: []
     modalities: []
     organism: []
@@ -185,7 +185,7 @@ resources:
     type: benchmark
     url: https://tdcommons.ai/single_pred_tasks/tox/#clintox
     description: "Clinical toxicity dataset contrasting FDA-approved drugs with those that failed clinical trials due to toxicity."
-    tags: [benchmarks-and-datasets]
+    tags: [molecular-protein-and-drug-discovery]
     tasks: []
     modalities: []
     organism: []
@@ -196,7 +196,7 @@ resources:
     type: benchmark
     url: https://proteomics.cancer.gov/programs/cptac
     description: "Multi-omic proteogenomic datasets for multiple cancer types linking proteomics with genomics."
-    tags: [benchmarks-and-datasets]
+    tags: [genomics-cancer-and-biomedical-cohorts]
     tasks: []
     modalities: []
     organism: []
@@ -207,7 +207,7 @@ resources:
     type: benchmark
     url: https://arxiv.org/abs/2001.01037
     description: "Large-scale dataset for structure-based virtual screening."
-    tags: [benchmarks-and-datasets]
+    tags: [molecular-protein-and-drug-discovery]
     tasks: []
     modalities: []
     organism: []
@@ -218,7 +218,7 @@ resources:
     type: benchmark
     url: http://dude.docking.org/
     description: "Structure-based virtual screening benchmark with active ligands and challenging decoy sets across diverse protein targets."
-    tags: [benchmarks-and-datasets]
+    tags: [molecular-protein-and-drug-discovery]
     tasks: []
     modalities: []
     organism: []
@@ -229,7 +229,7 @@ resources:
     type: benchmark
     url: https://github.com/J-SNACKKB/FLIP
     description: "Benchmark collection of protein fitness landscape datasets for evaluating protein ML models."
-    tags: [benchmarks-and-datasets]
+    tags: [molecular-protein-and-drug-discovery]
     tasks: []
     modalities: []
     organism: []
@@ -240,7 +240,7 @@ resources:
     type: benchmark
     url: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE191127
     description: "Bulk RNA-seq and genomics from matched pre- and post-neoadjuvant chemotherapy breast tumors with treatment outcomes."
-    tags: [benchmarks-and-datasets]
+    tags: [drug-response-and-perturbation]
     tasks: []
     modalities: []
     organism: []
@@ -251,7 +251,7 @@ resources:
     type: benchmark
     url: https://github.com/BenevolentAI/guacamol
     description: "Benchmark suite for generative molecular design models."
-    tags: [benchmarks-and-datasets]
+    tags: [molecular-protein-and-drug-discovery]
     tasks: []
     modalities: []
     organism: []
@@ -262,7 +262,7 @@ resources:
     type: benchmark
     url: https://huggingface.co/datasets/ratschlab/HEST_Xenium_virtual_spatial_transcriptomics
     description: "DeepSpot-M predicted transcriptome-wide ST for 59 HEST-1k 10x Xenium samples (~13.3M cells) (gated). Paper: [DeepSpot-M](https://www.medrxiv.org/content/10.64898/2026.06.19.26356060v1)."
-    tags: [benchmarks-and-datasets]
+    tags: [single-cell-and-spatial]
     tasks: []
     modalities: []
     organism: []
@@ -273,7 +273,7 @@ resources:
     type: benchmark
     url: https://github.com/jump-cellpainting/datasets
     description: "Consortium-scale cell imaging perturbation datasets (chemical and genetic) for phenotypic profiling and drug discovery research."
-    tags: [benchmarks-and-datasets]
+    tags: [drug-response-and-perturbation]
     tasks: []
     modalities: []
     organism: []
@@ -284,7 +284,7 @@ resources:
     type: benchmark
     url: https://lincsproject.org/LINCS/tools/workflows/find-the-best-place-to-obtain-the-lincs-l1000-data
     description: "Gene expression profiles (978 landmark genes) for >20,000 chemical and genetic perturbations across cell lines."
-    tags: [benchmarks-and-datasets]
+    tags: [drug-response-and-perturbation]
     tasks: []
     modalities: []
     organism: []
@@ -295,7 +295,7 @@ resources:
     type: benchmark
     url: https://github.com/theislab/Chem-PerturBridge
     description: "Phase-1 L1000 benchmark view used by Bison with 692,787 profiles, 9,233 molecules, 70 contexts, and 978 landmark genes."
-    tags: [benchmarks-and-datasets]
+    tags: [drug-response-and-perturbation]
     tasks: []
     modalities: []
     organism: []
@@ -306,7 +306,7 @@ resources:
     type: benchmark
     url: https://github.com/theislab/Chem-PerturBridge
     description: "Phase-2 L1000 benchmark view used by Bison with 333,263 profiles, 1,760 molecules, 30 contexts, and 978 landmark genes."
-    tags: [benchmarks-and-datasets]
+    tags: [drug-response-and-perturbation]
     tasks: []
     modalities: []
     organism: []
@@ -317,7 +317,7 @@ resources:
     type: benchmark
     url: https://www.nature.com/articles/s41467-020-17440-w
     description: "Multiplexed single-cell transcriptional profiling of chemical and genetic perturbation responses across pools of cancer cell lines."
-    tags: [benchmarks-and-datasets]
+    tags: [drug-response-and-perturbation]
     tasks: []
     modalities: []
     organism: []
@@ -328,7 +328,7 @@ resources:
     type: benchmark
     url: http://moleculenet.ai/
     description: "Benchmark datasets for molecular machine learning."
-    tags: [benchmarks-and-datasets]
+    tags: [molecular-protein-and-drug-discovery]
     tasks: []
     modalities: []
     organism: []
@@ -339,7 +339,7 @@ resources:
     type: benchmark
     url: https://github.com/molecularsets/moses
     description: "Benchmarking platform for molecular generation models."
-    tags: [benchmarks-and-datasets]
+    tags: [molecular-protein-and-drug-discovery]
     tasks: []
     modalities: []
     organism: []
@@ -350,7 +350,7 @@ resources:
     type: benchmark
     url: https://github.com/theislab/Chem-PerturBridge
     description: "Large chemical perturbation transcriptomic screen used in Chem-PerturBridge; the Bison benchmark view contains 46,748 profiles and 3,770 molecules."
-    tags: [benchmarks-and-datasets]
+    tags: [drug-response-and-perturbation]
     tasks: []
     modalities: []
     organism: []
@@ -361,7 +361,7 @@ resources:
     type: benchmark
     url: https://ogb.stanford.edu/
     description: "Large-scale graph ML benchmark suite including biological datasets such as ogbl-ppa (protein-protein associations) and ogbg-molhiv."
-    tags: [benchmarks-and-datasets]
+    tags: [general-biological-ml-and-knowledge-graph-benchmarks]
     tasks: []
     modalities: []
     organism: []
@@ -372,7 +372,7 @@ resources:
     type: benchmark
     url: https://github.com/theislab/Chem-PerturBridge
     description: "Chemical perturbation dataset used by Chem-PerturBridge and the Bison unseen-compound benchmark; the Bison benchmark view contains 1,813 profiles, 138 molecules, and 4 cellular contexts."
-    tags: [benchmarks-and-datasets]
+    tags: [drug-response-and-perturbation]
     tasks: []
     modalities: []
     organism: []
@@ -383,7 +383,7 @@ resources:
     type: benchmark
     url: https://github.com/OpenBioLink/OpenBioLink
     description: "Benchmark datasets for biological knowledge graph completion."
-    tags: [benchmarks-and-datasets]
+    tags: [general-biological-ml-and-knowledge-graph-benchmarks]
     tasks: []
     modalities: []
     organism: []
@@ -394,7 +394,7 @@ resources:
     type: benchmark
     url: https://muralportal.pdxatlas.org/
     description: "Portal integrating clinical, genomic, transcriptomic, and drug-response data from patient-derived xenograft models."
-    tags: [benchmarks-and-datasets]
+    tags: [drug-response-and-perturbation]
     tasks: []
     modalities: []
     organism: []
@@ -405,7 +405,7 @@ resources:
     type: benchmark
     url: https://www.pharmgkb.org/
     description: "Curated pharmacogenomics dataset linking genetic variants to drug response phenotypes across thousands of drugs."
-    tags: [benchmarks-and-datasets]
+    tags: [drug-response-and-perturbation]
     tasks: []
     modalities: []
     organism: []
@@ -416,7 +416,7 @@ resources:
     type: benchmark
     url: https://pk-db.com/
     description: "Open database of experimental pharmacokinetics (PK) and ADME data from clinical and preclinical studies."
-    tags: [benchmarks-and-datasets]
+    tags: [molecular-protein-and-drug-discovery]
     tasks: []
     modalities: []
     organism: []
@@ -427,7 +427,7 @@ resources:
     type: benchmark
     url: https://depmap.org/portal/prism/
     description: "Cancer drug sensitivity profiling of >4,500 drugs across >900 cancer cell lines using pooled-cell-line barcoding."
-    tags: [benchmarks-and-datasets]
+    tags: [drug-response-and-perturbation]
     tasks: []
     modalities: []
     organism: []
@@ -438,7 +438,7 @@ resources:
     type: benchmark
     url: https://github.com/OATML-Markslab/ProteinGym
     description: "Large-scale benchmark of deep mutational scanning assays for evaluating protein fitness landscape models."
-    tags: [benchmarks-and-datasets]
+    tags: [molecular-protein-and-drug-discovery]
     tasks: []
     modalities: []
     organism: []
@@ -449,7 +449,7 @@ resources:
     type: benchmark
     url: https://figshare.com/collections/Quantum_chemistry_structures_and_properties_of_134_kilo_molecules/978904
     description: "Quantum chemistry properties for 134K stable small organic molecules computed at DFT level."
-    tags: [benchmarks-and-datasets]
+    tags: [molecular-protein-and-drug-discovery]
     tasks: []
     modalities: []
     organism: []
@@ -460,7 +460,7 @@ resources:
     type: benchmark
     url: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE139944
     description: "Single-cell chemical perturbation screen of ~650,000 transcriptomes across three cancer cell lines, 188 compounds, and four doses."
-    tags: [benchmarks-and-datasets]
+    tags: [drug-response-and-perturbation]
     tasks: []
     modalities: []
     organism: []
@@ -471,7 +471,7 @@ resources:
     type: benchmark
     url: https://github.com/theislab/scib
     description: "Comprehensive benchmarking framework for single-cell data integration methods."
-    tags: [benchmarks-and-datasets]
+    tags: [single-cell-and-spatial]
     tasks: []
     modalities: []
     organism: []
@@ -482,7 +482,7 @@ resources:
     type: benchmark
     url: https://github.com/sanderlab/scPerturb
     description: "Curated and continuously updated single-cell perturbation data resource spanning CRISPR and drug perturbation studies."
-    tags: [benchmarks-and-datasets]
+    tags: [drug-response-and-perturbation]
     tasks: []
     modalities: []
     organism: []
@@ -493,7 +493,7 @@ resources:
     type: benchmark
     url: http://sideeffects.embl.de/
     description: "Database of 1,430 approved drugs with their recorded adverse drug reactions across 27 system-organ classes."
-    tags: [benchmarks-and-datasets]
+    tags: [molecular-protein-and-drug-discovery]
     tasks: []
     modalities: []
     organism: []
@@ -504,7 +504,7 @@ resources:
     type: benchmark
     url: https://tabula-muris.ds.czbiohub.org/
     description: "Comprehensive single-cell atlas of 20 mouse organs and tissues, enabling cross-tissue and cross-species comparisons."
-    tags: [benchmarks-and-datasets]
+    tags: [single-cell-and-spatial]
     tasks: []
     modalities: []
     organism: []
@@ -515,7 +515,7 @@ resources:
     type: benchmark
     url: https://tabula-sapiens-portal.ds.czbiohub.org/
     description: "Comprehensive human single-cell atlas of ~500K cells from 24 organs and tissues across multiple donors."
-    tags: [benchmarks-and-datasets]
+    tags: [single-cell-and-spatial]
     tasks: []
     modalities: []
     organism: []
@@ -526,7 +526,7 @@ resources:
     type: benchmark
     url: https://huggingface.co/datasets/tahoebio/Tahoe-100M
     description: "Giga-scale single-cell perturbation atlas with >100 million profiles from 50 cancer cell lines exposed to ~1,100 small molecules."
-    tags: [benchmarks-and-datasets]
+    tags: [drug-response-and-perturbation]
     tasks: []
     modalities: []
     organism: []
@@ -537,7 +537,7 @@ resources:
     type: benchmark
     url: https://github.com/songlab-cal/tape
     description: "Benchmark suite of five biologically meaningful semi-supervised learning tasks for evaluating protein representations."
-    tags: [benchmarks-and-datasets]
+    tags: [molecular-protein-and-drug-discovery]
     tasks: []
     modalities: []
     organism: []
@@ -548,7 +548,7 @@ resources:
     type: benchmark
     url: https://huggingface.co/datasets/ratschlab/TCGA_virtual_spatial_transcriptomics_atlas
     description: "DeepSpot-M predicted transcriptome-wide ST for TCGA H&E (FF + FFPE; 28,664 slides / 32 cancer types; gated). Paper: [DeepSpot-M](https://www.medrxiv.org/content/10.64898/2026.06.19.26356060v1)."
-    tags: [benchmarks-and-datasets]
+    tags: [single-cell-and-spatial]
     tasks: []
     modalities: []
     organism: []
@@ -559,7 +559,7 @@ resources:
     type: benchmark
     url: https://www.cancer.gov/about-nci/organization/ccg/research/structural-genomics/tcga
     description: "Comprehensive multi-omics (genomics, transcriptomics, proteomics, methylation) dataset for 33 cancer types across ~11,000 patients."
-    tags: [benchmarks-and-datasets]
+    tags: [genomics-cancer-and-biomedical-cohorts]
     tasks: []
     modalities: []
     organism: []
@@ -570,7 +570,7 @@ resources:
     type: benchmark
     url: https://tdcommons.ai/
     description: "Unified benchmark suite covering ADMET, drug-target interaction, drug response, and more."
-    tags: [benchmarks-and-datasets]
+    tags: [molecular-protein-and-drug-discovery]
     tasks: []
     modalities: []
     organism: []
@@ -581,7 +581,7 @@ resources:
     type: benchmark
     url: https://tripod.nih.gov/tox21/challenge/
     description: "12,707 compounds tested in 12 nuclear receptor and stress-response pathway biochemical assays for toxicity prediction."
-    tags: [benchmarks-and-datasets]
+    tags: [molecular-protein-and-drug-discovery]
     tasks: []
     modalities: []
     organism: []
@@ -592,7 +592,7 @@ resources:
     type: benchmark
     url: https://www.ukbiobank.ac.uk/
     description: "Large-scale biomedical database of ~500K participants with genetic, imaging, and health data for population genetics and disease studies."
-    tags: [benchmarks-and-datasets]
+    tags: [genomics-cancer-and-biomedical-cohorts]
     tasks: []
     modalities: []
     organism: []
@@ -603,7 +603,7 @@ resources:
     type: benchmark
     url: https://github.com/theislab/Chem-PerturBridge
     description: "Bulk chemical perturbation dataset used in Chem-PerturBridge; the Bison benchmark view contains 27,517 profiles and 2,272 molecules in one cellular context."
-    tags: [benchmarks-and-datasets]
+    tags: [drug-response-and-perturbation]
     tasks: []
     modalities: []
     organism: []
@@ -614,7 +614,7 @@ resources:
     type: benchmark
     url: https://github.com/theislab/Chem-PerturBridge
     description: "Bulk chemical perturbation dataset used in Chem-PerturBridge; the Bison benchmark view contains 18,139 profiles and 1,488 molecules in one cellular context."
-    tags: [benchmarks-and-datasets]
+    tags: [drug-response-and-perturbation]
     tasks: []
     modalities: []
     organism: []
@@ -999,7 +999,7 @@ resources:
     type: database
     url: https://www.cancerrxgene.org/
     description: "Drug sensitivity for ~1000 human cancer cell lines and hundreds of compounds."
-    tags: [benchmarks-and-datasets, drug-cell-line-response, interaction]
+    tags: [drug-cell-line-response, drug-response-and-perturbation, interaction]
     tasks: []
     modalities: [Gene Expression, Small Molecule]
     organism: []
@@ -1252,7 +1252,7 @@ resources:
     type: database
     url: https://dtp.cancer.gov/discovery_development/nci-60/
     description: "Focuses on 60 cancer cell lines and many drugs."
-    tags: [benchmarks-and-datasets, drug-cell-line-response, interaction]
+    tags: [drug-cell-line-response, drug-response-and-perturbation, interaction]
     tasks: []
     modalities: [Gene Expression, Small Molecule]
     organism: []
@@ -1764,39 +1764,6 @@ resources:
     organism: []
     api: false
 
-  - id: bison_global_mean_baseline
-    name: "Bison Global Mean baseline"
-    type: model
-    url: https://arxiv.org/abs/2609.32467
-    description: "Dataset-and-view-specific mean treated-profile control used in the Bison benchmark."
-    tags: [drug-discovery, drug-perturbation]
-    tasks: [Drug Discovery, Drug Perturbation]
-    modalities: [Small Molecule]
-    organism: []
-    api: false
-
-  - id: bison_linear_baseline
-    name: "Bison Linear baseline"
-    type: model
-    url: https://arxiv.org/abs/2609.32467
-    description: "Least-squares linear baseline on Morgan fingerprints, dose, time, and context indicators used in the Bison benchmark."
-    tags: [drug-discovery, drug-perturbation]
-    tasks: [Drug Discovery, Drug Perturbation]
-    modalities: [Small Molecule]
-    organism: []
-    api: false
-
-  - id: bison_ridge_morgan_baseline
-    name: "Bison Ridge-Morgan baseline"
-    type: model
-    url: https://arxiv.org/abs/2609.32467
-    description: "Multi-output ridge regression baseline using Morgan fingerprints, dose, time, and context features for unseen-compound prediction."
-    tags: [drug-discovery, drug-perturbation]
-    tasks: [Drug Discovery, Drug Perturbation]
-    modalities: [Small Molecule]
-    organism: []
-    api: false
-
   - id: boltz_1
     name: "Boltz-1"
     type: model
@@ -2193,6 +2160,17 @@ resources:
     organism: []
     api: false
 
+  - id: dtlcdr
+    name: "DTLCDR"
+    type: model
+    url: https://doi.org/10.1016/j.jpha.2025.101315
+    description: "Target-based multimodal framework for preclinical cancer drug response prediction and transfer to clinical response, with explicit unseen-drug generalization."
+    tags: [drug-discovery, drug-response-prediction]
+    tasks: [Drug Discovery, Drug Response Prediction]
+    modalities: [Small Molecule]
+    organism: []
+    api: false
+
   - id: enformer
     name: "Enformer"
     type: model
@@ -2256,6 +2234,17 @@ resources:
     tags: [foundation-models, pre-trained-embedding, protein-foundation-models]
     tasks: [Foundation Model]
     modalities: [Protein]
+    organism: []
+    api: false
+
+  - id: expresso
+    name: "EXPRESSO"
+    type: model
+    url: https://doi.org/10.1158/0008-5472.CAN-25-5220
+    description: "Supervised treatment-response framework using pretreatment tumor transcriptomics, drug targets, and context-specific biomarkers across multiple cancer types and therapies."
+    tags: [drug-discovery, drug-response-prediction]
+    tasks: [Drug Discovery, Drug Response Prediction]
+    modalities: [Small Molecule]
     organism: []
     api: false
 
@@ -2409,6 +2398,17 @@ resources:
     description: "Junction tree variational autoencoder for molecular graph generation that guarantees chemical validity via a hierarchical tree decomposition."
     tags: [drug-discovery, molecular-generation]
     tasks: [Drug Discovery, Molecular Generation]
+    modalities: [Small Molecule]
+    organism: []
+    api: false
+
+  - id: lpm
+    name: "LPM"
+    type: model
+    url: https://github.com/perturblib/perturblib
+    description: "Large perturbation model that jointly learns heterogeneous perturbation experiments by disentangling perturbation, readout, and context representations."
+    tags: [drug-discovery, drug-perturbation]
+    tasks: [Drug Discovery, Drug Perturbation]
     modalities: [Small Molecule]
     organism: []
     api: false
@@ -2651,6 +2651,17 @@ resources:
     description: "Reinforcement learning-based generative model for de novo hit-like anticancer molecule design from transcriptomic data."
     tags: [drug-discovery, molecular-generation]
     tasks: [Drug Discovery, Molecular Generation]
+    modalities: [Small Molecule]
+    organism: []
+    api: false
+
+  - id: paso
+    name: "PASO"
+    type: model
+    url: https://github.com/queryang/PASO
+    description: "Pathway-aware multi-omics drug response model combining pathway-difference features, multi-scale convolutions, Transformer encoding, and drug SMILES."
+    tags: [drug-discovery, drug-response-prediction]
+    tasks: [Drug Discovery, Drug Response Prediction]
     modalities: [Small Molecule]
     organism: []
     api: false
@@ -3007,6 +3018,17 @@ resources:
     organism: []
     api: false
 
+  - id: therapi
+    name: "THERAPI"
+    type: model
+    url: https://github.com/Sunginyoung/THERAPI
+    description: "Cell-line-to-patient transfer framework that aligns tumor transcriptomes with cancer cell lines and integrates perturbation and gene-level representations for patient drug response prediction."
+    tags: [drug-discovery, drug-response-prediction]
+    tasks: [Drug Discovery, Drug Response Prediction]
+    modalities: [Small Molecule]
+    organism: []
+    api: false
+
   - id: toad
     name: "TOAD"
     type: model
@@ -3058,6 +3080,17 @@ resources:
     description: "Dual-VAE architecture for ligand-based virtual screening, drug response prediction, and drug repurposing using chemical-induced transcriptional profiles."
     tags: [drug-discovery, drug-repurposing]
     tasks: [Drug Discovery, Drug Repurposing]
+    modalities: [Small Molecule]
+    organism: []
+    api: false
+
+  - id: txpert
+    name: "TxPert"
+    type: model
+    url: https://github.com/valence-labs/TxPert
+    description: "Knowledge-graph-informed latent-transfer model for transcriptomic perturbation prediction across unseen single perturbations, combinations, and cellular contexts."
+    tags: [drug-discovery, drug-perturbation]
+    tasks: [Drug Discovery, Drug Perturbation]
     modalities: [Small Molecule]
     organism: []
     api: false
