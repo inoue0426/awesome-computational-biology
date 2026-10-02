@@ -37,6 +37,7 @@ jobs:
       - name: Build enriched artifacts
         run: uv run --with pyyaml python scripts/build_resources_v2.py
       - name: Verify enriched artifacts are committed
+        if: github.event_name == 'pull_request'
         run: |
           if git diff --quiet; then
             echo "AI4Bio artifacts are in sync."
