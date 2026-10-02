@@ -8,6 +8,7 @@
 
   var search = document.getElementById('method-search');
   var taskFamily = document.getElementById('task-family');
+  var recentOnly = document.getElementById('method-recent');
   var patientTransfer = document.getElementById('patient-transfer');
   var unseenDrug = document.getElementById('unseen-drug');
   var year = document.getElementById('method-year');
@@ -86,6 +87,7 @@
     var query = (search.value || '').trim().toLowerCase();
     var filtered = rows.filter(function (r) {
       var p = r.method_profile || {};
+      if (recentOnly.checked && Number(p.year || 0) < 2025) return false;
       if (taskFamily.value && p.task_family !== taskFamily.value) return false;
       if (patientTransfer.value && String(Boolean(p.patient_transfer)) !== patientTransfer.value) return false;
       if (unseenDrug.value && normalizeState(p.unseen_drug) !== unseenDrug.value) return false;
@@ -182,13 +184,14 @@
     return escapeHtml(value).replace(/'/g, '&#39;');
   }
 
-  [search, taskFamily, patientTransfer, unseenDrug, year].forEach(function (el) {
+  [search, taskFamily, patientTransfer, unseenDrug, year, recentOnly].forEach(function (el) {
     el.addEventListener(el === search ? 'input' : 'change', render);
   });
 
   clear.addEventListener('click', function () {
     search.value = '';
     taskFamily.value = '';
+    recentOnly.checked = false;
     patientTransfer.value = '';
     unseenDrug.value = '';
     year.value = '';
