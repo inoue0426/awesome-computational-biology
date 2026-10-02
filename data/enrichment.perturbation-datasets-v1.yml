@@ -88,6 +88,7 @@ resources:
 
   pdx_atlas:
     dataset_profile:
+      year: 2026
       view_scope: current-portal
       readout: multi-omics
       n_profiles: ">50 PDXs"
@@ -142,6 +143,7 @@ resources:
 
   op3:
     dataset_profile:
+      year: 2024
       view_scope: bison-benchmark-view
       readout: bulk-rna
       n_profiles: 1813
@@ -223,6 +225,7 @@ resources:
 
   novartis_perturbation_dataset:
     dataset_profile:
+      year: 2025
       view_scope: bison-benchmark-view
       readout: bulk-rna
       n_profiles: 46748
