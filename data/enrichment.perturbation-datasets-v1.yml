@@ -100,3 +100,124 @@ resources:
     last_checked: 2026-10-02
     metadata_sources:
       - https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE191127
+
+
+  op3:
+    dataset_profile:
+      species: [human]
+      sample_type: cell-line
+      biological_context: perturbation-screen
+      perturbation_type: [chemical]
+      paired: false
+      pre_post: false
+      longitudinal: false
+      drug_identity: true
+      dose: true
+      smiles: true
+      clinical_outcome: false
+      n_samples: "1,813 profiles; 138 molecules; 4 contexts"
+      n_cells: null
+      access: open
+    last_checked: 2026-10-02
+    metadata_sources:
+      - https://github.com/theislab/Chem-PerturBridge
+
+  vcpi_0001:
+    dataset_profile:
+      species: [human]
+      sample_type: cell-line
+      biological_context: perturbation-screen
+      perturbation_type: [chemical]
+      paired: false
+      pre_post: false
+      longitudinal: false
+      drug_identity: true
+      dose: true
+      smiles: true
+      clinical_outcome: false
+      n_samples: "27,517 profiles; 2,272 molecules; 1 context"
+      n_cells: null
+      access: open
+    last_checked: 2026-10-02
+    metadata_sources:
+      - https://github.com/theislab/Chem-PerturBridge
+
+  vcpi_0002:
+    dataset_profile:
+      species: [human]
+      sample_type: cell-line
+      biological_context: perturbation-screen
+      perturbation_type: [chemical]
+      paired: false
+      pre_post: false
+      longitudinal: false
+      drug_identity: true
+      dose: true
+      smiles: true
+      clinical_outcome: false
+      n_samples: "18,139 profiles; 1,488 molecules; 1 context"
+      n_cells: null
+      access: open
+    last_checked: 2026-10-02
+    metadata_sources:
+      - https://github.com/theislab/Chem-PerturBridge
+
+  novartis_perturbation_dataset:
+    dataset_profile:
+      species: [human]
+      sample_type: cell-line
+      biological_context: perturbation-screen
+      perturbation_type: [chemical]
+      paired: false
+      pre_post: false
+      longitudinal: false
+      drug_identity: true
+      dose: true
+      smiles: true
+      clinical_outcome: false
+      n_samples: "46,748 profiles; 3,770 molecules; 1 context"
+      n_cells: null
+      access: open
+    last_checked: 2026-10-02
+    metadata_sources:
+      - https://github.com/theislab/Chem-PerturBridge
+
+  lincs_l1000_phase_1:
+    dataset_profile:
+      species: [human]
+      sample_type: cell-line
+      biological_context: perturbation-screen
+      perturbation_type: [chemical]
+      paired: false
+      pre_post: false
+      longitudinal: false
+      drug_identity: true
+      dose: true
+      smiles: true
+      clinical_outcome: false
+      n_samples: "692,787 profiles; 9,233 molecules; 70 contexts; 978 landmark genes"
+      n_cells: null
+      access: open
+    last_checked: 2026-10-02
+    metadata_sources:
+      - https://github.com/theislab/Chem-PerturBridge
+
+  lincs_l1000_phase_2:
+    dataset_profile:
+      species: [human]
+      sample_type: cell-line
+      biological_context: perturbation-screen
+      perturbation_type: [chemical]
+      paired: false
+      pre_post: false
+      longitudinal: false
+      drug_identity: true
+      dose: true
+      smiles: true
+      clinical_outcome: false
+      n_samples: "333,263 profiles; 1,760 molecules; 30 contexts; 978 landmark genes"
+      n_cells: null
+      access: open
+    last_checked: 2026-10-02
+    metadata_sources:
+      - https://github.com/theislab/Chem-PerturBridge
