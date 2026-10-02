@@ -164,3 +164,122 @@ resources:
       autonomous_experiment: limited
       human_in_loop: true
       open_source: true
+
+biomedagent:
+    agent_profile:
+      year: 2026
+      domains: [general-biomedicine, bioinformatics, omics]
+      architecture: multi-agent
+      tool_use: true
+      code_execution: true
+      web_retrieval: limited
+      literature: limited
+      omics: true
+      wet_lab: false
+      autonomous_experiment: true
+      human_in_loop: true
+      open_source: true
+
+  biomaster:
+    agent_profile:
+      year: 2026
+      domains: [bioinformatics, omics, scientific-workflow]
+      architecture: multi-agent
+      tool_use: true
+      code_execution: true
+      web_retrieval: limited
+      literature: limited
+      omics: true
+      wet_lab: false
+      autonomous_experiment: true
+      human_in_loop: true
+      open_source: true
+
+  brad:
+    agent_profile:
+      year: 2025
+      domains: [bioinformatics, literature, scientific-workflow]
+      architecture: single-agent
+      tool_use: true
+      code_execution: true
+      web_retrieval: true
+      literature: true
+      omics: limited
+      wet_lab: false
+      autonomous_experiment: limited
+      human_in_loop: true
+      open_source: true
+
+  autoba:
+    agent_profile:
+      year: 2024
+      domains: [bioinformatics, omics, scientific-workflow]
+      architecture: single-agent
+      tool_use: true
+      code_execution: true
+      web_retrieval: limited
+      literature: limited
+      omics: true
+      wet_lab: false
+      autonomous_experiment: true
+      human_in_loop: true
+      open_source: true
+
+  genomas:
+    agent_profile:
+      year: 2025
+      domains: [bioinformatics, gene-expression, scientific-workflow]
+      architecture: multi-agent
+      tool_use: true
+      code_execution: true
+      web_retrieval: limited
+      literature: true
+      omics: true
+      wet_lab: false
+      autonomous_experiment: true
+      human_in_loop: true
+      open_source: true
+
+  bia:
+    agent_profile:
+      domains: [bioinformatics, genomics, literature]
+      architecture: single-agent
+      tool_use: true
+      code_execution: true
+      web_retrieval: true
+      literature: true
+      omics: true
+      wet_lab: false
+      autonomous_experiment: limited
+      human_in_loop: true
+      open_source: true
+
+  bioagents:
+    agent_profile:
+      year: 2025
+      domains: [bioinformatics, genomics, scientific-workflow]
+      architecture: multi-agent
+      tool_use: true
+      code_execution: limited
+      web_retrieval: limited
+      literature: limited
+      omics: true
+      wet_lab: false
+      autonomous_experiment: limited
+      human_in_loop: true
+      open_source: true
+
+  genomi:
+    agent_profile:
+      year: 2026
+      domains: [genomics, precision-medicine, evidence-synthesis]
+      architecture: agent-ecosystem
+      tool_use: true
+      code_execution: limited
+      web_retrieval: limited
+      literature: true
+      omics: limited
+      wet_lab: false
+      autonomous_experiment: false
+      human_in_loop: true
+      open_source: true
