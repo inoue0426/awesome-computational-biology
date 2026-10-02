@@ -35,7 +35,7 @@ ALLOWED_ACCESS = {"open", "registration", "restricted", "commercial", "unknown"}
 ALLOWED_FIELDS = set(REQUIRED_FIELDS) | set(LIST_FIELDS) | {
     "license", "api", "paper", "updated", "github", "documentation", "year",
     "maintenance_status", "access", "last_checked", "dataset_profile", "method_profile",
-    "foundation_profile",
+    "foundation_profile", "agent_profile",
 }
 ID_RE = re.compile(r"^[a-z0-9]+(?:_[a-z0-9]+)*$")
 VOCAB_RE = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
@@ -309,6 +309,56 @@ def validate_entry(entry: dict[str, Any]) -> list[str]:
                 ):
                     errors.append(
                         f"[{rid}] foundation_profile.{field} must be boolean or "
+                        "yes/no/limited/unknown"
+                    )
+    agent_profile = entry.get("agent_profile")
+    if agent_profile is not None:
+        if not isinstance(agent_profile, dict):
+            errors.append(f"[{rid}] 'agent_profile' must be a mapping")
+        else:
+            allowed_agent_fields = {
+                "year", "domains", "architecture", "tool_use", "code_execution",
+                "web_retrieval", "literature", "omics", "wet_lab",
+                "autonomous_experiment", "human_in_loop", "open_source",
+            }
+            unknown_agent = sorted(set(agent_profile) - allowed_agent_fields)
+            if unknown_agent:
+                errors.append(
+                    f"[{rid}] agent_profile unknown fields: "
+                    + ", ".join(unknown_agent)
+                )
+            if "domains" in agent_profile:
+                value = agent_profile["domains"]
+                if not isinstance(value, list) or any(
+                    not isinstance(item, str) or not item.strip() for item in value
+                ):
+                    errors.append(
+                        f"[{rid}] agent_profile.domains must be a list of non-empty strings"
+                    )
+            if "architecture" in agent_profile and agent_profile["architecture"] not in {
+                "single-agent", "multi-agent", "agent-ecosystem"
+            }:
+                errors.append(
+                    f"[{rid}] agent_profile.architecture must be single-agent, "
+                    "multi-agent, or agent-ecosystem"
+                )
+            if "year" in agent_profile and (
+                not isinstance(agent_profile["year"], int)
+                or isinstance(agent_profile["year"], bool)
+                or not 1900 <= agent_profile["year"] <= 2100
+            ):
+                errors.append(
+                    f"[{rid}] agent_profile.year must be an integer from 1900 to 2100"
+                )
+            allowed_states = {True, False, "yes", "no", "limited", "unknown"}
+            for field in (
+                "tool_use", "code_execution", "web_retrieval", "literature",
+                "omics", "wet_lab", "autonomous_experiment", "human_in_loop",
+                "open_source",
+            ):
+                if field in agent_profile and agent_profile[field] not in allowed_states:
+                    errors.append(
+                        f"[{rid}] agent_profile.{field} must be boolean or "
                         "yes/no/limited/unknown"
                     )
     return errors
