@@ -568,6 +568,13 @@ The explorer also includes the eight perturbation datasets used in the Bison uns
 - [PLIP](https://github.com/PathologyFoundation/plip) — Vision-language foundation model for pathology trained with contrastive learning on pathology image–text pairs for image classification and text-to-image retrieval.
 - [MUSK](https://github.com/lilab-stanford/MUSK) — Vision-language foundation model for precision oncology analyzing multimodal paired text and pathology image data for biomarker prediction and retrieval.
 
+#### Other Omics Foundation Models
+
+- [MethylGPT](https://github.com/albert-ying/MethylGPT) — Transformer foundation model for DNA methylation pretrained on >150K human methylomes across thousands of datasets, with 3M/7M/15M parameter variants.
+- [CpGPT](https://github.com/lucascamillomd/CpGPT) — DNA methylation foundation model pretrained on >150K samples for zero-shot imputation, array conversion, reference mapping, and downstream phenotype prediction.
+- [MutationProjector](https://doi.org/10.1101/2025.09.08.674723) — Tumor-genome foundation model pretrained on somatic alterations from >30K tumors to learn representations for cancer subtype and treatment-response tasks.
+- [Casanovo Foundation](https://github.com/Noble-Lab/casanovo-tl) — Tandem mass-spectrometry proteomics foundation model that reuses a pretrained Casanovo spectrum encoder for spectrum quality, chimericity, and post-translational-modification prediction.
+
 #### RNA Foundation Models
 
 - [RNA-FM](https://github.com/ml4bio/RNA-FM) — General-purpose RNA foundation model pretrained on large-scale RNA sequences for structural and functional representation learning.
