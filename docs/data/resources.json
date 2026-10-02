@@ -375,6 +375,20 @@
     }
   },
   {
+    "id": "chem_perturbridge",
+    "name": "Chem-PerturBridge",
+    "type": "benchmark",
+    "url": "https://github.com/theislab/Chem-PerturBridge",
+    "description": "Harmonized compendium and processing pipelines for small-molecule perturbation transcriptomics across heterogeneous assays and gene panels.",
+    "tags": [
+      "benchmarks-and-datasets"
+    ],
+    "tasks": [],
+    "modalities": [],
+    "organism": [],
+    "api": false
+  },
+  {
     "id": "clintox",
     "name": "ClinTox",
     "type": "benchmark",
@@ -612,6 +626,34 @@
     }
   },
   {
+    "id": "lincs_l1000_phase_1",
+    "name": "LINCS L1000 Phase 1",
+    "type": "benchmark",
+    "url": "https://github.com/theislab/Chem-PerturBridge",
+    "description": "Phase-1 L1000 benchmark view used by Bison with 692,787 profiles, 9,233 molecules, 70 contexts, and 978 landmark genes.",
+    "tags": [
+      "benchmarks-and-datasets"
+    ],
+    "tasks": [],
+    "modalities": [],
+    "organism": [],
+    "api": false
+  },
+  {
+    "id": "lincs_l1000_phase_2",
+    "name": "LINCS L1000 Phase 2",
+    "type": "benchmark",
+    "url": "https://github.com/theislab/Chem-PerturBridge",
+    "description": "Phase-2 L1000 benchmark view used by Bison with 333,263 profiles, 1,760 molecules, 30 contexts, and 978 landmark genes.",
+    "tags": [
+      "benchmarks-and-datasets"
+    ],
+    "tasks": [],
+    "modalities": [],
+    "organism": [],
+    "api": false
+  },
+  {
     "id": "mix_seq",
     "name": "MIX-Seq",
     "type": "benchmark",
@@ -692,11 +734,39 @@
     "api": false
   },
   {
+    "id": "novartis_perturbation_dataset",
+    "name": "Novartis Perturbation Dataset",
+    "type": "benchmark",
+    "url": "https://github.com/theislab/Chem-PerturBridge",
+    "description": "Large chemical perturbation transcriptomic screen used in Chem-PerturBridge; the Bison benchmark view contains 46,748 profiles and 3,770 molecules.",
+    "tags": [
+      "benchmarks-and-datasets"
+    ],
+    "tasks": [],
+    "modalities": [],
+    "organism": [],
+    "api": false
+  },
+  {
     "id": "ogb_open_graph_benchmark",
     "name": "OGB (Open Graph Benchmark)",
     "type": "benchmark",
     "url": "https://ogb.stanford.edu/",
     "description": "Large-scale graph ML benchmark suite including biological datasets such as ogbl-ppa (protein-protein associations) and ogbg-molhiv.",
+    "tags": [
+      "benchmarks-and-datasets"
+    ],
+    "tasks": [],
+    "modalities": [],
+    "organism": [],
+    "api": false
+  },
+  {
+    "id": "op3",
+    "name": "OP3",
+    "type": "benchmark",
+    "url": "https://github.com/theislab/Chem-PerturBridge",
+    "description": "Chemical perturbation dataset used by Chem-PerturBridge and the Bison unseen-compound benchmark; the Bison benchmark view contains 1,813 profiles, 138 molecules, and 4 cellular contexts.",
     "tags": [
       "benchmarks-and-datasets"
     ],
@@ -1193,6 +1263,34 @@
     "type": "benchmark",
     "url": "https://www.ukbiobank.ac.uk/",
     "description": "Large-scale biomedical database of ~500K participants with genetic, imaging, and health data for population genetics and disease studies.",
+    "tags": [
+      "benchmarks-and-datasets"
+    ],
+    "tasks": [],
+    "modalities": [],
+    "organism": [],
+    "api": false
+  },
+  {
+    "id": "vcpi_0001",
+    "name": "VCPI-0001",
+    "type": "benchmark",
+    "url": "https://github.com/theislab/Chem-PerturBridge",
+    "description": "Bulk chemical perturbation dataset used in Chem-PerturBridge; the Bison benchmark view contains 27,517 profiles and 2,272 molecules in one cellular context.",
+    "tags": [
+      "benchmarks-and-datasets"
+    ],
+    "tasks": [],
+    "modalities": [],
+    "organism": [],
+    "api": false
+  },
+  {
+    "id": "vcpi_0002",
+    "name": "VCPI-0002",
+    "type": "benchmark",
+    "url": "https://github.com/theislab/Chem-PerturBridge",
+    "description": "Bulk chemical perturbation dataset used in Chem-PerturBridge; the Bison benchmark view contains 18,139 profiles and 1,488 molecules in one cellular context.",
     "tags": [
       "benchmarks-and-datasets"
     ],
@@ -3147,6 +3245,26 @@
     "api": false
   },
   {
+    "id": "biolord",
+    "name": "biolord",
+    "type": "model",
+    "url": "https://github.com/nitzanlab/biolord",
+    "description": "Deep generative model that disentangles known and unknown attributes for conditional generation of single-cell states.",
+    "tags": [
+      "drug-discovery",
+      "drug-perturbation"
+    ],
+    "tasks": [
+      "Drug Discovery",
+      "Drug Perturbation"
+    ],
+    "modalities": [
+      "Small Molecule"
+    ],
+    "organism": [],
+    "api": false
+  },
+  {
     "id": "biomedclip",
     "name": "BiomedCLIP",
     "type": "model",
@@ -3179,6 +3297,86 @@
     ],
     "modalities": [
       "Text"
+    ],
+    "organism": [],
+    "api": false
+  },
+  {
+    "id": "bison",
+    "name": "Bison",
+    "type": "model",
+    "url": "https://arxiv.org/abs/2609.32467",
+    "description": "Cross-dataset model for globally unseen-compound response prediction using a shared gene representation, discrete diffusion models, and matched drug-contrast supervision.",
+    "tags": [
+      "drug-discovery",
+      "drug-perturbation"
+    ],
+    "tasks": [
+      "Drug Discovery",
+      "Drug Perturbation"
+    ],
+    "modalities": [
+      "Small Molecule"
+    ],
+    "organism": [],
+    "api": false
+  },
+  {
+    "id": "bison_global_mean_baseline",
+    "name": "Bison Global Mean baseline",
+    "type": "model",
+    "url": "https://arxiv.org/abs/2609.32467",
+    "description": "Dataset-and-view-specific mean treated-profile control used in the Bison benchmark.",
+    "tags": [
+      "drug-discovery",
+      "drug-perturbation"
+    ],
+    "tasks": [
+      "Drug Discovery",
+      "Drug Perturbation"
+    ],
+    "modalities": [
+      "Small Molecule"
+    ],
+    "organism": [],
+    "api": false
+  },
+  {
+    "id": "bison_linear_baseline",
+    "name": "Bison Linear baseline",
+    "type": "model",
+    "url": "https://arxiv.org/abs/2609.32467",
+    "description": "Unregularized linear baseline on Morgan fingerprints, dose, time, and context indicators used in the Bison benchmark.",
+    "tags": [
+      "drug-discovery",
+      "drug-perturbation"
+    ],
+    "tasks": [
+      "Drug Discovery",
+      "Drug Perturbation"
+    ],
+    "modalities": [
+      "Small Molecule"
+    ],
+    "organism": [],
+    "api": false
+  },
+  {
+    "id": "bison_ridge_morgan_baseline",
+    "name": "Bison Ridge-Morgan baseline",
+    "type": "model",
+    "url": "https://arxiv.org/abs/2609.32467",
+    "description": "Multi-output ridge regression baseline using Morgan fingerprints, dose, time, and context covariates for unseen-compound prediction.",
+    "tags": [
+      "drug-discovery",
+      "drug-perturbation"
+    ],
+    "tasks": [
+      "Drug Discovery",
+      "Drug Perturbation"
+    ],
+    "modalities": [
+      "Small Molecule"
     ],
     "organism": [],
     "api": false
@@ -3298,6 +3496,26 @@
     ],
     "modalities": [
       "Text"
+    ],
+    "organism": [],
+    "api": false
+  },
+  {
+    "id": "cellflow",
+    "name": "CellFlow",
+    "type": "model",
+    "url": "https://github.com/theislab/CellFlow",
+    "description": "Conditional flow-matching framework for modeling and predicting cellular phenotypes under chemical, genetic, and other perturbations.",
+    "tags": [
+      "drug-discovery",
+      "drug-perturbation"
+    ],
+    "tasks": [
+      "Drug Discovery",
+      "Drug Perturbation"
+    ],
+    "modalities": [
+      "Small Molecule"
     ],
     "organism": [],
     "api": false
@@ -4992,6 +5210,26 @@
     "api": false
   },
   {
+    "id": "perturbnet",
+    "name": "PerturbNet",
+    "type": "model",
+    "url": "https://github.com/welch-lab/PerturbNet",
+    "description": "Conditional generative model for predicting distributions of single-cell states under unseen chemical and genetic perturbations.",
+    "tags": [
+      "drug-discovery",
+      "drug-perturbation"
+    ],
+    "tasks": [
+      "Drug Discovery",
+      "Drug Perturbation"
+    ],
+    "modalities": [
+      "Small Molecule"
+    ],
+    "organism": [],
+    "api": false
+  },
+  {
     "id": "phikon",
     "name": "Phikon",
     "type": "model",
@@ -5077,6 +5315,26 @@
     "api": false
   },
   {
+    "id": "prepr_ct",
+    "name": "PrePR-CT",
+    "type": "model",
+    "url": "https://github.com/reem12345/Cell-Type-Specific-Graphs",
+    "description": "Graph-based model using cell-type-specific co-expression networks as inductive priors for small-data chemical perturbation response prediction.",
+    "tags": [
+      "drug-discovery",
+      "drug-perturbation"
+    ],
+    "tasks": [
+      "Drug Discovery",
+      "Drug Perturbation"
+    ],
+    "modalities": [
+      "Small Molecule"
+    ],
+    "organism": [],
+    "api": false
+  },
+  {
     "id": "prnet",
     "name": "PRNet",
     "type": "model",
@@ -5129,6 +5387,26 @@
     "metadata_sources": [
       "https://github.com/salesforce/progen"
     ]
+  },
+  {
+    "id": "prophet",
+    "name": "Prophet",
+    "type": "model",
+    "url": "https://github.com/theislab/prophet",
+    "description": "Transformer model for predicting cellular phenotypes under unseen chemical or genetic perturbations across heterogeneous assays and contexts.",
+    "tags": [
+      "drug-discovery",
+      "drug-perturbation"
+    ],
+    "tasks": [
+      "Drug Discovery",
+      "Drug Perturbation"
+    ],
+    "modalities": [
+      "Small Molecule"
+    ],
+    "organism": [],
+    "api": false
   },
   {
     "id": "proteinmpnn",
@@ -5691,6 +5969,26 @@
     "api": false
   },
   {
+    "id": "state",
+    "name": "State",
+    "type": "model",
+    "url": "https://github.com/ArcInstitute/state",
+    "description": "Transition model for predicting cellular perturbation responses across diverse contexts and sets of cells.",
+    "tags": [
+      "drug-discovery",
+      "drug-perturbation"
+    ],
+    "tasks": [
+      "Drug Discovery",
+      "Drug Perturbation"
+    ],
+    "modalities": [
+      "Small Molecule"
+    ],
+    "organism": [],
+    "api": false
+  },
+  {
     "id": "targetdiff",
     "name": "TargetDiff",
     "type": "model",
@@ -5976,6 +6274,26 @@
     ],
     "modalities": [
       "Multi-Modal"
+    ],
+    "organism": [],
+    "api": false
+  },
+  {
+    "id": "xpert",
+    "name": "XPert",
+    "type": "model",
+    "url": "https://github.com/GSanShui/XPert",
+    "description": "Knowledge-informed dual-branch Transformer for drug-induced transcriptional perturbation prediction across dose, time, and cellular context.",
+    "tags": [
+      "drug-discovery",
+      "drug-perturbation"
+    ],
+    "tasks": [
+      "Drug Discovery",
+      "Drug Perturbation"
+    ],
+    "modalities": [
+      "Small Molecule"
     ],
     "organism": [],
     "api": false
