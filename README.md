@@ -25,6 +25,8 @@ The [Method Explorer](https://inoue0426.github.io/awesome-computational-biology/
 
 Both explorer tables support sortable columns and focused filters for quick comparison.
 
+Chemical and genetic perturbation datasets can be filtered separately in the Dataset Explorer.
+
 The explorer also includes the eight perturbation datasets used in the Bison unseen-compound benchmark.
 
 - Search matches `name`, `description`, `tasks`, `modalities`, and `tags`.
