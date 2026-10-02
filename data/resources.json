@@ -227,7 +227,39 @@
     "tasks": [],
     "modalities": [],
     "organism": [],
-    "api": false
+    "api": false,
+    "paper": "https://doi.org/10.1016/j.cell.2016.11.048",
+    "last_checked": "2026-10-02",
+    "metadata_sources": [
+      "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE90546"
+    ],
+    "dataset_profile": {
+      "view_scope": "full-study",
+      "species": [
+        "human"
+      ],
+      "sample_type": "cell-line",
+      "biological_context": "unfolded-protein-response",
+      "perturbation_type": [
+        "genetic"
+      ],
+      "readout": "single-cell-rna",
+      "n_profiles": "~86,000 cells",
+      "n_perturbations": "~100 UPR hits plus combinatorial CRISPRi perturbations",
+      "n_contexts": 3,
+      "gene_panel": "transcriptome-wide",
+      "paired": true,
+      "pre_post": false,
+      "longitudinal": false,
+      "drug_identity": false,
+      "dose": false,
+      "time": false,
+      "smiles": false,
+      "clinical_outcome": false,
+      "n_samples": "three pooled CRISPRi Perturb-seq experiments in K562",
+      "n_cells": "~86,000",
+      "access": "open"
+    }
   },
   {
     "id": "bace",
@@ -475,7 +507,40 @@
     "tasks": [],
     "modalities": [],
     "organism": [],
-    "api": false
+    "api": false,
+    "paper": "https://doi.org/10.1038/nmeth.4177",
+    "last_checked": "2026-10-02",
+    "metadata_sources": [
+      "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE92872",
+      "https://doi.org/10.1038/nmeth.4177"
+    ],
+    "dataset_profile": {
+      "view_scope": "full-study",
+      "species": [
+        "human"
+      ],
+      "sample_type": "cell-line",
+      "biological_context": "t-cell-receptor-signaling",
+      "perturbation_type": [
+        "genetic"
+      ],
+      "readout": "single-cell-rna",
+      "n_profiles": 5905,
+      "n_perturbations": "TCR regulators and transcription factors",
+      "n_contexts": 2,
+      "gene_panel": "transcriptome-wide",
+      "paired": true,
+      "pre_post": false,
+      "longitudinal": false,
+      "drug_identity": false,
+      "dose": false,
+      "time": false,
+      "smiles": false,
+      "clinical_outcome": false,
+      "n_samples": "stimulated and unstimulated Jurkat CROP-seq",
+      "n_cells": 5905,
+      "access": "open"
+    }
   },
   {
     "id": "dixit_et_al_2016_perturb_seq",
@@ -489,7 +554,41 @@
     "tasks": [],
     "modalities": [],
     "organism": [],
-    "api": false
+    "api": false,
+    "paper": "https://doi.org/10.1016/j.cell.2016.11.038",
+    "last_checked": "2026-10-02",
+    "metadata_sources": [
+      "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE90063",
+      "https://doi.org/10.1016/j.cell.2016.11.038"
+    ],
+    "dataset_profile": {
+      "view_scope": "full-study",
+      "species": [
+        "human",
+        "mouse"
+      ],
+      "sample_type": "cell-line+primary",
+      "biological_context": "immune-and-cell-line",
+      "perturbation_type": [
+        "genetic"
+      ],
+      "readout": "single-cell-rna",
+      "n_profiles": "~200,000 cells",
+      "n_perturbations": "pooled CRISPR-KO across six screens",
+      "n_contexts": 6,
+      "gene_panel": "transcriptome-wide",
+      "paired": true,
+      "pre_post": false,
+      "longitudinal": false,
+      "drug_identity": false,
+      "dose": false,
+      "time": true,
+      "smiles": false,
+      "clinical_outcome": false,
+      "n_samples": "six pooled screens across K562 and dendritic-cell conditions",
+      "n_cells": "~200,000",
+      "access": "open"
+    }
   },
   {
     "id": "dud_e_directory_of_useful_decoys_enhanced",
@@ -531,7 +630,40 @@
     "tasks": [],
     "modalities": [],
     "organism": [],
-    "api": false
+    "api": false,
+    "paper": "https://doi.org/10.1038/s41588-021-00779-1",
+    "last_checked": "2026-10-02",
+    "metadata_sources": [
+      "https://singlecell.broadinstitute.org/single_cell/study/SCP1064/multi-modal-pooled-perturb-cite-seq-screens-in-patient-models-define-novel-mechanisms-of-cancer-immune-evasion",
+      "https://doi.org/10.1038/s41588-021-00779-1"
+    ],
+    "dataset_profile": {
+      "view_scope": "full-study",
+      "species": [
+        "human"
+      ],
+      "sample_type": "patient-derived-cell-line",
+      "biological_context": "melanoma-immunotherapy",
+      "perturbation_type": [
+        "genetic"
+      ],
+      "readout": "cite-seq",
+      "n_profiles": ">200,000 cells",
+      "n_perturbations": 248,
+      "n_contexts": 3,
+      "gene_panel": "transcriptome + surface proteins",
+      "paired": true,
+      "pre_post": false,
+      "longitudinal": false,
+      "drug_identity": false,
+      "dose": false,
+      "time": false,
+      "smiles": false,
+      "clinical_outcome": false,
+      "n_samples": "patient-derived melanoma under control, IFN-gamma, and TIL co-culture conditions",
+      "n_cells": ">200,000",
+      "access": "mixed"
+    }
   },
   {
     "id": "gasperini_et_al_2019_crispri_enhancer_screen",
@@ -545,7 +677,39 @@
     "tasks": [],
     "modalities": [],
     "organism": [],
-    "api": false
+    "api": false,
+    "paper": "https://doi.org/10.1016/j.cell.2018.11.029",
+    "last_checked": "2026-10-02",
+    "metadata_sources": [
+      "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE120861"
+    ],
+    "dataset_profile": {
+      "view_scope": "full-study",
+      "species": [
+        "human"
+      ],
+      "sample_type": "cell-line",
+      "biological_context": "enhancer-gene-regulation",
+      "perturbation_type": [
+        "genetic"
+      ],
+      "readout": "single-cell-rna",
+      "n_profiles": 254974,
+      "n_perturbations": 5920,
+      "n_contexts": 3,
+      "gene_panel": "transcriptome-wide",
+      "paired": true,
+      "pre_post": false,
+      "longitudinal": false,
+      "drug_identity": false,
+      "dose": false,
+      "time": false,
+      "smiles": false,
+      "clinical_outcome": false,
+      "n_samples": "three CRISPRi screens in K562, including an at-scale enhancer screen",
+      "n_cells": 254974,
+      "access": "open"
+    }
   },
   {
     "id": "gse191127_breast_cancer_pre_post_chemotherapy",
@@ -901,7 +1065,40 @@
     "tasks": [],
     "modalities": [],
     "organism": [],
-    "api": false
+    "api": false,
+    "paper": "https://doi.org/10.1126/science.aax4438",
+    "last_checked": "2026-10-02",
+    "metadata_sources": [
+      "https://figshare.com/articles/dataset/Norman_et_al_2019_Perturb-seq/27766323",
+      "https://doi.org/10.1126/science.aax4438"
+    ],
+    "dataset_profile": {
+      "view_scope": "full-study",
+      "species": [
+        "human"
+      ],
+      "sample_type": "cell-line",
+      "biological_context": "genetic-interactions",
+      "perturbation_type": [
+        "genetic"
+      ],
+      "readout": "single-cell-rna",
+      "n_profiles": "~110,000 cells",
+      "n_perturbations": 287,
+      "n_contexts": 1,
+      "gene_panel": "transcriptome-wide",
+      "paired": true,
+      "pre_post": false,
+      "longitudinal": false,
+      "drug_identity": false,
+      "dose": false,
+      "time": false,
+      "smiles": false,
+      "clinical_outcome": false,
+      "n_samples": "single-gene and pairwise CRISPRa perturbations in K562",
+      "n_cells": "~110,000",
+      "access": "open"
+    }
   },
   {
     "id": "novartis_perturbation_dataset",
@@ -1219,7 +1416,40 @@
     "tasks": [],
     "modalities": [],
     "organism": [],
-    "api": false
+    "api": false,
+    "paper": "https://doi.org/10.1016/j.cell.2022.05.013",
+    "last_checked": "2026-10-02",
+    "metadata_sources": [
+      "https://plus.figshare.com/articles/dataset/_Mapping_information-rich_genotype-phenotype_landscapes_with_genome-scale_Perturb-seq_Replogle_et_al_2022_processed_Perturb-seq_datasets/20029387",
+      "https://gwps.wi.mit.edu/"
+    ],
+    "dataset_profile": {
+      "view_scope": "full-study",
+      "species": [
+        "human"
+      ],
+      "sample_type": "cell-line",
+      "biological_context": "essential-gene-screen",
+      "perturbation_type": [
+        "genetic"
+      ],
+      "readout": "single-cell-rna",
+      "n_profiles": 310385,
+      "n_perturbations": 2057,
+      "n_contexts": 1,
+      "gene_panel": "transcriptome-wide",
+      "paired": true,
+      "pre_post": false,
+      "longitudinal": false,
+      "drug_identity": false,
+      "dose": false,
+      "time": true,
+      "smiles": false,
+      "clinical_outcome": false,
+      "n_samples": "K562 CRISPRi essential-gene screen sampled at day 6",
+      "n_cells": 310385,
+      "access": "open"
+    }
   },
   {
     "id": "replogle_et_al_2022_k562_genome_wide_perturb_seq",
@@ -1233,7 +1463,40 @@
     "tasks": [],
     "modalities": [],
     "organism": [],
-    "api": false
+    "api": false,
+    "paper": "https://doi.org/10.1016/j.cell.2022.05.013",
+    "last_checked": "2026-10-02",
+    "metadata_sources": [
+      "https://plus.figshare.com/articles/dataset/_Mapping_information-rich_genotype-phenotype_landscapes_with_genome-scale_Perturb-seq_Replogle_et_al_2022_processed_Perturb-seq_datasets/20029387",
+      "https://gwps.wi.mit.edu/"
+    ],
+    "dataset_profile": {
+      "view_scope": "full-study",
+      "species": [
+        "human"
+      ],
+      "sample_type": "cell-line",
+      "biological_context": "genome-wide-functional-genomics",
+      "perturbation_type": [
+        "genetic"
+      ],
+      "readout": "single-cell-rna",
+      "n_profiles": "genome-scale; mean ~183 cells per detected perturbation",
+      "n_perturbations": "9,866 target genes; 11,258 detected sgRNA-pair perturbations",
+      "n_contexts": 1,
+      "gene_panel": "transcriptome-wide",
+      "paired": true,
+      "pre_post": false,
+      "longitudinal": false,
+      "drug_identity": false,
+      "dose": false,
+      "time": true,
+      "smiles": false,
+      "clinical_outcome": false,
+      "n_samples": "K562 CRISPRi genome-wide screen sampled at day 8",
+      "n_cells": "mean ~183 cells per detected perturbation",
+      "access": "open"
+    }
   },
   {
     "id": "replogle_et_al_2022_rpe1_essential_perturb_seq",
@@ -1247,7 +1510,40 @@
     "tasks": [],
     "modalities": [],
     "organism": [],
-    "api": false
+    "api": false,
+    "paper": "https://doi.org/10.1016/j.cell.2022.05.013",
+    "last_checked": "2026-10-02",
+    "metadata_sources": [
+      "https://plus.figshare.com/articles/dataset/_Mapping_information-rich_genotype-phenotype_landscapes_with_genome-scale_Perturb-seq_Replogle_et_al_2022_processed_Perturb-seq_datasets/20029387",
+      "https://gwps.wi.mit.edu/"
+    ],
+    "dataset_profile": {
+      "view_scope": "full-study",
+      "species": [
+        "human"
+      ],
+      "sample_type": "cell-line",
+      "biological_context": "essential-gene-screen",
+      "perturbation_type": [
+        "genetic"
+      ],
+      "readout": "single-cell-rna",
+      "n_profiles": 247914,
+      "n_perturbations": 2393,
+      "n_contexts": 1,
+      "gene_panel": "transcriptome-wide",
+      "paired": true,
+      "pre_post": false,
+      "longitudinal": false,
+      "drug_identity": false,
+      "dose": false,
+      "time": true,
+      "smiles": false,
+      "clinical_outcome": false,
+      "n_samples": "RPE1 CRISPRi essential-gene screen sampled at day 7",
+      "n_cells": 247914,
+      "access": "open"
+    }
   },
   {
     "id": "sci_plex",
