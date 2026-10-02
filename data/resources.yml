@@ -114,6 +114,17 @@ resources:
     organism: []
     api: false
 
+  - id: adamson_et_al_2016_perturb_seq
+    name: "Adamson et al. 2016 Perturb-seq"
+    type: benchmark
+    url: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE90546
+    description: "CRISPRi Perturb-seq in K562 cells for systematic dissection of the unfolded protein response."
+    tags: [genetic-perturbation-and-perturb-seq]
+    tasks: []
+    modalities: []
+    organism: []
+    api: false
+
   - id: bace
     name: "BACE"
     type: benchmark
@@ -213,6 +224,28 @@ resources:
     organism: []
     api: false
 
+  - id: datlinger_et_al_2017_crop_seq
+    name: "Datlinger et al. 2017 CROP-seq"
+    type: benchmark
+    url: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE92872
+    description: "Pooled CRISPR knockout screen with single-cell transcriptomic readout in Jurkat cells under T-cell receptor stimulation."
+    tags: [genetic-perturbation-and-perturb-seq]
+    tasks: []
+    modalities: []
+    organism: []
+    api: false
+
+  - id: dixit_et_al_2016_perturb_seq
+    name: "Dixit et al. 2016 Perturb-seq"
+    type: benchmark
+    url: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE90063
+    description: "Pooled CRISPR knockout with single-cell RNA-seq across K562 and dendritic-cell screens, including stimulated conditions and combinatorial perturbations."
+    tags: [genetic-perturbation-and-perturb-seq]
+    tasks: []
+    modalities: []
+    organism: []
+    api: false
+
   - id: dud_e_directory_of_useful_decoys_enhanced
     name: "DUD-E (Directory of Useful Decoys, Enhanced)"
     type: benchmark
@@ -230,6 +263,28 @@ resources:
     url: https://github.com/J-SNACKKB/FLIP
     description: "Benchmark collection of protein fitness landscape datasets for evaluating protein ML models."
     tags: [molecular-protein-and-drug-discovery]
+    tasks: []
+    modalities: []
+    organism: []
+    api: false
+
+  - id: frangieh_et_al_2021_perturb_cite_seq
+    name: "Frangieh et al. 2021 Perturb-CITE-seq"
+    type: benchmark
+    url: https://singlecell.broadinstitute.org/single_cell/study/SCP1064/multi-modal-pooled-perturb-cite-seq-screens-in-patient-models-define-novel-mechanisms-of-cancer-immune-evasion
+    description: "Multimodal CRISPR knockout screen with RNA and surface-protein readouts in patient-derived melanoma models under immune-related conditions."
+    tags: [genetic-perturbation-and-perturb-seq]
+    tasks: []
+    modalities: []
+    organism: []
+    api: false
+
+  - id: gasperini_et_al_2019_crispri_enhancer_screen
+    name: "Gasperini et al. 2019 CRISPRi enhancer screen"
+    type: benchmark
+    url: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE120861
+    description: "High-MOI single-cell CRISPRi screen in K562 cells targeting thousands of candidate enhancers to map enhancer-gene regulation."
+    tags: [genetic-perturbation-and-perturb-seq]
     tasks: []
     modalities: []
     organism: []
@@ -345,6 +400,17 @@ resources:
     organism: []
     api: false
 
+  - id: norman_et_al_2019_crispra_perturb_seq
+    name: "Norman et al. 2019 CRISPRa Perturb-seq"
+    type: benchmark
+    url: https://figshare.com/articles/dataset/Norman_et_al_2019_Perturb-seq/27766323
+    description: "Large-scale CRISPR activation Perturb-seq in K562 cells spanning single-gene and combinatorial perturbations."
+    tags: [genetic-perturbation-and-perturb-seq]
+    tasks: []
+    modalities: []
+    organism: []
+    api: false
+
   - id: novartis_perturbation_dataset
     name: "Novartis Perturbation Dataset"
     type: benchmark
@@ -450,6 +516,39 @@ resources:
     url: https://figshare.com/collections/Quantum_chemistry_structures_and_properties_of_134_kilo_molecules/978904
     description: "Quantum chemistry properties for 134K stable small organic molecules computed at DFT level."
     tags: [molecular-protein-and-drug-discovery]
+    tasks: []
+    modalities: []
+    organism: []
+    api: false
+
+  - id: replogle_et_al_2022_k562_essential_perturb_seq
+    name: "Replogle et al. 2022 K562 Essential Perturb-seq"
+    type: benchmark
+    url: https://plus.figshare.com/articles/dataset/_Mapping_information-rich_genotype-phenotype_landscapes_with_genome-scale_Perturb-seq_Replogle_et_al_2022_processed_Perturb-seq_datasets/20029387
+    description: "CRISPRi Perturb-seq focused on essential genes in K562 cells."
+    tags: [genetic-perturbation-and-perturb-seq]
+    tasks: []
+    modalities: []
+    organism: []
+    api: false
+
+  - id: replogle_et_al_2022_k562_genome_wide_perturb_seq
+    name: "Replogle et al. 2022 K562 Genome-wide Perturb-seq"
+    type: benchmark
+    url: https://plus.figshare.com/articles/dataset/_Mapping_information-rich_genotype-phenotype_landscapes_with_genome-scale_Perturb-seq_Replogle_et_al_2022_processed_Perturb-seq_datasets/20029387
+    description: "Genome-scale CRISPRi Perturb-seq targeting nearly all expressed genes in K562 cells."
+    tags: [genetic-perturbation-and-perturb-seq]
+    tasks: []
+    modalities: []
+    organism: []
+    api: false
+
+  - id: replogle_et_al_2022_rpe1_essential_perturb_seq
+    name: "Replogle et al. 2022 RPE1 Essential Perturb-seq"
+    type: benchmark
+    url: https://plus.figshare.com/articles/dataset/_Mapping_information-rich_genotype-phenotype_landscapes_with_genome-scale_Perturb-seq_Replogle_et_al_2022_processed_Perturb-seq_datasets/20029387
+    description: "CRISPRi Perturb-seq focused on essential genes in RPE1 cells."
+    tags: [genetic-perturbation-and-perturb-seq]
     tasks: []
     modalities: []
     organism: []
