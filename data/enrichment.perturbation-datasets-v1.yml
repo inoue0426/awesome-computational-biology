@@ -68,12 +68,12 @@ resources:
       biological_context: cancer
       perturbation_type: [chemical]
       paired: true
-      pre_post: partial
-      longitudinal: partial
+      pre_post: false
+      longitudinal: false
       drug_identity: true
-      dose: partial
+      dose: false
       smiles: partial
-      clinical_outcome: partial
+      clinical_outcome: false
       n_samples: ">50 PDXs from 30 prostate cancer patients in the current portal"
       n_cells: null
       access: open
