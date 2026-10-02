@@ -27,6 +27,7 @@ resources:
     metadata_sources:
       - https://lincsproject.org/LINCS/tools/workflows/find-the-best-place-to-obtain-the-lincs-l1000-data
     dataset_profile:
+      year: 2017
       readout: l1000
       gene_panel: "978 landmark genes"
       time: true
@@ -54,6 +55,7 @@ resources:
     metadata_sources:
       - https://depmap.org/portal/prism/
     dataset_profile:
+      year: 2020
       readout: viability
       n_compounds: ">4,500"
       n_contexts: ">900 cell lines"
