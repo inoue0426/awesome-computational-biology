@@ -108,6 +108,7 @@ resources:
       sample_type: cell-line
       biological_context: perturbation-collection
       perturbation_type: [chemical, genetic]
+      genetic_modes: [mixed]
       paired: false
       pre_post: false
       longitudinal: false

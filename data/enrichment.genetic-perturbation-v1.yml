@@ -13,6 +13,7 @@ resources:
       sample_type: cell-line+primary
       biological_context: immune-and-cell-line
       perturbation_type: [genetic]
+      genetic_modes: [crispr-ko, combinatorial]
       readout: single-cell-rna
       n_profiles: "~200,000 cells"
       n_perturbations: "pooled CRISPR-KO across six screens"
@@ -41,6 +42,7 @@ resources:
       sample_type: cell-line
       biological_context: unfolded-protein-response
       perturbation_type: [genetic]
+      genetic_modes: [crispri, combinatorial]
       readout: single-cell-rna
       n_profiles: "~86,000 cells"
       n_perturbations: "~100 UPR hits plus combinatorial CRISPRi perturbations"
@@ -70,6 +72,7 @@ resources:
       sample_type: cell-line
       biological_context: t-cell-receptor-signaling
       perturbation_type: [genetic]
+      genetic_modes: [crispr-ko]
       readout: single-cell-rna
       n_profiles: 5905
       n_perturbations: "TCR regulators and transcription factors"
@@ -99,6 +102,7 @@ resources:
       sample_type: cell-line
       biological_context: genetic-interactions
       perturbation_type: [genetic]
+      genetic_modes: [crispra, combinatorial]
       readout: single-cell-rna
       n_profiles: "~110,000 cells"
       n_perturbations: 287
@@ -127,6 +131,7 @@ resources:
       sample_type: cell-line
       biological_context: enhancer-gene-regulation
       perturbation_type: [genetic]
+      genetic_modes: [crispri, enhancer-targeting]
       readout: single-cell-rna
       n_profiles: 254974
       n_perturbations: 5920
@@ -156,6 +161,7 @@ resources:
       sample_type: cell-line
       biological_context: genome-wide-functional-genomics
       perturbation_type: [genetic]
+      genetic_modes: [crispri]
       readout: single-cell-rna
       n_profiles: "genome-scale; mean ~183 cells per detected perturbation"
       n_perturbations: "9,866 target genes; 11,258 detected sgRNA-pair perturbations"
@@ -185,6 +191,7 @@ resources:
       sample_type: cell-line
       biological_context: essential-gene-screen
       perturbation_type: [genetic]
+      genetic_modes: [crispri]
       readout: single-cell-rna
       n_profiles: 310385
       n_perturbations: 2057
@@ -214,6 +221,7 @@ resources:
       sample_type: cell-line
       biological_context: essential-gene-screen
       perturbation_type: [genetic]
+      genetic_modes: [crispri]
       readout: single-cell-rna
       n_profiles: 247914
       n_perturbations: 2393
@@ -243,6 +251,7 @@ resources:
       sample_type: patient-derived-cell-line
       biological_context: melanoma-immunotherapy
       perturbation_type: [genetic]
+      genetic_modes: [crispr-ko]
       readout: cite-seq
       n_profiles: ">200,000 cells"
       n_perturbations: 248
