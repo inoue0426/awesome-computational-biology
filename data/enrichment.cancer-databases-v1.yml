@@ -89,6 +89,7 @@ resources:
     metadata_sources:
       - https://www.cancer.gov/ccg/research/genome-sequencing/tcga
     dataset_profile:
+      year: 2018
       readout: multi-omics
       n_profiles: ">11,000 patients"
       n_contexts: 33
