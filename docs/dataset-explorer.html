@@ -10,7 +10,7 @@
 <body>
   <header>
     <h1>🧪 Dataset Explorer</h1>
-    <p class="subtitle">Compare drug-response and perturbation datasets by sample type, treatment metadata, and clinical context.</p>
+    <p class="subtitle">Compare drug-response and perturbation datasets by experimental design, scale, treatment metadata, and clinical context.</p>
     <p><a href="index.html">← Resource search</a> · <a href="landscape.html">AI4Bio Landscape</a></p>
   </header>
 
@@ -23,6 +23,9 @@
       <div class="filter-row">
         <label for="sample-type">Sample</label>
         <select id="sample-type"><option value="">All sample types</option></select>
+
+        <label for="readout">Readout</label>
+        <select id="readout"><option value="">All readouts</option></select>
 
         <label for="clinical-outcome">Clinical outcome</label>
         <select id="clinical-outcome">
@@ -50,24 +53,29 @@
 
     <section class="status-bar">
       <span id="dataset-count">Loading…</span>
-      <span class="load-time">v1: curated profiles only</span>
+      <span class="load-time">Click any column header to sort</span>
     </section>
 
     <section class="dataset-table-wrap" aria-label="Dataset comparison table">
       <table class="dataset-table">
         <thead>
           <tr>
-            <th>Dataset</th>
-            <th>Sample</th>
-            <th>Context</th>
-            <th>Perturbation</th>
-            <th>Paired</th>
-            <th>Pre/Post</th>
-            <th>Dose</th>
-            <th>SMILES</th>
-            <th>Clinical outcome</th>
-            <th>Scale</th>
-            <th>Access</th>
+            <th data-sort-key="name" aria-sort="ascending">Dataset <span class="sort-indicator">▲</span></th>
+            <th data-sort-key="sample_type">Sample <span class="sort-indicator"></span></th>
+            <th data-sort-key="biological_context">Context <span class="sort-indicator"></span></th>
+            <th data-sort-key="readout">Readout <span class="sort-indicator"></span></th>
+            <th data-sort-key="perturbation_type">Perturbation <span class="sort-indicator"></span></th>
+            <th data-sort-key="n_profiles">Profiles <span class="sort-indicator"></span></th>
+            <th data-sort-key="n_compounds">Compounds <span class="sort-indicator"></span></th>
+            <th data-sort-key="n_contexts">Contexts <span class="sort-indicator"></span></th>
+            <th data-sort-key="gene_panel">Gene panel <span class="sort-indicator"></span></th>
+            <th data-sort-key="paired">Paired <span class="sort-indicator"></span></th>
+            <th data-sort-key="pre_post">Pre/Post <span class="sort-indicator"></span></th>
+            <th data-sort-key="dose">Dose <span class="sort-indicator"></span></th>
+            <th data-sort-key="time">Time <span class="sort-indicator"></span></th>
+            <th data-sort-key="smiles">SMILES <span class="sort-indicator"></span></th>
+            <th data-sort-key="clinical_outcome">Clinical <span class="sort-indicator"></span></th>
+            <th data-sort-key="access">Access <span class="sort-indicator"></span></th>
           </tr>
         </thead>
         <tbody id="dataset-body"></tbody>
@@ -76,7 +84,7 @@
   </main>
 
   <footer>
-    <p>Dataset profiles are curated metadata layered on top of <code>data/resources.yml</code>.</p>
+    <p>Dataset profiles are curated metadata layered on top of <code>data/resources.yml</code>. Scale fields may describe a curated benchmark view rather than the entire source dataset.</p>
   </footer>
 
   <script src="dataset-explorer.js"></script>
