@@ -212,6 +212,7 @@ def validate_entry(entry: dict[str, Any]) -> list[str]:
                 "species", "sample_type", "biological_context", "perturbation_type",
                 "paired", "pre_post", "longitudinal", "drug_identity", "dose",
                 "smiles", "clinical_outcome", "n_samples", "n_cells", "access",
+                "readout", "gene_panel", "n_profiles", "n_compounds", "n_contexts", "time",
             }
             unknown_profile = sorted(set(profile) - allowed_profile_fields)
             if unknown_profile:
@@ -226,7 +227,7 @@ def validate_entry(entry: dict[str, Any]) -> list[str]:
                     errors.append(
                         f"[{rid}] dataset_profile.{field} must be a list of non-empty strings"
                     )
-            for field in ("paired", "pre_post", "longitudinal", "dose", "clinical_outcome"):
+            for field in ("paired", "pre_post", "longitudinal", "dose", "time", "clinical_outcome"):
                 if field in profile and not isinstance(profile[field], bool):
                     errors.append(f"[{rid}] dataset_profile.{field} must be boolean")
             if "drug_identity" in profile and not isinstance(profile["drug_identity"], (bool, str)):
@@ -235,13 +236,16 @@ def validate_entry(entry: dict[str, Any]) -> list[str]:
                 errors.append(
                     f"[{rid}] dataset_profile.smiles must be true, false, partial, or limited"
                 )
-            for field in ("sample_type", "biological_context", "n_samples", "access"):
+            for field in ("sample_type", "biological_context", "n_samples", "access", "readout", "gene_panel"):
                 if field in profile and profile[field] is not None and not isinstance(profile[field], str):
                     errors.append(f"[{rid}] dataset_profile.{field} must be a string")
-            if "n_cells" in profile and profile["n_cells"] is not None and not isinstance(
-                profile["n_cells"], (int, str)
-            ):
-                errors.append(f"[{rid}] dataset_profile.n_cells must be integer, string, or null")
+            for field in ("n_cells", "n_profiles", "n_compounds", "n_contexts"):
+                if field in profile and profile[field] is not None and not isinstance(
+                    profile[field], (int, str)
+                ):
+                    errors.append(
+                        f"[{rid}] dataset_profile.{field} must be integer, string, or null"
+                    )
     return errors
 
 
