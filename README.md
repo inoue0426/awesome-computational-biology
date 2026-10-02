@@ -228,6 +228,13 @@ For treatment-response work, the [Dataset Explorer](https://inoue0426.github.io/
 - [1000 Genomes Project](https://www.internationalgenome.org/) — Reference panel of human genetic variation from 2,504 individuals across 26 populations.
 - [BACE](https://www.kaggle.com/datasets/gokturkkoch/bace) — Binary classification and regression dataset for β-secretase 1 (BACE-1) inhibitor binding affinity.
 - [BEAT AML](https://biodev.github.io/BeatAML2/) — Functional ex vivo drug sensitivity measurements paired with genomics for acute myeloid leukemia.
+- [Chem-PerturBridge](https://github.com/theislab/Chem-PerturBridge) — Harmonized compendium and processing pipelines for small-molecule perturbation transcriptomics across heterogeneous assays and gene panels.
+- [OP3](https://github.com/theislab/Chem-PerturBridge) — Chemical perturbation dataset used by Chem-PerturBridge and the Bison unseen-compound benchmark; the Bison benchmark view contains 1,813 profiles, 138 molecules, and 4 cellular contexts.
+- [VCPI-0001](https://github.com/theislab/Chem-PerturBridge) — Bulk chemical perturbation dataset used in Chem-PerturBridge; the Bison benchmark view contains 27,517 profiles and 2,272 molecules in one cellular context.
+- [VCPI-0002](https://github.com/theislab/Chem-PerturBridge) — Bulk chemical perturbation dataset used in Chem-PerturBridge; the Bison benchmark view contains 18,139 profiles and 1,488 molecules in one cellular context.
+- [Novartis Perturbation Dataset](https://github.com/theislab/Chem-PerturBridge) — Large chemical perturbation transcriptomic screen used in Chem-PerturBridge; the Bison benchmark view contains 46,748 profiles and 3,770 molecules.
+- [LINCS L1000 Phase 1](https://github.com/theislab/Chem-PerturBridge) — Phase-1 L1000 benchmark view used by Bison with 692,787 profiles, 9,233 molecules, 70 contexts, and 978 landmark genes.
+- [LINCS L1000 Phase 2](https://github.com/theislab/Chem-PerturBridge) — Phase-2 L1000 benchmark view used by Bison with 333,263 profiles, 1,760 molecules, 30 contexts, and 978 landmark genes.
 - [Bento](https://github.com/LigandPro/Bento) — Protein-ligand docking benchmark covering rigid, flexible, de novo, blind, induced-fit, and covalent docking tasks.
 - [BindingDB Curated Sets](https://www.bindingdb.org/rwd/bind/chemsearch/marvin/SDFdownload.jsp?all_download=yes) — Curated binding affinity datasets for protein–ligand interaction benchmarking.
 - [Cancer Therapeutics Response Portal (CTRP)](https://portals.broadinstitute.org/ctrp/) — Drug sensitivity profiles across ~900 cancer cell lines for >400 compounds.
@@ -346,6 +353,17 @@ For treatment-response work, the [Dataset Explorer](https://inoue0426.github.io/
 - [chemCPA](https://github.com/theislab/chemCPA) — Compositional perturbation autoencoder for predicting single-cell transcriptional responses to unseen drug perturbations and dose combinations.
 - [cycleCDR](https://github.com/hliulab/cycleCDR) — Interpretable cycle-consistency framework for modeling cellular responses to drug perturbations.
 - [PRNet](https://github.com/Perturbation-Response-Prediction/PRnet) — Deep generative model for predicting transcriptional responses to novel chemical perturbations for drug discovery.
+- [Bison](https://arxiv.org/abs/2609.32467) — Cross-dataset model for globally unseen-compound response prediction using a shared gene representation, discrete diffusion models, and matched drug-contrast supervision.
+- [biolord](https://github.com/nitzanlab/biolord) — Deep generative model that disentangles known and unknown attributes for conditional generation of single-cell states.
+- [PerturbNet](https://github.com/welch-lab/PerturbNet) — Conditional generative model for predicting distributions of single-cell states under unseen chemical and genetic perturbations.
+- [CellFlow](https://github.com/theislab/CellFlow) — Conditional flow-matching framework for modeling and predicting cellular phenotypes under chemical, genetic, and other perturbations.
+- [Prophet](https://github.com/theislab/prophet) — Transformer model for predicting cellular phenotypes under unseen chemical or genetic perturbations across heterogeneous assays and contexts.
+- [PrePR-CT](https://github.com/reem12345/Cell-Type-Specific-Graphs) — Graph-based model using cell-type-specific co-expression networks as inductive priors for small-data chemical perturbation response prediction.
+- [XPert](https://github.com/GSanShui/XPert) — Knowledge-informed dual-branch Transformer for drug-induced transcriptional perturbation prediction across dose, time, and cellular context.
+- [State](https://github.com/ArcInstitute/state) — Transition model for predicting cellular perturbation responses across diverse contexts and sets of cells.
+- [Bison Ridge-Morgan baseline](https://arxiv.org/abs/2609.32467) — Multi-output ridge regression baseline using Morgan fingerprints, dose, time, and context covariates for unseen-compound prediction.
+- [Bison Linear baseline](https://arxiv.org/abs/2609.32467) — Unregularized linear baseline on Morgan fingerprints, dose, time, and context indicators used in the Bison benchmark.
+- [Bison Global Mean baseline](https://arxiv.org/abs/2609.32467) — Dataset-and-view-specific mean treated-profile control used in the Bison benchmark.
 
 #### Drug Repurposing
 
