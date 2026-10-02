@@ -224,6 +224,17 @@ resources:
     organism: []
     api: false
 
+  - id: gse191127_breast_cancer_pre_post_chemotherapy
+    name: "GSE191127 Breast Cancer Pre/Post Chemotherapy"
+    type: benchmark
+    url: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE191127
+    description: "Bulk RNA-seq and genomics from matched pre- and post-neoadjuvant chemotherapy breast tumors with treatment outcomes."
+    tags: [benchmarks-and-datasets]
+    tasks: []
+    modalities: []
+    organism: []
+    api: false
+
   - id: guacamol
     name: "GuacaMol"
     type: benchmark
@@ -268,6 +279,17 @@ resources:
     organism: []
     api: false
 
+  - id: mix_seq
+    name: "MIX-Seq"
+    type: benchmark
+    url: https://www.nature.com/articles/s41467-020-17440-w
+    description: "Multiplexed single-cell transcriptional profiling of chemical and genetic perturbation responses across pools of cancer cell lines."
+    tags: [benchmarks-and-datasets]
+    tasks: []
+    modalities: []
+    organism: []
+    api: false
+
   - id: moleculenet
     name: "MoleculeNet"
     type: benchmark
@@ -306,6 +328,17 @@ resources:
     type: benchmark
     url: https://github.com/OpenBioLink/OpenBioLink
     description: "Benchmark datasets for biological knowledge graph completion."
+    tags: [benchmarks-and-datasets]
+    tasks: []
+    modalities: []
+    organism: []
+    api: false
+
+  - id: pdx_atlas
+    name: "PDX-Atlas"
+    type: benchmark
+    url: https://muralportal.pdxatlas.org/
+    description: "Portal integrating clinical, genomic, transcriptomic, and drug-response data from patient-derived xenograft models."
     tags: [benchmarks-and-datasets]
     tasks: []
     modalities: []
@@ -367,6 +400,17 @@ resources:
     organism: []
     api: false
 
+  - id: sci_plex
+    name: "sci-Plex"
+    type: benchmark
+    url: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE139944
+    description: "Single-cell chemical perturbation screen of ~650,000 transcriptomes across three cancer cell lines, 188 compounds, and four doses."
+    tags: [benchmarks-and-datasets]
+    tasks: []
+    modalities: []
+    organism: []
+    api: false
+
   - id: scib_single_cell_integration_benchmarks
     name: "scIB (Single-cell Integration Benchmarks)"
     type: benchmark
@@ -416,6 +460,17 @@ resources:
     type: benchmark
     url: https://tabula-sapiens-portal.ds.czbiohub.org/
     description: "Comprehensive human single-cell atlas of ~500K cells from 24 organs and tissues across multiple donors."
+    tags: [benchmarks-and-datasets]
+    tasks: []
+    modalities: []
+    organism: []
+    api: false
+
+  - id: tahoe_100m
+    name: "Tahoe-100M"
+    type: benchmark
+    url: https://huggingface.co/datasets/tahoebio/Tahoe-100M
+    description: "Giga-scale single-cell perturbation atlas with >100 million profiles from 50 cancer cell lines exposed to ~1,100 small molecules."
     tags: [benchmarks-and-datasets]
     tasks: []
     modalities: []

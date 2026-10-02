@@ -456,6 +456,44 @@
     "api": false
   },
   {
+    "id": "gse191127_breast_cancer_pre_post_chemotherapy",
+    "name": "GSE191127 Breast Cancer Pre/Post Chemotherapy",
+    "type": "benchmark",
+    "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE191127",
+    "description": "Bulk RNA-seq and genomics from matched pre- and post-neoadjuvant chemotherapy breast tumors with treatment outcomes.",
+    "tags": [
+      "benchmarks-and-datasets"
+    ],
+    "tasks": [],
+    "modalities": [],
+    "organism": [],
+    "api": false,
+    "dataset_profile": {
+      "species": [
+        "human"
+      ],
+      "sample_type": "patient",
+      "biological_context": "breast-cancer",
+      "perturbation_type": [
+        "chemical"
+      ],
+      "paired": true,
+      "pre_post": true,
+      "longitudinal": true,
+      "drug_identity": "limited",
+      "dose": false,
+      "smiles": "partial",
+      "clinical_outcome": true,
+      "n_samples": "317 pretreatment biopsies; 22 matched pre/post tumors with deep profiling",
+      "n_cells": null,
+      "access": "open"
+    },
+    "last_checked": "2026-10-02",
+    "metadata_sources": [
+      "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE191127"
+    ]
+  },
+  {
     "id": "guacamol",
     "name": "GuacaMol",
     "type": "benchmark",
@@ -574,6 +612,45 @@
     }
   },
   {
+    "id": "mix_seq",
+    "name": "MIX-Seq",
+    "type": "benchmark",
+    "url": "https://www.nature.com/articles/s41467-020-17440-w",
+    "description": "Multiplexed single-cell transcriptional profiling of chemical and genetic perturbation responses across pools of cancer cell lines.",
+    "tags": [
+      "benchmarks-and-datasets"
+    ],
+    "tasks": [],
+    "modalities": [],
+    "organism": [],
+    "api": false,
+    "dataset_profile": {
+      "species": [
+        "human"
+      ],
+      "sample_type": "cell-line",
+      "biological_context": "cancer",
+      "perturbation_type": [
+        "chemical",
+        "genetic"
+      ],
+      "paired": false,
+      "pre_post": false,
+      "longitudinal": true,
+      "drug_identity": true,
+      "dose": true,
+      "smiles": "partial",
+      "clinical_outcome": false,
+      "n_samples": "pools of up to 100+ cancer cell lines; 13-drug demonstration",
+      "n_cells": "single-cell RNA-seq",
+      "access": "open"
+    },
+    "last_checked": "2026-10-02",
+    "metadata_sources": [
+      "https://www.nature.com/articles/s41467-020-17440-w"
+    ]
+  },
+  {
     "id": "moleculenet",
     "name": "MoleculeNet",
     "type": "benchmark",
@@ -641,6 +718,45 @@
     "modalities": [],
     "organism": [],
     "api": false
+  },
+  {
+    "id": "pdx_atlas",
+    "name": "PDX-Atlas",
+    "type": "benchmark",
+    "url": "https://muralportal.pdxatlas.org/",
+    "description": "Portal integrating clinical, genomic, transcriptomic, and drug-response data from patient-derived xenograft models.",
+    "tags": [
+      "benchmarks-and-datasets"
+    ],
+    "tasks": [],
+    "modalities": [],
+    "organism": [],
+    "api": false,
+    "dataset_profile": {
+      "species": [
+        "human",
+        "mouse"
+      ],
+      "sample_type": "pdx",
+      "biological_context": "cancer",
+      "perturbation_type": [
+        "chemical"
+      ],
+      "paired": true,
+      "pre_post": false,
+      "longitudinal": false,
+      "drug_identity": true,
+      "dose": false,
+      "smiles": "partial",
+      "clinical_outcome": false,
+      "n_samples": ">50 PDXs from 30 prostate cancer patients in the current portal",
+      "n_cells": null,
+      "access": "open"
+    },
+    "last_checked": "2026-10-02",
+    "metadata_sources": [
+      "https://muralportal.pdxatlas.org/"
+    ]
   },
   {
     "id": "pharmgkb",
@@ -713,10 +829,30 @@
       "cell",
       "drug"
     ],
-    "last_checked": "2026-08-08",
+    "last_checked": "2026-10-02",
     "metadata_sources": [
       "https://depmap.org/portal/prism/"
-    ]
+    ],
+    "dataset_profile": {
+      "species": [
+        "human"
+      ],
+      "sample_type": "cell-line",
+      "biological_context": "cancer",
+      "perturbation_type": [
+        "chemical"
+      ],
+      "paired": true,
+      "pre_post": false,
+      "longitudinal": false,
+      "drug_identity": true,
+      "dose": true,
+      "smiles": "partial",
+      "clinical_outcome": false,
+      "n_samples": "PRISM pooled viability screens",
+      "n_cells": null,
+      "access": "open"
+    }
   },
   {
     "id": "proteingym",
@@ -759,6 +895,46 @@
     "api": false
   },
   {
+    "id": "sci_plex",
+    "name": "sci-Plex",
+    "type": "benchmark",
+    "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE139944",
+    "description": "Single-cell chemical perturbation screen of ~650,000 transcriptomes across three cancer cell lines, 188 compounds, and four doses.",
+    "tags": [
+      "benchmarks-and-datasets"
+    ],
+    "tasks": [],
+    "modalities": [],
+    "organism": [],
+    "api": false,
+    "dataset_profile": {
+      "species": [
+        "human",
+        "mouse"
+      ],
+      "sample_type": "cell-line",
+      "biological_context": "perturbation-screen",
+      "perturbation_type": [
+        "chemical"
+      ],
+      "paired": false,
+      "pre_post": false,
+      "longitudinal": false,
+      "drug_identity": true,
+      "dose": true,
+      "smiles": "partial",
+      "clinical_outcome": false,
+      "n_samples": "~5,000 conditions; 188 compounds across 3 human cancer cell lines",
+      "n_cells": 649340,
+      "access": "open"
+    },
+    "last_checked": "2026-10-02",
+    "metadata_sources": [
+      "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE139944",
+      "https://pubmed.ncbi.nlm.nih.gov/31806696/"
+    ]
+  },
+  {
     "id": "scib_single_cell_integration_benchmarks",
     "name": "scIB (Single-cell Integration Benchmarks)",
     "type": "benchmark",
@@ -795,10 +971,32 @@
       "gene"
     ],
     "github": "https://github.com/sanderlab/scPerturb",
-    "last_checked": "2026-08-08",
+    "last_checked": "2026-10-02",
     "metadata_sources": [
       "https://github.com/sanderlab/scPerturb"
-    ]
+    ],
+    "dataset_profile": {
+      "species": [
+        "human",
+        "mouse"
+      ],
+      "sample_type": "cell-line",
+      "biological_context": "perturbation-collection",
+      "perturbation_type": [
+        "chemical",
+        "genetic"
+      ],
+      "paired": false,
+      "pre_post": false,
+      "longitudinal": false,
+      "drug_identity": true,
+      "dose": true,
+      "smiles": "partial",
+      "clinical_outcome": false,
+      "n_samples": "scPerturb integrated perturbation datasets",
+      "n_cells": "multi-study single-cell compendium",
+      "access": "open"
+    }
   },
   {
     "id": "sider_side_effect_resource",
@@ -851,6 +1049,44 @@
     "modalities": [],
     "organism": [],
     "api": false
+  },
+  {
+    "id": "tahoe_100m",
+    "name": "Tahoe-100M",
+    "type": "benchmark",
+    "url": "https://huggingface.co/datasets/tahoebio/Tahoe-100M",
+    "description": "Giga-scale single-cell perturbation atlas with >100 million profiles from 50 cancer cell lines exposed to ~1,100 small molecules.",
+    "tags": [
+      "benchmarks-and-datasets"
+    ],
+    "tasks": [],
+    "modalities": [],
+    "organism": [],
+    "api": false,
+    "dataset_profile": {
+      "species": [
+        "human"
+      ],
+      "sample_type": "cell-line",
+      "biological_context": "cancer",
+      "perturbation_type": [
+        "chemical"
+      ],
+      "paired": false,
+      "pre_post": false,
+      "longitudinal": false,
+      "drug_identity": true,
+      "dose": true,
+      "smiles": "partial",
+      "clinical_outcome": false,
+      "n_samples": ">100 million profiles; 50 cancer cell lines; ~1,100 compounds",
+      "n_cells": ">100 million",
+      "access": "open"
+    },
+    "last_checked": "2026-10-02",
+    "metadata_sources": [
+      "https://huggingface.co/datasets/tahoebio/Tahoe-100M"
+    ]
   },
   {
     "id": "tape_tasks_assessing_protein_embeddings",
