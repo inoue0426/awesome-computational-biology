@@ -89,6 +89,12 @@ resources:
     metadata_sources:
       - https://www.cancer.gov/ccg/research/genome-sequencing/tcga
     dataset_profile:
+      readout: multi-omics
+      n_profiles: ">11,000 patients"
+      n_contexts: 33
+      gene_panel: "transcriptome-wide plus multi-omics"
+      time: false
+      view_scope: full-resource
       species: [human]
       sample_type: patient
       biological_context: cancer
