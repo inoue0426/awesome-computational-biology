@@ -34,7 +34,7 @@ ALLOWED_MAINTENANCE = {"active", "maintenance", "archived", "unknown"}
 ALLOWED_ACCESS = {"open", "registration", "restricted", "commercial", "unknown"}
 ALLOWED_FIELDS = set(REQUIRED_FIELDS) | set(LIST_FIELDS) | {
     "license", "api", "paper", "updated", "github", "documentation", "year",
-    "maintenance_status", "access", "last_checked", "dataset_profile",
+    "maintenance_status", "access", "last_checked", "dataset_profile", "method_profile",
 }
 ID_RE = re.compile(r"^[a-z0-9]+(?:_[a-z0-9]+)*$")
 VOCAB_RE = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
