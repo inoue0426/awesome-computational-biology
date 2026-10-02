@@ -234,6 +234,7 @@
       "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE90546"
     ],
     "dataset_profile": {
+      "year": 2016,
       "view_scope": "full-study",
       "species": [
         "human"
@@ -320,6 +321,7 @@
       "https://biodev.github.io/BeatAML2/"
     ],
     "dataset_profile": {
+      "year": 2018,
       "readout": "ex-vivo-viability",
       "time": false,
       "view_scope": "full-resource",
@@ -407,6 +409,7 @@
       "https://portals.broadinstitute.org/ctrp/"
     ],
     "dataset_profile": {
+      "year": 2013,
       "readout": "viability",
       "n_compounds": ">400",
       "n_contexts": "~900 cell lines",
@@ -519,6 +522,7 @@
       "https://doi.org/10.1038/nmeth.4177"
     ],
     "dataset_profile": {
+      "year": 2017,
       "view_scope": "full-study",
       "species": [
         "human"
@@ -569,6 +573,7 @@
       "https://doi.org/10.1016/j.cell.2016.11.038"
     ],
     "dataset_profile": {
+      "year": 2016,
       "view_scope": "full-study",
       "species": [
         "human",
@@ -649,6 +654,7 @@
       "https://doi.org/10.1038/s41588-021-00779-1"
     ],
     "dataset_profile": {
+      "year": 2021,
       "view_scope": "full-study",
       "species": [
         "human"
@@ -698,6 +704,7 @@
       "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE120861"
     ],
     "dataset_profile": {
+      "year": 2019,
       "view_scope": "full-study",
       "species": [
         "human"
@@ -743,6 +750,7 @@
     "organism": [],
     "api": false,
     "dataset_profile": {
+      "year": 2022,
       "view_scope": "study-cohort",
       "readout": "bulk-rna",
       "n_profiles": "317 pretreatment; 22 matched pre/post deeply profiled",
@@ -870,6 +878,7 @@
       "https://lincsproject.org/LINCS/tools/workflows/find-the-best-place-to-obtain-the-lincs-l1000-data"
     ],
     "dataset_profile": {
+      "year": 2017,
       "readout": "l1000",
       "gene_panel": "978 landmark genes",
       "time": true,
@@ -912,6 +921,7 @@
     "organism": [],
     "api": false,
     "dataset_profile": {
+      "year": 2017,
       "view_scope": "bison-benchmark-view",
       "readout": "l1000",
       "n_profiles": 692787,
@@ -957,6 +967,7 @@
     "organism": [],
     "api": false,
     "dataset_profile": {
+      "year": 2017,
       "view_scope": "bison-benchmark-view",
       "readout": "l1000",
       "n_profiles": 333263,
@@ -1002,6 +1013,7 @@
     "organism": [],
     "api": false,
     "dataset_profile": {
+      "year": 2020,
       "view_scope": "full-resource",
       "readout": "single-cell-rna",
       "n_compounds": 13,
@@ -1097,6 +1109,7 @@
       "https://doi.org/10.1126/science.aax4438"
     ],
     "dataset_profile": {
+      "year": 2019,
       "view_scope": "full-study",
       "species": [
         "human"
@@ -1367,6 +1380,7 @@
       "https://depmap.org/portal/prism/"
     ],
     "dataset_profile": {
+      "year": 2020,
       "readout": "viability",
       "n_compounds": ">4,500",
       "n_contexts": ">900 cell lines",
@@ -1452,6 +1466,7 @@
       "https://gwps.wi.mit.edu/"
     ],
     "dataset_profile": {
+      "year": 2022,
       "view_scope": "full-study",
       "species": [
         "human"
@@ -1502,6 +1517,7 @@
       "https://gwps.wi.mit.edu/"
     ],
     "dataset_profile": {
+      "year": 2022,
       "view_scope": "full-study",
       "species": [
         "human"
@@ -1552,6 +1568,7 @@
       "https://gwps.wi.mit.edu/"
     ],
     "dataset_profile": {
+      "year": 2022,
       "view_scope": "full-study",
       "species": [
         "human"
@@ -1596,6 +1613,7 @@
     "organism": [],
     "api": false,
     "dataset_profile": {
+      "year": 2020,
       "view_scope": "bison-benchmark-view",
       "readout": "pseudobulk-rna",
       "n_profiles": 4974,
@@ -1671,6 +1689,7 @@
       "https://github.com/sanderlab/scPerturb"
     ],
     "dataset_profile": {
+      "year": 2024,
       "readout": "single-cell-rna",
       "gene_panel": "varies by source study",
       "time": true,
@@ -1766,6 +1785,7 @@
     "organism": [],
     "api": false,
     "dataset_profile": {
+      "year": 2025,
       "view_scope": "bison-benchmark-view",
       "readout": "single-cell-rna",
       "n_profiles": 67018,
@@ -1850,6 +1870,7 @@
       "https://www.cancer.gov/ccg/research/genome-sequencing/tcga"
     ],
     "dataset_profile": {
+      "year": 2018,
       "readout": "multi-omics",
       "n_profiles": ">11,000 patients",
       "n_contexts": 33,
@@ -2802,6 +2823,7 @@
       "https://www.cancerrxgene.org/"
     ],
     "dataset_profile": {
+      "year": 2012,
       "readout": "viability",
       "n_contexts": "~1,000 cell lines",
       "time": false,
