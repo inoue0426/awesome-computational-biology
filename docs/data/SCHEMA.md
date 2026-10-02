@@ -68,7 +68,6 @@ When contributing new resources, update `README.md` first, then regenerate artif
 }
 ```
 
-
 ## Dataset Explorer profile
 
 Resources that participate in the Dataset Explorer may define a `dataset_profile` object in a modular `data/enrichment.*.yml` file. This keeps README-derived identity fields separate from deeper dataset metadata.
