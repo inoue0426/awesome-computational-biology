@@ -1,0 +1,614 @@
+# Foundation Model Explorer v1 metadata.
+# Fine-grained modalities intentionally distinguish assay/data types for navigation.
+resources:
+  scfoundation:
+    foundation_profile:
+      year: 2024
+      modalities: [scrna]
+      params: "100M"
+      params_millions: 100
+      pretraining_scale: ">50M human single-cell transcriptomes"
+      species: [human]
+      zero_shot: limited
+      finetunable: true
+      weights: true
+      code: true
+      perturbation: limited
+      spatial: false
+
+  scgpt:
+    foundation_profile:
+      year: 2024
+      modalities: [scrna, multi-omics]
+      pretraining_scale: ">33M single-cell profiles"
+      species: [human]
+      zero_shot: limited
+      finetunable: true
+      weights: true
+      code: true
+      perturbation: true
+      spatial: limited
+
+  geneformer:
+    foundation_profile:
+      year: 2024
+      modalities: [scrna]
+      params: "10M / 104M / 316M"
+      params_millions: 316
+      pretraining_scale: "~104M human single-cell transcriptomes in V2; original corpus ~30M"
+      species: [human]
+      zero_shot: true
+      finetunable: true
+      weights: true
+      code: true
+      perturbation: true
+      spatial: false
+
+  bulkformer:
+    foundation_profile:
+      year: 2025
+      modalities: [bulk-rna]
+      pretraining_scale: "bulk RNA-seq compendium"
+      species: [human]
+      zero_shot: limited
+      finetunable: true
+      weights: true
+      code: true
+      perturbation: false
+      spatial: false
+
+  scbert:
+    foundation_profile:
+      year: 2022
+      modalities: [scrna]
+      pretraining_scale: "large-scale scRNA-seq corpus"
+      species: [human]
+      zero_shot: limited
+      finetunable: true
+      weights: true
+      code: true
+      perturbation: false
+      spatial: false
+
+  cellplm:
+    foundation_profile:
+      year: 2023
+      modalities: [scrna]
+      pretraining_scale: "multi-dataset single-cell pretraining"
+      species: [human]
+      zero_shot: limited
+      finetunable: true
+      weights: true
+      code: true
+      perturbation: limited
+      spatial: false
+
+  uce:
+    foundation_profile:
+      year: 2026
+      modalities: [scrna]
+      params: ">650M"
+      params_millions: 650
+      pretraining_scale: ">36M cells across >300 datasets"
+      species: [multi-species]
+      zero_shot: true
+      finetunable: limited
+      weights: true
+      code: true
+      perturbation: false
+      spatial: false
+
+  saturn:
+    foundation_profile:
+      year: 2024
+      modalities: [scrna, protein]
+      pretraining_scale: "cross-species single-cell atlases with protein-language-model embeddings"
+      species: [multi-species]
+      zero_shot: limited
+      finetunable: true
+      weights: true
+      code: true
+      perturbation: false
+      spatial: false
+
+  cancerfoundation:
+    foundation_profile:
+      year: 2025
+      modalities: [scrna]
+      pretraining_scale: "curated malignant-cell single-cell corpus"
+      species: [human]
+      zero_shot: limited
+      finetunable: true
+      weights: true
+      code: true
+      perturbation: limited
+      spatial: false
+
+  cellfm:
+    foundation_profile:
+      year: 2025
+      modalities: [scrna]
+      params: "800M"
+      params_millions: 800
+      pretraining_scale: "100M human cells"
+      species: [human]
+      zero_shot: limited
+      finetunable: true
+      weights: true
+      code: true
+      perturbation: true
+      spatial: false
+
+  scprint:
+    foundation_profile:
+      year: 2025
+      modalities: [scrna]
+      pretraining_scale: "large multi-dataset single-cell corpus"
+      species: [human]
+      zero_shot: limited
+      finetunable: true
+      weights: true
+      code: true
+      perturbation: limited
+      spatial: false
+
+  scprint_2:
+    foundation_profile:
+      year: 2026
+      modalities: [scrna]
+      pretraining_scale: "350M+ cells; 22K+ datasets; 16 species"
+      species: [multi-species]
+      zero_shot: true
+      finetunable: true
+      weights: true
+      code: true
+      perturbation: limited
+      spatial: false
+
+  nicheformer:
+    foundation_profile:
+      year: 2025
+      modalities: [scrna, spatial]
+      params: "49.3M"
+      params_millions: 49.3
+      pretraining_scale: "SpatialCorpus-110M"
+      species: [human, mouse]
+      zero_shot: true
+      finetunable: true
+      weights: true
+      code: true
+      perturbation: false
+      spatial: true
+
+  scgpt_spatial:
+    foundation_profile:
+      year: 2025
+      modalities: [scrna, spatial, multi-omics]
+      pretraining_scale: "continued pretraining from scGPT with spatial transcriptomics"
+      species: [human, mouse]
+      zero_shot: limited
+      finetunable: true
+      weights: true
+      code: true
+      perturbation: false
+      spatial: true
+
+  scmulan:
+    foundation_profile:
+      year: 2024
+      modalities: [scrna, atac, proteomics, multi-omics]
+      pretraining_scale: "~10M cells across transcriptomics, epigenomics, and proteomics"
+      species: [human, mouse]
+      zero_shot: limited
+      finetunable: true
+      weights: true
+      code: true
+      perturbation: false
+      spatial: false
+
+  genecompass:
+    foundation_profile:
+      year: 2024
+      modalities: [scrna, dna, multi-omics]
+      pretraining_scale: "120M+ cells across multiple species"
+      species: [multi-species]
+      zero_shot: limited
+      finetunable: true
+      weights: true
+      code: true
+      perturbation: limited
+      spatial: false
+
+  titan:
+    foundation_profile:
+      year: 2025
+      modalities: [pathology]
+      pretraining_scale: "whole-slide pathology with multimodal image-language supervision"
+      species: [human]
+      zero_shot: true
+      finetunable: true
+      weights: true
+      code: true
+      perturbation: false
+      spatial: false
+
+  virchow2:
+    foundation_profile:
+      year: 2024
+      modalities: [pathology]
+      params: "632M"
+      params_millions: 632
+      pretraining_scale: "3.1M whole-slide images"
+      species: [human]
+      zero_shot: limited
+      finetunable: true
+      weights: true
+      code: limited
+      perturbation: false
+      spatial: false
+
+  h_optimus_0:
+    foundation_profile:
+      year: 2024
+      modalities: [pathology]
+      params: "1.1B"
+      params_millions: 1100
+      pretraining_scale: "large multi-center histopathology corpus"
+      species: [human]
+      zero_shot: limited
+      finetunable: true
+      weights: true
+      code: limited
+      perturbation: false
+      spatial: false
+
+  h_optimus_1:
+    foundation_profile:
+      year: 2025
+      modalities: [pathology]
+      params: "1.1B"
+      params_millions: 1100
+      pretraining_scale: ">1M slides; >800K patients"
+      species: [human]
+      zero_shot: limited
+      finetunable: true
+      weights: true
+      code: limited
+      perturbation: false
+      spatial: false
+
+  uni2_h:
+    foundation_profile:
+      year: 2025
+      modalities: [pathology]
+      params: "~1B"
+      params_millions: 1000
+      pretraining_scale: "large-scale histopathology pretraining"
+      species: [human]
+      zero_shot: limited
+      finetunable: true
+      weights: true
+      code: limited
+      perturbation: false
+      spatial: false
+
+  phikon_v2:
+    foundation_profile:
+      year: 2025
+      modalities: [pathology]
+      pretraining_scale: "large-scale histopathology pretraining"
+      species: [human]
+      zero_shot: limited
+      finetunable: true
+      weights: true
+      code: limited
+      perturbation: false
+      spatial: false
+
+  genbio_pathfm:
+    foundation_profile:
+      year: 2026
+      modalities: [pathology]
+      params: "1.1B"
+      params_millions: 1100
+      pretraining_scale: "public histopathology corpus with morphology-aware curation"
+      species: [human]
+      zero_shot: limited
+      finetunable: true
+      weights: true
+      code: true
+      perturbation: false
+      spatial: false
+
+  uni_mol:
+    foundation_profile:
+      year: 2023
+      modalities: [chemical, protein]
+      pretraining_scale: "large-scale 3D molecular and pocket pretraining"
+      species: [multi-species]
+      zero_shot: limited
+      finetunable: true
+      weights: true
+      code: true
+      perturbation: false
+      spatial: false
+
+  uni_mol2:
+    foundation_profile:
+      year: 2024
+      modalities: [chemical]
+      params: "up to 1.1B"
+      params_millions: 1100
+      pretraining_scale: "800M molecular conformations"
+      species: []
+      zero_shot: limited
+      finetunable: true
+      weights: true
+      code: true
+      perturbation: false
+      spatial: false
+
+  chemfm:
+    foundation_profile:
+      year: 2024
+      modalities: [chemical]
+      params: "1B / 3B"
+      params_millions: 3000
+      pretraining_scale: "178M molecules"
+      species: []
+      zero_shot: limited
+      finetunable: true
+      weights: true
+      code: true
+      perturbation: false
+      spatial: false
+
+  esm_cambrian_esm_c:
+    foundation_profile:
+      year: 2024
+      modalities: [protein]
+      params: "300M / 600M / 6B"
+      params_millions: 6000
+      pretraining_scale: "evolutionary-scale protein sequence corpus"
+      species: [multi-species]
+      zero_shot: true
+      finetunable: true
+      weights: limited
+      code: true
+      perturbation: false
+      spatial: false
+
+  esm3:
+    foundation_profile:
+      year: 2024
+      modalities: [protein]
+      params: "1.4B / 7B / 98B"
+      params_millions: 98000
+      pretraining_scale: "multimodal protein sequence, structure, and function corpus"
+      species: [multi-species]
+      zero_shot: true
+      finetunable: limited
+      weights: limited
+      code: true
+      perturbation: false
+      spatial: false
+
+  boltz_2:
+    foundation_profile:
+      year: 2025
+      modalities: [protein, chemical]
+      pretraining_scale: "biomolecular complex structure and affinity data"
+      species: [multi-species]
+      zero_shot: true
+      finetunable: limited
+      weights: true
+      code: true
+      perturbation: false
+      spatial: false
+
+  protenix:
+    foundation_profile:
+      year: 2025
+      modalities: [protein, chemical]
+      pretraining_scale: "biomolecular structure pretraining"
+      species: [multi-species]
+      zero_shot: true
+      finetunable: true
+      weights: true
+      code: true
+      perturbation: false
+      spatial: false
+
+  rna_fm:
+    foundation_profile:
+      year: 2022
+      modalities: [rna]
+      params: "99M"
+      params_millions: 99
+      pretraining_scale: "23.7M non-coding RNA sequences"
+      species: [multi-species]
+      zero_shot: true
+      finetunable: true
+      weights: true
+      code: true
+      perturbation: false
+      spatial: false
+
+  rinalmo:
+    foundation_profile:
+      year: 2025
+      modalities: [rna]
+      params: "33.5M / 148M / 650M"
+      params_millions: 650
+      pretraining_scale: "36M non-coding RNA sequences"
+      species: [multi-species]
+      zero_shot: true
+      finetunable: true
+      weights: true
+      code: true
+      perturbation: false
+      spatial: false
+
+  evo_2:
+    foundation_profile:
+      year: 2026
+      modalities: [dna]
+      params: "1B / 7B / 40B"
+      params_millions: 40000
+      pretraining_scale: "9T DNA base pairs"
+      species: [multi-species]
+      zero_shot: true
+      finetunable: true
+      weights: true
+      code: true
+      perturbation: false
+      spatial: false
+
+  alphagenome:
+    foundation_profile:
+      year: 2025
+      modalities: [dna]
+      pretraining_scale: "long-context regulatory genomics corpus"
+      species: [human, mouse]
+      zero_shot: true
+      finetunable: unknown
+      weights: no
+      code: limited
+      perturbation: false
+      spatial: false
+
+  moderngena:
+    foundation_profile:
+      year: 2026
+      modalities: [dna]
+      pretraining_scale: "hundreds of vertebrate genome assemblies"
+      species: [multi-species]
+      zero_shot: limited
+      finetunable: true
+      weights: true
+      code: true
+      perturbation: false
+      spatial: false
+
+  nucleotide_transformer:
+    foundation_profile:
+      year: 2025
+      modalities: [dna]
+      params: "50M – 2.5B"
+      params_millions: 2500
+      pretraining_scale: "3,202 human genomes and up to 850 species"
+      species: [multi-species]
+      zero_shot: true
+      finetunable: true
+      weights: true
+      code: true
+      perturbation: false
+      spatial: false
+
+  dnabert_2:
+    foundation_profile:
+      year: 2023
+      modalities: [dna]
+      params: "117M"
+      params_millions: 117
+      pretraining_scale: "multi-species GenBank genome corpus"
+      species: [multi-species]
+      zero_shot: limited
+      finetunable: true
+      weights: true
+      code: true
+      perturbation: false
+      spatial: false
+
+  caduceus:
+    foundation_profile:
+      year: 2024
+      modalities: [dna]
+      pretraining_scale: "long-range genomic sequence pretraining"
+      species: [human]
+      zero_shot: limited
+      finetunable: true
+      weights: true
+      code: true
+      perturbation: false
+      spatial: false
+
+  hyenadna:
+    foundation_profile:
+      year: 2023
+      modalities: [dna]
+      pretraining_scale: "long-context human genome sequence"
+      species: [human]
+      zero_shot: limited
+      finetunable: true
+      weights: true
+      code: true
+      perturbation: false
+      spatial: false
+
+  gpn_genomic_pre_trained_network:
+    foundation_profile:
+      year: 2023
+      modalities: [dna]
+      pretraining_scale: "genomic sequence pretraining for variant-effect prediction"
+      species: [multi-species]
+      zero_shot: true
+      finetunable: true
+      weights: true
+      code: true
+      perturbation: false
+      spatial: false
+
+  methylgpt:
+    foundation_profile:
+      year: 2024
+      modalities: [methylation]
+      params: "3M / 7M / 15M"
+      params_millions: 15
+      pretraining_scale: "154,063 human methylomes after QC; 5,281 datasets; 49,156 CpG sites"
+      species: [human]
+      zero_shot: limited
+      finetunable: true
+      weights: true
+      code: true
+      perturbation: false
+      spatial: false
+
+  cpgpt:
+    foundation_profile:
+      year: 2025
+      modalities: [methylation]
+      pretraining_scale: "150K+ methylation samples across >2,000 datasets"
+      species: [human]
+      zero_shot: true
+      finetunable: true
+      weights: true
+      code: true
+      perturbation: false
+      spatial: false
+
+  mutationprojector:
+    foundation_profile:
+      year: 2026
+      modalities: [mutation]
+      pretraining_scale: ">30K tumors with somatic genomic alterations"
+      species: [human]
+      zero_shot: limited
+      finetunable: unknown
+      weights: unknown
+      code: unknown
+      perturbation: false
+      spatial: false
+
+  casanovo_foundation:
+    foundation_profile:
+      year: 2025
+      modalities: [proteomics]
+      pretraining_scale: "30M labeled tandem mass spectra"
+      species: [human]
+      zero_shot: limited
+      finetunable: true
+      weights: true
+      code: true
+      perturbation: false
+      spatial: false
