@@ -4007,6 +4007,23 @@
     "api": false
   },
   {
+    "id": "atacformer",
+    "name": "Atacformer",
+    "type": "model",
+    "url": "https://doi.org/10.1101/2025.11.03.685753",
+    "description": "Transformer foundation model for scATAC-seq that learns embeddings of cis-regulatory elements for clustering, annotation, and reference mapping.",
+    "tags": [
+      "foundation-models",
+      "single-cell-epigenomics-foundation-models"
+    ],
+    "tasks": [
+      "Foundation Model"
+    ],
+    "modalities": [],
+    "organism": [],
+    "api": false
+  },
+  {
     "id": "babel",
     "name": "BABEL",
     "type": "model",
@@ -4409,6 +4426,23 @@
       "perturbation": "limited",
       "spatial": false
     }
+  },
+  {
+    "id": "captain",
+    "name": "CAPTAIN",
+    "type": "model",
+    "url": "https://doi.org/10.1038/s41467-026-72882-y",
+    "description": "Multimodal foundation model pretrained on co-assayed single-cell RNA and protein for joint representation learning and cross-modal downstream tasks.",
+    "tags": [
+      "foundation-models",
+      "other-omics-foundation-models"
+    ],
+    "tasks": [
+      "Foundation Model"
+    ],
+    "modalities": [],
+    "organism": [],
+    "api": false
   },
   {
     "id": "casanovo_foundation",
@@ -4820,6 +4854,23 @@
     "api": false
   },
   {
+    "id": "chromfound",
+    "name": "ChromFound",
+    "type": "model",
+    "url": "https://github.com/SAIS-LifeScience/ChromFound",
+    "description": "Genome-aware scATAC-seq foundation model pretrained on 1.97M cells across tissues and disease contexts for zero-shot cell representations, annotation, and cross-omics prediction.",
+    "tags": [
+      "foundation-models",
+      "single-cell-epigenomics-foundation-models"
+    ],
+    "tasks": [
+      "Foundation Model"
+    ],
+    "modalities": [],
+    "organism": [],
+    "api": false
+  },
+  {
     "id": "clawbio",
     "name": "ClawBio",
     "type": "model",
@@ -4852,6 +4903,23 @@
       "human_in_loop": true,
       "open_source": true
     }
+  },
+  {
+    "id": "clm_x",
+    "name": "CLM-X",
+    "type": "model",
+    "url": "https://doi.org/10.64898/2026.02.17.704943",
+    "description": "Multi-way Transformer foundation model jointly handling RNA-only, ATAC-only, and paired RNA–ATAC single-cell inputs for integration, translation, annotation, and perturbation prediction.",
+    "tags": [
+      "foundation-models",
+      "single-cell-epigenomics-foundation-models"
+    ],
+    "tasks": [
+      "Foundation Model"
+    ],
+    "modalities": [],
+    "organism": [],
+    "api": false
   },
   {
     "id": "cmonge",
@@ -5493,6 +5561,23 @@
     "type": "model",
     "url": "https://github.com/xy-chen16/EpiAgent",
     "description": "scATAC-seq foundation model pretrained on ~5M cells and >35B tokens for representation learning, annotation, imputation, perturbation prediction, and in-silico cCRE knockout.",
+    "tags": [
+      "foundation-models",
+      "single-cell-epigenomics-foundation-models"
+    ],
+    "tasks": [
+      "Foundation Model"
+    ],
+    "modalities": [],
+    "organism": [],
+    "api": false
+  },
+  {
+    "id": "epifoundation",
+    "name": "EpiFoundation",
+    "type": "model",
+    "url": "https://doi.org/10.1101/2025.02.05.636688",
+    "description": "Foundation model for scATAC-seq using peak-to-gene aligned pretraining for cell representation, annotation, batch correction, and gene-expression prediction.",
     "tags": [
       "foundation-models",
       "single-cell-epigenomics-foundation-models"
@@ -6311,6 +6396,23 @@
     ]
   },
   {
+    "id": "hicfoundation",
+    "name": "HiCFoundation",
+    "type": "model",
+    "url": "https://doi.org/10.1038/s41592-026-03097-8",
+    "description": "Hi-C foundation model pretrained on large-scale chromatin-contact maps for 3D-genome analysis, epigenomic prediction, and single-cell Hi-C adaptation.",
+    "tags": [
+      "foundation-models",
+      "other-omics-foundation-models"
+    ],
+    "tasks": [
+      "Foundation Model"
+    ],
+    "modalities": [],
+    "organism": [],
+    "api": false
+  },
+  {
     "id": "hidra",
     "name": "HiDRA",
     "type": "model",
@@ -7068,6 +7170,23 @@
     "modalities": [
       "Protein"
     ],
+    "organism": [],
+    "api": false
+  },
+  {
+    "id": "omicsfm",
+    "name": "OmicsFM",
+    "type": "model",
+    "url": "https://github.com/CompOmics/OmicsFM",
+    "description": "Modality-agnostic molecular-expression foundation model with matched proteomics, bulk-transcriptomics, and single-cell-transcriptomics checkpoints.",
+    "tags": [
+      "foundation-models",
+      "other-omics-foundation-models"
+    ],
+    "tasks": [
+      "Foundation Model"
+    ],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -9267,6 +9386,23 @@
       "human_in_loop": true,
       "open_source": true
     }
+  },
+  {
+    "id": "virtues",
+    "name": "VirTues",
+    "type": "model",
+    "url": "https://github.com/bunnelab/virtues",
+    "description": "Spatial-proteomics foundation model learning marker-aware representations across proteins, cells, niches, and tissues from multiplexed imaging.",
+    "tags": [
+      "foundation-models",
+      "other-omics-foundation-models"
+    ],
+    "tasks": [
+      "Foundation Model"
+    ],
+    "modalities": [],
+    "organism": [],
+    "api": false
   },
   {
     "id": "xpert",
