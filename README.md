@@ -381,7 +381,7 @@ The explorer also includes the eight perturbation datasets used in the Bison uns
 - [PrePR-CT](https://github.com/reem12345/Cell-Type-Specific-Graphs) — Graph-based model using cell-type-specific co-expression networks as inductive priors for small-data chemical perturbation response prediction.
 - [XPert](https://github.com/GSanShui/XPert) — Knowledge-informed dual-branch Transformer for drug-induced transcriptional perturbation prediction across dose, time, and cellular context.
 - [State](https://github.com/ArcInstitute/state) — Transition model for predicting cellular perturbation responses across diverse contexts and sets of cells.
-- [TxPert](https://github.com/valence-labs/TxPert) — Knowledge-graph-informed latent-transfer model for transcriptomic perturbation prediction across unseen single perturbations, combinations, and cellular contexts.
+- [TxPert](https://github.com/valence-labs/TxPert) — Knowledge-graph-informed latent-transfer model for transcriptomic perturbation prediction across unseen single perturbations, combinations, and cross-context settings.
 - [LPM](https://github.com/perturblib/perturblib) — Large perturbation model that jointly learns heterogeneous perturbation experiments by disentangling perturbation, readout, and context representations.
 
 #### Drug Repurposing
