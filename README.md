@@ -461,6 +461,9 @@ The explorer also includes the eight perturbation datasets used in the Bison uns
 - [Biomni](https://github.com/snap-stanford/Biomni) — General-purpose biomedical AI agent integrating planning, code execution, specialized tools, databases, and software across diverse biomedical research tasks.
 - [ToolUniverse](https://github.com/mims-harvard/ToolUniverse) — Unified scientific tool ecosystem for building AI scientists that can discover, select, and execute biomedical tools and databases.
 - [ClawBio](https://github.com/ClawBio/ClawBio) — Bioinformatics-native AI agent skill library with local-first pharmacogenomics, ancestry PCA, semantic similarity, nutrigenomics, and metagenomics skills.
+- [BioMedAgent](https://github.com/BOBQWERA/BioMedAgent) — Self-evolving multi-agent framework for autonomous biomedical data analysis with tool discovery, workflow planning, code generation, execution, correction, and cross-omics analysis.
+- [BioMaster](https://github.com/ai4nucleome/BioMaster) — Multi-agent system for automated and auditable bioinformatics workflows spanning RNA-seq, ChIP-seq, single-cell, spatial omics, Hi-C, long reads, metagenomics, and proteomics.
+- [BRAD](https://github.com/Jpickard1/BRAD) — Retrieval-augmented bioinformatics assistant integrating scientific literature, databases, external tools, and executable workflows.
 
 #### Therapeutics & Drug Discovery Agents
 
@@ -472,6 +475,11 @@ The explorer also includes the eight perturbation datasets used in the Bison uns
 
 - [CASSIA](https://github.com/ElliotXie/CASSIA) — Multi-agent LLM framework for reference-free and interpretable single-cell cell-type annotation with dedicated annotation, validation, scoring, and reporting agents.
 - [STELLA](https://github.com/zaixizhang/STELLA) — Self-evolving biomedical research agent that expands its tool repertoire and supports literature reasoning, computational analysis, and laboratory-oriented scientific workflows.
+- [AutoBA](https://github.com/JoshuaChou2018/AutoBA) — Automated multi-omics analysis agent that plans, executes, and repairs bioinformatics workflows from natural-language objectives.
+- [GenoMAS](https://github.com/Liu-Hy/GenoMAS) — Multi-agent framework for code-driven gene-expression analysis with planning, execution, debugging, backtracking, and GEO/TCGA-based scientific discovery.
+- [BIA](https://github.com/biagent-dev/bia) — Bioinformatics agent for GEO search, sample metadata extraction, count-matrix processing, and pipeline extraction from papers.
+- [BioAgents](https://github.com/microsoft/bioinformagus) — Multi-agent bioinformatics assistant using specialized language models and retrieval for genomics workflow development and troubleshooting.
+- [Genomi](https://github.com/exon-research/genomi) — Local-first genomics agent runtime that indexes personal variants, queries evidence, and generates evidence-grounded reports while keeping raw genome data on-device.
 
 #### Multi-Agent Scientific Labs
 
