@@ -1779,7 +1779,7 @@ resources:
     name: "Bison Linear baseline"
     type: model
     url: https://arxiv.org/abs/2609.32467
-    description: "Unregularized linear baseline on Morgan fingerprints, dose, time, and context indicators used in the Bison benchmark."
+    description: "Least-squares linear baseline on Morgan fingerprints, dose, time, and context indicators used in the Bison benchmark."
     tags: [drug-discovery, drug-perturbation]
     tasks: [Drug Discovery, Drug Perturbation]
     modalities: [Small Molecule]
@@ -1790,7 +1790,7 @@ resources:
     name: "Bison Ridge-Morgan baseline"
     type: model
     url: https://arxiv.org/abs/2609.32467
-    description: "Multi-output ridge regression baseline using Morgan fingerprints, dose, time, and context covariates for unseen-compound prediction."
+    description: "Multi-output ridge regression baseline using Morgan fingerprints, dose, time, and context features for unseen-compound prediction."
     tags: [drug-discovery, drug-perturbation]
     tasks: [Drug Discovery, Drug Perturbation]
     modalities: [Small Molecule]
