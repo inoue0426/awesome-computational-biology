@@ -88,9 +88,24 @@ resources:
     modalities: [single-cell-rna-seq]
     tasks: [perturbation-prediction]
     github: https://github.com/sanderlab/scPerturb
-    last_checked: 2026-08-08
+    last_checked: 2026-10-02
     metadata_sources:
       - https://github.com/sanderlab/scPerturb
+    dataset_profile:
+      species: [human, mouse]
+      sample_type: cell-line
+      biological_context: perturbation-collection
+      perturbation_type: [chemical, genetic]
+      paired: false
+      pre_post: false
+      longitudinal: false
+      drug_identity: true
+      dose: partial
+      smiles: partial
+      clinical_outcome: false
+      n_samples: "scPerturb integrated perturbation datasets"
+      n_cells: "multi-study single-cell compendium"
+      access: open
 
   genomics_of_drug_sensitivity_in_cancer_gdsc:
     entities: [cell, drug, gene]

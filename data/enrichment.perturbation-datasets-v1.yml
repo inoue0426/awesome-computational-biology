@@ -1,0 +1,102 @@
+# Curated perturbation, patient, and PDX dataset profiles for Dataset Explorer.
+resources:
+  tahoe_100m:
+    dataset_profile:
+      species: [human]
+      sample_type: cell-line
+      biological_context: cancer
+      perturbation_type: [chemical]
+      paired: false
+      pre_post: false
+      longitudinal: false
+      drug_identity: true
+      dose: true
+      smiles: partial
+      clinical_outcome: false
+      n_samples: ">100 million profiles; 50 cancer cell lines; ~1,100 compounds"
+      n_cells: ">100 million"
+      access: open
+    last_checked: 2026-10-02
+    metadata_sources:
+      - https://huggingface.co/datasets/tahoebio/Tahoe-100M
+
+  sci_plex:
+    dataset_profile:
+      species: [human, mouse]
+      sample_type: cell-line
+      biological_context: perturbation-screen
+      perturbation_type: [chemical]
+      paired: false
+      pre_post: false
+      longitudinal: false
+      drug_identity: true
+      dose: true
+      smiles: partial
+      clinical_outcome: false
+      n_samples: "~5,000 conditions; 188 compounds across 3 human cancer cell lines"
+      n_cells: 649340
+      access: open
+    last_checked: 2026-10-02
+    metadata_sources:
+      - https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE139944
+      - https://pubmed.ncbi.nlm.nih.gov/31806696/
+
+  mix_seq:
+    dataset_profile:
+      species: [human]
+      sample_type: cell-line
+      biological_context: cancer
+      perturbation_type: [chemical, genetic]
+      paired: false
+      pre_post: false
+      longitudinal: true
+      drug_identity: true
+      dose: true
+      smiles: partial
+      clinical_outcome: false
+      n_samples: "pools of up to 100+ cancer cell lines; 13-drug demonstration"
+      n_cells: "single-cell RNA-seq"
+      access: open
+    last_checked: 2026-10-02
+    metadata_sources:
+      - https://www.nature.com/articles/s41467-020-17440-w
+
+  pdx_atlas:
+    dataset_profile:
+      species: [human, mouse]
+      sample_type: pdx
+      biological_context: cancer
+      perturbation_type: [chemical]
+      paired: true
+      pre_post: partial
+      longitudinal: partial
+      drug_identity: true
+      dose: partial
+      smiles: partial
+      clinical_outcome: partial
+      n_samples: ">50 PDXs from 30 prostate cancer patients in the current portal"
+      n_cells: null
+      access: open
+    last_checked: 2026-10-02
+    metadata_sources:
+      - https://muralportal.pdxatlas.org/
+
+  gse191127_breast_cancer_pre_post_chemotherapy:
+    dataset_profile:
+      species: [human]
+      sample_type: patient
+      biological_context: breast-cancer
+      perturbation_type: [chemical]
+      paired: true
+      pre_post: true
+      longitudinal: true
+      drug_identity: limited
+      dose: false
+      smiles: partial
+      clinical_outcome: true
+      n_samples: "317 pretreatment biopsies; 22 matched pre/post tumors with deep profiling"
+      n_cells: null
+      access: open
+    last_checked: 2026-10-02
+    metadata_sources:
+      - https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE191127

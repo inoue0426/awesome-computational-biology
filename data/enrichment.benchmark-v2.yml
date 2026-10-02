@@ -45,9 +45,24 @@ resources:
   prism:
     entities: [cell, drug]
     tasks: [drug-response-prediction]
-    last_checked: 2026-08-08
+    last_checked: 2026-10-02
     metadata_sources:
       - https://depmap.org/portal/prism/
+    dataset_profile:
+      species: [human]
+      sample_type: cell-line
+      biological_context: cancer
+      perturbation_type: [chemical]
+      paired: true
+      pre_post: false
+      longitudinal: false
+      drug_identity: true
+      dose: true
+      smiles: partial
+      clinical_outcome: false
+      n_samples: "PRISM pooled viability screens"
+      n_cells: null
+      access: open
 
   pharmgkb:
     entities: [drug, gene, phenotype, variant]

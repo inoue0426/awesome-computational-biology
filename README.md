@@ -240,6 +240,11 @@ For treatment-response work, the [Dataset Explorer](https://inoue0426.github.io/
 - [GuacaMol](https://github.com/BenevolentAI/guacamol) — Benchmark suite for generative molecular design models.
 - [JUMP Cell Painting Datasets](https://github.com/jump-cellpainting/datasets) — Consortium-scale cell imaging perturbation datasets (chemical and genetic) for phenotypic profiling and drug discovery research.
 - [LINCS L1000](https://lincsproject.org/LINCS/tools/workflows/find-the-best-place-to-obtain-the-lincs-l1000-data) — Gene expression profiles (978 landmark genes) for >20,000 chemical and genetic perturbations across cell lines.
+- [Tahoe-100M](https://huggingface.co/datasets/tahoebio/Tahoe-100M) — Giga-scale single-cell perturbation atlas with >100 million profiles from 50 cancer cell lines exposed to ~1,100 small molecules.
+- [sci-Plex](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE139944) — Single-cell chemical perturbation screen of ~650,000 transcriptomes across three cancer cell lines, 188 compounds, and four doses.
+- [MIX-Seq](https://www.nature.com/articles/s41467-020-17440-w) — Multiplexed single-cell transcriptional profiling of chemical and genetic perturbation responses across pools of cancer cell lines.
+- [PDX-Atlas](https://muralportal.pdxatlas.org/) — Portal integrating clinical, genomic, transcriptomic, and drug-response data from patient-derived xenograft models.
+- [GSE191127 Breast Cancer Pre/Post Chemotherapy](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE191127) — Bulk RNA-seq and genomics from matched pre- and post-neoadjuvant chemotherapy breast tumors with treatment outcomes.
 - [MoleculeNet](http://moleculenet.ai/) — Benchmark datasets for molecular machine learning.
 - [MOSES](https://github.com/molecularsets/moses) — Benchmarking platform for molecular generation models.
 - [NCI60](https://dtp.cancer.gov/discovery_development/nci-60/) — Drug sensitivity benchmark across 60 diverse human cancer cell lines.
