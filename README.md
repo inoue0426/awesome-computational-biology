@@ -363,8 +363,8 @@ The explorer also includes the eight perturbation datasets used in the Bison uns
 - [PrePR-CT](https://github.com/reem12345/Cell-Type-Specific-Graphs) — Graph-based model using cell-type-specific co-expression networks as inductive priors for small-data chemical perturbation response prediction.
 - [XPert](https://github.com/GSanShui/XPert) — Knowledge-informed dual-branch Transformer for drug-induced transcriptional perturbation prediction across dose, time, and cellular context.
 - [State](https://github.com/ArcInstitute/state) — Transition model for predicting cellular perturbation responses across diverse contexts and sets of cells.
-- [Bison Ridge-Morgan baseline](https://arxiv.org/abs/2609.32467) — Multi-output ridge regression baseline using Morgan fingerprints, dose, time, and context covariates for unseen-compound prediction.
-- [Bison Linear baseline](https://arxiv.org/abs/2609.32467) — Unregularized linear baseline on Morgan fingerprints, dose, time, and context indicators used in the Bison benchmark.
+- [Bison Ridge-Morgan baseline](https://arxiv.org/abs/2609.32467) — Multi-output ridge regression baseline using Morgan fingerprints, dose, time, and context features for unseen-compound prediction.
+- [Bison Linear baseline](https://arxiv.org/abs/2609.32467) — Least-squares linear baseline on Morgan fingerprints, dose, time, and context indicators used in the Bison benchmark.
 - [Bison Global Mean baseline](https://arxiv.org/abs/2609.32467) — Dataset-and-view-specific mean treated-profile control used in the Bison benchmark.
 
 #### Drug Repurposing
