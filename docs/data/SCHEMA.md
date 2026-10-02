@@ -89,6 +89,12 @@ Supported v1 fields:
 | `clinical_outcome` | boolean | Whether patient-level clinical outcomes are available. |
 | `n_samples` | string | Human-readable scale summary. |
 | `n_cells` | integer, string, or null | Cell count for single-cell datasets when meaningful. |
+| `n_profiles` | integer, string, or null | Number of profiles in the curated comparison view. |
+| `n_compounds` | integer, string, or null | Number of compounds/molecules in the curated comparison view. |
+| `n_contexts` | integer, string, or null | Number of cellular or experimental contexts. |
+| `readout` | string | Primary readout, e.g. `bulk-rna`, `pseudobulk-rna`, `single-cell-rna`, or `viability`. |
+| `gene_panel` | string | Gene/readout panel summary, e.g. `20,251 full / 2,000 HVG` or `978 landmark genes`. |
+| `time` | boolean | Whether treatment time metadata are available. |
 | `access` | string | Dataset-level access summary. |
 
 The v1 profiles are colocated with their existing modular `data/enrichment.*.yml` owners and rendered at `docs/dataset-explorer.html`.
