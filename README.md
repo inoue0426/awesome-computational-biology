@@ -25,7 +25,7 @@ The [Method Explorer](https://inoue0426.github.io/awesome-computational-biology/
 
 Both explorer tables support sortable columns and focused filters for quick comparison.
 
-Chemical and genetic perturbation datasets can be filtered separately in the Dataset Explorer.
+Chemical and genetic perturbation datasets can be filtered separately in the Dataset Explorer. Genetic screens can also be filtered by CRISPRi, CRISPRa, knockout, enhancer-targeting, combinatorial, or mixed perturbation modes.
 
 The explorer also includes the eight perturbation datasets used in the Bison unseen-compound benchmark.
 
