@@ -3,6 +3,7 @@
 resources:
   tahoe_100m:
     dataset_profile:
+      year: 2025
       view_scope: bison-benchmark-view
       readout: single-cell-rna
       n_profiles: 67018
@@ -30,6 +31,7 @@ resources:
 
   sci_plex:
     dataset_profile:
+      year: 2020
       view_scope: bison-benchmark-view
       readout: pseudobulk-rna
       n_profiles: 4974
@@ -58,6 +60,7 @@ resources:
 
   mix_seq:
     dataset_profile:
+      year: 2020
       view_scope: full-resource
       readout: single-cell-rna
       n_compounds: 13
@@ -111,6 +114,7 @@ resources:
 
   gse191127_breast_cancer_pre_post_chemotherapy:
     dataset_profile:
+      year: 2022
       view_scope: study-cohort
       readout: bulk-rna
       n_profiles: "317 pretreatment; 22 matched pre/post deeply profiled"
@@ -246,6 +250,7 @@ resources:
 
   lincs_l1000_phase_1:
     dataset_profile:
+      year: 2017
       view_scope: bison-benchmark-view
       readout: l1000
       n_profiles: 692787
@@ -273,6 +278,7 @@ resources:
 
   lincs_l1000_phase_2:
     dataset_profile:
+      year: 2017
       view_scope: bison-benchmark-view
       readout: l1000
       n_profiles: 333263
