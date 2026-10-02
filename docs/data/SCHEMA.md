@@ -39,6 +39,7 @@ When contributing new resources, update `README.md` first, then regenerate artif
 | `api` | boolean | Whether programmatic API access is available. Defaults to `false`. |
 | `paper` | string | DOI or URL to preprint/peer-reviewed publication. |
 | `updated` | string | Last-known update date, recommended `YYYY-MM-DD`. |
+| `dataset_profile` | object | Optional Dataset Explorer metadata for structured comparison of datasets/benchmarks. |
 
 ## Naming and consistency guidance
 
@@ -66,3 +67,29 @@ When contributing new resources, update `README.md` first, then regenerate artif
   "updated": "2026-01-15"
 }
 ```
+
+
+## Dataset Explorer profile
+
+Resources that participate in the Dataset Explorer may define a `dataset_profile` object in a modular `data/enrichment.*.yml` file. This keeps README-derived identity fields separate from deeper dataset metadata.
+
+Supported v1 fields:
+
+| Field | Type | Meaning |
+|---|---|---|
+| `species` | array of strings | Species represented in the dataset. |
+| `sample_type` | string | Primary unit, e.g. `patient` or `cell-line`. |
+| `biological_context` | string | High-level context such as `cancer` or `perturbation-screen`. |
+| `perturbation_type` | array of strings | Chemical, genetic, or other interventions. |
+| `paired` | boolean | Whether molecular/sample identity can be linked to the measured response or perturbation condition. |
+| `pre_post` | boolean | Whether matched pre-treatment and post-treatment samples are available. |
+| `longitudinal` | boolean | Whether repeated measurements over time are available as a core design feature. |
+| `drug_identity` | boolean or string | Whether treatment identity is available; strings such as `limited` may encode partial availability. |
+| `dose` | boolean | Whether dose/concentration metadata are available. |
+| `smiles` | boolean or `partial`/`limited` | Whether compound structures are directly available or can only be partially mapped. |
+| `clinical_outcome` | boolean | Whether patient-level clinical outcomes are available. |
+| `n_samples` | string | Human-readable scale summary. |
+| `n_cells` | integer, string, or null | Cell count for single-cell datasets when meaningful. |
+| `access` | string | Dataset-level access summary. |
+
+The initial v1 profiles live in `data/enrichment.dataset-explorer-v1.yml` and are rendered at `docs/dataset-explorer.html`.
