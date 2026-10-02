@@ -7,6 +7,7 @@
   var sortDirection = 'asc';
 
   var search = document.getElementById('dataset-search');
+  var datasetYear = document.getElementById('dataset-year');
   var sampleType = document.getElementById('sample-type');
   var readout = document.getElementById('readout');
   var perturbationType = document.getElementById('perturbation-type');
@@ -28,6 +29,7 @@
       rows = (Array.isArray(data) ? data : []).filter(function (r) {
         return r.dataset_profile && typeof r.dataset_profile === 'object';
       });
+      populateYears();
       populateSelect(sampleType, 'sample_type');
       populateSelect(readout, 'readout');
       populateArraySelect(perturbationType, 'perturbation_type');
@@ -37,8 +39,22 @@
     })
     .catch(function (err) {
       count.textContent = 'Failed to load dataset metadata.';
-      body.innerHTML = '<tr><td colspan="19">Could not load resources.json: ' + escapeHtml(err.message) + '</td></tr>';
+      body.innerHTML = '<tr><td colspan="20">Could not load resources.json: ' + escapeHtml(err.message) + '</td></tr>';
     });
+
+  function populateYears() {
+    var values = {};
+    rows.forEach(function (r) {
+      var value = r.dataset_profile.year;
+      if (value) values[value] = true;
+    });
+    Object.keys(values).sort().reverse().forEach(function (value) {
+      var option = document.createElement('option');
+      option.value = value;
+      option.textContent = value;
+      datasetYear.appendChild(option);
+    });
+  }
 
   function populateSelect(select, field) {
     var values = {};
@@ -111,6 +127,7 @@
     var query = (search.value || '').trim().toLowerCase();
     var filtered = rows.filter(function (r) {
       var p = r.dataset_profile || {};
+      if (datasetYear.value && String(p.year || '') !== datasetYear.value) return false;
       if (sampleType.value && p.sample_type !== sampleType.value) return false;
       if (readout.value && p.readout !== readout.value) return false;
       if (perturbationType.value && (p.perturbation_type || []).indexOf(perturbationType.value) === -1) return false;
@@ -120,7 +137,7 @@
       if (smiles.value && String(p.smiles) !== smiles.value) return false;
       if (query) {
         var haystack = [
-          r.name, r.description, p.sample_type, p.biological_context, p.readout,
+          r.name, r.description, p.year, p.sample_type, p.biological_context, p.readout,
           (p.perturbation_type || []).join(' '), (p.genetic_modes || []).join(' '),
           p.n_samples, p.gene_panel, p.access
         ].join(' ').toLowerCase();
@@ -134,7 +151,7 @@
     count.textContent = filtered.length + ' curated dataset profile' + (filtered.length === 1 ? '' : 's');
     body.innerHTML = '';
     if (!filtered.length) {
-      body.innerHTML = '<tr><td colspan="19" class="empty-state">No datasets match these filters.</td></tr>';
+      body.innerHTML = '<tr><td colspan="20" class="empty-state">No datasets match these filters.</td></tr>';
       return;
     }
 
@@ -143,6 +160,7 @@
       var tr = document.createElement('tr');
       tr.innerHTML =
         '<td class="dataset-name"><a href="' + escapeAttr(r.url || '#') + '" target="_blank" rel="noopener noreferrer">' + escapeHtml(r.name) + '</a></td>' +
+        '<td class="num">' + escapeHtml(p.year || '—') + '</td>' +
         '<td>' + escapeHtml(humanize(p.view_scope)) + '</td>' +
         '<td>' + escapeHtml(humanize(p.sample_type)) + '</td>' +
         '<td>' + escapeHtml(humanize(p.biological_context)) + '</td>' +
@@ -186,6 +204,7 @@
     if (value === 'partial' || value === 'limited') return { missing: false, value: 1 };
     if (typeof value === 'number') return { missing: false, value: value };
 
+    if (key === 'year') return { missing: false, value: Number(value) || 0 };
     if (key === 'n_profiles' || key === 'n_perturbations' || key === 'n_compounds' || key === 'n_contexts' || key === 'n_cells') {
       var numeric = parseNumeric(value);
       return { missing: numeric === null, value: numeric === null ? 0 : numeric };
@@ -235,12 +254,13 @@
     return escapeHtml(value).replace(/'/g, '&#39;');
   }
 
-  [search, sampleType, readout, perturbationType, geneticMode, clinicalOutcome, prePost, smiles].forEach(function (el) {
+  [search, datasetYear, sampleType, readout, perturbationType, geneticMode, clinicalOutcome, prePost, smiles].forEach(function (el) {
     el.addEventListener(el === search ? 'input' : 'change', render);
   });
 
   clear.addEventListener('click', function () {
     search.value = '';
+    datasetYear.value = '';
     sampleType.value = '';
     readout.value = '';
     perturbationType.value = '';
