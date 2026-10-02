@@ -5336,6 +5336,23 @@
     "api": false
   },
   {
+    "id": "epiagent",
+    "name": "EpiAgent",
+    "type": "model",
+    "url": "https://github.com/xy-chen16/EpiAgent",
+    "description": "scATAC-seq foundation model pretrained on ~5M cells and >35B tokens for representation learning, annotation, imputation, perturbation prediction, and in-silico cCRE knockout.",
+    "tags": [
+      "foundation-models",
+      "single-cell-epigenomics-foundation-models"
+    ],
+    "tasks": [
+      "Foundation Model"
+    ],
+    "modalities": [],
+    "organism": [],
+    "api": false
+  },
+  {
     "id": "esm_cambrian_esm_c",
     "name": "ESM Cambrian (ESM C)",
     "type": "model",
@@ -6683,10 +6700,10 @@
     "name": "MutationProjector",
     "type": "model",
     "url": "https://doi.org/10.1101/2025.09.08.674723",
-    "description": "Tumor-genome foundation model pretrained on somatic alterations from >30K tumors to learn representations for cancer subtype and treatment-response tasks.",
+    "description": "Pan-cancer genotype foundation model trained on mutations and copy-number alterations from >30K tumors for clinical representation learning.",
     "tags": [
-      "foundation-models",
-      "other-omics-foundation-models"
+      "cancer-genome-foundation-models",
+      "foundation-models"
     ],
     "tasks": [
       "Foundation Model"
@@ -7717,6 +7734,23 @@
     "api": false
   },
   {
+    "id": "scarf",
+    "name": "SCARF",
+    "type": "model",
+    "url": "https://doi.org/10.1101/2025.04.07.647689",
+    "description": "Single-cell RNA+ATAC foundation model pretrained on >2.7M cells for multimodal representation, matching, cross-omics translation, and few-shot annotation.",
+    "tags": [
+      "foundation-models",
+      "single-cell-epigenomics-foundation-models"
+    ],
+    "tasks": [
+      "Foundation Model"
+    ],
+    "modalities": [],
+    "organism": [],
+    "api": false
+  },
+  {
     "id": "scbert",
     "name": "scBERT",
     "type": "model",
@@ -7790,6 +7824,23 @@
       "Multi-Omics",
       "Single Cell"
     ],
+    "organism": [],
+    "api": false
+  },
+  {
+    "id": "scdnam_gpt",
+    "name": "scDNAm-GPT",
+    "type": "model",
+    "url": "https://github.com/ChaoqiLiang/scDNAm-GPM",
+    "description": "Foundation model for single-cell whole-genome bisulfite sequencing with whole-genome context modeling at single-CpG resolution.",
+    "tags": [
+      "foundation-models",
+      "single-cell-epigenomics-foundation-models"
+    ],
+    "tasks": [
+      "Foundation Model"
+    ],
+    "modalities": [],
     "organism": [],
     "api": false
   },
@@ -8257,6 +8308,23 @@
     "modalities": [
       "Small Molecule"
     ],
+    "organism": [],
+    "api": false
+  },
+  {
+    "id": "tessera",
+    "name": "TESSERA",
+    "type": "model",
+    "url": "https://github.com/JW-Sidhom-Lab/tessera",
+    "description": "Cancer-genome foundation model jointly pretrained on somatic SNVs and copy-number alterations from TCGA using masked reconstruction and cross-modal contrastive learning.",
+    "tags": [
+      "cancer-genome-foundation-models",
+      "foundation-models"
+    ],
+    "tasks": [
+      "Foundation Model"
+    ],
+    "modalities": [],
     "organism": [],
     "api": false
   },
