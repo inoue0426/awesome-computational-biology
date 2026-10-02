@@ -1,0 +1,67 @@
+.method-main { max-width: 1800px; }
+
+.method-controls { position: sticky; top: 0; z-index: 5; }
+
+.method-table-wrap {
+  overflow-x: auto;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--card-shadow);
+}
+
+.method-table {
+  width: 100%;
+  min-width: 2100px;
+  border-collapse: collapse;
+  font-size: .83rem;
+}
+
+.method-table th,
+.method-table td {
+  padding: .7rem .65rem;
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+  text-align: left;
+}
+
+.method-table th {
+  position: sticky;
+  top: 0;
+  background: #eef4fb;
+  color: var(--text);
+  font-size: .75rem;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+  white-space: nowrap;
+  cursor: pointer;
+  user-select: none;
+}
+
+.method-table th:hover,
+.method-table th:focus-visible {
+  background: #dfeaf8;
+  outline: none;
+}
+
+.method-table tbody tr:hover { background: #f7fbff; }
+.method-table tbody tr:last-child td { border-bottom: none; }
+
+.method-name { min-width: 160px; font-weight: 700; }
+.method-name a { color: var(--primary); text-decoration: none; }
+.method-name a:hover { text-decoration: underline; }
+
+.sort-indicator {
+  display: inline-block;
+  min-width: .8rem;
+  color: var(--primary);
+}
+
+.num { font-variant-numeric: tabular-nums; white-space: nowrap; }
+.yes { color: #146c43; font-weight: 650; white-space: nowrap; }
+.partial { color: #8a5a00; font-weight: 650; white-space: nowrap; }
+.no { color: var(--muted); }
+
+@media (max-width: 700px) {
+  .method-controls { position: static; }
+}
