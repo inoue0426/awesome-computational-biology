@@ -5448,6 +5448,26 @@
     "api": false
   },
   {
+    "id": "perturbrx",
+    "name": "PerturbRx",
+    "type": "model",
+    "url": "https://arxiv.org/abs/2608.21349",
+    "description": "Treatment-conditioned representation learning framework that transfers drug-induced latent transitions learned from single-cell perturbation data to patient-level cancer treatment-response prediction.",
+    "tags": [
+      "drug-discovery",
+      "drug-response-prediction"
+    ],
+    "tasks": [
+      "Drug Discovery",
+      "Drug Response Prediction"
+    ],
+    "modalities": [
+      "Small Molecule"
+    ],
+    "organism": [],
+    "api": false
+  },
+  {
     "id": "phikon",
     "name": "Phikon",
     "type": "model",
