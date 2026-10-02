@@ -21,6 +21,8 @@ Browse and search the resources via the [GitHub Pages UI](https://inoue0426.gith
 
 For treatment-response work, the [Dataset Explorer](https://inoue0426.github.io/awesome-computational-biology/dataset-explorer.html) compares curated cell-line, patient, and PDX datasets by sample type, perturbation metadata, matched pre/post availability, SMILES coverage, and clinical outcomes.
 
+The [Method Explorer](https://inoue0426.github.io/awesome-computational-biology/method-explorer.html) compares drug-response and perturbation methods by task, molecular/context representation, unseen-drug support, dose/time conditioning, and patient transfer.
+
 The explorer also includes the eight perturbation datasets used in the Bison unseen-compound benchmark.
 
 - Search matches `name`, `description`, `tasks`, `modalities`, and `tags`.
