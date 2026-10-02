@@ -3,6 +3,12 @@
 resources:
   tahoe_100m:
     dataset_profile:
+      readout: single-cell-rna
+      n_profiles: 67018
+      n_compounds: 376
+      n_contexts: 50
+      gene_panel: "20,573 full / 2,000 HVG (Bison benchmark view)"
+      time: true
       species: [human]
       sample_type: cell-line
       biological_context: cancer
@@ -23,6 +29,12 @@ resources:
 
   sci_plex:
     dataset_profile:
+      readout: pseudobulk-rna
+      n_profiles: 4974
+      n_compounds: 186
+      n_contexts: 3
+      gene_panel: "20,251 full / 2,000 HVG (Bison benchmark view)"
+      time: true
       species: [human, mouse]
       sample_type: cell-line
       biological_context: perturbation-screen
@@ -44,6 +56,8 @@ resources:
 
   mix_seq:
     dataset_profile:
+      readout: single-cell-rna
+      time: true
       species: [human]
       sample_type: cell-line
       biological_context: cancer
@@ -64,6 +78,8 @@ resources:
 
   pdx_atlas:
     dataset_profile:
+      readout: multi-omics
+      time: false
       species: [human, mouse]
       sample_type: pdx
       biological_context: cancer
@@ -84,6 +100,8 @@ resources:
 
   gse191127_breast_cancer_pre_post_chemotherapy:
     dataset_profile:
+      readout: bulk-rna
+      time: true
       species: [human]
       sample_type: patient
       biological_context: breast-cancer
@@ -105,6 +123,12 @@ resources:
 
   op3:
     dataset_profile:
+      readout: bulk-rna
+      n_profiles: 1813
+      n_compounds: 138
+      n_contexts: 4
+      gene_panel: "5,198 full / 2,000 HVG"
+      time: true
       species: [human]
       sample_type: cell-line
       biological_context: perturbation-screen
@@ -125,6 +149,12 @@ resources:
 
   vcpi_0001:
     dataset_profile:
+      readout: bulk-rna
+      n_profiles: 27517
+      n_compounds: 2272
+      n_contexts: 1
+      gene_panel: "20,629 full / 2,000 HVG"
+      time: true
       species: [human]
       sample_type: cell-line
       biological_context: perturbation-screen
@@ -145,6 +175,12 @@ resources:
 
   vcpi_0002:
     dataset_profile:
+      readout: bulk-rna
+      n_profiles: 18139
+      n_compounds: 1488
+      n_contexts: 1
+      gene_panel: "20,629 full / 2,000 HVG"
+      time: true
       species: [human]
       sample_type: cell-line
       biological_context: perturbation-screen
@@ -165,6 +201,12 @@ resources:
 
   novartis_perturbation_dataset:
     dataset_profile:
+      readout: bulk-rna
+      n_profiles: 46748
+      n_compounds: 3770
+      n_contexts: 1
+      gene_panel: "20,038 full / 2,000 HVG"
+      time: true
       species: [human]
       sample_type: cell-line
       biological_context: perturbation-screen
@@ -185,6 +227,12 @@ resources:
 
   lincs_l1000_phase_1:
     dataset_profile:
+      readout: l1000
+      n_profiles: 692787
+      n_compounds: 9233
+      n_contexts: 70
+      gene_panel: "978 landmark genes"
+      time: true
       species: [human]
       sample_type: cell-line
       biological_context: perturbation-screen
@@ -205,6 +253,12 @@ resources:
 
   lincs_l1000_phase_2:
     dataset_profile:
+      readout: l1000
+      n_profiles: 333263
+      n_compounds: 1760
+      n_contexts: 30
+      gene_panel: "978 landmark genes"
+      time: true
       species: [human]
       sample_type: cell-line
       biological_context: perturbation-screen
