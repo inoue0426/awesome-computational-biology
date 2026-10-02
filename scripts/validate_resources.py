@@ -210,7 +210,7 @@ def validate_entry(entry: dict[str, Any]) -> list[str]:
             errors.append(f"[{rid}] 'dataset_profile' must be a mapping")
         else:
             allowed_profile_fields = {
-                "species", "sample_type", "biological_context", "perturbation_type", "genetic_modes",
+                "year", "species", "sample_type", "biological_context", "perturbation_type", "genetic_modes",
                 "paired", "pre_post", "longitudinal", "drug_identity", "dose",
                 "smiles", "clinical_outcome", "n_samples", "n_cells", "access",
                 "readout", "gene_panel", "n_profiles", "n_perturbations", "n_compounds", "n_contexts", "time", "view_scope",
@@ -228,6 +228,14 @@ def validate_entry(entry: dict[str, Any]) -> list[str]:
                     errors.append(
                         f"[{rid}] dataset_profile.{field} must be a list of non-empty strings"
                     )
+            if "year" in profile and (
+                not isinstance(profile["year"], int)
+                or isinstance(profile["year"], bool)
+                or not 1900 <= profile["year"] <= 2100
+            ):
+                errors.append(
+                    f"[{rid}] dataset_profile.year must be an integer from 1900 to 2100"
+                )
             for field in ("paired", "pre_post", "longitudinal", "dose", "time", "clinical_outcome"):
                 if field in profile and not isinstance(profile[field], bool):
                     errors.append(f"[{rid}] dataset_profile.{field} must be boolean")
