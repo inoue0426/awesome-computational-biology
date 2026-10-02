@@ -21,6 +21,9 @@
         <button id="dataset-clear" type="button">Clear filters</button>
       </div>
       <div class="filter-row">
+        <label for="dataset-year">Year</label>
+        <select id="dataset-year"><option value="">All years</option></select>
+
         <label for="sample-type">Sample</label>
         <select id="sample-type"><option value="">All sample types</option></select>
 
@@ -67,6 +70,7 @@
         <thead>
           <tr>
             <th data-sort-key="name" aria-sort="ascending">Dataset <span class="sort-indicator">▲</span></th>
+            <th data-sort-key="year">Year <span class="sort-indicator"></span></th>
             <th data-sort-key="view_scope">View <span class="sort-indicator"></span></th>
             <th data-sort-key="sample_type">Sample <span class="sort-indicator"></span></th>
             <th data-sort-key="biological_context">Context <span class="sort-indicator"></span></th>
