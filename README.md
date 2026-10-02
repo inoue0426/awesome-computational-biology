@@ -25,7 +25,7 @@ The [Method Explorer](https://inoue0426.github.io/awesome-computational-biology/
 
 The [Foundation Model Explorer](https://inoue0426.github.io/awesome-computational-biology/foundation-explorer.html) compares foundation models by fine-grained modality, parameter count, pretraining scale, species, zero-shot support, weights/code availability, perturbation support, and spatial support.
 
-The [Agent Explorer](https://inoue0426.github.io/awesome-computational-biology/agent-explorer.html) compares agentic AI systems by scientific domain, single- vs multi-agent architecture, tool/code execution, literature and web retrieval, omics and wet-lab support, autonomy, and human-in-the-loop design.
+The [Agent Explorer](https://inoue0426.github.io/awesome-computational-biology/agent-explorer.html) compares agentic AI systems by scientific domain, single- vs multi-agent architecture, tool/code execution, literature and web retrieval, omics and wet-lab support, autonomy, and human-in-the-loop design. The Agent Explorer table is sortable and supports domain, architecture, omics, code-execution, and year filters.
 
 Both explorer tables support sortable columns and focused filters for quick comparison.
 
