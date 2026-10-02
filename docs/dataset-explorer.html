@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dataset Explorer · Awesome Computational Biology</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="dataset-explorer.css" />
+</head>
+<body>
+  <header>
+    <h1>🧪 Dataset Explorer</h1>
+    <p class="subtitle">Compare drug-response and perturbation datasets by sample type, treatment metadata, and clinical context.</p>
+    <p><a href="index.html">← Resource search</a> · <a href="landscape.html">AI4Bio Landscape</a></p>
+  </header>
+
+  <main class="dataset-main">
+    <section class="controls dataset-controls" aria-label="Dataset filters">
+      <div class="search-row">
+        <input id="dataset-search" type="search" placeholder="Search datasets…" autocomplete="off" />
+        <button id="dataset-clear" type="button">Clear filters</button>
+      </div>
+      <div class="filter-row">
+        <label for="sample-type">Sample</label>
+        <select id="sample-type"><option value="">All sample types</option></select>
+
+        <label for="clinical-outcome">Clinical outcome</label>
+        <select id="clinical-outcome">
+          <option value="">Any</option>
+          <option value="true">Available</option>
+          <option value="false">Not available</option>
+        </select>
+
+        <label for="pre-post">Pre/post</label>
+        <select id="pre-post">
+          <option value="">Any</option>
+          <option value="true">Matched pre/post</option>
+          <option value="false">No matched pre/post</option>
+        </select>
+
+        <label for="smiles">SMILES</label>
+        <select id="smiles">
+          <option value="">Any</option>
+          <option value="true">Available</option>
+          <option value="partial">Partial / mappable</option>
+          <option value="false">Not available</option>
+        </select>
+      </div>
+    </section>
+
+    <section class="status-bar">
+      <span id="dataset-count">Loading…</span>
+      <span class="load-time">v1: curated profiles only</span>
+    </section>
+
+    <section class="dataset-table-wrap" aria-label="Dataset comparison table">
+      <table class="dataset-table">
+        <thead>
+          <tr>
+            <th>Dataset</th>
+            <th>Sample</th>
+            <th>Context</th>
+            <th>Perturbation</th>
+            <th>Paired</th>
+            <th>Pre/Post</th>
+            <th>Dose</th>
+            <th>SMILES</th>
+            <th>Clinical outcome</th>
+            <th>Scale</th>
+            <th>Access</th>
+          </tr>
+        </thead>
+        <tbody id="dataset-body"></tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <p>Dataset profiles are curated metadata layered on top of <code>data/resources.yml</code>.</p>
+  </footer>
+
+  <script src="dataset-explorer.js"></script>
+</body>
+</html>
