@@ -1,0 +1,219 @@
+# Provenance-backed foundation model enrichment batch 3.
+resources:
+  cellfm:
+    entities: [cell, gene]
+    methods: [self-supervised-learning, transformer]
+    modalities: [single-cell-rna-seq, transcriptomics]
+    tasks: [cell-type-annotation, foundation-model-pretraining, perturbation-prediction, representation-learning]
+    year: 2025
+    github: https://github.com/biomed-AI/CellFM
+    paper: https://doi.org/10.1038/s41467-025-59926-5
+    last_checked: 2026-10-02
+    metadata_sources:
+      - https://github.com/biomed-AI/CellFM
+      - https://doi.org/10.1038/s41467-025-59926-5
+
+  scprint_2:
+    entities: [cell, gene]
+    methods: [self-supervised-learning, transformer]
+    modalities: [single-cell-rna-seq, transcriptomics]
+    tasks: [batch-correction, cell-type-annotation, foundation-model-pretraining, gene-regulatory-network-inference, imputation, representation-learning]
+    year: 2026
+    github: https://github.com/cantinilab/scPRINT-2
+    last_checked: 2026-10-02
+    metadata_sources:
+      - https://github.com/cantinilab/scPRINT-2
+
+  titan:
+    entities: [disease, tissue]
+    methods: [contrastive-learning, self-supervised-learning, transformer]
+    modalities: [histopathology, imaging]
+    tasks: [classification, foundation-model-pretraining, representation-learning]
+    year: 2025
+    github: https://github.com/mahmoodlab/TITAN
+    last_checked: 2026-10-02
+    metadata_sources:
+      - https://github.com/mahmoodlab/TITAN
+
+  virchow2:
+    entities: [disease, tissue]
+    methods: [self-supervised-learning, transformer]
+    modalities: [histopathology, imaging]
+    tasks: [classification, foundation-model-pretraining, representation-learning]
+    year: 2024
+    documentation: https://huggingface.co/paige-ai/Virchow2
+    last_checked: 2026-10-02
+    metadata_sources:
+      - https://huggingface.co/paige-ai/Virchow2
+
+  h_optimus_0:
+    entities: [disease, tissue]
+    methods: [self-supervised-learning, transformer]
+    modalities: [histopathology, imaging]
+    tasks: [classification, foundation-model-pretraining, representation-learning]
+    year: 2024
+    documentation: https://huggingface.co/bioptimus/H-optimus-0
+    last_checked: 2026-10-02
+    metadata_sources:
+      - https://huggingface.co/bioptimus/H-optimus-0
+
+  h_optimus_1:
+    entities: [disease, tissue]
+    methods: [self-supervised-learning, transformer]
+    modalities: [histopathology, imaging]
+    tasks: [classification, foundation-model-pretraining, representation-learning]
+    year: 2025
+    documentation: https://huggingface.co/bioptimus/H-optimus-1
+    last_checked: 2026-10-02
+    metadata_sources:
+      - https://huggingface.co/bioptimus/H-optimus-1
+
+  uni2_h:
+    entities: [disease, tissue]
+    methods: [self-supervised-learning, transformer]
+    modalities: [histopathology, imaging]
+    tasks: [classification, foundation-model-pretraining, representation-learning]
+    year: 2025
+    documentation: https://huggingface.co/MahmoodLab/UNI2-h
+    last_checked: 2026-10-02
+    metadata_sources:
+      - https://huggingface.co/MahmoodLab/UNI2-h
+
+  phikon_v2:
+    entities: [disease, tissue]
+    methods: [self-supervised-learning, transformer]
+    modalities: [histopathology, imaging]
+    tasks: [classification, foundation-model-pretraining, representation-learning]
+    year: 2025
+    documentation: https://huggingface.co/owkin/phikon-v2
+    last_checked: 2026-10-02
+    metadata_sources:
+      - https://huggingface.co/owkin/phikon-v2
+
+  genbio_pathfm:
+    entities: [disease, tissue]
+    methods: [self-supervised-learning, transformer]
+    modalities: [histopathology, imaging]
+    tasks: [classification, foundation-model-pretraining, representation-learning]
+    year: 2026
+    github: https://github.com/genbio-ai/genbio-pathfm
+    paper: https://www.biorxiv.org/content/10.64898/2026.03.17.712534v1
+    last_checked: 2026-10-02
+    metadata_sources:
+      - https://github.com/genbio-ai/genbio-pathfm
+      - https://www.biorxiv.org/content/10.64898/2026.03.17.712534v1
+
+  uni_mol2:
+    entities: [molecule]
+    methods: [self-supervised-learning, transformer]
+    modalities: [chemical-structure, molecular-structure]
+    tasks: [foundation-model-pretraining, representation-learning]
+    year: 2024
+    github: https://github.com/deepmodeling/Uni-Mol
+    last_checked: 2026-10-02
+    metadata_sources:
+      - https://github.com/deepmodeling/Uni-Mol
+
+  chemfm:
+    entities: [molecule]
+    methods: [generative-model, language-model, transformer]
+    modalities: [chemical-structure]
+    tasks: [foundation-model-pretraining, molecular-generation, representation-learning]
+    year: 2024
+    github: https://github.com/TheLuoFengLab/ChemFM
+    last_checked: 2026-10-02
+    metadata_sources:
+      - https://github.com/TheLuoFengLab/ChemFM
+
+  esm_cambrian_esm_c:
+    entities: [protein]
+    methods: [language-model, self-supervised-learning, transformer]
+    modalities: [protein-sequence]
+    tasks: [foundation-model-pretraining, protein-function-prediction, representation-learning]
+    year: 2024
+    github: https://github.com/Biohub/esm
+    last_checked: 2026-10-02
+    metadata_sources:
+      - https://github.com/Biohub/esm
+      - https://www.evolutionaryscale.ai/blog/esm-cambrian
+
+  boltz_2:
+    entities: [molecule, protein, protein-complex]
+    methods: [diffusion, generative-model, transformer]
+    modalities: [molecular-structure, protein-sequence]
+    tasks: [drug-target-interaction, structure-prediction, virtual-screening]
+    year: 2025
+    github: https://github.com/jwohlwend/boltz
+    paper: https://doi.org/10.1101/2025.06.14.659707
+    last_checked: 2026-10-02
+    metadata_sources:
+      - https://github.com/jwohlwend/boltz
+      - https://doi.org/10.1101/2025.06.14.659707
+
+  protenix:
+    entities: [molecule, protein, protein-complex]
+    methods: [diffusion, generative-model, transformer]
+    modalities: [molecular-structure, protein-sequence]
+    tasks: [drug-target-interaction, structure-prediction]
+    year: 2025
+    github: https://github.com/bytedance/Protenix
+    last_checked: 2026-10-02
+    metadata_sources:
+      - https://github.com/bytedance/Protenix
+
+  rna_fm:
+    entities: [gene, transcript]
+    methods: [language-model, self-supervised-learning, transformer]
+    modalities: [rna-sequence]
+    tasks: [foundation-model-pretraining, representation-learning, structure-prediction]
+    year: 2022
+    github: https://github.com/ml4bio/RNA-FM
+    last_checked: 2026-10-02
+    metadata_sources:
+      - https://github.com/ml4bio/RNA-FM
+
+  rinalmo:
+    entities: [gene, transcript]
+    methods: [language-model, self-supervised-learning, transformer]
+    modalities: [rna-sequence]
+    tasks: [foundation-model-pretraining, representation-learning, structure-prediction]
+    year: 2024
+    github: https://github.com/lbcb-sci/RiNALMo
+    last_checked: 2026-10-02
+    metadata_sources:
+      - https://github.com/lbcb-sci/RiNALMo
+
+  evo_2:
+    entities: [gene, genome, organism]
+    methods: [generative-model, language-model]
+    modalities: [dna-sequence, genomics]
+    tasks: [foundation-model-pretraining, representation-learning]
+    year: 2026
+    github: https://github.com/arcinstitute/evo2
+    paper: https://doi.org/10.1038/s41586-026-10176-5
+    last_checked: 2026-10-02
+    metadata_sources:
+      - https://github.com/arcinstitute/evo2
+      - https://doi.org/10.1038/s41586-026-10176-5
+
+  alphagenome:
+    entities: [gene, genome, regulatory-element, variant]
+    methods: [supervised-learning, transformer]
+    modalities: [dna-sequence, epigenomics, genomics]
+    tasks: [regression, representation-learning]
+    year: 2025
+    github: https://github.com/google-deepmind/alphagenome
+    last_checked: 2026-10-02
+    metadata_sources:
+      - https://github.com/google-deepmind/alphagenome
+
+  moderngena:
+    entities: [gene, genome, regulatory-element]
+    methods: [language-model, self-supervised-learning, transformer]
+    modalities: [dna-sequence, genomics]
+    tasks: [classification, foundation-model-pretraining, regression, representation-learning]
+    year: 2026
+    github: https://github.com/AIRI-Institute/GENA_LM
+    last_checked: 2026-10-02
+    metadata_sources:
+      - https://github.com/AIRI-Institute/GENA_LM
