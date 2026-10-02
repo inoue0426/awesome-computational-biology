@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Foundation Model Explorer · Awesome Computational Biology</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="foundation-explorer.css" />
+</head>
+<body>
+  <header>
+    <h1>🧬 Foundation Model Explorer</h1>
+    <p class="subtitle">Compare biological foundation models by modality, parameter count, pretraining scale, availability, and downstream scope.</p>
+    <p><a href="index.html">← Resource search</a> · <a href="dataset-explorer.html">Dataset Explorer</a> · <a href="method-explorer.html">Method Explorer</a></p>
+  </header>
+
+  <main class="foundation-main">
+    <section class="controls foundation-controls" aria-label="Foundation model filters">
+      <div class="search-row">
+        <input id="foundation-search" type="search" placeholder="Search foundation models…" autocomplete="off" />
+        <button id="foundation-clear" type="button">Clear filters</button>
+      </div>
+      <div class="filter-row">
+        <label for="fm-modality">Modality</label>
+        <select id="fm-modality"><option value="">All modalities</option></select>
+
+        <label for="fm-year">Year</label>
+        <select id="fm-year"><option value="">All years</option></select>
+
+        <label for="fm-weights">Weights</label>
+        <select id="fm-weights">
+          <option value="">Any</option>
+          <option value="yes">Public</option>
+          <option value="limited">Limited</option>
+          <option value="no">No</option>
+        </select>
+
+        <label for="fm-perturbation">Perturbation</label>
+        <select id="fm-perturbation">
+          <option value="">Any</option>
+          <option value="yes">Supported</option>
+          <option value="limited">Limited</option>
+          <option value="no">No</option>
+        </select>
+
+        <label for="fm-spatial">Spatial</label>
+        <select id="fm-spatial">
+          <option value="">Any</option>
+          <option value="yes">Supported</option>
+          <option value="no">No</option>
+        </select>
+      </div>
+    </section>
+
+    <section class="status-bar">
+      <span id="foundation-count">Loading…</span>
+      <span class="load-time">Click any column header to sort</span>
+    </section>
+
+    <section class="foundation-table-wrap" aria-label="Foundation model comparison table">
+      <table class="foundation-table">
+        <thead>
+          <tr>
+            <th data-sort-key="name" aria-sort="ascending">Model <span class="sort-indicator">▲</span></th>
+            <th data-sort-key="year">Year <span class="sort-indicator"></span></th>
+            <th data-sort-key="modalities">Modalities <span class="sort-indicator"></span></th>
+            <th data-sort-key="params_millions">Params <span class="sort-indicator"></span></th>
+            <th data-sort-key="pretraining_scale">Pretraining scale <span class="sort-indicator"></span></th>
+            <th data-sort-key="species">Species <span class="sort-indicator"></span></th>
+            <th data-sort-key="zero_shot">Zero-shot <span class="sort-indicator"></span></th>
+            <th data-sort-key="finetunable">Fine-tunable <span class="sort-indicator"></span></th>
+            <th data-sort-key="weights">Weights <span class="sort-indicator"></span></th>
+            <th data-sort-key="code">Code <span class="sort-indicator"></span></th>
+            <th data-sort-key="perturbation">Perturbation <span class="sort-indicator"></span></th>
+            <th data-sort-key="spatial">Spatial <span class="sort-indicator"></span></th>
+          </tr>
+        </thead>
+        <tbody id="foundation-body"></tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <p>Parameter counts are reported only when documented by the model authors or official model cards. Family ranges use the largest listed variant for sorting.</p>
+  </footer>
+
+  <script src="foundation-explorer.js"></script>
+</body>
+</html>
