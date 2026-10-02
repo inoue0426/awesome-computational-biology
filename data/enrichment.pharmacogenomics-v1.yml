@@ -7,6 +7,21 @@ resources:
     last_checked: 2026-08-08
     metadata_sources:
       - https://biodev.github.io/BeatAML2/
+    dataset_profile:
+      species: [human]
+      sample_type: patient
+      biological_context: cancer
+      perturbation_type: [chemical]
+      paired: true
+      pre_post: false
+      longitudinal: false
+      drug_identity: true
+      dose: true
+      smiles: partial
+      clinical_outcome: true
+      n_samples: "primary AML patient samples"
+      n_cells: null
+      access: open
 
   cancer_therapeutics_response_portal_ctrp:
     entities: [cell, drug]
@@ -14,6 +29,21 @@ resources:
     last_checked: 2026-08-08
     metadata_sources:
       - https://portals.broadinstitute.org/ctrp/
+    dataset_profile:
+      species: [human]
+      sample_type: cell-line
+      biological_context: cancer
+      perturbation_type: [chemical]
+      paired: true
+      pre_post: false
+      longitudinal: false
+      drug_identity: true
+      dose: true
+      smiles: partial
+      clinical_outcome: false
+      n_samples: "~900 cancer cell lines"
+      n_cells: null
+      access: open
 
   bindingdb_curated_sets:
     entities: [molecule, protein]
@@ -69,6 +99,21 @@ resources:
     last_checked: 2026-08-08
     metadata_sources:
       - https://www.cancerrxgene.org/
+    dataset_profile:
+      species: [human]
+      sample_type: cell-line
+      biological_context: cancer
+      perturbation_type: [chemical]
+      paired: true
+      pre_post: false
+      longitudinal: false
+      drug_identity: true
+      dose: true
+      smiles: partial
+      clinical_outcome: false
+      n_samples: "~1,000 cancer cell lines"
+      n_cells: null
+      access: open
 
   cellminer_cross_database_cellminercdb:
     entities: [cell, drug, gene]

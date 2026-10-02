@@ -37,7 +37,7 @@ LEGACY_CSV_COLUMNS = [
 ]
 ENRICHMENT_CSV_COLUMNS = [
     "entities", "methods", "organizations", "github", "documentation", "year",
-    "maintenance_status", "access", "last_checked", "metadata_sources",
+    "maintenance_status", "access", "last_checked", "metadata_sources", "dataset_profile",
 ]
 IDENTITY_FIELDS = {"id", "name", "type", "url", "description"}
 
@@ -125,6 +125,10 @@ def write_csv(entries: list[dict[str, Any]], path: Path) -> None:
             for field in ALL_LIST_FIELDS:
                 if field in row:
                     row[field] = "|".join(str(value) for value in row.get(field, []))
+            if "dataset_profile" in row:
+                row["dataset_profile"] = json.dumps(
+                    row["dataset_profile"], ensure_ascii=False, sort_keys=True
+                )
             writer.writerow(row)
     print(f"Wrote CSV -> {path}")
 

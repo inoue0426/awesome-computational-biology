@@ -19,6 +19,8 @@ A curated collection of databases, software, and papers related to computational
 
 Browse and search the resources via the [GitHub Pages UI](https://inoue0426.github.io/awesome-computational-biology/).
 
+For treatment-response work, the [Dataset Explorer](https://inoue0426.github.io/awesome-computational-biology/dataset-explorer.html) compares curated datasets by sample type, perturbation metadata, matched pre/post availability, SMILES coverage, and clinical outcomes.
+
 - Search matches `name`, `description`, `tasks`, `modalities`, and `tags`.
 - The **Task**, **Modality**, and **Type** filters map directly to `tasks`, `modalities`, and `type` in `docs/data/resources.json`.
 - Clicking badges on cards applies the corresponding filter.

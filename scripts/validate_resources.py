@@ -34,7 +34,7 @@ ALLOWED_MAINTENANCE = {"active", "maintenance", "archived", "unknown"}
 ALLOWED_ACCESS = {"open", "registration", "restricted", "commercial", "unknown"}
 ALLOWED_FIELDS = set(REQUIRED_FIELDS) | set(LIST_FIELDS) | {
     "license", "api", "paper", "updated", "github", "documentation", "year",
-    "maintenance_status", "access", "last_checked",
+    "maintenance_status", "access", "last_checked", "dataset_profile",
 }
 ID_RE = re.compile(r"^[a-z0-9]+(?:_[a-z0-9]+)*$")
 VOCAB_RE = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
@@ -202,6 +202,46 @@ def validate_entry(entry: dict[str, Any]) -> list[str]:
         errors.append(f"[{rid}] invalid access: {entry.get('access')}")
     if "api" in entry and not isinstance(entry["api"], bool):
         errors.append(f"[{rid}] 'api' must be boolean")
+
+    profile = entry.get("dataset_profile")
+    if profile is not None:
+        if not isinstance(profile, dict):
+            errors.append(f"[{rid}] 'dataset_profile' must be a mapping")
+        else:
+            allowed_profile_fields = {
+                "species", "sample_type", "biological_context", "perturbation_type",
+                "paired", "pre_post", "longitudinal", "drug_identity", "dose",
+                "smiles", "clinical_outcome", "n_samples", "n_cells", "access",
+            }
+            unknown_profile = sorted(set(profile) - allowed_profile_fields)
+            if unknown_profile:
+                errors.append(
+                    f"[{rid}] dataset_profile unknown fields: {', '.join(unknown_profile)}"
+                )
+            for field in ("species", "perturbation_type"):
+                value = profile.get(field, [])
+                if not isinstance(value, list) or any(
+                    not isinstance(item, str) or not item.strip() for item in value
+                ):
+                    errors.append(
+                        f"[{rid}] dataset_profile.{field} must be a list of non-empty strings"
+                    )
+            for field in ("paired", "pre_post", "longitudinal", "dose", "clinical_outcome"):
+                if field in profile and not isinstance(profile[field], bool):
+                    errors.append(f"[{rid}] dataset_profile.{field} must be boolean")
+            if "drug_identity" in profile and not isinstance(profile["drug_identity"], (bool, str)):
+                errors.append(f"[{rid}] dataset_profile.drug_identity must be boolean or string")
+            if "smiles" in profile and profile["smiles"] not in {True, False, "partial", "limited"}:
+                errors.append(
+                    f"[{rid}] dataset_profile.smiles must be true, false, partial, or limited"
+                )
+            for field in ("sample_type", "biological_context", "n_samples", "access"):
+                if field in profile and profile[field] is not None and not isinstance(profile[field], str):
+                    errors.append(f"[{rid}] dataset_profile.{field} must be a string")
+            if "n_cells" in profile and profile["n_cells"] is not None and not isinstance(
+                profile["n_cells"], (int, str)
+            ):
+                errors.append(f"[{rid}] dataset_profile.n_cells must be integer, string, or null")
     return errors
 
 
