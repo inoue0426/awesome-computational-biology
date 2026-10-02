@@ -468,6 +468,8 @@ The explorer also includes the eight perturbation datasets used in the Bison uns
 - [GEARS](https://github.com/snap-stanford/GEARS) — Graph-based model for predicting transcriptional responses to single and combinatorial genetic perturbations using biological priors.
 - [SATURN](https://github.com/snap-stanford/SATURN) — Transformer-based model integrating gene expression and protein sequences via a protein language model to learn unified multi-species cell embeddings.
 - [CancerFoundation](https://github.com/BoevaLab/CancerFoundation) — Single-cell RNA-seq foundation model trained exclusively on a curated dataset of malignant cells to learn cancer-specific embeddings.
+- [CellFM](https://github.com/biomed-AI/CellFM) — 800M-parameter single-cell foundation model pretrained on transcriptomics from 100 million human cells for annotation, integration, gene-function, and perturbation tasks.
+- [scPRINT-2](https://github.com/cantinilab/scPRINT-2) — Next-generation single-cell foundation model pretrained on 350M+ cells across 22K+ datasets and 16 species for embeddings, denoising, annotation, gene-network inference, and cross-species transfer.
 
 ##### Spatial Foundation Models
 
@@ -481,6 +483,16 @@ The explorer also includes the eight perturbation datasets used in the Bison uns
 - [DeepSpot2Cell](https://github.com/ratschlab/DeepSpot2Cell) — Predicts virtual single-cell spatial transcriptomics from H&E using spot-level supervision (NeurIPS 2025 Imageomics).
 - [DeepSpot-M](https://github.com/ratschlab/DeepSpotM) — Multimodal foundation model for transcriptome-wide virtual spatial transcriptomics from histology.
 - [AESTETIK](https://github.com/ratschlab/aestetik) — Autoencoder for spatial transcriptomics representation learning using topology and histology image knowledge.
+
+##### Pathology Foundation Models
+
+- [TITAN](https://github.com/mahmoodlab/TITAN) — Multimodal whole-slide pathology foundation model that combines image and language supervision for slide-level representation and zero-shot analysis.
+- [Virchow2](https://huggingface.co/paige-ai/Virchow2) — 632M-parameter pathology vision transformer pretrained on 3.1M whole-slide images with mixed-magnification self-supervision.
+- [H-Optimus-0](https://huggingface.co/bioptimus/H-optimus-0) — 1.1B-parameter histopathology foundation model trained with self-supervised learning on a large multi-center slide corpus.
+- [H-Optimus-1](https://huggingface.co/bioptimus/H-optimus-1) — 1.1B-parameter pathology foundation model trained on billions of histology images from more than one million slides and 800K+ patients.
+- [UNI2-h](https://huggingface.co/MahmoodLab/UNI2-h) — Billion-parameter histopathology vision foundation model for tile-level feature extraction and downstream computational pathology tasks.
+- [Phikon-v2](https://huggingface.co/owkin/phikon-v2) — Updated pathology foundation model for general-purpose histology feature extraction and transfer learning.
+- [GenBio-PathFM](https://github.com/genbio-ai/genbio-pathfm) — 1.1B-parameter histopathology foundation model trained on public data using morphology-aware curation and dual-stage JEPA+DINO learning.
 
 ##### Multi-Omics Foundation Models
 
@@ -515,6 +527,8 @@ The explorer also includes the eight perturbation datasets used in the Bison uns
 - [Mol2Vec](https://github.com/samoturk/mol2vec) — Unsupervised molecular embedding method inspired by Word2Vec for learning vector representations of chemical substructures.
 - [MolFormer](https://github.com/IBM/molformer) — Linear attention transformer pretrained on millions of SMILES strings for efficient molecular embeddings.
 - [Uni-Mol](https://github.com/deepmodeling/Uni-Mol) — 3D molecular pretraining framework for universal representation learning on molecules and protein pockets.
+- [Uni-Mol2](https://github.com/deepmodeling/Uni-Mol/tree/main/unimol2) — Scaled molecular pretraining model using atomic, graph, and 3D geometry features, with models up to 1.1B parameters pretrained on 800M conformations.
+- [ChemFM](https://github.com/TheLuoFengLab/ChemFM) — 1B/3B-parameter chemical language model pretrained on 178M molecules for molecular representation, property prediction, generation, and synthesis tasks.
 
 #### Protein Foundation Models
 
@@ -524,11 +538,14 @@ The explorer also includes the eight perturbation datasets used in the Bison uns
 - [ProtTrans](https://github.com/agemagician/ProtTrans) — Suite of protein language models (ProtBERT, ProtT5, ProtXLNet) trained on billions of protein sequences from UniRef and BFD.
 - [ProGen2](https://github.com/salesforce/progen) — Protein language model trained on diverse protein families for sequence generation and fitness prediction.
 - [Ankh](https://github.com/agemagician/Ankh) — Efficient protein language model optimized for downstream prediction tasks including secondary structure, localization, and function annotation.
+- [ESM Cambrian (ESM C)](https://github.com/Biohub/esm) — Protein representation foundation-model family designed as an efficient next-generation successor to ESM2, spanning 300M to multi-billion-parameter models.
 
 ##### Protein Structure Prediction and Design
 
 - [AlphaFold3](https://github.com/google-deepmind/alphafold3) — Predicts structures of proteins, nucleic acids, small molecules, and their complexes.
 - [Boltz-1](https://github.com/jwohlwend/boltz) — Open-source all-atom biomolecular structure prediction model for proteins, nucleic acids, small molecules, and their complexes achieving AlphaFold3-level accuracy.
+- [Boltz-2](https://github.com/jwohlwend/boltz) — Biomolecular foundation model jointly predicting complex structures and binding affinities for protein–ligand interaction modeling and virtual screening.
+- [Protenix](https://github.com/bytedance/Protenix) — Trainable biomolecular structure-prediction framework for proteins, nucleic acids, ligands, and complexes with open training and inference pipelines.
 - [Chai-1](https://github.com/chaidiscovery/chai-lab) — Unified molecular structure prediction model covering proteins, nucleic acids, small molecules, and complexes.
 - [ESM3](https://github.com/evolutionaryscale/esm) — Multimodal protein language model that jointly reasons over sequence, structure, and function for generative protein design and engineering.
 - [ESMFold](https://github.com/facebookresearch/esm) — Fast protein structure prediction using language model embeddings.
@@ -551,6 +568,11 @@ The explorer also includes the eight perturbation datasets used in the Bison uns
 - [PLIP](https://github.com/PathologyFoundation/plip) — Vision-language foundation model for pathology trained with contrastive learning on pathology image–text pairs for image classification and text-to-image retrieval.
 - [MUSK](https://github.com/lilab-stanford/MUSK) — Vision-language foundation model for precision oncology analyzing multimodal paired text and pathology image data for biomarker prediction and retrieval.
 
+#### RNA Foundation Models
+
+- [RNA-FM](https://github.com/ml4bio/RNA-FM) — General-purpose RNA foundation model pretrained on large-scale RNA sequences for structural and functional representation learning.
+- [RiNALMo](https://github.com/lbcb-sci/RiNALMo) — RNA language-model family pretrained on tens of millions of RNA sequences for secondary-structure and functional prediction tasks.
+
 #### Genomics Foundation Models
 
 - [Nucleotide Transformer](https://github.com/instadeepai/nucleotide-transformer) — Foundation model for genomic sequences across multiple species.
@@ -560,6 +582,9 @@ The explorer also includes the eight perturbation datasets used in the Bison uns
 - [Basenji](https://github.com/calico/basenji) — Sequential regulatory activity prediction from DNA sequences.
 - [Caduceus](https://github.com/kuleshov-group/caduceus) — Bidirectional equivariant long-range DNA sequence model based on Mamba.
 - [Evo](https://github.com/evo-design/evo) — Long-context genomic foundation model (up to 1M tokens).
+- [Evo 2](https://github.com/arcinstitute/evo2) — Genome foundation model trained on 9 trillion DNA base pairs across all domains of life with a 1M-token context window and single-nucleotide resolution.
+- [AlphaGenome](https://github.com/google-deepmind/alphagenome) — Long-context DNA model predicting multimodal regulatory outputs including expression, splicing, chromatin features, and contact maps at near base-pair resolution.
+- [modernGENA](https://github.com/AIRI-Institute/GENA_LM) — ModernBERT-style DNA foundation-model family pretrained on hundreds of vertebrate genome assemblies for efficient long-sequence regulatory modeling.
 - [HyenaDNA](https://github.com/HazyResearch/hyena-dna) — Long-range genomic foundation model handling sequences up to 1M tokens with sub-quadratic attention.
 - [Borzoi](https://github.com/calico/borzoi) — Extended successor to Enformer for predicting RNA-seq coverage from long genomic sequence windows (524 kb) with improved resolution.
 - [DeepSEA](http://deepsea.princeton.edu/) — Deep learning framework for predicting chromatin effects of sequence alterations with single-nucleotide sensitivity across thousands of chromatin features.
