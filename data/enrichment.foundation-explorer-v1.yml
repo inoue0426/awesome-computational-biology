@@ -613,7 +613,7 @@ resources:
       perturbation: false
       spatial: false
 
-tessera:
+  tessera:
     foundation_profile:
       year: 2026
       modalities: [mutation, copy-number]
