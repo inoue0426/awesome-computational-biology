@@ -27,6 +27,7 @@
       const ts = new Date().toLocaleString();
       loadTimeEl.textContent = 'Loaded ' + ts;
       populateDropdowns(allResources);
+      renderOverview(allResources);
       render();
     })
     .catch(function (err) {
@@ -35,6 +36,58 @@
         '<p class="empty-state">Could not load resources.json: ' +
         escapeHtml(err.message) + '</p>';
     });
+
+  function renderOverview(resources) {
+    var total = document.getElementById('overview-total');
+    var datasets = document.getElementById('overview-datasets');
+    var methods = document.getElementById('overview-methods');
+    var foundations = document.getElementById('overview-foundations');
+    var agents = document.getElementById('overview-agents');
+    var modalityList = document.getElementById('overview-modality-list');
+
+    if (!total) return;
+
+    var datasetCount = 0;
+    var methodCount = 0;
+    var foundationCount = 0;
+    var agentCount = 0;
+    var modalityCounts = {};
+
+    resources.forEach(function (r) {
+      if (r.dataset_profile) datasetCount += 1;
+      if (r.method_profile) methodCount += 1;
+      if (r.foundation_profile) {
+        foundationCount += 1;
+        (r.foundation_profile.modalities || []).forEach(function (m) {
+          modalityCounts[m] = (modalityCounts[m] || 0) + 1;
+        });
+      }
+      if (r.agent_profile) agentCount += 1;
+    });
+
+    total.textContent = resources.length.toLocaleString();
+    datasets.textContent = datasetCount.toLocaleString();
+    methods.textContent = methodCount.toLocaleString();
+    foundations.textContent = foundationCount.toLocaleString();
+    agents.textContent = agentCount.toLocaleString();
+
+    var labels = {
+      'scrna': 'scRNA', 'bulk-rna': 'Bulk RNA', 'proteomics': 'Proteomics',
+      'mutation': 'Mutation', 'copy-number': 'Copy number', 'methylation': 'Methylation',
+      'atac': 'ATAC', 'hic': 'Hi-C', 'spatial': 'Spatial', 'pathology': 'Pathology',
+      'dna': 'DNA', 'rna': 'RNA', 'chemical': 'Chemical', 'protein': 'Protein',
+      'multi-omics': 'Multi-omics'
+    };
+
+    var ranked = Object.keys(modalityCounts).sort(function (a, b) {
+      return modalityCounts[b] - modalityCounts[a] || a.localeCompare(b);
+    }).slice(0, 12);
+
+    modalityList.innerHTML = ranked.map(function (m) {
+      return '<span class="overview-chip">' +
+        escapeHtml(labels[m] || m) + ' ' + modalityCounts[m] + '</span>';
+    }).join(' ');
+  }
 
   // ── Populate dropdowns ────────────────────────────────────────
   function populateDropdowns(resources) {
