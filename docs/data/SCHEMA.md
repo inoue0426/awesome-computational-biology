@@ -40,6 +40,7 @@ When contributing new resources, update `README.md` first, then regenerate artif
 | `paper` | string | DOI or URL to preprint/peer-reviewed publication. |
 | `updated` | string | Last-known update date, recommended `YYYY-MM-DD`. |
 | `dataset_profile` | object | Optional Dataset Explorer metadata for structured comparison of datasets/benchmarks. |
+| `method_profile` | object | Optional Method Explorer metadata for structured comparison of response and perturbation methods. |
 
 ## Naming and consistency guidance
 
@@ -99,3 +100,25 @@ Supported v1 fields:
 | `access` | string | Dataset-level access summary. |
 
 The v1 profiles are colocated with their existing modular `data/enrichment.*.yml` owners and rendered at `docs/dataset-explorer.html`.
+
+
+## Method Explorer profile
+
+Methods shown in the Method Explorer may define a `method_profile` object in a modular enrichment fragment.
+
+| Field | Type | Meaning |
+|---|---|---|
+| `task_family` | string | High-level task, currently `drug-response-prediction` or `drug-perturbation`. |
+| `year` | integer | Publication/release year used for navigation. |
+| `input` | string | Main biological/model input. |
+| `drug_representation` | string | Chemical or treatment representation. |
+| `context_representation` | string | Cellular, patient, or experimental context representation. |
+| `output` | string | Main prediction target. |
+| `unseen_drug` | boolean/string | Support for unseen-drug generalization; `limited` denotes partial or task-dependent support. |
+| `unseen_context` | boolean/string | Support for new cellular/patient contexts. |
+| `dose` | boolean/string | Whether dose is explicitly represented. |
+| `time` | boolean/string | Whether treatment time is explicitly represented. |
+| `patient_transfer` | boolean/string | Whether the method explicitly transfers to or predicts patient response. |
+| `code` | boolean/string | Whether an implementation is linked from the curated resource entry. |
+
+The Method Explorer is rendered at `docs/method-explorer.html`.
