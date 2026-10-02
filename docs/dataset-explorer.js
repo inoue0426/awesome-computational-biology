@@ -33,7 +33,7 @@
     })
     .catch(function (err) {
       count.textContent = 'Failed to load dataset metadata.';
-      body.innerHTML = '<tr><td colspan="16">Could not load resources.json: ' + escapeHtml(err.message) + '</td></tr>';
+      body.innerHTML = '<tr><td colspan="17">Could not load resources.json: ' + escapeHtml(err.message) + '</td></tr>';
     });
 
   function populateSelect(select, field) {
@@ -110,7 +110,7 @@
     count.textContent = filtered.length + ' curated dataset profile' + (filtered.length === 1 ? '' : 's');
     body.innerHTML = '';
     if (!filtered.length) {
-      body.innerHTML = '<tr><td colspan="16" class="empty-state">No datasets match these filters.</td></tr>';
+      body.innerHTML = '<tr><td colspan="17" class="empty-state">No datasets match these filters.</td></tr>';
       return;
     }
 
@@ -119,6 +119,7 @@
       var tr = document.createElement('tr');
       tr.innerHTML =
         '<td class="dataset-name"><a href="' + escapeAttr(r.url || '#') + '" target="_blank" rel="noopener noreferrer">' + escapeHtml(r.name) + '</a></td>' +
+        '<td>' + escapeHtml(humanize(p.view_scope)) + '</td>' +
         '<td>' + escapeHtml(humanize(p.sample_type)) + '</td>' +
         '<td>' + escapeHtml(humanize(p.biological_context)) + '</td>' +
         '<td>' + escapeHtml(humanize(p.readout)) + '</td>' +
