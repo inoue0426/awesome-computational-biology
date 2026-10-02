@@ -243,6 +243,10 @@
       "perturbation_type": [
         "genetic"
       ],
+      "genetic_modes": [
+        "crispri",
+        "combinatorial"
+      ],
       "readout": "single-cell-rna",
       "n_profiles": "~86,000 cells",
       "n_perturbations": "~100 UPR hits plus combinatorial CRISPRi perturbations",
@@ -524,6 +528,9 @@
       "perturbation_type": [
         "genetic"
       ],
+      "genetic_modes": [
+        "crispr-ko"
+      ],
       "readout": "single-cell-rna",
       "n_profiles": 5905,
       "n_perturbations": "TCR regulators and transcription factors",
@@ -571,6 +578,10 @@
       "biological_context": "immune-and-cell-line",
       "perturbation_type": [
         "genetic"
+      ],
+      "genetic_modes": [
+        "crispr-ko",
+        "combinatorial"
       ],
       "readout": "single-cell-rna",
       "n_profiles": "~200,000 cells",
@@ -647,6 +658,9 @@
       "perturbation_type": [
         "genetic"
       ],
+      "genetic_modes": [
+        "crispr-ko"
+      ],
       "readout": "cite-seq",
       "n_profiles": ">200,000 cells",
       "n_perturbations": 248,
@@ -692,6 +706,10 @@
       "biological_context": "enhancer-gene-regulation",
       "perturbation_type": [
         "genetic"
+      ],
+      "genetic_modes": [
+        "crispri",
+        "enhancer-targeting"
       ],
       "readout": "single-cell-rna",
       "n_profiles": 254974,
@@ -865,6 +883,9 @@
         "chemical",
         "genetic"
       ],
+      "genetic_modes": [
+        "mixed"
+      ],
       "paired": false,
       "pre_post": false,
       "longitudinal": false,
@@ -996,6 +1017,9 @@
         "chemical",
         "genetic"
       ],
+      "genetic_modes": [
+        "mixed"
+      ],
       "paired": false,
       "pre_post": false,
       "longitudinal": true,
@@ -1081,6 +1105,10 @@
       "biological_context": "genetic-interactions",
       "perturbation_type": [
         "genetic"
+      ],
+      "genetic_modes": [
+        "crispra",
+        "combinatorial"
       ],
       "readout": "single-cell-rna",
       "n_profiles": "~110,000 cells",
@@ -1433,6 +1461,9 @@
       "perturbation_type": [
         "genetic"
       ],
+      "genetic_modes": [
+        "crispri"
+      ],
       "readout": "single-cell-rna",
       "n_profiles": 310385,
       "n_perturbations": 2057,
@@ -1480,6 +1511,9 @@
       "perturbation_type": [
         "genetic"
       ],
+      "genetic_modes": [
+        "crispri"
+      ],
       "readout": "single-cell-rna",
       "n_profiles": "genome-scale; mean ~183 cells per detected perturbation",
       "n_perturbations": "9,866 target genes; 11,258 detected sgRNA-pair perturbations",
@@ -1526,6 +1560,9 @@
       "biological_context": "essential-gene-screen",
       "perturbation_type": [
         "genetic"
+      ],
+      "genetic_modes": [
+        "crispri"
       ],
       "readout": "single-cell-rna",
       "n_profiles": 247914,
@@ -1647,6 +1684,9 @@
       "perturbation_type": [
         "chemical",
         "genetic"
+      ],
+      "genetic_modes": [
+        "mixed"
       ],
       "paired": false,
       "pre_post": false,
