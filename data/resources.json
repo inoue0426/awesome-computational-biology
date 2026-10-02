@@ -3888,13 +3888,32 @@
       "genomics-foundation-models"
     ],
     "tasks": [
-      "Foundation Model"
+      "regression",
+      "representation-learning"
     ],
     "modalities": [
-      "Genomics"
+      "dna-sequence",
+      "epigenomics",
+      "genomics"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "gene",
+      "genome",
+      "regulatory-element",
+      "variant"
+    ],
+    "methods": [
+      "supervised-learning",
+      "transformer"
+    ],
+    "year": 2025,
+    "github": "https://github.com/google-deepmind/alphagenome",
+    "last_checked": "2026-10-02",
+    "metadata_sources": [
+      "https://github.com/google-deepmind/alphagenome"
+    ]
   },
   {
     "id": "ankh",
@@ -4112,14 +4131,34 @@
       "protein-structure-prediction-and-design"
     ],
     "tasks": [
-      "Foundation Model",
-      "Protein Structure Prediction"
+      "drug-target-interaction",
+      "structure-prediction",
+      "virtual-screening"
     ],
     "modalities": [
-      "Protein"
+      "molecular-structure",
+      "protein-sequence"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "molecule",
+      "protein",
+      "protein-complex"
+    ],
+    "methods": [
+      "diffusion",
+      "generative-model",
+      "transformer"
+    ],
+    "year": 2025,
+    "github": "https://github.com/jwohlwend/boltz",
+    "paper": "https://doi.org/10.1101/2025.06.14.659707",
+    "last_checked": "2026-10-02",
+    "metadata_sources": [
+      "https://github.com/jwohlwend/boltz",
+      "https://doi.org/10.1101/2025.06.14.659707"
+    ]
   },
   {
     "id": "borzoi",
@@ -4265,14 +4304,33 @@
       "transcriptomics-foundation-models"
     ],
     "tasks": [
-      "Foundation Model"
+      "cell-type-annotation",
+      "foundation-model-pretraining",
+      "perturbation-prediction",
+      "representation-learning"
     ],
     "modalities": [
-      "Single Cell",
-      "Transcriptomics"
+      "single-cell-rna-seq",
+      "transcriptomics"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "cell",
+      "gene"
+    ],
+    "methods": [
+      "self-supervised-learning",
+      "transformer"
+    ],
+    "year": 2025,
+    "github": "https://github.com/biomed-AI/CellFM",
+    "paper": "https://doi.org/10.1038/s41467-025-59926-5",
+    "last_checked": "2026-10-02",
+    "metadata_sources": [
+      "https://github.com/biomed-AI/CellFM",
+      "https://doi.org/10.1038/s41467-025-59926-5"
+    ]
   },
   {
     "id": "cellot",
@@ -4450,13 +4508,29 @@
       "foundation-models"
     ],
     "tasks": [
-      "Foundation Model"
+      "foundation-model-pretraining",
+      "molecular-generation",
+      "representation-learning"
     ],
     "modalities": [
-      "Small Molecule"
+      "chemical-structure"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "molecule"
+    ],
+    "methods": [
+      "generative-model",
+      "language-model",
+      "transformer"
+    ],
+    "year": 2024,
+    "github": "https://github.com/TheLuoFengLab/ChemFM",
+    "last_checked": "2026-10-02",
+    "metadata_sources": [
+      "https://github.com/TheLuoFengLab/ChemFM"
+    ]
   },
   {
     "id": "chief",
@@ -5057,13 +5131,30 @@
       "protein-foundation-models"
     ],
     "tasks": [
-      "Foundation Model"
+      "foundation-model-pretraining",
+      "protein-function-prediction",
+      "representation-learning"
     ],
     "modalities": [
-      "Protein"
+      "protein-sequence"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "protein"
+    ],
+    "methods": [
+      "language-model",
+      "self-supervised-learning",
+      "transformer"
+    ],
+    "year": 2024,
+    "github": "https://github.com/Biohub/esm",
+    "last_checked": "2026-10-02",
+    "metadata_sources": [
+      "https://github.com/Biohub/esm",
+      "https://www.evolutionaryscale.ai/blog/esm-cambrian"
+    ]
   },
   {
     "id": "esm3",
@@ -5165,13 +5256,32 @@
       "genomics-foundation-models"
     ],
     "tasks": [
-      "Foundation Model"
+      "foundation-model-pretraining",
+      "representation-learning"
     ],
     "modalities": [
-      "Genomics"
+      "dna-sequence",
+      "genomics"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "gene",
+      "genome",
+      "organism"
+    ],
+    "methods": [
+      "generative-model",
+      "language-model"
+    ],
+    "year": 2026,
+    "github": "https://github.com/arcinstitute/evo2",
+    "paper": "https://doi.org/10.1038/s41586-026-10176-5",
+    "last_checked": "2026-10-02",
+    "metadata_sources": [
+      "https://github.com/arcinstitute/evo2",
+      "https://doi.org/10.1038/s41586-026-10176-5"
+    ]
   },
   {
     "id": "evodiff",
@@ -5294,13 +5404,32 @@
       "single-cell-foundation-models"
     ],
     "tasks": [
-      "Foundation Model"
+      "classification",
+      "foundation-model-pretraining",
+      "representation-learning"
     ],
     "modalities": [
-      "Single Cell"
+      "histopathology",
+      "imaging"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "disease",
+      "tissue"
+    ],
+    "methods": [
+      "self-supervised-learning",
+      "transformer"
+    ],
+    "year": 2026,
+    "github": "https://github.com/genbio-ai/genbio-pathfm",
+    "paper": "https://www.biorxiv.org/content/10.64898/2026.03.17.712534v1",
+    "last_checked": "2026-10-02",
+    "metadata_sources": [
+      "https://github.com/genbio-ai/genbio-pathfm",
+      "https://www.biorxiv.org/content/10.64898/2026.03.17.712534v1"
+    ]
   },
   {
     "id": "genecompass",
@@ -5574,13 +5703,30 @@
       "single-cell-foundation-models"
     ],
     "tasks": [
-      "Foundation Model"
+      "classification",
+      "foundation-model-pretraining",
+      "representation-learning"
     ],
     "modalities": [
-      "Single Cell"
+      "histopathology",
+      "imaging"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "disease",
+      "tissue"
+    ],
+    "methods": [
+      "self-supervised-learning",
+      "transformer"
+    ],
+    "year": 2024,
+    "documentation": "https://huggingface.co/bioptimus/H-optimus-0",
+    "last_checked": "2026-10-02",
+    "metadata_sources": [
+      "https://huggingface.co/bioptimus/H-optimus-0"
+    ]
   },
   {
     "id": "h_optimus_1",
@@ -5594,13 +5740,30 @@
       "single-cell-foundation-models"
     ],
     "tasks": [
-      "Foundation Model"
+      "classification",
+      "foundation-model-pretraining",
+      "representation-learning"
     ],
     "modalities": [
-      "Single Cell"
+      "histopathology",
+      "imaging"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "disease",
+      "tissue"
+    ],
+    "methods": [
+      "self-supervised-learning",
+      "transformer"
+    ],
+    "year": 2025,
+    "documentation": "https://huggingface.co/bioptimus/H-optimus-1",
+    "last_checked": "2026-10-02",
+    "metadata_sources": [
+      "https://huggingface.co/bioptimus/H-optimus-1"
+    ]
   },
   {
     "id": "hidra",
@@ -5810,13 +5973,33 @@
       "genomics-foundation-models"
     ],
     "tasks": [
-      "Foundation Model"
+      "classification",
+      "foundation-model-pretraining",
+      "regression",
+      "representation-learning"
     ],
     "modalities": [
-      "Genomics"
+      "dna-sequence",
+      "genomics"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "gene",
+      "genome",
+      "regulatory-element"
+    ],
+    "methods": [
+      "language-model",
+      "self-supervised-learning",
+      "transformer"
+    ],
+    "year": 2026,
+    "github": "https://github.com/AIRI-Institute/GENA_LM",
+    "last_checked": "2026-10-02",
+    "metadata_sources": [
+      "https://github.com/AIRI-Institute/GENA_LM"
+    ]
   },
   {
     "id": "mofa",
@@ -6379,13 +6562,30 @@
       "single-cell-foundation-models"
     ],
     "tasks": [
-      "Foundation Model"
+      "classification",
+      "foundation-model-pretraining",
+      "representation-learning"
     ],
     "modalities": [
-      "Single Cell"
+      "histopathology",
+      "imaging"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "disease",
+      "tissue"
+    ],
+    "methods": [
+      "self-supervised-learning",
+      "transformer"
+    ],
+    "year": 2025,
+    "documentation": "https://huggingface.co/owkin/phikon-v2",
+    "last_checked": "2026-10-02",
+    "metadata_sources": [
+      "https://huggingface.co/owkin/phikon-v2"
+    ]
   },
   {
     "id": "plip",
@@ -6620,14 +6820,31 @@
       "protein-structure-prediction-and-design"
     ],
     "tasks": [
-      "Foundation Model",
-      "Protein Structure Prediction"
+      "drug-target-interaction",
+      "structure-prediction"
     ],
     "modalities": [
-      "Protein"
+      "molecular-structure",
+      "protein-sequence"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "molecule",
+      "protein",
+      "protein-complex"
+    ],
+    "methods": [
+      "diffusion",
+      "generative-model",
+      "transformer"
+    ],
+    "year": 2025,
+    "github": "https://github.com/bytedance/Protenix",
+    "last_checked": "2026-10-02",
+    "metadata_sources": [
+      "https://github.com/bytedance/Protenix"
+    ]
   },
   {
     "id": "prottrans",
@@ -6754,11 +6971,30 @@
       "rna-foundation-models"
     ],
     "tasks": [
-      "Foundation Model"
+      "foundation-model-pretraining",
+      "representation-learning",
+      "structure-prediction"
     ],
-    "modalities": [],
+    "modalities": [
+      "rna-sequence"
+    ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "gene",
+      "transcript"
+    ],
+    "methods": [
+      "language-model",
+      "self-supervised-learning",
+      "transformer"
+    ],
+    "year": 2024,
+    "github": "https://github.com/lbcb-sci/RiNALMo",
+    "last_checked": "2026-10-02",
+    "metadata_sources": [
+      "https://github.com/lbcb-sci/RiNALMo"
+    ]
   },
   {
     "id": "rna_fm",
@@ -6771,11 +7007,30 @@
       "rna-foundation-models"
     ],
     "tasks": [
-      "Foundation Model"
+      "foundation-model-pretraining",
+      "representation-learning",
+      "structure-prediction"
     ],
-    "modalities": [],
+    "modalities": [
+      "rna-sequence"
+    ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "gene",
+      "transcript"
+    ],
+    "methods": [
+      "language-model",
+      "self-supervised-learning",
+      "transformer"
+    ],
+    "year": 2022,
+    "github": "https://github.com/ml4bio/RNA-FM",
+    "last_checked": "2026-10-02",
+    "metadata_sources": [
+      "https://github.com/ml4bio/RNA-FM"
+    ]
   },
   {
     "id": "rosettafold",
@@ -7161,14 +7416,33 @@
       "transcriptomics-foundation-models"
     ],
     "tasks": [
-      "Foundation Model"
+      "batch-correction",
+      "cell-type-annotation",
+      "foundation-model-pretraining",
+      "gene-regulatory-network-inference",
+      "imputation",
+      "representation-learning"
     ],
     "modalities": [
-      "Single Cell",
-      "Transcriptomics"
+      "single-cell-rna-seq",
+      "transcriptomics"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "cell",
+      "gene"
+    ],
+    "methods": [
+      "self-supervised-learning",
+      "transformer"
+    ],
+    "year": 2026,
+    "github": "https://github.com/cantinilab/scPRINT-2",
+    "last_checked": "2026-10-02",
+    "metadata_sources": [
+      "https://github.com/cantinilab/scPRINT-2"
+    ]
   },
   {
     "id": "sei",
@@ -7330,13 +7604,31 @@
       "single-cell-foundation-models"
     ],
     "tasks": [
-      "Foundation Model"
+      "classification",
+      "foundation-model-pretraining",
+      "representation-learning"
     ],
     "modalities": [
-      "Single Cell"
+      "histopathology",
+      "imaging"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "disease",
+      "tissue"
+    ],
+    "methods": [
+      "contrastive-learning",
+      "self-supervised-learning",
+      "transformer"
+    ],
+    "year": 2025,
+    "github": "https://github.com/mahmoodlab/TITAN",
+    "last_checked": "2026-10-02",
+    "metadata_sources": [
+      "https://github.com/mahmoodlab/TITAN"
+    ]
   },
   {
     "id": "toad",
@@ -7594,13 +7886,28 @@
       "foundation-models"
     ],
     "tasks": [
-      "Foundation Model"
+      "foundation-model-pretraining",
+      "representation-learning"
     ],
     "modalities": [
-      "Small Molecule"
+      "chemical-structure",
+      "molecular-structure"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "molecule"
+    ],
+    "methods": [
+      "self-supervised-learning",
+      "transformer"
+    ],
+    "year": 2024,
+    "github": "https://github.com/deepmodeling/Uni-Mol",
+    "last_checked": "2026-10-02",
+    "metadata_sources": [
+      "https://github.com/deepmodeling/Uni-Mol"
+    ]
   },
   {
     "id": "uni2_h",
@@ -7614,13 +7921,30 @@
       "single-cell-foundation-models"
     ],
     "tasks": [
-      "Foundation Model"
+      "classification",
+      "foundation-model-pretraining",
+      "representation-learning"
     ],
     "modalities": [
-      "Single Cell"
+      "histopathology",
+      "imaging"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "disease",
+      "tissue"
+    ],
+    "methods": [
+      "self-supervised-learning",
+      "transformer"
+    ],
+    "year": 2025,
+    "documentation": "https://huggingface.co/MahmoodLab/UNI2-h",
+    "last_checked": "2026-10-02",
+    "metadata_sources": [
+      "https://huggingface.co/MahmoodLab/UNI2-h"
+    ]
   },
   {
     "id": "unitednet",
@@ -7674,13 +7998,30 @@
       "single-cell-foundation-models"
     ],
     "tasks": [
-      "Foundation Model"
+      "classification",
+      "foundation-model-pretraining",
+      "representation-learning"
     ],
     "modalities": [
-      "Single Cell"
+      "histopathology",
+      "imaging"
     ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "disease",
+      "tissue"
+    ],
+    "methods": [
+      "self-supervised-learning",
+      "transformer"
+    ],
+    "year": 2024,
+    "documentation": "https://huggingface.co/paige-ai/Virchow2",
+    "last_checked": "2026-10-02",
+    "metadata_sources": [
+      "https://huggingface.co/paige-ai/Virchow2"
+    ]
   },
   {
     "id": "xpert",
