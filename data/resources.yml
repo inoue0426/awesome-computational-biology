@@ -1819,6 +1819,17 @@ resources:
     organism: []
     api: false
 
+  - id: autoba
+    name: "AutoBA"
+    type: model
+    url: https://github.com/JoshuaChou2018/AutoBA
+    description: "Automated multi-omics analysis agent that plans, executes, and repairs bioinformatics workflows from natural-language objectives."
+    tags: [agentic-ai-for-biology, bioinformatics-and-omics-agents]
+    tasks: []
+    modalities: []
+    organism: []
+    api: false
+
   - id: babel
     name: "BABEL"
     type: model
@@ -1841,6 +1852,28 @@ resources:
     organism: []
     api: false
 
+  - id: bia
+    name: "BIA"
+    type: model
+    url: https://github.com/biagent-dev/bia
+    description: "Bioinformatics agent for GEO search, sample metadata extraction, count-matrix processing, and pipeline extraction from papers."
+    tags: [agentic-ai-for-biology, bioinformatics-and-omics-agents]
+    tasks: []
+    modalities: []
+    organism: []
+    api: false
+
+  - id: bioagents
+    name: "BioAgents"
+    type: model
+    url: https://github.com/microsoft/bioinformagus
+    description: "Multi-agent bioinformatics assistant using specialized language models and retrieval for genomics workflow development and troubleshooting."
+    tags: [agentic-ai-for-biology, bioinformatics-and-omics-agents]
+    tasks: []
+    modalities: []
+    organism: []
+    api: false
+
   - id: biogpt
     name: "BioGPT"
     type: model
@@ -1860,6 +1893,28 @@ resources:
     tags: [drug-discovery, drug-perturbation]
     tasks: [Drug Discovery, Drug Perturbation]
     modalities: [Small Molecule]
+    organism: []
+    api: false
+
+  - id: biomaster
+    name: "BioMaster"
+    type: model
+    url: https://github.com/ai4nucleome/BioMaster
+    description: "Multi-agent system for automated and auditable bioinformatics workflows spanning RNA-seq, ChIP-seq, single-cell, spatial omics, Hi-C, long reads, metagenomics, and proteomics."
+    tags: [agentic-ai-for-biology, general-biomedical-agents]
+    tasks: []
+    modalities: []
+    organism: []
+    api: false
+
+  - id: biomedagent
+    name: "BioMedAgent"
+    type: model
+    url: https://github.com/BOBQWERA/BioMedAgent
+    description: "Self-evolving multi-agent framework for autonomous biomedical data analysis with tool discovery, workflow planning, code generation, execution, correction, and cross-omics analysis."
+    tags: [agentic-ai-for-biology, general-biomedical-agents]
+    tasks: []
+    modalities: []
     organism: []
     api: false
 
@@ -1937,6 +1992,17 @@ resources:
     tags: [foundation-models, genomics-foundation-models]
     tasks: [Foundation Model]
     modalities: [Genomics]
+    organism: []
+    api: false
+
+  - id: brad
+    name: "BRAD"
+    type: model
+    url: https://github.com/Jpickard1/BRAD
+    description: "Retrieval-augmented bioinformatics assistant integrating scientific literature, databases, external tools, and executable workflows."
+    tags: [agentic-ai-for-biology, general-biomedical-agents]
+    tasks: []
+    modalities: []
     organism: []
     api: false
 
@@ -2597,6 +2663,28 @@ resources:
     tags: [llm-for-biology]
     tasks: [Language Modeling]
     modalities: [Text]
+    organism: []
+    api: false
+
+  - id: genomas
+    name: "GenoMAS"
+    type: model
+    url: https://github.com/Liu-Hy/GenoMAS
+    description: "Multi-agent framework for code-driven gene-expression analysis with planning, execution, debugging, backtracking, and GEO/TCGA-based scientific discovery."
+    tags: [agentic-ai-for-biology, bioinformatics-and-omics-agents]
+    tasks: []
+    modalities: []
+    organism: []
+    api: false
+
+  - id: genomi
+    name: "Genomi"
+    type: model
+    url: https://github.com/exon-research/genomi
+    description: "Local-first genomics agent runtime that indexes personal variants, queries evidence, and generates evidence-grounded reports while keeping raw genome data on-device."
+    tags: [agentic-ai-for-biology, bioinformatics-and-omics-agents]
+    tasks: []
+    modalities: []
     organism: []
     api: false
 
