@@ -155,3 +155,26 @@ footer { padding: 1.5rem clamp(1rem, 4vw, 4rem) 2.5rem; color: var(--muted); fon
   .results-header { align-items: stretch; flex-direction: column; }
   .sort-control { width: 100%; }
 }
+
+.site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: .35rem;
+  padding: .55rem .75rem;
+  background: #163f73;
+  border-bottom: 1px solid rgba(255,255,255,.16);
+}
+.site-nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: .84rem;
+  font-weight: 650;
+  padding: .28rem .55rem;
+  border-radius: 999px;
+}
+.site-nav a:hover,
+.site-nav a:focus-visible {
+  background: rgba(255,255,255,.15);
+  outline: none;
+}
