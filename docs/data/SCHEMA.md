@@ -42,6 +42,7 @@ When contributing new resources, update `README.md` first, then regenerate artif
 | `dataset_profile` | object | Optional Dataset Explorer metadata for structured comparison of datasets/benchmarks. |
 | `method_profile` | object | Optional Method Explorer metadata for structured comparison of response and perturbation methods. |
 | `foundation_profile` | object | Optional Foundation Model Explorer metadata for modality, model scale, size, and availability. |
+| `agent_profile` | object | Optional Agent Explorer metadata for agent architecture, capabilities, and scientific workflow support. |
 
 ## Naming and consistency guidance
 
@@ -145,3 +146,25 @@ Foundation models shown in the Foundation Model Explorer may define a `foundatio
 | `spatial` | boolean/string | Whether spatial data are directly modeled or supported. |
 
 Unknown or unverified values should be omitted rather than inferred. The Foundation Model Explorer is rendered at `docs/foundation-explorer.html`.
+
+
+## Agent Explorer profile
+
+Agentic AI systems shown in the Agent Explorer may define an `agent_profile` object in a modular enrichment fragment.
+
+| Field | Type | Meaning |
+|---|---|---|
+| `year` | integer | Initial public release or publication year. |
+| `domains` | array of strings | Main scientific domains such as `general-biomedicine`, `therapeutics`, `bioinformatics`, `single-cell`, `scientific-workflow`, or `paper-to-agent`. |
+| `architecture` | string | `single-agent`, `multi-agent`, or `agent-ecosystem`. |
+| `tool_use` | boolean/string | Whether external scientific tools/APIs are used. |
+| `code_execution` | boolean/string | Whether the system executes code as part of its workflow. |
+| `web_retrieval` | boolean/string | Whether web or online database retrieval is supported. |
+| `literature` | boolean/string | Whether literature search/reasoning is explicitly supported. |
+| `omics` | boolean/string | Whether omics analysis is a first-class supported workflow. |
+| `wet_lab` | boolean/string | Whether wet-lab planning, experimental design, or laboratory-facing workflows are supported. |
+| `autonomous_experiment` | boolean/string | Whether the system can carry out iterative computational/experimental research loops. |
+| `human_in_loop` | boolean/string | Whether human collaboration or approval is an explicit part of the design. |
+| `open_source` | boolean/string | Whether implementation code is publicly available. |
+
+Capability fields may use `limited` or `unknown` when support is workflow-dependent or not clearly documented. The Agent Explorer is rendered at `docs/agent-explorer.html`.
