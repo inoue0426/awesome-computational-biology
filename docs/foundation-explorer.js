@@ -8,6 +8,7 @@
 
   var search = document.getElementById('foundation-search');
   var modality = document.getElementById('fm-modality');
+  var recentOnly = document.getElementById('foundation-recent');
   var year = document.getElementById('fm-year');
   var weights = document.getElementById('fm-weights');
   var perturbation = document.getElementById('fm-perturbation');
@@ -107,6 +108,7 @@
     var query = (search.value || '').trim().toLowerCase();
     var filtered = rows.filter(function (r) {
       var p = r.foundation_profile || {};
+      if (recentOnly.checked && Number(p.year || 0) < 2025) return false;
       if (modality.value && (p.modalities || []).indexOf(modality.value) === -1) return false;
       if (year.value && String(p.year || '') !== year.value) return false;
       if (weights.value && normalizeState(p.weights) !== weights.value) return false;
@@ -231,13 +233,14 @@
     return escapeHtml(value).replace(/'/g, '&#39;');
   }
 
-  [search, modality, year, weights, perturbation, spatial].forEach(function (el) {
+  [search, modality, year, weights, perturbation, spatial, recentOnly].forEach(function (el) {
     el.addEventListener(el === search ? 'input' : 'change', render);
   });
 
   clear.addEventListener('click', function () {
     search.value = '';
     modality.value = '';
+    recentOnly.checked = false;
     year.value = '';
     weights.value = '';
     perturbation.value = '';
