@@ -608,9 +608,17 @@ The explorer also includes the eight perturbation datasets used in the Bison uns
 - [EpiAgent](https://github.com/xy-chen16/EpiAgent) — scATAC-seq foundation model pretrained on ~5M cells and >35B tokens for representation learning, annotation, imputation, perturbation prediction, and in-silico cCRE knockout.
 - [SCARF](https://doi.org/10.1101/2025.04.07.647689) — Single-cell RNA+ATAC foundation model pretrained on >2.7M cells for multimodal representation, matching, cross-omics translation, and few-shot annotation.
 - [scDNAm-GPT](https://github.com/ChaoqiLiang/scDNAm-GPM) — Foundation model for single-cell whole-genome bisulfite sequencing with whole-genome context modeling at single-CpG resolution.
+- [EpiFoundation](https://doi.org/10.1101/2025.02.05.636688) — Foundation model for scATAC-seq using peak-to-gene aligned pretraining for cell representation, annotation, batch correction, and gene-expression prediction.
+- [ChromFound](https://github.com/SAIS-LifeScience/ChromFound) — Genome-aware scATAC-seq foundation model pretrained on 1.97M cells across tissues and disease contexts for zero-shot cell representations, annotation, and cross-omics prediction.
+- [Atacformer](https://doi.org/10.1101/2025.11.03.685753) — Transformer foundation model for scATAC-seq that learns embeddings of cis-regulatory elements for clustering, annotation, and reference mapping.
+- [CLM-X](https://doi.org/10.64898/2026.02.17.704943) — Multi-way Transformer foundation model jointly handling RNA-only, ATAC-only, and paired RNA–ATAC single-cell inputs for integration, translation, annotation, and perturbation prediction.
 
 #### Other Omics Foundation Models
 
+- [CAPTAIN](https://doi.org/10.1038/s41467-026-72882-y) — Multimodal foundation model pretrained on co-assayed single-cell RNA and protein for joint representation learning and cross-modal downstream tasks.
+- [HiCFoundation](https://doi.org/10.1038/s41592-026-03097-8) — Hi-C foundation model pretrained on large-scale chromatin-contact maps for 3D-genome analysis, epigenomic prediction, and single-cell Hi-C adaptation.
+- [OmicsFM](https://github.com/CompOmics/OmicsFM) — Modality-agnostic molecular-expression foundation model with matched proteomics, bulk-transcriptomics, and single-cell-transcriptomics checkpoints.
+- [VirTues](https://github.com/bunnelab/virtues) — Spatial-proteomics foundation model learning marker-aware representations across proteins, cells, niches, and tissues from multiplexed imaging.
 - [MethylGPT](https://github.com/albert-ying/MethylGPT) — Transformer foundation model for DNA methylation pretrained on >150K human methylomes across thousands of datasets, with 3M/7M/15M parameter variants.
 - [CpGPT](https://github.com/lucascamillomd/CpGPT) — DNA methylation foundation model pretrained on >150K samples for zero-shot imputation, array conversion, reference mapping, and downstream phenotype prediction.
 - [Casanovo Foundation](https://github.com/Noble-Lab/casanovo-tl) — Tandem mass-spectrometry proteomics foundation model that reuses a pretrained Casanovo spectrum encoder for spectrum quality, chimericity, and post-translational-modification prediction.
