@@ -26,6 +26,21 @@ resources:
     last_checked: 2026-08-08
     metadata_sources:
       - https://lincsproject.org/LINCS/tools/workflows/find-the-best-place-to-obtain-the-lincs-l1000-data
+    dataset_profile:
+      species: [human]
+      sample_type: cell-line
+      biological_context: perturbation-screen
+      perturbation_type: [chemical, genetic]
+      paired: false
+      pre_post: false
+      longitudinal: false
+      drug_identity: true
+      dose: true
+      smiles: partial
+      clinical_outcome: false
+      n_samples: "large-scale perturbational profiles"
+      n_cells: null
+      access: open
 
   prism:
     entities: [cell, drug]
