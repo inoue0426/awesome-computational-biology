@@ -255,6 +255,18 @@ The explorer also includes the eight perturbation datasets used in the Bison uns
 - [VCPI-0001](https://github.com/theislab/Chem-PerturBridge) — Bulk chemical perturbation dataset used in Chem-PerturBridge; the Bison benchmark view contains 27,517 profiles and 2,272 molecules in one cellular context.
 - [VCPI-0002](https://github.com/theislab/Chem-PerturBridge) — Bulk chemical perturbation dataset used in Chem-PerturBridge; the Bison benchmark view contains 18,139 profiles and 1,488 molecules in one cellular context.
 
+### Genetic Perturbation & Perturb-seq
+
+- [Dixit et al. 2016 Perturb-seq](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE90063) — Pooled CRISPR knockout with single-cell RNA-seq across K562 and dendritic-cell screens, including stimulated conditions and combinatorial perturbations.
+- [Adamson et al. 2016 Perturb-seq](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE90546) — CRISPRi Perturb-seq in K562 cells for systematic dissection of the unfolded protein response.
+- [Datlinger et al. 2017 CROP-seq](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE92872) — Pooled CRISPR knockout screen with single-cell transcriptomic readout in Jurkat cells under T-cell receptor stimulation.
+- [Norman et al. 2019 CRISPRa Perturb-seq](https://figshare.com/articles/dataset/Norman_et_al_2019_Perturb-seq/27766323) — Large-scale CRISPR activation Perturb-seq in K562 cells spanning single-gene and combinatorial perturbations.
+- [Gasperini et al. 2019 CRISPRi enhancer screen](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE120861) — High-MOI single-cell CRISPRi screen in K562 cells targeting thousands of candidate enhancers to map enhancer-gene regulation.
+- [Replogle et al. 2022 K562 Genome-wide Perturb-seq](https://plus.figshare.com/articles/dataset/_Mapping_information-rich_genotype-phenotype_landscapes_with_genome-scale_Perturb-seq_Replogle_et_al_2022_processed_Perturb-seq_datasets/20029387) — Genome-scale CRISPRi Perturb-seq targeting nearly all expressed genes in K562 cells.
+- [Replogle et al. 2022 K562 Essential Perturb-seq](https://plus.figshare.com/articles/dataset/_Mapping_information-rich_genotype-phenotype_landscapes_with_genome-scale_Perturb-seq_Replogle_et_al_2022_processed_Perturb-seq_datasets/20029387) — CRISPRi Perturb-seq focused on essential genes in K562 cells.
+- [Replogle et al. 2022 RPE1 Essential Perturb-seq](https://plus.figshare.com/articles/dataset/_Mapping_information-rich_genotype-phenotype_landscapes_with_genome-scale_Perturb-seq_Replogle_et_al_2022_processed_Perturb-seq_datasets/20029387) — CRISPRi Perturb-seq focused on essential genes in RPE1 cells.
+- [Frangieh et al. 2021 Perturb-CITE-seq](https://singlecell.broadinstitute.org/single_cell/study/SCP1064/multi-modal-pooled-perturb-cite-seq-screens-in-patient-models-define-novel-mechanisms-of-cancer-immune-evasion) — Multimodal CRISPR knockout screen with RNA and surface-protein readouts in patient-derived melanoma models under immune-related conditions.
+
 ### Single-Cell & Spatial
 
 - [HEST Xenium virtual spatial transcriptomics](https://huggingface.co/datasets/ratschlab/HEST_Xenium_virtual_spatial_transcriptomics) — DeepSpot-M predicted transcriptome-wide ST for 59 HEST-1k 10x Xenium samples (~13.3M cells) (gated). Paper: [DeepSpot-M](https://www.medrxiv.org/content/10.64898/2026.06.19.26356060v1).
