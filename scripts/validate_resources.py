@@ -35,6 +35,7 @@ ALLOWED_ACCESS = {"open", "registration", "restricted", "commercial", "unknown"}
 ALLOWED_FIELDS = set(REQUIRED_FIELDS) | set(LIST_FIELDS) | {
     "license", "api", "paper", "updated", "github", "documentation", "year",
     "maintenance_status", "access", "last_checked", "dataset_profile", "method_profile",
+    "foundation_profile",
 }
 ID_RE = re.compile(r"^[a-z0-9]+(?:_[a-z0-9]+)*$")
 VOCAB_RE = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
@@ -245,6 +246,70 @@ def validate_entry(entry: dict[str, Any]) -> list[str]:
                 ):
                     errors.append(
                         f"[{rid}] dataset_profile.{field} must be integer, string, or null"
+                    )
+    foundation_profile = entry.get("foundation_profile")
+    if foundation_profile is not None:
+        if not isinstance(foundation_profile, dict):
+            errors.append(f"[{rid}] 'foundation_profile' must be a mapping")
+        else:
+            allowed_foundation_fields = {
+                "year", "modalities", "params", "params_millions",
+                "pretraining_scale", "species", "zero_shot", "finetunable",
+                "weights", "code", "perturbation", "spatial",
+            }
+            unknown_foundation = sorted(
+                set(foundation_profile) - allowed_foundation_fields
+            )
+            if unknown_foundation:
+                errors.append(
+                    f"[{rid}] foundation_profile unknown fields: "
+                    + ", ".join(unknown_foundation)
+                )
+            for field in ("modalities", "species"):
+                value = foundation_profile.get(field, [])
+                if not isinstance(value, list) or any(
+                    not isinstance(item, str) or not item.strip() for item in value
+                ):
+                    errors.append(
+                        f"[{rid}] foundation_profile.{field} must be a list of non-empty strings"
+                    )
+            if "year" in foundation_profile and (
+                not isinstance(foundation_profile["year"], int)
+                or isinstance(foundation_profile["year"], bool)
+                or not 1900 <= foundation_profile["year"] <= 2100
+            ):
+                errors.append(
+                    f"[{rid}] foundation_profile.year must be an integer from 1900 to 2100"
+                )
+            if "params_millions" in foundation_profile and (
+                not isinstance(foundation_profile["params_millions"], (int, float))
+                or isinstance(foundation_profile["params_millions"], bool)
+                or foundation_profile["params_millions"] < 0
+            ):
+                errors.append(
+                    f"[{rid}] foundation_profile.params_millions must be a non-negative number"
+                )
+            for field in ("params", "pretraining_scale"):
+                if (
+                    field in foundation_profile
+                    and foundation_profile[field] is not None
+                    and not isinstance(foundation_profile[field], str)
+                ):
+                    errors.append(
+                        f"[{rid}] foundation_profile.{field} must be a string or null"
+                    )
+            allowed_states = {True, False, "yes", "no", "limited", "unknown"}
+            for field in (
+                "zero_shot", "finetunable", "weights", "code",
+                "perturbation", "spatial",
+            ):
+                if (
+                    field in foundation_profile
+                    and foundation_profile[field] not in allowed_states
+                ):
+                    errors.append(
+                        f"[{rid}] foundation_profile.{field} must be boolean or "
+                        "yes/no/limited/unknown"
                     )
     return errors
 
