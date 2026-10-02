@@ -91,6 +91,7 @@ Supported v1 fields:
 | `n_samples` | string | Human-readable scale summary. |
 | `n_cells` | integer, string, or null | Cell count for single-cell datasets when meaningful. |
 | `n_profiles` | integer, string, or null | Number of profiles in the curated comparison view. |
+| `n_perturbations` | integer, string, or null | Number of perturbation targets/conditions, especially useful for genetic screens. |
 | `n_compounds` | integer, string, or null | Number of compounds/molecules in the curated comparison view. |
 | `n_contexts` | integer, string, or null | Number of cellular or experimental contexts. |
 | `readout` | string | Primary readout, e.g. `bulk-rna`, `pseudobulk-rna`, `single-cell-rna`, or `viability`. |

@@ -27,6 +27,9 @@
         <label for="readout">Readout</label>
         <select id="readout"><option value="">All readouts</option></select>
 
+        <label for="perturbation-type">Perturbation</label>
+        <select id="perturbation-type"><option value="">All perturbation types</option></select>
+
         <label for="clinical-outcome">Clinical outcome</label>
         <select id="clinical-outcome">
           <option value="">Any</option>
@@ -67,6 +70,7 @@
             <th data-sort-key="readout">Readout <span class="sort-indicator"></span></th>
             <th data-sort-key="perturbation_type">Perturbation <span class="sort-indicator"></span></th>
             <th data-sort-key="n_profiles">Profiles <span class="sort-indicator"></span></th>
+            <th data-sort-key="n_perturbations">Perturbations <span class="sort-indicator"></span></th>
             <th data-sort-key="n_compounds">Compounds <span class="sort-indicator"></span></th>
             <th data-sort-key="n_contexts">Contexts <span class="sort-indicator"></span></th>
             <th data-sort-key="gene_panel">Gene panel <span class="sort-indicator"></span></th>
@@ -85,7 +89,7 @@
   </main>
 
   <footer>
-    <p>Dataset profiles are curated metadata layered on top of <code>data/resources.yml</code>. Scale fields may describe a curated benchmark view rather than the entire source dataset.</p>
+    <p>Dataset profiles are curated metadata layered on top of <code>data/resources.yml</code>. Scale fields may describe a curated benchmark view rather than the entire source dataset. Genetic screens report target or guide counts under Perturbations.</p>
   </footer>
 
   <script src="dataset-explorer.js"></script>

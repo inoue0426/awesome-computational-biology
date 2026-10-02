@@ -212,7 +212,7 @@ def validate_entry(entry: dict[str, Any]) -> list[str]:
                 "species", "sample_type", "biological_context", "perturbation_type",
                 "paired", "pre_post", "longitudinal", "drug_identity", "dose",
                 "smiles", "clinical_outcome", "n_samples", "n_cells", "access",
-                "readout", "gene_panel", "n_profiles", "n_compounds", "n_contexts", "time", "view_scope",
+                "readout", "gene_panel", "n_profiles", "n_perturbations", "n_compounds", "n_contexts", "time", "view_scope",
             }
             unknown_profile = sorted(set(profile) - allowed_profile_fields)
             if unknown_profile:
@@ -239,7 +239,7 @@ def validate_entry(entry: dict[str, Any]) -> list[str]:
             for field in ("sample_type", "biological_context", "n_samples", "access", "readout", "gene_panel", "view_scope"):
                 if field in profile and profile[field] is not None and not isinstance(profile[field], str):
                     errors.append(f"[{rid}] dataset_profile.{field} must be a string")
-            for field in ("n_cells", "n_profiles", "n_compounds", "n_contexts"):
+            for field in ("n_cells", "n_profiles", "n_perturbations", "n_compounds", "n_contexts"):
                 if field in profile and profile[field] is not None and not isinstance(
                     profile[field], (int, str)
                 ):

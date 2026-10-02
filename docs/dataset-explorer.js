@@ -9,6 +9,7 @@
   var search = document.getElementById('dataset-search');
   var sampleType = document.getElementById('sample-type');
   var readout = document.getElementById('readout');
+  var perturbationType = document.getElementById('perturbation-type');
   var clinicalOutcome = document.getElementById('clinical-outcome');
   var prePost = document.getElementById('pre-post');
   var smiles = document.getElementById('smiles');
@@ -28,12 +29,13 @@
       });
       populateSelect(sampleType, 'sample_type');
       populateSelect(readout, 'readout');
+      populateArraySelect(perturbationType, 'perturbation_type');
       bindSorting();
       render();
     })
     .catch(function (err) {
       count.textContent = 'Failed to load dataset metadata.';
-      body.innerHTML = '<tr><td colspan="17">Could not load resources.json: ' + escapeHtml(err.message) + '</td></tr>';
+      body.innerHTML = '<tr><td colspan="18">Could not load resources.json: ' + escapeHtml(err.message) + '</td></tr>';
     });
 
   function populateSelect(select, field) {
@@ -41,6 +43,23 @@
     rows.forEach(function (r) {
       var value = r.dataset_profile[field];
       if (value) values[value] = true;
+    });
+    Object.keys(values).sort().forEach(function (value) {
+      var option = document.createElement('option');
+      option.value = value;
+      option.textContent = humanize(value);
+      select.appendChild(option);
+    });
+  }
+
+  function populateArraySelect(select, field) {
+    var values = {};
+    rows.forEach(function (r) {
+      var items = r.dataset_profile[field] || [];
+      if (!Array.isArray(items)) items = [items];
+      items.forEach(function (value) {
+        if (value) values[value] = true;
+      });
     });
     Object.keys(values).sort().forEach(function (value) {
       var option = document.createElement('option');
@@ -92,6 +111,7 @@
       var p = r.dataset_profile || {};
       if (sampleType.value && p.sample_type !== sampleType.value) return false;
       if (readout.value && p.readout !== readout.value) return false;
+      if (perturbationType.value && (p.perturbation_type || []).indexOf(perturbationType.value) === -1) return false;
       if (clinicalOutcome.value && String(Boolean(p.clinical_outcome)) !== clinicalOutcome.value) return false;
       if (prePost.value && String(Boolean(p.pre_post)) !== prePost.value) return false;
       if (smiles.value && String(p.smiles) !== smiles.value) return false;
@@ -110,7 +130,7 @@
     count.textContent = filtered.length + ' curated dataset profile' + (filtered.length === 1 ? '' : 's');
     body.innerHTML = '';
     if (!filtered.length) {
-      body.innerHTML = '<tr><td colspan="17" class="empty-state">No datasets match these filters.</td></tr>';
+      body.innerHTML = '<tr><td colspan="18" class="empty-state">No datasets match these filters.</td></tr>';
       return;
     }
 
@@ -125,6 +145,7 @@
         '<td>' + escapeHtml(humanize(p.readout)) + '</td>' +
         '<td>' + escapeHtml((p.perturbation_type || []).map(humanize).join(', ') || '—') + '</td>' +
         '<td class="num">' + displayNumber(p.n_profiles) + '</td>' +
+        '<td class="num">' + displayNumber(p.n_perturbations) + '</td>' +
         '<td class="num">' + displayNumber(p.n_compounds) + '</td>' +
         '<td class="num">' + displayNumber(p.n_contexts) + '</td>' +
         '<td>' + escapeHtml(p.gene_panel || '—') + '</td>' +
@@ -160,7 +181,7 @@
     if (value === 'partial' || value === 'limited') return { missing: false, value: 1 };
     if (typeof value === 'number') return { missing: false, value: value };
 
-    if (key === 'n_profiles' || key === 'n_compounds' || key === 'n_contexts' || key === 'n_cells') {
+    if (key === 'n_profiles' || key === 'n_perturbations' || key === 'n_compounds' || key === 'n_contexts' || key === 'n_cells') {
       var numeric = parseNumeric(value);
       return { missing: numeric === null, value: numeric === null ? 0 : numeric };
     }
@@ -209,7 +230,7 @@
     return escapeHtml(value).replace(/'/g, '&#39;');
   }
 
-  [search, sampleType, readout, clinicalOutcome, prePost, smiles].forEach(function (el) {
+  [search, sampleType, readout, perturbationType, clinicalOutcome, prePost, smiles].forEach(function (el) {
     el.addEventListener(el === search ? 'input' : 'change', render);
   });
 
@@ -217,6 +238,7 @@
     search.value = '';
     sampleType.value = '';
     readout.value = '';
+    perturbationType.value = '';
     clinicalOutcome.value = '';
     prePost.value = '';
     smiles.value = '';
