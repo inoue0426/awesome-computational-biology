@@ -101,7 +101,6 @@ Supported v1 fields:
 
 The v1 profiles are colocated with their existing modular `data/enrichment.*.yml` owners and rendered at `docs/dataset-explorer.html`.
 
-
 ## Method Explorer profile
 
 Methods shown in the Method Explorer may define a `method_profile` object in a modular enrichment fragment.
