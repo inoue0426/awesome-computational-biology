@@ -1,4 +1,4 @@
-.dataset-main { max-width: 1400px; }
+.dataset-main { max-width: 1700px; }
 
 .dataset-controls { position: sticky; top: 0; z-index: 5; }
 
@@ -12,7 +12,7 @@
 
 .dataset-table {
   width: 100%;
-  min-width: 1180px;
+  min-width: 1900px;
   border-collapse: collapse;
   font-size: .84rem;
 }
@@ -34,14 +34,38 @@
   text-transform: uppercase;
   letter-spacing: .04em;
   white-space: nowrap;
+  cursor: pointer;
+  user-select: none;
+}
+
+.dataset-table th:hover,
+.dataset-table th:focus-visible {
+  background: #dfeaf8;
+  outline: none;
+}
+
+.sort-indicator {
+  display: inline-block;
+  min-width: .8rem;
+  color: var(--primary);
 }
 
 .dataset-table tbody tr:hover { background: #f7fbff; }
 .dataset-table tbody tr:last-child td { border-bottom: none; }
 
-.dataset-name { min-width: 190px; font-weight: 700; }
+.dataset-name {
+  min-width: 220px;
+  max-width: 320px;
+  font-weight: 700;
+}
+
 .dataset-name a { color: var(--primary); text-decoration: none; }
 .dataset-name a:hover { text-decoration: underline; }
+
+.num {
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
 
 .yes { color: #146c43; font-weight: 650; white-space: nowrap; }
 .partial { color: #8a5a00; font-weight: 650; white-space: nowrap; }
