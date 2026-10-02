@@ -10,6 +10,7 @@
   var sampleType = document.getElementById('sample-type');
   var readout = document.getElementById('readout');
   var perturbationType = document.getElementById('perturbation-type');
+  var geneticMode = document.getElementById('genetic-mode');
   var clinicalOutcome = document.getElementById('clinical-outcome');
   var prePost = document.getElementById('pre-post');
   var smiles = document.getElementById('smiles');
@@ -30,12 +31,13 @@
       populateSelect(sampleType, 'sample_type');
       populateSelect(readout, 'readout');
       populateArraySelect(perturbationType, 'perturbation_type');
+      populateArraySelect(geneticMode, 'genetic_modes');
       bindSorting();
       render();
     })
     .catch(function (err) {
       count.textContent = 'Failed to load dataset metadata.';
-      body.innerHTML = '<tr><td colspan="18">Could not load resources.json: ' + escapeHtml(err.message) + '</td></tr>';
+      body.innerHTML = '<tr><td colspan="19">Could not load resources.json: ' + escapeHtml(err.message) + '</td></tr>';
     });
 
   function populateSelect(select, field) {
@@ -112,13 +114,15 @@
       if (sampleType.value && p.sample_type !== sampleType.value) return false;
       if (readout.value && p.readout !== readout.value) return false;
       if (perturbationType.value && (p.perturbation_type || []).indexOf(perturbationType.value) === -1) return false;
+      if (geneticMode.value && (p.genetic_modes || []).indexOf(geneticMode.value) === -1) return false;
       if (clinicalOutcome.value && String(Boolean(p.clinical_outcome)) !== clinicalOutcome.value) return false;
       if (prePost.value && String(Boolean(p.pre_post)) !== prePost.value) return false;
       if (smiles.value && String(p.smiles) !== smiles.value) return false;
       if (query) {
         var haystack = [
           r.name, r.description, p.sample_type, p.biological_context, p.readout,
-          (p.perturbation_type || []).join(' '), p.n_samples, p.gene_panel, p.access
+          (p.perturbation_type || []).join(' '), (p.genetic_modes || []).join(' '),
+          p.n_samples, p.gene_panel, p.access
         ].join(' ').toLowerCase();
         if (haystack.indexOf(query) === -1) return false;
       }
@@ -130,7 +134,7 @@
     count.textContent = filtered.length + ' curated dataset profile' + (filtered.length === 1 ? '' : 's');
     body.innerHTML = '';
     if (!filtered.length) {
-      body.innerHTML = '<tr><td colspan="18" class="empty-state">No datasets match these filters.</td></tr>';
+      body.innerHTML = '<tr><td colspan="19" class="empty-state">No datasets match these filters.</td></tr>';
       return;
     }
 
@@ -144,6 +148,7 @@
         '<td>' + escapeHtml(humanize(p.biological_context)) + '</td>' +
         '<td>' + escapeHtml(humanize(p.readout)) + '</td>' +
         '<td>' + escapeHtml((p.perturbation_type || []).map(humanize).join(', ') || '—') + '</td>' +
+        '<td>' + escapeHtml((p.genetic_modes || []).map(humanize).join(', ') || '—') + '</td>' +
         '<td class="num">' + displayNumber(p.n_profiles) + '</td>' +
         '<td class="num">' + displayNumber(p.n_perturbations) + '</td>' +
         '<td class="num">' + displayNumber(p.n_compounds) + '</td>' +
@@ -230,7 +235,7 @@
     return escapeHtml(value).replace(/'/g, '&#39;');
   }
 
-  [search, sampleType, readout, perturbationType, clinicalOutcome, prePost, smiles].forEach(function (el) {
+  [search, sampleType, readout, perturbationType, geneticMode, clinicalOutcome, prePost, smiles].forEach(function (el) {
     el.addEventListener(el === search ? 'input' : 'change', render);
   });
 
@@ -239,6 +244,7 @@
     sampleType.value = '';
     readout.value = '';
     perturbationType.value = '';
+    geneticMode.value = '';
     clinicalOutcome.value = '';
     prePost.value = '';
     smiles.value = '';
