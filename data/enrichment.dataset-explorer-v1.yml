@@ -1,0 +1,87 @@
+# Dataset Explorer v1 metadata for drug-response and perturbation resources.
+# Keep identity fields in data/resources.yml; this file only enriches existing resources.
+resources:
+  lincs_l1000:
+    dataset_profile:
+      species: [human]
+      sample_type: cell-line
+      biological_context: perturbation-screen
+      perturbation_type: [chemical, genetic]
+      paired: false
+      pre_post: false
+      longitudinal: false
+      drug_identity: true
+      dose: true
+      smiles: partial
+      clinical_outcome: false
+      n_samples: "large-scale perturbational profiles"
+      n_cells: null
+      access: open
+
+  genomics_of_drug_sensitivity_in_cancer_gdsc:
+    dataset_profile:
+      species: [human]
+      sample_type: cell-line
+      biological_context: cancer
+      perturbation_type: [chemical]
+      paired: true
+      pre_post: false
+      longitudinal: false
+      drug_identity: true
+      dose: true
+      smiles: partial
+      clinical_outcome: false
+      n_samples: "~1,000 cancer cell lines"
+      n_cells: null
+      access: open
+
+  cancer_therapeutics_response_portal_ctrp:
+    dataset_profile:
+      species: [human]
+      sample_type: cell-line
+      biological_context: cancer
+      perturbation_type: [chemical]
+      paired: true
+      pre_post: false
+      longitudinal: false
+      drug_identity: true
+      dose: true
+      smiles: partial
+      clinical_outcome: false
+      n_samples: "~900 cancer cell lines"
+      n_cells: null
+      access: open
+
+  beat_aml:
+    dataset_profile:
+      species: [human]
+      sample_type: patient
+      biological_context: cancer
+      perturbation_type: [chemical]
+      paired: true
+      pre_post: false
+      longitudinal: false
+      drug_identity: true
+      dose: true
+      smiles: partial
+      clinical_outcome: true
+      n_samples: "primary AML patient samples"
+      n_cells: null
+      access: open
+
+  the_cancer_genome_atlas_tcga:
+    dataset_profile:
+      species: [human]
+      sample_type: patient
+      biological_context: cancer
+      perturbation_type: []
+      paired: false
+      pre_post: false
+      longitudinal: false
+      drug_identity: limited
+      dose: false
+      smiles: false
+      clinical_outcome: true
+      n_samples: ">11,000 patients across 33 cancer types"
+      n_cells: null
+      access: mixed
