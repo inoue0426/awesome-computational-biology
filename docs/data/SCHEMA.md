@@ -81,6 +81,7 @@ Supported v1 fields:
 | `sample_type` | string | Primary unit, e.g. `patient` or `cell-line`. |
 | `biological_context` | string | High-level context such as `cancer` or `perturbation-screen`. |
 | `perturbation_type` | array of strings | Chemical, genetic, or other interventions. |
+| `genetic_modes` | array of strings | Genetic perturbation mechanisms, e.g. `crispri`, `crispra`, `crispr-ko`, `enhancer-targeting`, `combinatorial`, or `mixed`. |
 | `paired` | boolean | Whether molecular/sample identity can be linked to the measured response or perturbation condition. |
 | `pre_post` | boolean | Whether matched pre-treatment and post-treatment samples are available. |
 | `longitudinal` | boolean | Whether repeated measurements over time are available as a core design feature. |
