@@ -8,6 +8,7 @@ resources:
       - https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE90063
       - https://doi.org/10.1016/j.cell.2016.11.038
     dataset_profile:
+      year: 2016
       view_scope: full-study
       species: [human, mouse]
       sample_type: cell-line+primary
@@ -37,6 +38,7 @@ resources:
     metadata_sources:
       - https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE90546
     dataset_profile:
+      year: 2016
       view_scope: full-study
       species: [human]
       sample_type: cell-line
@@ -67,6 +69,7 @@ resources:
       - https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE92872
       - https://doi.org/10.1038/nmeth.4177
     dataset_profile:
+      year: 2017
       view_scope: full-study
       species: [human]
       sample_type: cell-line
@@ -97,6 +100,7 @@ resources:
       - https://figshare.com/articles/dataset/Norman_et_al_2019_Perturb-seq/27766323
       - https://doi.org/10.1126/science.aax4438
     dataset_profile:
+      year: 2019
       view_scope: full-study
       species: [human]
       sample_type: cell-line
@@ -126,6 +130,7 @@ resources:
     metadata_sources:
       - https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE120861
     dataset_profile:
+      year: 2019
       view_scope: full-study
       species: [human]
       sample_type: cell-line
@@ -156,6 +161,7 @@ resources:
       - https://plus.figshare.com/articles/dataset/_Mapping_information-rich_genotype-phenotype_landscapes_with_genome-scale_Perturb-seq_Replogle_et_al_2022_processed_Perturb-seq_datasets/20029387
       - https://gwps.wi.mit.edu/
     dataset_profile:
+      year: 2022
       view_scope: full-study
       species: [human]
       sample_type: cell-line
@@ -186,6 +192,7 @@ resources:
       - https://plus.figshare.com/articles/dataset/_Mapping_information-rich_genotype-phenotype_landscapes_with_genome-scale_Perturb-seq_Replogle_et_al_2022_processed_Perturb-seq_datasets/20029387
       - https://gwps.wi.mit.edu/
     dataset_profile:
+      year: 2022
       view_scope: full-study
       species: [human]
       sample_type: cell-line
@@ -216,6 +223,7 @@ resources:
       - https://plus.figshare.com/articles/dataset/_Mapping_information-rich_genotype-phenotype_landscapes_with_genome-scale_Perturb-seq_Replogle_et_al_2022_processed_Perturb-seq_datasets/20029387
       - https://gwps.wi.mit.edu/
     dataset_profile:
+      year: 2022
       view_scope: full-study
       species: [human]
       sample_type: cell-line
@@ -246,6 +254,7 @@ resources:
       - https://singlecell.broadinstitute.org/single_cell/study/SCP1064/multi-modal-pooled-perturb-cite-seq-screens-in-patient-models-define-novel-mechanisms-of-cancer-immune-evasion
       - https://doi.org/10.1038/s41588-021-00779-1
     dataset_profile:
+      year: 2021
       view_scope: full-study
       species: [human]
       sample_type: patient-derived-cell-line
