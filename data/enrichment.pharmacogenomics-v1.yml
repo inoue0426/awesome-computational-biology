@@ -8,6 +8,9 @@ resources:
     metadata_sources:
       - https://biodev.github.io/BeatAML2/
     dataset_profile:
+      readout: ex-vivo-viability
+      time: false
+      view_scope: full-resource
       species: [human]
       sample_type: patient
       biological_context: cancer
@@ -30,6 +33,11 @@ resources:
     metadata_sources:
       - https://portals.broadinstitute.org/ctrp/
     dataset_profile:
+      readout: viability
+      n_compounds: ">400"
+      n_contexts: "~900 cell lines"
+      time: false
+      view_scope: full-resource
       species: [human]
       sample_type: cell-line
       biological_context: cancer
@@ -92,6 +100,10 @@ resources:
     metadata_sources:
       - https://github.com/sanderlab/scPerturb
     dataset_profile:
+      readout: single-cell-rna
+      gene_panel: "varies by source study"
+      time: true
+      view_scope: harmonized-collection
       species: [human, mouse]
       sample_type: cell-line
       biological_context: perturbation-collection
@@ -115,6 +127,10 @@ resources:
     metadata_sources:
       - https://www.cancerrxgene.org/
     dataset_profile:
+      readout: viability
+      n_contexts: "~1,000 cell lines"
+      time: false
+      view_scope: full-resource
       species: [human]
       sample_type: cell-line
       biological_context: cancer
