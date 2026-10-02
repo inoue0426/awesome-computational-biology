@@ -81,3 +81,25 @@ resources:
     last_checked: 2026-08-08
     metadata_sources:
       - https://ctdbase.org/
+
+  the_cancer_genome_atlas_tcga:
+    entities: [disease, gene]
+    modalities: [clinical, genomics]
+    last_checked: 2026-10-02
+    metadata_sources:
+      - https://www.cancer.gov/ccg/research/genome-sequencing/tcga
+    dataset_profile:
+      species: [human]
+      sample_type: patient
+      biological_context: cancer
+      perturbation_type: []
+      paired: false
+      pre_post: false
+      longitudinal: false
+      drug_identity: limited
+      dose: false
+      smiles: false
+      clinical_outcome: true
+      n_samples: ">11,000 patients across 33 cancer types"
+      n_cells: null
+      access: mixed
