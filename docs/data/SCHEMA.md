@@ -147,7 +147,6 @@ Foundation models shown in the Foundation Model Explorer may define a `foundatio
 
 Unknown or unverified values should be omitted rather than inferred. The Foundation Model Explorer is rendered at `docs/foundation-explorer.html`.
 
-
 ## Agent Explorer profile
 
 Agentic AI systems shown in the Agent Explorer may define an `agent_profile` object in a modular enrichment fragment.
