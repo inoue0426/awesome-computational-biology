@@ -21,6 +21,8 @@ Browse and search the resources via the [GitHub Pages UI](https://inoue0426.gith
 
 For treatment-response work, the [Dataset Explorer](https://inoue0426.github.io/awesome-computational-biology/dataset-explorer.html) compares curated cell-line, patient, and PDX datasets by sample type, perturbation metadata, matched pre/post availability, SMILES coverage, and clinical outcomes.
 
+The explorer also includes the eight perturbation datasets used in the Bison unseen-compound benchmark.
+
 - Search matches `name`, `description`, `tasks`, `modalities`, and `tags`.
 - The **Task**, **Modality**, and **Type** filters map directly to `tasks`, `modalities`, and `type` in `docs/data/resources.json`.
 - Clicking badges on cards applies the corresponding filter.
