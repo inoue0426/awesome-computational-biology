@@ -8,6 +8,7 @@
 
   var search = document.getElementById('dataset-search');
   var datasetYear = document.getElementById('dataset-year');
+  var recentOnly = document.getElementById('dataset-recent');
   var sampleType = document.getElementById('sample-type');
   var readout = document.getElementById('readout');
   var perturbationType = document.getElementById('perturbation-type');
@@ -127,6 +128,7 @@
     var query = (search.value || '').trim().toLowerCase();
     var filtered = rows.filter(function (r) {
       var p = r.dataset_profile || {};
+      if (recentOnly.checked && Number(p.year || 0) < 2025) return false;
       if (datasetYear.value && String(p.year || '') !== datasetYear.value) return false;
       if (sampleType.value && p.sample_type !== sampleType.value) return false;
       if (readout.value && p.readout !== readout.value) return false;
@@ -254,13 +256,14 @@
     return escapeHtml(value).replace(/'/g, '&#39;');
   }
 
-  [search, datasetYear, sampleType, readout, perturbationType, geneticMode, clinicalOutcome, prePost, smiles].forEach(function (el) {
+  [search, datasetYear, sampleType, readout, perturbationType, geneticMode, clinicalOutcome, prePost, smiles, recentOnly].forEach(function (el) {
     el.addEventListener(el === search ? 'input' : 'change', render);
   });
 
   clear.addEventListener('click', function () {
     search.value = '';
     datasetYear.value = '';
+    recentOnly.checked = false;
     sampleType.value = '';
     readout.value = '';
     perturbationType.value = '';
