@@ -1,0 +1,166 @@
+# Agent Explorer v1 metadata.
+resources:
+  biomni:
+    agent_profile:
+      year: 2025
+      domains: [general-biomedicine, bioinformatics, therapeutics, omics]
+      architecture: single-agent
+      tool_use: true
+      code_execution: true
+      web_retrieval: true
+      literature: true
+      omics: true
+      wet_lab: limited
+      autonomous_experiment: limited
+      human_in_loop: true
+      open_source: true
+
+  tooluniverse:
+    agent_profile:
+      year: 2025
+      domains: [general-biomedicine, tool-ecosystem, therapeutics, bioinformatics]
+      architecture: agent-ecosystem
+      tool_use: true
+      code_execution: limited
+      web_retrieval: true
+      literature: true
+      omics: true
+      wet_lab: limited
+      autonomous_experiment: limited
+      human_in_loop: true
+      open_source: true
+
+  clawbio:
+    agent_profile:
+      year: 2026
+      domains: [bioinformatics, genomics, pharmacogenomics, omics]
+      architecture: agent-ecosystem
+      tool_use: true
+      code_execution: true
+      web_retrieval: true
+      literature: limited
+      omics: true
+      wet_lab: false
+      autonomous_experiment: false
+      human_in_loop: true
+      open_source: true
+
+  txagent:
+    agent_profile:
+      year: 2025
+      domains: [therapeutics, drug-discovery, precision-medicine]
+      architecture: single-agent
+      tool_use: true
+      code_execution: limited
+      web_retrieval: true
+      literature: true
+      omics: limited
+      wet_lab: false
+      autonomous_experiment: limited
+      human_in_loop: true
+      open_source: true
+
+  medea:
+    agent_profile:
+      year: 2025
+      domains: [therapeutics, drug-discovery, single-cell, omics]
+      architecture: multi-agent
+      tool_use: true
+      code_execution: true
+      web_retrieval: true
+      literature: true
+      omics: true
+      wet_lab: limited
+      autonomous_experiment: limited
+      human_in_loop: true
+      open_source: true
+
+  drugagent:
+    agent_profile:
+      year: 2026
+      domains: [drug-discovery, therapeutics, evidence-synthesis]
+      architecture: multi-agent
+      tool_use: true
+      code_execution: limited
+      web_retrieval: true
+      literature: true
+      omics: limited
+      wet_lab: false
+      autonomous_experiment: limited
+      human_in_loop: true
+      open_source: true
+
+  cassia:
+    agent_profile:
+      year: 2024
+      domains: [single-cell, bioinformatics, omics]
+      architecture: multi-agent
+      tool_use: limited
+      code_execution: limited
+      web_retrieval: limited
+      literature: true
+      omics: true
+      wet_lab: false
+      autonomous_experiment: false
+      human_in_loop: true
+      open_source: true
+
+  stella:
+    agent_profile:
+      year: 2025
+      domains: [general-biomedicine, bioinformatics, scientific-workflow]
+      architecture: single-agent
+      tool_use: true
+      code_execution: true
+      web_retrieval: true
+      literature: true
+      omics: limited
+      wet_lab: limited
+      autonomous_experiment: true
+      human_in_loop: true
+      open_source: true
+
+  virtual_lab:
+    agent_profile:
+      year: 2024
+      domains: [scientific-workflow, protein-design, experimental-design]
+      architecture: multi-agent
+      tool_use: true
+      code_execution: true
+      web_retrieval: limited
+      literature: true
+      omics: limited
+      wet_lab: true
+      autonomous_experiment: limited
+      human_in_loop: true
+      open_source: true
+
+  agent_laboratory:
+    agent_profile:
+      year: 2025
+      domains: [scientific-workflow, research-automation]
+      architecture: multi-agent
+      tool_use: true
+      code_execution: true
+      web_retrieval: true
+      literature: true
+      omics: false
+      wet_lab: false
+      autonomous_experiment: true
+      human_in_loop: true
+      open_source: true
+
+  paper2agent:
+    agent_profile:
+      year: 2025
+      domains: [paper-to-agent, scientific-workflow, tool-generation]
+      architecture: multi-agent
+      tool_use: true
+      code_execution: true
+      web_retrieval: true
+      literature: true
+      omics: limited
+      wet_lab: false
+      autonomous_experiment: limited
+      human_in_loop: true
+      open_source: true
