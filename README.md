@@ -448,11 +448,37 @@ The explorer also includes the eight perturbation datasets used in the Bison uns
 - [GeneGPT](https://github.com/ncbi/GeneGPT) — LLM for biomedical information, integrated with various APIs.
 - [GenePT](https://github.com/yiqunchen/GenePT) — Foundation LLM for single-cell data.
 - [scPRINT](https://github.com/cantinilab/scPRINT) — Pretrained on 50M cells for scRNA-seq denoising & zero imputation.
-- [ClawBio](https://github.com/ClawBio/ClawBio) — Bioinformatics-native AI agent skill library with local-first pharmacogenomics, ancestry PCA, semantic similarity, nutrigenomics, and metagenomics skills.
 - [BioMedLM](https://huggingface.co/stanford-crfm/BioMedLM) — 2.7B parameter GPT-2-style language model trained exclusively on biomedical literature from PubMed for biomedical question answering and text generation.
 - [MolT5](https://github.com/blender-nlp/MolT5) — Language model for molecular tasks bridging text and SMILES, enabling molecule captioning and text-driven molecule generation.
 - [ChatDrug](https://github.com/chao1224/ChatDrug) — LLM-based conversational pipeline for drug discovery, using natural language prompts for iterative drug editing and optimization.
-- [CASSIA](https://github.com/ElliotXie/CASSIA) — Multi-agent LLM for reference-free, interpretable cell-type annotation of single-cell RNA-seq data, with dedicated annotation, validation, scoring, and reporting agents.
+
+### Agentic AI for Biology
+
+#### General Biomedical Agents
+
+- [Biomni](https://github.com/snap-stanford/Biomni) — General-purpose biomedical AI agent integrating planning, code execution, specialized tools, databases, and software across diverse biomedical research tasks.
+- [ToolUniverse](https://github.com/mims-harvard/ToolUniverse) — Unified scientific tool ecosystem for building AI scientists that can discover, select, and execute biomedical tools and databases.
+- [ClawBio](https://github.com/ClawBio/ClawBio) — Bioinformatics-native AI agent skill library with local-first pharmacogenomics, ancestry PCA, semantic similarity, nutrigenomics, and metagenomics skills.
+
+#### Therapeutics & Drug Discovery Agents
+
+- [TxAgent](https://github.com/mims-harvard/TxAgent) — Therapeutic reasoning agent using multi-step reasoning and a large scientific tool universe for drug interactions, contraindications, and personalized treatment analysis.
+- [Medea](https://github.com/mims-harvard/Medea) — Multi-agent therapeutic discovery system combining research planning, biological data analysis, literature reasoning, and multi-LLM deliberation across single-cell, cell-line, and patient contexts.
+- [DrugAgent](https://github.com/inoue0426/DrugAgent) — Multi-agent biomedical evidence synthesis framework for computational drug discovery with reliability-aware aggregation.
+
+#### Bioinformatics & Omics Agents
+
+- [CASSIA](https://github.com/ElliotXie/CASSIA) — Multi-agent LLM framework for reference-free and interpretable single-cell cell-type annotation with dedicated annotation, validation, scoring, and reporting agents.
+- [STELLA](https://github.com/zaixizhang/STELLA) — Self-evolving biomedical research agent that expands its tool repertoire and supports literature reasoning, computational analysis, and laboratory-oriented scientific workflows.
+
+#### Multi-Agent Scientific Labs
+
+- [Virtual Lab](https://github.com/zou-group/virtual-lab) — Human–AI collaborative research environment in which an LLM principal investigator coordinates specialized scientist agents for scientific discovery.
+- [Agent Laboratory](https://github.com/SamuelSchmidgall/AgentLaboratory) — End-to-end multi-agent research workflow for literature review, experimentation, implementation, analysis, and report generation.
+
+#### Paper & Workflow Agents
+
+- [Paper2Agent](https://github.com/jmiao24/Paper2Agent) — Multi-agent system that transforms research papers and associated code into interactive, testable scientific agents and MCP tools.
 
 ### Foundation Models
 
