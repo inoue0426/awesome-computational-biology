@@ -590,8 +590,8 @@ resources:
   mutationprojector:
     foundation_profile:
       year: 2026
-      modalities: [mutation]
-      pretraining_scale: ">30K tumors with somatic genomic alterations"
+      modalities: [mutation, copy-number]
+      pretraining_scale: ">30K tumors with somatic genomic alterations including copy-number changes"
       species: [human]
       zero_shot: limited
       finetunable: unknown
@@ -612,3 +612,161 @@ resources:
       code: true
       perturbation: false
       spatial: false
+
+tessera:
+    foundation_profile:
+      year: 2026
+      modalities: [mutation, copy-number]
+      pretraining_scale: "TCGA pan-cancer somatic SNVs and copy-number segments"
+      species: [human]
+      zero_shot: limited
+      finetunable: true
+      weights: true
+      code: true
+      perturbation: false
+      spatial: false
+
+  epiagent:
+    foundation_profile:
+      year: 2025
+      modalities: [atac]
+      pretraining_scale: ">5.4M scATAC-seq cells across 37 tissues or cell lines"
+      species: [human]
+      zero_shot: limited
+      finetunable: true
+      weights: true
+      code: true
+      perturbation: true
+      spatial: false
+
+  scarf:
+    foundation_profile:
+      year: 2025
+      modalities: [scrna, atac, multi-omics]
+      pretraining_scale: ">2.7M paired and unpaired single cells across tissues and species"
+      species: [multi-species]
+      zero_shot: limited
+      finetunable: true
+      weights: true
+      code: true
+      perturbation: limited
+      spatial: false
+
+  scdnam_gpt:
+    foundation_profile:
+      year: 2025
+      modalities: [methylation]
+      pretraining_scale: ">1M single-cell methylomes from human and mouse tissues"
+      species: [human, mouse]
+      zero_shot: true
+      finetunable: true
+      weights: true
+      code: true
+      perturbation: false
+      spatial: false
+
+  epifoundation:
+    foundation_profile:
+      year: 2025
+      modalities: [atac]
+      pretraining_scale: "large-scale scATAC-seq pretraining with peak-to-gene alignment"
+      species: [human]
+      zero_shot: limited
+      finetunable: true
+      weights: limited
+      code: limited
+      perturbation: false
+      spatial: false
+
+  chromfound:
+    foundation_profile:
+      year: 2025
+      modalities: [atac]
+      pretraining_scale: "1.97M scATAC-seq cells; 30 tissues; 6 disease contexts"
+      species: [human]
+      zero_shot: true
+      finetunable: true
+      weights: true
+      code: true
+      perturbation: false
+      spatial: false
+
+  atacformer:
+    foundation_profile:
+      year: 2025
+      modalities: [atac]
+      pretraining_scale: "large atlas of scATAC-seq experiments"
+      species: [human]
+      zero_shot: limited
+      finetunable: true
+      weights: unknown
+      code: unknown
+      perturbation: false
+      spatial: false
+
+  clm_x:
+    foundation_profile:
+      year: 2026
+      modalities: [scrna, atac, multi-omics]
+      pretraining_scale: "million-scale RNA-only, ATAC-only, and paired RNA-ATAC data"
+      species: [human]
+      zero_shot: limited
+      finetunable: true
+      weights: unknown
+      code: unknown
+      perturbation: true
+      spatial: false
+
+  captain:
+    foundation_profile:
+      year: 2026
+      modalities: [scrna, proteomics, multi-omics]
+      pretraining_scale: "co-assayed single-cell RNA and protein data"
+      species: [human]
+      zero_shot: limited
+      finetunable: true
+      weights: unknown
+      code: unknown
+      perturbation: false
+      spatial: false
+
+  hicfoundation:
+    foundation_profile:
+      year: 2026
+      modalities: [hic]
+      pretraining_scale: "hundreds of Hi-C assays; 118M contact-matrix submatrices"
+      species: [multi-species]
+      zero_shot: limited
+      finetunable: true
+      weights: unknown
+      code: unknown
+      perturbation: false
+      spatial: false
+
+  omicsfm:
+    foundation_profile:
+      year: 2026
+      modalities: [proteomics, bulk-rna, scrna]
+      params: "4.9M"
+      params_millions: 4.9
+      pretraining_scale: "48,837 proteomics profiles; 680,216 bulk RNA profiles; 4.55M single cells"
+      species: [human]
+      zero_shot: limited
+      finetunable: true
+      weights: true
+      code: true
+      perturbation: false
+      spatial: false
+
+  virtues:
+    foundation_profile:
+      year: 2026
+      modalities: [proteomics, spatial]
+      pretraining_scale: "31-32 harmonized spatial-proteomics datasets across technologies"
+      species: [human]
+      zero_shot: true
+      finetunable: true
+      weights: true
+      code: true
+      perturbation: false
+      spatial: true
