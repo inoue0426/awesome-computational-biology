@@ -1775,6 +1775,17 @@ resources:
     organism: []
     api: false
 
+  - id: alphagenome
+    name: "AlphaGenome"
+    type: model
+    url: https://github.com/google-deepmind/alphagenome
+    description: "Long-context DNA model predicting multimodal regulatory outputs including expression, splicing, chromatin features, and contact maps at near base-pair resolution."
+    tags: [foundation-models, genomics-foundation-models]
+    tasks: [Foundation Model]
+    modalities: [Genomics]
+    organism: []
+    api: false
+
   - id: ankh
     name: "Ankh"
     type: model
@@ -1874,6 +1885,17 @@ resources:
     organism: []
     api: false
 
+  - id: boltz_2
+    name: "Boltz-2"
+    type: model
+    url: https://github.com/jwohlwend/boltz
+    description: "Biomolecular foundation model jointly predicting complex structures and binding affinities for protein–ligand interaction modeling and virtual screening."
+    tags: [foundation-models, protein-foundation-models, protein-structure-prediction-and-design]
+    tasks: [Foundation Model, Protein Structure Prediction]
+    modalities: [Protein]
+    organism: []
+    api: false
+
   - id: borzoi
     name: "Borzoi"
     type: model
@@ -1940,6 +1962,17 @@ resources:
     organism: []
     api: false
 
+  - id: cellfm
+    name: "CellFM"
+    type: model
+    url: https://github.com/biomed-AI/CellFM
+    description: "800M-parameter single-cell foundation model pretrained on transcriptomics from 100 million human cells for annotation, integration, gene-function, and perturbation tasks."
+    tags: [foundation-models, single-cell-foundation-models, transcriptomics-foundation-models]
+    tasks: [Foundation Model]
+    modalities: [Single Cell, Transcriptomics]
+    organism: []
+    api: false
+
   - id: cellot
     name: "CellOT"
     type: model
@@ -2002,6 +2035,17 @@ resources:
     description: "Compositional perturbation autoencoder for predicting single-cell transcriptional responses to unseen drug perturbations and dose combinations."
     tags: [drug-discovery, drug-perturbation]
     tasks: [Drug Discovery, Drug Perturbation]
+    modalities: [Small Molecule]
+    organism: []
+    api: false
+
+  - id: chemfm
+    name: "ChemFM"
+    type: model
+    url: https://github.com/TheLuoFengLab/ChemFM
+    description: "1B/3B-parameter chemical language model pretrained on 178M molecules for molecular representation, property prediction, generation, and synthesis tasks."
+    tags: [compound-embedding, compound-foundation-models, foundation-models]
+    tasks: [Foundation Model]
     modalities: [Small Molecule]
     organism: []
     api: false
@@ -2281,6 +2325,17 @@ resources:
     organism: []
     api: false
 
+  - id: esm_cambrian_esm_c
+    name: "ESM Cambrian (ESM C)"
+    type: model
+    url: https://github.com/Biohub/esm
+    description: "Protein representation foundation-model family designed as an efficient next-generation successor to ESM2, spanning 300M to multi-billion-parameter models."
+    tags: [foundation-models, pre-trained-embedding, protein-foundation-models]
+    tasks: [Foundation Model]
+    modalities: [Protein]
+    organism: []
+    api: false
+
   - id: esm3
     name: "ESM3"
     type: model
@@ -2308,6 +2363,17 @@ resources:
     type: model
     url: https://github.com/evo-design/evo
     description: "Long-context genomic foundation model (up to 1M tokens)."
+    tags: [foundation-models, genomics-foundation-models]
+    tasks: [Foundation Model]
+    modalities: [Genomics]
+    organism: []
+    api: false
+
+  - id: evo_2
+    name: "Evo 2"
+    type: model
+    url: https://github.com/arcinstitute/evo2
+    description: "Genome foundation model trained on 9 trillion DNA base pairs across all domains of life with a 1M-token context window and single-nucleotide resolution."
     tags: [foundation-models, genomics-foundation-models]
     tasks: [Foundation Model]
     modalities: [Genomics]
@@ -2355,6 +2421,17 @@ resources:
     tags: [foundation-models, single-cell-foundation-models, transcriptomics-foundation-models]
     tasks: [Foundation Model]
     modalities: [Single Cell, Transcriptomics]
+    organism: []
+    api: false
+
+  - id: genbio_pathfm
+    name: "GenBio-PathFM"
+    type: model
+    url: https://github.com/genbio-ai/genbio-pathfm
+    description: "1.1B-parameter histopathology foundation model trained on public data using morphology-aware curation and dual-stage JEPA+DINO learning."
+    tags: [foundation-models, pathology-foundation-models, single-cell-foundation-models]
+    tasks: [Foundation Model]
+    modalities: [Single Cell]
     organism: []
     api: false
 
@@ -2457,6 +2534,28 @@ resources:
     organism: []
     api: false
 
+  - id: h_optimus_0
+    name: "H-Optimus-0"
+    type: model
+    url: https://huggingface.co/bioptimus/H-optimus-0
+    description: "1.1B-parameter histopathology foundation model trained with self-supervised learning on a large multi-center slide corpus."
+    tags: [foundation-models, pathology-foundation-models, single-cell-foundation-models]
+    tasks: [Foundation Model]
+    modalities: [Single Cell]
+    organism: []
+    api: false
+
+  - id: h_optimus_1
+    name: "H-Optimus-1"
+    type: model
+    url: https://huggingface.co/bioptimus/H-optimus-1
+    description: "1.1B-parameter pathology foundation model trained on billions of histology images from more than one million slides and 800K+ patients."
+    tags: [foundation-models, pathology-foundation-models, single-cell-foundation-models]
+    tasks: [Foundation Model]
+    modalities: [Single Cell]
+    organism: []
+    api: false
+
   - id: hidra
     name: "HiDRA"
     type: model
@@ -2553,6 +2652,17 @@ resources:
     tags: [foundation-models, multi-omics-foundation-models, single-cell-foundation-models]
     tasks: [Foundation Model]
     modalities: [Multi-Omics, Single Cell]
+    organism: []
+    api: false
+
+  - id: moderngena
+    name: "modernGENA"
+    type: model
+    url: https://github.com/AIRI-Institute/GENA_LM
+    description: "ModernBERT-style DNA foundation-model family pretrained on hundreds of vertebrate genome assemblies for efficient long-sequence regulatory modeling."
+    tags: [foundation-models, genomics-foundation-models]
+    tasks: [Foundation Model]
+    modalities: [Genomics]
     organism: []
     api: false
 
@@ -2809,6 +2919,17 @@ resources:
     organism: []
     api: false
 
+  - id: phikon_v2
+    name: "Phikon-v2"
+    type: model
+    url: https://huggingface.co/owkin/phikon-v2
+    description: "Updated pathology foundation model for general-purpose histology feature extraction and transfer learning."
+    tags: [foundation-models, pathology-foundation-models, single-cell-foundation-models]
+    tasks: [Foundation Model]
+    modalities: [Single Cell]
+    organism: []
+    api: false
+
   - id: plip
     name: "PLIP"
     type: model
@@ -2886,6 +3007,17 @@ resources:
     organism: []
     api: false
 
+  - id: protenix
+    name: "Protenix"
+    type: model
+    url: https://github.com/bytedance/Protenix
+    description: "Trainable biomolecular structure-prediction framework for proteins, nucleic acids, ligands, and complexes with open training and inference pipelines."
+    tags: [foundation-models, protein-foundation-models, protein-structure-prediction-and-design]
+    tasks: [Foundation Model, Protein Structure Prediction]
+    modalities: [Protein]
+    organism: []
+    api: false
+
   - id: prottrans
     name: "ProtTrans"
     type: model
@@ -2938,6 +3070,28 @@ resources:
     tags: [foundation-models, protein-foundation-models, protein-structure-prediction-and-design]
     tasks: [Foundation Model, Protein Structure Prediction]
     modalities: [Protein]
+    organism: []
+    api: false
+
+  - id: rinalmo
+    name: "RiNALMo"
+    type: model
+    url: https://github.com/lbcb-sci/RiNALMo
+    description: "RNA language-model family pretrained on tens of millions of RNA sequences for secondary-structure and functional prediction tasks."
+    tags: [foundation-models, rna-foundation-models]
+    tasks: [Foundation Model]
+    modalities: []
+    organism: []
+    api: false
+
+  - id: rna_fm
+    name: "RNA-FM"
+    type: model
+    url: https://github.com/ml4bio/RNA-FM
+    description: "General-purpose RNA foundation model pretrained on large-scale RNA sequences for structural and functional representation learning."
+    tags: [foundation-models, rna-foundation-models]
+    tasks: [Foundation Model]
+    modalities: []
     organism: []
     api: false
 
@@ -3073,6 +3227,17 @@ resources:
     organism: []
     api: false
 
+  - id: scprint_2
+    name: "scPRINT-2"
+    type: model
+    url: https://github.com/cantinilab/scPRINT-2
+    description: "Next-generation single-cell foundation model pretrained on 350M+ cells across 22K+ datasets and 16 species for embeddings, denoising, annotation, gene-network inference, and cross-species transfer."
+    tags: [foundation-models, single-cell-foundation-models, transcriptomics-foundation-models]
+    tasks: [Foundation Model]
+    modalities: [Single Cell, Transcriptomics]
+    organism: []
+    api: false
+
   - id: sei
     name: "Sei"
     type: model
@@ -3136,6 +3301,17 @@ resources:
     tags: [drug-discovery, drug-response-prediction]
     tasks: [Drug Discovery, Drug Response Prediction]
     modalities: [Small Molecule]
+    organism: []
+    api: false
+
+  - id: titan
+    name: "TITAN"
+    type: model
+    url: https://github.com/mahmoodlab/TITAN
+    description: "Multimodal whole-slide pathology foundation model that combines image and language supervision for slide-level representation and zero-shot analysis."
+    tags: [foundation-models, pathology-foundation-models, single-cell-foundation-models]
+    tasks: [Foundation Model]
+    modalities: [Single Cell]
     organism: []
     api: false
 
@@ -3238,6 +3414,28 @@ resources:
     organism: []
     api: false
 
+  - id: uni_mol2
+    name: "Uni-Mol2"
+    type: model
+    url: https://github.com/deepmodeling/Uni-Mol/tree/main/unimol2
+    description: "Scaled molecular pretraining model using atomic, graph, and 3D geometry features, with models up to 1.1B parameters pretrained on 800M conformations."
+    tags: [compound-embedding, compound-foundation-models, foundation-models]
+    tasks: [Foundation Model]
+    modalities: [Small Molecule]
+    organism: []
+    api: false
+
+  - id: uni2_h
+    name: "UNI2-h"
+    type: model
+    url: https://huggingface.co/MahmoodLab/UNI2-h
+    description: "Billion-parameter histopathology vision foundation model for tile-level feature extraction and downstream computational pathology tasks."
+    tags: [foundation-models, pathology-foundation-models, single-cell-foundation-models]
+    tasks: [Foundation Model]
+    modalities: [Single Cell]
+    organism: []
+    api: false
+
   - id: unitednet
     name: "UnitedNet"
     type: model
@@ -3257,6 +3455,17 @@ resources:
     tags: [foundation-models, multi-modal-foundation-models]
     tasks: [Foundation Model]
     modalities: [Multi-Modal]
+    organism: []
+    api: false
+
+  - id: virchow2
+    name: "Virchow2"
+    type: model
+    url: https://huggingface.co/paige-ai/Virchow2
+    description: "632M-parameter pathology vision transformer pretrained on 3.1M whole-slide images with mixed-magnification self-supervision."
+    tags: [foundation-models, pathology-foundation-models, single-cell-foundation-models]
+    tasks: [Foundation Model]
+    modalities: [Single Cell]
     organism: []
     api: false
 
