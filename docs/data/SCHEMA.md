@@ -125,7 +125,6 @@ Methods shown in the Method Explorer may define a `method_profile` object in a m
 
 The Method Explorer is rendered at `docs/method-explorer.html`.
 
-
 ## Foundation Model Explorer profile
 
 Foundation models shown in the Foundation Model Explorer may define a `foundation_profile` object in a modular enrichment fragment.
