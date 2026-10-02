@@ -3088,7 +3088,7 @@ resources:
     name: "TxPert"
     type: model
     url: https://github.com/valence-labs/TxPert
-    description: "Knowledge-graph-informed latent-transfer model for transcriptomic perturbation prediction across unseen single perturbations, combinations, and cellular contexts."
+    description: "Knowledge-graph-informed latent-transfer model for transcriptomic perturbation prediction across unseen single perturbations, combinations, and cross-context settings."
     tags: [drug-discovery, drug-perturbation]
     tasks: [Drug Discovery, Drug Perturbation]
     modalities: [Small Molecule]
