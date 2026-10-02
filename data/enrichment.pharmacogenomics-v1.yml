@@ -8,6 +8,7 @@ resources:
     metadata_sources:
       - https://biodev.github.io/BeatAML2/
     dataset_profile:
+      year: 2018
       readout: ex-vivo-viability
       time: false
       view_scope: full-resource
@@ -33,6 +34,7 @@ resources:
     metadata_sources:
       - https://portals.broadinstitute.org/ctrp/
     dataset_profile:
+      year: 2013
       readout: viability
       n_compounds: ">400"
       n_contexts: "~900 cell lines"
@@ -100,6 +102,7 @@ resources:
     metadata_sources:
       - https://github.com/sanderlab/scPerturb
     dataset_profile:
+      year: 2024
       readout: single-cell-rna
       gene_panel: "varies by source study"
       time: true
@@ -128,6 +131,7 @@ resources:
     metadata_sources:
       - https://www.cancerrxgene.org/
     dataset_profile:
+      year: 2012
       readout: viability
       n_contexts: "~1,000 cell lines"
       time: false
