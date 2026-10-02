@@ -41,6 +41,7 @@ When contributing new resources, update `README.md` first, then regenerate artif
 | `updated` | string | Last-known update date, recommended `YYYY-MM-DD`. |
 | `dataset_profile` | object | Optional Dataset Explorer metadata for structured comparison of datasets/benchmarks. |
 | `method_profile` | object | Optional Method Explorer metadata for structured comparison of response and perturbation methods. |
+| `foundation_profile` | object | Optional Foundation Model Explorer metadata for modality, model scale, size, and availability. |
 
 ## Naming and consistency guidance
 
@@ -123,3 +124,25 @@ Methods shown in the Method Explorer may define a `method_profile` object in a m
 | `code` | boolean/string | Whether an implementation is linked from the curated resource entry. |
 
 The Method Explorer is rendered at `docs/method-explorer.html`.
+
+
+## Foundation Model Explorer profile
+
+Foundation models shown in the Foundation Model Explorer may define a `foundation_profile` object in a modular enrichment fragment.
+
+| Field | Type | Meaning |
+|---|---|---|
+| `year` | integer | Publication or release year used for navigation. |
+| `modalities` | array of strings | Fine-grained modalities such as `scrna`, `bulk-rna`, `proteomics`, `mutation`, `methylation`, `atac`, `spatial`, `pathology`, `dna`, `rna`, `chemical`, or `protein`. |
+| `params` | string or null | Human-readable parameter count or family range, e.g. `100M` or `1B / 7B / 40B`. |
+| `params_millions` | number | Largest representative parameter count in millions, used only for sorting. |
+| `pretraining_scale` | string or null | Human-readable summary of the pretraining corpus size. |
+| `species` | array of strings | Species represented in pretraining or primary use. |
+| `zero_shot` | boolean/string | Whether zero-shot use is explicitly supported; `limited` denotes task-dependent support. |
+| `finetunable` | boolean/string | Whether fine-tuning or parameter-efficient adaptation is supported. |
+| `weights` | boolean/string | Whether pretrained weights are publicly available. |
+| `code` | boolean/string | Whether implementation code is publicly available. |
+| `perturbation` | boolean/string | Whether perturbation prediction or in-silico perturbation is a supported use case. |
+| `spatial` | boolean/string | Whether spatial data are directly modeled or supported. |
+
+Unknown or unverified values should be omitted rather than inferred. The Foundation Model Explorer is rendered at `docs/foundation-explorer.html`.
