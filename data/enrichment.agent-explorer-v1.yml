@@ -165,7 +165,7 @@ resources:
       human_in_loop: true
       open_source: true
 
-biomedagent:
+  biomedagent:
     agent_profile:
       year: 2026
       domains: [general-biomedicine, bioinformatics, omics]
