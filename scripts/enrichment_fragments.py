@@ -17,18 +17,33 @@ def load_enrichment(
     data_dir: Path,
     load_yaml: Callable[[Path], dict[str, Any]],
 ) -> dict[str, Any]:
-    """Merge enrichment fragments and reject duplicate resource IDs."""
+    """Merge enrichment fragments, allowing disjoint field overlays per resource."""
     merged: dict[str, Any] = {}
-    owners: dict[str, str] = {}
+    owners: dict[str, dict[str, str]] = {}
     for path in enrichment_files(data_dir):
         resources = load_yaml(path).get("resources", {})
         if not isinstance(resources, dict):
             raise ValueError(f"{path}: 'resources' must be a mapping keyed by resource id")
         for resource_id, fields in resources.items():
-            if resource_id in merged:
+            if not isinstance(fields, dict):
                 raise ValueError(
-                    f"duplicate enrichment id {resource_id!r} in {owners[resource_id]} and {path.name}"
+                    f"{path.name}: enrichment [{resource_id}] must be a mapping"
                 )
-            merged[resource_id] = fields
-            owners[resource_id] = path.name
+            if resource_id not in merged:
+                merged[resource_id] = dict(fields)
+                owners[resource_id] = {field: path.name for field in fields}
+                continue
+
+            overlap = sorted(set(merged[resource_id]) & set(fields))
+            if overlap:
+                details = ", ".join(
+                    f"{field!r} ({owners[resource_id][field]} vs {path.name})"
+                    for field in overlap
+                )
+                raise ValueError(
+                    f"duplicate enrichment fields for {resource_id!r}: {details}"
+                )
+
+            merged[resource_id].update(fields)
+            owners[resource_id].update({field: path.name for field in fields})
     return merged
