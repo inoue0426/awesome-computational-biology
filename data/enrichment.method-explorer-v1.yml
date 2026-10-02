@@ -1,0 +1,271 @@
+# Structured comparison metadata for Method Explorer v1.
+resources:
+  bison:
+    method_profile:
+      task_family: drug-perturbation
+      year: 2026
+      input: bulk/pseudobulk transcriptomics
+      drug_representation: Morgan fingerprints + chemical tokens
+      context_representation: control-derived context features + embeddings
+      output: transcriptomic response
+      unseen_drug: yes
+      unseen_context: limited
+      dose: true
+      time: true
+      patient_transfer: false
+      code: false
+
+  txpert:
+    method_profile:
+      task_family: drug-perturbation
+      year: 2026
+      input: transcriptomics + biological knowledge
+      drug_representation: knowledge-graph-informed perturbation representation
+      context_representation: cellular context representation
+      output: transcriptomic response
+      unseen_drug: yes
+      unseen_context: yes
+      dose: false
+      time: false
+      patient_transfer: false
+      code: true
+
+  lpm:
+    method_profile:
+      task_family: drug-perturbation
+      year: 2025
+      input: heterogeneous perturbation experiments
+      drug_representation: learned perturbation representation
+      context_representation: learned context representation
+      output: molecular state
+      unseen_drug: yes
+      unseen_context: yes
+      dose: limited
+      time: limited
+      patient_transfer: false
+      code: true
+
+  state:
+    method_profile:
+      task_family: drug-perturbation
+      year: 2026
+      input: sets of cellular expression profiles
+      drug_representation: perturbation embedding
+      context_representation: cellular state
+      output: transcriptomic response
+      unseen_drug: limited
+      unseen_context: yes
+      dose: limited
+      time: limited
+      patient_transfer: false
+      code: true
+
+  chemcpa:
+    method_profile:
+      task_family: drug-perturbation
+      year: 2022
+      input: single-cell expression + covariates
+      drug_representation: RDKit2D descriptors
+      context_representation: cell covariates + basal state
+      output: transcriptomic response
+      unseen_drug: yes
+      unseen_context: limited
+      dose: true
+      time: limited
+      patient_transfer: false
+      code: true
+
+  cmonge:
+    method_profile:
+      task_family: drug-perturbation
+      year: 2026
+      input: source/target expression distributions
+      drug_representation: RDKit2D descriptors
+      context_representation: matched control distribution
+      output: transported expression distribution
+      unseen_drug: yes
+      unseen_context: yes
+      dose: true
+      time: limited
+      patient_transfer: false
+      code: true
+
+  prnet:
+    method_profile:
+      task_family: drug-perturbation
+      year: 2024
+      input: basal expression + perturbation
+      drug_representation: FCFP4 fingerprint
+      context_representation: matched basal expression
+      output: transcriptomic response
+      unseen_drug: yes
+      unseen_context: limited
+      dose: true
+      time: limited
+      patient_transfer: false
+      code: true
+
+  biolord:
+    method_profile:
+      task_family: drug-perturbation
+      year: 2024
+      input: expression + known attributes
+      drug_representation: chemical descriptors
+      context_representation: unknown latent attributes
+      output: transcriptomic response
+      unseen_drug: yes
+      unseen_context: yes
+      dose: true
+      time: true
+      patient_transfer: false
+      code: true
+
+  perturbnet:
+    method_profile:
+      task_family: drug-perturbation
+      year: 2025
+      input: single-cell expression distributions
+      drug_representation: molecular representation
+      context_representation: conditional latent state
+      output: cell-state distribution
+      unseen_drug: yes
+      unseen_context: limited
+      dose: limited
+      time: limited
+      patient_transfer: false
+      code: true
+
+  cellflow:
+    method_profile:
+      task_family: drug-perturbation
+      year: 2025
+      input: control/treated expression distributions
+      drug_representation: molecular features
+      context_representation: matched control distribution
+      output: transported cell-state distribution
+      unseen_drug: yes
+      unseen_context: yes
+      dose: true
+      time: true
+      patient_transfer: false
+      code: true
+
+  prophet:
+    method_profile:
+      task_family: drug-perturbation
+      year: 2024
+      input: control expression + perturbation
+      drug_representation: learned chemical representation
+      context_representation: control-derived context
+      output: gene-expression response
+      unseen_drug: yes
+      unseen_context: yes
+      dose: true
+      time: true
+      patient_transfer: false
+      code: true
+
+  prepr_ct:
+    method_profile:
+      task_family: drug-perturbation
+      year: 2026
+      input: aggregate expression + context graph
+      drug_representation: RDKit descriptors
+      context_representation: context-specific gene graph
+      output: transcriptomic response
+      unseen_drug: yes
+      unseen_context: limited
+      dose: true
+      time: true
+      patient_transfer: false
+      code: true
+
+  xpert:
+    method_profile:
+      task_family: drug-perturbation
+      year: 2026
+      input: transcriptomics + heterogeneous graph
+      drug_representation: Uni-Mol + knowledge graph
+      context_representation: basal expression + gene embeddings
+      output: transcriptomic response
+      unseen_drug: yes
+      unseen_context: yes
+      dose: true
+      time: true
+      patient_transfer: false
+      code: true
+
+  paso:
+    method_profile:
+      task_family: drug-response-prediction
+      year: 2025
+      input: pathway-aware multi-omics
+      drug_representation: SMILES-derived representation
+      context_representation: pathway-difference representation
+      output: cell-line drug response
+      unseen_drug: limited
+      unseen_context: limited
+      dose: false
+      time: false
+      patient_transfer: false
+      code: true
+
+  dtlcdr:
+    method_profile:
+      task_family: drug-response-prediction
+      year: 2025
+      input: multimodal tumor/cell-line features + targets
+      drug_representation: target-aware drug representation
+      context_representation: biological sample representation
+      output: preclinical/clinical response
+      unseen_drug: yes
+      unseen_context: limited
+      dose: false
+      time: false
+      patient_transfer: true
+      code: false
+
+  therapi:
+    method_profile:
+      task_family: drug-response-prediction
+      year: 2026
+      input: tumor transcriptomics + cell-line knowledge
+      drug_representation: perturbation/gene-level representation
+      context_representation: aligned tumor/cell-line representation
+      output: patient drug response
+      unseen_drug: limited
+      unseen_context: yes
+      dose: false
+      time: false
+      patient_transfer: true
+      code: true
+
+  expresso:
+    method_profile:
+      task_family: drug-response-prediction
+      year: 2026
+      input: pretreatment tumor transcriptomics
+      drug_representation: drug targets + biomarkers
+      context_representation: tumor transcriptomic context
+      output: patient treatment response
+      unseen_drug: limited
+      unseen_context: yes
+      dose: false
+      time: false
+      patient_transfer: true
+      code: false
+
+  perturbrx:
+    method_profile:
+      task_family: drug-response-prediction
+      year: 2026
+      input: pretreatment tumor RNA-seq + perturbation pretraining
+      drug_representation: drug embedding + treatment-conditioned transition
+      context_representation: patient latent state
+      output: patient treatment response
+      unseen_drug: limited
+      unseen_context: yes
+      dose: true
+      time: false
+      patient_transfer: true
+      code: false
