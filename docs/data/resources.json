@@ -268,7 +268,27 @@
     "last_checked": "2026-08-08",
     "metadata_sources": [
       "https://biodev.github.io/BeatAML2/"
-    ]
+    ],
+    "dataset_profile": {
+      "species": [
+        "human"
+      ],
+      "sample_type": "patient",
+      "biological_context": "cancer",
+      "perturbation_type": [
+        "chemical"
+      ],
+      "paired": true,
+      "pre_post": false,
+      "longitudinal": false,
+      "drug_identity": true,
+      "dose": true,
+      "smiles": "partial",
+      "clinical_outcome": true,
+      "n_samples": "primary AML patient samples",
+      "n_cells": null,
+      "access": "open"
+    }
   },
   {
     "id": "bento",
@@ -332,7 +352,27 @@
     "last_checked": "2026-08-08",
     "metadata_sources": [
       "https://portals.broadinstitute.org/ctrp/"
-    ]
+    ],
+    "dataset_profile": {
+      "species": [
+        "human"
+      ],
+      "sample_type": "cell-line",
+      "biological_context": "cancer",
+      "perturbation_type": [
+        "chemical"
+      ],
+      "paired": true,
+      "pre_post": false,
+      "longitudinal": false,
+      "drug_identity": true,
+      "dose": true,
+      "smiles": "partial",
+      "clinical_outcome": false,
+      "n_samples": "~900 cancer cell lines",
+      "n_cells": null,
+      "access": "open"
+    }
   },
   {
     "id": "clintox",
@@ -510,7 +550,28 @@
     "last_checked": "2026-08-08",
     "metadata_sources": [
       "https://lincsproject.org/LINCS/tools/workflows/find-the-best-place-to-obtain-the-lincs-l1000-data"
-    ]
+    ],
+    "dataset_profile": {
+      "species": [
+        "human"
+      ],
+      "sample_type": "cell-line",
+      "biological_context": "perturbation-screen",
+      "perturbation_type": [
+        "chemical",
+        "genetic"
+      ],
+      "paired": false,
+      "pre_post": false,
+      "longitudinal": false,
+      "drug_identity": true,
+      "dose": true,
+      "smiles": "partial",
+      "clinical_outcome": false,
+      "n_samples": "large-scale perturbational profiles",
+      "n_cells": null,
+      "access": "open"
+    }
   },
   {
     "id": "moleculenet",
@@ -829,9 +890,38 @@
       "benchmarks-and-datasets"
     ],
     "tasks": [],
-    "modalities": [],
+    "modalities": [
+      "clinical",
+      "genomics"
+    ],
     "organism": [],
-    "api": false
+    "api": false,
+    "entities": [
+      "disease",
+      "gene"
+    ],
+    "last_checked": "2026-10-02",
+    "metadata_sources": [
+      "https://www.cancer.gov/ccg/research/genome-sequencing/tcga"
+    ],
+    "dataset_profile": {
+      "species": [
+        "human"
+      ],
+      "sample_type": "patient",
+      "biological_context": "cancer",
+      "perturbation_type": [],
+      "paired": false,
+      "pre_post": false,
+      "longitudinal": false,
+      "drug_identity": "limited",
+      "dose": false,
+      "smiles": false,
+      "clinical_outcome": true,
+      "n_samples": ">11,000 patients across 33 cancer types",
+      "n_cells": null,
+      "access": "mixed"
+    }
   },
   {
     "id": "therapeutics_data_commons_tdc",
@@ -1669,7 +1759,27 @@
     "last_checked": "2026-08-08",
     "metadata_sources": [
       "https://www.cancerrxgene.org/"
-    ]
+    ],
+    "dataset_profile": {
+      "species": [
+        "human"
+      ],
+      "sample_type": "cell-line",
+      "biological_context": "cancer",
+      "perturbation_type": [
+        "chemical"
+      ],
+      "paired": true,
+      "pre_post": false,
+      "longitudinal": false,
+      "drug_identity": true,
+      "dose": true,
+      "smiles": "partial",
+      "clinical_outcome": false,
+      "n_samples": "~1,000 cancer cell lines",
+      "n_cells": null,
+      "access": "open"
+    }
   },
   {
     "id": "gnomad",
