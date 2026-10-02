@@ -92,4 +92,4 @@ Supported v1 fields:
 | `n_cells` | integer, string, or null | Cell count for single-cell datasets when meaningful. |
 | `access` | string | Dataset-level access summary. |
 
-The initial v1 profiles live in `data/enrichment.dataset-explorer-v1.yml` and are rendered at `docs/dataset-explorer.html`.
+The v1 profiles are colocated with their existing modular `data/enrichment.*.yml` owners and rendered at `docs/dataset-explorer.html`.
