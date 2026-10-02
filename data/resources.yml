@@ -1940,6 +1940,17 @@ resources:
     organism: []
     api: false
 
+  - id: casanovo_foundation
+    name: "Casanovo Foundation"
+    type: model
+    url: https://github.com/Noble-Lab/casanovo-tl
+    description: "Tandem mass-spectrometry proteomics foundation model that reuses a pretrained Casanovo spectrum encoder for spectrum quality, chimericity, and post-translational-modification prediction."
+    tags: [foundation-models, other-omics-foundation-models]
+    tasks: [Foundation Model]
+    modalities: []
+    organism: []
+    api: false
+
   - id: cassia
     name: "CASSIA"
     type: model
@@ -2102,6 +2113,17 @@ resources:
     tags: [foundation-models, single-cell-foundation-models, spatial-foundation-models]
     tasks: [Foundation Model]
     modalities: [Single Cell, Spatial Transcriptomics]
+    organism: []
+    api: false
+
+  - id: cpgpt
+    name: "CpGPT"
+    type: model
+    url: https://github.com/lucascamillomd/CpGPT
+    description: "DNA methylation foundation model pretrained on >150K samples for zero-shot imputation, array conversion, reference mapping, and downstream phenotype prediction."
+    tags: [foundation-models, other-omics-foundation-models]
+    tasks: [Foundation Model]
+    modalities: []
     organism: []
     api: false
 
@@ -2633,6 +2655,17 @@ resources:
     organism: []
     api: false
 
+  - id: methylgpt
+    name: "MethylGPT"
+    type: model
+    url: https://github.com/albert-ying/MethylGPT
+    description: "Transformer foundation model for DNA methylation pretrained on >150K human methylomes across thousands of datasets, with 3M/7M/15M parameter variants."
+    tags: [foundation-models, other-omics-foundation-models]
+    tasks: [Foundation Model]
+    modalities: []
+    organism: []
+    api: false
+
   - id: midas
     name: "MIDAS"
     type: model
@@ -2784,6 +2817,17 @@ resources:
     tags: [foundation-models, multi-modal-foundation-models]
     tasks: [Foundation Model]
     modalities: [Multi-Modal]
+    organism: []
+    api: false
+
+  - id: mutationprojector
+    name: "MutationProjector"
+    type: model
+    url: https://doi.org/10.1101/2025.09.08.674723
+    description: "Tumor-genome foundation model pretrained on somatic alterations from >30K tumors to learn representations for cancer subtype and treatment-response tasks."
+    tags: [foundation-models, other-omics-foundation-models]
+    tasks: [Foundation Model]
+    modalities: []
     organism: []
     api: false
 
