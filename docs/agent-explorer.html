@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agent Explorer · Awesome Computational Biology</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="agent-explorer.css" />
+</head>
+<body>
+  <header>
+    <h1>🤖 Agent Explorer</h1>
+    <p class="subtitle">Compare agentic AI systems for biology by domain, agent architecture, tool use, execution capabilities, and research workflow support.</p>
+    <p><a href="index.html">← Resource search</a> · <a href="dataset-explorer.html">Dataset Explorer</a> · <a href="method-explorer.html">Method Explorer</a> · <a href="foundation-explorer.html">Foundation Model Explorer</a></p>
+  </header>
+
+  <main class="agent-main">
+    <section class="controls agent-controls" aria-label="Agent filters">
+      <div class="search-row">
+        <input id="agent-search" type="search" placeholder="Search agents…" autocomplete="off" />
+        <button id="agent-clear" type="button">Clear filters</button>
+      </div>
+      <div class="filter-row">
+        <label for="agent-domain">Domain</label>
+        <select id="agent-domain"><option value="">All domains</option></select>
+
+        <label for="agent-architecture">Architecture</label>
+        <select id="agent-architecture">
+          <option value="">Any</option>
+          <option value="single-agent">Single-agent</option>
+          <option value="multi-agent">Multi-agent</option>
+          <option value="agent-ecosystem">Agent ecosystem</option>
+        </select>
+
+        <label for="agent-omics">Omics</label>
+        <select id="agent-omics">
+          <option value="">Any</option>
+          <option value="yes">Supported</option>
+          <option value="limited">Limited</option>
+          <option value="no">No</option>
+        </select>
+
+        <label for="agent-code">Code execution</label>
+        <select id="agent-code">
+          <option value="">Any</option>
+          <option value="yes">Yes</option>
+          <option value="limited">Limited</option>
+          <option value="no">No</option>
+        </select>
+
+        <label for="agent-year">Year</label>
+        <select id="agent-year"><option value="">All years</option></select>
+      </div>
+    </section>
+
+    <section class="status-bar">
+      <span id="agent-count">Loading…</span>
+      <span class="load-time">Click any column header to sort</span>
+    </section>
+
+    <section class="agent-table-wrap" aria-label="Agent comparison table">
+      <table class="agent-table">
+        <thead>
+          <tr>
+            <th data-sort-key="name" aria-sort="ascending">Agent <span class="sort-indicator">▲</span></th>
+            <th data-sort-key="year">Year <span class="sort-indicator"></span></th>
+            <th data-sort-key="domains">Domain <span class="sort-indicator"></span></th>
+            <th data-sort-key="architecture">Architecture <span class="sort-indicator"></span></th>
+            <th data-sort-key="tool_use">Tool use <span class="sort-indicator"></span></th>
+            <th data-sort-key="code_execution">Code <span class="sort-indicator"></span></th>
+            <th data-sort-key="web_retrieval">Web <span class="sort-indicator"></span></th>
+            <th data-sort-key="literature">Literature <span class="sort-indicator"></span></th>
+            <th data-sort-key="omics">Omics <span class="sort-indicator"></span></th>
+            <th data-sort-key="wet_lab">Wet-lab <span class="sort-indicator"></span></th>
+            <th data-sort-key="autonomous_experiment">Autonomous experiment <span class="sort-indicator"></span></th>
+            <th data-sort-key="human_in_loop">Human-in-loop <span class="sort-indicator"></span></th>
+            <th data-sort-key="open_source">Open source <span class="sort-indicator"></span></th>
+          </tr>
+        </thead>
+        <tbody id="agent-body"></tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <p>Agent profiles summarize documented capabilities and project scope. “Limited” means capability exists only in some workflows or requires external tools/configuration.</p>
+  </footer>
+
+  <script src="agent-explorer.js"></script>
+</body>
+</html>
