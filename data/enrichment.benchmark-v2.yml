@@ -27,6 +27,10 @@ resources:
     metadata_sources:
       - https://lincsproject.org/LINCS/tools/workflows/find-the-best-place-to-obtain-the-lincs-l1000-data
     dataset_profile:
+      readout: l1000
+      gene_panel: "978 landmark genes"
+      time: true
+      view_scope: full-resource
       species: [human]
       sample_type: cell-line
       biological_context: perturbation-screen
@@ -49,6 +53,11 @@ resources:
     metadata_sources:
       - https://depmap.org/portal/prism/
     dataset_profile:
+      readout: viability
+      n_compounds: ">4,500"
+      n_contexts: ">900 cell lines"
+      time: false
+      view_scope: full-resource
       species: [human]
       sample_type: cell-line
       biological_context: cancer
