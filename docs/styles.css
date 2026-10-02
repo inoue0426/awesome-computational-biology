@@ -294,3 +294,15 @@ footer a { color: var(--primary); }
   background: rgba(255,255,255,.15);
   outline: none;
 }
+
+.recent-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: .35rem;
+  font-size: .85rem;
+  font-weight: 650;
+  color: var(--text);
+  cursor: pointer;
+  padding: .25rem .4rem;
+}
+.recent-toggle input { accent-color: var(--primary); }
