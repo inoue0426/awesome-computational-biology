@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Method Explorer · Awesome Computational Biology</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="method-explorer.css" />
+</head>
+<body>
+  <header>
+    <h1>🧠 Method Explorer</h1>
+    <p class="subtitle">Compare drug-response and perturbation models by task, representations, generalization target, and clinical transfer.</p>
+    <p><a href="index.html">← Resource search</a> · <a href="dataset-explorer.html">Dataset Explorer</a> · <a href="landscape.html">AI4Bio Landscape</a></p>
+  </header>
+
+  <main class="method-main">
+    <section class="controls method-controls" aria-label="Method filters">
+      <div class="search-row">
+        <input id="method-search" type="search" placeholder="Search methods…" autocomplete="off" />
+        <button id="method-clear" type="button">Clear filters</button>
+      </div>
+      <div class="filter-row">
+        <label for="task-family">Task</label>
+        <select id="task-family">
+          <option value="">All tasks</option>
+          <option value="drug-response-prediction">Drug response prediction</option>
+          <option value="drug-perturbation">Drug perturbation</option>
+        </select>
+
+        <label for="patient-transfer">Patient transfer</label>
+        <select id="patient-transfer">
+          <option value="">Any</option>
+          <option value="true">Yes</option>
+          <option value="false">No</option>
+        </select>
+
+        <label for="unseen-drug">Unseen drug</label>
+        <select id="unseen-drug">
+          <option value="">Any</option>
+          <option value="yes">Yes</option>
+          <option value="limited">Limited / adapted</option>
+        </select>
+
+        <label for="method-year">Year</label>
+        <select id="method-year"><option value="">All years</option></select>
+      </div>
+    </section>
+
+    <section class="status-bar">
+      <span id="method-count">Loading…</span>
+      <span class="load-time">Click any column header to sort</span>
+    </section>
+
+    <section class="method-table-wrap" aria-label="Method comparison table">
+      <table class="method-table">
+        <thead>
+          <tr>
+            <th data-sort-key="name" aria-sort="ascending">Method <span class="sort-indicator">▲</span></th>
+            <th data-sort-key="task_family">Task <span class="sort-indicator"></span></th>
+            <th data-sort-key="year">Year <span class="sort-indicator"></span></th>
+            <th data-sort-key="input">Input <span class="sort-indicator"></span></th>
+            <th data-sort-key="drug_representation">Drug representation <span class="sort-indicator"></span></th>
+            <th data-sort-key="context_representation">Context representation <span class="sort-indicator"></span></th>
+            <th data-sort-key="output">Output <span class="sort-indicator"></span></th>
+            <th data-sort-key="unseen_drug">Unseen drug <span class="sort-indicator"></span></th>
+            <th data-sort-key="unseen_context">Unseen context <span class="sort-indicator"></span></th>
+            <th data-sort-key="dose">Dose <span class="sort-indicator"></span></th>
+            <th data-sort-key="time">Time <span class="sort-indicator"></span></th>
+            <th data-sort-key="patient_transfer">Patient transfer <span class="sort-indicator"></span></th>
+            <th data-sort-key="code">Code <span class="sort-indicator"></span></th>
+          </tr>
+        </thead>
+        <tbody id="method-body"></tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <p>Method profiles are curated summaries for navigation, not performance rankings. Follow the linked paper or repository for exact experimental scope.</p>
+  </footer>
+
+  <script src="method-explorer.js"></script>
+</body>
+</html>
