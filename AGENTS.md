@@ -95,9 +95,9 @@ do not hand-invent an ID without checking the generated slug and duplicates.
 From the repository root (with `uv` available):
 
 ```bash
-uv run --with pyyaml python scripts/sync_resources_from_readme.py
-uv run --with pyyaml python scripts/validate_resources.py
-uv run --with pyyaml python scripts/build_resources.py
+uv run --with 'PyYAML' python scripts/sync_resources_from_readme.py
+uv run --with 'PyYAML' python scripts/validate_resources.py
+uv run --with 'PyYAML' python scripts/build_resources.py
 git diff --check
 git status --short
 ```
