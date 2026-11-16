@@ -1,6 +1,6 @@
 resources:
   cellbench_cellvoyager:
-    tasks: ["agent-evaluation","single-cell-analysis"]
+    tasks: ["classification"]
     modalities: ["single-cell-rna-seq"]
     last_checked: "2026-11-16"
     metadata_sources: ["https://github.com/zou-group/CellVoyager/tree/main/CellBench"]
@@ -72,7 +72,7 @@ resources:
     metadata_sources: ["https://deepmind.google/models/gemma/txgemma/"]
     foundation_profile: {"year":2025,"modalities":["text","molecular"],"pretraining_scale":"7 million therapeutic examples","species":["human"],"zero_shot":"limited","finetunable":true,"weights":true,"code":true,"perturbation":false,"spatial":false}
   spatialdata:
-    tasks: ["spatial-omics-analysis"]
+    tasks: ["dimensionality-reduction"]
     modalities: ["spatial-transcriptomics","imaging"]
     last_checked: "2026-11-16"
     metadata_sources: ["https://spatialdata.scverse.org/"]
