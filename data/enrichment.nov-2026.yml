@@ -1,0 +1,79 @@
+resources:
+  cellbench_cellvoyager:
+    tasks: ["agent-evaluation","single-cell-analysis"]
+    modalities: ["single-cell-rna-seq"]
+    last_checked: "2026-11-16"
+    metadata_sources: ["https://github.com/zou-group/CellVoyager/tree/main/CellBench"]
+    github: "https://github.com/zou-group/CellVoyager"
+  cellresdb:
+    tasks: []
+    modalities: []
+    last_checked: "2026-11-16"
+    metadata_sources: ["https://doi.org/10.1038/s42003-025-08457-2"]
+    paper: "https://doi.org/10.1038/s42003-025-08457-2"
+    dataset_profile: {"year":2025,"readout":"single-cell-rna","species":["human"],"sample_type":"patient","biological_context":"cancer","perturbation_type":["chemical","immunotherapy"],"paired":false,"pre_post":false,"longitudinal":false,"drug_identity":"partial","dose":false,"time":false,"smiles":false,"clinical_outcome":true,"n_samples":"1,391 patient samples","n_cells":4700000,"access":"public-portal"}
+  gondal_et_al_2025_icb_scrna_seq_collection:
+    tasks: []
+    modalities: []
+    last_checked: "2026-11-16"
+    metadata_sources: ["https://doi.org/10.1038/s41597-025-04381-6","https://cellxgene.cziscience.com/collections/61e422dd-c9cd-460e-9b91-72d9517348ef"]
+    paper: "https://doi.org/10.1038/s41597-025-04381-6"
+    dataset_profile: {"year":2025,"readout":"single-cell-rna","species":["human"],"sample_type":"patient","biological_context":"cancer","perturbation_type":["immunotherapy"],"paired":false,"pre_post":false,"longitudinal":false,"drug_identity":false,"dose":false,"time":false,"smiles":false,"clinical_outcome":true,"n_samples":"223 patients from eight studies","n_cells":355941,"access":"open"}
+  scct_db:
+    tasks: []
+    modalities: []
+    last_checked: "2026-11-16"
+    metadata_sources: ["https://doi.org/10.1093/nar/gkaf1065"]
+    paper: "https://doi.org/10.1093/nar/gkaf1065"
+    dataset_profile: {"year":2025,"readout":"single-cell-rna","species":["human"],"sample_type":"patient","biological_context":"cancer","perturbation_type":["chemical"],"paired":true,"pre_post":true,"longitudinal":true,"drug_identity":true,"dose":false,"time":true,"smiles":false,"clinical_outcome":true,"n_samples":"1,142 patient samples","n_cells":6190000,"access":"public-portal"}
+  scicb:
+    tasks: []
+    modalities: []
+    last_checked: "2026-11-16"
+    metadata_sources: ["https://doi.org/10.1002/ctd2.70044"]
+    paper: "https://doi.org/10.1002/ctd2.70044"
+    dataset_profile: {"year":2025,"readout":"single-cell-rna","species":["human"],"sample_type":"patient","biological_context":"cancer","perturbation_type":["immunotherapy"],"paired":true,"pre_post":true,"longitudinal":true,"drug_identity":"partial","dose":false,"time":true,"smiles":false,"clinical_outcome":true,"n_samples":"807 patient samples","n_cells":3686385,"access":"public-portal"}
+  scperturbbench_tiangzlab_perturbarena:
+    tasks: ["perturbation-prediction"]
+    modalities: ["single-cell-rna-seq"]
+    last_checked: "2026-11-16"
+    metadata_sources: ["https://github.com/TianGzlab/scPerturbBench"]
+    github: "https://github.com/TianGzlab/scPerturbBench"
+  scperturbench_bm2_lab:
+    tasks: ["perturbation-prediction"]
+    modalities: ["single-cell-rna-seq"]
+    last_checked: "2026-11-16"
+    metadata_sources: ["https://github.com/bm2-lab/scPerturBench"]
+    github: "https://github.com/bm2-lab/scPerturBench"
+  cell2sentence_c2s_scale:
+    tasks: []
+    modalities: []
+    last_checked: "2026-11-16"
+    metadata_sources: ["https://github.com/vandijklab/cell2sentence"]
+    foundation_profile: {"year":2025,"modalities":["rna"],"pretraining_scale":"tens of millions of single cells","species":["human","mouse"],"zero_shot":"limited","finetunable":true,"weights":true,"code":true,"perturbation":"limited","spatial":false}
+    github: "https://github.com/vandijklab/cell2sentence"
+  cellvoyager:
+    tasks: []
+    modalities: []
+    last_checked: "2026-11-16"
+    metadata_sources: ["https://github.com/zou-group/CellVoyager"]
+    agent_profile: {"year":2026,"domains":["bioinformatics","omics"],"architecture":"single-agent","tool_use":true,"code_execution":true,"web_retrieval":false,"literature":true,"omics":true,"wet_lab":false,"autonomous_experiment":false,"human_in_loop":true,"open_source":true}
+    github: "https://github.com/zou-group/CellVoyager"
+  nvidia_nemotron_for_science:
+    tasks: []
+    modalities: []
+    last_checked: "2026-11-16"
+    metadata_sources: ["https://nvidianews.nvidia.com/news/nvidia-introduces-nemotron-for-science-to-accelerate-discoveries-with-agents"]
+    foundation_profile: {"year":2026,"modalities":["text","image"],"pretraining_scale":"not specified for science adaptation","species":[],"zero_shot":"unknown","finetunable":true,"weights":true,"code":true,"perturbation":false,"spatial":false}
+  txgemma:
+    tasks: []
+    modalities: []
+    last_checked: "2026-11-16"
+    metadata_sources: ["https://deepmind.google/models/gemma/txgemma/"]
+    foundation_profile: {"year":2025,"modalities":["text","molecular"],"pretraining_scale":"7 million therapeutic examples","species":["human"],"zero_shot":"limited","finetunable":true,"weights":true,"code":true,"perturbation":false,"spatial":false}
+  spatialdata:
+    tasks: ["spatial-omics-analysis"]
+    modalities: ["spatial-transcriptomics","imaging"]
+    last_checked: "2026-11-16"
+    metadata_sources: ["https://spatialdata.scverse.org/"]
+    documentation: "https://spatialdata.scverse.org/"
