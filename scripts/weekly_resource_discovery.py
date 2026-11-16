@@ -97,6 +97,9 @@ def extract_candidate(article: dict) -> dict | None:
     abstract = clean(article.get("abstractText", ""))
     doi = (article.get("doi") or "").strip().lower()
     journal = clean(article.get("journalTitle", "") or article.get("journalInfo", {}).get("journal", {}).get("title", ""))
+    # Treat metadata as untrusted text: reject Markdown delimiters and malformed DOIs.
+    if any(ch in title + journal for ch in "[]<>\\") or not re.fullmatch(r"10\.\d{4,9}/[A-Za-z0-9._;()/:+-]+", doi):
+        return None
     date = article.get("firstPublicationDate") or ""
     if (not doi.startswith("10.") or len(title) > 115 or len(title) < 14
             or not date or not abstract or not journal or article.get("isRetracted") is True):
