@@ -445,8 +445,7 @@
       "general-biological-ml-and-knowledge-graph-benchmarks"
     ],
     "tasks": [
-      "agent-evaluation",
-      "single-cell-analysis"
+      "classification"
     ],
     "modalities": [
       "single-cell-rna-seq"
@@ -10918,7 +10917,7 @@
       "preprocessing-tools"
     ],
     "tasks": [
-      "spatial-omics-analysis"
+      "dimensionality-reduction"
     ],
     "modalities": [
       "spatial-transcriptomics",
