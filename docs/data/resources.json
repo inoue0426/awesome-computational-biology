@@ -10599,5 +10599,413 @@
     "modalities": [],
     "organism": [],
     "api": false
+  },
+  {
+    "id": "scperturbbench_tiangz",
+    "name": "scPerturbBench (TianGzlab / PerturbArena)",
+    "type": "benchmark",
+    "url": "https://github.com/TianGzlab/scPerturbBench",
+    "description": "Benchmark of single-cell genetic perturbation prediction covering unseen perturbations, combinations, cell-state transfer, and 24 evaluation metrics.",
+    "tags": [
+      "genetic-perturbation-and-perturb-seq"
+    ],
+    "tasks": [
+      "perturbation-prediction"
+    ],
+    "modalities": [
+      "single-cell-rna-seq"
+    ],
+    "organism": [],
+    "api": false,
+    "last_checked": "2026-11-16",
+    "metadata_sources": [
+      "https://github.com/TianGzlab/scPerturbBench"
+    ],
+    "github": "https://github.com/TianGzlab/scPerturbBench"
+  },
+  {
+    "id": "scperturbench_bm2",
+    "name": "scPerturBench (BM2 Lab)",
+    "type": "benchmark",
+    "url": "https://github.com/bm2-lab/scPerturBench",
+    "description": "Benchmark comparing 27 single-cell perturbation-response prediction methods across 29 genetic and chemical perturbation datasets.",
+    "tags": [
+      "genetic-perturbation-and-perturb-seq"
+    ],
+    "tasks": [
+      "perturbation-prediction"
+    ],
+    "modalities": [
+      "single-cell-rna-seq"
+    ],
+    "organism": [],
+    "api": false,
+    "last_checked": "2026-11-16",
+    "metadata_sources": [
+      "https://github.com/bm2-lab/scPerturBench"
+    ],
+    "github": "https://github.com/bm2-lab/scPerturBench"
+  },
+  {
+    "id": "cellbench_cellvoyager",
+    "name": "CellBench (CellVoyager)",
+    "type": "benchmark",
+    "url": "https://github.com/zou-group/CellVoyager/tree/main/CellBench",
+    "description": "Benchmark for evaluating LLMs and data-analysis agents on reproducible single-cell research tasks.",
+    "tags": [
+      "general-biological-ml-and-knowledge-graph-benchmarks"
+    ],
+    "tasks": [
+      "agent-evaluation",
+      "single-cell-analysis"
+    ],
+    "modalities": [
+      "single-cell-rna-seq"
+    ],
+    "organism": [],
+    "api": false,
+    "last_checked": "2026-11-16",
+    "metadata_sources": [
+      "https://github.com/zou-group/CellVoyager/tree/main/CellBench"
+    ],
+    "github": "https://github.com/zou-group/CellVoyager"
+  },
+  {
+    "id": "scct_db",
+    "name": "scCT-DB",
+    "type": "benchmark",
+    "url": "http://scctdb.ncpsb.org.cn",
+    "description": "Cancer treatment single-cell database with 266 paired pre/post-treatment datasets, 6.19M cells, 1,142 samples, 27 cancer types, and 102 drugs.",
+    "tags": [
+      "drug-response-and-perturbation"
+    ],
+    "tasks": [],
+    "modalities": [],
+    "organism": [],
+    "api": false,
+    "last_checked": "2026-11-16",
+    "metadata_sources": [
+      "https://doi.org/10.1093/nar/gkaf1065"
+    ],
+    "paper": "https://doi.org/10.1093/nar/gkaf1065",
+    "dataset_profile": {
+      "year": 2025,
+      "readout": "single-cell-rna",
+      "species": [
+        "human"
+      ],
+      "sample_type": "patient",
+      "biological_context": "cancer",
+      "perturbation_type": [
+        "chemical"
+      ],
+      "paired": true,
+      "pre_post": true,
+      "longitudinal": true,
+      "drug_identity": true,
+      "dose": false,
+      "time": true,
+      "smiles": "unknown",
+      "clinical_outcome": true,
+      "n_samples": 1142,
+      "n_cells": 6190000,
+      "access": "public-portal"
+    }
+  },
+  {
+    "id": "scicb",
+    "name": "scICB",
+    "type": "benchmark",
+    "url": "http://www.scimmnue.com/",
+    "description": "Pan-cancer ICB therapy single-cell database spanning 338 patients, 807 samples, 3.69M cells, and 13 cancer types, including 247 matched pre/post-treatment patients.",
+    "tags": [
+      "drug-response-and-perturbation"
+    ],
+    "tasks": [],
+    "modalities": [],
+    "organism": [],
+    "api": false,
+    "last_checked": "2026-11-16",
+    "metadata_sources": [
+      "https://doi.org/10.1002/ctd2.70044"
+    ],
+    "paper": "https://doi.org/10.1002/ctd2.70044",
+    "dataset_profile": {
+      "year": 2025,
+      "readout": "single-cell-rna",
+      "species": [
+        "human"
+      ],
+      "sample_type": "patient",
+      "biological_context": "cancer",
+      "perturbation_type": [
+        "immunotherapy"
+      ],
+      "paired": true,
+      "pre_post": true,
+      "longitudinal": true,
+      "drug_identity": "partial",
+      "dose": false,
+      "time": true,
+      "smiles": false,
+      "clinical_outcome": true,
+      "n_samples": 807,
+      "n_cells": 3686385,
+      "access": "public-portal"
+    }
+  },
+  {
+    "id": "cellresdb",
+    "name": "CellResDB",
+    "type": "benchmark",
+    "url": "https://cellknowledge.com.cn/cellresponse",
+    "description": "Cancer therapy response single-cell database containing 4.7M cells from 1,391 patient samples, 72 datasets, and 24 cancer types.",
+    "tags": [
+      "drug-response-and-perturbation"
+    ],
+    "tasks": [],
+    "modalities": [],
+    "organism": [],
+    "api": false,
+    "last_checked": "2026-11-16",
+    "metadata_sources": [
+      "https://doi.org/10.1038/s42003-025-08457-2"
+    ],
+    "paper": "https://doi.org/10.1038/s42003-025-08457-2",
+    "dataset_profile": {
+      "year": 2025,
+      "readout": "single-cell-rna",
+      "species": [
+        "human"
+      ],
+      "sample_type": "patient",
+      "biological_context": "cancer",
+      "perturbation_type": [
+        "chemical",
+        "immunotherapy"
+      ],
+      "paired": false,
+      "pre_post": false,
+      "longitudinal": false,
+      "drug_identity": "partial",
+      "dose": false,
+      "time": false,
+      "smiles": false,
+      "clinical_outcome": true,
+      "n_samples": 1391,
+      "n_cells": 4700000,
+      "access": "public-portal"
+    }
+  },
+  {
+    "id": "gondal_2025_icb_single_cell",
+    "name": "Gondal et al. 2025 ICB scRNA-seq collection",
+    "type": "benchmark",
+    "url": "https://cellxgene.cziscience.com/collections/61e422dd-c9cd-460e-9b91-72d9517348ef",
+    "description": "Integrated ICB-treated cancer single-cell collection from eight studies and 223 patients, with 90,270 cancer cells and 265,671 other cells.",
+    "tags": [
+      "drug-response-and-perturbation"
+    ],
+    "tasks": [],
+    "modalities": [],
+    "organism": [],
+    "api": false,
+    "last_checked": "2026-11-16",
+    "metadata_sources": [
+      "https://doi.org/10.1038/s41597-025-04381-6",
+      "https://cellxgene.cziscience.com/collections/61e422dd-c9cd-460e-9b91-72d9517348ef"
+    ],
+    "paper": "https://doi.org/10.1038/s41597-025-04381-6",
+    "dataset_profile": {
+      "year": 2025,
+      "readout": "single-cell-rna",
+      "species": [
+        "human"
+      ],
+      "sample_type": "patient",
+      "biological_context": "cancer",
+      "perturbation_type": [
+        "immunotherapy"
+      ],
+      "paired": false,
+      "pre_post": false,
+      "longitudinal": false,
+      "drug_identity": false,
+      "dose": false,
+      "time": false,
+      "smiles": false,
+      "clinical_outcome": true,
+      "n_samples": "223 patients from eight studies",
+      "n_cells": 355941,
+      "access": "open"
+    }
+  },
+  {
+    "id": "spatialdata",
+    "name": "SpatialData",
+    "type": "toolkit",
+    "url": "https://spatialdata.scverse.org/",
+    "description": "Interoperable data structures and tooling for spatial omics, microscopy images, coordinates, segmentation shapes, and annotations.",
+    "tags": [
+      "spatial-omics"
+    ],
+    "tasks": [
+      "spatial-omics-analysis"
+    ],
+    "modalities": [
+      "spatial-transcriptomics",
+      "imaging"
+    ],
+    "organism": [],
+    "api": false,
+    "last_checked": "2026-11-16",
+    "metadata_sources": [
+      "https://spatialdata.scverse.org/"
+    ],
+    "documentation": "https://spatialdata.scverse.org/"
+  },
+  {
+    "id": "cellvoyager",
+    "name": "CellVoyager",
+    "type": "model",
+    "url": "https://github.com/zou-group/CellVoyager",
+    "description": "Jupyter-based scientific agent that plans, executes, and evaluates single-cell transcriptomics analyses, accompanied by CellBench.",
+    "tags": [
+      "agentic-ai-for-biology",
+      "bioinformatics-and-omics-agents"
+    ],
+    "tasks": [],
+    "modalities": [],
+    "organism": [],
+    "api": false,
+    "last_checked": "2026-11-16",
+    "metadata_sources": [
+      "https://github.com/zou-group/CellVoyager"
+    ],
+    "agent_profile": {
+      "year": 2026,
+      "domains": [
+        "bioinformatics",
+        "omics"
+      ],
+      "architecture": "single-agent",
+      "tool_use": true,
+      "code_execution": true,
+      "web_retrieval": false,
+      "literature": true,
+      "omics": true,
+      "wet_lab": false,
+      "autonomous_experiment": false,
+      "human_in_loop": true,
+      "open_source": true
+    },
+    "github": "https://github.com/zou-group/CellVoyager"
+  },
+  {
+    "id": "cell2sentence_scale",
+    "name": "Cell2Sentence / C2S-Scale",
+    "type": "model",
+    "url": "https://github.com/vandijklab/cell2sentence",
+    "description": "Single-cell language-model family representing gene-expression profiles as cell sentences for cellular interpretation, generation, and question answering.",
+    "tags": [
+      "foundation-models",
+      "single-cell-transcriptomics-foundation-models"
+    ],
+    "tasks": [],
+    "modalities": [],
+    "organism": [],
+    "api": false,
+    "last_checked": "2026-11-16",
+    "metadata_sources": [
+      "https://github.com/vandijklab/cell2sentence"
+    ],
+    "foundation_profile": {
+      "year": 2025,
+      "modalities": [
+        "rna"
+      ],
+      "pretraining_scale": "tens of millions of single cells",
+      "species": [
+        "human",
+        "mouse"
+      ],
+      "zero_shot": "limited",
+      "finetunable": true,
+      "weights": true,
+      "code": true,
+      "perturbation": "limited",
+      "spatial": false
+    },
+    "github": "https://github.com/vandijklab/cell2sentence"
+  },
+  {
+    "id": "txgemma",
+    "name": "TxGemma",
+    "type": "model",
+    "url": "https://deepmind.google/models/gemma/txgemma/",
+    "description": "Open Gemma-based therapeutic-development model family (2B, 9B, and 27B) for property prediction and interactive scientific reasoning.",
+    "tags": [
+      "foundation-models",
+      "multi-modal-foundation-models"
+    ],
+    "tasks": [],
+    "modalities": [],
+    "organism": [],
+    "api": false,
+    "last_checked": "2026-11-16",
+    "metadata_sources": [
+      "https://deepmind.google/models/gemma/txgemma/"
+    ],
+    "foundation_profile": {
+      "year": 2025,
+      "modalities": [
+        "text",
+        "molecular"
+      ],
+      "pretraining_scale": "7 million therapeutic examples",
+      "species": [
+        "human"
+      ],
+      "zero_shot": "limited",
+      "finetunable": true,
+      "weights": true,
+      "code": true,
+      "perturbation": false,
+      "spatial": false
+    }
+  },
+  {
+    "id": "nemotron_for_science",
+    "name": "NVIDIA Nemotron for Science",
+    "type": "model",
+    "url": "https://nvidianews.nvidia.com/news/nvidia-introduces-nemotron-for-science-to-accelerate-discoveries-with-agents",
+    "description": "Scientific-agent development stack based on Nemotron 3.5 Super VL, with post-training recipes and chemistry reasoning benchmark LitmusBench v0.2.",
+    "tags": [
+      "foundation-models",
+      "multi-modal-foundation-models"
+    ],
+    "tasks": [],
+    "modalities": [],
+    "organism": [],
+    "api": false,
+    "last_checked": "2026-11-16",
+    "metadata_sources": [
+      "https://nvidianews.nvidia.com/news/nvidia-introduces-nemotron-for-science-to-accelerate-discoveries-with-agents"
+    ],
+    "foundation_profile": {
+      "year": 2026,
+      "modalities": [
+        "text",
+        "image"
+      ],
+      "pretraining_scale": "not specified for science adaptation",
+      "species": [],
+      "zero_shot": "unknown",
+      "finetunable": true,
+      "weights": true,
+      "code": true,
+      "perturbation": false,
+      "spatial": false
+    }
   }
 ]
