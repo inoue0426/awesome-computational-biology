@@ -1,0 +1,91 @@
+name: Weekly resource discovery and guarded auto-merge
+on:
+  schedule:
+    - cron: '15 14 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: weekly-resource-discovery
+  cancel-in-progress: false
+
+jobs:
+  discover:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - name: Require PR bot token
+        env:
+          BOT_TOKEN: ${{ secrets.RESOURCE_BOT_TOKEN }}
+        run: |
+          test -n "$BOT_TOKEN" || { echo "::error::Set RESOURCE_BOT_TOKEN with Contents and Pull requests write permissions."; exit 1; }
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.RESOURCE_BOT_TOKEN }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - uses: astral-sh/setup-uv@v3
+      - name: Test discovery
+        run: python -m unittest discover -s tests -p 'test_weekly_resource_discovery.py'
+      - name: Discover verified recent resources
+        run: python scripts/weekly_resource_discovery.py
+      - name: Detect changes
+        id: changes
+        run: |
+          if git diff --quiet -- README.md; then echo "found=false" >> "$GITHUB_OUTPUT"; else echo "found=true" >> "$GITHUB_OUTPUT"; fi
+      - name: Regenerate canonical resources
+        if: steps.changes.outputs.found == 'true'
+        run: |
+          set -euo pipefail
+          uv run --with pyyaml python scripts/sync_resources_from_readme.py
+          uv run --with pyyaml python scripts/build_resources.py
+          git diff --name-only | while IFS= read -r path; do
+            case "$path" in
+              README.md|data/resources.yml|data/resources.json|data/resources.csv|docs/data/resources.json) ;;
+              *) echo "::error::Unexpected file $path"; exit 1 ;;
+            esac
+          done
+      - name: Open PR
+        if: steps.changes.outputs.found == 'true'
+        id: pr
+        env:
+          GH_TOKEN: ${{ secrets.RESOURCE_BOT_TOKEN }}
+        run: |
+          set -euo pipefail
+          branch="bot/weekly-resources-$GITHUB_RUN_ID"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git switch -c "$branch"
+          git add README.md data/resources.yml data/resources.json data/resources.csv docs/data/resources.json
+          git commit -m "docs: add verified weekly biomedical AI resources"
+          git push -u origin "$branch"
+          gh pr create --base main --head "$branch" --title "docs: verified weekly resource additions" --body "Up to three peer-reviewed, DOI-backed resources with public GitHub repositories explicitly linked in their abstracts. Automatically merge only after all four repository CI checks pass." > /tmp/pr-url
+          echo "url=$(cat /tmp/pr-url)" >> "$GITHUB_OUTPUT"
+      - name: Wait for required PR checks
+        if: steps.changes.outputs.found == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.RESOURCE_BOT_TOKEN }}
+          PR_URL: ${{ steps.pr.outputs.url }}
+        run: |
+          set -euo pipefail
+          gh pr checks "$PR_URL" --watch --fail-fast
+          gh pr checks "$PR_URL" --json name,state > /tmp/checks.json
+          python - <<'PY'
+          import json
+          with open("/tmp/checks.json", encoding="utf-8") as f:
+              checks = json.load(f)
+          required = {"validate", "docs-check", "generate", "resources-consistency"}
+          passed = {item["name"] for item in checks if item["state"] == "SUCCESS"}
+          assert required <= passed, f"Required checks not all passing: {required - passed}"
+          PY
+      - name: Merge when green
+        if: steps.changes.outputs.found == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.RESOURCE_BOT_TOKEN }}
+          PR_URL: ${{ steps.pr.outputs.url }}
+        run: gh pr merge "$PR_URL" --squash --delete-branch
