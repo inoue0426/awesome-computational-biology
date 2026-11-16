@@ -73,6 +73,26 @@ jobs:
           PR_URL: ${{ steps.pr.outputs.url }}
         run: |
           set -euo pipefail
+          # Checks may take a moment to appear after a new PR is created.
+          checks_visible=false
+          for attempt in $(seq 1 18); do
+            gh pr checks "$PR_URL" --json name,state > /tmp/checks.json 2>/dev/null || true
+            if python - <<'PY'
+          import json
+          try:
+              checks = json.load(open("/tmp/checks.json", encoding="utf-8"))
+          except (ValueError, FileNotFoundError):
+              checks = []
+          required = {"validate", "docs-check", "generate", "resources-consistency"}
+          raise SystemExit(0 if required <= {c["name"] for c in checks} else 1)
+          PY
+            then
+              checks_visible=true
+              break
+            fi
+            sleep 10
+          done
+          test "$checks_visible" = true || { echo "::error::Required PR checks never started"; exit 1; }
           gh pr checks "$PR_URL" --watch --fail-fast
           gh pr checks "$PR_URL" --json name,state > /tmp/checks.json
           python - <<'PY'
